@@ -1,4 +1,99 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[titletoc,title]{appendix}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{dark-red}{rgb}{0.75,0.10,0.10}
+\definecolor{dark-blue}{rgb}{0.0,0.0,0.7}
+\usepackage[margin=1in]{geometry}
+\usepackage[linkcolor=dark-blue,
+            colorlinks=true,
+            urlcolor=blue,
+            pdfstartview={XYZ null null 1.00},
+            pdfpagemode=UseNone,
+            citecolor={dark-blue},
+            pdftitle={Propagation of Error}]{hyperref}
+%\usepackage{biblatex}
+\usepackage{multibib}
+\newcites{sec}{Other Sources}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\geometry{letterpaper}               % This is 8.5x11 paper. Options are a4paper or a5paper or other...
+\usepackage{graphicx}                % Handles inclusion of major graphics formats and allows use of
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{amsxtra}
+\usepackage{natbib}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{verbatim}
+\setcitestyle{round,semicolon,aysep={},yysep={;}}
+\usepackage{setspace}            % Permits line spacing control. Options are \doublespacing, \onehalfspace
+\usepackage{sectsty}             % Permits control of section header styles
+\usepackage{lscape}
+\usepackage{fancyhdr}            % Permits header customization. See header section below.
+\usepackage{url}                     % Correctly formats URLs with the \url{} tag
+\usepackage{fullpage}       %1-inch margins
+\usepackage{multirow}
+\usepackage{rotating}
+\setlength{\parindent}{3em}
 
+\usepackage{float}
+
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+\usepackage{libertine}
+\usepackage{dcolumn}
+\usepackage{chngcntr}
+
+% Caption
+\usepackage[hang, font=small,skip=0pt, labelfont={bf}]{caption}
+\captionsetup[subtable]{font=small,skip=0pt}
+\usepackage{subcaption}
+
+% tt font issues
+% \renewcommand*{\ttdefault}{qcr}
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{lscape}
+\renewcommand{\textfraction}{0}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.40}
+\setcounter{totalnumber}{5}
+\makeatletter
+\providecommand\phantomcaption{\caption@refstepcounter\@captype}
+\makeatother
+\begin{comment}
+
+setwd(paste0(githubdir, "niewenhuis/ms/"))
+tools::texi2dvi("niewenhuis.tex", pdf = TRUE, clean = TRUE)
+setwd(githubdir)
+
+\end{comment}
+
+\begin{document}
+\title{\Large{Propagation of Error: Citations\\ to Problematic Research}\footnote{We are grateful to Danielle Portnoy and Xiaoran Huang for assisting us with the research, and to Andrew Gelman, Kabir Khanna, and Daniel Stone for offering valuable comments. The data and scripts for replicating the analysis are posted at: \href{https://github.com/recite/propagation_of_error}{https://github.com/recite/propagation\_of\_error}}\\\vspace{5mm}}
+
+\author{Ken Cor\\
+\and Gaurav Sood}
+%\vspace{5mm}}
+%\date{\normalsize{\today}}
+\maketitle
+
+\vspace{.2cm}
+\doublespacing
+\clearpage
+%\renewcommand{\abstractname}{Summary}
+%\begin{abstract}
+\textbf{Summary.} Many claims in a scientific article rest on research done by others. But when the
+claims are based on flawed research, scientific articles spread misinformation. Using data from an article published in \textit{Nature Neuroscience}, highlighting a serious statistical error in articles published in prominent journals. Data suggest that problematic research was cited without noting concerns with the work \textit{more frequently} after the problem was publicized. Our results have implications for the design of scholarship discovery systems and scientific practice more generally.
+\vspace{.2cm}\\
+\singlespacing
+%\end{abstract}
+\textit{Keywords.} Citation Behavior, Retractions, Scientific Integrity, Scientific Misconduct, Scientometrics
+\doublespacing
+\clearpage
+
+\section{Introduction}
 \subsection{Theory}
 As we note above, retractions are generally a result of serious scientific malpractice. Retractions are also easily identified. Because of these reasons, research on citations to problematic research focuses exclusively on citations to articles that have been officially retracted. However, by focusing on retractions alone, we miss the more common problem of citations to unretracted studies with major errors. For example, \citet{gelman2006} discuss a common statistical error where researchers treat differences between significant and non-significant results as significant without conducting the requisite statistical test. They describe a scenario where results from two independent studies report parameter estimates and standard errors of 25 $\pm$ 10 and 10 $\pm$ 10, respectively. The first result is significant at the 1\% level, while the second is non-significant. The finding is interpreted by many as evidence of a significant difference, but a basic calculation of the difference in the effects and its standard error tells a different story, $15 \pm \sqrt{10^{2} + 10^{2}}$, which is not significant at the conventional 95\% level.
 
@@ -42,3 +137,44 @@ y = \alpha + \beta_1 n_i + \beta_2 s_i + \beta_3 (n*s) + \epsilon
 Table \ref{tab:tab1} tabulates the results. Models (1), (3), and (5) define error as all articles making the error. Models (2), (4), and (6) refer to error as articles making ``potentially serious errors.'' As the table shows, 1 or 2 years after \citet{nieuwenhuis2011}, articles making the error were being cited more frequently vis-\`a-vis articles not making the error (Diff. $\sim$ 3). Three years out, we cannot still reject the 0, suggesting that there is no evidence of a decline. For articles making ``potentially serious errors'', the story is much the same, except that the one and two-year out estimates are closer to 3.5 additional citations per year than 3. Three years later, we still cannot say that the articles making ``potentially serious errors'' were being cited any less frequently.  In all, there is strong evidence that citations that do not acknowledge problems remain common after the error is publicized. The publicity of \citeauthor{nieuwenhuis2011} has had little impact, with articles containing errors still being highly cited. These articles may be especially susceptible to continued citations because the nature of the error results in an inference of a difference in differences that is something other researchers are looking for evidence of in order to support an important point.
 
 \input{../tabs/nw_did_tab.tex}
+
+
+\clearpage
+\bibliographystyle{rss}
+\bibliography{error}
+
+\clearpage
+\appendix
+\renewcommand{\thesection}{SI \arabic{section}}
+\renewcommand\thetable{\thesection.\arabic{table}}
+\renewcommand\thefigure{\thesection.\arabic{figure}}
+\counterwithin{figure}{section}
+\setcounter{figure}{0}
+\setcounter{section}{0}
+\setcounter{table}{0}
+
+\begin{center}
+\Large{Supporting Information}
+\end{center}
+
+\section{Rate of Citations Before and After Publication of Nieuwenhuis et al.}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.7]{../figs/nw_median_growth_curve.pdf}
+\caption{Total number of citations received per year by each of the papers making the mistake, and the median number of citations received per year by the articles.}
+\label{fig:median_niewenhuis}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.7]{../figs/serious_nw_growth_curve.pdf}
+\caption{Total number of citations received per year by articles making the mistake with `potentially serious' consequences for the results, and the average number of citations received per year by the articles.}
+\label{fig:serious_niewenhuis}
+\end{figure}
+
+\clearpage
+\input{../tabs/nw_tab.tex}
+
+\end{document}
