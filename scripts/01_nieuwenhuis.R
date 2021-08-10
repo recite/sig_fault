@@ -29,7 +29,7 @@ options(StringsAsFactors = FALSE)
 
 # Set dir 
 setwd(githubdir)
-setwd("propagation_of_error/")
+setwd("niewenhuis/")
 
 # Load libs 
 library(readxl)
