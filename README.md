@@ -1,6 +1,8 @@
-## Niewenhuis
+## Significant Error: Citations to Research With Publicized Statistical Errors
 
-Nieuwenhuis et al. (2011) analyzed 157 behavioral, systems, and cognitive neuroscience articles that relied on such analysis and were published in journals like \textit{Nature}, \textit{Science}, \textit{Neuron}, and \textit{Journal of Neuroscience} between 2009 and 2010. They found that roughly half (79) of the articles made this error. Further, they found that the error had serious consequences for the results for approximately two-thirds of the studies that made the error. To date, none of the studies that Nieuwenhuis et al. (2011) identified as problematic have been retracted. We assess whether the citation rate changes after the publication of Nieuwenhuis et al. (2011).
+Gelman et al.(2006) discuss a common statistical error where researchers treat differences between significant and non-significant results as significant. They describe a scenario where results from two independent studies report parameter estimates and standard errors of 25 $\pm$ 10 and 10 $\pm$ 10, respectively. The first result is significant at the 1\% level, while the second is non-significant. The finding is interpreted by many as evidence of a significant difference, but a basic calculation of the difference in the effects and its standard error tells a different story, $15 \pm \sqrt{10^{2} + 10^{2}}$, which is not significant at the conventional 95\% level.
+
+Nieuwenhuis et al. (2011) analyzed 157 behavioral, systems, and cognitive neuroscience articles that relied on such analysis and were published in journals like *Nature*, *Science*, *Neuron*, and *Journal of Neuroscience* between 2009 and 2010. They found that roughly half (79) of the articles made this error. Further, they found that the error had serious consequences for the results for approximately two-thirds of the studies that made the error. To date, none of the studies that Nieuwenhuis et al. (2011) identified as problematic have been retracted. We assess whether the citation rate changes after the publication of Nieuwenhuis et al. (2011).
 
 ### Data
 

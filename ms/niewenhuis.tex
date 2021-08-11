@@ -71,7 +71,7 @@ setwd(githubdir)
 \end{comment}
 
 \begin{document}
-\title{\Large{Propagation of Error: Citations\\ to Problematic Research}\footnote{We are grateful to Danielle Portnoy and Xiaoran Huang for assisting us with the research, and to Andrew Gelman, Kabir Khanna, and Daniel Stone for offering valuable comments. The data and scripts for replicating the analysis are posted at: \href{https://github.com/recite/propagation_of_error}{https://github.com/recite/propagation\_of\_error}}\\\vspace{5mm}}
+\title{\Large{Significant Error: Citations to Research With Publicized Statistical Errors}\footnote{We are grateful to Danielle Portnoy and Xiaoran Huang for assisting us with the research, and to Andrew Gelman, Kabir Khanna, and Daniel Stone for offering valuable comments. The data and scripts for replicating the analysis are posted at: \href{https://github.com/recite/sig_error}{https://github.com/recite/sig\_error}}\\\vspace{5mm}}
 
 \author{Ken Cor\\
 \and Gaurav Sood}
@@ -93,23 +93,17 @@ setwd(githubdir)
 \clearpage
 
 \section{Introduction}
-\subsection{Theory}
-As we note above, retractions are generally a result of serious scientific malpractice. Retractions are also easily identified. Because of these reasons, research on citations to problematic research focuses exclusively on citations to articles that have been officially retracted. However, by focusing on retractions alone, we miss the more common problem of citations to unretracted studies with major errors. For example, \citet{gelman2006} discuss a common statistical error where researchers treat differences between significant and non-significant results as significant without conducting the requisite statistical test. They describe a scenario where results from two independent studies report parameter estimates and standard errors of 25 $\pm$ 10 and 10 $\pm$ 10, respectively. The first result is significant at the 1\% level, while the second is non-significant. The finding is interpreted by many as evidence of a significant difference, but a basic calculation of the difference in the effects and its standard error tells a different story, $15 \pm \sqrt{10^{2} + 10^{2}}$, which is not significant at the conventional 95\% level.
+
+Retractions are generally a result of serious scientific malpractice. Retractions are also easily identified. Because of these reasons, research on citations to problematic research focuses exclusively on citations to articles that have been officially retracted. However, by focusing on retractions alone, we miss the more common problem of citations to unretracted studies with major errors. For example, \citet{gelman2006} discuss a common statistical error where researchers treat differences between significant and non-significant results as significant without conducting the requisite statistical test. They describe a scenario where results from two independent studies report parameter estimates and standard errors of 25 $\pm$ 10 and 10 $\pm$ 10, respectively. The first result is significant at the 1\% level, while the second is non-significant. The finding is interpreted by many as evidence of a significant difference, but a basic calculation of the difference in the effects and its standard error tells a different story, $15 \pm \sqrt{10^{2} + 10^{2}}$, which is not significant at the conventional 95\% level.
 
 \citet{nieuwenhuis2011} analyzed 157 behavioral, systems, and cognitive neuroscience articles that relied on such analysis and were published in journals like \textit{Nature}, \textit{Science}, \textit{Neuron}, and \textit{Journal of Neuroscience} between 2009 and 2010. They found that roughly half (79) of the articles made this error. Further, they found that the error had serious consequences for the results for approximately two-thirds of the studies that made the error. To date, none of the studies that \citet{nieuwenhuis2011} identified as problematic have been retracted. We assess whether the citation rate changes after the publication of \citet{nieuwenhuis2011}.
-\subsection{Research Design}
-Formally, we hypothesize that:
-\begin{enumerate}
-    \item Retracted articles will receive fewer citations per year after the retraction, controlling for the time trend in citations.
-    \item Articles identified by \citet{nieuwenhuis2011} as suffering from a general statistical error will receive fewer citations per year after the publication of  \citet{nieuwenhuis2011} vis-a-vis similar articles without the error.
-\end{enumerate}
 
-To estimate the impact of the publication of error on citation rates, we implement an event study design by tracking the citation rate a few years before and after the error is made public. Given long publication cycles and assuming the article would have been accepted for publication before the discovery of the error, we test the impact on citations one, two, and three years after the publication of the retraction notice. For \citet{nieuwenhuis2011}, we also use a Difference-in-Differences estimator, exploiting the fact that roughly half of the articles published in the same journals did not make the same error. 
+Formally, we hypothesize that: Articles identified by \citet{nieuwenhuis2011} as suffering from a general statistical error will receive fewer citations per year after the publication of  \citet{nieuwenhuis2011} vis-a-vis similar articles without the error.
 
-\subsection{Data}
-The second dataset is the set of articles identified by \citet{nieuwenhuis2011} that mistake the difference between a statistically significant and statistically insignificant result as evidence that the difference is statistically significant.
+\section{Research Design}
+To estimate the impact of the publication of error on citation rates, we implement an event study design by tracking the citation rate a few years before and after the error is made public. Given long publication cycles and assuming the article would have been accepted for publication before the discovery of the error, we test the impact on citations one, two, and three years after the publication of the retraction notice. We also use a Difference-in-Differences estimator, exploiting the fact that roughly half of the articles published in the same journals did not make the same error. 
 
-\subsection{Citations Before and After Publication of Nieuwenhuis et al.}
+\section{Results}
 
 Prima facie evidence suggests little impact of the publication of \citet{nieuwenhuis2011} on citations to articles mistaking the difference between significant effect and insignificant effect as evidence for a significant difference. In the two years before the publication of \citet{nieuwenhuis2011}, and the year \citet{nieuwenhuis2011} was published (2011), the 79 articles making the mistake were cited 2,267 times. Between 2012 and 2015, the articles were cited an additional 6,604 times.
 
