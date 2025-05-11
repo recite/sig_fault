@@ -19,3 +19,11 @@ Nieuwenhuis et al. (2011) analyzed 157 behavioral, systems, and cognitive neuros
 ### Authors
 
 Ken Cor and Gaurav Sood
+
+## 🔗 Adjacent Repositories
+
+- [recite/propagation_of_error](https://github.com/recite/propagation_of_error) — Retracted articles continue to get cited after being retracted.
+- [recite/re-cite.org](https://github.com/recite/re-cite.org) — Code for a web application to highlight citations to retracted articles.
+- [recite/miscitations](https://github.com/recite/miscitations) — Estimating the Frequency of Miscitations in Review Articles
+- [recite/i4replication](https://github.com/recite/i4replication) — How replicable and robust are the papers in select social science journals? We analyze replication attempts by https://i4replication.org
+- [recite/autosum](https://github.com/recite/autosum) — Summarize Publications Automatically
