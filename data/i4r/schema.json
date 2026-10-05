@@ -111,7 +111,7 @@
     },
     "publication_date": {
       "type": "string",
-      "meaning": "Earliest indexed original publication date; ISO year, month or day precision retained."
+      "meaning": "Earliest publication date reported in the accepted Crossref record; may be later than online-first. Conservative age gate; no outcome-derived dates."
     },
     "publication_year": {
       "type": "integer",
@@ -424,6 +424,62 @@
     "query_filter": {
       "type": "string",
       "meaning": "Exact OpenAlex risk-set filter; must agree with current treated metadata before matching."
+    },
+    "canonical_source_id": {
+      "type": "string",
+      "meaning": "Canonical catalog source identifying a verified same-assessment version group; otherwise source_id."
+    },
+    "adjudicated_disposition": {
+      "type": "string",
+      "meaning": "Independent source-level classification; distinct from verified exposure or paper-wide validity."
+    },
+    "adjudication_evidence": {
+      "type": "string",
+      "meaning": "Evidence supporting source eligibility, classification and any version equivalence."
+    },
+    "adjudication_locator": {
+      "type": "string",
+      "meaning": "Document/page/section references supporting independent source adjudication."
+    },
+    "adjudication_limitations": {
+      "type": "string",
+      "meaning": "Unresolved evidence or limits to source-level adjudication."
+    },
+    "source_ids": {
+      "type": "string",
+      "meaning": "Semicolon-separated source listings in a verified version group."
+    },
+    "catalog_entries": {
+      "type": "integer",
+      "meaning": "Number of catalog listings in a source-assessment unit."
+    },
+    "disposition": {
+      "type": "string",
+      "meaning": "Adjudicated source-assessment category; empty if unresolved."
+    },
+    "adjudication_conflict": {
+      "type": "string",
+      "meaning": "yes if resolved reviewers assign inconsistent dispositions to purported versions."
+    },
+    "limitations": {
+      "type": "string",
+      "meaning": "Scope limits of the source adjudication."
+    },
+    "adjudication_date": {
+      "type": "string",
+      "meaning": "Date the source evidence was adjudicated; not public disclosure date."
+    },
+    "indexed_publication_date": {
+      "type": "string",
+      "meaning": "OpenAlex indexed original-publication date, preserved separately from publisher metadata."
+    },
+    "indexed_publication_year": {
+      "type": "integer",
+      "meaning": "OpenAlex publication year used symmetrically for treated/control cohort retrieval and matching."
+    },
+    "publication_date_source": {
+      "type": "string",
+      "meaning": "Publisher metadata URL supporting the conservative article-age date; empty when unresolved."
     }
   },
   "tables": {
@@ -703,6 +759,35 @@
         "alias_openalex_id"
       ],
       "producer": "i4r_citations candidates"
+    },
+    "source_adjudications.csv": {
+      "unit": "independent source eligibility/classification decision",
+      "key": [
+        "source_id"
+      ],
+      "producer": "source evidence adjudication"
+    },
+    "control_metadata_retrieval.csv": {
+      "unit": "control publisher-metadata retrieval",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_citations control-metadata"
+    },
+    "control_metadata_provenance.csv": {
+      "unit": "accepted control publisher-metadata response",
+      "key": [
+        "article_id",
+        "provider"
+      ],
+      "producer": "i4r_citations control-metadata"
+    },
+    "source_units.csv": {
+      "unit": "catalog source-equivalence group, not necessarily one independent article assessment",
+      "key": [
+        "canonical_source_id"
+      ],
+      "producer": "i4r_registry build"
     }
   }
 }

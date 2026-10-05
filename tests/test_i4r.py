@@ -21,6 +21,8 @@ def article(aid, year=2010):
         journal_id="S1",
         publication_year=str(year),
         publication_date=f"{year}-06-01",
+        indexed_publication_year=str(year),
+        indexed_publication_date=f"{year}-06-01",
         type="article",
         identity_verified="yes",
         retracted="no",
@@ -372,6 +374,268 @@ class PipelineIntegrityTests(unittest.TestCase):
             self.assertEqual(
                 sources.read("citation_retrieval.csv")[0]["status"], "incomplete"
             )
+
+
+class AdjudicationTests(unittest.TestCase):
+    def test_verified_versions_count_once_with_complete_assessment(self):
+        import i4r_registry as registry
+
+        reviews = [
+            dict(
+                source_id=sid,
+                assessment_eligibility="unresolved",
+                assessment_resolved="no",
+            )
+            for sid in ["dp_1", "report_1", "dp_2"]
+        ]
+        decisions = [
+            dict(
+                source_id="dp_1",
+                assessment_eligibility="yes",
+                assessment_resolved="yes",
+                canonical_source_id="dp_1",
+                disposition="minor_error",
+                evidence="Body: corrected result unchanged",
+            ),
+            dict(
+                source_id="report_1",
+                assessment_eligibility="yes",
+                assessment_resolved="no",
+                canonical_source_id="dp_1",
+                disposition="minor_error",
+                evidence="Same report text, different cover",
+            ),
+        ]
+        rows, units = registry.adjudicate_reviews(reviews, decisions)
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(len(units), 2)
+        complete = next(r for r in units if r["canonical_source_id"] == "dp_1")
+        self.assertEqual(complete["assessment_resolved"], "yes")
+        self.assertEqual(complete["catalog_entries"], 2)
+        pending = next(r for r in units if r["canonical_source_id"] == "dp_2")
+        self.assertEqual(pending["assessment_eligibility"], "unresolved")
+
+    def test_conflicting_versions_are_unresolved(self):
+        import i4r_registry as registry
+
+        reviews = [dict(source_id=sid) for sid in ["a", "b"]]
+        decisions = [
+            dict(
+                source_id=sid,
+                canonical_source_id="a",
+                assessment_eligibility="yes",
+                assessment_resolved="yes",
+                disposition=label,
+                evidence="Document read",
+            )
+            for sid, label in [("a", "minor_error"), ("b", "material_error")]
+        ]
+        _, units = registry.adjudicate_reviews(reviews, decisions)
+        self.assertEqual(units[0]["adjudication_conflict"], "yes")
+        self.assertEqual(units[0]["assessment_resolved"], "no")
+
+    def test_cyclic_or_unsupported_equivalence_fails(self):
+        import i4r_registry as registry
+
+        reviews = [dict(source_id=sid) for sid in ["a", "b"]]
+        decisions = [
+            dict(
+                source_id=sid,
+                canonical_source_id=other,
+                assessment_eligibility="yes",
+                assessment_resolved="yes",
+                disposition="favorable",
+                evidence="Document read",
+            )
+            for sid, other in [("a", "b"), ("b", "a")]
+        ]
+        with self.assertRaisesRegex(ValueError, "Cyclic"):
+            registry.adjudicate_reviews(reviews, decisions)
+        decisions[0]["evidence"] = ""
+        with self.assertRaisesRegex(ValueError, "lacks evidence"):
+            registry.adjudicate_reviews(reviews, decisions)
+
+
+class CrossrefIdentityTests(unittest.TestCase):
+    def test_exact_titles_are_unique_and_generic_titles_stay_unresolved(self):
+        import i4r_registry as registry
+
+        original = dict(
+            title=["An empirical study of schooling"],
+            DOI="10.1/a",
+            type="journal-article",
+        )
+        other = original | {"DOI": "10.1/b"}
+        self.assertEqual(
+            registry.crossref_title_match(
+                "An empirical study of schooling", [original]
+            ),
+            original,
+        )
+        self.assertIsNone(
+            registry.crossref_title_match(
+                "An empirical study of schooling", [original, other]
+            )
+        )
+        self.assertIsNone(
+            registry.crossref_title_match(
+                "A different empirical study of schooling", [original]
+            )
+        )
+        self.assertIsNone(
+            registry.crossref_title_match(
+                "Introduction", [original | {"title": ["Introduction"]}]
+            )
+        )
+
+
+class NewIntegrityTests(unittest.TestCase):
+    def test_grouped_download_repairs_stale_peer_and_records_actual_hash(self):
+        import hashlib
+
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "CACHE", Path(tmp)
+        ):
+            folder = Path(tmp) / "documents"
+            folder.mkdir()
+            rows = [
+                dict(document_id=i, format="csv", url="https://example.org/table.csv")
+                for i in ["a", "b"]
+            ]
+            (folder / "a.csv").write_bytes(b"x\n1\n")
+            (folder / "b.csv").write_bytes(b"stale")
+            sidecar = dict(
+                url=rows[0]["url"],
+                sha256=hashlib.sha256(b"x\n1\n").hexdigest(),
+                retrieved_at="2026-10-05",
+                bytes=4,
+            )
+            (folder / "a.csv.source.json").write_text(json.dumps(sidecar))
+            (folder / "b.csv.source.json").write_text("{}")
+            results = sources.acquire_document_group(rows)
+            self.assertTrue(all(r["status"] == "retrieved" for r in results))
+            for r in results:
+                data = (folder / (r["document_id"] + ".csv")).read_bytes()
+                self.assertEqual(hashlib.sha256(data).hexdigest(), r["sha256"])
+            self.assertEqual(
+                json.loads((folder / "b.csv.source.json").read_text()), sidecar
+            )
+
+    def test_extensionless_pdf_is_extracted(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "CACHE", Path(tmp)
+        ), patch.object(sources, "fetch", return_value=b"%PDF-1.4\n"), patch.object(
+            sources.subprocess, "run"
+        ) as run:
+            result = sources.acquire_document(
+                dict(document_id="test", format="", url="https://example.org/file")
+            )
+            self.assertEqual(result["status"], "retrieved")
+            self.assertEqual(run.call_args.args[0][0], "pdftotext")
+
+    def test_short_title_can_verify_known_doi_but_not_title_search(self):
+        import i4r_registry as registry
+
+        work = dict(
+            title=["Finance and Growth"], DOI="10.1/test", type="journal-article"
+        )
+        self.assertIsNone(registry.crossref_title_match("Finance and Growth", [work]))
+        self.assertEqual(
+            registry.crossref_title_match("Finance and Growth", [work], known_doi=True),
+            work,
+        )
+
+    def test_indexed_and_publisher_clocks_are_separate_and_symmetric(self):
+        import i4r_registry as registry
+
+        a = article("a", 2012) | dict(
+            doi="10.1/a", publication_date="", publication_year=""
+        )
+        registry.publisher_date(
+            a,
+            {
+                "published-online": {"date-parts": [[2010, 3]]},
+                "published-print": {"date-parts": [[2012, 1]]},
+            },
+        )
+        self.assertEqual(a["publication_date"], "2010-03")
+        self.assertEqual(a["indexed_publication_year"], "2012")
+        self.assertIn("publication_year:2011-2013", registry.risk_filter(a))
+        self.assertEqual(
+            len(matching.eligible_events([event(aid="a", year=2013)], [a], 2025, 1)[0]),
+            1,
+        )
+        a["publication_date"] = ""
+        self.assertEqual(
+            matching.eligible_events([event(aid="a", year=2013)], [a], 2025, 1)[1][0][
+                "reason"
+            ],
+            "publication_date_unresolved",
+        )
+
+    def test_control_alias_preserves_verified_publisher_clock(self):
+        old = article("old", 2012) | dict(
+            doi="10.1/test",
+            openalex_id="W2",
+            publication_date="2010-03",
+            publication_year="2010",
+            publication_date_source="https://api.crossref.org/works/10.1/test",
+        )
+        fresh = article("new", 2011) | dict(
+            doi="10.1/test",
+            openalex_id="W1",
+            publication_date="",
+            publication_year="",
+            publication_date_source="",
+        )
+        rows, aliases = citations.canonical_controls([old, fresh], [])
+        self.assertEqual(rows[0]["openalex_id"], "W1")
+        self.assertEqual(rows[0]["indexed_publication_year"], "2011")
+        self.assertEqual(rows[0]["publication_date"], "2010-03")
+        self.assertEqual(len(aliases), 2)
+
+    def test_conflicting_eligibility_cannot_be_resolved(self):
+        import i4r_registry as registry
+
+        reviews = [dict(source_id=sid) for sid in ["a", "b"]]
+        decisions = [
+            dict(
+                source_id="a",
+                canonical_source_id="a",
+                assessment_eligibility="yes",
+                assessment_resolved="yes",
+                disposition="favorable",
+                evidence="Report reviewed",
+            ),
+            dict(
+                source_id="b",
+                canonical_source_id="a",
+                assessment_eligibility="no",
+                assessment_resolved="no",
+                disposition="methods",
+                evidence="Methods only",
+            ),
+        ]
+        _, units = registry.adjudicate_reviews(reviews, decisions)
+        self.assertEqual(units[0]["assessment_eligibility"], "unresolved")
+        self.assertEqual(units[0]["assessment_resolved"], "no")
+        self.assertEqual(units[0]["adjudication_conflict"], "yes")
+
+    def test_existing_resolved_review_keeps_its_classification(self):
+        import i4r_registry as registry
+
+        _, units = registry.adjudicate_reviews(
+            [
+                dict(
+                    source_id="a",
+                    assessment_eligibility="yes",
+                    assessment_resolved="yes",
+                    classification="favorable",
+                )
+            ],
+            [],
+        )
+        self.assertEqual(units[0]["disposition"], "favorable")
 
 
 if __name__ == "__main__":

@@ -184,7 +184,15 @@ def match(
                 or r["type"] != treated["type"]
             ):
                 continue
-            if abs(int(r["publication_year"]) - int(treated["publication_year"])) > 1:
+            if not registry.matching_year(r) or not registry.matching_year(treated):
+                continue
+            if (
+                abs(
+                    int(registry.matching_year(r))
+                    - int(registry.matching_year(treated))
+                )
+                > 1
+            ):
                 continue
             reason = ""
             if r.get("identity_verified") != "yes":

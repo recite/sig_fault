@@ -7,17 +7,28 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Catalog entries | 714 |
 | Discussion papers | 331 |
 | Report listings | 383 |
-| Retrieved documents (including separate replies and repeated files) | 622 |
-| Candidate article identities (not a final distinct-paper count) | 436 |
-| Publisher/OpenAlex-verified article identities | 192 |
+| Retrieved documents (including separate replies and repeated files) | 1355 |
+| Distinct retrieved document URLs | 754 |
+| Retrieved listing metadata records | 707 |
+| Candidate article identities (not a final distinct-paper count) | 434 |
+| Publisher/OpenAlex-verified article identities | 383 |
 | Source review/disposition records | 714 |
-| Curated material-error candidate records | 23 |
-| Source-verified material-error disclosures with verified public year | 6 |
-| Disclosures satisfying the primary date/age window | 3 |
+| Source units after verified duplicate links | 637 |
+| Verified duplicate listings collapsed | 77 |
+| Source units containing article-specific assessments | 525 |
+| Source units with resolved target classification | 374 |
+| Units whose assessment eligibility remains unresolved | 26 |
+| Curated material-error candidate records | 28 |
+| Source-verified material-error disclosures with verified public year | 19 |
+| Disclosures satisfying the primary date/age window | 4 |
 | Events with selected controls | 0 |
 | Complete matched article-period observations | 0 |
 
-## Review depth
+The source-level resolution fraction among confirmed assessment listings is 71.2%. Including unresolved-eligibility source units in the denominator gives 67.9%.
+
+These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. See `data/i4r/coverage_scope.json` for the unresolved scope.
+
+## Initial screening depth
 
 | Status | Catalog entries |
 | --- | ---: |
@@ -44,7 +55,7 @@ The 714 entries are documents/listings, not distinct original articles. Reports,
 
 Source review means the recorded passages were read. It does not mean the original analysis was rerun. Full-text availability, screening, a material-error assessment and a verified disclosure date are separate fields.
 
-Anonymous OSF and OpenAlex access was rate-limited during acquisition. The cached sources are retained and retrieval resumes from checkpoints. Crossref independently verifies source-supplied DOIs. Missing article metadata, citations or control pools are never filled with zeros.
+Anonymous OSF and OpenAlex access was rate-limited during acquisition. The cached sources are retained and retrieval resumes from checkpoints. Crossref verifies source-supplied DOIs and unique exact-title matches. Missing article metadata, citations or control pools are never filled with zeros.
 
 The aggregate economics/political-science package anonymizes article identities; it cannot supply the missing crosswalk. Its Appendix B roster identifies articles separately. The registry retains the 110 roster rows (109 distinct titles) rather than assuming 110 distinct papers. The psychology roster has 67 report rows and 64 distinct DOIs.
 

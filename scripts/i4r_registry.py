@@ -23,6 +23,9 @@ ARTICLE_FIELDS = [
     "journal_id",
     "publication_date",
     "publication_year",
+    "indexed_publication_date",
+    "indexed_publication_year",
+    "publication_date_source",
     "type",
     "abstract",
     "identity_verified",
@@ -43,6 +46,11 @@ REVIEW_FIELDS = [
     "related_sources",
     "assessment_eligibility",
     "assessment_resolved",
+    "canonical_source_id",
+    "adjudicated_disposition",
+    "adjudication_evidence",
+    "adjudication_locator",
+    "adjudication_limitations",
 ]
 ASSESSMENT_FIELDS = [
     "assessment_id",
@@ -115,6 +123,85 @@ def normalize_review(r):
     )
 
 
+def adjudicate_reviews(reviews, decisions):
+    pilot.unique(decisions, ["source_id"])
+    lookup = {r["source_id"]: dict(r) for r in reviews}
+    for decision in decisions:
+        sid = decision["source_id"]
+        if sid not in lookup:
+            raise ValueError("Adjudication outside frozen catalog: " + sid)
+        eligibility = decision["assessment_eligibility"]
+        resolved = decision["assessment_resolved"]
+        if eligibility not in {"yes", "no", "unresolved"} or resolved not in {
+            "yes",
+            "no",
+        }:
+            raise ValueError("Invalid adjudication status")
+        if resolved == "yes" and eligibility != "yes":
+            raise ValueError("Resolved assessment must be eligible")
+        if (eligibility != "unresolved" or resolved == "yes") and not decision.get(
+            "evidence"
+        ):
+            raise ValueError("Adjudication lacks evidence")
+        if decision.get("canonical_source_id", sid) != sid and not decision.get(
+            "evidence"
+        ):
+            raise ValueError("Assessment equivalence lacks evidence")
+        row = lookup[sid]
+        row.update(
+            assessment_eligibility=eligibility,
+            assessment_resolved=resolved,
+            canonical_source_id=decision.get("canonical_source_id") or sid,
+            adjudicated_disposition=decision["disposition"],
+            adjudication_evidence=decision.get("evidence", ""),
+            adjudication_locator=decision.get("evidence_locator", ""),
+            adjudication_limitations=decision.get("limitations", ""),
+        )
+    for sid, row in lookup.items():
+        row.setdefault("canonical_source_id", sid)
+        if not row["canonical_source_id"]:
+            row["canonical_source_id"] = sid
+    for sid, row in lookup.items():
+        seen, current = set(), sid
+        while lookup[current]["canonical_source_id"] != current:
+            if current in seen:
+                raise ValueError("Cyclic assessment equivalence")
+            seen.add(current)
+            current = lookup[current]["canonical_source_id"]
+            if current not in lookup:
+                raise ValueError("Canonical assessment outside frozen catalog")
+        row["canonical_source_id"] = current
+    grouped = collections.defaultdict(list)
+    for row in lookup.values():
+        grouped[row["canonical_source_id"]].append(row)
+    units = []
+    for sid, members in sorted(grouped.items()):
+        statuses = {r.get("assessment_eligibility", "unresolved") for r in members}
+        eligibility = (
+            "yes" if "yes" in statuses else "no" if statuses == {"no"} else "unresolved"
+        )
+        resolved = [r for r in members if r.get("assessment_resolved") == "yes"]
+        labels = {
+            r.get("adjudicated_disposition") or r.get("classification", "unresolved")
+            for r in resolved
+        }
+        conflict = len(labels) > 1 or {"yes", "no"}.issubset(statuses)
+        if conflict:
+            eligibility = "unresolved"
+        units.append(
+            dict(
+                canonical_source_id=sid,
+                source_ids=";".join(sorted(r["source_id"] for r in members)),
+                catalog_entries=len(members),
+                assessment_eligibility=eligibility,
+                assessment_resolved="yes" if resolved and not conflict else "no",
+                disposition=";".join(sorted(labels)),
+                adjudication_conflict="yes" if conflict else "no",
+            )
+        )
+    return list(lookup.values()), units
+
+
 def metadata_provenance(aid, path, provider):
     sidecar = path.with_suffix(path.suffix + ".source.json")
     if not sidecar.exists() and provider == "openalex":
@@ -153,7 +240,21 @@ def build(refresh_metadata=False):
                 },
             )
         )
+    rows, units = adjudicate_reviews(rows, s.read("source_adjudications.csv"))
     s.write("source_reviews.csv", rows, REVIEW_FIELDS)
+    s.write(
+        "source_units.csv",
+        units,
+        [
+            "canonical_source_id",
+            "source_ids",
+            "catalog_entries",
+            "assessment_eligibility",
+            "assessment_resolved",
+            "disposition",
+            "adjudication_conflict",
+        ],
+    )
     articles, links = {}, []
     for source in s.read("sources.csv"):
         r = reviews.get(source["source_id"], {})
@@ -178,7 +279,7 @@ def build(refresh_metadata=False):
             dict(
                 source_id=source["source_id"],
                 article_id=aid,
-                relation="assesses_or_responds_to",
+                relation="catalog_or_review_target_hint",
                 evidence=(
                     "I4R report catalog target title"
                     if source["collection"] == "reports"
@@ -307,20 +408,19 @@ def build(refresh_metadata=False):
         }
         if not accepted_title and not any(r["article_id"] == aid for r in decisions):
             continue
+        if not record["doi"]:
+            search = s.CACHE / "crossref_search" / (aid + ".json")
+            if not search.exists():
+                continue
+            matched = crossref_title_match(
+                record["title"], json.loads(search.read_text())["message"]["items"]
+            )
+            if matched is None:
+                continue
+            record["doi"] = pilot.normalize_doi(matched["DOI"])
         if pilot.normalize_doi(work["DOI"]) != record["doi"]:
             raise ValueError("Crossref DOI mismatch")
-        dates = []
-        for key in ["published-online", "published-print", "published"]:
-            parts = work.get(key, {}).get("date-parts", [[]])[0]
-            if parts:
-                dates.append(
-                    "-".join(
-                        str(n).zfill(4 if i == 0 else 2) for i, n in enumerate(parts)
-                    )
-                )
-        if dates:
-            record["publication_date"] = min(dates)
-            record["publication_year"] = record["publication_date"][:4]
+        publisher_date(record, work)
         accepted_sources.append(metadata_provenance(aid, path, "crossref"))
         record["identity_verified"] = "yes"
         if re.match(r"^RETRACTED(?: ARTICLE)?\s*:", title, flags=re.I):
@@ -398,8 +498,29 @@ def build(refresh_metadata=False):
     print("Article candidates:", len(articles), "; source reviews:", len(reviews))
 
 
+def publisher_date(record, work):
+    dates = []
+    for key in ["published-online", "published-print", "published"]:
+        parts = work.get(key, {}).get("date-parts", [[]])[0]
+        if parts:
+            dates.append(
+                "-".join(str(n).zfill(4 if i == 0 else 2) for i, n in enumerate(parts))
+            )
+    if dates:
+        record["publication_date"] = min(dates)
+        record["publication_year"] = record["publication_date"][:4]
+        record["publication_date_source"] = (
+            "https://api.crossref.org/works/" + record["doi"]
+        )
+    return record
+
+
+def matching_year(article):
+    return article.get("indexed_publication_year", article.get("publication_year", ""))
+
+
 def risk_filter(article):
-    year = int(article["publication_year"])
+    year = int(matching_year(article))
     return (
         f"primary_location.source.id:{article['journal_id']},"
         f"publication_year:{year-1}-{year+1},type:{article['type']}"
@@ -422,8 +543,11 @@ def article_from_work(work, aid=None):
         openalex_id=work["id"],
         journal=journal.get("display_name", ""),
         journal_id=journal.get("id", ""),
-        publication_date=work["publication_date"],
-        publication_year=work["publication_year"],
+        publication_date="",
+        publication_year="",
+        indexed_publication_date=work["publication_date"],
+        indexed_publication_year=work["publication_year"],
+        publication_date_source="",
         type=work["type"],
         abstract=abstract(work),
         identity_verified="yes",
@@ -502,24 +626,67 @@ def resolve(doi_only=False):
     build(refresh_metadata=True)
 
 
-def crossref_record(article):
-    if not article["doi"]:
-        return article["article_id"], "no_doi"
+def crossref_title_match(title, works, *, known_doi=False):
+    if not known_doi and len(re.findall(r"\w+", title)) < 4:
+        return None
+    matches = []
+    for work in works:
+        if work.get("type") != "journal-article" or not work.get("DOI"):
+            continue
+        base = (work.get("title") or [""])[0]
+        combined = base + (": " + work["subtitle"][0] if work.get("subtitle") else "")
+        if identity_title_key(title) in {
+            identity_title_key(base),
+            identity_title_key(combined),
+        }:
+            matches.append(work)
+    return (
+        matches[0]
+        if len({pilot.normalize_doi(w["DOI"]) for w in matches}) == 1
+        else None
+    )
+
+
+def crossref_record(article, search_titles=False):
+    doi = article["doi"]
     try:
+        if not doi:
+            if not search_titles:
+                return article["article_id"], "no_doi"
+            payload = s.fetch(
+                "https://api.crossref.org/works?"
+                + urllib.parse.urlencode(
+                    {
+                        "query.title": article["title"],
+                        "filter": "type:journal-article",
+                        "rows": 5,
+                    }
+                ),
+                s.CACHE / "crossref_search" / (article["article_id"] + ".json"),
+            )
+            matched = crossref_title_match(
+                article["title"], payload["message"]["items"]
+            )
+            if matched is None:
+                return article["article_id"], "no_unambiguous_exact_title_match"
+            doi = pilot.normalize_doi(matched["DOI"])
         s.fetch(
-            "https://api.crossref.org/works/"
-            + urllib.parse.quote(article["doi"], safe=""),
+            "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe=""),
             s.CACHE / "crossref" / (article["article_id"] + ".json"),
         )
-        return article["article_id"], "retrieved"
+        return article["article_id"], (
+            "retrieved" if article["doi"] else "exact_title_resolved"
+        )
     except Exception as exc:
         return article["article_id"], str(exc)[:150]
 
 
-def crossref():
+def crossref(search_titles=False):
     rows = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        for aid, status in pool.map(crossref_record, s.read("articles.csv")):
+        for aid, status in pool.map(
+            lambda a: crossref_record(a, search_titles), s.read("articles.csv")
+        ):
             rows.append(dict(article_id=aid, status=status))
     s.write("crossref_retrieval.csv", rows, ["article_id", "status"])
     build(refresh_metadata=True)
@@ -535,6 +702,8 @@ def validate():
         ("assessments.csv", ["assessment_id"]),
         ("events.csv", ["event_id"]),
         ("source_reviews.csv", ["source_id"]),
+        ("source_adjudications.csv", ["source_id"]),
+        ("source_units.csv", ["canonical_source_id"]),
     ]:
         pilot.unique(s.read(name), fields)
     for r in (
@@ -578,10 +747,13 @@ if __name__ == "__main__":
     parser.add_argument("command", choices=["build", "resolve", "crossref", "validate"])
     parser.add_argument("--doi-only", action="store_true")
     parser.add_argument("--refresh-metadata", action="store_true")
+    parser.add_argument("--search-titles", action="store_true")
     args = parser.parse_args()
     if args.command == "resolve":
         resolve(args.doi_only)
     elif args.command == "build":
         build(args.refresh_metadata)
+    elif args.command == "crossref":
+        crossref(args.search_titles)
     else:
-        {"crossref": crossref, "validate": validate}[args.command]()
+        validate()

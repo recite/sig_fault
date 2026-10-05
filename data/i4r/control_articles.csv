@@ -1,1 +1,1 @@
-article_id,title,doi,openalex_id,journal,journal_id,publication_date,publication_year,type,abstract,identity_verified,retracted,retraction_date,retraction_source
+article_id,title,doi,openalex_id,journal,journal_id,publication_date,publication_year,indexed_publication_date,indexed_publication_year,publication_date_source,type,abstract,identity_verified,retracted,retraction_date,retraction_source

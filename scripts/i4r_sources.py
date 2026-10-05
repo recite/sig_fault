@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import collections
 import concurrent.futures
 import datetime as dt
 import email.utils
@@ -10,6 +11,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import threading
 import time
@@ -258,8 +260,10 @@ def acquire_source(row):
             fetch(f"https://api.osf.io/v2/nodes/{node}/", folder / "node.json")
             queue = [
                 (
-                    f"https://api.osf.io/v2/nodes/{node}/files/osfstorage/"
-                    "?page[size]=100",
+                    (
+                        f"https://api.osf.io/v2/nodes/{node}/files/osfstorage/"
+                        "?page[size]=100"
+                    ),
                     "files",
                 )
             ]
@@ -391,6 +395,24 @@ def inventory():
                             ),
                         )
                     )
+        elif row["url"].lower().split("?")[0].endswith(".pdf"):
+            url = row["url"]
+            if url.startswith("https://github.com/") and "/blob/" in url:
+                url = url.replace(
+                    "https://github.com/", "https://raw.githubusercontent.com/"
+                ).replace("/blob/", "/", 1)
+            documents.append(
+                dict(
+                    source_id=sid,
+                    document_id=sid + "_download_0",
+                    name=Path(urllib.parse.urlparse(url).path).name,
+                    url=url,
+                    format="pdf",
+                    created_at="",
+                    modified_at="",
+                    date_meaning="No disclosure date inferred from URL",
+                )
+            )
         metadata.append(meta)
     (CACHE / "extracted_metadata.json").write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n"
@@ -413,11 +435,12 @@ def inventory():
 
 
 def acquire_document(row):
-    path = CACHE / "documents" / (row["document_id"] + "." + row["format"])
+    path = CACHE / "documents" / (row["document_id"] + "." + (row["format"] or "bin"))
     try:
         payload = fetch(row["url"], path, False)
-        if row["format"] == "pdf":
-            if not payload.startswith(b"%PDF"):
+        is_pdf = payload.startswith(b"%PDF")
+        if row["format"] == "pdf" or is_pdf:
+            if not is_pdf:
                 raise ValueError("Response is not a PDF")
             text_path = path.with_suffix(".txt")
             if not text_path.exists():
@@ -441,14 +464,50 @@ def acquire_document(row):
         )
 
 
+def acquire_document_group(rows):
+    def local_path(row):
+        return (
+            CACHE / "documents" / (row["document_id"] + "." + (row["format"] or "bin"))
+        )
+
+    representative = next((r for r in rows if local_path(r).exists()), rows[0])
+    result = acquire_document(representative)
+    if result["status"] == "retrieved":
+        original = local_path(representative)
+        for row in rows:
+            target = local_path(row)
+            if target == original:
+                continue
+            for old, new in [
+                (original, target),
+                (
+                    original.with_suffix(original.suffix + ".source.json"),
+                    target.with_suffix(target.suffix + ".source.json"),
+                ),
+                (original.with_suffix(".txt"), target.with_suffix(".txt")),
+            ]:
+                if old.exists():
+                    shutil.copy2(old, new)
+    return [result | {"document_id": r["document_id"]} for r in rows]
+
+
 def documents(workers=4):
-    rows = [r for r in read("documents.csv") if r["format"] in {"pdf", "csv", "xlsx"}]
+    rows = [
+        r
+        for r in read("documents.csv")
+        if r["format"] in {"pdf", "csv", "xlsx", "", "unknown"}
+    ]
+    grouped = collections.defaultdict(list)
+    for row in rows:
+        grouped[(row["url"], row["format"])].append(row)
     outcomes = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
-        for i, result in enumerate(pool.map(acquire_document, rows), 1):
-            outcomes.append(result)
+        for i, result in enumerate(
+            pool.map(acquire_document_group, grouped.values()), 1
+        ):
+            outcomes.extend(result)
             if i % 25 == 0:
-                print("Documents:", i, "/", len(rows), flush=True)
+                print("Distinct downloads:", i, "/", len(grouped), flush=True)
     write(
         "document_retrieval.csv",
         outcomes,

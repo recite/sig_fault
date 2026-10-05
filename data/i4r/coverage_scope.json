@@ -1,0 +1,36 @@
+{
+  "assessment_population_enumerated": false,
+  "as_of": "2026-10-05",
+  "reason": "Catalog entries and even verified duplicate groups do not enumerate every independent assessment in shared projects.",
+  "unresolved_scope": [
+    {
+      "source": "https://osf.io/w7vpu/",
+      "issue": "Shared 17-article assessment bundle; title-match reports separately from plans, replies and survey materials; DP124 is an aggregate synthesis."
+    },
+    {
+      "source_id": "report_b600ae8b75e9",
+      "issue": "Two independent workplace-diversity assessment teams plus reply."
+    },
+    {
+      "source_id": "report_f9082a063d37",
+      "issue": "Separate Cameron and Geraldes self-promotion assessments."
+    },
+    {
+      "source_id": "report_ffebba29c24d",
+      "issue": "Akhtar computational assessment and Aubin new-data replication are distinct."
+    },
+    {
+      "source_id": "report_d20485341bfd",
+      "issue": "Catalog effort title points to Ciria exercise/cognition critique and reply; target join unresolved."
+    },
+    {
+      "source": "OSF and other repositories",
+      "issue": "Child projects, other storage providers, archive contents and unacquired attachments still require reconciliation."
+    },
+    {
+      "source_id": "report_e7a4f728faa3",
+      "issue": "Frese computational assessment and Legewie conceptual Berlin experiment are distinct, with separate replies."
+    }
+  ],
+  "completion_rule": "At least 90% of enumerated eligible article-specific assessments resolved; source fractions alone cannot pass this gate."
+}

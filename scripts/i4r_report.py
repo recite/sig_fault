@@ -96,18 +96,35 @@ def report():
         and r["material"] == "yes"
         and r["publicity_verified"] == "yes"
     ]
-    eligible_reviews = [r for r in reviews if r["assessment_eligibility"] == "yes"]
+    units = s.read("source_units.csv")
+    eligible_reviews = [r for r in units if r["assessment_eligibility"] == "yes"]
+    unknown_units = sum(r["assessment_eligibility"] == "unresolved" for r in units)
     unresolved_eligibility = sum(
         r["assessment_eligibility"] not in {"yes", "no"} for r in reviews
     )
     resolved = sum(r["assessment_resolved"] == "yes" for r in eligible_reviews)
     coverage = resolved / len(eligible_reviews) if eligible_reviews else None
-    complete = not unresolved_eligibility and coverage is not None and coverage >= 0.9
+    denominator_bound = len(eligible_reviews) + unknown_units
+    lower_bound = resolved / denominator_bound if denominator_bound else None
+    scope = json.loads((s.DATA / "coverage_scope.json").read_text())
+    enumerated = scope["assessment_population_enumerated"] is True
+    complete = enumerated and lower_bound is not None and lower_bound >= 0.9
     counts = dict(
         catalog_entries=len(sources),
         discussion_papers=sum(r["collection"] == "discussion_papers" for r in sources),
         report_entries=sum(r["collection"] == "reports" for r in sources),
         retrieved_documents=sum(r["status"] == "retrieved" for r in documents),
+        distinct_retrieved_urls=len(
+            {
+                r["url"]
+                for r in s.read("documents.csv")
+                if r["document_id"]
+                in {d["document_id"] for d in documents if d["status"] == "retrieved"}
+            }
+        ),
+        retrieved_source_metadata=sum(
+            r["status"] == "retrieved" for r in s.read("retrieval.csv")
+        ),
         article_candidates=len(articles),
         verified_article_identities=sum(
             r["identity_verified"] == "yes" for r in articles
@@ -119,9 +136,14 @@ def report():
         matched_events=len({r["event_id"] for r in s.read("matches.csv")}),
         complete_panel_rows=len(s.read("analysis_panel.csv")),
         unresolved_assessment_eligibility=unresolved_eligibility,
+        source_units=len(units),
+        assessment_population_enumerated=enumerated,
+        unresolved_unit_eligibility=unknown_units,
+        verified_duplicate_listings=len(reviews) - len(units),
         eligible_assessments=len(eligible_reviews),
         resolved_assessments=resolved,
-        assessment_resolution_fraction=coverage,
+        source_resolution_fraction=coverage,
+        source_resolution_unknown_inclusive_fraction=lower_bound,
         substantially_complete_assessment_coverage=complete,
     )
     folder = s.ROOT / "docs/i4r"
@@ -152,11 +174,22 @@ def report():
         "retrieved_documents": (
             "Retrieved documents (including separate replies and repeated files)"
         ),
+        "distinct_retrieved_urls": "Distinct retrieved document URLs",
+        "retrieved_source_metadata": "Retrieved listing metadata records",
         "article_candidates": (
             "Candidate article identities (not a final distinct-paper count)"
         ),
         "verified_article_identities": "Publisher/OpenAlex-verified article identities",
         "source_review_records": "Source review/disposition records",
+        "source_units": "Source units after verified duplicate links",
+        "verified_duplicate_listings": "Verified duplicate listings collapsed",
+        "eligible_assessments": (
+            "Source units containing article-specific assessments"
+        ),
+        "resolved_assessments": ("Source units with resolved target classification"),
+        "unresolved_unit_eligibility": (
+            "Units whose assessment eligibility remains unresolved"
+        ),
         "curated_error_candidates": "Curated material-error candidate records",
         "verified_dated_disclosures": (
             "Source-verified material-error disclosures with verified public year"
@@ -171,7 +204,17 @@ def report():
         lines.append(f"| {label} | {counts[key]} |")
     lines += [
         "",
-        "## Review depth",
+        "The source-level resolution fraction among confirmed assessment listings is "
+        + (f"{coverage:.1%}." if coverage is not None else "not yet defined.")
+        + " Including unresolved-eligibility source units in the denominator gives "
+        + (f"{lower_bound:.1%}." if lower_bound is not None else "no defined bound."),
+        "",
+        "These are source-listing progress measures, not coverage of all independent"
+        " article assessments. Shared projects can contain several assessment teams or"
+        " articles. The 90% gate remains blocked until those units are enumerated and"
+        " reviewed. See `data/i4r/coverage_scope.json` for the unresolved scope.",
+        "",
+        "## Initial screening depth",
         "",
         "| Status | Catalog entries |",
         "| --- | ---: |",
@@ -201,7 +244,8 @@ def report():
         (
             "Anonymous OSF and OpenAlex access was rate-limited during acquisition. The"
             " cached sources are retained and retrieval resumes from checkpoints."
-            " Crossref independently verifies source-supplied DOIs. Missing article"
+            " Crossref verifies source-supplied DOIs and unique exact-title matches."
+            " Missing article"
             " metadata, citations or control pools are never filled with zeros."
         ),
         "",
@@ -241,9 +285,11 @@ def report():
             source["title"],
             source["collection"],
             r["review_status"],
-            r["classification"],
-            r["evidence_summary"],
-            r["evidence_pages"],
+            r.get("adjudicated_disposition") or r["classification"],
+            r.get("adjudication_evidence") or r["evidence_summary"],
+            r.get("adjudication_locator") or r["evidence_pages"],
+            r.get("assessment_resolved"),
+            r.get("canonical_source_id"),
         ]
         esc = [html.escape(str(x)) for x in cells]
         esc[1] = (
@@ -301,10 +347,10 @@ or a treatment-effect estimate.
 <th>Source</th>
 <th>Title</th>
 <th>Collection</th>
-<th>Review depth</th>
+<th>Initial screening depth</th>
 <th>Classification</th>
 <th>Evidence summary</th>
-<th>Location</th>
+<th>Location</th><th>Assessment resolved</th><th>Canonical source</th>
 </tr>
 </thead>
 <tbody>"""

@@ -73,8 +73,28 @@ def canonical_controls(records, targets, prior_aliases=()):
         groups[aid].append(r)
     controls, aliases = [], {}
     for aid, group in sorted(groups.items()):
-        chosen = min(group, key=lambda r: (r["publication_date"], r["openalex_id"]))
-        controls.append(chosen | {"article_id": aid})
+        chosen = min(
+            group,
+            key=lambda r: (
+                r.get("indexed_publication_date") or r["publication_date"],
+                r["openalex_id"],
+            ),
+        )
+        chosen = chosen | {"article_id": aid}
+        dated = [
+            r
+            for r in group
+            if r.get("publication_date_source") and r.get("publication_date")
+        ]
+        if dated:
+            publisher = min(dated, key=lambda r: r["publication_date"])
+            for name in [
+                "publication_date",
+                "publication_year",
+                "publication_date_source",
+            ]:
+                chosen[name] = publisher[name]
+        controls.append(chosen)
         for r in group:
             aliases[r["openalex_id"]] = aid
             for old in prior_aliases:
@@ -120,7 +140,7 @@ def candidates():
             or event["material"] != "yes"
         ):
             continue
-        if not r["journal_id"] or not r["publication_year"]:
+        if not r["journal_id"] or not registry.matching_year(r):
             queries[event["event_id"]] = dict(
                 event_id=event["event_id"],
                 status="unresolved_target_metadata",
@@ -176,6 +196,39 @@ def candidates():
     )
 
 
+def control_metadata():
+    rows = sources.read("control_articles.csv")
+    log = {r["article_id"]: r for r in sources.read("control_metadata_retrieval.csv")}
+    provenance = {
+        r["article_id"]: r for r in sources.read("control_metadata_provenance.csv")
+    }
+    for record in rows:
+        aid, status = registry.crossref_record(record)
+        path = sources.CACHE / "crossref" / (aid + ".json")
+        if status == "retrieved":
+            work = json.loads(path.read_text())["message"]
+            matched = registry.crossref_title_match(
+                record["title"], [work], known_doi=True
+            )
+            if matched and pilot.normalize_doi(work["DOI"]) == record["doi"]:
+                registry.publisher_date(record, work)
+                provenance[aid] = registry.metadata_provenance(aid, path, "crossref")
+            else:
+                status = "publisher_identity_mismatch"
+        log[aid] = dict(article_id=aid, status=status)
+        if "429" in status or "rate limit" in status:
+            break
+    sources.write("control_articles.csv", rows, registry.ARTICLE_FIELDS)
+    sources.write(
+        "control_metadata_retrieval.csv", list(log.values()), ["article_id", "status"]
+    )
+    sources.write(
+        "control_metadata_provenance.csv",
+        list(provenance.values()),
+        ["article_id", "provider", "path", "url", "sha256", "retrieved_at"],
+    )
+
+
 def normalize_edges(article_id, works):
     # DOI aliases count once, choosing the earliest indexed publication date.
     unique = {}
@@ -225,7 +278,11 @@ def collect():
     ]
     for article in articles + sources.read("control_articles.csv"):
         aid = article["article_id"]
-        if not article["openalex_id"] or article["identity_verified"] != "yes":
+        if (
+            not article["openalex_id"]
+            or article["identity_verified"] != "yes"
+            or not article["publication_year"]
+        ):
             logs[aid] = dict(article_id=aid, status="unresolved_identity", detail="")
             continue
         try:
@@ -326,8 +383,13 @@ def retractions():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["candidates", "fetch", "retractions"])
+    parser.add_argument(
+        "command", choices=["candidates", "control-metadata", "fetch", "retractions"]
+    )
     args = parser.parse_args()
-    {"candidates": candidates, "fetch": collect, "retractions": retractions}[
-        args.command
-    ]()
+    {
+        "candidates": candidates,
+        "control-metadata": control_metadata,
+        "fetch": collect,
+        "retractions": retractions,
+    }[args.command]()
