@@ -220,6 +220,93 @@ def metadata_provenance(aid, path, provider):
     )
 
 
+def assessment_inventory(units, aliases):
+    pilot.unique(units, ["unit_id"])
+    catalog = {r["source_id"] for r in s.read("sources.csv")}
+    docs = {r["document_id"]: r for r in s.read("documents.csv")}
+    docs.update({r["member_id"]: r for r in s.read("archive_members.csv")})
+    inventory, links, evidence = [], [], []
+    for row in units:
+        uid = row["unit_id"]
+        if row["assessment_eligibility"] not in {"yes", "no", "unresolved"} or row[
+            "assessment_resolved"
+        ] not in {"yes", "no"}:
+            raise ValueError("Invalid assessment unit status: " + uid)
+        if (
+            row["assessment_resolved"] == "yes"
+            and row["assessment_eligibility"] != "yes"
+        ):
+            raise ValueError("Resolved assessment unit must be eligible: " + uid)
+        roles = {d["role"] for d in row["document_ids"]}
+        substantive = {
+            "assessment",
+            "assessment_report",
+            "independent_assessment",
+            "same_assessment_discussion_paper",
+        }
+        if row["assessment_resolved"] == "yes" and not (
+            roles & substantive
+            or any(role.startswith("assessment_revised_") for role in roles)
+        ):
+            raise ValueError("Resolved unit needs an assessment report: " + uid)
+        if row.get("retrieval_source_ids") and not row.get("retrieval_alias_evidence"):
+            raise ValueError("Retrieval alias lacks evidence: " + uid)
+        declared_sources = set(
+            row["source_ids"]
+            + row.get("aggregate_context_source_ids", [])
+            + row.get("retrieval_source_ids", [])
+        )
+        if not row.get("original_title") or not row.get("reviewer_team"):
+            raise ValueError("Assessment unit lacks target/team: " + uid)
+        if row["assessment_resolved"] == "yes" and not all(
+            row.get(k) for k in ["evidence", "evidence_locator", "document_ids"]
+        ):
+            raise ValueError("Resolved assessment unit lacks evidence: " + uid)
+        aid = article_id(row["original_title"])
+        locator = row["evidence_locator"]
+        inventory.append(
+            dict(
+                unit_id=uid,
+                article_id=aliases.get(aid, aid),
+                reviewer_team="; ".join(row["reviewer_team"]),
+                assessment_eligibility=row["assessment_eligibility"],
+                assessment_resolved=row["assessment_resolved"],
+                disposition=row["disposition"],
+                evidence_summary=row["evidence"],
+                evidence_locator=(
+                    json.dumps(locator, ensure_ascii=False)
+                    if isinstance(locator, (dict, list))
+                    else locator
+                ),
+                limitations=row["limitations"],
+            )
+        )
+        for role, ids in [
+            ("assessment_source", row["source_ids"]),
+            ("aggregate_context", row.get("aggregate_context_source_ids", [])),
+            ("verified_retrieval_alias", row.get("retrieval_source_ids", [])),
+        ]:
+            for sid in ids:
+                if sid not in catalog:
+                    raise ValueError("Assessment source outside catalog: " + sid)
+                relation = (
+                    "misdirected_catalog_attachment"
+                    if row.get("catalog_mismatch", {}).get("source_id") == sid
+                    else role
+                )
+                links.append(dict(unit_id=uid, source_id=sid, relation=relation))
+        for document in row["document_ids"]:
+            did = document["document_id"]
+            if did not in docs:
+                raise ValueError("Assessment document outside inventory: " + did)
+            if docs[did]["source_id"] not in declared_sources:
+                raise ValueError("Assessment document from undeclared source: " + did)
+            evidence.append(
+                dict(unit_id=uid, document_id=did, document_role=document["role"])
+            )
+    return inventory, links, evidence
+
+
 def build(refresh_metadata=False):
     reviews = {}
     for path in sorted((s.DATA / "reviews").glob("*.json")):
@@ -325,6 +412,37 @@ def build(refresh_metadata=False):
                             evidence=r["source_id"],
                         )
                     )
+    inventory_path = s.DATA / "assessment_inventory.json"
+    unit_records = (
+        json.loads(inventory_path.read_text()) if inventory_path.exists() else []
+    )
+    for unit in unit_records:
+        aid = article_id(unit["original_title"])
+        if aid not in articles:
+            articles[aid] = dict.fromkeys(ARTICLE_FIELDS, "") | dict(
+                article_id=aid,
+                title=unit["original_title"],
+                identity_verified="pending",
+                retracted="unknown",
+            )
+        if unit.get("original_doi"):
+            doi = pilot.normalize_doi(unit["original_doi"])
+            if articles[aid]["doi"] and articles[aid]["doi"] != doi:
+                raise ValueError("Assessment target DOI conflicts with candidate")
+            articles[aid]["doi"] = doi
+        for sid in unit["source_ids"]:
+            links.append(
+                dict(
+                    source_id=sid,
+                    article_id=aid,
+                    relation=(
+                        "misdirected_catalog_attachment"
+                        if unit.get("catalog_mismatch", {}).get("source_id") == sid
+                        else "document_verified_assessment_target"
+                    ),
+                    evidence=unit["unit_id"],
+                )
+            )
     for r in s.read("curated_claims.csv"):
         aid = article_id(r["title"])
         if aid not in articles:
@@ -483,6 +601,28 @@ def build(refresh_metadata=False):
         "article_aliases.csv",
         [dict(alias=k, article_id=v) for k, v in aliases.items()],
         ["alias", "article_id"],
+    )
+    unit_rows, unit_links, unit_docs = assessment_inventory(unit_records, aliases)
+    s.write(
+        "assessment_inventory.csv",
+        unit_rows,
+        [
+            "unit_id",
+            "article_id",
+            "reviewer_team",
+            "assessment_eligibility",
+            "assessment_resolved",
+            "disposition",
+            "evidence_summary",
+            "evidence_locator",
+            "limitations",
+        ],
+    )
+    s.write("assessment_sources.csv", unit_links, ["unit_id", "source_id", "relation"])
+    s.write(
+        "assessment_documents.csv",
+        unit_docs,
+        ["unit_id", "document_id", "document_role"],
     )
     assessments, events = [], []
     for r in s.read("curated_claims.csv"):
@@ -704,6 +844,9 @@ def validate():
         ("source_reviews.csv", ["source_id"]),
         ("source_adjudications.csv", ["source_id"]),
         ("source_units.csv", ["canonical_source_id"]),
+        ("assessment_inventory.csv", ["unit_id"]),
+        ("assessment_sources.csv", ["unit_id", "source_id", "relation"]),
+        ("assessment_documents.csv", ["unit_id", "document_id"]),
     ]:
         pilot.unique(s.read(name), fields)
     for r in (
@@ -711,6 +854,19 @@ def validate():
     ):
         if r["source_id"] not in sources or r["article_id"] not in articles:
             raise ValueError("Broken source/article foreign key")
+    unit_ids = {r["unit_id"] for r in s.read("assessment_inventory.csv")}
+    document_ids = {r["document_id"] for r in s.read("documents.csv")} | {
+        r["member_id"] for r in s.read("archive_members.csv")
+    }
+    for r in s.read("assessment_inventory.csv"):
+        if r["article_id"] not in articles:
+            raise ValueError("Missing assessment-unit article")
+    for r in s.read("assessment_sources.csv"):
+        if r["unit_id"] not in unit_ids or r["source_id"] not in sources:
+            raise ValueError("Broken assessment-unit source link")
+    for r in s.read("assessment_documents.csv"):
+        if r["unit_id"] not in unit_ids or r["document_id"] not in document_ids:
+            raise ValueError("Broken assessment-unit document link")
     assessments = {r["assessment_id"]: r for r in s.read("assessments.csv")}
     for r in s.read("events.csv"):
         if r["assessment_id"] not in assessments:

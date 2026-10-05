@@ -638,5 +638,365 @@ class NewIntegrityTests(unittest.TestCase):
         self.assertEqual(units[0]["disposition"], "favorable")
 
 
+class ArchiveAndUnitTests(unittest.TestCase):
+    def test_archive_paths_duplicate_names_and_metadata_forks(self):
+        import hashlib
+        import io
+        import warnings
+        import zipfile
+
+        payload = io.BytesIO()
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", UserWarning)
+            with zipfile.ZipFile(payload, "w") as z:
+                z.writestr("../../outside.txt", "first")
+                z.writestr("../../outside.txt", "second")
+                z.writestr("folder/__MACOSX/._report.txt", "metadata")
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "ROOT", Path(tmp)
+        ), patch.object(sources, "CACHE", Path(tmp) / "cache"):
+            rows = sources.archive_members(
+                dict(source_id="s", document_id="z"), payload.getvalue()
+            )
+            extracted = [r for r in rows if r["status"] == "extracted"]
+            self.assertEqual(len(extracted), 2)
+            self.assertEqual(len({r["member_id"] for r in extracted}), 2)
+            for row in extracted:
+                target = Path(tmp) / row["local_path"]
+                self.assertTrue(
+                    target.resolve().is_relative_to(
+                        (Path(tmp) / "cache/documents").resolve()
+                    )
+                )
+                self.assertEqual(
+                    hashlib.sha256(target.read_bytes()).hexdigest(), row["sha256"]
+                )
+            self.assertFalse((Path(tmp) / "outside.txt").exists())
+
+    def test_extensionless_archive_pdf_and_extraction_failure(self):
+        import io
+        import zipfile
+
+        payload = io.BytesIO()
+        with zipfile.ZipFile(payload, "w") as z:
+            z.writestr("Report", b"%PDF-1.4\n")
+            z.writestr("not_a_pdf.pdf", b"error page")
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "ROOT", Path(tmp)
+        ), patch.object(sources, "CACHE", Path(tmp) / "cache"), patch.object(
+            sources.subprocess, "run"
+        ) as run:
+            rows = sources.archive_members(
+                dict(source_id="s", document_id="z"), payload.getvalue()
+            )
+            self.assertEqual(rows[0]["status"], "extracted")
+            self.assertEqual(rows[0]["format"], "pdf")
+            self.assertTrue(rows[1]["status"].startswith("extraction_failed:"))
+            self.assertEqual(run.call_count, 1)
+
+    def test_oversized_and_nested_members_stay_explicit(self):
+        import io
+        import zipfile
+
+        payload = io.BytesIO()
+        with zipfile.ZipFile(payload, "w") as z:
+            z.writestr("large.txt", "oversized")
+            z.writestr("nested.zip", b"not extracted")
+        rows = sources.archive_members(
+            dict(source_id="s", document_id="z"), payload.getvalue(), member_limit=3
+        )
+        self.assertEqual(
+            [r["status"] for r in rows],
+            ["member_size_limit", "nested_archive_unresolved"],
+        )
+        self.assertTrue(all(not r["local_path"] for r in rows))
+
+    def test_archive_size_is_checked_even_without_osf_size(self):
+        records = {
+            "documents.csv": [
+                dict(
+                    source_id="s",
+                    document_id="z",
+                    format="zip",
+                    url="https://example.org/z",
+                )
+            ]
+        }
+        saved = {}
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "CACHE", Path(tmp)
+        ), patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ), patch.object(
+            sources, "fetch_archive", side_effect=ValueError("archive_size_limit")
+        ), patch.object(
+            sources,
+            "write",
+            side_effect=lambda name, rows, fields: saved.update({name: rows}),
+        ):
+            sources.archives(workers=1, max_archive_mb=1)
+        self.assertEqual(
+            saved["archive_retrieval.csv"][0]["status"], "archive_size_limit"
+        )
+        self.assertEqual(saved["archive_members.csv"], [])
+
+    def test_streamed_archive_checks_hash_limits_and_partial_cleanup(self):
+        import io
+
+        class Response(io.BytesIO):
+            headers = {}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "archive.zip"
+            url = "https://example.org/archive.zip"
+            with patch.object(
+                sources.urllib.request,
+                "urlopen",
+                return_value=Response(b"archive bytes"),
+            ):
+                with self.assertRaisesRegex(ValueError, "archive_size_limit"):
+                    sources.fetch_archive(url, target, max_bytes=4)
+            self.assertFalse(target.exists())
+            self.assertFalse(target.with_suffix(".zip.part").exists())
+            with patch.object(
+                sources.urllib.request,
+                "urlopen",
+                return_value=Response(b"archive bytes"),
+            ):
+                sources.fetch_archive(url, target, max_bytes=100)
+            with patch.object(
+                sources.urllib.request,
+                "urlopen",
+                side_effect=AssertionError("Cached data must not use network"),
+            ):
+                self.assertEqual(
+                    sources.fetch_archive(url, target, max_bytes=1), target
+                )
+                target.write_bytes(b"altered")
+                with self.assertRaisesRegex(ValueError, "hash mismatch"):
+                    sources.fetch_archive(url, target, max_bytes=100)
+
+    def test_repository_children_providers_pagination_and_cycle(self):
+        base = "https://api.osf.io/v2/nodes/"
+
+        def rel(url):
+            return {"links": {"related": {"href": url}}}
+
+        def collection(data, next_url=None):
+            return dict(data=data, links=dict(next=next_url))
+
+        root_files = base + "root1/files/?page[size]=100"
+        root_children = base + "root1/children/?page[size]=100"
+        child_files = base + "child/files/?page[size]=100"
+        child_children = base + "child/children/?page[size]=100"
+        listing = base + "child/files/osfstorage/?page[size]=100"
+        pages = {
+            root_files: collection([]),
+            root_children: collection(
+                [
+                    dict(
+                        relationships=dict(
+                            files=rel(base + "child/files/"),
+                            children=rel(base + "child/children/"),
+                        )
+                    )
+                ]
+            ),
+            child_files: collection(
+                [
+                    dict(
+                        attributes=dict(kind="folder"),
+                        relationships=dict(files=rel(base + "child/files/osfstorage/")),
+                    )
+                ]
+            ),
+            child_children: collection(
+                [
+                    dict(
+                        relationships=dict(
+                            files=rel(base + "root1/files/"),
+                            children=rel(base + "root1/children/"),
+                        )
+                    )
+                ]
+            ),
+            listing: collection([], "https://api.osf.io/page2"),
+            "https://api.osf.io/page2": collection(
+                [
+                    dict(
+                        id="file1",
+                        attributes=dict(kind="file", name="Report.pdf"),
+                        links=dict(download="https://osf.io/download/a/"),
+                    )
+                ]
+            ),
+        }
+        records = {
+            "sources.csv": [
+                dict(source_id="s", collection="reports", url="https://osf.io/root1/")
+            ]
+        }
+        saved = {}
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "CACHE", Path(tmp)
+        ), patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ), patch.object(
+            sources, "fetch", side_effect=lambda url, path: pages[url]
+        ) as fetch, patch.object(
+            sources,
+            "write",
+            side_effect=lambda name, rows, fields: saved.update({name: rows}),
+        ):
+            sources.expand_repositories()
+        self.assertEqual(fetch.call_count, 6)
+        self.assertEqual(saved["repository_documents.csv"][0]["document_id"], "s_file1")
+        self.assertTrue(
+            all(r["status"] == "retrieved" for r in saved["repository_queries.csv"])
+        )
+
+    def test_independent_teams_remain_distinct_and_replies_are_support(self):
+        import i4r_registry as registry
+
+        common = dict(
+            original_title="One original paper",
+            original_doi="",
+            source_ids=["s"],
+            assessment_eligibility="yes",
+            assessment_resolved="yes",
+            disposition="minor",
+            evidence="Corrected finding survives",
+            evidence_locator="page 3",
+            limitations="Source check",
+            document_ids=[
+                dict(document_id="d", role="assessment"),
+                dict(document_id="reply", role="author_reply"),
+            ],
+        )
+        units = [
+            common | dict(unit_id="u1", reviewer_team=["Team one"]),
+            common | dict(unit_id="u2", reviewer_team=["Team two"]),
+        ]
+        records = {
+            "sources.csv": [dict(source_id="s")],
+            "documents.csv": [
+                dict(document_id="d", source_id="s"),
+                dict(document_id="reply", source_id="s"),
+            ],
+        }
+        with patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ):
+            rows, links, docs = registry.assessment_inventory(units, {})
+            self.assertEqual(len(rows), 2)
+            self.assertEqual(len({r["article_id"] for r in rows}), 1)
+            self.assertEqual(len(docs), 4)
+            with self.assertRaises(ValueError):
+                registry.assessment_inventory([units[0], units[0]], {})
+            units[0]["document_ids"] = [dict(document_id="missing", role="assessment")]
+            with self.assertRaisesRegex(ValueError, "outside inventory"):
+                registry.assessment_inventory(units, {})
+
+
+class AssessmentValidationTests(unittest.TestCase):
+    def test_completion_uses_full_assessment_population_not_selected_bundles(self):
+        import i4r_report as report
+
+        resolved = dict(assessment_eligibility="yes", assessment_resolved="yes")
+        unknown = dict(assessment_eligibility="unresolved", assessment_resolved="no")
+        self.assertFalse(report.assessment_completion([resolved] * 10, False))
+        self.assertFalse(
+            report.assessment_completion([resolved] * 8 + [unknown] * 2, True)
+        )
+        self.assertTrue(report.assessment_completion([resolved] * 9 + [unknown], True))
+        self.assertFalse(report.assessment_completion([], True))
+
+    def test_resolved_units_require_eligibility_report_and_source_provenance(self):
+        import copy
+
+        import i4r_registry as registry
+
+        base = dict(
+            unit_id="u",
+            original_title="Original paper",
+            reviewer_team=["Reviewer"],
+            source_ids=["s"],
+            assessment_eligibility="yes",
+            assessment_resolved="yes",
+            disposition="favorable",
+            evidence="Result reproduced",
+            evidence_locator="p2",
+            limitations="No rerun",
+            document_ids=[dict(document_id="d", role="assessment")],
+        )
+        records = {
+            "sources.csv": [dict(source_id="s"), dict(source_id="other")],
+            "documents.csv": [
+                dict(document_id="d", source_id="s"),
+                dict(document_id="foreign", source_id="other"),
+            ],
+        }
+        cases = [
+            (dict(assessment_eligibility="no"), "must be eligible"),
+            (
+                dict(
+                    document_ids=[
+                        dict(document_id="d", role="original_author_response")
+                    ]
+                ),
+                "needs an assessment report",
+            ),
+            (
+                dict(document_ids=[dict(document_id="foreign", role="assessment")]),
+                "undeclared source",
+            ),
+        ]
+        with patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ):
+            for changes, message in cases:
+                with self.assertRaisesRegex(ValueError, message):
+                    registry.assessment_inventory([copy.deepcopy(base) | changes], {})
+            allowed = base | dict(
+                document_ids=[dict(document_id="foreign", role="assessment")],
+                retrieval_source_ids=["other"],
+                retrieval_alias_evidence="Shared project and file identity checked",
+            )
+            rows, links, docs = registry.assessment_inventory([allowed], {})
+            self.assertEqual(len(rows), 1)
+            self.assertIn("verified_retrieval_alias", [r["relation"] for r in links])
+
+    def test_pagination_loop_is_not_a_complete_collection(self):
+        records = {
+            "sources.csv": [
+                dict(source_id="s", collection="reports", url="https://osf.io/root1/")
+            ]
+        }
+
+        def fetch(url, path):
+            return dict(
+                data=[],
+                links=dict(next=url if "/files/" in url else None),
+                meta=dict(total=2),
+            )
+
+        saved = {}
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "CACHE", Path(tmp)
+        ), patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ), patch.object(
+            sources, "fetch", side_effect=fetch
+        ), patch.object(
+            sources,
+            "write",
+            side_effect=lambda name, rows, fields: saved.update({name: rows}),
+        ):
+            sources.expand_repositories()
+        failed = [r for r in saved["repository_queries.csv"] if r["status"] == "failed"]
+        self.assertEqual(len(failed), 1)
+        self.assertIn("Pagination cycle", failed[0]["detail"])
+
+
 if __name__ == "__main__":
     unittest.main()

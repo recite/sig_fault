@@ -26,7 +26,7 @@ make i4r
 make i4r-test
 ```
 
-The offline build uses committed source inventories, reviewed evidence, verified bibliographic metadata, and any completed citation tables. `source_adjudications.csv` records the catalog review decisions; `claim_adjudications.json` preserves claim-specific consequences, disputes and dating evidence; `curated_claims.csv` supplies the verified and unresolved claims to the registry. It regenerates registry tables, matching decisions, analysis outputs, and the coverage report. Private PDFs and API caches are not needed. Empty analysis output is an explicit incomplete-data status, not a zero effect.
+The offline build uses committed source inventories, reviewed evidence, verified bibliographic metadata, and any completed citation tables. `source_adjudications.csv` records the catalog review decisions; `claim_adjudications.json` preserves claim-specific consequences, disputes and dating evidence; `curated_claims.csv` supplies the verified and unresolved claims to the registry. `assessment_inventory.json` enumerates independent reviewer-team assessments in the reconciled bundles; its generated tables link each unit to its original article, reports, plans and replies. These units are distinct from claim-level error records. It regenerates registry tables, matching decisions, analysis outputs, and the coverage report. Private PDFs and API caches are not needed. Empty analysis output is an explicit incomplete-data status, not a zero effect.
 
 ## Resume acquisition
 
@@ -52,7 +52,7 @@ Full-text PDFs and raw responses remain in ignored `private-data/i4r/`. Public f
 
 ## Remaining work
 
-Resolve missing/full-text-limited assessments and establish the eligible-assessment denominator. The present downloader inventories nested OSF-storage folders; linked child projects, other storage providers, non-OSF landing-page attachments and archive contents still need reconciliation. An acquired landing page is not necessarily an acquired assessment. Keep these cases unresolved until their evidence is examined.
+Resolve missing/full-text-limited assessments and establish the eligible-assessment denominator. Provider and child-component queries have been checked for every OSF-linked catalog entry. Two projects are unauthorized, and non-OSF attachments remain a separate gap. The archive collector inventories ZIP contents and extracts bounded-size PDFs and text documents without executing their code. All 62 root ZIP archives have been acquired and inventoried. The acquisition target permits downloads up to 3,000 MiB and streams them to disk; already cached archives remain reusable under smaller download limits. Nested ZIP files and oversized members remain visible gaps. An extracted figure or original paper is not an assessment. Keep these cases unresolved until their evidence is examined.
 
 Verify additional original-paper identities and earliest disclosure dates; retrieve complete journal risk sets and incoming citation edges; then inspect support, pretrends, timing and uncertainty. Automated title search requires exact normalized agreement, a unique DOI and at least four title words; ambiguous results remain in the queue. Short titles can still be verified against an independently supplied DOI. The control metadata step checks publisher dates separately from the indexed years used to collect comparable articles. Retraction Watch supplies dated retraction screens but cannot establish that all other public criticisms have been found.
 

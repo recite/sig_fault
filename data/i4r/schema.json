@@ -480,6 +480,58 @@
     "publication_date_source": {
       "type": "string",
       "meaning": "Publisher metadata URL supporting the conservative article-age date; empty when unresolved."
+    },
+    "unit_id": {
+      "type": "string",
+      "meaning": "Stable independent assessment identifier: one reviewer team assessing one original article; distinct from a claim-level assessment_id."
+    },
+    "reviewer_team": {
+      "type": "string",
+      "meaning": "Semicolon-separated assessment authors, read from the report."
+    },
+    "document_role": {
+      "type": "string",
+      "meaning": "Role of document for this assessment: report, version, plan, response, or identified retrieval alias."
+    },
+    "archive_document_id": {
+      "type": "string",
+      "meaning": "Parent ZIP document identifier in documents.csv."
+    },
+    "member_id": {
+      "type": "string",
+      "meaning": "Archive document ID plus hash of member index and original member path; repeated member names remain distinct."
+    },
+    "member_path": {
+      "type": "string",
+      "meaning": "Original internal archive path, retained as evidence; never used as an extraction destination."
+    },
+    "uncompressed_bytes": {
+      "type": "integer",
+      "meaning": "Uncompressed archive member size from ZIP central directory."
+    },
+    "crc32": {
+      "type": "string",
+      "meaning": "ZIP member CRC32, retained as eight hexadecimal characters."
+    },
+    "archive_sha256": {
+      "type": "string",
+      "meaning": "SHA-256 of parent archive bytes, tying member extraction to the cached source."
+    },
+    "members": {
+      "type": "integer",
+      "meaning": "Number of inventoried non-directory archive members; zero if archive acquisition or parsing incomplete."
+    },
+    "query_kind": {
+      "type": "string",
+      "meaning": "OSF relationship traversal: storage providers, files, or child components."
+    },
+    "items": {
+      "type": "integer",
+      "meaning": "Number of objects returned by a successful repository relationship page; zero on failure is not evidence of empty contents."
+    },
+    "local_path": {
+      "type": "string",
+      "meaning": "Repository-relative ignored-cache path for a successfully extracted archive member; path is content-independent and does not trust the internal ZIP path."
     }
   },
   "tables": {
@@ -788,6 +840,59 @@
         "canonical_source_id"
       ],
       "producer": "i4r_registry build"
+    },
+    "archive_members.csv": {
+      "unit": "member within a retrieved ZIP archive",
+      "key": [
+        "member_id"
+      ],
+      "producer": "scripts/i4r_sources.py archives"
+    },
+    "archive_retrieval.csv": {
+      "unit": "ZIP acquisition/inventory attempt",
+      "key": [
+        "archive_document_id"
+      ],
+      "producer": "scripts/i4r_sources.py archives"
+    },
+    "assessment_inventory.csv": {
+      "unit": "independently enumerated reviewer-team assessment of one original article",
+      "key": [
+        "unit_id"
+      ],
+      "producer": "scripts/i4r_registry.py build"
+    },
+    "assessment_sources.csv": {
+      "unit": "assessment-to-catalog-source relation",
+      "key": [
+        "unit_id",
+        "source_id",
+        "relation"
+      ],
+      "producer": "scripts/i4r_registry.py build"
+    },
+    "assessment_documents.csv": {
+      "unit": "document and its role in an independent assessment",
+      "key": [
+        "unit_id",
+        "document_id"
+      ],
+      "producer": "scripts/i4r_registry.py build"
+    },
+    "repository_documents.csv": {
+      "unit": "file reached through child components or storage-provider traversal",
+      "key": [
+        "document_id"
+      ],
+      "producer": "scripts/i4r_sources.py expand"
+    },
+    "repository_queries.csv": {
+      "unit": "repository relationship page acquisition per catalog source",
+      "key": [
+        "source_id",
+        "url"
+      ],
+      "producer": "scripts/i4r_sources.py expand"
     }
   }
 }

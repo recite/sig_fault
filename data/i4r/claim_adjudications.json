@@ -595,5 +595,32 @@
     "public_year_verified": true,
     "exact_earliest_public_date_verified": false,
     "limitations": "Earliest material error at article level established in 2021 for inconsistent Amazon definition. Do not date every later HDI/aggregation error to 2021. Random-seed instability is a separate robustness issue; exact first public day may precede SSRN posting."
+  },
+  {
+    "source_id": "dp_311",
+    "original_title": "Decoding the elite soccer player’s psychological profile",
+    "original_doi": "10.1073/pnas.2415126122",
+    "doi_verified": true,
+    "doi_source": "https://www.psych.ox.ac.uk/publications/2078989",
+    "error_type": "incorrect reverse scoring of personality items",
+    "affected_claim": "Elite soccer players exhibit reduced agreeableness, a feature interpreted as potentially advantageous in intense competition.",
+    "substantive_consequence": "Original low-agreeableness interpretation is materially undermined. Authors’ recalibrated normative comparison reverses direction, but exact corrected original contrast is not validated.",
+    "public_disclosure_source_ids": [
+      "dp_311",
+      "dp_312"
+    ],
+    "substantiated_public_year": 2026,
+    "substantiated_public_date_precision": "month",
+    "substantiated_public_month": "2026-08",
+    "public_date_evidence": "DP311 and DP312 I4R title pages explicitly August2026; scoring-error confirmation and consequence appear in public DP312.",
+    "public_date_source": "https://hdl.handle.net/10419/342982",
+    "earliest_public_date_verified": false,
+    "earlier_disclosure_search_limit": "GitHub critique repository identified but earliest public visibility/version was not established. Do not treat private submission dates as public disclosure.",
+    "corrected_effect_independently_verified": false,
+    "error_verified": true,
+    "material_error_verified": true,
+    "evidence": "Author response identifies incorrect reverse scoring affecting four of six Agreeableness items (and one Openness item), not merely unusual correlations. The original abstract and discussion prominently characterize elite players as less agreeable. Authors acknowledge that the scoring correction substantially changes Agreeableness scores and that their revised personality analysis yields the opposite direction. This materially undermines that original substantive personality claim independently of unresolved broad data-integrity allegations.",
+    "evidence_locator": "dp312 PDF pp.17,26-28 (especially lines 415–425 and 613–678),63; original abstract/discussion https://pmc.ncbi.nlm.nih.gov/articles/PMC11760505/",
+    "limitations": "Only a small subset of questionnaires was recovered. Authors fit calibration models to that subset and apply them elsewhere, then compare players against German norms instead of original Brazilian controls. Therefore neither the exact corrected effect nor reversal of the original matched-control contrast is independently established. The narrow qualifying error is wrong scoring invalidating an emphasized original trait interpretation; fabrication and global dataset invalidity remain unproven."
   }
 ]

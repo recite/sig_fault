@@ -82,8 +82,10 @@ i4r:
 
 i4r-sources:
 	python3 scripts/i4r_sources.py fetch
+	python3 scripts/i4r_sources.py expand
 	python3 scripts/i4r_sources.py inventory
 	python3 scripts/i4r_sources.py documents
+	python3 scripts/i4r_sources.py archives --max-archive-mb 3000
 	python3 scripts/i4r_sources.py manifest
 
 i4r-test: i4r

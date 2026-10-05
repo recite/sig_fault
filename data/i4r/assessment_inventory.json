@@ -1,0 +1,1369 @@
+[
+  {
+    "unit_id": "w7vpu_assessment_6602ddaaa8fcbc010736e6b8",
+    "original_title": "Commercial Imperialism? Political Influence and Trade during the Cold War",
+    "original_doi": "10.1257/aer.103.2.863",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.2.863",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_0f5d0a6ce514",
+      "dp_131"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddaaa8fcbc010736e6b8",
+        "osf_file_id": "6602ddaaa8fcbc010736e6b8",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddaaa8fcbc010736e6b8.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbab177543ca1933ccd61",
+        "osf_file_id": "689cbab177543ca1933ccd61",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "All regression tables reproduce. Added NATO trade/aid controls and influence exclusions weaken specificity of the US-intervention effect; no consequential coding error established. The conclusion accidentally mentions institutional ownership, an error in this report rather than in the original article.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        11
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project.",
+        "Individual DP report title/reviewer team and long abstract text match; not inferred from aggregate abstract containment."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddaac9e09000ebbde57c",
+    "original_title": "Coercive Contract Enforcement: Law and the Labor Market in Nineteenth Century Industrial Britain",
+    "original_doi": "10.1257/aer.103.1.107",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.1.107",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_07d5d343c603",
+      "dp_130"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddaac9e09000ebbde57c",
+        "osf_file_id": "6602ddaac9e09000ebbde57c",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddaac9e09000ebbde57c.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbab13f91f5a3af3ccee8",
+        "osf_file_id": "689cbab13f91f5a3af3ccee8",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Original tables reproduce. Triple differences against other prosecutions and region-by-year effects weaken the textile-demand finding; other checks preserve it. Alternative identifying assumptions, not demonstrated original data/code error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        8
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project.",
+        "Individual DP report title/reviewer team and long abstract text match; not inferred from aggregate abstract containment."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddabb3a1e300e07df62d",
+    "original_title": "Discretionary Tax Changes and the Macroeconomy: New Narrative Evidence from the United Kingdom",
+    "original_doi": "10.1257/aer.103.4.1507",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.4.1507",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_859116e7eb38",
+      "dp_132"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddabb3a1e300e07df62d",
+        "osf_file_id": "6602ddabb3a1e300e07df62d",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddabb3a1e300e07df62d.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbab877543ca1933ccd65",
+        "osf_file_id": "689cbab877543ca1933ccd65",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "VAR tables/figures reproduce; response shape remains broadly stable. Bootstrap residual-sampling choices change precision while baseline coefficients remain similar. No consequential coding error established.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        16
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project.",
+        "Individual DP report title/reviewer team and long abstract text match; not inferred from aggregate abstract containment."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddabb3a1e300ec7df9ff",
+    "original_title": "Convex Supply Curves",
+    "original_doi": "",
+    "doi_verification_source": "",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_573bd43586da"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddabb3a1e300ec7df9ff",
+        "osf_file_id": "6602ddabb3a1e300ec7df9ff",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddabb3a1e300ec7df9ff.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbab5dbb82738361f1fc4",
+        "osf_file_id": "689cbab5dbb82738361f1fc4",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_688873c853738286562341be",
+        "osf_file_id": "688873c853738286562341be",
+        "role": "original_author_reply",
+        "version": "supporting response; not separate independent assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_dispute",
+    "evidence": "Alternative price indices, instruments and removed controls weaken estimates. Original-author reply disputes removing theory-required controls and interpreting weak-IV estimates. Report itself distinguishes robustness from instrument validity. No demonstrated consequential error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        22
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddacb3a1e300ec7dfa01",
+    "original_title": "Innovation and Institutional Ownership",
+    "original_doi": "10.1257/aer.103.1.277",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.1.277",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_ec78c1f06296",
+      "dp_134"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddacb3a1e300ec7dfa01",
+        "osf_file_id": "6602ddacb3a1e300ec7dfa01",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddacb3a1e300ec7dfa01.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbad07f0801bdd613c7ba",
+        "osf_file_id": "689cbad07f0801bdd613c7ba",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Original regressions reproduce. Firm and sector-year effects weaken ownership/innovation association; multicollinearity complicates preferred control-function inference. This is specification and identification criticism, not verified discrete coding error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        9
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project.",
+        "Individual DP report title/reviewer team and long abstract text match; not inferred from aggregate abstract containment."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddacc9e09000ebbde57e",
+    "original_title": "Going to a Better School: Effects and Behavioral Responses",
+    "original_doi": "10.1257/aer.103.4.1289",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.4.1289",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_485c06b26373",
+      "dp_133"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddacc9e09000ebbde57e",
+        "osf_file_id": "6602ddacc9e09000ebbde57e",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddacc9e09000ebbde57e.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbacd33dc6bbf8c13c4a3",
+        "osf_file_id": "689cbacd33dc6bbf8c13c4a3",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_688873cbf17815c6db2340e4",
+        "osf_file_id": "688873cbf17815c6db2340e4",
+        "role": "original_author_reply",
+        "version": "supporting response; not separate independent assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Exam-score finding survives all assessed specifications. Smaller survey-sample homework/peer findings are more sensitive to bandwidth, controls and influence. Author reply emphasizes these are two of eleven behavioral outcomes.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        17
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project.",
+        "Individual DP report title/reviewer team and long abstract text match; not inferred from aggregate abstract containment."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddad9dc8ef00f88981bb",
+    "original_title": "Interaction, Stereotypes, and Performance: Evidence from South Africa",
+    "original_doi": "10.1257/aer.20181805",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20181805",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "B. Kaan Basdil"
+    ],
+    "source_ids": [
+      "report_117ccd13ae51"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddad9dc8ef00f88981bb",
+        "osf_file_id": "6602ddad9dc8ef00f88981bb",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddad9dc8ef00f88981bb.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbad189de62ba26d5a10e",
+        "osf_file_id": "689cbad189de62ba26d5a10e",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_688a56d976f3876855a23ec0",
+        "osf_file_id": "688a56d976f3876855a23ec0",
+        "role": "original_author_reply",
+        "version": "supporting response; not separate independent assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "minor_error_and_robustness",
+    "evidence": "Tables reproduce. Report and author reply agree footnote misprinted0.23as0.023; analysis data contain the intended fraction, so this does not invalidate randomization. IAT/GPA estimates are sensitive to controls and influential observations. No consequential coding error established.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        13
+      ],
+      "specific_error_pdf_pages": [
+        2
+      ],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddaeb3a1e300f97def18",
+    "original_title": "The Effect of Language on Economic Behavior: Evidence from Savings Rates, Health Behaviors, and Retirement Assets",
+    "original_doi": "10.1257/aer.103.2.690",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.2.690",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_b38dbf8f76d0"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddaeb3a1e300f97def18",
+        "osf_file_id": "6602ddaeb3a1e300f97def18",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddaeb3a1e300f97def18.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbad514edc3b7e0d5a22f",
+        "osf_file_id": "689cbad514edc3b7e0d5a22f",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Saving association is sensitive to controls; related savings measures do not fit a single consistent pattern. Report acknowledges broader cross-group identification concerns. No specific coding correction is shown to overturn a finding.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        10
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddaec9e09000ebbde584",
+    "original_title": "How Merchant Towns Shaped Parliaments: From the Norman Conquest of England to the Great Reform Act",
+    "original_doi": "10.1257/aer.20200885",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20200885",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_b6de6e872d53"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddaec9e09000ebbde584",
+        "osf_file_id": "6602ddaec9e09000ebbde584",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddaec9e09000ebbde584.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbad75b1a416a873cce1a",
+        "osf_file_id": "689cbad75b1a416a873cce1a",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_688873c9c093c96d1c256d5e",
+        "osf_file_id": "688873c9c093c96d1c256d5e",
+        "role": "original_author_reply",
+        "version": "supporting response; not separate independent assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "minor_error_and_robustness_dispute",
+    "evidence": "Original results reproduce. Claimed missing-borough issue is largely disputed: author response explains28of30 omissions and acknowledges two missed settlements; corrected causal consequence not demonstrated. Control-set and IV exclusion disagreements remain. Separate Chambru-team assessment is not this unit.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        21
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Separate catalog project contains titled Campbell-team report version with same target and substantive exercise; different date/version retained."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddafa8fcbc00f236e905",
+    "original_title": "The Out of Africa Hypothesis, Human Genetic Diversity, and Comparative Economic Development",
+    "original_doi": "",
+    "doi_verification_source": "",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_32899d883e60"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddafa8fcbc00f236e905",
+        "osf_file_id": "6602ddafa8fcbc00f236e905",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddafa8fcbc00f236e905.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbadc14edc3b7e0d5a231",
+        "osf_file_id": "689cbadc14edc3b7e0d5a231",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Hump-shaped genetic-diversity/income relation is sensitive to additional controls and specifications. No verified discrete error. Conclusion erroneously mentions institutional ownership: a report copy/paste defect, not an original-article defect.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        11
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddb1b3a1e300f97def1a",
+    "original_title": "Partisanship and Fiscal Policy in Economic Unions: Evidence from US States",
+    "original_doi": "",
+    "doi_verification_source": "",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_4968d35b0fba"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddb1b3a1e300f97def1a",
+        "osf_file_id": "6602ddb1b3a1e300f97def1a",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddb1b3a1e300f97def1a.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbada9d9b5804761f1ff4",
+        "osf_file_id": "689cbada9d9b5804761f1ff4",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_688873cc45ec217577e7cc18",
+        "osf_file_id": "688873cc45ec217577e7cc18",
+        "role": "original_author_reply",
+        "version": "supporting response; not separate independent assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Partisan differences in marginal propensity to spend, especially spending cuts following lower transfers, remain broadly robust; differential GDP finding is weaker. Report/reply clarify assessment primarily targets reduced-form robustness, not preferred robust RDD estimates.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        14
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddb1c9e09000f4bddc78",
+    "original_title": "Persuasion through Slanted Language: Evidence from the Media Coverage of Immigration",
+    "original_doi": "10.1257/aer.20211537",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20211537",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddb1c9e09000f4bddc78",
+        "osf_file_id": "6602ddb1c9e09000f4bddc78",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddb1c9e09000f4bddc78.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbadebbdc58ba53d5a0fb",
+        "osf_file_id": "689cbadebbdc58ba53d5a0fb",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_688873fc307d62b882234157",
+        "osf_file_id": "688873fc307d62b882234157",
+        "role": "original_author_reply",
+        "version": "supporting response; not separate independent assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "All tables reproduce. Demanding fixed effects and contemporaneous policy controls weaken some estimates; both report and reply caution that these may absorb treatment variation or introduce bad controls. No demonstrated material error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        18
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/"
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddb1d9031c00ef03a99b",
+    "original_title": "Religious Festivals and Economic Development: Evidence from the Timing of Mexican Saint Day Festivals",
+    "original_doi": "10.1257/aer.20211094",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20211094",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_5437ba586f46"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddb1d9031c00ef03a99b",
+        "osf_file_id": "6602ddb1d9031c00ef03a99b",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddb1d9031c00ef03a99b.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbadffcb29399e83ccf49",
+        "osf_file_id": "689cbadffcb29399e83ccf49",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "material_error",
+    "evidence": "Income averages include missing-value codes99999998/99999999; festival-overlap code misses eight year-boundary cases. Fixing code changes benchmark coefficient from−0.21to−0.13, retaining significance with Conley errors. Other robustness/data-source concerns are distinct and must not be attributed to this correction.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        19
+      ],
+      "specific_error_pdf_pages": [
+        2,
+        4
+      ],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddb3a8fcbc010736e6ca",
+    "original_title": "Retail Pharmacies and Drug Diversion During the Opioid Epidemic",
+    "original_doi": "10.1257/aer.20210357",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20210357",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_550084c248dc"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddb3a8fcbc010736e6ca",
+        "osf_file_id": "6602ddb3a8fcbc010736e6ca",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddb3a8fcbc010736e6ca.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbae146c026ea11bc0de4",
+        "osf_file_id": "689cbae146c026ea11bc0de4",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "favorable_assessment",
+    "evidence": "Original tables reproduce and preferred alternative specifications preserve independent-pharmacy effects on OxyContin deliveries. Less-significant alternatives are described by reviewers as problematic; no consequential coding error established.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        14
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddb49dc8ef010089875e",
+    "original_title": "Technological Change and the Consequences of Job Loss",
+    "original_doi": "10.1257/aer.20210182",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20210182",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_cb45594f8f09"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddb49dc8ef010089875e",
+        "osf_file_id": "6602ddb49dc8ef010089875e",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddb49dc8ef010089875e.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbae546c026ea11bc0de6",
+        "osf_file_id": "689cbae546c026ea11bc0de6",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Original tables reproduce. Adding initial wages reverses the computer-requirement coefficient; added worker/occupation effects weaken it. This is omitted-variable/identification sensitivity, not a demonstrated coding correction.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        6
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Separate catalog project contains titled Campbell-team report version with same target and substantive exercise; different date/version retained."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_6602ddb4c9e09000ebbde58b",
+    "original_title": "Vulnerability and Clientelism",
+    "original_doi": "10.1257/aer.20190565",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20190565",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_6602ddb4c9e09000ebbde58b",
+        "osf_file_id": "6602ddb4c9e09000ebbde58b",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_6602ddb4c9e09000ebbde58b.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbae76deea60631bc0a80",
+        "osf_file_id": "689cbae76deea60631bc0a80",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Tables reproduce. Rainfall effects on spending are robust, depression less stable, private political requests sensitive to clustering, aggregation and placebo rainfall. Assessment explicitly targets nonexperimental rainfall results, not the paper’s main experimental component.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        19
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": []
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. DP083 and DP084 are not equated with this Campbell-team assessment; identity unverified.",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "w7vpu_assessment_688a572fce90943bc92341d3",
+    "original_title": "Self-Enforcing Trade Agreements: Evidence from Time-Varying Trade Policy",
+    "original_doi": "10.1257/aer.103.2.1071",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.103.2.1071",
+    "reviewer_team": [
+      "Douglas Campbell",
+      "Abel Brodeur",
+      "Magnus Johannesson",
+      "Joseph Kopecky",
+      "Lester Lusher",
+      "Nikita Tsoy"
+    ],
+    "source_ids": [
+      "report_38b5d014475d"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_76e1bc253d3c_688a572fce90943bc92341d3",
+        "osf_file_id": "688a572fce90943bc92341d3",
+        "role": "assessment_report",
+        "version": "date on manuscript only; not verified public release",
+        "cached_filename": "report_76e1bc253d3c_688a572fce90943bc92341d3.txt"
+      },
+      {
+        "document_id": "report_76e1bc253d3c_689cbae42674356d821f21ac",
+        "osf_file_id": "689cbae42674356d821f21ac",
+        "role": "preanalysis_plan",
+        "version": "supporting plan; not completed assessment"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_assessment",
+    "evidence": "Trade-policy estimates are sensitive to clustering at the variation level of industry elasticities. Report interprets this as inadequate independent variation for some empirical questions, not a code/data error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "conclusion_pdf_pages": [
+        18
+      ],
+      "specific_error_pdf_pages": [],
+      "identity_evidence": [
+        "Catalog title matches this report and catalog URL points to shared w7vpu project."
+      ]
+    },
+    "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
+    "aggregate_context_source_ids": [
+      "dp_124"
+    ],
+    "shared_project": "https://osf.io/w7vpu/",
+    "retrieval_source_ids": [
+      "report_76e1bc253d3c"
+    ],
+    "retrieval_alias_evidence": "These document copies were acquired through catalog entries pointing to the same w7vpu shared project. The file IDs identify the title-matched report/plan/reply; the retrieval listing title does not establish the assessed article."
+  },
+  {
+    "unit_id": "i4r_nichols2023_waller",
+    "original_title": "A field study of the impacts of workplace diversity on the recruitment of minority group members",
+    "original_doi": "10.1038/s41562-023-01731-5",
+    "doi_verified": true,
+    "doi_source": "https://scholars.duke.edu/publication/1605067",
+    "reviewer_team": [
+      "David S. Waller",
+      "Amanda Baptista Denham",
+      "Ruiyi Xing",
+      "Fuk Pui Lee"
+    ],
+    "source_ids": [
+      "report_b600ae8b75e9"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_b600ae8b75e9_6a8306fe86e9e1fe75bb64bf",
+        "role": "assessment",
+        "url": "https://osf.io/download/eyvr6/",
+        "name": "Reproduction_report_2.pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "no_verified_material_error",
+    "evidence": "Focuses on original Analysis 1 applicant composition. Reconstructed code reproduces primary estimates; clustered standard errors and multinomial logit leave conclusions unchanged. Power simulation scripts differ from stated sample size/probability settings and give unstable results; report concludes these issues do not undermine primary findings.",
+    "evidence_locator": "Assessment PDF pp.2,5-7",
+    "limitations": "No new participants. Power discrepancy is not established as a consequential error in substantive estimates. Report conflates RStudio build identifiers with R versions, weakening its proposed environment explanation; no independent rerun here."
+  },
+  {
+    "unit_id": "i4r_nichols2023_chang_saccardo",
+    "original_title": "A field study of the impacts of workplace diversity on the recruitment of minority group members",
+    "original_doi": "10.1038/s41562-023-01731-5",
+    "doi_verified": true,
+    "doi_source": "https://scholars.duke.edu/publication/1605067",
+    "reviewer_team": [
+      "Jenny Chang",
+      "Silvia Saccardo"
+    ],
+    "source_ids": [
+      "report_b600ae8b75e9"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_b600ae8b75e9_6a845e79ce25f8dfe5bb65ba",
+        "role": "assessment",
+        "url": "https://osf.io/download/v46qj/",
+        "name": "Reproduction_Report_1.pdf"
+      },
+      {
+        "document_id": "report_b600ae8b75e9_69d90c7c1094bd331a78dd1b",
+        "role": "original_author_response",
+        "url": "https://osf.io/download/vx49e/",
+        "name": "Authors_Response_Report_1.pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "no_verified_material_error",
+    "evidence": "Reproduces original three analyses using Stata rather than R/SPSS. Exclusion-threshold rounding gives 1,597 instead of 1,585 observations but negligible estimate changes. Diversity-cue findings persist. Exploratory gender difference in applicant quality attenuates after controlling rater and job domain; this concerns a different conditional comparison, not a demonstrated coding error.",
+    "evidence_locator": "Assessment PDF pp.3-5,25; response pp.1-3,9",
+    "limitations": "Authors acknowledge interpretation depends on job selection, without establishing that adjustment is the uniquely correct estimand. Response is evidence within this unit, not an additional independent assessment."
+  },
+  {
+    "unit_id": "i4r_exley2022_cameron",
+    "original_title": "The Gender Gap in Self-Promotion",
+    "original_doi": "10.1093/qje/qjac003",
+    "doi_verified": true,
+    "doi_source": "https://academic.oup.com/qje/article/137/3/1345/6513425",
+    "reviewer_team": [
+      "Alistair Cameron",
+      "Marek Chadim",
+      "Florian Heine",
+      "Fatma Selcen Palut"
+    ],
+    "source_ids": [
+      "report_f9082a063d37"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_f9082a063d37_6a9038bec56215332628bede",
+        "role": "assessment",
+        "url": "https://osf.io/download/f7vcn/",
+        "name": "Reproduction report 1.pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "robustness_concern_no_verified_error",
+    "evidence": "Main male-typed-task self-evaluation gap reproduces and survives multiplicity correction. Additional samples reveal gender differences in financial deservingness for verbal tasks. Alternative wage-censoring approaches increase estimated premiums, but conclusion explicitly calls original approach valid and conservative.",
+    "evidence_locator": "Assessment PDF pp.4-9,13",
+    "limitations": "No new data; additional samples/outcomes and censoring specifications do not establish an original error. Original raw-data/cleaning completeness limits reconstruction."
+  },
+  {
+    "unit_id": "i4r_exley2022_geraldes",
+    "original_title": "The Gender Gap in Self-Promotion",
+    "original_doi": "10.1093/qje/qjac003",
+    "doi_verified": true,
+    "doi_source": "https://academic.oup.com/qje/article/137/3/1345/6513425",
+    "reviewer_team": [
+      "Diogo Geraldes",
+      "Sorravich Kingsuwankul",
+      "Aidas Masiliunas",
+      "Christina Rott",
+      "Christoph Siemroth"
+    ],
+    "source_ids": [
+      "report_f9082a063d37"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_f9082a063d37_6a9038ba2bc48aacfee39f72",
+        "role": "assessment",
+        "url": "https://osf.io/download/fn2c5/",
+        "name": "Reproduction report 2.pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "favorable_assessment",
+    "evidence": "Precisely reproduces original Tables II–IV with no coding/rounding errors. Multiple-testing corrections and ordered logit support primary findings. Within-sample adjustment for beliefs weakens significance, while pooled and experimental-information comparisons retain gaps.",
+    "evidence_locator": "Assessment PDF pp.3-6,16-17",
+    "limitations": "Analysis starts from final shared data; lack of raw-data reconstruction is not evidence of an error. Belief-adjusted models address a different comparison."
+  },
+  {
+    "unit_id": "i4r_rathje2023_akhtar",
+    "original_title": "Accuracy and social motivations shape judgements of (mis)information",
+    "original_doi": "10.1038/s41562-023-01540-w",
+    "doi_verified": true,
+    "doi_source": "https://www.nature.com/articles/s41562-023-01540-w",
+    "reviewer_team": [
+      "Shumi Akhtar",
+      "Federico D’Atri",
+      "Jia-Shun Wang"
+    ],
+    "source_ids": [
+      "report_ffebba29c24d"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_ffebba29c24d_6a3d439c68971df21d67592e",
+        "role": "assessment",
+        "url": "https://osf.io/download/pxy3q/",
+        "name": "Reproduction_Report (dec 18).pdf"
+      },
+      {
+        "document_id": "report_ffebba29c24d_6a3d438de926c21548b0dc61",
+        "role": "original_author_response",
+        "url": "https://osf.io/download/xnj9p/",
+        "name": "Response_Authors_Reproducibility (Nov 26).pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "minor_reporting_errors_and_robustness_concerns",
+    "evidence": "Reproduces most original findings after code adjustments. Authors acknowledge small rounding/p-value/effect-size discrepancies without changed main conclusions. Mixed item/subject models weaken some effects and show a false-news accuracy tradeoff. Alleged large partisan-gap discrepancy compares different groups; Tukey discrepancies reflect different contrast families, so neither establishes a verified material error.",
+    "evidence_locator": "Assessment PDF pp.3-4,19-20; response pp.1-4",
+    "limitations": "No new participants. Alternative Bayesian/mixed models and differing multiple-testing families are not coded as original errors. Response disputes some reproduction discrepancies; minor acknowledged ones are distinguished from those disputes."
+  },
+  {
+    "unit_id": "i4r_rathje2023_aubert",
+    "original_title": "Accuracy and social motivations shape judgements of (mis)information",
+    "original_doi": "10.1038/s41562-023-01540-w",
+    "doi_verified": true,
+    "doi_source": "https://www.nature.com/articles/s41562-023-01540-w",
+    "reviewer_team": [
+      "Cécile Aubert",
+      "Alexandra Jabbour",
+      "Sem Manna",
+      "Victor Y. Wu"
+    ],
+    "source_ids": [
+      "report_ffebba29c24d"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_ffebba29c24d_6a3d42aafd9190010e675963",
+        "role": "assessment_revised_2026_06_15",
+        "url": "https://osf.io/download/npkje/",
+        "name": "Replication_Report_revision June 26 .pdf"
+      },
+      {
+        "document_id": "report_ffebba29c24d_6a3d42dbfd9190010e675997",
+        "role": "original_author_response_to_earlier_version",
+        "url": "https://osf.io/download/65r4g/",
+        "name": "Response_Authors_Replication March 18.pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_new_data_replication",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "attenuated_new_data_replication_no_verified_material_original_error",
+    "evidence": "Original findings reproduce computationally after minor fixes. New Study 4 replication N = 1,378, fielded May 2025, yields smaller effects; preregistered Tukey-adjusted binary-outcome contrasts generally fail significance, while unadjusted contrasts and continuous-scale financial-incentive contrasts retain some significance. This is attenuation and inconclusive replication, not proof all effects vanish.",
+    "evidence_locator": "Revised assessment PDF pp.4-10,15-17; response pp.1-4",
+    "limitations": "Report footnote 4 acknowledges a coding error in an earlier REPLICATION draft that original authors helped correct. Do not attribute that error to Rathje et al. Original-author response predates revised report and compares unadjusted p-values. Stimuli/time and outcome coding differ in specified ways."
+  },
+  {
+    "unit_id": "i4r_dietrich2023_frese",
+    "original_title": "Seeing racial avoidance on New York City streets",
+    "original_doi": "10.1038/s41562-023-01589-7",
+    "doi_verified": true,
+    "doi_source": "https://brycejdietrich.com/research.html",
+    "reviewer_team": [
+      "Joris Frese"
+    ],
+    "source_ids": [
+      "report_e7a4f728faa3",
+      "dp_202"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_e7a4f728faa3_6818fd6320bff64c881596bc",
+        "role": "assessment",
+        "url": "https://osf.io/download/nk7ex/",
+        "name": "Reproduction_comment"
+      },
+      {
+        "document_id": "dp_202_download_0",
+        "role": "same_assessment_discussion_paper",
+        "url": "https://www.econstor.eu/bitstream/10419/311307/1/I4R-DP202.pdf",
+        "name": "linked_fulltext"
+      },
+      {
+        "document_id": "report_e7a4f728faa3_6818fd4820bff64c881596b9",
+        "role": "original_author_response",
+        "url": "https://osf.io/download/tjw69/",
+        "name": "Response_to_reproduction_comment"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "robustness_concern_no_verified_error",
+    "evidence": "Published results reproduce; much distributed figure code replots supplied statistics. Excluding extreme pedestrian distances attenuates estimates; alternative bootstrap seeds do not. Analytic clustered errors change one unadjusted specification. Authors explain extreme distances reflect physical site bounds, so exclusion is not a demonstrated error correction.",
+    "evidence_locator": "Assessment PDF pp.4-10; response pp.1-5",
+    "limitations": "No new field data. Same-assessment identity verified by title, author and 81/81 shared normalized 200-character text blocks. Missing analysis code limits reproduction depth but does not establish original error."
+  },
+  {
+    "unit_id": "i4r_dietrich2023_legewie",
+    "original_title": "Seeing racial avoidance on New York City streets",
+    "original_doi": "10.1038/s41562-023-01589-7",
+    "doi_verified": true,
+    "doi_source": "https://brycejdietrich.com/research.html",
+    "reviewer_team": [
+      "Nicolas Legewie",
+      "Doron Shiffer-Sebba",
+      "Jannes Jacobsen",
+      "Yoav Goldstein",
+      "Jörg Dollmann"
+    ],
+    "source_ids": [
+      "report_e7a4f728faa3",
+      "dp_250"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_e7a4f728faa3_6a32dc0e96f7f258d6f35fea",
+        "role": "assessment",
+        "url": "https://osf.io/download/2fqys/",
+        "name": "Replication_report"
+      },
+      {
+        "document_id": "dp_250_download_0",
+        "role": "same_assessment_discussion_paper",
+        "url": "https://www.econstor.eu/bitstream/10419/323244/1/I4R-DP250.pdf",
+        "name": "linked_fulltext"
+      },
+      {
+        "document_id": "report_e7a4f728faa3_6a32dcac4d81c53abef35fb0",
+        "role": "original_author_response",
+        "url": "https://osf.io/download/6a32dcac4d81c53abef35fb0/",
+        "name": "Response_replication"
+      }
+    ],
+    "assessment_type": "new_data_conceptual_replication",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "context_heterogeneity_no_verified_error",
+    "evidence": "New Berlin 3D-video experiment compares distance to racialized Muslim bystanders and White bystanders. Pooled direction supports avoidance, but effects vary across streets and conventional clustered versus wild-bootstrap inference. Conclusion calls for more randomly selected sites, not correction of original NYC analysis.",
+    "evidence_locator": "Assessment PDF pp.1-4,8,14-16; response p.1",
+    "limitations": "Different setting, minoritized group, observation technology and available covariates. Same team/report verified against DP250 by title/authors and 87 shared normalized 200-character blocks; discussion-paper version is not a second assessment."
+  },
+  {
+    "unit_id": "i4r_ciria2023_batinovic",
+    "original_title": "An umbrella review of randomized control trials on the effects of physical exercise on cognition",
+    "original_doi": "10.1038/s41562-023-01554-4",
+    "doi_verified": true,
+    "doi_source": "https://www.nature.com/articles/s41562-026-02532-2",
+    "reviewer_team": [
+      "Lucija Batinovic",
+      "Federico D’Atri",
+      "Yuri G. Pavlov",
+      "Marta Topor",
+      "Matthew Warburton"
+    ],
+    "source_ids": [
+      "report_83fc3494a79a",
+      "report_d20485341bfd"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_83fc3494a79a_670e73535c88a90028a5e4eb",
+        "role": "assessment",
+        "url": "https://osf.io/download/pzy29/",
+        "name": "Reproduction Report (see page 2 for Update 30.09.2024).pdf"
+      },
+      {
+        "document_id": "report_d20485341bfd_670e73535c88a90028a5e4eb",
+        "role": "same_file_erroneous_catalog_alias",
+        "url": "https://osf.io/download/pzy29/",
+        "name": "Reproduction Report (see page 2 for Update 30.09.2024).pdf"
+      },
+      {
+        "document_id": "report_83fc3494a79a_670e73ca5c88a90028a5e562",
+        "role": "original_author_response",
+        "url": "https://osf.io/download/hbpce/",
+        "name": "Authors' response.pdf"
+      },
+      {
+        "document_id": "report_d20485341bfd_670e73ca5c88a90028a5e562",
+        "role": "same_response_erroneous_catalog_alias",
+        "url": "https://osf.io/download/hbpce/",
+        "name": "Authors' response.pdf"
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "minor_error_and_reporting_clarification",
+    "evidence": "Main exercise/cognition synthesis reproduces. Initial 109-versus-100-study concern is clarified by 7 studies without usable effects and 2 duplicate article pairs. A mistaken Liu-Ambrose article reference/inclusion is acknowledged; response and formal 2026 correction report negligible changes beyond published precision. Updated replicator note accepts resolution.",
+    "evidence_locator": "Assessment PDF pp.2-3,14; response pp.1-3; formal correction paragraphs 1–3 https://www.nature.com/articles/s41562-026-02532-2",
+    "limitations": "The erroneous effort catalog row is linked here only as the retrieval alias for identical Ciria files, not as evidence that the effort assessment was reviewed. Brooker/Lo Iacono DP201 is a distinct known effort assessment; identity between that team and the catalog intention is not proven.",
+    "catalog_mismatch": {
+      "source_id": "report_d20485341bfd",
+      "catalog_title": "An experimental manipulation of the value of effort",
+      "catalog_target_resolution": "unresolved",
+      "attachment_identity_resolution": "verified_same_as_report_83fc3494a79a",
+      "primary_checks": [
+        "https://www.i4replication.org/reports",
+        "https://api.osf.io/v2/nodes/twmh9/"
+      ],
+      "evidence": "Live I4R reports page assigns both effort and exercise-review titles to OSF twmh9. Live OSF metadata names the exercise review and describes Batinovic report/response. File IDs and download URLs are identical for both source records. DP201 independently identifies effort assessment by Brooker/Lo Iacono, but its OSF 9unj5 link points to original materials, not a verified replacement report node."
+    }
+  },
+  {
+    "unit_id": "i4r_angelucci2022_chambru",
+    "original_title": "How Merchant Towns Shaped Parliaments: From the Norman Conquest of England to the Great Reform Act",
+    "original_doi": "10.1257/aer.20200885",
+    "doi_verified": true,
+    "doi_source": "https://www.aeaweb.org/articles?id=10.1257/aer.20200885",
+    "reviewer_team": [
+      "Cédric Chambru",
+      "Joseph Enguehard",
+      "Thibault Mirabel",
+      "Bastien Tourenc"
+    ],
+    "source_ids": [
+      "report_b6de6e872d53"
+    ],
+    "document_ids": [
+      {
+        "document_id": "report_b6de6e872d53_6a91bd59bc23555f55136649",
+        "role": "independent_assessment",
+        "url": "https://osf.io/download/r35w4/",
+        "name": "Reproduction_Report_I4R",
+        "document_date": "2024-07-01",
+        "date_meaning": "Manuscript date; earliest public availability not verified."
+      }
+    ],
+    "assessment_type": "computational_reproduction_and_robustness",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "material_error_verified": false,
+    "disposition": "minor_data_coding_concerns_and_favorable_robustness",
+    "evidence": "Authors reproduce primary estimates using supplied package. Body identifies historical county-boundary mismatches (Dudley and Monmouth), ambiguity in missing/binary/fractional coding, and insufficient information to implement every correction. They judge these marginal to main results. Spatial splines, alternative Conley cutoffs and arbitrary clustering generally support original findings; some secondary parliamentary-reform vote estimates weaken at 5% but remain below 10%.",
+    "evidence_locator": "July 1, 2024 report PDF pp.2-6; spatial results pp.10-12",
+    "limitations": "Separate team and report from Campbell/Brodeur/Johannesson/Kopecky/Lusher/Tsoy June 2024 report in same project and w7vpu. Do not attach Campbell-directed author response to this unit as if it addressed Chambru et al. No independently verified DP equivalent. Report keeps original data for robustness because some historical coding questions are unresolved; no demonstrated material consequence. Table 5 panel C1 visibly repeats estimates/sample sizes across differently named outcomes, so do not regard every reported robustness cell as independently validated."
+  }
+]

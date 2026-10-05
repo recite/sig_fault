@@ -1987,34 +1987,47 @@
   {
     "source_id": "dp_110",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_110",
-    "disposition": "minor_error_or_materiality_unresolved",
-    "evidence": "Squared-distance code uses difference of squares instead of squared difference; authors reportedly corrected appendix; material consequence not established in inspected passages.",
+    "disposition": "minor_coding_error_main_findings_robust",
+    "evidence": "Squared-distance implementation used (rc^2-rs^2)/100 instead of (rc-rs)^2/100; report says authors adjusted online appendix. Main regressions reproduce, corrected distance check retains group differences, and clustering/sample variations retain conclusions. This verifies a secondary metric bug without a demonstrated consequential change to central findings.",
     "evidence_locator": [
       {
-        "document_id": "dp_110_download_0",
+        "archive_document_id": "report_013c1e38ca22_65ef0eab4dfd8c0bf927f5f7",
+        "member_id": "report_013c1e38ca22_65ef0eab4dfd8c0bf927f5f7_member_124ee666a9ca",
+        "member_path": "Submitted/Replication_ABL2022.pdf",
+        "archive_sha256": "0b7416c30135d37b95c2037949e2880f1b5b1311da2b49008ebc8665fb95722e",
+        "member_sha256": "216a2f68ae4983907538f5d465a7e638e8f7294ce12e68ce435639273abe69e1",
         "targeted_pdf_pages": [
-          9,
-          11
+          3,
+          4,
+          7,
+          8
         ]
       }
     ],
-    "limitations": "Eligibility screened; independent materiality review remains incomplete or inapplicable. Prior screen is a lead and is not promoted to a completed assessment.",
-    "review_basis": "independent_screen_or_unresolved"
+    "limitations": "Original code not rerun. Recovered full report is a version of DP110: same authors/title and 25 of 36 nonoverlapping normalized 500-character body chunks match; archive does not add an independent assessment. Internal May 5, 2023 date does not establish public disclosure.",
+    "review_basis": "independent_screen_or_unresolved",
+    "archive_review_basis": "Full report text independently read, including computational reproduction, metric correction, robustness sections and conclusion."
   },
   {
     "source_id": "report_013c1e38ca22",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_110",
-    "disposition": "minor_error_or_materiality_unresolved",
-    "evidence": "Squared-distance code uses difference of squares instead of squared difference; authors reportedly corrected appendix; material consequence not established in inspected passages.",
+    "disposition": "minor_coding_error_main_findings_robust",
+    "evidence": "Squared-distance implementation used (rc^2-rs^2)/100 instead of (rc-rs)^2/100; report says authors adjusted online appendix. Main regressions reproduce, corrected distance check retains group differences, and clustering/sample variations retain conclusions. This verifies a secondary metric bug without a demonstrated consequential change to central findings.",
     "evidence_locator": [
       {
-        "document_id": "report_013c1e38ca22_6596ff747094e97c98a174d1",
+        "archive_document_id": "report_013c1e38ca22_65ef0eab4dfd8c0bf927f5f7",
+        "member_id": "report_013c1e38ca22_65ef0eab4dfd8c0bf927f5f7_member_124ee666a9ca",
+        "member_path": "Submitted/Replication_ABL2022.pdf",
+        "archive_sha256": "0b7416c30135d37b95c2037949e2880f1b5b1311da2b49008ebc8665fb95722e",
+        "member_sha256": "216a2f68ae4983907538f5d465a7e638e8f7294ce12e68ce435639273abe69e1",
         "targeted_pdf_pages": [
-          6,
+          3,
+          4,
+          7,
           8
         ]
       }
@@ -2035,8 +2048,9 @@
     "related_source_ids": [
       "dp_110"
     ],
-    "limitations": "Source coverage or independent adjudication incomplete. A linked earlier review is not automatically a completed assessment. Missing full text is not evidence of no error.",
-    "review_basis": "independent_screen_or_unresolved"
+    "limitations": "Original code not rerun. Recovered full report is a version of DP110: same authors/title and 25 of 36 nonoverlapping normalized 500-character body chunks match; archive does not add an independent assessment. Internal May 5, 2023 date does not establish public disclosure.",
+    "review_basis": "independent_screen_or_unresolved",
+    "archive_review_basis": "Full report text independently read, including computational reproduction, metric correction, robustness sections and conclusion."
   },
   {
     "source_id": "report_01d3b0f74ad3",
@@ -3750,20 +3764,44 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "report_324e39312a52",
-    "disposition": "unresolved_data_unavailable",
-    "evidence": "Marital-status/depression analysis data unavailable; code review alone cannot establish consequential error.",
+    "disposition": "code_discrepancies_materiality_unresolved",
+    "evidence": "Recovered Supplement S4 alleges reversed NHANES depression coding, but supplied NHANES SAS defines d=0 for depression then uses PROC SURVEYLOGISTIC with link=glogit and default ordering. SAS models lower response categories against the highest reference, so this coding does not imply the alleged reversal. An impossible smoking condition (SMQ040=1 AND SMQ040=2) is present, but no corrected-result consequence is demonstrated. Main assessment cannot recompute odds ratios or mediation effects without processed datasets.",
     "evidence_locator": [
+      {
+        "archive_document_id": "report_324e39312a52_6a830ba1ad6781300022fa46",
+        "member_id": "report_324e39312a52_6a830ba1ad6781300022fa46_member_f2f868a5144e",
+        "member_path": "Supplement S1–4/Supplement S4 – Detailed notes on model discrepancies.docx",
+        "archive_sha256": "aaa10d51c373ea37910fac44b6d40d6ef388ccccac87ca77fda22790cd0bb9bd",
+        "member_sha256": "8b348653aec3b49d72befc4b628b39edcf7eb5a714d39090d30df5c7b3d11f34",
+        "targeted_pdf_pages": []
+      },
+      {
+        "archive_document_id": "report_324e39312a52_6a830ba1ad6781300022fa46",
+        "member_id": "report_324e39312a52_6a830ba1ad6781300022fa46_member_9957ddb56718",
+        "member_path": "Supplement S1–4/Supplement S1 – SAS inspection files/1. sas_text/NHANES.sas.txt",
+        "archive_sha256": "aaa10d51c373ea37910fac44b6d40d6ef388ccccac87ca77fda22790cd0bb9bd",
+        "member_sha256": "cfba4e4ff6d95ee5918303d7179634fcef7b03fbbe1439f5cdf719dfe9594e60",
+        "targeted_pdf_pages": []
+      },
       {
         "document_id": "report_324e39312a52_6a830b8ae493fe6817d41fe3",
         "targeted_pdf_pages": [
-          1
+          2,
+          3,
+          4,
+          5
         ]
+      },
+      {
+        "url": "https://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/statug_surveylogistic_details03.htm",
+        "section": "Response Level Ordering"
       }
     ],
     "duplicate_verification": [],
     "related_source_ids": [],
-    "limitations": "Source coverage or independent adjudication incomplete. A linked earlier review is not automatically a completed assessment. Missing full text is not evidence of no error.",
-    "review_basis": "independent_screen_or_unresolved"
+    "limitations": "Do not classify the alleged response reversal as an error. Remaining code-versus-description discrepancies need original analysis execution and materiality adjudication; source read does not resolve consequential-error status.",
+    "review_basis": "independent_screen_or_unresolved",
+    "archive_review_basis": "Read main report and detailed DOCX supplement; inspected supplied NHANES code and checked primary SAS documentation."
   },
   {
     "source_id": "report_32899d883e60",
@@ -4263,16 +4301,37 @@
   {
     "source_id": "report_3e68a5b034dd",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_230",
-    "disposition": "favorable_assessment",
-    "evidence": "Ravindran and Shah (2023) assesses the effect of COVID-19 lockdowns on violence against women (VAM) in India. Using a dynamic fixed effects methodology exploiting spatio-temporal variation in the timing and intensity of 'stay-at-home' mandates in Indian districts, the authors find that government-mandated lockdowns increased complaints of domestic violence in districts with the strictest lockdown rules. I successfully computationally reproduce their results. Further, I test the replicability of the results by re-analyzing the results using a Poisson estimator as opposed to the ordinary least squares (OLS) estimator used by the original authors. I find that lower bound censoring of the outcome measure resulted in attenuation of the marginal effect of government-mandated lockdowns. The effect of mobility restrictions on VAW are understated in the original study. This provides support for the internal validity of Ravindran and Shah (2023)'s results by suggesting that may present lower bound estimates of an under-reported consequence of mobility restrictions during the COVID-19 pandemic.",
+    "disposition": "minor_error_no_material_consequence_and_robustness_analysis",
+    "evidence": "The recovered McWay report reproduces every original exhibit and parameter value. PDF page 3 identifies missing package installation, conflicting absolute paths, and 585 district-ID labels versus 622 district names and 639 districts described in the manuscript. Using district names shifts point estimates but does not qualitatively change the results. Pages 4–7 re-estimate with Poisson and call the exercise robustness reproduction; the zero counts and larger Poisson coefficients do not establish a consequential error in the original OLS specification. Page 7 concludes that the findings reproduce. Table 2 on page 10 contains the alternative model estimates.",
     "evidence_locator": [
       {
-        "document_id": "report_3e68a5b034dd_6a32df2051dd85ebe39450a1",
+        "archive_document_id": "report_3e68a5b034dd_6a343023ed80fa1300975f73",
+        "member_id": "report_3e68a5b034dd_6a343023ed80fa1300975f73_member_3213c34b1ce9",
+        "member_path": "replication-packet/report/McWay (2025) - Replication of Ravindran and Shah 2023.pdf",
+        "archive_sha256": "c345b9f2d47e6d57dda4d122e01fe06243d26837010a73ad42a458a7ced7c3fd",
+        "sha256": "03f3e253d544521654d2e3d4981d4164446d3b87957516f69b92cb51688cae0f",
         "targeted_pdf_pages": [
+          2,
+          3,
+          4,
           5,
-          6
+          6,
+          7,
+          10
+        ]
+      },
+      {
+        "document_id": "dp_230_download_0",
+        "targeted_pdf_pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
         ]
       }
     ],
@@ -4292,8 +4351,13 @@
     "related_source_ids": [
       "dp_230"
     ],
-    "limitations": "Source coverage or independent adjudication incomplete. A linked earlier review is not automatically a completed assessment. Missing full text is not evidence of no error.",
-    "review_basis": "independent_screen_or_unresolved"
+    "limitations": "Source evidence verified; original data/code were not rerun. Poisson and OLS coefficients use different scales, so their numerical magnitudes alone cannot establish attenuation. Zero-valued counts do not by themselves establish censoring or demonstrate that Poisson corrects under-reporting. July 11, 2025 is the recovered manuscript date, not independently established public-disclosure date. No significant-error event is proposed.",
+    "review_basis": "independent_screen_or_unresolved",
+    "original_title": "Unintended consequences of lockdowns, COVID-19 and the Shadow Pandemic in India",
+    "original_doi": "10.1038/s41562-022-01513-5",
+    "material_error_verified": false,
+    "archive_review_basis": "The report is replication-packet/report/McWay (2025) - Replication of Ravindran and Shah 2023.pdf. Other PDFs are original articles, supplements, figures, questionnaires, news and data documentation; these are not separate assessments.",
+    "canonical_identity_evidence": "Same author Ryan McWay, same original article DOI, same district-ID discrepancy, same Poisson analysis and estimates. The recovered July 2025 revision has a revised title; 13 of 43 nonoverlapping 500-character alphanumeric-normalized chunks also occur in the cached DP230 text. Direct body comparison confirms revised versions of the same assessment."
   },
   {
     "source_id": "report_3ea3dcfd7ce8",
@@ -4955,10 +5019,19 @@
     "source_id": "report_54760f3ce87e",
     "assessment_eligibility": "yes",
     "assessment_resolved": "yes",
-    "canonical_source_id": "report_54760f3ce87e",
+    "canonical_source_id": "dp_078",
     "disposition": "favorable_or_no_material_error_reported",
-    "evidence": "Figueiredo wage cyclicality results largely stable.",
-    "evidence_locator": [],
+    "evidence": "Archive recovers the Hartley–Olson comment already represented by DP078, alongside original Figueiredo article, README files and generated figures. Same comment identity is verified by matching title/authors and 15 of 26 normalized nonoverlapping 500-character body chunks. Archive is not an additional independent assessment.",
+    "evidence_locator": [
+      {
+        "archive_document_id": "report_54760f3ce87e_65e4b992e5e51c00febc556a",
+        "member_id": "report_54760f3ce87e_65e4b992e5e51c00febc556a_member_5e1e23fabe8f",
+        "member_path": "Replication/Hartley Olson A Comment on Figueiredo 2022.pdf",
+        "archive_sha256": "449686f5f649eaeac581d97f9891312f7946ad8f64d086b814228e2294b8a3cf",
+        "member_sha256": "ac80945d2671bfd996e6f120e853d84b800067796f014915d0f7d12658b81d8a",
+        "targeted_pdf_pages": []
+      }
+    ],
     "duplicate_verification": [
       {
         "related_source_id": "dp_078",
@@ -4971,8 +5044,9 @@
     "related_source_ids": [
       "dp_078"
     ],
-    "limitations": "Selected source body/results/conclusion and available reply inspected; no original code rerun. Duplicate means the same assessment/version family, not necessarily byte-identical files. Explicit link to a related discussion paper is retained, but canonical duplication is not asserted without text/version identity evidence.",
-    "review_basis": "independent_targeted_source_review"
+    "limitations": "Retains previously independently reviewed DP078 disposition; this pass verifies duplicate-version identity and archive contents. Original analysis not rerun.",
+    "review_basis": "independent_targeted_source_review",
+    "archive_review_basis": "Recovered report identity compared with DP078 body text."
   },
   {
     "source_id": "report_54d4acbe1ca7",
@@ -8886,15 +8960,34 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "report_8290e13f6cb7",
-    "disposition": "favorable_or_no_material_error_reported",
-    "evidence": "Rossi skill-efficiency results robust.",
-    "evidence_locator": {
-      "documents": [],
-      "prior_evidence_pdf_pages": [],
-      "verified_text_matches": [],
-      "independent_scope": "Cached opening and conclusion/error passages checked where available; missing attachments not inferred from links."
-    },
-    "limitations": "No cached full-text assessment available at final check; source-link identity alone does not resolve this source."
+    "disposition": "assessment_manuscript_not_present_in_archive",
+    "evidence": "All 40 archive members were inventoried: 24 Stata do-files, 13 Stata data files, 2 CSV files, and one readme.md. There is no assessment PDF, DOCX, or substantive assessment text. The README identifies the package as the replication of Rossi (2022) conducted by Campos-Rodriguez and Chung and links the original article DOI. The OSF metadata explicitly links DP059. Reading that linked paper independently confirms successful reproduction, a missing plotting dependency and an age-restriction exposition discrepancy, plus robustness to alternative samples/controls; the archive itself cannot establish that no additional or revised assessment is absent.",
+    "evidence_locator": [
+      {
+        "archive_document_id": "report_8290e13f6cb7_65e22d4c1f01810107cc8e99",
+        "member_id": "report_8290e13f6cb7_65e22d4c1f01810107cc8e99_member_ced609f9abe6",
+        "member_path": "readme.md",
+        "archive_sha256": "bb6efaa151d8ae584a0224744776a7bc64124ee864a788cb0193a25c55b20d82",
+        "sha256": "d7f00b93df171a1f7a396c3b520b4b31e2cd0326c8a5b76f2f7d9e88324493e0"
+      },
+      {
+        "document_id": "dp_059_download_0",
+        "targeted_pdf_pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "relationship": "Explicitly linked related report; no archive report body available for version-equivalence verification."
+      }
+    ],
+    "limitations": "The linked DP059 body is sufficient to classify DP059 as no demonstrated material error, but no recovered report body supports marking this OSF source independently resolved or collapsing it as an identical report version. README identity and explicit DP linkage establish association, not completeness or identical report versions. Original code was not rerun.",
+    "original_title": "The Relative Efficiency of Skilled Labor across Countries: Measurement and Interpretation",
+    "original_doi": "10.1257/aer.20191852",
+    "material_error_verified": false,
+    "archive_review_basis": "Complete archive-member listing contains only code/data and README. The original DOI in README is 10.1257/aer.20191852; catalog journal AER: Insights is inconsistent with DP059 reference identifying American Economic Review 112(1), 235–266."
   },
   {
     "source_id": "report_83421b0452f2",
@@ -10235,20 +10328,26 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "dp_240",
-    "disposition": "unresolved_data_integrity_concern",
-    "evidence": "Overlapping participant records and inconsistent test scores across simultaneous studies; treated/control contamination and data anomalies documented. Does not establish a clean isolated coding correction or its consequence.",
-    "evidence_locator": "printed pp.3–5 (dp240); pp.3–4,10 (dp241)",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "unresolved_data_integrity_and_implementation_concern",
+    "evidence": "Matched children appear in both educational experiments. Authors acknowledge a local manager reused one assessment across studies for some children; others were assessed twice. Outcomes differ systematically by treatment combination. This documents a departure from reported implementation, but available data do not isolate true assessment timing, source scores or the direction/size of bias for each experiment.",
+    "evidence_locator": "dp240 PDF pp.9-12,24; dp241 PDF pp.11,13-14",
+    "limitations": "Not resolved merely because published estimates reproduce. A clean numerical correction is not required in principle, but here attribution and substantive consequences of the implementation discrepancy remain insufficiently established. Distributional anomalies are not by themselves proof of fabrication.",
+    "error_verified": true,
+    "material_error_verified": "unresolved",
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_241",
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "dp_241",
-    "disposition": "unresolved_data_integrity_concern",
-    "evidence": "Overlapping participant records and inconsistent test scores across simultaneous studies; treated/control contamination and data anomalies documented. Does not establish a clean isolated coding correction or its consequence.",
-    "evidence_locator": "printed pp.3–5 (dp240); pp.3–4,10 (dp241)",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "unresolved_data_integrity_and_implementation_concern",
+    "evidence": "Matched children appear in both educational experiments. Authors acknowledge a local manager reused one assessment across studies for some children; others were assessed twice. Outcomes differ systematically by treatment combination. This documents a departure from reported implementation, but available data do not isolate true assessment timing, source scores or the direction/size of bias for each experiment.",
+    "evidence_locator": "dp240 PDF pp.9-12,24; dp241 PDF pp.11,13-14",
+    "limitations": "Not resolved merely because published estimates reproduce. A clean numerical correction is not required in principle, but here attribution and substantive consequences of the implementation discrepancy remain insufficiently established. Distributional anomalies are not by themselves proof of fabrication.",
+    "error_verified": true,
+    "material_error_verified": "unresolved",
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_242",
@@ -10343,12 +10442,15 @@
   {
     "source_id": "dp_251",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_251",
-    "disposition": "unresolved",
-    "evidence": "Yeo et al. (2023) examined the relationship between early university classes, and sleep and academic performance in a large-scale observational study. They hypothesized lower attendance, shorter sleep, and poorer academic achievements coming with earlier classes. To test their hypotheses, the authors tracked students' Wi-Fi connections, Learning Management System logins, and grades and collected actigraphy data. In line with their hypotheses, they found that earlier classes predicted lower attendance, grades and shorter sleep. Due to inaccessibility of other data, this reproduction project focuses solely on the actigraphy data. Here, the authors found that students attend earlier classes to a lower degree since they tend to oversleep, that the frequency of naps is associated with earlier class start times, and that students sleep shorter on nights preceding earlier classes. In this recreate reproducibility project, which uses partly cleaned data, all these claims are successfully reproduced. However, there are some numerical inconsistencies of unclear origin in some results.",
-    "evidence_locator": "PDF p.10, conclusion/relevant discussion; opening summary cross-check",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "minor_reporting_and_reproduction_discrepancies",
+    "evidence": "Within the assessed actigraphy component, class-time/oversleeping tests reproduce; counting nap-days instead of individual naps leaves direction and significance unchanged. Author clarification resolves participant exclusions and identifies a swapped ethnicity label in supplementary tables. Alternative aggregation reproduces key sleep-duration patterns; remaining numeric differences are small and all assessed directional claims persist.",
+    "evidence_locator": "dp251 PDF pp.6-10, especially author clarifications in footnotes 2,3,5–7",
+    "limitations": "Resolution applies to this assessment and its actigraphy outcomes, not unreviewed Wi-Fi, LMS or grade data. Some exact observation counts and confidence intervals remain unreproduced; lack of exact reproduction does not establish a material error.",
+    "error_verified": true,
+    "material_error_verified": false,
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_252",
@@ -10543,12 +10645,15 @@
   {
     "source_id": "dp_271",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_271",
-    "disposition": "materiality_disputed",
-    "evidence": "Nominal GDP used but labeled real 2002 PPP GDP. Authors acknowledge labeling error; critics argue material growth-interpretation consequences and weaker corrected robustness. Need distinguish admitted unit-label error from disputed material specification change.",
-    "evidence_locator": "printed pp.6–8,15–17; response dp272 p3",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "acknowledged_units_error_without_verified_material_main_effect_change",
+    "evidence": "Original outcome is current PPP USD mislabeled constant 2002 PPP USD. Author erratum also corrects incorrectly calculated donor-pool predictor averages. Relabeling and corrected summaries leave estimated treatment paths unchanged; common deflation leaves percentage gaps unchanged. Francis substitutes constructed real-GDP series and changes benchmarking, producing fragile fit; authors dispute series geography and construction. These additional contrasts do not isolate the admitted labeling error.",
+    "evidence_locator": "dp271 PDF pp.8-10,16-17; dp272 PDF pp.4-6; primary erratum https://economics.mit.edu/sites/default/files/2025-09/Comparative%20Politics%20and%20the%20Synthetic%20Control%20Method%20erratum.pdf ; appendix https://economics.mit.edu/sites/default/files/2025-09/Comparative%20Politics%20and%20the%20Synthetic%20Control%20Method%20supplementary_appendix.pdf",
+    "limitations": "Absolute currency-unit interpretation changes and should be corrected. Classification does not endorse every synthetic-control identifying assumption; it separates an established labeling/summary-table error from contested reconstruction and donor-pool robustness.",
+    "error_verified": true,
+    "material_error_verified": false,
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_272",
@@ -10863,12 +10968,15 @@
   {
     "source_id": "dp_303",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_303",
-    "disposition": "robustness_concern",
-    "evidence": "Saturated disciplinary categories absorb four teams. This is deliberate categorical-control coding and a model/support disagreement, not demonstrated erroneous implementation. Authors defend theory and show alternative models.",
-    "evidence_locator": "PDF conclusion and/or abstract; independently inspected targeted passages",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "model_support_disagreement_not_verified_coding_error",
+    "evidence": "Four discipline categories uniquely identify individual teams, so their team-constant ideology is absorbed by category controls. Both sides agree this mechanism removes those teams from identification of the ideology coefficient. Critics coarsen discipline categories to restore variation; authors defend original adjustment and present researcher-level alternatives. The change modifies the conditional model and available support, rather than repairing code that incorrectly implemented the specified model.",
+    "evidence_locator": "dp303 PDF pp.6-8; dp304 PDF pp.5-7",
+    "limitations": "This is a substantive identification/robustness criticism. Reported total N versus coefficient-identifying variation can be misleading, but absorption alone is not proof of a material implementation error. Main result may be fragile without qualifying for an error-disclosure cohort.",
+    "error_verified": false,
+    "material_error_verified": false,
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_304",
@@ -10903,12 +11011,15 @@
   {
     "source_id": "dp_307",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_307",
-    "disposition": "materiality_disputed",
-    "evidence": "18 excess duplicated control rows (14 duplicated response patterns) affect depression prevalence and neural-network independence. Correcting raises control depression prevalence37.27% to43.48%, reversing descriptive athlete/control comparison; author acknowledges duplicates but primary inferential findings unchanged.",
-    "evidence_locator": "printed pp.3–4; reply dp308 pp.3–5",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "duplicated_rows_without_verified_change_in_primary_inference",
+    "evidence": "Comment identifies 18 excess duplicated control rows across 14 duplicated response patterns. Author acknowledges accidental spreadsheet duplication and reconstructs/reanalyzes the dataset. Deduplication increases control depression prevalence 37.27% to 43.48%, reversing its descriptive ordering relative to athletes 40.19%; however, the original abstract already reported no significant prevalence difference. Response reports that this inference, higher control anxiety and higher athlete suicidal ideation persist after correction. Classification outputs change numerically but remain weak discriminators.",
+    "evidence_locator": "dp307 PDF pp.4-5; dp308 PDF pp.4-6; original abstract https://pubmed.ncbi.nlm.nih.gov/41899739/",
+    "limitations": "Not no-error: duplicated observations and out-of-range response are verified. Distinguish 14 response patterns from 18 excess rows. No independently verified claim that primary scientific conclusions reverse; numerical descriptive prevalence changes are retained for broader error definitions.",
+    "error_verified": true,
+    "material_error_verified": false,
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_308",
@@ -10943,12 +11054,36 @@
   {
     "source_id": "dp_311",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_311",
-    "disposition": "unresolved_data_integrity_concern",
-    "evidence": "Unusual correlations/distributions in Brazilian controls; response acknowledges scoring and transcription concerns, incomplete recoverable provenance, but disputes fabrication. Broader data-integrity concern unresolved.",
-    "evidence_locator": "printed pp.3–5; reply dp312 pp.5–9",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "material_scoring_error_in_personality_finding",
+    "evidence": "Author response identifies incorrect reverse scoring affecting four of six Agreeableness items (and one Openness item), not merely unusual correlations. The original abstract and discussion prominently characterize elite players as less agreeable. Authors acknowledge that the scoring correction substantially changes Agreeableness scores and that their revised personality analysis yields the opposite direction. This materially undermines that original substantive personality claim independently of unresolved broad data-integrity allegations.",
+    "evidence_locator": "dp312 PDF pp.17,26-28 (especially lines 415–425 and 613–678),63; original abstract/discussion https://pmc.ncbi.nlm.nih.gov/articles/PMC11760505/",
+    "limitations": "Only a small subset of questionnaires was recovered. Authors fit calibration models to that subset and apply them elsewhere, then compare players against German norms instead of original Brazilian controls. Therefore neither the exact corrected effect nor reversal of the original matched-control contrast is independently established. The narrow qualifying error is wrong scoring invalidating an emphasized original trait interpretation; fabrication and global dataset invalidity remain unproven.",
+    "error_verified": true,
+    "material_error_verified": true,
+    "adjudication_date": "2026-10-05",
+    "candidate_claim": {
+      "original_title": "Decoding the elite soccer player’s psychological profile",
+      "original_doi": "10.1073/pnas.2415126122",
+      "doi_verified": true,
+      "doi_source": "https://www.psych.ox.ac.uk/publications/2078989",
+      "error_type": "incorrect reverse scoring of personality items",
+      "affected_claim": "Elite soccer players exhibit reduced agreeableness, a feature interpreted as potentially advantageous in intense competition.",
+      "substantive_consequence": "Original low-agreeableness interpretation is materially undermined. Authors’ recalibrated normative comparison reverses direction, but exact corrected original contrast is not validated.",
+      "public_disclosure_source_ids": [
+        "dp_311",
+        "dp_312"
+      ],
+      "substantiated_public_year": 2026,
+      "substantiated_public_date_precision": "month",
+      "substantiated_public_month": "2026-08",
+      "public_date_evidence": "DP311 and DP312 I4R title pages explicitly August2026; scoring-error confirmation and consequence appear in public DP312.",
+      "public_date_source": "https://hdl.handle.net/10419/342982",
+      "earliest_public_date_verified": false,
+      "earlier_disclosure_search_limit": "GitHub critique repository identified but earliest public visibility/version was not established. Do not treat private submission dates as public disclosure.",
+      "corrected_effect_independently_verified": false
+    }
   },
   {
     "source_id": "dp_312",
@@ -11105,10 +11240,13 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "dp_327",
-    "disposition": "interpretation_dispute",
-    "evidence": "Critics distinguish interaction coefficient from average/province-specific total marginal effects. Authors defend their relative-exposure estimand. Data-access restriction is not error evidence.",
-    "evidence_locator": "printed pp.3–4; reply dp328 pp.3–4",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "material_interpretation_dispute_unresolved",
+    "evidence": "Comment correctly distinguishes the migration-by-liberalization interaction from total province-specific or average liberalization effects. Original authors defend the differential-exposure estimand and now supply main-effect coefficients/SEs in their reply. Critics also identify a concrete concern in the back-of-envelope nonmigrant diffusion calculation: it combines a differential estimate with a country-wide migrant share. Materiality of that specific interpretation remains to be adjudicated against the full original derivation.",
+    "evidence_locator": "dp327 PDF pp.6-7 and footnote 5; dp328 PDF pp.5-6",
+    "limitations": "Do not retain the obsolete statement that authors never provided the main-effect coefficient: reply Appendix A does. Covariances still absent, so total-effect uncertainty cannot be reconstructed directly. Working-paper bounds are not estimates of the published specification; choosing a relative estimand is not itself an error.",
+    "error_verified": "unresolved",
+    "material_error_verified": "unresolved",
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_328",
@@ -11135,10 +11273,13 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "dp_330",
-    "disposition": "unresolved_data_integrity_concern",
-    "evidence": "Study implementation, class/group size, missingness, and attendance discrepancies unresolved after two author replies. Numerical reproduction largely successful; no isolated correction established.",
-    "evidence_locator": "printed pp.3–5",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues. Dispute, inaccessible analysis component, or material consequence remains unresolved."
+    "disposition": "unresolved_data_integrity_with_minor_verified_code_errors",
+    "evidence": "Detailed body and replies leave participant/group assignment, attendance and missingness provenance unresolved. Appendix A separately identifies stale derived variables, simulation-reference and figure-outcome code errors, and friendship classifications affected in 38 groups; listed checks do not overturn the principal low-ability-girl result. Thus some errors are established, but consequential implementation/data-integrity allegations are not settled by numerical reproducibility.",
+    "evidence_locator": "dp330 PDF pp.8-13,17,39 onward; Appendix A",
+    "limitations": "Do not convert every anomaly into a verified material error, or clear the entire assessment because known coding corrections retain the main qualitative result. More original implementation records are needed for the serious unresolved concerns.",
+    "error_verified": true,
+    "material_error_verified": "unresolved",
+    "adjudication_date": "2026-10-05"
   },
   {
     "source_id": "dp_331",

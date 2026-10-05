@@ -4,33 +4,55 @@
   "reason": "Catalog entries and even verified duplicate groups do not enumerate every independent assessment in shared projects.",
   "unresolved_scope": [
     {
-      "source": "https://osf.io/w7vpu/",
-      "issue": "Shared 17-article assessment bundle; title-match reports separately from plans, replies and survey materials; DP124 is an aggregate synthesis."
-    },
-    {
-      "source_id": "report_b600ae8b75e9",
-      "issue": "Two independent workplace-diversity assessment teams plus reply."
-    },
-    {
-      "source_id": "report_f9082a063d37",
-      "issue": "Separate Cameron and Geraldes self-promotion assessments."
-    },
-    {
-      "source_id": "report_ffebba29c24d",
-      "issue": "Akhtar computational assessment and Aubin new-data replication are distinct."
+      "source": "Full assessment population",
+      "issue": "The 27 explicitly enumerated assessment units cover selected bundled or misdirected sources, not the full population. Remaining source-equivalence groups still require unit-level mapping; source resolution percentages cannot establish assessment coverage."
     },
     {
       "source_id": "report_d20485341bfd",
-      "issue": "Catalog effort title points to Ciria exercise/cognition critique and reply; target join unresolved."
+      "issue": "Actual attachments are verified Ciria exercise-review documents already represented by report_83fc3494a79a; intended effort-report target remains unresolved."
     },
     {
-      "source": "OSF and other repositories",
-      "issue": "Child projects, other storage providers, archive contents and unacquired attachments still require reconciliation."
+      "source_ids": [
+        "report_98d325388526",
+        "report_adddaac3ae6f"
+      ],
+      "issue": "Repository provider and child-component queries return HTTP401; public file access unresolved."
     },
     {
-      "source_id": "report_e7a4f728faa3",
-      "issue": "Frese computational assessment and Legewie conceptual Berlin experiment are distinct, with separate replies."
+      "source": "Nested archives",
+      "issue": "Nested ZIP members are inventoried but not recursively extracted. Templates/data may include assessment files; content role needs verification."
+    },
+    {
+      "source": "Source review",
+      "issue": "Unresolved data/materiality disputes, absent reports, and non-OSF attachments remain. A successful repository query or an extracted plot is not a reviewed assessment."
     }
   ],
-  "completion_rule": "At least 90% of enumerated eligible article-specific assessments resolved; source fractions alone cannot pass this gate."
+  "completion_rule": "At least 90% of enumerated eligible article-specific assessments resolved; source fractions alone cannot pass this gate.",
+  "resolved_scope": [
+    {
+      "source": "https://osf.io/w7vpu/",
+      "result": "Enumerated 17 distinct reviewer-team/article assessments, with plans and replies linked separately. Vulnerability Campbell-team report is retained even without its own matched catalog entry."
+    },
+    {
+      "source_ids": [
+        "report_b600ae8b75e9",
+        "report_f9082a063d37",
+        "report_ffebba29c24d",
+        "report_e7a4f728faa3"
+      ],
+      "result": "Enumerated eight assessments across four projects. Computational and new-data assessments are distinct."
+    },
+    {
+      "source_id": "report_b6de6e872d53",
+      "result": "Chambru-team and Campbell-team Merchant Towns assessments distinguished."
+    },
+    {
+      "source": "OSF repositories",
+      "result": "Traversed providers and child-component relationships for all 378 OSF-linked catalog entries. No new files or nonempty child pages found; two projects returned authorization errors."
+    },
+    {
+      "source": "ZIP archives",
+      "result": "Inventoried all 62 root ZIP archives using streamed downloads; members retain archive/member hashes and original internal paths. Large archives are preserved locally."
+    }
+  ]
 }

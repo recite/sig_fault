@@ -82,6 +82,16 @@ def dictionary(folder):
     (folder / "profile.json").write_text(json.dumps(profile, indent=2) + "\n")
 
 
+def assessment_completion(units, population_enumerated):
+    eligible = [r for r in units if r["assessment_eligibility"] != "no"]
+    resolved = sum(
+        r["assessment_eligibility"] == "yes" and r["assessment_resolved"] == "yes"
+        for r in eligible
+    )
+    fraction = resolved / len(eligible) if eligible else None
+    return population_enumerated is True and fraction is not None and fraction >= 0.9
+
+
 def report():
     sources = s.read("sources.csv")
     reviews = s.read("source_reviews.csv")
@@ -108,7 +118,7 @@ def report():
     lower_bound = resolved / denominator_bound if denominator_bound else None
     scope = json.loads((s.DATA / "coverage_scope.json").read_text())
     enumerated = scope["assessment_population_enumerated"] is True
-    complete = enumerated and lower_bound is not None and lower_bound >= 0.9
+    complete = assessment_completion(s.read("assessment_inventory.csv"), enumerated)
     counts = dict(
         catalog_entries=len(sources),
         discussion_papers=sum(r["collection"] == "discussion_papers" for r in sources),
@@ -130,6 +140,18 @@ def report():
             r["identity_verified"] == "yes" for r in articles
         ),
         source_review_records=len(reviews),
+        enumerated_assessment_units=len(s.read("assessment_inventory.csv")),
+        enumerated_assessment_articles=len(
+            {r["article_id"] for r in s.read("assessment_inventory.csv")}
+        ),
+        inventoried_archives=sum(
+            r["status"] == "inventoried" for r in s.read("archive_retrieval.csv")
+        ),
+        archive_files=len(s.read("archive_retrieval.csv")),
+        archive_member_records=len(s.read("archive_members.csv")),
+        repository_sources_checked=len(
+            {r["source_id"] for r in s.read("repository_queries.csv")}
+        ),
         curated_error_candidates=len(s.read("assessments.csv")),
         verified_dated_disclosures=len(primary),
         date_age_eligible_disclosures=len(direct[0]),
@@ -181,6 +203,12 @@ def report():
         ),
         "verified_article_identities": "Publisher/OpenAlex-verified article identities",
         "source_review_records": "Source review/disposition records",
+        "enumerated_assessment_units": "Units enumerated in selected bundles",
+        "enumerated_assessment_articles": "Articles in those enumerated units",
+        "inventoried_archives": "ZIP archives inventoried",
+        "archive_files": "Root ZIP files listed",
+        "archive_member_records": "Archive members, including code/data/plots",
+        "repository_sources_checked": "OSF sources checked for components/providers",
         "source_units": "Source units after verified duplicate links",
         "verified_duplicate_listings": "Verified duplicate listings collapsed",
         "eligible_assessments": (
@@ -212,7 +240,9 @@ def report():
         "These are source-listing progress measures, not coverage of all independent"
         " article assessments. Shared projects can contain several assessment teams or"
         " articles. The 90% gate remains blocked until those units are enumerated and"
-        " reviewed. See `data/i4r/coverage_scope.json` for the unresolved scope.",
+        " reviewed. The separately enumerated units cover selected bundled/misdirected"
+        " sources and are not an estimate of the total assessment population. See"
+        " `data/i4r/coverage_scope.json` for resolved and unresolved scope.",
         "",
         "## Initial screening depth",
         "",

@@ -10,23 +10,29 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Retrieved documents (including separate replies and repeated files) | 1355 |
 | Distinct retrieved document URLs | 754 |
 | Retrieved listing metadata records | 707 |
-| Candidate article identities (not a final distinct-paper count) | 434 |
-| Publisher/OpenAlex-verified article identities | 383 |
+| Candidate article identities (not a final distinct-paper count) | 435 |
+| Publisher/OpenAlex-verified article identities | 384 |
 | Source review/disposition records | 714 |
-| Source units after verified duplicate links | 637 |
-| Verified duplicate listings collapsed | 77 |
-| Source units containing article-specific assessments | 525 |
-| Source units with resolved target classification | 374 |
-| Units whose assessment eligibility remains unresolved | 26 |
-| Curated material-error candidate records | 28 |
-| Source-verified material-error disclosures with verified public year | 19 |
+| Units enumerated in selected bundles | 27 |
+| Articles in those enumerated units | 22 |
+| ZIP archives inventoried | 62 |
+| Root ZIP files listed | 62 |
+| Archive members, including code/data/plots | 3952 |
+| OSF sources checked for components/providers | 378 |
+| Source units after verified duplicate links | 636 |
+| Verified duplicate listings collapsed | 78 |
+| Source units containing article-specific assessments | 523 |
+| Source units with resolved target classification | 378 |
+| Units whose assessment eligibility remains unresolved | 27 |
+| Curated material-error candidate records | 29 |
+| Source-verified material-error disclosures with verified public year | 20 |
 | Disclosures satisfying the primary date/age window | 4 |
 | Events with selected controls | 0 |
 | Complete matched article-period observations | 0 |
 
-The source-level resolution fraction among confirmed assessment listings is 71.2%. Including unresolved-eligibility source units in the denominator gives 67.9%.
+The source-level resolution fraction among confirmed assessment listings is 72.3%. Including unresolved-eligibility source units in the denominator gives 68.7%.
 
-These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. See `data/i4r/coverage_scope.json` for the unresolved scope.
+These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. The separately enumerated units cover selected bundled/misdirected sources and are not an estimate of the total assessment population. See `data/i4r/coverage_scope.json` for resolved and unresolved scope.
 
 ## Initial screening depth
 
