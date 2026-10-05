@@ -1,4 +1,4 @@
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test
+.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test
 
 restore:
 	Rscript --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
@@ -25,8 +25,22 @@ lint:
 	Rscript -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
+	$(MAKE) lal
 	Rscript -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
 	$(MAKE) pilot-test
+	python3 -m unittest discover -s tests -p 'test_lal.py'
+
+lal:
+	python3 scripts/lal_citations.py registry
+	python3 scripts/lal_citations.py panel
+	Rscript scripts/lal_analysis.R
+
+lal-fetch:
+	python3 scripts/lal_citations.py fetch
+
+lal-test: lal
+	python3 -m unittest discover -s tests -p 'test_lal.py'
+	Rscript -e 'testthat::test_dir("tests/testthat", filter = "lal", stop_on_failure = TRUE)'
 
 pilot:
 	Rscript scripts/pilot_registry.R

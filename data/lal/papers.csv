@@ -1,0 +1,68 @@
+paper_id,title,authors,year,journal,designs,weak,sensitive,screen,ar_loss,analytic_positive
+iv_Acharya2016,The political legacy of American slavery,"Acharya A,Blackwell M,Sen M",2016,JOP,Acharya2016,0,1,1,0,1
+iv_Alt2015,Credible Sources and Sophisticated Voters: When Does New Information Induce Economic Voting?,"Alt JE,Lassen DD,Marshall J",2015,JOP,Alt2015,0,1,1,1,1
+iv_Arias2019,How Large Are the Political Costs of Fiscal Austerity?,"Arias E,Stasavage D",2019,JOP,Arias2019,0,0,0,0,0
+iv_Baccini2021,"Gone For Good: Deindustrialization, White Voter Backlash, and US Presidential Voting","LEONARDO BACCINI,STEPHEN WEYMOUTH",2021,APSR,Baccini2021,0,0,0,0,1
+iv_Barth2015,Political Reinforcement: How Rising Inequality Curbs Manifested Welfare Generosity,"Barth E,Finseraas H,Moene KO",2015,AJPS,Barth2015,1,0,1,0,0
+iv_Bhavnani2018,Local Embeddedness and Bureaucratic Performance: Evidence from India,"Bhavnani RR,Lee A",2018,JOP,Bhavnani2018,0,0,0,0,1
+iv_Blair2022,When Do UN Peacekeeping Operations Implement Their Mandates?,"Robert A. Blair, Jessica Di Salvatore, Hannah M. Smidt",2021,AJPS,Blair2022,0,0,0,0,1
+iv_Blattman2014,How to Promote Order and Property Rights under Weak Rule of Law? An Experiment in Changing Dispute Resolution Behavior through Community Education,"Blattman C,Hartman AC,Blair RA",2014,APSR,Blattman2014,0,0,0,0,0
+iv_Carnegie2017,"Foreign Aid, Human Rights, and Democracy Promotion: Evidence from a Natural Experiment","Carnegie A,Marinov N",2017,AJPS,Carnegie2017,1,1,1,1,1
+iv_Charron2013,Why Do Some Regions in Europe Have a Higher Quality of Government?,"Charron N,Lapuente V",2013,JOP,Charron2013,0,0,0,0,1
+iv_Charron2017,"Careers, Connections, and Corruption Risks: Investigating the Impact of Bureaucratic Meritocracy on Public Procurement Processes","Charron N,Dahlström C,Fazekas M,Lapuente V",2017,JOP,Charron2017,0,0,0,0,1
+iv_Chong2019,"Urbanization Patterns, Information Diffusion, and Female Voting in Rural Paraguay","Chong A,León‐Ciliotta G,Roza V,Valdivia M,Vega G",2019,AJPS,Chong2019,0,1,1,1,1
+iv_Cirone2018,"Cabinets, Committees, and Careers: The Causal Effect of Committee Service","Cirone A,Van Coppenolle B",2018,JOP,Cirone2018,0,0,0,0,0
+iv_Colantone2018a,Global Competition and Brexit,"Colantone I,Stanig P",2018,APSR,Colantone2018a,0,0,0,0,1
+iv_Colantone2018b,The Trade Origins of Economic Nationalism: Import Competition and Voting Behavior in Western Europe,"Colantone I,Stanig P",2018,AJPS,Colantone2018b,0,0,0,0,1
+iv_Coppock2016,Is voting habit forming? New evidence from experiments and regression discontinuities,"Coppock, Alexander; Green, Donald P.",2016,AJPS,Coppock2016,0,0,0,0,1
+iv_Croke2016,Deliberate Disengagement: How Education Can Decrease Political Participation in Electoral Authoritarian Regimes,"Croke K,Grossman GUY,Larreguy HA,Marshall J",2016,APSR,Croke2016,0,0,0,0,1
+iv_Delao2013,Do conditional cash transfers affect electoral behavior? Evidence from a randomized experiment in Mexico,De La O AL,2013,AJPS,Delao2013,0,0,0,0,0
+iv_Dietrich2015,Foreign Aid Allocation Tactics and Democratic Change in Africa,"Dietrich S,Wright J",2015,JOP,Dietrich2015,1,0,1,0,1
+iv_Digiuseppe2022,"US Patronage, State Capacity, and Civil Conﬂict","Matthew DiGiuseppe,Patrick E. Shea",2022,JOP,Digiuseppe2022,0,1,1,0,1
+iv_Dower2018a,Collective Action and Representation in Autocracies: Evidence from Russia’s Great Reforms,"Dower PC,Finkel E,Gehlbach S,Nafziger S",2018,APSR,Dower2018a;Dower2018b,0,0,0,0,1
+iv_Dube2015,"Bases, bullets, and ballots: The effect of US military aid on political conflict in Colombia","Dube, Oeindrila; Naidu, Suresh",2015,JOP,Dube2015,0,0,0,0,1
+iv_Feigenbaum2015,How Legislators Respond to Localized Economic Shocks: Evidence from Chinese Import Competition,"Feigenbaum JJ,Hall AB",2015,JOP,Feigenbaum2015,0,0,0,0,0
+iv_Flores2013,"The foreign policy consequences of trade: China’s commercial relations with Africa and Latin America, 1992--2006","Flores-Macías GA,Kreps SE",2013,JOP,Flores2013,0,0,0,0,1
+iv_Gelbach2012,Private Investment and the Institutionalization of Collective Action in Autocracies: Ruling Parties and Legislatures,"Gehlbach S,Keefer P",2012,JOP,Gelbach2012,1,1,1,0,1
+iv_Gerber2010,"Party Affiliation, Partisanship, and Political Beliefs: A Field Experiment","Gerber AS,Huber GA,Washington E",2010,APSR,Gerber2010,1,0,1,0,0
+iv_Goldstein2017,Cities as Lobbyists,"Goldstein R,You HY",2017,AJPS,Goldstein2017,0,0,0,0,1
+iv_Grossman2017,Government fragmentation and public goods provision,"Grossman G,Pierskalla JH,et al.",2017,JOP,Grossman2017,1,0,1,0,1
+iv_Hager2019_apsr,Ethnic riots and prosocial behavior: Evidence from kyrgyzstan,"Hager, Anselm; Krakowski, Krzysztof; Schaub, Max",2019,APSR,Hager2019_apsr,0,0,0,0,1
+iv_Hager2019ajps_a,Do Inheritance Customs Affect Political and Social Inequality?,"Hager A,Hilbig H",2019,AJPS,Hager2019ajps_a;Hager2019ajps_b,0,0,0,0,1
+iv_Hager2022,Does State Repression Spark Protests? Evidence from Secret Police Surveillance in Communist Poland,"ANSELM HAGER,KRZYSZTOF KRAKOWSKI",2022,APSR,Hager2022,1,0,1,0,0
+iv_Healy2013,Childhood Socialization and Political Attitudes: Evidence from a Natural Experiment,"Healy A,Malhotra N",2013,JOP,Healy2013,0,0,0,0,1
+iv_Henderson2016_a,Mediating the electoral connection: The information effects of voter signals on legislative behavior,"Henderson, John; Brooks, John",2016,JOP,Henderson2016_a;Henderson2016_b,0,0,0,0,1
+iv_Hong2022,In Strongman We Trust: The Political Legacy of the New Village Movement in South Korea,"Ji Yeon Hong, Sunkyoung Park, Hyunjoo Yang",2022,AJPS,Hong2022,0,0,0,0,1
+iv_Johns2016,Fear of Crowds in World Trade Organization Disputes: Why Don’t More Countries Participate?,"Johns L,Pelc KJ",2016,JOP,Johns2016,0,0,0,0,1
+iv_Kapoor2018,Independent Candidates and Political Representation in India,"Kapoor S,Magesan A",2018,APSR,Kapoor2018,0,1,1,0,1
+iv_Kim2019,Direct Democracy and Women's Political Engagement,"Kim, Jeong Hyun",2019,AJPS,Kim2019,0,0,0,0,1
+iv_Kocher2011,Aerial bombing and counterinsurgency in the Vietnam War,"Kocher MA,Pepinsky TB,et al.",2011,AJPS,Kocher2011,0,0,0,0,1
+iv_Kriner2014,"Investigating the President: Committee Probes and Presidential Approval, 1953–2006","Kriner DL,Schickler E",2014,JOP,Kriner2014,0,0,0,0,1
+iv_Kuipers2022,The Representational Consequences of Municipal Civil Service Reform,"NICHOLAS KUIPERS, ALEXANDER SAHN",2022,APSR,Kuipers2022,0,0,0,0,0
+iv_Laitin2016,Language Policy and Human Development,"Laitin DD,Ramachandran R",2016,APSR,Laitin2016,0,0,0,0,1
+iv_Lei2022,Private Returns to Public Investment: Political Career Incentives and Infrastructure Investment in China,"Lei, Zhenhuan and Zhou, Junlong Aaron",2022,JOP,Lei2022,0,0,0,0,1
+iv_Lelkes2017,The hostile audience: The effect of access to broadband internet on partisan affect,"Lelkes Y,Sood G,Iyengar S",2017,AJPS,Lelkes2017,0,1,1,0,1
+iv_Lerman2017,Personal Experience and Public Opinion: A Theory and Test of Conditional Policy Feedback,"Lerman AE,McCabe KT",2017,JOP,Lerman2017,0,0,0,0,1
+iv_Lopez2020,Policy Deliberation and Voter Persuasion: Experimental Evidence from an Election in the Philippines,"Gabriel López-Moctezuma,Leonard Wantchekon,Daniel Rubenson,Thomas Fujiwara,Cecilia Pe Lero",2022,AJPS,Lopez2020,0,0,0,0,1
+iv_Lorentzen2014,Undermining authoritarian innovation: the power of China's industrial giants,"Lorentzen P,Landry P,Yasuda J",2014,JOP,Lorentzen2014,0,0,0,0,1
+iv_McClendon2014,Social Esteem and Participation in Contentious Politics: A Field Experiment at an LGBT Pride Rally,McClendon GH,2014,AJPS,McClendon2014,0,0,0,0,1
+iv_Meredith2013,Exploiting Friends-and-Neighbors to Estimate Coattail Effects,Meredith M,2013,APSR,Meredith2013,0,0,0,0,1
+iv_Nellis2018,Secular party rule and religious violence in Pakistan,"Nellis G,Siddiqui N,Others",2018,APSR,Nellis2018,0,0,0,0,1
+iv_Pianzola2019,The impact of personalized information on vote intention: Evidence from a randomized field experiment,"Pianzola J,Trechsel AH,Vassil K,et al.",2019,JOP,Pianzola2019,0,1,1,0,1
+iv_Ritter2016,Preventing and responding to dissent: The observational challenges of explaining strategic repression,"Ritter, Emily Hencken; Conrad, Courtenay R.",2016,APSR,Ritter2016,0,0,0,0,1
+iv_Rueda2017,"Small Aggregates, Big Manipulation: Vote Buying Enforcement and Collective Monitoring",Rueda MR,2017,AJPS,Rueda2017,0,0,0,0,1
+iv_Schleiter2016,The Electoral Benefits of Opportunistic Election Timing,"Schleiter P,Tavits M",2016,JOP,Schleiter2016,0,1,1,0,1
+iv_Schubiger2021,State Violence and Wartime Civilian Agency: Evidence from Peru,Livia Isabella Schubiger,2021,JOP,Schubiger2021,0,0,0,0,1
+iv_Sexton2019,How government reactions to violence worsen social welfare: evidence from Peru,"Sexton, Renard; Wellhausen, Rachel L.; Findley, Michael G.",2019,AJPS,Sexton2019,1,0,1,0,0
+iv_Spenkuch2018,Elite influence? Religion and the electoral success of the Nazis,"Spenkuch JL,Tillmann P",2018,AJPS,Spenkuch2018,0,0,0,0,1
+iv_Stewart2017,Do Good Borders Make Good Rebels? Territorial Control and Civilian Casualties,"Stewart MA,Liou YM",2017,JOP,Stewart2017,0,0,0,0,1
+iv_Stokes2016,Electoral Backlash against Climate Policy: A Natural Experiment on Retrospective Voting and Local Resistance to Public Policy,Stokes LC,2016,AJPS,Stokes2016,0,0,0,0,1
+iv_Tajima2013,The institutional basis of intercommunal order: Evidence from Indonesia's democratic transition,Tajima Y,2013,AJPS,Tajima2013,0,0,0,0,1
+iv_Trounstine2016,Segregation and Inequality in Public Goods,Trounstine J,2016,AJPS,Trounstine2016,0,0,0,0,0
+iv_Urpelainen2022,Electoral Backlash or Positive Reinforcement? Wind Power and Congressional Elections in the United States,"Johannes Urpelainen,Alice Tianbo Zhang",2022,JOP,Urpelainen2022,0,1,1,0,1
+iv_Vernby2013,Inclusion and public policy: Evidence from Sweden’s introduction of noncitizen suffrage,Vernby K,2013,AJPS,Vernby2013,0,0,0,0,1
+iv_Webster2022,The Social Consequences of Political Anger,"Steven W. Webster,Elizabeth C. Connors,Betsy Sinclair",2022,JOP,Webster2022,0,0,0,0,1
+iv_West2017,Descriptive Representation and Political Efficacy: Evidence from Obama and Clinton,West EA,2017,JOP,West2017,0,0,0,0,1
+iv_Wood2022,Campaign Finance Transparency Affects Legislators’ Election Outcomes and Behavior,"Abby K. Wood, Christian R. Grose",2022,AJPS,Wood2022,0,0,0,0,0
+iv_Zhu2017,"MNCs, rents, and corruption: Evidence from China",Zhu B,2017,AJPS,Zhu2017,0,0,0,0,1
+iv_Ziaja2020,"More donors, more democracy","Ziaja, Sebastian",2020,JOP,Ziaja2020,0,0,0,0,1

@@ -1,0 +1,3 @@
+paper_id,doi,canonical_work_id,verified_online_date,source_url,decision
+iv_Rueda2017,10.1093/jleo/ewaa020,https://openalex.org/W3049348697,2020-12-14,https://api.crossref.org/works/10.1093/jleo/ewaa020,Publisher-deposited journal article is online in2020 and printed2021. Prefer2020article over2014dissertation with misassigned journal DOI; raw OpenAlex day differs but annual year agrees.
+iv_Coppock2016,10.1177/00323217211064579,https://openalex.org/W3214873350,2021-12-31,https://api.crossref.org/works/10.1177/00323217211064579,Publisher confirms online2021-12-31 and print2023-11; retain online2021 record rather than issue2023 duplicate.

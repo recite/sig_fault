@@ -38,6 +38,8 @@ For individual steps, use `make analysis`, `make figures`, `make tables`, `make 
 
 The [extension pilot](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding are still in progress; it does not yet provide estimates of continued reliance.
 
+The [Lal et al. extension](docs/lal/README.md) applies the citation-trajectory analysis to all 67 papers in a political-science IV audit. It reports mean and median paths, article fixed-effects estimates, and sensitivity to diagnostic definitions, timing, and the unit counted as a citing publication. The [multi-audit strategy](docs/multiple-audits.md) sets out how to extend these comparisons across critiques.
+
 | Path | Contents |
 | --- | --- |
 | `data/01_nieuwenhuis/` | Original citation workbooks and supplied classifications |

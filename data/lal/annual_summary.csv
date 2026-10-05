@@ -1,0 +1,97 @@
+"cohort","diagnostic","flag","year","papers","mean","median"
+"Published by 2016","weak",0,2017,31,5.93548387096774,6
+"Published by 2016","weak",1,2017,4,8,8.5
+"Published by 2016","weak",0,2018,31,6.54838709677419,6
+"Published by 2016","weak",1,2018,4,10.75,11
+"Published by 2016","weak",0,2019,31,9.32258064516129,8
+"Published by 2016","weak",1,2019,4,10.75,11.5
+"Published by 2016","weak",0,2020,31,9.64516129032258,8
+"Published by 2016","weak",1,2020,4,7,7
+"Published by 2016","weak",0,2021,31,10.7741935483871,9
+"Published by 2016","weak",1,2021,4,9,9.5
+"Published by 2016","weak",0,2022,31,10.4838709677419,8
+"Published by 2016","weak",1,2022,4,8,7
+"Published by 2016","weak",0,2023,31,10.1612903225806,7
+"Published by 2016","weak",1,2023,4,8,9
+"Published by 2016","weak",0,2024,31,10.6451612903226,8
+"Published by 2016","weak",1,2024,4,7.25,7
+"Published by 2016","weak",0,2025,31,11.1612903225806,9
+"Published by 2016","weak",1,2025,4,8.25,7
+"Published by 2016","sensitive",0,2017,24,5.41666666666667,5
+"Published by 2016","sensitive",1,2017,5,8,8
+"Published by 2016","sensitive",0,2018,24,5.66666666666667,6
+"Published by 2016","sensitive",1,2018,5,11.4,13
+"Published by 2016","sensitive",0,2019,24,8.33333333333333,8
+"Published by 2016","sensitive",1,2019,5,12.8,10
+"Published by 2016","sensitive",0,2020,24,8.54166666666667,8
+"Published by 2016","sensitive",1,2020,5,14,11
+"Published by 2016","sensitive",0,2021,24,9.16666666666667,8.5
+"Published by 2016","sensitive",1,2021,5,16.8,13
+"Published by 2016","sensitive",0,2022,24,9.08333333333333,7.5
+"Published by 2016","sensitive",1,2022,5,16.6,7
+"Published by 2016","sensitive",0,2023,24,9.375,6.5
+"Published by 2016","sensitive",1,2023,5,12.6,6
+"Published by 2016","sensitive",0,2024,24,9.41666666666667,8
+"Published by 2016","sensitive",1,2024,5,13.2,7
+"Published by 2016","sensitive",0,2025,24,9.375,8
+"Published by 2016","sensitive",1,2025,5,17.6,6
+"Published by 2016","screen",0,2017,27,5.62962962962963,6
+"Published by 2016","screen",1,2017,8,8,8.5
+"Published by 2016","screen",0,2018,27,5.96296296296296,6
+"Published by 2016","screen",1,2018,8,10.625,11
+"Published by 2016","screen",0,2019,27,8.7037037037037,8
+"Published by 2016","screen",1,2019,8,12.125,11.5
+"Published by 2016","screen",0,2020,27,8.88888888888889,8
+"Published by 2016","screen",1,2020,8,10.875,7.5
+"Published by 2016","screen",0,2021,27,9.59259259259259,9
+"Published by 2016","screen",1,2021,8,13.875,11
+"Published by 2016","screen",0,2022,27,9.22222222222222,8
+"Published by 2016","screen",1,2022,8,13.5,7
+"Published by 2016","screen",0,2023,27,9.51851851851852,7
+"Published by 2016","screen",1,2023,8,11.25,9.5
+"Published by 2016","screen",0,2024,27,9.96296296296296,8
+"Published by 2016","screen",1,2024,8,11.25,8
+"Published by 2016","screen",0,2025,27,9.77777777777778,9
+"Published by 2016","screen",1,2025,8,14.375,7
+"Published by 2016","ar_loss",0,2017,28,5.92857142857143,5.5
+"Published by 2016","ar_loss",1,2017,1,4,4
+"Published by 2016","ar_loss",0,2018,28,6.75,6
+"Published by 2016","ar_loss",1,2018,1,4,4
+"Published by 2016","ar_loss",0,2019,28,9.28571428571429,8.5
+"Published by 2016","ar_loss",1,2019,1,4,4
+"Published by 2016","ar_loss",0,2020,28,9.64285714285714,8.5
+"Published by 2016","ar_loss",1,2020,1,5,5
+"Published by 2016","ar_loss",0,2021,28,10.3928571428571,9
+"Published by 2016","ar_loss",1,2021,1,13,13
+"Published by 2016","ar_loss",0,2022,28,10.5,7.5
+"Published by 2016","ar_loss",1,2022,1,7,7
+"Published by 2016","ar_loss",0,2023,28,10.0714285714286,6.5
+"Published by 2016","ar_loss",1,2023,1,6,6
+"Published by 2016","ar_loss",0,2024,28,10.1785714285714,8
+"Published by 2016","ar_loss",1,2024,1,7,7
+"Published by 2016","ar_loss",0,2025,28,11.0357142857143,8
+"Published by 2016","ar_loss",1,2025,1,4,4
+"Full cohort","weak",0,2023,59,9.3728813559322,6
+"Full cohort","weak",1,2023,8,7,7
+"Full cohort","weak",0,2024,59,10.5423728813559,7
+"Full cohort","weak",1,2024,8,6,6
+"Full cohort","weak",0,2025,59,11.3559322033898,8
+"Full cohort","weak",1,2025,8,7.25,7.5
+"Full cohort","sensitive",0,2023,44,10.2045454545455,6.5
+"Full cohort","sensitive",1,2023,11,7.09090909090909,5
+"Full cohort","sensitive",0,2024,44,11.4090909090909,7.5
+"Full cohort","sensitive",1,2024,11,7.63636363636364,5
+"Full cohort","sensitive",0,2025,44,11.9318181818182,9
+"Full cohort","sensitive",1,2025,11,10.2727272727273,5
+"Full cohort","screen",0,2023,50,9.76,6
+"Full cohort","screen",1,2023,17,7.11764705882353,5
+"Full cohort","screen",0,2024,50,11,7.5
+"Full cohort","screen",1,2024,17,7.05882352941176,5
+"Full cohort","screen",0,2025,50,11.4,8.5
+"Full cohort","screen",1,2025,17,9.29411764705882,6
+"Full cohort","ar_loss",0,2023,52,9.82692307692308,6
+"Full cohort","ar_loss",1,2023,3,5.33333333333333,6
+"Full cohort","ar_loss",0,2024,52,10.9807692307692,7
+"Full cohort","ar_loss",1,2024,3,5,7
+"Full cohort","ar_loss",0,2025,52,12.0576923076923,8.5
+"Full cohort","ar_loss",1,2025,3,3.66666666666667,4
