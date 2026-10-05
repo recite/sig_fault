@@ -1,0 +1,135 @@
+[
+  {
+    "source_id": "dp_227",
+    "original_title": "Temperature and Decisions: Evidence from 207,000 Court Cases",
+    "original_doi": "10.1257/app.20170223",
+    "original_publication_date": "2019-04",
+    "original_publication_year": 2019,
+    "original_publication_date_precision": "month",
+    "original_publication_source": "https://www.aeaweb.org/articles?id=10.1257/app.20170223",
+    "earliest_verified_public_date": "2020-08-05",
+    "event_year": 2020,
+    "date_precision": "day",
+    "date_status": "verified_repository_posting; earlier_July_issue_date_possible",
+    "date_source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3645463",
+    "date_evidence": "SSRN explicitly reports Posted: 5 Aug 2020 and Date Written: July 7, 2020. Its abstract already identifies coding/data errors and their material effect. The Harvard Olin 1036 PDF is dated July 2020, but a day of public posting in July was not established. The 2024 directory in the current Harvard URL is not the disclosure date.",
+    "error_source_title": "No, Judges Are Not Influenced by Outdoor Temperature (or Other Weather): Comment",
+    "error_source_version": "Holger Spamann, Harvard Olin Discussion Paper 1036, July 7, 2020",
+    "error_source_url": "https://laweconcenter.law.harvard.edu/wp-content/uploads/2024/11/Spamann_1036.pdf",
+    "evidence_pages": "Printed pp. 1–6, Table 1; PDF pp. 4–9",
+    "material_error_verified": true,
+    "verification_scope": "Primary disclosure text reviewed; original analysis not rerun in this adjudication.",
+    "error_description": "Weather observations were assigned to incorrect cities and averaged over GMT rather than the intended local daytime window; the outcome included withdrawals and abandonments as though they were judicial merits decisions.",
+    "materiality": "The 2020 source isolates city/time matching repairs as reducing the estimate by about one-third. Further data repairs and restricting outcomes to grants/denials reduce the reported estimate by about two-thirds. These are consequential errors in the stated judicial-decision analysis.",
+    "separate_analytical_changes": "Do not label all attenuation as a pure code-only comparison: the later steps also reconstruct data and change missing-pollution handling. Expanding to 1990–2019, changing clustering, using hearing dates, and studying criminal sentencing are distinct analysis extensions. The public 2020 version already discusses these; dp227 in 2025 is a later assessment, not the first event.",
+    "formal_later_publications": [
+      {
+        "date": "2022-10",
+        "doi": "10.1257/app.20200118",
+        "type": "published_comment"
+      },
+      {
+        "date": "2022-10",
+        "doi": "10.1257/app.20200068",
+        "type": "author_reply"
+      }
+    ],
+    "analysis_window_eligible": false,
+    "analysis_window_reason": "For a 2020 event, two complete preceding calendar years are 2018 and 2019. The journal article appeared during 2019, so neither provides a pair of complete postpublication baseline years. Earlier working-paper identity/citation aggregation is unverified; do not move exposure to 2022 to obtain a baseline.",
+    "unknowns": [
+      "Whether the July 2020 Harvard issue was publicly posted before SSRN August 5.",
+      "Whether the cited Harvard Dataverse archive was public earlier with an identifying error report; archive request returned 403."
+    ]
+  },
+  {
+    "source_id": "dp_294",
+    "original_title": "Development Effects of Electrification: Evidence from the Topographic Placement of Hydropower Plants in Brazil",
+    "original_doi": "10.1257/app.5.2.200",
+    "original_publication_date": "2013-04",
+    "original_publication_year": 2013,
+    "original_publication_date_precision": "month",
+    "original_publication_source": "https://www.aeaweb.org/articles?id=10.1257/app.5.2.200",
+    "earliest_verified_public_date": "2021-12-10",
+    "event_year": 2021,
+    "date_precision": "day",
+    "date_status": "verified_repository_posting; earlier_author_corrigendum_same_year_possible",
+    "date_source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3980178",
+    "date_evidence": "SSRN records Posted: 10 Dec 2021 and Date Written: October 30, 2021 for USAEE Working Paper 21-529. The abstract already identifies inconsistent Amazon definitions and loss of precision after correction. The author corrigendum is dated September 15, 2021, which supports the document version but does not establish the day it became public.",
+    "error_source_title": "Development Effects of Electrification in Brazil – A Comment on Lipscomb et al. (2013)",
+    "error_source_version": "USAEE Working Paper 21-529, October 30, 2021, SSRN 3980178",
+    "error_source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3980178",
+    "error_source_doi": "10.2139/ssrn.3980178",
+    "evidence_pages": "SSRN abstract; author corrigendum printed pp. 1–3 and Table 1, row 9 (PDF pp. 2–4)",
+    "material_error_verified": true,
+    "verification_scope": "2021 critique repository abstract plus full author corrigendum reviewed; original code not independently rerun.",
+    "error_description": "The Amazon indicator used to construct the geographic instrument differed from the Amazon indicator controlled for in the 2SLS regressions. The authors acknowledge and correct this mismatch.",
+    "materiality": "Holding the preferred specification, consistent Amazon definitions lower its first-stage F-statistic from 24.6 to 2.05, 0.05, or 2.92. This undermines the original preferred instrumental-variable analysis. The author response changes the preferred control specification to recover first-stage strength; those replacement estimates do not erase the demonstrated mismatch.",
+    "author_correction": {
+      "title": "Another look at the Precision of IV estimates of the Development Effects of Access to Electricity in Brazil",
+      "authors": "Molly Lipscomb, Ahmed Mushfiq Mobarak, Dimitri Szerman",
+      "manuscript_date": "2021-09-15",
+      "public_posting_date": null,
+      "url": "https://www.mollylipscomb.com/_files/ugd/a200af_629245100d8f46f592f171ada715c492.pdf",
+      "local_file": "private-data/i4r/event_evidence/lipscomb_reply2021.pdf",
+      "status": "Author-hosted document self-described as a corrigendum; formal journal correction publication not established.",
+      "sha256": "7453e047f402ea66c1401878f618e1f96fe3f9b98ecb3d6fd9c166e89e07d382"
+    },
+    "separate_analytical_changes": "The 2026 dp294 account adds HDI-definition adjustment and population-weighted aggregation problems. Those new errors must not be assigned a 2021 date. Alternative geographic definitions, removing Amazon-specific trends, corrected weak-IV inference, and repeated simulation seeds should be distinguished from fixing the concrete inconsistent-indicator error. The author corrigendum also notes that the original simulation lacked a random seed, which impedes exact replication but is not itself proof of an incorrect substantive estimate.",
+    "analysis_window_eligible": true,
+    "analysis_window_reason": "The 2013 journal article predates the two complete 2019–2020 baseline years. Omit event year 2021; first full post year is 2022. Date/maturity eligibility only: matching, coverage, outcome availability, and causal assumptions remain to be checked.",
+    "unknowns": [
+      "Exact first public posting day of the September 2021 author corrigendum. December 10 is a verified public upper bound, not an assertion that no earlier public disclosure existed."
+    ]
+  },
+  {
+    "source_id": "dp_226",
+    "original_title": "Banning the purchase of sex increases cases of rape: evidence from Sweden",
+    "original_doi": "10.1007/s00148-024-00984-2",
+    "original_publication_date": "2024-03-14",
+    "original_publication_year": 2024,
+    "original_publication_date_precision": "day",
+    "original_publication_source": "https://link.springer.com/article/10.1007/s00148-025-01114-2",
+    "earliest_verified_public_date": "2024-03-27",
+    "event_year": 2024,
+    "date_precision": "day",
+    "date_status": "verified_primary_platform_timestamp_and_error_specific_content",
+    "date_source": "https://x.com/johannarickne/status/1773002832632836549",
+    "date_evidence": "The platform public embed gives March 27, 2024; its syndication JSON gives created_at 2024-03-27T15:03:10.000Z. The post identifies Ciacci (2024) and says the headline result came from erroneous use of Stata regression. This directly verifies public, article-specific, error-specific disclosure, rather than inferring a date from the numeric tweet ID.",
+    "date_evidence_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=1773002832632836549&lang=en&token=0",
+    "date_evidence_local_file": "private-data/i4r/event_evidence/ciacci_public_tweet.json",
+    "error_source_title": "Public replication thread by Johanna Rickne, Joop Adema and Olle Folke",
+    "error_source_version": "March 27, 2024 thread; subsequently documented in I4R DP226, May 2025",
+    "error_source_url": "https://x.com/johannarickne/status/1773002832632836549",
+    "evidence_pages": "DP226 printed p. 3 chronology; pp. 6–8 main regression error; original public thread 1/11.",
+    "material_error_verified": true,
+    "verification_scope": "Public error-specific tweet, later detailed replication report, and publisher dates reviewed. This adjudication did not rerun the statistical analysis.",
+    "error_description": "The main regression combined the post-policy treatment indicator with collinear time fixed effects; software omission of regressors caused the retained coefficient to reflect seasonal variation rather than the claimed policy discontinuity.",
+    "materiality": "The main 44–62% increase claim was generated by the erroneous main regression. The March 2024 public disclosure addresses that specific error. The later report documents further problems with alternative strategies, which should not all be backdated to the initial thread.",
+    "separate_analytical_changes": "DP226 says the March 2024 initial report covered the main RDiT error and that additional code released with the March 2025 editor note enabled the extended critique of four alternative strategies. Treat later robustness, measurement, and coding criticisms as separate evidence with their own timing.",
+    "formal_later_publications": [
+      {
+        "date": "2025-03",
+        "doi": "10.1007/s00148-025-01096-1",
+        "type": "editor_comment"
+      },
+      {
+        "date": "2025-03",
+        "doi": "10.1007/s00148-025-01094-3",
+        "type": "author_followup"
+      },
+      {
+        "date": "2025-06-24",
+        "doi": "10.1007/s00148-025-01114-2",
+        "type": "formal_retraction",
+        "url": "https://link.springer.com/article/10.1007/s00148-025-01114-2"
+      }
+    ],
+    "analysis_window_eligible": false,
+    "analysis_window_reason": "Original article and first error disclosure both occurred in March 2024, leaving no complete pre-disclosure postpublication baseline years. A later retraction also complicates post-disclosure outcomes. Do not use the 2025 I4R date as first treatment or label this as a currently nonretracted article.",
+    "unknowns": [
+      "There could have been a public report before March 27, but no earlier date was verified. DP226 retrospectively reports communication in March followed by public posting.",
+      "The current author replication ZIP has May 2025 revisions and does not preserve the original March 2024 report as a separately dated file."
+    ],
+    "date_evidence_local_file_sha256": "6a4e64efd09a623ee224d2dfc6ef765b090fed92a5dcd8ed525c326b2442dfb6"
+  }
+]

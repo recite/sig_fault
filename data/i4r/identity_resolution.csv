@@ -1,0 +1,8 @@
+article_id,status,detail
+i4r_a8e2f8f02be321,doi_resolved,
+i4r_9008b2600de80c,doi_resolved,
+i4r_ece0397b04bfa9,doi_resolved,
+i4r_ba9c5a9dc17190,doi_resolved,
+i4r_9add9d2fff6627,doi_resolved,
+i4r_6d77bf53ba0e83,doi_resolved,
+i4r_40a2331682db05,failed,HTTP Error 429: Too Many Requests

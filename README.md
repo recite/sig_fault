@@ -23,10 +23,11 @@ The appendix reports journal-by-year and publication-cohort-by-year effects, abs
 
 ## Reproduce
 
-Install R 4.6.0, Python 3.10 or newer, GNU Make, and a TeX distribution providing XeLaTeX and `latexmk`. From the repository root:
+Install R 4.6.0, Python 3.11 or newer, GNU Make, and a TeX distribution providing XeLaTeX and `latexmk`. From the repository root:
 
 ```sh
 make restore
+python3 -m pip install -r requirements-i4r.txt
 make check
 ```
 
@@ -35,6 +36,8 @@ make check
 For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make lint`, or `make test`. Edit the README’s prose in `docs/README.in.md`; numerical values come from the analysis. Edit the paper in `ms/main.tex`.
 
 ## Files
+
+The [I4R extension](docs/i4r/README.md) builds a sourced registry of significant errors and their earliest public disclosures, followed by separate control matching and citation-effect analysis. It inventories both full discovered catalogs, keeps unresolved assessments visible, and does not yet report treatment effects. See the [coverage report](docs/i4r/coverage.md) and [evidence catalog](docs/i4r/catalog.html).
 
 The [extension pilot](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding are still in progress; it does not yet provide estimates of continued reliance.
 

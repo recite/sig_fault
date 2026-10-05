@@ -1,0 +1,708 @@
+{
+  "missing": "Empty strings mean unavailable metadata or structurally absent evidence; complete zero citation counts are observed. R estimates may use NA for unavailable uncertainty. All identifiers are strings.",
+  "fields": {
+    "source_id": {
+      "type": "string",
+      "meaning": "Identifier for a catalog listing; not an original article or unique file."
+    },
+    "collection": {
+      "type": "string",
+      "meaning": "Catalog class: reports or discussion_papers."
+    },
+    "catalog_url": {
+      "type": "string",
+      "meaning": "Catalog page establishing inclusion in the inventory."
+    },
+    "url": {
+      "type": "string",
+      "meaning": "Source or download URL; no authentication credentials."
+    },
+    "title": {
+      "type": "string",
+      "meaning": "Catalog or bibliographic title; candidate titles may remain unresolved."
+    },
+    "authors": {
+      "type": "string",
+      "meaning": "Author text supplied by catalog."
+    },
+    "journal": {
+      "type": "string",
+      "meaning": "Journal name from catalog or verified metadata."
+    },
+    "status": {
+      "type": "string",
+      "meaning": "Stage-specific observed disposition; see values and the construction contract."
+    },
+    "document_id": {
+      "type": "string",
+      "meaning": "Identifier for a source-linked file; duplicate contents can have different IDs."
+    },
+    "name": {
+      "type": "string",
+      "meaning": "Source-provided document filename or linked_fulltext placeholder."
+    },
+    "format": {
+      "type": "string",
+      "meaning": "Filename-derived document format; unknown when not inferred."
+    },
+    "created_at": {
+      "type": "string",
+      "meaning": "Provider creation timestamp; does not establish public disclosure."
+    },
+    "modified_at": {
+      "type": "string",
+      "meaning": "Provider modification timestamp; does not establish public disclosure."
+    },
+    "date_meaning": {
+      "type": "string",
+      "meaning": "Explicit interpretation of the accompanying source timestamp."
+    },
+    "detail": {
+      "type": "string",
+      "meaning": "Retrieval error or diagnostic detail; empty for successful retrieval."
+    },
+    "sha256": {
+      "type": "string",
+      "meaning": "SHA-256 content checksum of retrieved bytes."
+    },
+    "path": {
+      "type": "string",
+      "meaning": "Repository-relative cache path; private raw contents are not redistributed."
+    },
+    "retrieved_at": {
+      "type": "string",
+      "meaning": "UTC retrieval timestamp from cached response provenance."
+    },
+    "bytes": {
+      "type": "integer",
+      "meaning": "Response size in bytes."
+    },
+    "stated_date": {
+      "type": "string",
+      "meaning": "Date recorded by source provider, with meaning in date_meaning."
+    },
+    "original_title_hint": {
+      "type": "string",
+      "meaning": "Catalog-supplied original title; an identity hint."
+    },
+    "related_source_id": {
+      "type": "string",
+      "meaning": "Explicitly linked discussion-paper ID; empty for other external links."
+    },
+    "relation": {
+      "type": "string",
+      "meaning": "Meaning of a source-to-source or source-to-article relationship."
+    },
+    "article_id": {
+      "type": "string",
+      "meaning": "Opaque original-article identity; title-derived for registry, OpenAlex ID for controls."
+    },
+    "doi": {
+      "type": "string",
+      "meaning": "Normalized original-article DOI; empty if unresolved."
+    },
+    "openalex_id": {
+      "type": "string",
+      "meaning": "Full OpenAlex work URL for resolved identity."
+    },
+    "journal_id": {
+      "type": "string",
+      "meaning": "OpenAlex journal/source URL used for exact journal matching."
+    },
+    "publication_date": {
+      "type": "string",
+      "meaning": "Earliest indexed original publication date; ISO year, month or day precision retained."
+    },
+    "publication_year": {
+      "type": "integer",
+      "meaning": "Calendar year of original publication."
+    },
+    "type": {
+      "type": "string",
+      "meaning": "OpenAlex-compatible document type; primary outcomes count article and review."
+    },
+    "abstract": {
+      "type": "string",
+      "meaning": "Original-article abstract text where supplied by OpenAlex; blank uses title-only matching."
+    },
+    "identity_verified": {
+      "type": "string",
+      "meaning": "yes only after accepted bibliographic match; pending otherwise."
+    },
+    "retracted": {
+      "type": "string",
+      "meaning": "Current indexed retraction flag: yes, no or unknown; not a historical treatment indicator."
+    },
+    "retraction_date": {
+      "type": "string",
+      "meaning": "Earliest known retraction date from dated notice ledger."
+    },
+    "retraction_source": {
+      "type": "string",
+      "meaning": "Notice URL establishing retraction date."
+    },
+    "metadata_source": {
+      "type": "string",
+      "meaning": "URL of accepted bibliographic lookup."
+    },
+    "metadata_sha256": {
+      "type": "string",
+      "meaning": "Checksum of the raw accepted bibliographic response."
+    },
+    "alias": {
+      "type": "string",
+      "meaning": "Superseded title-derived ID mapping to canonical article_id."
+    },
+    "evidence": {
+      "type": "string",
+      "meaning": "Source pointer or documented identity/link decision."
+    },
+    "source_url": {
+      "type": "string",
+      "meaning": "Public evidence or notice URL."
+    },
+    "review_status": {
+      "type": "string",
+      "meaning": "Depth/disposition of source reading; not a verified error label."
+    },
+    "classification": {
+      "type": "string",
+      "meaning": "Reviewer classification or candidate description; unresolved is not a negative finding."
+    },
+    "target_title": {
+      "type": "string",
+      "meaning": "Reviewer-identified original-paper title, pending identity resolution."
+    },
+    "target_doi": {
+      "type": "string",
+      "meaning": "Reviewer-identified original-paper DOI."
+    },
+    "evidence_summary": {
+      "type": "string",
+      "meaning": "Paraphrased evidence supporting a candidate assessment, including limitations."
+    },
+    "evidence_pages": {
+      "type": "string",
+      "meaning": "Source-reader locations; preserve stated PDF/printed page distinction."
+    },
+    "review_scope": {
+      "type": "string",
+      "meaning": "Reviewer limitations and what was examined."
+    },
+    "related_sources": {
+      "type": "string",
+      "meaning": "Semicolon-separated linked source IDs or reviewer cross-references."
+    },
+    "assessment_eligibility": {
+      "type": "string",
+      "meaning": "yes/no/unresolved: whether the source is an eligible article-specific assessment for the coverage denominator."
+    },
+    "assessment_resolved": {
+      "type": "string",
+      "meaning": "yes/no: explicit final adjudication for the coverage gate; default no."
+    },
+    "assessment_id": {
+      "type": "string",
+      "meaning": "Identifier for a particular article-specific error assessment."
+    },
+    "category": {
+      "type": "string",
+      "meaning": "Type of error or broader concern; primary cohort requires demonstrated material error."
+    },
+    "material": {
+      "type": "string",
+      "meaning": "yes/no/unresolved: whether the documented error materially changes a substantive finding."
+    },
+    "error_verified": {
+      "type": "string",
+      "meaning": "yes, pending_second_review or unresolved; only yes enters verified-error cohort."
+    },
+    "affected_claim": {
+      "type": "string",
+      "meaning": "Substantive result affected; does not imply every finding in the article fails."
+    },
+    "evidence_locator": {
+      "type": "string",
+      "meaning": "Public source and page/table/section identifying the error and consequence."
+    },
+    "dispute_status": {
+      "type": "string",
+      "meaning": "Author acknowledgment, response, dispute or unresolved status."
+    },
+    "verification_scope": {
+      "type": "string",
+      "meaning": "Evidence actually checked; source verification is distinct from re-running code."
+    },
+    "public_year": {
+      "type": "integer",
+      "meaning": "Known public assessment year for time-aware control exclusions."
+    },
+    "event_id": {
+      "type": "string",
+      "meaning": "Identifier for a candidate particular-error disclosure event."
+    },
+    "warning_id": {
+      "type": "string",
+      "meaning": "Shared disclosure identifier for dependence when one warning affects multiple articles."
+    },
+    "date": {
+      "type": "string",
+      "meaning": "Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown."
+    },
+    "year": {
+      "type": "integer",
+      "meaning": "Public disclosure year in events; observed citation year in citation/panel tables."
+    },
+    "date_precision": {
+      "type": "string",
+      "meaning": "day/month/year: precision supported by public evidence."
+    },
+    "publicity_verified": {
+      "type": "string",
+      "meaning": "yes only when public timing has a documented source."
+    },
+    "date_evidence_url": {
+      "type": "string",
+      "meaning": "Public evidence establishing disclosure timing."
+    },
+    "date_evidence": {
+      "type": "string",
+      "meaning": "Reasoning for earliest substantiated public year/day and unresolved earlier versions."
+    },
+    "already_retracted": {
+      "type": "string",
+      "meaning": "Retraction status at disclosure: no required for primary cohort."
+    },
+    "notice_doi": {
+      "type": "string",
+      "meaning": "Normalized DOI of the retraction notice."
+    },
+    "record_id": {
+      "type": "string",
+      "meaning": "Retraction Watch database record ID."
+    },
+    "dataset_url": {
+      "type": "string",
+      "meaning": "Public dataset supplying the dated retraction record."
+    },
+    "control_id": {
+      "type": "string",
+      "meaning": "Original control-article ID retained across reused matches."
+    },
+    "rank": {
+      "type": "integer",
+      "meaning": "Distance order within event/horizon; 1 is closest; stable ID breaks ties."
+    },
+    "distance": {
+      "type": "number",
+      "meaning": "Standardized pre-citation and text matching distance; no post outcomes used."
+    },
+    "weight": {
+      "type": "number",
+      "meaning": "Treated article weight 1; selected controls total 1 per stack."
+    },
+    "horizon": {
+      "type": "integer",
+      "meaning": "Full calendar years after disclosure, primary 1; secondary 2 and 3."
+    },
+    "eligible": {
+      "type": "string",
+      "meaning": "yes/no after metadata, age, exposure and citation-caliper gates."
+    },
+    "reason": {
+      "type": "string",
+      "meaning": "Explicit exclusion reason; blank if eligible."
+    },
+    "pre2_smd": {
+      "type": "number",
+      "meaning": "Control minus treated log1p citations in year -2, divided by pooled risk-set SD."
+    },
+    "pre1_smd": {
+      "type": "number",
+      "meaning": "Control minus treated log1p citations in year -1, divided by pooled risk-set SD."
+    },
+    "change_smd": {
+      "type": "number",
+      "meaning": "Standardized difference in the two-year pre-citation log change."
+    },
+    "text_cosine_distance": {
+      "type": "number",
+      "meaning": "One minus title/abstract TF-IDF cosine similarity."
+    },
+    "stack_id": {
+      "type": "string",
+      "meaning": "Identifier for a matched event/horizon or sensitivity comparison."
+    },
+    "event_time": {
+      "type": "integer",
+      "meaning": "Calendar year relative to disclosure; zero omitted from primary estimation."
+    },
+    "treated": {
+      "type": "integer",
+      "meaning": "1 for affected original article; 0 for matched control."
+    },
+    "post": {
+      "type": "integer",
+      "meaning": "1 for after period, 0 for before period; placebo period coding follows comparison order."
+    },
+    "citations": {
+      "type": "number",
+      "meaning": "Deduplicated citing journal articles/reviews; sensitivity averages may be fractional."
+    },
+    "specification": {
+      "type": "string",
+      "meaning": "Named sensitivity comparison; see design and construction ledger."
+    },
+    "disclosure_date": {
+      "type": "string",
+      "meaning": "Exact public-disclosure date when known, otherwise blank."
+    },
+    "citing_work_id": {
+      "type": "string",
+      "meaning": "OpenAlex work ID of the citing publication."
+    },
+    "citing_doi": {
+      "type": "string",
+      "meaning": "Normalized DOI of the citing publication; absent uses work ID for deduplication."
+    },
+    "candidates": {
+      "type": "integer",
+      "meaning": "Number of raw works returned by a complete journal/type/cohort risk-set query."
+    },
+    "articles": {
+      "type": "integer",
+      "meaning": "Distinct original articles in the fitted comparison."
+    },
+    "affected_articles": {
+      "type": "integer",
+      "meaning": "Distinct treated articles in the fitted comparison."
+    },
+    "disclosure_events": {
+      "type": "integer",
+      "meaning": "Distinct shared disclosure warnings used for clustering."
+    },
+    "estimate": {
+      "type": "number",
+      "meaning": "Equal-treated-weight matched change in citing publications."
+    },
+    "standard_error": {
+      "type": "number",
+      "meaning": "Two-way original-article/disclosure clustered standard error."
+    },
+    "lower": {
+      "type": "number",
+      "meaning": "Lower limit of two-sided 95% t interval; NA if unavailable."
+    },
+    "upper": {
+      "type": "number",
+      "meaning": "Upper limit of two-sided 95% t interval; NA if unavailable."
+    },
+    "inference": {
+      "type": "string",
+      "meaning": "Variance convention or reason inference unavailable."
+    },
+    "mean": {
+      "type": "number",
+      "meaning": "Weighted mean citations in group-period."
+    },
+    "median": {
+      "type": "number",
+      "meaning": "Weighted lower median citations in group-period."
+    },
+    "distinct_articles": {
+      "type": "integer",
+      "meaning": "Distinct original article IDs in group-period."
+    },
+    "provider": {
+      "type": "string",
+      "meaning": "Accepted bibliographic provider: crossref or openalex."
+    },
+    "alias_openalex_id": {
+      "type": "string",
+      "meaning": "Known OpenAlex work alias of a canonical control article; incoming edges are combined across aliases."
+    },
+    "query_filter": {
+      "type": "string",
+      "meaning": "Exact OpenAlex risk-set filter; must agree with current treated metadata before matching."
+    }
+  },
+  "tables": {
+    "sources.csv": {
+      "unit": "catalog listing",
+      "key": [
+        "source_id"
+      ],
+      "producer": "i4r_sources discover"
+    },
+    "documents.csv": {
+      "unit": "source-linked file",
+      "key": [
+        "document_id"
+      ],
+      "producer": "i4r_sources inventory"
+    },
+    "document_retrieval.csv": {
+      "unit": "file retrieval",
+      "key": [
+        "document_id"
+      ],
+      "producer": "i4r_sources documents"
+    },
+    "retrieval.csv": {
+      "unit": "catalog source retrieval",
+      "key": [
+        "source_id"
+      ],
+      "producer": "i4r_sources fetch"
+    },
+    "source_manifest.csv": {
+      "unit": "cached response",
+      "key": [
+        "path"
+      ],
+      "producer": "i4r_sources manifest"
+    },
+    "source_metadata.csv": {
+      "unit": "source metadata",
+      "key": [
+        "source_id"
+      ],
+      "producer": "i4r_sources inventory"
+    },
+    "source_links.csv": {
+      "unit": "explicit external source link",
+      "key": [],
+      "producer": "i4r_sources inventory"
+    },
+    "source_articles.csv": {
+      "unit": "source\u2013article relationship",
+      "key": [
+        "source_id",
+        "article_id"
+      ],
+      "producer": "i4r_registry build"
+    },
+    "source_reviews.csv": {
+      "unit": "source reading/disposition",
+      "key": [
+        "source_id"
+      ],
+      "producer": "i4r_registry build"
+    },
+    "articles.csv": {
+      "unit": "candidate original article",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_registry build"
+    },
+    "control_articles.csv": {
+      "unit": "external control candidate",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_citations candidates/retractions"
+    },
+    "verified_metadata.csv": {
+      "unit": "verified bibliographic identity",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_registry build --refresh-metadata"
+    },
+    "article_aliases.csv": {
+      "unit": "superseded article ID",
+      "key": [
+        "alias"
+      ],
+      "producer": "i4r_registry build"
+    },
+    "crossref_retrieval.csv": {
+      "unit": "publisher lookup",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_registry crossref"
+    },
+    "identity_resolution.csv": {
+      "unit": "OpenAlex resolution attempt",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_registry resolve"
+    },
+    "identity_decisions.csv": {
+      "unit": "clerical identity decision",
+      "key": [
+        "article_id"
+      ],
+      "producer": "manual evidence review"
+    },
+    "curated_claims.csv": {
+      "unit": "adjudicated candidate claim/disclosure",
+      "key": [
+        "assessment_id"
+      ],
+      "producer": "manual evidence review"
+    },
+    "assessments.csv": {
+      "unit": "candidate significant-error assessment",
+      "key": [
+        "assessment_id"
+      ],
+      "producer": "i4r_registry build"
+    },
+    "events.csv": {
+      "unit": "candidate error disclosure",
+      "key": [
+        "event_id"
+      ],
+      "producer": "i4r_registry build"
+    },
+    "retractions.csv": {
+      "unit": "retraction notice",
+      "key": [
+        "record_id"
+      ],
+      "producer": "i4r_citations retractions"
+    },
+    "matches.csv": {
+      "unit": "selected event\u2013control\u2013horizon",
+      "key": [
+        "event_id",
+        "control_id",
+        "horizon"
+      ],
+      "producer": "i4r_match"
+    },
+    "match_candidates.csv": {
+      "unit": "screened event\u2013control\u2013horizon",
+      "key": [
+        "event_id",
+        "control_id",
+        "horizon"
+      ],
+      "producer": "i4r_match"
+    },
+    "match_exclusions.csv": {
+      "unit": "excluded event\u2013horizon",
+      "key": [
+        "event_id",
+        "horizon"
+      ],
+      "producer": "i4r_match"
+    },
+    "match_balance.csv": {
+      "unit": "selected control balance",
+      "key": [
+        "event_id",
+        "control_id",
+        "horizon"
+      ],
+      "producer": "i4r_match"
+    },
+    "panel_exclusions.csv": {
+      "unit": "incomplete event\u2013horizon",
+      "key": [
+        "event_id",
+        "horizon"
+      ],
+      "producer": "i4r_match"
+    },
+    "analysis_panel.csv": {
+      "unit": "article-period in a matched stack",
+      "key": [
+        "stack_id",
+        "article_id",
+        "post"
+      ],
+      "producer": "i4r_match"
+    },
+    "sensitivity_panel.csv": {
+      "unit": "article-period in a sensitivity stack",
+      "key": [
+        "stack_id",
+        "article_id",
+        "post"
+      ],
+      "producer": "i4r_match"
+    },
+    "event_trajectories.csv": {
+      "unit": "matched article\u2013event\u2013relative-year",
+      "key": [
+        "event_id",
+        "article_id",
+        "event_time"
+      ],
+      "producer": "i4r_match"
+    },
+    "citations.csv": {
+      "unit": "original article\u2013calendar-year",
+      "key": [
+        "article_id",
+        "year"
+      ],
+      "producer": "i4r_citations fetch"
+    },
+    "citation_edges.csv": {
+      "unit": "deduplicated original\u2013citing article pair",
+      "key": [
+        "article_id",
+        "citing_work_id"
+      ],
+      "producer": "i4r_citations fetch"
+    },
+    "citation_retrieval.csv": {
+      "unit": "original article citation retrieval",
+      "key": [
+        "article_id"
+      ],
+      "producer": "i4r_citations fetch"
+    },
+    "risk_set_retrieval.csv": {
+      "unit": "event control-pool retrieval",
+      "key": [
+        "event_id"
+      ],
+      "producer": "i4r_citations candidates"
+    },
+    "estimates.csv": {
+      "unit": "horizon effect",
+      "key": [
+        "horizon"
+      ],
+      "producer": "i4r_analysis.R"
+    },
+    "sensitivity_estimates.csv": {
+      "unit": "sensitivity effect",
+      "key": [
+        "specification"
+      ],
+      "producer": "i4r_analysis.R"
+    },
+    "descriptive.csv": {
+      "unit": "horizon\u2013group\u2013relative-year",
+      "key": [
+        "horizon",
+        "treated",
+        "event_time"
+      ],
+      "producer": "i4r_analysis.R"
+    },
+    "metadata_provenance.csv": {
+      "unit": "accepted bibliographic provider response for an identity",
+      "key": [
+        "article_id",
+        "provider"
+      ],
+      "producer": "i4r_registry build --refresh-metadata"
+    },
+    "control_aliases.csv": {
+      "unit": "known indexed control-work alias",
+      "key": [
+        "alias_openalex_id"
+      ],
+      "producer": "i4r_citations candidates"
+    }
+  }
+}

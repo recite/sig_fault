@@ -1,0 +1,2247 @@
+[
+  {
+    "source_id": "dp_111",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/111.html",
+    "source_title": "A Comment on Wu, Zhang, Wang (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Six of120 personality items contain out-of-range codes; correcting them does not materially change results.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_112",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/112.html",
+    "source_title": "Replication Study of \"Coase and cap-an-trade\" (Zaklan 2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      11
+    ],
+    "assessment": "No code error found; sensitivity of small-emitter result to matching, cutoff and treatment choices.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_113",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/113.html",
+    "source_title": "Replication: Can Technology Solve the Principal-Agent Problem? Evidence from China's War on Air Pollution",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      18
+    ],
+    "assessment": "Main results reproduce; weather-reconstruction and fixed-effect checks largely support pollution results.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_114",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/114.html",
+    "source_title": "A Comment on Sampson (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      7,
+      20
+    ],
+    "assessment": "Code executes and reproduces reported results; developing-country/innovation-measure variants temper interpretation.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_115",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/115.html",
+    "source_title": "A Comment on Bai, Jia &, Yang (2023), Web of Power: How Elite Networks Shaped War and Politics in China",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      9
+    ],
+    "assessment": "Figure filenames, summary-sample descriptions and singleton counts differ; substantial changes come from alternative count models, not corrected code.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_116",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/116.html",
+    "source_title": "Understanding Cultural Persistence and Change: A Replication of Giuliano and Nunn (2021)",
+    "original_title_hint": "Understanding Cultural Persistence and Change",
+    "original_doi": "10.1093/restud/rdaa074",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "assessment": "Text/code sample discrepancies are documented, but reply117 contests their interpretation and demonstrates robustness; formal2023 correction clarifies descriptions. Substantive material-error designation unresolved.",
+    "earliest_public_date": "2023-10-09",
+    "date_status": "Formal description correction date verified; substantive error-specific first date unresolved",
+    "related_source_ids": [
+      "dp_117"
+    ],
+    "date_source": "https://academic.oup.com/restud/article/91/1/597/7301480",
+    "dispute_status": "Materiality and error interpretation contested in dp117"
+  },
+  {
+    "source_id": "dp_117",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/117.html",
+    "source_title": "A Note on \"Understanding Cultural Persistence and Change: A Replication of Giuliano and Nunn (2021)\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Authors dispute material-error interpretation of116; acknowledges revised appendix and formal correction. Link to same target, not independent target.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_116"
+    ]
+  },
+  {
+    "source_id": "dp_118",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/118.html",
+    "source_title": "Robustness Reproducibility of \"Improving Workplace Climate in Large Corporations: A Clustered Randomized Intervention\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Post-randomization sample additions drive estimates; serious design/selection concern, but no demonstrated coding mistake. Keep separate from verified material-error cohort.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_119",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/119.html",
+    "source_title": "Replicating Schwardmann, Tripodi and van der Weele (AER 2022)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      9,
+      10
+    ],
+    "assessment": "All main findings robust to controls, seemingly unrelated regressions and team fixed effects.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_120",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/120.html",
+    "source_title": "A Comment on \"The Effects of Import Competition on Unionization\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [],
+    "assessment": "Main results reproduce; alternative outcome scale and union/nonunion decomposition address robustness and estimand.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_121",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/121.html",
+    "source_title": "Do Subway Openings Reduce Air Pollution? A Replication Exercise",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      13,
+      15
+    ],
+    "assessment": "Back-of-envelope calculation uses2.9 rather than3.2; corrected averted deaths25 rather than22.5. Core pollution result survives; alternative aggregation produces15, which is analytical-choice variation.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_122",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/122.html",
+    "source_title": "A Comment on Safe Assets by Barro et al. (2022)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      9,
+      10
+    ],
+    "assessment": "Main signs and conclusions reproduce despite small output differences; alternative simulation parameters do not overturn conclusions.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_123",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/123.html",
+    "source_title": "Rural Electrification, the Credibility Revolution, and the Limits of Evidence-Based Policy",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      11,
+      14
+    ],
+    "assessment": "Opinion on electrification evidence and evidence-based policy, not a verified article-specific error audit.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_124",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "multiple_article_robustness_audit",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/124.html",
+    "source_title": "The Robustness Reproducibility of the American Economic Review",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Seventeen AER article robustness audit; needs multiple target links; individual sensitivity is not demonstrated error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_125",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "multiple_article_robustness_audit",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/125.html",
+    "source_title": "The Need for Equivalence Testing in Economics",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      14
+    ],
+    "assessment": "Eighty-one article null-claim/equivalence audit; insufficiently precise null estimates do not automatically establish coding/data errors.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_126",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/126.html",
+    "source_title": "A Comment on â€œKin Networks and Institutional Developmentâ€",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      10
+    ],
+    "assessment": "Reported Conley SE are city-clustered and sample count wrong; fixes leave point estimates and significance unchanged.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_127",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/127.html",
+    "source_title": "A Reproduction of â€œDo Female Officers Police Differently? Evidence from Traffic Stopsâ€ (American Journal of Political Science, 2021)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      14
+    ],
+    "assessment": "Reinterprets search and contraband outcomes; rejects rounding small differences away but does not demonstrate a coding mistake.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_128",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/128.html",
+    "source_title": "When Do Politicians Appeal More Broadly? A Comment on Chin (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      15
+    ],
+    "assessment": "Original code/results reproduce; sample restriction mostly preserves findings.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_129",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/129.html",
+    "source_title": "Contested Killings Replication: A Comment on Morris and Shoub (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      10
+    ],
+    "assessment": "Missing/private data and broken codepaths require reconstruction; reproduced and independently replicated substantive finding remains.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_130",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/130.html",
+    "source_title": "Robustness Report on â€œCoercive Contract Enforcement: Law and the Labor Market in Nineteenth Century Industrial Britainâ€, by Suresh Naidu and Noam Yuchtman (2013)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      11,
+      12
+    ],
+    "assessment": "Sensitivity to triple differences and region-year effects; no demonstrated material data/code error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_131",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/131.html",
+    "source_title": "Robustness Report on â€œCommercial Imperialism? Political Influence and Trade during the Cold Warâ€, by Daniel Berger, William Easterly, Nathan Nunn and Shanker Satyanath (2013)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      14,
+      15
+    ],
+    "assessment": "Controls/outliers change significance; no demonstrated material data/code error. Report conclusion itself contains stray institutional-ownership wording.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_132",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/132.html",
+    "source_title": "Robustness Report on â€œDiscretionary Tax Changes and the Macroeconomy: New Narrative Evidence from the United Kingdomâ€, by James Cloyne (2013)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      19,
+      20
+    ],
+    "assessment": "Lag, control, estimator and influence changes test robustness; no demonstrated coding/data error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_133",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/133.html",
+    "source_title": "Robustness Report: â€œGoing to a Better School: Effects and Behavioral Responsesâ€, by Cristian Pop-Eleches and Miguel Urquiola (2013)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      20,
+      22
+    ],
+    "assessment": "Unstacking, clustering and cutoff changes are robustness checks; first outcome especially robust.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_134",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/134.html",
+    "source_title": "Robustness Report on â€œInnovation and Institutional Ownershipâ€, by Aghion, Philippe, John van Reenen, and Luigi Zingales (2013)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      12,
+      13
+    ],
+    "assessment": "Firm fixed effects and multicollinearity affect IV interpretation; error-versus-model-choice distinction unresolved for any material statistical-error claim; retain robustness category.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_135",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/135.html",
+    "source_title": "Computational Reproducibility of \"The Impact of Presidential Appointment of Judges: Montesquieu or the Federalists?\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      9
+    ],
+    "assessment": "Minor presentation/code errors leave main judicial-reform findings intact.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_136",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "multiple_article_robustness_audit",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/136.html",
+    "source_title": "Manipulation Tests in Regression Discontinuity Design: The Need for Equivalence Testing",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      19,
+      31,
+      34
+    ],
+    "assessment": "Thirty-six publication running-variable-equivalence audit; identifies imprecision in ruling out manipulation, not manipulation in each original paper.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_137",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/137.html",
+    "source_title": "A Comment on \"Detecting Mother-Father Differences in Spending on Children: A New Approach Using Willingness-to-Pay Elicitation\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      8,
+      10,
+      15
+    ],
+    "assessment": "Original results reproduce; absent codebook and question labels restrict independent reconstruction and testing.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_138",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/138.html",
+    "source_title": "Computational and Robustness Reproducibility of \"UN Peacekeeping and Democratization in Conflict-Affected Countries\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Stata and R results reproduce and main results robust; no coding errors found in data manipulation.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_139",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/139.html",
+    "source_title": "A Comment on \"Influence Motives in Social Signaling: Evidence from COVID-19 Vaccinations in Germany\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      10,
+      11
+    ],
+    "assessment": "Code/results reproduce; robustness changes do not materially alter estimates.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_140",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/140.html",
+    "source_title": "Replication Study of Cook et al (2023): The Evolution of Access to Public Accomodations in the United States",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Table3 coefficient differs0.0191vs0.0263 without changed conclusion; IV inference sensitive to robust SE. Do not convert SE sensitivity alone to material-error label.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_141",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/141.html",
+    "source_title": "Job Market Stars",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      9,
+      10,
+      26
+    ],
+    "assessment": "Study of hiring and statistical significance across job-market papers, not article-specific error disclosure.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_142",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/142.html",
+    "source_title": "Long-Term Effects of the Targeting the Ultra-Poor Program - A Reproducibility and Replicability Assessment of Banerjee et al. (2021)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      9
+    ],
+    "assessment": "Transfer-program results reproduce and robust; transparency/external-validity discussion is not demonstrated error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_143",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/143.html",
+    "source_title": "A Protocol for Structured Robustness Reproductions and Replicability Assessments",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Replication assessment protocol, not new article-specific error findings.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_144",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/144.html",
+    "source_title": "A Comment on \"Informed Enforcement: Lessons from Pollution Monitoring in China\" by Sebastian Axbard and Zichen Deng",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      9
+    ],
+    "assessment": "Minor code/sample-summary anomaly with no material change; main effect robust.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_145",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/145.html",
+    "source_title": "A Replication of Macchi (2023): \"Worth Your Weight: Experimental Evidence on the Benefits of Obesity in Low-Income Countries\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Third fixed effect present in code but omitted in text; aligning specification yields nearly identical estimates.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_146",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/146.html",
+    "source_title": "Reproduction and Robustness of Kao et al. (2024): \"Female Representation and Legitimacy\". A Report from the 2024 UC Berkeley Replication Games",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      12,
+      13,
+      16
+    ],
+    "assessment": "Replication and alternative models of gender/leadership survey experiments; no material error demonstrated in reviewed sections.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_147",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/147.html",
+    "source_title": "A Robustness Reproduction of Tappin, Berinsky and Rand (2023): \"Partisans' Receptivity to Persuasive Messaging is Undiminished by Countervailing Party Leader Cues\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      9,
+      12
+    ],
+    "assessment": "Blind frequentist/Bayesian reproduction and alternate party definitions support noninteraction conclusion.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_148",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "material_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/148.html",
+    "source_title": "The Arrival of Fast Internet and Employment in Africa - Comment",
+    "original_title_hint": "The Arrival of Fast Internet and Employment in Africa",
+    "original_doi": "10.1257/aer.20161385",
+    "evidence_pdf_pages": [
+      29,
+      34,
+      40,
+      41,
+      42
+    ],
+    "assessment": "Specific treatment-indicator coding error materially changes nighttime-light coefficient; geography, calibration and treatment-zone sensitivity are separate issues. Earliest error-specific version still requires verification.",
+    "earliest_public_date": "2024-01-17",
+    "date_status": "First public error-specific disclosure substantiated by arXivv1 dated2024-01-17; v1 pp35,38 identify same coding error",
+    "related_source_ids": [],
+    "date_source": "https://arxiv.org/abs/2401.13694",
+    "material_error_evidence": "Some country post-treatment indicators exceed1. PDFpp40-41 reports correction as a major reason light coefficient risesfrom.024to.053; do not attribute shrinkage of employment effects solely to this fix.",
+    "dispute_status": "No author reply reviewed; classification eligible for further adjudication, timing gate remains",
+    "first_version_source": "https://arxiv.org/pdf/2401.13694v1",
+    "first_version_evidence_pdf_pages": [
+      35,
+      38
+    ]
+  },
+  {
+    "source_id": "dp_149",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/149.html",
+    "source_title": "Do Radical-Right Parties Use Descriptive Representation Strategically? A Replication of Weeks et al. (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      8,
+      19
+    ],
+    "assessment": "Stargazer exported anti-conservative p-values; reply150 narrows issue to one coefficient moving0.05to0.0548. Main challenge is influential-observation robustness, not demonstrated material correction.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_150"
+    ]
+  },
+  {
+    "source_id": "dp_150",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/150.html",
+    "source_title": "Response to \"Do Radical-Right Parties Use Descriptive Representation Strategically? A Replication of Weeks et al. (2023)\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      9,
+      20
+    ],
+    "assessment": "Reply to149; confirmed minor table-export p-value issue; disputes deletion of particular influential case.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_149"
+    ]
+  },
+  {
+    "source_id": "dp_151",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/151.html",
+    "source_title": "A Comment on \"Taste-Based Gender Favouritism in High-Strike Decisions: Evidence from the Price is Right\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "HTML extraction code repair and changing name-gender lookup alter few observations; substantive findings stable.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_152",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/152.html",
+    "source_title": "A Comment on \"The PhD Pipeline Initiative Works: Evidence from a Randomized Intervention to Help Underrepresented Students Prepare for PhDs in Political Science\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      10,
+      11,
+      17
+    ],
+    "assessment": "Minor coding challenges; main findings robust to models and sample checks.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_153",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/153.html",
+    "source_title": "Replication of \"Solar Eclipses and the Origins of Critical Thinking and Complexity\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      8,
+      9
+    ],
+    "assessment": "Processed-data results reproduce but missing data-creation steps block raw reconstruction; no demonstrated error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_154",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/154.html",
+    "source_title": "Reanalysis of Sanders et al. (2024): An Umbrella Review of the Benefits and Risks Associated with Youths' Interactions with Electronic Screens",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Full text explicitly reports no coding/mathematical/data/reporting errors; publication-bias method changes reduce three effects.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_155",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/155.html",
+    "source_title": "A Comment on \"Winter is Coming: Early-Life Experiences and Politicians' Decisions\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      9
+    ],
+    "assessment": "Birth-versus-office prefecture code error in robustness table; fix strengthens result. Other changes derive from missing-data samples.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_156",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/156.html",
+    "source_title": "A Comment on \"Information and Spillovers from Targeting Policy in Peru's Anchoveta Fishery\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      9
+    ],
+    "assessment": "Full analysis reproducible; long synthetic-control runtime does not constitute error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_157",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/157.html",
+    "source_title": "A Comment on \"Populist Leaders and the Economy\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      9
+    ],
+    "assessment": "Minor coefficient rounding differences and alternate leader/year definitions; main conclusions robust.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_158",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/158.html",
+    "source_title": "The Problem with Poor Proxies: Does Innovation Mitigate Agricultural Damage from Climate Change?",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Disputed proxy/functional-form critique; reply159 confirms minor appendix error but contests material-error claims. Do not treat99.8% shrinkage under different exposure definition as corrected-code effect.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_159"
+    ]
+  },
+  {
+    "source_id": "dp_159",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/159.html",
+    "source_title": "Response to Fitzgerald (2024), \"Does Innovation Mitigate Agricultural Damage from Climate Change?\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      7
+    ],
+    "assessment": "Author reply to158; appendix error acknowledged as nonconsequential, proxy interpretation disputed.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_158"
+    ]
+  },
+  {
+    "source_id": "dp_160",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/160.html",
+    "source_title": "A Comment on \"Measuring Monetary Policy in the Euro Area Using SVARs with Residual Restrictions\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      10,
+      12
+    ],
+    "assessment": "Original MATLAB results reproduce; custom prior cannot be identically reconstructed in EViews, with nonstationary alternatives. No demonstrated original coding error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_161",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/161.html",
+    "source_title": "A Comment on \"Motivated Errors\" by Exley and Kessler (2024)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "All results regenerate; insufficient annotation and missing participant data restrict further scrutiny, not established error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_162",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/162.html",
+    "source_title": "Comment on \"Climate Change and Labor Reallocation: Evidence from Six Decades of the Indian Census\" by Liu, Shamdasani, and Taraz (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Original and R results reproduce; population weights change medium-run interpretation but long-run results persist.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_163",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/163.html",
+    "source_title": "Why Don't Firms Hire Young Workers During Recessions? A Replication of Forsythe (The Economic Journal, 2022)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      8,
+      11,
+      12
+    ],
+    "assessment": "Independent CPS reconstruction and new-period/geography analysis support original conclusions.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_164",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/164.html",
+    "source_title": "A Computational Reproduction of \"Intrinsic Information Preferences and Skewness\" by Masatlioglu, Orhun and Raymond (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7
+    ],
+    "assessment": "Computational reproduction successful; comments do not challenge main conclusions.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_165",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/165.html",
+    "source_title": "A Comment on \"Se Habla Español: Spanish-Language Appeals and Candidate Evaluations in the United States\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      9
+    ],
+    "assessment": "Wrong source question in ethnicity assignment overwritten by later coding; error has no consequence in actual execution.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_166",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/166.html",
+    "source_title": "A Comment on \"Preference Discovery in University Admissions: The Case for Dynamic Multioffer Mechanisms\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      10
+    ],
+    "assessment": "Original tables/figures and R reconstruction reproduce; robustness supports qualitative findings.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_167",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/167.html",
+    "source_title": "A Replication of \"The Macroeconomic Impact of Europe's Carbon Taxes\" by Metcalf and Stock (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      13
+    ],
+    "assessment": "Original Stata results reproduce; alternative policy counterfactual/local projections retain qualitative results.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_168",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/168.html",
+    "source_title": "A Comment on \"The Political Consequences of Green Policies: Evidence from Italy\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Original processed-data results reproduce; alternative covariates/designs smaller estimates, plus survey-reporting limitations.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_169",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/169.html",
+    "source_title": "A Robustness Reproduction of \"A Systematic Review and Meta-Analysis of 90 Cohort Studies of Social Isolation, Loneliness and Mortality\")",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      11
+    ],
+    "assessment": "Extracted-data reimplementation reproduces meta-analysis; publication-bias adjustments somewhat shrink but do not overturn results.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_170",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/170.html",
+    "source_title": "A Comment on the \"Strategic Complexity and the Value of Thinking by D. Gill and V. Prowse (2023)\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      9
+    ],
+    "assessment": "Stray Sigma in do-file breaks execution; simple fix. Median/learning comparisons are additional analyses, not corrected material error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_171",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/171.html",
+    "source_title": "A Comment on Furnas & LaPira (2024)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      12,
+      15
+    ],
+    "assessment": "Alternative public-opinion benchmark and models largely support false-consensus result; source already addresses support/opposition scale caveat.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_172",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/172.html",
+    "source_title": "A Comment on Identity Effects in Social Media - Taylor et al. (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Encrypted data reproduction and mixed-effects robustness broadly support identity-cue conclusions.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_173",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/173.html",
+    "source_title": "A Reproduction of \"Formal Designation of Brazilian Indigenous Lands Linked to Small but Consistent Reductions in Deforestation\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Negative deforestation, matching and synthetic-control checks support small effects of indigenous-land designation.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_174",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/174.html",
+    "source_title": "A Replication of Anchored Inflation Expectations",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      20
+    ],
+    "assessment": "US replication and later-period/sampler variants support main conclusions; proprietary cross-country data not reproduced.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_175",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/175.html",
+    "source_title": "A Reproduction of \"Political Endorsement by Nature and Trust in Scientific Expertise During COVID-19\" by Zhang (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      8,
+      19
+    ],
+    "assessment": "No coding errors; trivial textual/CI typos; additional mediation/general-science-trust interpretation disputed but main finding supported.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_176",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/176.html",
+    "source_title": "A Comment on \"Extraction, Assimilation, and Accommodation: The Historical Foundations of Indigenous-State Relations in Latin America\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      10,
+      11,
+      14
+    ],
+    "assessment": "Two historical-road maps differ; exact recoding impossible without identifiable municipalities. No demonstrated consequential error, leave-one-out results stable.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_177",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/177.html",
+    "source_title": "The Long-Term Effects of Measles Vaccination on Earnings and Employment: Comment",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      9
+    ],
+    "assessment": "Extended-sample event study exposes differential trends inconsistent with vaccine interpretation; identification challenge, not a demonstrated coding/data correction.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_178",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/178.html",
+    "source_title": "A Comment on \"How the Party Commands the Gun: The Foreign-Domestic Threat Dilemma in China\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      12
+    ],
+    "assessment": "Main results reproduce; alternative threat measures change coefficients. Reply179 disputes measure validity.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_179"
+    ]
+  },
+  {
+    "source_id": "dp_179",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/179.html",
+    "source_title": "Response to Jetter and Swasito (2024)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      10
+    ],
+    "assessment": "Reply to178 defending case-specific threat measurement; no separate targeted paper.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_178"
+    ]
+  },
+  {
+    "source_id": "dp_180",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/180.html",
+    "source_title": "A Comment on \"Climate Change and Labor Reallocation: Evidence from Six Decades of the Indian Census\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      11,
+      12
+    ],
+    "assessment": "Minor code/SE differences, inaccessible raw data and alternative fixed-effect sensitivity; main supplied-data results reproduce.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_181",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/181.html",
+    "source_title": "Robustness Report on \"Within-Firm Productivity Dispersion: Estimates and Implications,\" by Scott Orr (2022)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      7,
+      12
+    ],
+    "assessment": "Original estimates reproduce; instrument quality in later-period data and cost-share threshold sensitivity do not establish original error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_182"
+    ]
+  },
+  {
+    "source_id": "dp_182",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/182.html",
+    "source_title": "Response to Hong and Luparello (2024)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      7,
+      9
+    ],
+    "assessment": "Reply181 explains replication-package cleaning error caused by changed ASICC code source; target estimates not materially altered.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_181"
+    ]
+  },
+  {
+    "source_id": "dp_183",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/183.html",
+    "source_title": "Causal Claims in Economics",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      8,
+      40
+    ],
+    "assessment": "Meta-research mapping claims of44,000working papers; not individual error verification.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_184",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/184.html",
+    "source_title": "Lost in the Design Space? Construct Validity in the Microfinance Literature",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      12,
+      20,
+      21
+    ],
+    "assessment": "Construct-validity framework/examples; no uniquely adjudicated article-specific material error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_185",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/185.html",
+    "source_title": "A comment on \"Discriminatory Lending: Evidence from Bankers in the Lab\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Main results reproduce; heterogeneity by loans/cities/seniority qualifies mechanism.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_186",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/186.html",
+    "source_title": "Reproducing Do Policymakers Listen to Experts? Evidence from a National Survey of Local and State Policymakers (Lee 2022)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Minor mislabeled/missing variables and some output discrepancies; paper concludes core claims remain. Materiality of isolated unreproduced outputs not established.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_187",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/187.html",
+    "source_title": "Replication Report: Did Unconventional Interventions Unfreeze the Credit Market?",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      18
+    ],
+    "assessment": "Main results reproduce; alternative liquidity measure and country/outlier restrictions change conclusions.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_188",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/188.html",
+    "source_title": "Letting Down the Team? Social Effects of Team Incentives - Reproduction Report of Babcock et al. (2015)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      9,
+      10
+    ],
+    "assessment": "Nearly complete computational reproduction; robustness checks maintain findings.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_189",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/189.html",
+    "source_title": "A comment on \"The Effects of Racial Diversity in Citizen Decision-Making Bodies\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Main results reproduce without coding errors; robustness supports racial-diversity result.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_190",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "failed_replication",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/190.html",
+    "source_title": "Do Experimental Asset Market Results Replicate? High-Powered Preregistered Replications of 17 Claims",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      23,
+      31
+    ],
+    "assessment": "New-data replication of17claims from4studies; failures are not automatically coding/data errors in originals.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_191",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/191.html",
+    "source_title": "Local Taxation and Development Finance in the DRC: A Comment on Balán et al. (2022)",
+    "original_title_hint": "Local Elites as State Capacity: How City Chiefs Use Local Information to Increase Tax Compliance in the D.R. Congo",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      8,
+      9
+    ],
+    "assessment": "Confirmed erroneous sign in incorrect-exemption coefficient; corrigendum discussed in192. Main average effect remains; mechanism disputes separate.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_192"
+    ]
+  },
+  {
+    "source_id": "dp_192",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/192.html",
+    "source_title": "Response to Adjisse, Blimpo, and Castañeda Dower (2024)",
+    "original_title_hint": "Local Elites as State Capacity: How City Chiefs Use Local Information to Increase Tax Compliance in the D.R. Congo",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      21
+    ],
+    "assessment": "Author reply confirms sign correction: chiefs1.2percentage points MORE likely to incorrectly exempt(p=.107), opposite reported direction; main tax-compliance effect unaffected.",
+    "earliest_public_date": "",
+    "date_status": "Reply document date only; first public disclosure not verified",
+    "related_source_ids": [
+      "dp_191"
+    ],
+    "document_date": "2024-11-13"
+  },
+  {
+    "source_id": "dp_193",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/193.html",
+    "source_title": "Building Nations through Shared Experiences: Evidence from African Football\": a Replication of Depetris-Chauvin, Durante and Campante (2020)",
+    "original_title_hint": "Building Nations through Shared Experiences: Evidence from African Football",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      11,
+      17,
+      18
+    ],
+    "assessment": "Some genuine inclusion/date/score errors admitted in194, but broad41-case characterization disputed. Correcting admitted mistakes vs changing sample criteria must be separated before materiality is determined.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_194"
+    ],
+    "dispute_status": "Some errors admitted, broad count/materiality disputed; need separate corrected-only contrast"
+  },
+  {
+    "source_id": "dp_194",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/194.html",
+    "source_title": "Building Nations through Shared Experiences: Evidence from African Football: A Reply to Delpeyrou and Bertoli (2024)",
+    "original_title_hint": "Building Nations through Shared Experiences: Evidence from African Football",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      13
+    ],
+    "assessment": "Reply193 admits four country-qualification inclusion errors and two individual-level data errors, argues corrected conclusions stable. Links later corrigendum, not independent critique.",
+    "earliest_public_date": "",
+    "date_status": "Reply dated August2024; first public error-specific disclosure not verified",
+    "related_source_ids": [
+      "dp_193"
+    ],
+    "document_date": "2024-08"
+  },
+  {
+    "source_id": "dp_195",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/195.html",
+    "source_title": "Comparing Human-Only, AI-Assisted, and AI-Led Teams on Assessing Research Reproducibility in Quantitative Social Science",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      10,
+      11
+    ],
+    "assessment": "Experiment comparing human/AI reproducibility assessments; aggregate error rates require identified underlying papers and verified findings before use.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_196",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/196.html",
+    "source_title": "A Robustness Reproduction of Cox et al. (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      12
+    ],
+    "assessment": "Loop/column-selection execution errors minor; model-comparison conclusions uncertain but core acoustic findings reproduce.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_197",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/197.html",
+    "source_title": "A comment on \"Optimal Deposit Insurance\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Unavailable historical data prevents Table1 reproduction; simulations reproduced. Missing source data not proof of error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_198",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/198.html",
+    "source_title": "A Comment on \"Bayesianism and Wishful Thinking are Compatible\"",
+    "original_title_hint": "Bayesianism and wishful thinking are compatible",
+    "original_doi": "10.1038/s41562-024-01819-6",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      9,
+      11
+    ],
+    "assessment": "Experiment4 data/code absent and experiment5 unreproduced with inconsistent effect direction/code specification; cannot verify material-error mechanism from report alone.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_199",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/199.html",
+    "source_title": "A Comment on \"Negativity Drives Online News Consumption\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Main negativity/click-through claims reproduce; alternate sentiment models broadly support conclusions.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_200"
+    ]
+  },
+  {
+    "source_id": "dp_200",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/200.html",
+    "source_title": "Response to Replication Report of \"Negativity Drives Online News Consumption\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7
+    ],
+    "assessment": "Reply199 defending registered-report workflow and clarifying data/code documentation.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_199"
+    ]
+  },
+  {
+    "source_id": "dp_201",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/201.html",
+    "source_title": "A Comment on \"An Experimental Manipulation of the Value of Effort\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Minor CI typography/rounding only; main Bayesian estimates reproduce.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_202",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/202.html",
+    "source_title": "Report for the Nature Human Behaviour Mass Reproduction Initiative: Seeing Racial Avoidance on New York City Streets",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      8,
+      9
+    ],
+    "assessment": "Racial-avoidance analysis reproduced; outlier/bootstrap variants generally maintain central findings.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_203",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/203.html",
+    "source_title": "Replication Report: A Comment on \"Politicians' Private Sector Job and Parliamentary Behavior\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      8
+    ],
+    "assessment": "Main legislative results reproduce; unavailable rgdal affects one figure only; robustness stable.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_204",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/204.html",
+    "source_title": "Electoral Cycles in Macroprudential Regulation - A Replication of Müller (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      10
+    ],
+    "assessment": "No code errors; later data do not replicate political cycles, which is external/sample robustness, not correction.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_205",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "failed_replication",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/205.html",
+    "source_title": "Risky Intertemporal Choices Have A Common Value Function. But A Separate Choice Function",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      38,
+      45,
+      61
+    ],
+    "assessment": "Conceptual replication with different incentives and sample; mixed model evidence, not established original coding/data error.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_206",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/206.html",
+    "source_title": "A Comment on \"A Systematic Review of Worldwide Causal and Correlational Evidence on Digital Media and Democracy\" by LorenzSpreen et al. (2023)",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Minor coding issues resolved without changed conclusions; expanded literature review supports original result.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_207",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/207.html",
+    "source_title": "A Comment on \"Improving Women's Mental Health During a Pandemic\"",
+    "original_title_hint": "Improving Women’s Mental Health during a Pandemic",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      10,
+      11,
+      14,
+      16,
+      22
+    ],
+    "assessment": "Reverse-scoring inconsistency reverses mental-health estimates if labels interpreted literally; authors claim items reversed in field. Verified serious measurement discrepancy but code-error account disputed. Further adjudication required.",
+    "earliest_public_date": "",
+    "date_status": "Dated public I4R report; earlier private January2025email is not public exposure",
+    "related_source_ids": [],
+    "document_date": "2025-02-24",
+    "dispute_status": "Original authors claim reverse-coded items were reversed in field; serious measurement inconsistency remains, specific code-error explanation disputed"
+  },
+  {
+    "source_id": "dp_208",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "material_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/208.html",
+    "source_title": "A Comment on \"Raising Health Awareness in Rural Communities: A Randomized Experiment in Bangladesh and India\" by Siddique et al. (2024)",
+    "original_title_hint": "Raising Health Awareness in Rural Communities: A Randomized Experiment in Bangladesh and India",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      9,
+      13
+    ],
+    "assessment": "Treatment assignments exactly inherited from earlier experiments; reported new randomization false and health-effect identification bundles prior treatment. Source verifies via matched participant IDs/ages/incomes and treatment cross-tab.",
+    "earliest_public_date": "",
+    "date_status": "Dated public I4R report; earliest public disclosure not independently established",
+    "related_source_ids": [],
+    "document_date": "2025-02-22",
+    "material_error_evidence": "Table1 cross-tab shows every observed treatment assignment follows prior RCT arm; no independent re-randomization, bundled earlier interventions. Confirmed source-level evidence; original datasets not independently checked."
+  },
+  {
+    "source_id": "dp_209",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/209.html",
+    "source_title": "The Sources of Researcher Variation in Economics",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      7,
+      8,
+      10
+    ],
+    "assessment": "Many-analyst experiment on data cleaning/research design; not article-level error disclosure roster.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_210",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "material_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/210.html",
+    "source_title": "Comment on \"Food Insecurity and mental health of women during COVID-19: Evidence from a developing country\" by Rahman et al",
+    "original_title_hint": "Food insecurity and mental health of women during COVID-19: Evidence from a developing country",
+    "original_doi": "10.1371/journal.pone.0255392",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "assessment": "Stress-scale reversal and inability to recover claimed positive association from published data; corrected stress measure removes FIES association. Later retraction inMay2026.",
+    "earliest_public_date": "",
+    "date_status": "Dated public I4R report; earlier disclosure not independently established",
+    "related_source_ids": [],
+    "document_date": "2025-03-03",
+    "later_retraction_date": "2026-05-21",
+    "later_retraction_source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349829"
+  },
+  {
+    "source_id": "dp_211",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/211.html",
+    "source_title": "A Comment on \"Jobs and Political Participation: Evidence from a Field Experiment in Ethiopia\" by Aalen et al",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      6,
+      7,
+      12
+    ],
+    "assessment": "Main results reproduce without coding errors; limited raw data caps robustness checks.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_212",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/212.html",
+    "source_title": "Replication Report: Corrupted by Algorithms? How Al-generated And Human-written Advice Shape (Dis)Honesty",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Main AI-advice estimates reproduce and stable under alternatives.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_213",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "robustness_concern",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/213.html",
+    "source_title": "A Comment on \"A Systematic Review and Meta-Analysis of Transdiagnostic Cognitive Behavioural Therapies for Emotional Disorders\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      8
+    ],
+    "assessment": "Minor extraction deviations inconsequential; different publication-bias adjustment changes conclusions, categorized robustness.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_214",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "material_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/214.html",
+    "source_title": "\"Try to Balance the Baseline\": A Comment on \"Parent-Teacher Meetings and Student Outcomes: Evidence from a Developing Country\" by Islam (2019)",
+    "original_title_hint": "Parent–teacher meetings and student outcomes: Evidence from a developing country",
+    "original_doi": "10.1016/j.euroecorev.2018.09.008",
+    "evidence_pdf_pages": [
+      9,
+      10,
+      13,
+      14,
+      28
+    ],
+    "assessment": "Reported school randomization contradicted by treatment perfect separation across9unions; duplicated student baselines disagree by treatment, additional preperiod/outcome data undermine claimed design.",
+    "earliest_public_date": "",
+    "date_status": "Dated public I4R report; earlier public disclosure not independently established",
+    "related_source_ids": [],
+    "document_date": "2025-03-12",
+    "later_retraction_status": "Search indicates later retraction; notice/date not verified"
+  },
+  {
+    "source_id": "dp_215",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/215.html",
+    "source_title": "Reproduction report of Garcia et al. (2023) \"Experiential values are underweighted in decisions involving symbolic options\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Model-recovery/optimization issues do not compromise main indifference-point conclusion.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_216",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "unresolved",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/216.html",
+    "source_title": "Report on \"Partisan effects of information campaigns in competitive authoritarian elections: evidence from Bangladesh\" by Ahmed et al. (2024)",
+    "original_title_hint": "Partisan effects of information campaigns in competitive authoritarian elections: Evidence from Bangladesh",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      14,
+      22
+    ],
+    "assessment": "Forensic reporting/map discrepancies acknowledged, consequences disputed; report explicitly says not its ambition to judge consequence for results. Unresolved materiality.",
+    "earliest_public_date": "",
+    "date_status": "Compilation date; initial comment predates February27reply; first public release unresolved",
+    "related_source_ids": [
+      "dp_217"
+    ],
+    "document_date": "2025-03-18",
+    "dispute_status": "dp217 acknowledges maps/descriptions, disputes causal implication"
+  },
+  {
+    "source_id": "dp_217",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "author_reply",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/217.html",
+    "source_title": "Responses to Bensch, Rose, Neubauer, Ankel-Peters, and Brodeur",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [],
+    "assessment": "Reply216 acknowledges map mistakes and earlier sampling-description inaccuracies, disputes effect on results.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": [
+      "dp_216"
+    ]
+  },
+  {
+    "source_id": "dp_218",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "favorable_assessment",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/218.html",
+    "source_title": "A Comment on \"College Enrollment and Mandatory FAFSA Applications: Evidence from Louisiana\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      11
+    ],
+    "assessment": "FAFSA analysis computationally reproducible and largely robust; suggested IV saturate-and-weight work is future refinement.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_219",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "minor_error",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/219.html",
+    "source_title": "A Comment on \"Interregional Contact and the Formation of a Shared Identity\"",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "assessment": "Minor code error barely changes sample/estimates; results robust.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  },
+  {
+    "source_id": "dp_220",
+    "review_status": "targeted_fulltext_screened",
+    "verification_scope": "Abstract plus substantive reproducibility, error, robustness or conclusion passages reviewed; original data/code not independently rerun. This is source classification, not complete factual adjudication.",
+    "classification": "general_method",
+    "main_cohort_verified": false,
+    "source_url": "https://ideas.repec.org/p/zbw/i4rdps/220.html",
+    "source_title": "Pre-Registration and Pre-Analysis Plans in Experimental Economics",
+    "original_title_hint": "",
+    "original_doi": "",
+    "evidence_pdf_pages": [
+      9,
+      32,
+      39
+    ],
+    "assessment": "Survey/bibliometric study of preregistration adoption, not article-specific correction.",
+    "earliest_public_date": "",
+    "date_status": "First public error-specific disclosure not yet verified",
+    "related_source_ids": []
+  }
+]

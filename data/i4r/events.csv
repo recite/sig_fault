@@ -1,0 +1,24 @@
+event_id,warning_id,article_id,assessment_id,source_id,date,year,date_precision,publicity_verified,date_evidence_url,date_evidence,error_verified,material,already_retracted
+dp_020_disclosure,dp_020,i4r_9008b2600de80c,dp_020_error,dp_020,,2023,year,yes,https://andreaskotsadam.files.wordpress.com/2023/02/accepted-comment.pdf,Public author-hosted February 2023 comment contains duplicate-record and minimum-cell-size errors; updated I4R March version contains same findings. Exact first public day unverified.,yes,yes,no
+dp_021_disclosure,dp_021,i4r_ece0397b04bfa9,dp_021_error,dp_021,2021-02-11,2021,day,yes,https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3744650,"SSRN says Posted February 11, 2021, distinct from Date Written December 7, 2020. The public abstract identifies the PISA-imputation inference problem. This is the earliest located posting, not proof of no earlier circulation.",yes,yes,no
+dp_095_disclosure,dp_095,i4r_943c99d2618261,dp_095_error,dp_095,,,,no,,,pending_second_review,yes,unknown
+dp_108_disclosure,dp_108,i4r_f0ac45a4d0b553,dp_108_error,dp_108,,,,no,,,pending_second_review,yes,unknown
+dp_148_disclosure,dp_148,i4r_19321c88424658,dp_148_error,dp_148,2024-01-17,2024,day,yes,https://arxiv.org/abs/2401.13694,"arXiv v1 was submitted January 17, 2024; printed pp. 35 and 38 identify post-treatment indicators exceeding one. Later I4R publication does not reset exposure.",yes,yes,no
+dp_208_disclosure,dp_208,i4r_d25399d7025632,dp_208_error,dp_208,,,,no,,,pending_second_review,yes,unknown
+dp_210_disclosure,dp_210,i4r_81ed5e78bd7922,dp_210_error,dp_210,,,,no,,,pending_second_review,yes,unknown
+dp_214_disclosure,dp_214,i4r_adaea32e2a25ee,dp_214_error,dp_214,,,,no,,,pending_second_review,yes,unknown
+dp_267_disclosure,dp_267,i4r_fb4ff09a1124e4,dp_267_error,dp_267,,,,no,,,pending_second_review,yes,unknown
+dp_285_disclosure,dp_285,i4r_20d617740fb019,dp_285_error,dp_285,,,,no,,,pending_second_review,yes,unknown
+dp_292_disclosure,dp_292,i4r_55d334eaeb4010,dp_292_error,dp_292,,,,no,,,pending_second_review,yes,unknown
+dp_302_disclosure,dp_302,i4r_4ce7d02a3a4801,dp_302_error,dp_302,,,,no,,,pending_second_review,yes,unknown
+dp_313_disclosure,dp_313,i4r_34409cd0399949,dp_313_error,dp_313,,,,no,,,pending_second_review,yes,unknown
+dp_324_disclosure,dp_324,i4r_5dfaf41eeeee6a,dp_324_error,dp_324,,,,no,,,pending_second_review,yes,unknown
+report_088986d1a728_disclosure,report_088986d1a728,i4r_4a701ccef80255,report_088986d1a728_error,report_088986d1a728,,,,no,,,pending_second_review,yes,unknown
+report_2dde11440492_disclosure,report_2dde11440492,i4r_9008b2600de80c,report_2dde11440492_error,report_2dde11440492,,,,no,,,pending_second_review,yes,unknown
+report_2f792d86ba6c_disclosure,report_2f792d86ba6c,i4r_dfc6fa3a718df4,report_2f792d86ba6c_error,report_2f792d86ba6c,,,,no,,,pending_second_review,yes,unknown
+report_52bea92b7c10_disclosure,report_52bea92b7c10,i4r_19321c88424658,report_52bea92b7c10_error,report_52bea92b7c10,,,,no,,,pending_second_review,yes,unknown
+report_7e04fdf7bfb2_disclosure,report_7e04fdf7bfb2,i4r_10ac5e85e02ecd,report_7e04fdf7bfb2_error,report_7e04fdf7bfb2,,,,no,,,pending_second_review,yes,unknown
+report_83421b0452f2_disclosure,report_83421b0452f2,i4r_943c99d2618261,report_83421b0452f2_error,report_83421b0452f2,,,,no,,,pending_second_review,yes,unknown
+dp_227_disclosure,dp_227,i4r_b909931e3840c4,dp_227_error,dp_227,,2020,year,yes,https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3645463,"SSRN explicitly reports Posted: 5 Aug 2020 and Date Written: July 7, 2020. Its abstract already identifies coding/data errors and their material effect. The Harvard Olin 1036 PDF is dated July 2020, but a day of public posting in July was not established. The 2024 directory in the current Harvard URL is not the disclosure date.",yes,yes,no
+dp_294_disclosure,dp_294,i4r_f45e09f5bc283f,dp_294_error,dp_294,,2021,year,yes,https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3980178,"SSRN records Posted: 10 Dec 2021 and Date Written: October 30, 2021 for USAEE Working Paper 21-529. The abstract already identifies inconsistent Amazon definitions and loss of precision after correction. The author corrigendum is dated September 15, 2021, which supports the document version but does not establish the day it became public.",yes,yes,no
+dp_226_disclosure,dp_226,i4r_bbc3a15a115bdf,dp_226_error,dp_226,2024-03-27,2024,day,yes,https://x.com/johannarickne/status/1773002832632836549,"The platform public embed gives March 27, 2024; its syndication JSON gives created_at 2024-03-27T15:03:10.000Z. The post identifies Ciacci (2024) and says the headline result came from erroneous use of Stata regression. This directly verifies public, article-specific, error-specific disclosure, rather than inferring a date from the numeric tweet ID.",yes,yes,no

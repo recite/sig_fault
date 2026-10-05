@@ -1,0 +1,1549 @@
+{
+  "analysis_panel.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "stack_id",
+      "article_id",
+      "post"
+    ],
+    "columns": {
+      "stack_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "warning_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "year": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "event_time": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "treated": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "post": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "weight": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "citations": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "article_aliases.csv": {
+    "rows": 4,
+    "duplicate_keys": 0,
+    "key": [
+      "alias"
+    ],
+    "columns": {
+      "alias": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 4
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      }
+    }
+  },
+  "articles.csv": {
+    "rows": 436,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 436
+      },
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 436
+      },
+      "doi": {
+        "type": "string",
+        "missing": 244,
+        "distinct_nonmissing": 192
+      },
+      "openalex_id": {
+        "type": "string",
+        "missing": 426,
+        "distinct_nonmissing": 10
+      },
+      "journal": {
+        "type": "string",
+        "missing": 57,
+        "distinct_nonmissing": 35
+      },
+      "journal_id": {
+        "type": "string",
+        "missing": 426,
+        "distinct_nonmissing": 6
+      },
+      "publication_date": {
+        "type": "string",
+        "missing": 244,
+        "distinct_nonmissing": 129
+      },
+      "publication_year": {
+        "type": "integer",
+        "missing": 244,
+        "distinct_nonmissing": 11
+      },
+      "type": {
+        "type": "string",
+        "missing": 244,
+        "distinct_nonmissing": 1
+      },
+      "abstract": {
+        "type": "string",
+        "missing": 427,
+        "distinct_nonmissing": 9
+      },
+      "identity_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "retracted": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "retraction_date": {
+        "type": "string",
+        "missing": 433,
+        "distinct_nonmissing": 3
+      },
+      "retraction_source": {
+        "type": "string",
+        "missing": 433,
+        "distinct_nonmissing": 3
+      }
+    }
+  },
+  "assessments.csv": {
+    "rows": 23,
+    "duplicate_keys": 0,
+    "key": [
+      "assessment_id"
+    ],
+    "columns": {
+      "assessment_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 20
+      },
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "category": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "material": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "error_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "affected_claim": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 14
+      },
+      "evidence_summary": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 22
+      },
+      "evidence_locator": {
+        "type": "string",
+        "missing": 1,
+        "distinct_nonmissing": 20
+      },
+      "dispute_status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 9
+      },
+      "verification_scope": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 16
+      },
+      "public_year": {
+        "type": "integer",
+        "missing": 17,
+        "distinct_nonmissing": 4
+      }
+    }
+  },
+  "citation_edges.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id",
+      "citing_work_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "citing_work_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "citing_doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "publication_year": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "publication_date": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "type": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "citation_retrieval.csv": {
+    "rows": 1,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "detail": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "citations.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id",
+      "year"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "year": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "citations": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "control_aliases.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "alias_openalex_id"
+    ],
+    "columns": {
+      "alias_openalex_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "control_articles.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "openalex_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "journal": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "journal_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "publication_date": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "publication_year": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "type": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "abstract": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "identity_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "retracted": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "retraction_date": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "retraction_source": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "crossref_retrieval.csv": {
+    "rows": 436,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 436
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      }
+    }
+  },
+  "curated_claims.csv": {
+    "rows": 23,
+    "duplicate_keys": 0,
+    "key": [
+      "assessment_id"
+    ],
+    "columns": {
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 21
+      },
+      "doi": {
+        "type": "string",
+        "missing": 9,
+        "distinct_nonmissing": 13
+      },
+      "assessment_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "category": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "material": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "error_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "affected_claim": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 14
+      },
+      "evidence_summary": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 22
+      },
+      "evidence_locator": {
+        "type": "string",
+        "missing": 1,
+        "distinct_nonmissing": 20
+      },
+      "dispute_status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 9
+      },
+      "verification_scope": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 16
+      },
+      "public_year": {
+        "type": "integer",
+        "missing": 23,
+        "distinct_nonmissing": 0
+      },
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "warning_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "date": {
+        "type": "string",
+        "missing": 20,
+        "distinct_nonmissing": 3
+      },
+      "year": {
+        "type": "integer",
+        "missing": 17,
+        "distinct_nonmissing": 4
+      },
+      "date_precision": {
+        "type": "string",
+        "missing": 17,
+        "distinct_nonmissing": 2
+      },
+      "publicity_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "date_evidence_url": {
+        "type": "string",
+        "missing": 17,
+        "distinct_nonmissing": 6
+      },
+      "date_evidence": {
+        "type": "string",
+        "missing": 17,
+        "distinct_nonmissing": 6
+      },
+      "already_retracted": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      }
+    }
+  },
+  "document_retrieval.csv": {
+    "rows": 622,
+    "duplicate_keys": 0,
+    "key": [
+      "document_id"
+    ],
+    "columns": {
+      "document_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 622
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "detail": {
+        "type": "string",
+        "missing": 622,
+        "distinct_nonmissing": 0
+      },
+      "sha256": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 622
+      }
+    }
+  },
+  "documents.csv": {
+    "rows": 706,
+    "duplicate_keys": 0,
+    "key": [
+      "document_id"
+    ],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 572
+      },
+      "document_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 706
+      },
+      "name": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 326
+      },
+      "url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 706
+      },
+      "format": {
+        "type": "string",
+        "missing": 4,
+        "distinct_nonmissing": 12
+      },
+      "created_at": {
+        "type": "string",
+        "missing": 331,
+        "distinct_nonmissing": 375
+      },
+      "modified_at": {
+        "type": "string",
+        "missing": 331,
+        "distinct_nonmissing": 375
+      },
+      "date_meaning": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      }
+    }
+  },
+  "event_trajectories.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id",
+      "article_id",
+      "event_time"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "treated": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "weight": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "event_time": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "citations": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "disclosure_date": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "date_precision": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "events.csv": {
+    "rows": 23,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "warning_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 20
+      },
+      "assessment_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "date": {
+        "type": "string",
+        "missing": 20,
+        "distinct_nonmissing": 3
+      },
+      "year": {
+        "type": "integer",
+        "missing": 17,
+        "distinct_nonmissing": 4
+      },
+      "date_precision": {
+        "type": "string",
+        "missing": 17,
+        "distinct_nonmissing": 2
+      },
+      "publicity_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "date_evidence_url": {
+        "type": "string",
+        "missing": 17,
+        "distinct_nonmissing": 6
+      },
+      "date_evidence": {
+        "type": "string",
+        "missing": 17,
+        "distinct_nonmissing": 6
+      },
+      "error_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "material": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "already_retracted": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      }
+    }
+  },
+  "identity_decisions.csv": {
+    "rows": 1,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "evidence": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "source_url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "identity_resolution.csv": {
+    "rows": 7,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 7
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "detail": {
+        "type": "string",
+        "missing": 6,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "match_balance.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id",
+      "control_id",
+      "horizon"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "control_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "pre2_smd": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "pre1_smd": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "change_smd": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "text_cosine_distance": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "match_candidates.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id",
+      "control_id",
+      "horizon"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "control_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "distance": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "eligible": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "reason": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "match_exclusions.csv": {
+    "rows": 69,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id",
+      "horizon"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 23
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 20
+      },
+      "reason": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 5
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      }
+    }
+  },
+  "matches.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id",
+      "control_id",
+      "horizon"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "control_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "rank": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "distance": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "weight": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "metadata_provenance.csv": {
+    "rows": 202,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id",
+      "provider"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      },
+      "provider": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "path": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 202
+      },
+      "url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 202
+      },
+      "sha256": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 202
+      },
+      "retrieved_at": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 202
+      }
+    }
+  },
+  "panel_exclusions.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id",
+      "horizon"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "reason": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "retractions.csv": {
+    "rows": 3,
+    "duplicate_keys": 0,
+    "key": [
+      "record_id"
+    ],
+    "columns": {
+      "doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "date": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "source_url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "notice_doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "record_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "dataset_url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "retrieval.csv": {
+    "rows": 714,
+    "duplicate_keys": 0,
+    "key": [
+      "source_id"
+    ],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 714
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "detail": {
+        "type": "string",
+        "missing": 638,
+        "distinct_nonmissing": 4
+      }
+    }
+  },
+  "risk_set_retrieval.csv": {
+    "rows": 3,
+    "duplicate_keys": 0,
+    "key": [
+      "event_id"
+    ],
+    "columns": {
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "candidates": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "query_filter": {
+        "type": "string",
+        "missing": 2,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "sensitivity_panel.csv": {
+    "rows": 0,
+    "duplicate_keys": 0,
+    "key": [
+      "stack_id",
+      "article_id",
+      "post"
+    ],
+    "columns": {
+      "specification": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "stack_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "event_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "warning_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "horizon": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "treated": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "post": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "weight": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      },
+      "citations": {
+        "type": "number",
+        "missing": 0,
+        "distinct_nonmissing": 0
+      }
+    }
+  },
+  "source_articles.csv": {
+    "rows": 723,
+    "duplicate_keys": 0,
+    "key": [
+      "source_id",
+      "article_id"
+    ],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 549
+      },
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 436
+      },
+      "relation": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 5
+      },
+      "evidence": {
+        "type": "string",
+        "missing": 1,
+        "distinct_nonmissing": 43
+      }
+    }
+  },
+  "source_links.csv": {
+    "rows": 368,
+    "duplicate_keys": 0,
+    "key": [],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 206
+      },
+      "url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 217
+      },
+      "related_source_id": {
+        "type": "string",
+        "missing": 295,
+        "distinct_nonmissing": 73
+      },
+      "relation": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "source_manifest.csv": {
+    "rows": 1768,
+    "duplicate_keys": 0,
+    "key": [
+      "path"
+    ],
+    "columns": {
+      "path": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1768
+      },
+      "url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1755
+      },
+      "retrieved_at": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1768
+      },
+      "sha256": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1705
+      },
+      "bytes": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 1569
+      }
+    }
+  },
+  "source_metadata.csv": {
+    "rows": 714,
+    "duplicate_keys": 0,
+    "key": [
+      "source_id"
+    ],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 714
+      },
+      "stated_date": {
+        "type": "string",
+        "missing": 91,
+        "distinct_nonmissing": 297
+      },
+      "date_meaning": {
+        "type": "string",
+        "missing": 91,
+        "distinct_nonmissing": 2
+      },
+      "original_title_hint": {
+        "type": "string",
+        "missing": 422,
+        "distinct_nonmissing": 292
+      }
+    }
+  },
+  "source_reviews.csv": {
+    "rows": 714,
+    "duplicate_keys": 0,
+    "key": [
+      "source_id"
+    ],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 714
+      },
+      "review_status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 16
+      },
+      "classification": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 52
+      },
+      "target_title": {
+        "type": "string",
+        "missing": 242,
+        "distinct_nonmissing": 433
+      },
+      "target_doi": {
+        "type": "string",
+        "missing": 680,
+        "distinct_nonmissing": 33
+      },
+      "evidence_summary": {
+        "type": "string",
+        "missing": 20,
+        "distinct_nonmissing": 496
+      },
+      "evidence_pages": {
+        "type": "string",
+        "missing": 224,
+        "distinct_nonmissing": 170
+      },
+      "review_scope": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 37
+      },
+      "related_sources": {
+        "type": "string",
+        "missing": 499,
+        "distinct_nonmissing": 198
+      },
+      "assessment_eligibility": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "assessment_resolved": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      }
+    }
+  },
+  "sources.csv": {
+    "rows": 714,
+    "duplicate_keys": 0,
+    "key": [
+      "source_id"
+    ],
+    "columns": {
+      "source_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 714
+      },
+      "collection": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      },
+      "catalog_url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "url": {
+        "type": "string",
+        "missing": 1,
+        "distinct_nonmissing": 695
+      },
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 714
+      },
+      "authors": {
+        "type": "string",
+        "missing": 421,
+        "distinct_nonmissing": 275
+      },
+      "journal": {
+        "type": "string",
+        "missing": 331,
+        "distinct_nonmissing": 16
+      },
+      "status": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 2
+      }
+    }
+  },
+  "verified_metadata.csv": {
+    "rows": 192,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      },
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      },
+      "doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      },
+      "openalex_id": {
+        "type": "string",
+        "missing": 182,
+        "distinct_nonmissing": 10
+      },
+      "journal": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 22
+      },
+      "journal_id": {
+        "type": "string",
+        "missing": 182,
+        "distinct_nonmissing": 6
+      },
+      "publication_date": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 129
+      },
+      "publication_year": {
+        "type": "integer",
+        "missing": 0,
+        "distinct_nonmissing": 11
+      },
+      "type": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "abstract": {
+        "type": "string",
+        "missing": 183,
+        "distinct_nonmissing": 9
+      },
+      "identity_verified": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 1
+      },
+      "retracted": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "retraction_date": {
+        "type": "string",
+        "missing": 192,
+        "distinct_nonmissing": 0
+      },
+      "retraction_source": {
+        "type": "string",
+        "missing": 192,
+        "distinct_nonmissing": 0
+      },
+      "metadata_source": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      },
+      "metadata_sha256": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      },
+      "retrieved_at": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 192
+      }
+    }
+  }
+}

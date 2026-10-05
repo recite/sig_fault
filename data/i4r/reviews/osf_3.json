@@ -1,0 +1,1672 @@
+[
+  {
+    "source_id": "report_a8d7c4d1da61",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_or_no_material_error_reported",
+    "original_title": "Campaign Contributions and Roll-Call Voting in the U.S. House of Representatives: The Case of the Sugar Industry",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Grier contributions/voting results largely supported.",
+    "evidence_pages": "[4, 5]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_057"
+    ]
+  },
+  {
+    "source_id": "report_a9e4b16d7711",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_or_no_material_error_reported",
+    "original_title": "Vulnerability and Clientelism",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Bobonis clientelism results largely supported; alternative clientelism definition challenged but reply demonstrates robustness.",
+    "evidence_pages": "[4, 6]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_083",
+      "dp_084"
+    ]
+  },
+  {
+    "source_id": "report_aa6015a229e9",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Inattentive responding can induce spurious associations between task behaviour and symptom measures",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ac792d25b85b",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "minor_error_or_materiality_unresolved",
+    "original_title": "Mortality, Temperature, and Public Health Provision: Evidence from Mexico",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Cohen/Dechezlepretre leap-day observations incorrectly dropped; corrected results trivial difference.",
+    "evidence_pages": "[5, 6]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_090"
+    ]
+  },
+  {
+    "source_id": "report_acee3855883d",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "The Formation of Negative Attitudes Toward Novel Groups",
+    "original_doi": "10.1177/09567976241239932",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_adc462f785ab",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Optimal Deposit Insurance",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_197. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_197"
+    ]
+  },
+  {
+    "source_id": "report_adddaac3ae6f",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Does Discipline Decrease Police Misconduct? Evidence from Chicago Civilian Allegations",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ae3c337e2262",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_assessment",
+    "original_title": "The Effects of Racial Diversity in Citizen Decision-Making Bodies",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Main results reproduce without coding errors; robustness supports racial-diversity result.",
+    "evidence_pages": "[5, 6, 7]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_189"
+    ]
+  },
+  {
+    "source_id": "report_aefc27d5ae78",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "College Enrollment and Mandatory FAFSA Applications: Evidence from Louisiana",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_218. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_218"
+    ]
+  },
+  {
+    "source_id": "report_afa0fe28996c",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "A 2 million-person, campaign-wide field experiment shows how digital advertising affects voter turnout",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_237. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_237"
+    ]
+  },
+  {
+    "source_id": "report_b056c7640453",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A systematic review and Bayesian meta-analysis of the acoustic features of infant-directed speech",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_b1242bc10d93",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Heterogeneous Tax Pass-Through Under Different Vertical Relationships",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_b26a6524eda1",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "The Evolution of Access to Public Accomodations in the United States",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_140. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings. Duplicate catalog entries differ by Accomodations/Accommodations spelling and share OSF URL; one original paper.",
+    "linked_source_ids": [
+      "dp_140"
+    ]
+  },
+  {
+    "source_id": "report_b377cb06e96d",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Verbal Aggressions Against Major League Baseball Umpires Affect Their Decision Making",
+    "original_doi": "10.1177/09567976241227411",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_b38dbf8f76d0",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Effect of Language on Economic Behavior:  Evidence from Savings Rates, Health Behaviors, and Retirement Assets",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability. Same OSF URL appears for different original articles; likely aggregate archive. Do not deduplicate articles by OSF URL.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_b41a30aeb61b",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Discrimination reduces work effort of those who are disadvantaged and those who are advantaged by it",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_288. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_288"
+    ]
+  },
+  {
+    "source_id": "report_b42733a6a663",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Corrupted By Algorithms? How AI-generated And Human-written Advice Shape (Dis)Honesty",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_212. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_212"
+    ]
+  },
+  {
+    "source_id": "report_b55f7a2952ec",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Effects of a US Supreme Court ruling to restrict abortion rights",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_b5c8e11ef2cb",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_or_no_material_error_reported",
+    "original_title": "What Makes Anticorruption Punishment Popular? Individual-Level Evidence from China",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Tsai, Trinh and Liu anti-corruption study reproduced; extension to economic performance.",
+    "evidence_pages": "[4, 8]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_007"
+    ]
+  },
+  {
+    "source_id": "report_b5ee64de051f",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Reducing facial stereotype bias in consequential social judgments: Intervention success with White male faces",
+    "original_doi": "10.1177/09567976231215238",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_b600ae8b75e9",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A field study on the impacts of workplace diversity on the recruitment of minority group members",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_b6de6e872d53",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "robustness_or_sample_definition_concern",
+    "original_title": "How Merchant Towns Shaped Parliaments: From the Norman Conquest of England to the Great Reform Act",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "dp124 explicitly identifies Angelucci etal2022 merchant-towns paper. Nonroyal borough exclusions differ subtly from stated criteria; no paper-specific demonstrated consequential coding correction established.",
+    "evidence_pages": "dp124 PDF pp9,17,40",
+    "notes": "The explicitly linked DP is a17-paper audit, not a standalone assessment; map this original article only.",
+    "linked_source_ids": [
+      "dp_124"
+    ]
+  },
+  {
+    "source_id": "report_b71d6d4c41f4",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A Systematic Review and Meta-Analysis of the Relationship Between Economic Inequality and Prosocial Behaviour",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_b9e41e070505",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "minor_error",
+    "original_title": "When Do Männerparteien Elect Women? Radical Right Populist Parties and Strategic Descriptive Representation",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Stargazer exported anti-conservative p-values; reply150 narrows issue to one coefficient moving0.05to0.0548. Main challenge is influential-observation robustness, not demonstrated material correction.",
+    "evidence_pages": "[6, 8, 19]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_149",
+      "dp_150"
+    ]
+  },
+  {
+    "source_id": "report_ba8b9fa7362c",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "The Language of (Non)Replicable Social Science",
+    "original_doi": "10.1177/09567976241254037",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_bd6d70080f15",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "robustness_concern",
+    "original_title": "Within-Firm Productivity Dispersion: Estimates and Implications",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Original estimates reproduce; instrument quality in later-period data and cost-share threshold sensitivity do not establish original error.",
+    "evidence_pages": "[5, 7, 12]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_181",
+      "dp_182"
+    ]
+  },
+  {
+    "source_id": "report_bdaec4a6ba60",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Does Public Opinion Affect the Preferences of Foreign Policy Leaders? Experimental Evidence from the UK Parliament",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_bdf26a445bbc",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Wheels of Change: Technology Adoption Millwrights and the Persistence in Britain'S Industrialisation",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_be97b2010c5d",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A multinational analysis of how emotions relate to economic decisions regarding time or risk",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_be9c14ba21ae",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Ascriptive characteristics and perceptions of impropriety in the rule of law: Race, gender, and public assessments of whether judges can be impartial",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_bfd18568d399",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Experiential values are underweighted in decisions involving symbolic options",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_215. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_215"
+    ]
+  },
+  {
+    "source_id": "report_bffa1271e151",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Accelerating Science with Human Aware AI",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_c0c9f446a6ce",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Distinct Inhibitory-Control Processes Underlie Children’s Judgments of Fairness",
+    "original_doi": "10.1177/09567976231217420",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_c0cb23e9efc0",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "minor_error_or_materiality_unresolved",
+    "original_title": "Social class and (un)ethical behaviour: Causal and correlational evidence",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Gsottbauer status/ethics has rounding/transcription issues; conclusions supported. Body also changes covariate treatment/imputation; alternative coding not automatically objective error.",
+    "evidence_pages": "[4, 8, 9]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_029"
+    ]
+  },
+  {
+    "source_id": "report_c2baf1ad50bb",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "UN Peacekeeping and Democratization in Conflict-Affected Countries",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_138. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_138"
+    ]
+  },
+  {
+    "source_id": "report_c3ea52003ae3",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_or_no_material_error_reported",
+    "original_title": "The Common-Probability Auction Puzzle",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Ngangoue/Schotter common-probability auction results robust.",
+    "evidence_pages": "[4, 5]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_074"
+    ]
+  },
+  {
+    "source_id": "report_c44a94ff33b4",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Sorting or Steering: The Effects of Housing Discrimination on Neighborhood Choice",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_108. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_108"
+    ]
+  },
+  {
+    "source_id": "report_c46a57bef27d",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A systematic review and multivariate meta-analysis of the physical and mental health benefits of touch interventions",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_c49f6fb5640e",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Transfers, Diversification and Household Risk Strategies: Can Productive Safety Nets Help Households Manage Climatic Variability?",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_c4ed09f97dcb",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Risky-choice framing effects result partly from mismatched option descriptions in gains and losses",
+    "original_doi": "10.1177/09567976241249183",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_c548b36748c7",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_or_no_material_error_reported",
+    "original_title": "Parties as Disciplinarians: Charisma and Commitment Problems in Programmatic Campaigning",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Hollyer/Klasnja/Titiunik party/candidate results largely reproducible and robust. Open/closed-list summary statistics swapped, analysis unaffected.",
+    "evidence_pages": "[4, 6]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_054"
+    ]
+  },
+  {
+    "source_id": "report_c55c0ae82b1e",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Public Pension Reforms and Retirement Decisions: Narrative Evidence and Aggregate Implications",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_c5b0b5cd110b",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "A Practical Significance Bias in Laypeople’s Evaluation of Scientific Findings",
+    "original_doi": "10.1177/09567976241231506",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_c5ef8d58f571",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Battling the coronavirus ‘infodemic’ among social media users in Kenya and Nigeria",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_c6dca261c36a",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Examining inequality in the time cost of waiting",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_243, dp_244. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_243",
+      "dp_244"
+    ]
+  },
+  {
+    "source_id": "report_c7f2656f19f5",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Pandemic Schooling Mode and Student Test Scores: Evidence from US School Districts",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_247. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_247"
+    ]
+  },
+  {
+    "source_id": "report_c8481e245c47",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Hate Crimes and Gender Imbalances: Fears over Mate Competition and Violence against Refugees",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_c8f2b1557cdf",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The relationship between political ideology and judgements of bias in distributional outcomes",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ca5fa450fb83",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "favorable_or_no_material_error_reported",
+    "original_title": "Antinormative Messaging Group Cues and the Nuclear Ban Treaty",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Herzog nuclear treaty results robust;18gender missing-code cases irrelevant to main result.",
+    "evidence_pages": "[4, 8]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_097",
+      "dp_098"
+    ]
+  },
+  {
+    "source_id": "report_cb45594f8f09",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Technological Change and the Consequences of Job Loss",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_cbaa15c2cc70",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Changing Tides: Public Attitudes on Climate Migration",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_cc7ce2d4ecb8",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "robustness_or_replication_concern",
+    "original_title": "Motivated Beliefs and Anticipation of Uncertainty Resolution",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Drobner motivated-belief results change after removing respondents with fundamental updating errors; no original coding error.",
+    "evidence_pages": "[4, 6]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_065"
+    ]
+  },
+  {
+    "source_id": "report_cc97f2b93fc2",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "The Effects of Group Affiliation Versus Individuating Information on Direct and Indirect Measures of the Evaluation of Novel Individual Group Members",
+    "original_doi": "10.1177/09567976251315689",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_cdcd099e5668",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "When Choices Are Mistakes",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ce15fc62b8de",
+    "review_status": "explicitly_linked_discussion_paper_reviewed",
+    "classification": "minor_error",
+    "original_title": "The Impact of Presidential Appointment of Judges: Montesquieu or the Federalists?",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Minor presentation/code errors leave main judicial-reform findings intact.",
+    "evidence_pages": "[6, 7, 9]",
+    "notes": "OSF metadata explicitly links discussion paper(s); original article identity checked against linked paper. Source assessment inherited with its stated review limits; no independent numerical rerun.",
+    "linked_source_ids": [
+      "dp_135"
+    ]
+  },
+  {
+    "source_id": "report_ce19a9f10a57",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Little evidence that military policing reduces crime or improves human security",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ced363c4c8bc",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Market exposure and human morality",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_cef722f52f77",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Peer Effects in Academic Research: Senders and Receives",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_cf556e174287",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A systematic review of psychosocial functioning changes after gender-affirming hormone therapy among transgender people",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_cfd8f82c70d7",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Visual Preference for Socially Relevant Spatial Relations in Humans and Monkeys",
+    "original_doi": "10.1177/09567976241242995",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_cff0211bb8e8",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_cffb1b4be23b",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Spatial Polarisation",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d02718db7129",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Where Motivated Reasoning Withers and Looms Large: Fear and Partisan Reactions to the COVID-19 Pandemic",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d06e7bd06a67",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Contested Killings: The Mobilizing Effects of Community Contact with Police Violence",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d09a267d54fd",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Interplay among Savings Accounts and Network-Based Financial Arrangements: Evidence from a Field Experiment",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d1dff71b45f4",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Market Power and Price Exposure: Learning from Changes in Renewable Energy Regulation",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_258. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_258"
+    ]
+  },
+  {
+    "source_id": "report_d20485341bfd",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "An experimental manipulation of the value of effort",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_201. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_201"
+    ]
+  },
+  {
+    "source_id": "report_d31287601c51",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Does Patient Demand Contribute to the Overuse of Prescription Drugs?",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d587e96a9879",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Anticipatory Anxiety and Wishful Thinking",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d5c37735e1a6",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Labor Market Impacts of Universal and Permanent Cash Transfers: Evidence from the Alaska Permanent Fund",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d5ca85edae17",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Publishing While Female: are Women Held to Higher Standards? Evidence from Peer Review",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d5f67b495034",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Not All Powerful People Are Created Equal: An Examination of Gender and Pathways to Social Hierarchy Through the Lens of Social Cognition",
+    "original_doi": "10.1177/09567976241260251",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_d6df41f8f42c",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A taxonomy of anti-vaccination arguments from a systematic literature review and text modelling",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d73130c4281a",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Directing Attention Shapes Learning in Adults but Not Children",
+    "original_doi": "10.1177/09567976241263347",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_d777db4196d5",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Politicians' private sector jobs and parliamentary behavior",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_203. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_203"
+    ]
+  },
+  {
+    "source_id": "report_d7b86b942111",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Entertaining Beliefs in Economic Mobility",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_d92c5a205682",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "The Interactive Effect of Incentive Salience and Prosocial Motivation on Prosocial Behavior",
+    "original_doi": "10.1177/09567976241234560",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_dc096d9a7b69",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Why Don't Firms Hire Young Workers During Recessions?",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_163. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_163"
+    ]
+  },
+  {
+    "source_id": "report_dc10859bf227",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Reexamining the Contribution of Public Health Efforts to the Decline in Urban Mortality",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ddc4ef0fbe5d",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "A systematic review and meta-analysis of transdiagnostic cognitive behavioural therapies for emotional disorders",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_213. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_213"
+    ]
+  },
+  {
+    "source_id": "report_ddf1ed671493",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Formative Experiences and the Price of Gasoline",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_233. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_233"
+    ]
+  },
+  {
+    "source_id": "report_de3dd9dea903",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Reducing discrimination against job seekers with and without employment gaps",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_dea7bfe5a225",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Racial/ethnic disparities in PM2.5-attributable cardiovascular mortality burden in the United States",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_dfcfb62a7a80",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Propagation and Insurance in Village Networks",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e19ed9fa8b88",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Brahmin Left versus Merchant Right",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e250d36949e9",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Supernatural explanations across 114 societies are more common for natural than social phenomena",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e40830f78b8d",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Valence-dependent mutation in lexical evolution",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e493aff15e98",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Political Turnover, Bureaucratic Turnover, and the Quality of Public Services",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_039. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_039"
+    ]
+  },
+  {
+    "source_id": "report_e4a97187db80",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Market Access and Quality Upgrading: Evidence from Four Field Experiments",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_072. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_072"
+    ]
+  },
+  {
+    "source_id": "report_e4f54b0dd964",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Policy Deliberation and Voter Persuasion: Experimental Evidence from an Election in the Philippines",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e5369beb10cf",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Raising Health Awareness in Rural Communities: A Randomized Experiment in Bangladesh and India",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_208. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_208"
+    ]
+  },
+  {
+    "source_id": "report_e5830ac97c35",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Anchored Inflation Expectations",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_174. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_174"
+    ]
+  },
+  {
+    "source_id": "report_e5ae077f3448",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Income and inequality in the Aztec Empire on the eve of the Spanish conquest",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_221. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_221"
+    ]
+  },
+  {
+    "source_id": "report_e679777d638d",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Geography of Repression and Opposition to Autocracy",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e71897f8921a",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Side Effects of Immunity: Malaria and African Slavery in the United States",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e7a4f728faa3",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Seeing Racial Avoidance on New York City Streets",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_202, dp_250. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_202",
+      "dp_250"
+    ]
+  },
+  {
+    "source_id": "report_e8a4d40d8d58",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Can Financial Incentives to Firms Improve Apprenticeship Training? Experimental Evidence from Ghana",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_e8c36ade9112",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "The effects of banking competition on growth and financial stability: Evidence from the national banking era",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_081. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_081"
+    ]
+  },
+  {
+    "source_id": "report_ea4a55b0df90",
+    "review_status": "invalid_catalog_link",
+    "classification": "unresolved",
+    "original_title": "The economic effects of long-term climate change: evidence from the Little Ice Age",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "Catalog points to example.com/article1 placeholder. Cannot retrieve report or infer an assessment.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ea555dc8c7a7",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Playing Politics with Environmental Protection: The Political Economy of Designating Protected Areas",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_073. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_073"
+    ]
+  },
+  {
+    "source_id": "report_ea8ed203c778",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Talking Shops: The Effects of Caucus Discussion on Policy Coalitions,",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ea9c2b0ff092",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Kin Networks and Institutional Development",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_126. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_126"
+    ]
+  },
+  {
+    "source_id": "report_ec78c1f06296",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Innovation and Institutional Ownership",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_134. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings. Same OSF URL appears for different original articles; likely aggregate archive. Do not deduplicate articles by OSF URL.",
+    "linked_source_ids": [
+      "dp_134"
+    ]
+  },
+  {
+    "source_id": "report_ec7dbde1767c",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Influence Motives in Social Signaling: Evidence from COVID-19 Vaccinations in Germany",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_139. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_139"
+    ]
+  },
+  {
+    "source_id": "report_ec8d68edcc23",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Does the Effect of Pollution on Infant Mortality Differ Between Developing and Developed Countries? Evidence from Mexico City",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_323. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_323"
+    ]
+  },
+  {
+    "source_id": "report_ed15002db08e",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Re-Assessing Elite-Public Gaps in Political Behavior",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_010. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_010"
+    ]
+  },
+  {
+    "source_id": "report_ed2409828557",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Juvenile Crime and Anticipated Punishment",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ed6b80f144ed",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Web of Power: How Elite Networks Shaped War and Politics in China",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_115. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_115"
+    ]
+  },
+  {
+    "source_id": "report_edc790e0ed42",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Effective for Whom? Ethnic Identity and Nonviolent Resistance",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_086. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_086"
+    ]
+  },
+  {
+    "source_id": "report_ee1c0db6337d",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Competition and Pass-Through: Evidence from Isolated Markets",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ee21fd8d8139",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Investigating Inattentional Blindness Through the Lens of Fear Chemosignals",
+    "original_doi": "10.1177/09567976231213572",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_ee38b5cf0c36",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Overperception of moral outrage in online social networks inflates beliefs about intergroup hostility",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_309. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_309"
+    ]
+  },
+  {
+    "source_id": "report_ee6fa60a20bd",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Human and animal dominance hierarchies show a pyramidal structure guiding adult and infant social inferences",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ee9729d69397",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Carbon Taxes and CO2 Emissions: Sweden as a Case Study",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_ef395cda5e19",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Market-based monetary policy uncertainty",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_076, dp_077. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_076",
+      "dp_077"
+    ]
+  },
+  {
+    "source_id": "report_f3193586784a",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Climate Change and Labor Reallocation: Evidence from Six Decades of the Indian Census",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_162, dp_180. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_162",
+      "dp_180"
+    ]
+  },
+  {
+    "source_id": "report_f65390241feb",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Teaching Norms: Direct Evidence of Parental Transmission",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_106. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_106"
+    ]
+  },
+  {
+    "source_id": "report_f6b9ffef58cb",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Resisting Social Pressure in the Household Using Mobile Money: Experimental Evidence on Microenterprise Investment in Uganda",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_f7e5230b8c75",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Multiracial identity and political preferences",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_f7f8e5b7ec44",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "The Evolution of Access to Public Accommodations in the United States",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_140. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings. Duplicate catalog entries differ by Accomodations/Accommodations spelling and share OSF URL; one original paper.",
+    "linked_source_ids": [
+      "dp_140"
+    ]
+  },
+  {
+    "source_id": "report_f8f4a01aaac4",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Building Nations through Shared Experiences: Evidence from African Football",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_193, dp_194. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_193",
+      "dp_194"
+    ]
+  },
+  {
+    "source_id": "report_f9082a063d37",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "The Gender Gap in Self-Promotion",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_f92779f10701",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "A randomized controlled trial on the effect of administrative burden and information costs on social inequalities in early childcare access in France",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  },
+  {
+    "source_id": "report_fd4ca10d5639",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "The motion-silencing illusion depends on object-centered representation",
+    "original_doi": "10.1177/09567976241235104",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_fd69ad23f868",
+    "review_status": "same_article_discussion_paper_identified; OSF_report_unverified",
+    "classification": "unresolved",
+    "original_title": "Does Innovation Mitigate Agricultural Damage from Climate Change?",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Same original article assessed in dp_158, dp_159. OSF report identity or version not established, so its findings are not automatically copied.",
+    "evidence_pages": "",
+    "notes": "Article-title correspondence manually checked; use cited DP evidence at article level, not as proof this OSF report has identical findings.",
+    "linked_source_ids": [
+      "dp_158",
+      "dp_159"
+    ]
+  },
+  {
+    "source_id": "report_ff0cd29c98e7",
+    "review_status": "identity_verified_from_aggregate_roster; individual_assessment_unresolved",
+    "classification": "unresolved",
+    "original_title": "Caricaturing Shapes in Visual Memory",
+    "original_doi": "10.1177/09567976231225091",
+    "material_error_verified": false,
+    "evidence_summary": "dp326 Appendix B pairs this original-paper DOI with the same OSF report URL. Aggregate error percentages do not classify this individual article.",
+    "evidence_pages": "dp326 printed pp57–67",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": [
+      "dp_326"
+    ]
+  },
+  {
+    "source_id": "report_ffebba29c24d",
+    "review_status": "unresolved_fulltext_unavailable",
+    "classification": "unresolved",
+    "original_title": "Accuracy and social motivations shape judgements of (mis)information",
+    "original_doi": "",
+    "material_error_verified": false,
+    "evidence_summary": "Catalog identifies the original article; underlying report was unavailable in local downloads.",
+    "evidence_pages": "",
+    "notes": "No error inference from title, catalog Completed status, or document unavailability.",
+    "linked_source_ids": []
+  }
+]

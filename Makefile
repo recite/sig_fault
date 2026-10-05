@@ -1,16 +1,18 @@
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test
+RSCRIPT ?= Rscript
+
+.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test i4r i4r-sources i4r-test
 
 restore:
-	Rscript --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
+	$(RSCRIPT) --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
 
 analysis:
-	Rscript scripts/run_all.R
+	$(RSCRIPT) scripts/run_all.R
 
 figures: analysis
-	Rscript scripts/figures.R
+	$(RSCRIPT) scripts/figures.R
 
 tables: analysis
-	Rscript scripts/tables.R
+	$(RSCRIPT) scripts/tables.R
 
 manuscript:
 	cd ms && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
@@ -19,32 +21,36 @@ paper: figures tables
 	$(MAKE) manuscript
 
 format:
-	Rscript -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
+	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	Rscript -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
+	python3 -m black --check scripts/i4r_*.py tests/test_i4r.py
+	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r.py
+	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r.py
+	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
 	$(MAKE) lal
-	Rscript -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
+	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
 	$(MAKE) pilot-test
 	python3 -m unittest discover -s tests -p 'test_lal.py'
+	$(MAKE) i4r-test
 
 lal:
 	python3 scripts/lal_citations.py registry
 	python3 scripts/lal_citations.py panel
-	Rscript scripts/lal_analysis.R
+	$(RSCRIPT) scripts/lal_analysis.R
 
 lal-fetch:
 	python3 scripts/lal_citations.py fetch
 
 lal-test: lal
 	python3 -m unittest discover -s tests -p 'test_lal.py'
-	Rscript -e 'testthat::test_dir("tests/testthat", filter = "lal", stop_on_failure = TRUE)'
+	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "lal", stop_on_failure = TRUE)'
 
 pilot:
-	Rscript scripts/pilot_registry.R
-	Rscript scripts/pilot_iv_check.R
+	$(RSCRIPT) scripts/pilot_registry.R
+	$(RSCRIPT) scripts/pilot_iv_check.R
 	python3 scripts/pilot.py sample
 	python3 scripts/pilot.py validate
 	python3 scripts/pilot.py report
@@ -66,3 +72,20 @@ check: paper lint test
 
 clean:
 	cd ms && latexmk -C main.tex
+
+i4r:
+	python3 scripts/i4r_registry.py build
+	python3 scripts/i4r_registry.py validate
+	python3 scripts/i4r_match.py
+	$(RSCRIPT) scripts/i4r_analysis.R
+	python3 scripts/i4r_report.py
+
+i4r-sources:
+	python3 scripts/i4r_sources.py fetch
+	python3 scripts/i4r_sources.py inventory
+	python3 scripts/i4r_sources.py documents
+	python3 scripts/i4r_sources.py manifest
+
+i4r-test: i4r
+	python3 -m unittest discover -s tests -p 'test_i4r.py'
+	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "i4r", stop_on_failure = TRUE)'

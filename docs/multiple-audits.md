@@ -2,15 +2,18 @@
 
 The central question is whether public methodological criticism changes the subsequent use of the criticized research. The first scalable outcome is citation evolution. Citation-context coding can then establish whether later papers use the challenged finding, qualify it, or cite a different contribution.
 
+The immediate priority is the [I4R registry and disclosure design](i4r/README.md): establish consequential errors and their first public disclosure, then select external controls and estimate citation changes. Failed replications and robustness concerns remain distinct. The inventory is broad, but resolved assessment coverage and complete matched citation panels are not yet available. Retraction outcomes are handled in the separate [propagation_of_error](https://github.com/recite/propagation_of_error) project.
+
 The project should repeat the same citation design across a set of critiques, with each critique supplying an assessed-paper population and interpretable comparison groups. Choose critiques before looking at their citation effects. Keep study-specific definitions and timelines visible, and report differences across audits before attempting a pooled average.
 
 | Cohort | What it assesses | Current position |
 | --- | --- | --- |
 | Nieuwenhuis, Forstmann, Wagenmakers | Failure to test the difference between effects directly | Existing paper and assessed comparison group; historical citation analysis complete. |
 | Lal, Lockhart, Xu, Zu | Instrument strength and inferential sensitivity in 67 IV papers | Full-cohort citation histories and comparable mean/median/FE analysis completed; timing and diagnostic contrasts remain descriptive. |
-| Hainmueller, Mummolo, Xu | 46 interaction estimates in 22 papers: linearity, extrapolation, and differences across moderator values | Roster and interaction-level diagnostics are available in Table A1 and Appendix B; suitable next cohort after classification review. |
+| I4R | Article-specific coding, data and statistical errors, separated from broader adverse assessments | Full catalog inventory; source review and disclosure adjudication in progress; no matched citation estimate yet. |
+| Hainmueller, Mummolo, Xu | 46 interaction estimates in 22 papers: linearity, extrapolation, and differences across moderator values | Roster and interaction-level diagnostics are available in Table A1 and Appendix B; possible later cohort after I4R and classification review. |
 
-## The third cohort needs its own comparison definition
+## A later interaction-diagnostic cohort needs its own comparison definition
 
 The Hainmueller–Mummolo–Xu appendix identifies the papers and separately reports three diagnostics. A preliminary reading of an “any adverse interaction” rule produces 20 adverse papers and only two entirely zero-score papers, Huddy/Mason/Aarøe and Tavits. Some papers have mixed findings and some tests are unavailable. The broad binary contrast would therefore have a weak comparison group. Separate diagnostic contrasts are preferable; unavailable tests must remain unknown.
 
