@@ -1,0 +1,3 @@
+audit_id,possible_warning_from,public_record_by,journal_publication_date,date_status,source_url,note
+nieuwenhuis2011,2011-08-26,2011-08-26,2011-08-26,general_warning,https://doi.org/10.1038/nn.2886,General methodological warning; article classifications supplied separately with redistribution permission.
+lal2024,2021-07-10,2024-02-17,2024-05-03,interval_pending_version_review,https://doi.org/10.7910/DVN/MM5THZ,Author PDF dates first version to 2021-07-10; article-specific replication archive publicly released 2024-02-17. Earliest warning for each selected finding remains unresolved. Conservative pre window precedes the first-version date and post begins a year after archive release.

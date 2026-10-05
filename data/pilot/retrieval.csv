@@ -1,0 +1,251 @@
+pair_id,status,url,local_path,sha256,attempts,checked_at
+iv_Acharya2016__W2913764032,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W2777020396,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W2959085910,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W2736948467,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W3134106452,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W4411300659,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W4413089094,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W4417477384,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W4410126262,downloaded_pdf_unchecked,https://link.springer.com/content/pdf/10.1007/s11127-025-01279-0.pdf,private-data/pilot/fulltext/dd3a4e27afbd62829dd8e4854d18a491a969339e72b82ebec2530ce0b53ef0a4.pdf,a88fa43484abbea99586d44dff4bb336f2cbcf3302b8524ed716b4f8350c9deb,[],2026-10-04
+iv_Acharya2016__W4414536833,unavailable,,,,"[""https://journals.sagepub.com/doi/pdf/10.1177/00104140251381752?download=true: HTTPError"", ""https://journals.sagepub.com/doi/pdf/10.1177/00104140251381752?download=true: landing page HTTPError"", ""https://doi.org/10.1177/00104140251381752: landing page HTTPError""]",2026-10-04
+iv_Acharya2016__W4413089103,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W4409556340,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=13428924&retmode=xml,private-data/pilot/fulltext/PMC13428924_pmc.xml,3d5949a21fb3bb7b01609da55057845494961099467768cf50177e24d5b98760,[],2026-10-04
+iv_Acharya2016__W4414357853,unavailable,,,,"[""https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-6427.70002: landing page HTTPError"", ""https://doi.org/10.1111/1467-6427.70002: landing page HTTPError""]",2026-10-04
+iv_Acharya2016__W4413453651,unavailable,,,,[],2026-10-04
+iv_Acharya2016__W4417196346,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C002C5B0FEAF60CF1EAD87211D6070CE/S0305741025101720a.pdf/div-class-title-state-repression-and-selective-expression-communal-canteens-and-the-collective-memory-of-china-s-great-leap-famine-div.pdf,private-data/pilot/fulltext/789ae45b3b9ad4f06664441cdf50b742a433ae67f28b9ecff8b902d79df2c6b5.pdf,96e42d737d5bad1e19ba4dd47ba21a0c5ed7ca9cda7dc773918896c476b9de8f,[],2026-10-04
+iv_Alt2015__W3125891105,unavailable,,,,[],2026-10-04
+iv_Alt2015__W3135326145,unavailable,,,,[],2026-10-04
+iv_Alt2015__W2416949293,unavailable,,,,[],2026-10-04
+iv_Alt2015__W3130685343,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/491AED536795BE092829A33B16D23B57/S000712342000071Xa.pdf/div-class-title-can-elites-escape-blame-by-explaining-themselves-suspicion-and-the-limits-of-elite-explanations-div.pdf,private-data/pilot/fulltext/d14570d30af7a7df052cd7550132dcb1dd60170d75d565bf802c8ca4785493e5.pdf,fc8f7f0792525e4afeefde716b368e58f7c75c55bc3bd3220d5d89964852972f,[],2026-10-04
+iv_Alt2015__W3001644032,unavailable,,,,"[""https://doi.org/10.2139/ssrn.3195486: landing page HTTPError""]",2026-10-04
+iv_Alt2015__W7116668322,unavailable,,,,[],2026-10-04
+iv_Alt2015__W4407793439,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C9CC3A0C7BAF7BADBEF0DA6350A875C8/S0003055424001394a.pdf/div-class-title-sustaining-exposure-to-fact-checks-misinformation-discernment-media-consumption-and-its-political-implications-div.pdf,private-data/pilot/fulltext/d58375f5c7c1d0dce181dbe4ada0e81a7020a6ae13616abdc5f07cdccc74c1ca.pdf,8d618bc12bfdfec139ad152bfa06f997c622447e304ac4d604eb361e734f97e6,[],2026-10-04
+iv_Alt2015__W4415777813,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W3122958392,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4211109315,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W3037910600,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W3162336609,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W2973457402,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4415904274,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4415904246,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4411045896,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4415205906,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=12569649&retmode=xml,private-data/pilot/fulltext/PMC12569649_pmc.xml,621d6534dbf38e311e6a752f8869efa122013db29cebc421bedae2e70727d030,[],2026-10-04
+iv_Carnegie2017__W7131134647,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4415904113,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4410579161,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W4416539270,unavailable,,,,[],2026-10-04
+iv_Carnegie2017__W7117503193,unavailable,,,,"[""https://www.tandfonline.com/doi/pdf/10.1080/13501763.2025.2608175?needAccess=true: HTTPError"", ""https://www.tandfonline.com/doi/pdf/10.1080/13501763.2025.2608175?needAccess=true: landing page HTTPError"", ""https://doi.org/10.1080/13501763.2025.2608175: landing page HTTPError""]",2026-10-04
+iv_Carnegie2017__W4415904283,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W2751020202,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W3007123452,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W3002085597,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W2302052173,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W2892089147,unavailable,,,,"[""https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3198110: landing page HTTPError""]",2026-10-04
+iv_Gelbach2012__W4416122362,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4412528947,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4408686981,downloaded_pdf_unchecked,https://repositori.upf.edu/bitstreams/fb7ab6e3-8181-4f2e-9d80-1553f5a045d6/download,private-data/pilot/fulltext/beafe0581b69145333a444cb8188c09674c2cb21c0a8f3eb074c82e8363d3677.pdf,99184f2dc04ec3bf5b7619280d0d7a95d4c29675b85415b6300a921f257b39ad,"[""https://www.cambridge.org/core/services/aop-cambridge-core/content/view/25886897B8A9938F648D20A87CF3D3E2/S2049847025000093a.pdf/div-class-title-foreign-aid-fdi-and-the-personalization-of-power-in-autocracies-div.pdf: PDF metadata link failed""]",2026-10-04
+iv_Gelbach2012__W4412529030,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4412529076,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4412529073,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4412529040,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4412528982,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4412528967,unavailable,,,,[],2026-10-04
+iv_Gelbach2012__W4410444016,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W4211017901,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W3198736842,unavailable,,,,"[""https://doi.org/10.2139/ssrn.3885174: landing page HTTPError""]",2026-10-04
+iv_Grossman2017__W4211129443,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W4256429255,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W3097971077,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W4410109377,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W4412663218,unavailable,,,,[],2026-10-04
+iv_Grossman2017__W4416247064,downloaded_pdf_unchecked,https://link.springer.com/content/pdf/10.1007/978-3-032-01897-7_1.pdf,private-data/pilot/fulltext/12ad33616dd267307c79041250ea7b06029d24426efbae225b4b1cd3d9f6455d.pdf,c7d1ed41a0b544d8b4679bfafbdde8bb5c202a0182afa6b4710609f9cb19d0be,[],2026-10-04
+iv_Grossman2017__W4412738237,downloaded_pdf_unchecked,https://revistas.ucr.ac.cr/index.php/ralp/article/download/719/1253,private-data/pilot/fulltext/80889cb3afd2540d0805bf30288b1c20885767071f6af8e8618ae2c63b780c79.pdf,bdcc34c094fdf0e3dae24dc37f741af028335137a593178782c8a1777357825f,[],2026-10-04
+iv_Grossman2017__W4410040275,downloaded_pdf_unchecked,https://www.researchsquare.com/article/rs-6320370/latest.pdf,private-data/pilot/fulltext/dafacd25d8a8d7b390c22e64b04a16abfc37600287902f59fd5f48a9f44d8f0b.pdf,af69d19163f9f83fb66c648bfcd55449b98a2fb207ef181e0b271f752947b787,[],2026-10-04
+iv_Grossman2017__W4412641879,unavailable,,,,"[""https://doi.org/10.1177/10780874251357506: landing page HTTPError""]",2026-10-04
+iv_Grossman2017__W4414616787,unavailable,,,,"[""https://doi.org/10.1111/grow.70058: landing page HTTPError""]",2026-10-04
+iv_Grossman2017__W4409343514,downloaded_pdf_unchecked,https://iris.uniroma1.it/bitstream/11573/1736893/1/Cerqua%20%26%20Di%20Matteo%20%282025%29%20The%20Bright%20Side%20of%20Breaking%20Up%20%20How%20Territorial%20Fragmentation%20Increases.pdf,private-data/pilot/fulltext/a7be9dcfbebd8420f221a831007c141d3b8342c87c469228660d0a9163dc2670.pdf,e0f3847587e1cb2a5e1cdf88cfe5310731811638c785657f6c2594e146c1f574,"[""https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jors.12768: landing page HTTPError"", ""https://doi.org/10.1111/jors.12768: landing page HTTPError""]",2026-10-04
+iv_Grossman2017__W4410554850,downloaded_pdf_unchecked,https://pure.manchester.ac.uk/ws/files/1563287958/GDI_WP_2025-81_merged_3_.pdf,private-data/pilot/fulltext/29bc9f6326afcac5fa7a0faaabffbe68dab48c03b42d9a54bb13690ebd6c080d.pdf,5b462697d4e40f6f9f766c3666efe921bd3b90051c732363b3145ce096f018dd,[],2026-10-04
+iv_Hager2022__W4412388415,unavailable,,,,"[""https://doi.org/10.1177/20531680251355242: landing page HTTPError"", ""https://doaj.org/article/d4a98954f15242c79ca62c62e10daa57: landing page HTTPError""]",2026-10-04
+iv_Hager2022__W7131095141,unavailable,,,,[],2026-10-04
+iv_Hager2022__W7119491459,unavailable,,,,[],2026-10-04
+iv_Hager2022__W4414038561,downloaded_pdf_unchecked,https://link.springer.com/content/pdf/10.1007/s11127-025-01316-y.pdf,private-data/pilot/fulltext/a719b652c10c447854160e97fb696f4c09b353741d990f0927bda0405df484a5.pdf,184c7984d6a1907f8f653a3d5054156114877f2e6be697a0c16fa144ea651183,[],2026-10-04
+iv_Hager2022__W7119477643,unavailable,,,,[],2026-10-04
+iv_Hager2022__W4413901834,downloaded_pdf_unchecked,https://kclpure.kcl.ac.uk/ws/files/337931759/Political_Effects_of_Crime_Brazil.pdf,private-data/pilot/fulltext/9835b0cc32662cc9a76f697e89fd1b6e21790f97d5c1570b5df5f3517e865f89.pdf,0d16e213b9f5811b2a3286a3545b30941435f81896927b0ccb6716c935bd5b6f,[],2026-10-04
+iv_Hager2022__W7119473695,unavailable,,,,[],2026-10-04
+iv_Hager2022__W7119531030,unavailable,,,,[],2026-10-04
+iv_Hager2022__W4415005988,unavailable,,,,[],2026-10-04
+iv_Hager2022__W7119470552,unavailable,,,,[],2026-10-04
+iv_Pianzola2019__W3184964414,unavailable,,,,"[""https://doi.org/10.2139/ssrn.3786972: landing page HTTPError""]",2026-10-04
+iv_Pianzola2019__W3094223887,downloaded_pdf_unchecked,https://pure.au.dk/ws/files/281193832/How_do_the_characteristics_of_voting_advice_application_users_change_over_time_Accepted_manuscript_2022.pdf,private-data/pilot/fulltext/5a72c64c5bc634b49fa7e98fc5bbfac5df613cd6830cd42a1d8f2cd0a0cb2b34.pdf,1fd9c1966b49cde5e8e59b630d3fcf0114480cf640e863455b2401781534e959,[],2026-10-04
+iv_Pianzola2019__W3127951535,downloaded_pdf_unchecked,https://plc-journal.eu/article/download/21945/23609,private-data/pilot/fulltext/6ba683a5525eb70b389d35b6b20dc67de470388af8794c914274a016d35d94cd.pdf,9a6c11b075f03ed64891e8f91d01a21d978f661e95a41e6aaf56b085d0b770e4,[],2026-10-04
+iv_Pianzola2019__W2995809273,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0E2AA51F9BD436A5DB5A84462732A9C3/S1047198719000482a.pdf/div-class-title-profiling-compliers-and-noncompliers-for-instrumental-variable-analysis-div.pdf,private-data/pilot/fulltext/5d8f60701dab5661384d988390c51b5244a8bfe0505aee9edca29ba10f4ea9cb.pdf,fcf3166455b9b2b560c62a8b110b714ea819bae1e7e60b2156946ff61b64ac2a,[],2026-10-04
+iv_Pianzola2019__W3198603765,unavailable,,,,"[""https://doi.org/10.2139/ssrn.3905329: landing page HTTPError""]",2026-10-04
+iv_Pianzola2019__W4410615860,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=12097556&retmode=xml,private-data/pilot/fulltext/PMC12097556_pmc.xml,662f892ae52c71fab17e484b13138150a0526956966ec904dd5cc266c48e35e0,[],2026-10-04
+iv_Pianzola2019__W4416411070,downloaded_pdf_unchecked,https://link.springer.com/content/pdf/10.1007/978-3-032-06918-4_54-1.pdf,private-data/pilot/fulltext/68cdf660499fd50e8151c804384978e28c4c61613fbbad445cdaaee491e8dc37.pdf,77696309b530829f33d9fc42ac664c1b04174423f5690a052ee9f075cd1ead6a,[],2026-10-04
+iv_Pianzola2019__W4410956877,downloaded_pdf_unchecked,https://ktisis.cut.ac.cy/bitstream/20.500.14279/36303/1/The%20power%20of%20alignment%20%20how%20personalized%20information%20shapes%20voter%20decisions.pdf,private-data/pilot/fulltext/6f44807237038df3aae9c7c6b7bf9d37b44b83b008865f1ab087bc3e76bc9c7f.pdf,c64e3b0e7f557cd84ebced7fa6ab927820da9d951d7bae55ec6a4be6e6b471c2,[],2026-10-04
+iv_Pianzola2019__W4409919427,unavailable,,,,"[""https://www.tandfonline.com/doi/pdf/10.1080/19331681.2025.2496259?needAccess=true: HTTPError"", ""https://www.tandfonline.com/doi/pdf/10.1080/19331681.2025.2496259?needAccess=true: landing page HTTPError"", ""https://doi.org/10.1080/19331681.2025.2496259: landing page HTTPError""]",2026-10-04
+iv_Pianzola2019__W4409733620,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A10588FB48539D49345D39A39F5AA464/S0304413000025467a.pdf/div-class-title-improving-issue-representation-with-candidate-level-voting-advice-applications-div.pdf,private-data/pilot/fulltext/0c49360a4a505bbaa51f95acfec689457cee0a90d254f0cd86c5fb27b388de9d.pdf,4f8aacab2182133f912ea84254650f39de5fa9363779d9d8a3feb5f80d1b5c4b,"[""https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1475-6765.70024: landing page HTTPError""]",2026-10-04
+iv_Schleiter2016__W2921564222,unavailable,,,,[],2026-10-04
+iv_Schleiter2016__W3198603765,unavailable,,,,"[""https://doi.org/10.2139/ssrn.3905329: landing page HTTPError""]",2026-10-04
+iv_Schleiter2016__W2753143911,unavailable,,,,[],2026-10-04
+iv_Schleiter2016__W2995819704,unavailable,,,,[],2026-10-04
+iv_Schleiter2016__W3048402477,unavailable,,,,[],2026-10-04
+iv_Schleiter2016__W4416678048,downloaded_pdf_unchecked,https://link.springer.com/content/pdf/10.1007/s11109-025-10106-7.pdf,private-data/pilot/fulltext/54da6bf2f6663759f80d31dc5a4cd90c77d4b82900c23ac974f9e94464019b85.pdf,daf305e19728bc1f188d4c3f2d4b2c27b8d03b0b7e42c12956ebe0815b27131a,[],2026-10-04
+iv_Schleiter2016__W4413392540,unavailable,,,,[],2026-10-04
+iv_Schleiter2016__W4413056430,downloaded_pdf_unchecked,https://ulb-dok.uibk.ac.at/ulbtirolfodok/content/titleinfo/13975781/full.pdf,private-data/pilot/fulltext/cd3c81038ae9a36dcc3ae24b79aa0f6203593b7bd510549f89797f5e9af37f85.pdf,9a35db69a1222744ce1fd5c48ef95cfb78ef8652f425537fbe60555c52b0c5d8,"[""https://academic.oup.com/pa/advance-article-pdf/doi/10.1093/pa/gsaf038/63928377/gsaf038.pdf: HTTPError""]",2026-10-04
+iv_Schleiter2016__W4412670584,downloaded_pdf_unchecked,https://pure.uva.nl/ws/files/304890073/Election_Timing_across_Autocracy_and_Democracy.pdf,private-data/pilot/fulltext/6735e17dc9029ef8969d3d5c69c30719f5f93c5aa0b8ea039b362ac60f68ac46.pdf,c853b4732276c9611b5ebb7f17b91153ea3b57a150cdb096ba2fc0ba130d0783,[],2026-10-04
+iv_Schleiter2016__W4417073270,unavailable,,,,"[""https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/lsq.70045: landing page HTTPError"", ""https://doi.org/10.1111/lsq.70045: landing page HTTPError""]",2026-10-04
+iv_Sexton2019__W3198603765,unavailable,,,,"[""https://doi.org/10.2139/ssrn.3905329: landing page HTTPError""]",2026-10-04
+iv_Sexton2019__W3026943721,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7216651&retmode=xml,private-data/pilot/fulltext/PMC7216651_pmc.xml,17fd7010565545b67d9109ba85ffcac40663d5d2656465f512bbe8a5598fbea8,[],2026-10-04
+iv_Urpelainen2022__W4412641572,unavailable,,,,[],2026-10-04
+iv_Urpelainen2022__W4408597143,unavailable,,,,[],2026-10-04
+iv_Urpelainen2022__W4412900153,downloaded_pdf_unchecked,https://www.econstor.eu/bitstream/10419/315123/1/1919049517.pdf,private-data/pilot/fulltext/370d5a41649bb16c744cdb144a1123822263f5d3117b2439839d737fccbff3de.pdf,a13b4eab75a19005bc249267c2cd39f52a46dde8d380cc1f035c5759312360b0,[],2026-10-04
+iv_Urpelainen2022__W4415174212,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F898143DE3F86A22071A9D575CCAE2F7/S1475676525100273a.pdf/div-class-title-climate-policy-strategies-and-corporate-mobilisation-in-the-european-union-div.pdf,private-data/pilot/fulltext/2a7270a4005ebad463f11c9b0c8b47e916b8753f22c2339c764eb28a160abda4.pdf,acc42fde992a9997f828c2eb3c7bcb9611403073c1fd952213a876fda3c435c9,[],2026-10-04
+iv_Urpelainen2022__W4415692940,downloaded_pdf_unchecked,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A1FD0B6EE6D1EE9C6BDD89080FC9CADC/S1755773925100155a.pdf/div-class-title-far-right-against-green-the-re-emergence-of-geographically-defined-voting-patterns-and-the-new-environment-cleavage-in-western-europe-div.pdf,private-data/pilot/fulltext/afe835433ef427f63dc8d1089cce48f8c6c13a79b6f311e0ab93bc9c200f3092.pdf,532dd924c4a587179761e2b3339910428da6412fe7b933b090dea79db5c33752,[],2026-10-04
+iv_Urpelainen2022__W4415015448,unavailable,,,,[],2026-10-04
+iv_Urpelainen2022__W4416909795,unavailable,,,,"[""https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/nml.70029: landing page HTTPError"", ""https://doi.org/10.1002/nml.70029: landing page HTTPError""]",2026-10-04
+iv_Urpelainen2022__W4414267533,downloaded_pdf_unchecked,https://madoc.bib.uni-mannheim.de/70927/1/1-s2.0-S0047272725001665-main.pdf,private-data/pilot/fulltext/e0058100f77d6cc83e3cc6a386dcf0b97e73e92e7acd823ca44ae7cdd4ccf482.pdf,f1f112db7784b9b0ff3fa4ecf416c7a918d67b6fffa7ae53c13714fa72db9c7e,[],2026-10-04
+iv_Urpelainen2022__W4410944098,unavailable,,,,"[""https://www.tandfonline.com/doi/pdf/10.1080/09644016.2025.2508563?needAccess=true: HTTPError"", ""https://www.tandfonline.com/doi/pdf/10.1080/09644016.2025.2508563?needAccess=true: landing page HTTPError"", ""https://doi.org/10.1080/09644016.2025.2508563: landing page HTTPError""]",2026-10-04
+iv_Urpelainen2022__W4410079757,unavailable,,,,"[""https://www.tandfonline.com/doi/pdf/10.1080/13501763.2025.2495677?needAccess=true: HTTPError"", ""https://www.tandfonline.com/doi/pdf/10.1080/13501763.2025.2495677?needAccess=true: landing page HTTPError"", ""https://doi.org/10.1080/13501763.2025.2495677: landing page HTTPError""]",2026-10-04
+nw_105__W2170347881,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3167555&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3167555/fullTextXML: HTTPError""]",2026-10-04
+nw_105__W2046262142,unavailable,,,,[],2026-10-04
+nw_105__W2063831833,unavailable,,,,[],2026-10-04
+nw_105__W2005317473,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3134187&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3134187/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/23/8605.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/23/8605.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.0294-11.2011: landing page HTTPError""]",2026-10-04
+nw_105__W2070618183,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5538882&retmode=xml,private-data/pilot/fulltext/PMC5538882_pmc.xml,e2d315c2d1f4c3591d1f61d9ad922ed7ff73f6bee517c25aadd437ecaf938268,[],2026-10-04
+nw_105__W2201581102,downloaded_pdf_unchecked,https://arxiv.org/pdf/1511.05952,private-data/pilot/fulltext/232c5d788b53c3e83f28af8ca512f04a7644ea3b25849ed83fd12c6c73620443.pdf,c944277af1beef1567e1d0f9d87a263f2d5a5b272b9d79be94f578ec2191e3b3,[],2026-10-04
+nw_105__W2957923780,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6668845&retmode=xml,private-data/pilot/fulltext/PMC6668845_pmc.xml,bdab22dce1975671604f8d8fe346a9452f9f0c5245196a8cc019c7a9a23bd369,[],2026-10-04
+nw_105__W4283699863,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2022/06/28/2022.06.24.497499.full.pdf,private-data/pilot/fulltext/174b3c90571028df1c98999ed8f26dbb2e0f47dcc48ad13752cbd4e66744e233.pdf,66d896506f365207877495de4604a0a44d18036cc47036f206e419dd6943ed80,[],2026-10-04
+nw_105__W2516362387,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5102323&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5102323/fullTextXML: HTTPError""]",2026-10-04
+nw_105__W3014723976,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7209917&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7209917/fullTextXML: HTTPError""]",2026-10-04
+nw_105__W2936654694,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2019/04/23/604116.full.pdf,private-data/pilot/fulltext/fd230e8f2917f02b80b67f5ee7a8c08e16ed6bd7b631c5b79957afcad0fe88b5.pdf,32ce8b237fca12ecc18b405da379ad0b456fc74e0cb4095f48325faa65ecfde4,[],2026-10-04
+nw_105__W2933015249,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2019/04/02/596569.full.pdf,private-data/pilot/fulltext/ab184f75fb3abaf5a7c5b47491bce316b0084a20cd3dd814c3f96a0d351025b9.pdf,852ab6729870a1e0f2429b1ab3f4b10e95e79af397e063fb1e54baa8ea1cefef,[],2026-10-04
+nw_105__W4386895681,downloaded_pdf_unchecked,https://osf.io/hjm49/download,private-data/pilot/fulltext/cbbf3492dff4eb4b5776472a9004baaaa753d64f73bb0df23ac8ffaf7ddb4714.pdf,e0c832b109bfd384e7d6e73b5ff515d1db23c59c39134558193d14a8cc3ae00b,[],2026-10-04
+nw_105__W4288855563,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=9885000&retmode=xml,private-data/pilot/fulltext/PMC9885000_pmc.xml,456d697f7cc0693e12aea877c2f0fbb4dae9cfa81213865a3d7fda876ceec591,[],2026-10-04
+nw_105__W4308330707,unavailable,,,,"[""https://journal.psych.ac.cn/xlkxjz/CN/article/downloadArticleFile.do?attachType=PDF&id=6460: landing page HTTPError"", ""https://doi.org/10.3724/sp.j.1042.2023.00078: landing page HTTPError""]",2026-10-04
+nw_122__W2800452451,unavailable,,,,[],2026-10-04
+nw_122__W2174839614,unavailable,,,,[],2026-10-04
+nw_122__W2314373551,downloaded_pdf_unchecked,https://www.jstage.jst.go.jp/article/jser/72/3/72_156/_pdf,private-data/pilot/fulltext/cc097bf69408eea0f5c13d08192063f238cc3df1c155d4ee8332af7a6af05881.pdf,fcc799b9530347e11418dfc8ed585208db2c098fcf6e56006ab880c025d5b9ff,[],2026-10-04
+nw_122__W2134266243,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3858499&retmode=xml,private-data/pilot/fulltext/PMC3858499_pmc.xml,ded0140dbd2ba2fb583cc2689d77a6b2d2e60b495c410e4e4a7f75ef254c1e33,[],2026-10-04
+nw_122__W2016496814,unavailable,,,,[],2026-10-04
+nw_122__W1994399394,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4399328&retmode=xml,private-data/pilot/fulltext/PMC4399328_pmc.xml,4c2fa9e033687d51ce0e8d6d79ff1ea20403fb1d1a56e32a5ed2944c0596f4b3,[],2026-10-04
+nw_122__W2586214959,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2017/01/05/098525.full.pdf,private-data/pilot/fulltext/22f41496121a6867cf7fedc155529f2f6527fcee985a50cb4405a82f859dfc92.pdf,201d34065ec03f9f1613f3bc0063c9a980865cbc9e56b7b030616faee5d37808,[],2026-10-04
+nw_122__W2951202078,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5472254&retmode=xml,private-data/pilot/fulltext/PMC5472254_pmc.xml,b427611b4b10532a86d18da75446ea0a9c9012ab306ea1b7bbe438ad064edf8b,[],2026-10-04
+nw_122__W3157317171,unavailable,,,,[],2026-10-04
+nw_122__W2101507459,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4106454&retmode=xml,private-data/pilot/fulltext/PMC4106454_pmc.xml,717c2aaa20e02cd0a53181e467fc7b7169e37e82fd4487047506337e99b7ceb5,[],2026-10-04
+nw_128__W2024054799,unavailable,,,,[],2026-10-04
+nw_128__W2063154406,unavailable,,,,[],2026-10-04
+nw_128__W1973343893,unavailable,,,,[],2026-10-04
+nw_128__W2144828007,unavailable,,,,[],2026-10-04
+nw_128__W2010152657,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4460789&retmode=xml,private-data/pilot/fulltext/PMC4460789_pmc.xml,b1f49597a411d113ee542266831c101bdab529a0e5f0038fde755ad1330456d7,[],2026-10-04
+nw_128__W3101160835,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=8033464&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8033464/fullTextXML: HTTPError""]",2026-10-04
+nw_128__W2197200441,unavailable,,,,[],2026-10-04
+nw_128__W1974936856,unavailable,,,,[],2026-10-04
+nw_128__W2040323408,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4294128&retmode=xml,private-data/pilot/fulltext/PMC4294128_pmc.xml,6205eae6ea28bd03556ef5655737a152ead0ec2873b85a0d5a02457e64b49f5c,[],2026-10-04
+nw_128__W2741447257,unavailable,,,,[],2026-10-04
+nw_128__W2042513904,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6621481&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6621481/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/32/38/13244.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/32/38/13244.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.5933-11.2012: landing page HTTPError""]",2026-10-04
+nw_128__W2139581078,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3773194&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3773194/fullTextXML: HTTPError""]",2026-10-04
+nw_128__W2523861048,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5642414&retmode=xml,private-data/pilot/fulltext/PMC5642414_pmc.xml,43d6dc3ad3998f1ce7112e9e5141ffa0b295a253374aad5e19e0276e41da90f5,[],2026-10-04
+nw_128__W4368405217,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10188949&retmode=xml,private-data/pilot/fulltext/PMC10188949_pmc.xml,943b881542388a9aa7323122b0b531c1d837dcc6fba601f393a94b1b74efba7d,[],2026-10-04
+nw_37__W2022204034,unavailable,,,,"[""https://doaj.org/article/f597850ae1b04d52a2612bfcb526c551: landing page HTTPError""]",2026-10-04
+nw_37__W1971815419,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3095811&retmode=xml,private-data/pilot/fulltext/PMC3095811_pmc.xml,a515fda56d049a749a926bc6352ebe034450c18b2224418e4d27abf6122c980e,[],2026-10-04
+nw_37__W1997550735,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3094190&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3094190/fullTextXML: HTTPError""]",2026-10-04
+nw_37__W2169657293,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3158052&retmode=xml,private-data/pilot/fulltext/PMC3158052_pmc.xml,2aab3fd8fa6059a9ba994618b763e7d9bf4c72b177948e1fe9adf7e4338d72e6,[],2026-10-04
+nw_37__W2137233223,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6703325&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6703325/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/27/10023.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/27/10023.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.1606-11.2011: landing page HTTPError""]",2026-10-04
+nw_37__W2231877701,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4808096&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4808096/fullTextXML: HTTPError"", ""https://www.physiology.org/doi/pdf/10.1152/jn.00925.2015: HTTPError"", ""https://www.physiology.org/doi/pdf/10.1152/jn.00925.2015: landing page HTTPError"", ""https://doi.org/10.1152/jn.00925.2015: landing page HTTPError"", ""https://dspace.mit.edu/bitstreams/61a16898-b670-4a09-b198-a80db5ee059c/download: landing page HTTPError"", ""https://dspace.mit.edu/bitstreams/61a16898-b670-4a09-b198-a80db5ee059c/download: PDF metadata link failed""]",2026-10-04
+nw_37__W4403476938,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11579926&retmode=xml,private-data/pilot/fulltext/PMC11579926_pmc.xml,816241fda201dfb0c6cff9fac350ad087809eac6f01f2ed3802ec61d605527df,[],2026-10-04
+nw_37__W3011793417,unavailable,,,,[],2026-10-04
+nw_37__W4387340429,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10572094&retmode=xml,private-data/pilot/fulltext/PMC10572094_pmc.xml,edfbea83a22e2f575d094727395e09fb9031085ec1bf76680932be52677eab79,[],2026-10-04
+nw_37__W2309693715,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4839395&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4839395/fullTextXML: HTTPError"", ""https://research-information.bris.ac.uk/files/174125249/Dodson_Ms_figs_AoA.pdf: PDF metadata link failed""]",2026-10-04
+nw_37__W4294292695,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2022/08/31/2022.08.31.505994.full.pdf,private-data/pilot/fulltext/5a9c067354d82d839ce9e2e9687c9cc9d1ecff977b9e7dfd84f7b6b8cc8c7042.pdf,6516ba639ae9a049ca6416d1aa265b789a20c4f43b86b2c7b67ad246acf76d7c,[],2026-10-04
+nw_37__W4366981293,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10217991&retmode=xml,private-data/pilot/fulltext/PMC10217991_pmc.xml,d8dbe4d9a133e4729710c94be638de195c9448f941045176f4a75180c8426807,[],2026-10-04
+nw_37__W4250931155,unavailable,,,,"[""https://doi.org/10.36227/techrxiv.14428133: landing page HTTPError""]",2026-10-04
+nw_37__W4402199106,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11428604&retmode=xml,private-data/pilot/fulltext/PMC11428604_pmc.xml,8e11800b1bf300a4095c27a5063d9056a5fe89bf3ff0b2d280d9f72e50fc501f,[],2026-10-04
+nw_37__W2890374678,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6516744&retmode=xml,private-data/pilot/fulltext/PMC6516744_pmc.xml,a06082844b79a00de47d7e8f7234166619e265c6ef5531b11dae0e24ae82b5a3,[],2026-10-04
+nw_53__W1523136835,unavailable,,,,[],2026-10-04
+nw_53__W2163527008,downloaded_pdf_unchecked,https://idus.us.es/bitstreams/7ba25e7c-f47c-48a9-800b-6df236015a3a/download,private-data/pilot/fulltext/bcbfcca35ab02cd294ac9fe439f37b32bb710fc6fead57b16bdde97e52e91b10.pdf,5d39e2dea349558a8ac731ec548b1ae5267f776bc09c699636882d7e4faf2590,"[""https://www.mdpi.com/1424-8247/4/7/976/pdf?version=1309435396: HTTPError"", ""https://www.mdpi.com/1424-8247/4/7/976/pdf?version=1309435396: landing page HTTPError"", ""https://doi.org/10.3390/ph4070976: landing page HTTPError""]",2026-10-04
+nw_53__W1485685793,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3936351&retmode=xml,private-data/pilot/fulltext/PMC3936351_pmc.xml,0ff2833cfbf2ea0db466512ac3a312e26a42c8a8cebface068a6d7360e2044e9,[],2026-10-04
+nw_53__W2078236095,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2946182&retmode=xml,private-data/pilot/fulltext/PMC2946182_pmc.xml,5d8ac740615845460032f3fb6bcd44cf4fbae3e7ada333f5c83c81bef4313af0,[],2026-10-04
+nw_53__W2036768211,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4046255&retmode=xml,private-data/pilot/fulltext/PMC4046255_pmc.xml,763daa4e456d152b88fd7e683a4d4502c0062581d7d186db4180b9b464f0fe6c,[],2026-10-04
+nw_53__W2996011575,unavailable,,,,[],2026-10-04
+nw_53__W2901615037,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6360131&retmode=xml,private-data/pilot/fulltext/PMC6360131_pmc.xml,af43d04da296fe22482cd018f412694a6d0834e7889859b004c21055f4d5ac83,[],2026-10-04
+nw_53__W3026998689,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7248303&retmode=xml,private-data/pilot/fulltext/PMC7248303_pmc.xml,1eea57cf56979e323f5fe0340a9ae4571f306bee8e952400225d0b444ad90f44,[],2026-10-04
+nw_53__W867680909,unavailable,,,,[],2026-10-04
+nw_53__W2893502543,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6170895&retmode=xml,private-data/pilot/fulltext/PMC6170895_pmc.xml,db19dd505ff9e8c3a74e75f04c1c73baf2bc0ce32aa94afbfca3416b810eec16,[],2026-10-04
+nw_53__W4317498414,unavailable,,,,[],2026-10-04
+nw_53__W2086609236,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4171989&retmode=xml,private-data/pilot/fulltext/PMC4171989_pmc.xml,7f22138b2df7d034a451927206a202f4e09599769ebde413df05b687f94d3910,[],2026-10-04
+nw_53__W2502592343,downloaded_pdf_unchecked,https://inserm.hal.science/inserm-02472228/document,private-data/pilot/fulltext/315637a5523ec58bb399ddc8566ae171d6755fe77fc19ee21a2d8c6cc2d8de20.pdf,477c9cffa4f4022179f8f5350d3685e03a611d3e7c7662298ffe6330e0c5dd05,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4971362&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4971362/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/36/31/8149.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/36/31/8149.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.2711-14.2016: landing page HTTPError""]",2026-10-04
+nw_53__W2124970404,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3896878&retmode=xml,private-data/pilot/fulltext/PMC3896878_pmc.xml,e972b35a495d1a1c14d5f6e07c0cfae3bc419c041c07d2f1fdc037111030990d,[],2026-10-04
+nw_53__W4395454262,unavailable,,,,[],2026-10-04
+nw_6__W2041499925,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3180853&retmode=xml,private-data/pilot/fulltext/PMC3180853_pmc.xml,5e80f31a81396b9cb4a0230d158b5bf339868599a1da034ba4f8577551a413e4,[],2026-10-04
+nw_6__W2132041417,downloaded_pdf_unchecked,https://repository.ubn.ru.nl/bitstream/2066/115487/1/115487.pdf,private-data/pilot/fulltext/c51f0420f30838f1d4c5e97d91112bb5496afafe155abf05b200f601b0d13b6b.pdf,b691a66ffbda5b11defd3a6a5141cfcbb67bbd692be5172792947f92f436dfec,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6622909&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6622909/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/12/4613.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/12/4613.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.4640-10.2011: landing page HTTPError""]",2026-10-04
+nw_6__W2126265616,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3117012&retmode=xml,private-data/pilot/fulltext/PMC3117012_pmc.xml,168478bd0c738cec34513168504d3d258c0ff7c9be2b7e188b98ca7057fac574,[],2026-10-04
+nw_6__W2093926848,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3048142&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3048142/fullTextXML: HTTPError""]",2026-10-04
+nw_6__W1995759170,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3145971&retmode=xml,private-data/pilot/fulltext/PMC3145971_pmc.xml,47a11e5c5af75f2cc70c4bd8fbd7763c181fc95190c94db957d3a86611a519b5,[],2026-10-04
+nw_6__W4225622416,unavailable,,,,"[""https://doi.org/10.2139/ssrn.4086942: landing page HTTPError""]",2026-10-04
+nw_6__W2592676923,unavailable,,,,[],2026-10-04
+nw_6__W2764281733,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2017/10/11/201301.full.pdf,private-data/pilot/fulltext/c9d0fe350f0c23de79aa563c5a5a821f8d9eb2aaf4f10d3f0891b35e9d39aca0.pdf,a221cfeb65180e34573c65c9622cb644eaf529bd83f6454a968926c40f956553,[],2026-10-04
+nw_6__W2911631753,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6365565&retmode=xml,private-data/pilot/fulltext/PMC6365565_pmc.xml,83fd7d28e15046fa0475c5738ace91954b6e252cb53054e5ee49bfa119d29773,[],2026-10-04
+nw_6__W4362735753,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2023/04/09/2023.04.09.536160.full.pdf,private-data/pilot/fulltext/56423258b74b527fcc2ced4ae8b21859d03d7b3db32d5527b42797ce4a46ffb5.pdf,f179de1ca92bba8683e6f8cd311f9df039eb1607bcaa3fce47766097469cb234,[],2026-10-04
+nw_6__W7116951826,unavailable,,,,[],2026-10-04
+nw_6__W7116931256,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=12776205&retmode=xml,private-data/pilot/fulltext/PMC12776205_pmc.xml,703f6e88673cfa99fb779b3185d6a020b4ba892749b93afdbf0a2f1318911f06,[],2026-10-04
+nw_6__W2171273397,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4133322&retmode=xml,private-data/pilot/fulltext/PMC4133322_pmc.xml,a5fd8ab6257e3a3fdb5cf4f7dbb7628eee194e3a87d027426083e0f901d24145,[],2026-10-04
+nw_6__W4390336949,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2024/02/04/2023.12.27.573490.full.pdf,private-data/pilot/fulltext/9fe9ae6791ac70973856885d52c6ea2b5b3d30f7906fc867d26299ecd6e5c7bb.pdf,dae30d70651617b4cc4fc6ac246e009f32ba3b94948210ebffa6e096dc601534,[],2026-10-04
+nw_6__W2965851334,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2020/05/03/726760.full.pdf,private-data/pilot/fulltext/3e22952148279f356478d0fe4761d13b52d1824f6cfa1d7139e36f31c990dd2d.pdf,dc18d90ca9adfb65dc1b0b9c0fbb599893c1b9d651f589bb8546248d47c0b1aa,[],2026-10-04
+nw_67__W2186109721,unavailable,,,,[],2026-10-04
+nw_67__W2132518384,unavailable,,,,[],2026-10-04
+nw_67__W2139810582,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3783591&retmode=xml,private-data/pilot/fulltext/PMC3783591_pmc.xml,8297b3697616b946c5401ce3c08fc4174c60204a2c9ca2fede5166e3432d4e51,[],2026-10-04
+nw_67__W2587822630,unavailable,,,,[],2026-10-04
+nw_67__W2060208640,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4075747&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4075747/fullTextXML: HTTPError"", ""https://www.nature.com/articles/aps2013149.pdf: response is not PDF""]",2026-10-04
+nw_67__W2762954760,unavailable,,,,[],2026-10-04
+nw_67__W2050139726,unavailable,,,,[],2026-10-04
+nw_67__W2023989159,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3479581&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3479581/fullTextXML: HTTPError"", ""https://www.pnas.org/content/pnas/109/40/16330.full.pdf: HTTPError"", ""https://www.pnas.org/content/pnas/109/40/16330.full.pdf: landing page HTTPError"", ""https://doi.org/10.1073/pnas.1119261109: landing page HTTPError""]",2026-10-04
+nw_67__W2064794291,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4121120&retmode=xml,private-data/pilot/fulltext/PMC4121120_pmc.xml,4348a33671dafa5898a7a3fe20c16fc29889594334fc4865d26fa68b48196c3b,[],2026-10-04
+nw_67__W1916299561,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4552833&retmode=xml,private-data/pilot/fulltext/PMC4552833_pmc.xml,19f639a36c52a0cf5fa332b4efbbc372855ad5dea9afd7a1d57d3924b40c5d07,[],2026-10-04
+nw_67__W1978427157,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3565763&retmode=xml,private-data/pilot/fulltext/PMC3565763_pmc.xml,93c055be07dae18e66d2f188419d7f21592111794209b1251a8a726c7d5dfd85,[],2026-10-04
+nw_67__W2009377536,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3602081&retmode=xml,private-data/pilot/fulltext/PMC3602081_pmc.xml,03b01063c47687e15f77c3084c06c8a6bc95accc3dd00b85957b1cda713eabfc,[],2026-10-04
+nw_74__W1971147204,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6622893&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6622893/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/12/4355.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/12/4355.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.6369-10.2011: landing page HTTPError""]",2026-10-04
+nw_74__W2162116457,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3127901&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3127901/fullTextXML: HTTPError"", ""https://www.pnas.org/content/pnas/108/26/10702.full.pdf: HTTPError"", ""https://www.pnas.org/content/pnas/108/26/10702.full.pdf: landing page HTTPError"", ""https://doi.org/10.1073/pnas.1014528108: landing page HTTPError""]",2026-10-04
+nw_74__W2096622136,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3173860&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3173860/fullTextXML: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/34/12364.full.pdf: HTTPError"", ""https://www.jneurosci.org/content/jneuro/31/34/12364.full.pdf: landing page HTTPError"", ""https://doi.org/10.1523/jneurosci.1619-11.2011: landing page HTTPError""]",2026-10-04
+nw_74__W2104624711,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3132674&retmode=xml,private-data/pilot/fulltext/PMC3132674_pmc.xml,a386fa919e29af539d377ef8f9986680880e271fda5fd9de3498bea5856e6d2a,[],2026-10-04
+nw_74__W2032791193,unavailable,,,,"[""https://www.zora.uzh.ch/id/eprint/54890/1/jocn_a_00096.pdf: response is not PDF""]",2026-10-04
+nw_74__W2980842652,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=8979913&retmode=xml,private-data/pilot/fulltext/PMC8979913_pmc.xml,57ef10c87c4f332c5b9ff950e500bd5a7f9c7e6d3db59322faf0e25167c2723c,[],2026-10-04
+nw_74__W4388925854,downloaded_pdf_unchecked,https://journal.psych.ac.cn/xlxb/CN/article/downloadArticleFile.do?attachType=PDF&id=15676,private-data/pilot/fulltext/0afeef95cc7e55832fc7d6dbe84f922afdcdd5834c1cf574dd3e638c69b810ba.pdf,757f2826a32342bcb3c10c400c11e070c4ce49a8922c63d6aabe3837c2ad84ba,[],2026-10-04
+nw_74__W3217041511,unavailable,,,,[],2026-10-04
+nw_74__W2909764520,unavailable,,,,[],2026-10-04
+nw_74__W4283209547,downloaded_pdf_unchecked,https://access.archive-ouverte.unige.ch/access/metadata/8fc1fb9c-5e95-43a4-a137-e5e696f95b56/download,private-data/pilot/fulltext/ab2094342ff5ef931cea70673bffb70ed11f2d41952b3ae50593bc43fcf569cc.pdf,28ef74c31f40c0eb177ac75d81738b68106c905b589cb41fc50776f536a8088d,"[""https://www.zora.uzh.ch/id/eprint/253535/1/ZORA_s13414_023_02706_4.pdf: response is not PDF""]",2026-10-04
+nw_74__W4385545993,unavailable,,,,[],2026-10-04
+nw_74__W4379768311,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10524783&retmode=xml,private-data/pilot/fulltext/PMC10524783_pmc.xml,fad43b83bfe8caf95550caffe494ce24c102e71a57eed40c482a9fd3a4a3a8a2,[],2026-10-04
+nw_74__W2415159270,unavailable,,,,[],2026-10-04
+nw_74__W3120398846,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7994187&retmode=xml,private-data/pilot/fulltext/PMC7994187_pmc.xml,f437b42bf46397924551c823684e9580e80cdf1be7252adcc49231790d10151f,[],2026-10-04
+nw_74__W4313535007,unavailable,,,,[],2026-10-04
+nw_84__W2085539835,unavailable,,,,[],2026-10-04
+nw_84__W2069901484,unavailable,,,,[],2026-10-04
+nw_84__W2118037728,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3186286&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3186286/fullTextXML: HTTPError"", ""https://jpet.aspetjournals.org/content/jpet/339/1/35.full.pdf: HTTPError"", ""https://jpet.aspetjournals.org/content/jpet/339/1/35.full.pdf: landing page HTTPError""]",2026-10-04
+nw_84__W1984142725,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6870063&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6870063/fullTextXML: HTTPError"", ""https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.21370: landing page HTTPError"", ""https://doi.org/10.1002/hbm.21370: landing page HTTPError""]",2026-10-04
+nw_84__W943909192,unavailable,,,,[],2026-10-04
+nw_84__W2192910656,downloaded_pdf_unchecked,https://arxiv.org/pdf/1402.5332,private-data/pilot/fulltext/05435506d8bf07396edb1ce24f21adc1c5c96d70848d25b64dcd0e24db828511.pdf,fcfaab1c209084dd9ad7bb63ffd442d87e8bd52ff2af9e7b5e49e0214e12b0a4,[],2026-10-04
+nw_84__W4392785415,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11042209&retmode=xml,private-data/pilot/fulltext/PMC11042209_pmc.xml,6a21f55d7d04f1f212ab8b17acf16976340f5c256e5107987e405f6b74c13be5,[],2026-10-04
+nw_84__W1047501406,unavailable,,,,[],2026-10-04
+nw_84__W4400154266,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2024/06/28/2024.06.28.601172.full.pdf,private-data/pilot/fulltext/3da7e7bb3a1d597c90f8b66fb19f5dfadc9ed155c4891388833eaaada6b7b918.pdf,ab5665cff16c8c63a4c24b12a34cc8b5109b5c8170dc0f43d9ad54cca5cc09ca,"[""http://dx.doi.org/content/10.1101/2024.06.28.601172v1.full.pdf: PDF metadata link failed""]",2026-10-04
+nw_84__W1970077425,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3940437&retmode=xml,private-data/pilot/fulltext/PMC3940437_pmc.xml,d5141bbab70e316f65d09c827d343104d84b5c10b9a2c9a784d9515361797a78,[],2026-10-04
+nw_84__W2437223354,unavailable,,,,[],2026-10-04
+nw_84__W3092217721,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=8018611&retmode=xml,private-data/pilot/fulltext/PMC8018611_pmc.xml,93ece4d67883e6fd7f1462f484dcaf38d7128003a5af2c5d3848472688476cb8,[],2026-10-04
+nw_84__W2162153433,downloaded_pdf_unchecked,https://lirias.kuleuven.be/retrieve/110132c4-af9b-48a3-ae37-8ab3974de229,private-data/pilot/fulltext/30fef26f2fe553d6f9aa1a6150c441492b815ba734ce69605385596cedeabdde.pdf,01c0c3fb6bc5c9a20c67877e349374b0c553d8113c8034e0d022172f11150b57,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3545155&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3545155/fullTextXML: HTTPError""]",2026-10-04
+nw_84__W4400320314,unavailable,,,,[],2026-10-04
+nw_84__W2234852922,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4423947&retmode=xml,private-data/pilot/fulltext/PMC4423947_pmc.xml,c9d0de2375a16f85eb1afc5ebd38316c0a027d3ca51546f2a63e3a572c2ee229,[],2026-10-04
+nw_97__W2036962817,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3655719&retmode=xml,private-data/pilot/fulltext/PMC3655719_pmc.xml,13b2d3e9318d5312865093ddbd785eb331aeb2eb2d4d4b2c8b4ba37e7f0c6624,[],2026-10-04
+nw_97__W1972334601,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3148823&retmode=xml,private-data/pilot/fulltext/PMC3148823_pmc.xml,3ba9c9c7d6ad8d17d2e3f99bad2439c2a7aa83889ff5f21f256e6a61d8488a71,[],2026-10-04
+nw_97__W16178711,downloaded_pdf_unchecked,https://repository.escholarship.umassmed.edu/bitstreams/1859e4d6-782e-479d-ba66-fd8176bbdd15/download,private-data/pilot/fulltext/9015539ca5937f7c40a67713d0c5c89e4708e3a37c163b4bc4027339da232b6f.pdf,9dcd62ac59de620f4c40dcb7409568d9b49afdf9b0804a03a52af89c63a9d9a3,[],2026-10-04
+nw_97__W1994769218,unavailable,,,,[],2026-10-04
+nw_97__W2005109750,downloaded_pdf_unchecked,https://link.springer.com/content/pdf/10.3758/CABN.10.2.217.pdf,private-data/pilot/fulltext/73bdddd0c36df8a09e36d2871b028e47c1fb9820f54fb285cb2a8f1fce1d8512.pdf,6119dd2deb8829df3f85db140631af7f844e4372b4d4024b0731abec68d9e8d6,[],2026-10-04
+nw_97__W4399367191,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11186775&retmode=xml,private-data/pilot/fulltext/PMC11186775_pmc.xml,204ae8ee641525484773a640bed2e70fe8098f8b7386b444f9e83fe7fe6c3f00,[],2026-10-04
+nw_97__W4388408280,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10627466&retmode=xml,private-data/pilot/fulltext/PMC10627466_pmc.xml,50158fca9341a98c3eb109a4e76ebfe26ea9dce66e1639e7fada9da87c66cbf9,[],2026-10-04
+nw_97__W4414845764,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=12500900&retmode=xml,private-data/pilot/fulltext/PMC12500900_pmc.xml,ebf8c8a2e61e4aa1880b9e9948ec60c1167f8e767b066064e1cedd03a9f6c6a1,[],2026-10-04
+nw_97__W1189967966,unavailable,,,,[],2026-10-04
+nw_97__W2339071900,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4840478&retmode=xml,private-data/pilot/fulltext/PMC4840478_pmc.xml,ed2ee3ea17ed18c7f341562ad74642a55a50ee983e7acc002ed0e86d05f17b17,[],2026-10-04
+nw_97__W2127820682,unavailable,,,,"[""https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4089383&retmode=xml: ValueError"", ""https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4089383/fullTextXML: HTTPError"", ""https://academic.oup.com/cercor/article-pdf/24/8/2160/14100919/bht063.pdf: HTTPError"", ""https://academic.oup.com/cercor/article-pdf/24/8/2160/14100919/bht063.pdf: landing page HTTPError"", ""https://doi.org/10.1093/cercor/bht063: landing page HTTPError""]",2026-10-04
+nw_97__W3087733386,downloaded_pdf_unchecked,https://www.biorxiv.org/content/biorxiv/early/2020/09/19/2020.09.16.300723.full.pdf,private-data/pilot/fulltext/0147ee8bc00e9ed9f115515b60277b9b7eb0e65f06765c80477fea73d84dd173.pdf,87e13d0aa3b2cb32cf0ff6d94820e9b4dc1cb078961cdc1ca507c961f992de22,[],2026-10-04
+nw_97__W4403637881,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11547033&retmode=xml,private-data/pilot/fulltext/PMC11547033_pmc.xml,80766c765f08b50867876abbf3ac7488627a88875f14fbb20a41a9004f435ee4,[],2026-10-04
+nw_97__W2738063795,unavailable,,,,[],2026-10-04
+nw_97__W1972200439,retrieved_xml,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3855889&retmode=xml,private-data/pilot/fulltext/PMC3855889_pmc.xml,6ec0f12a1b7af006b167293bac2db8df97a597ee3c1a5e79e24f2d75545f61ff,[],2026-10-04

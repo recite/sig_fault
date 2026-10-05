@@ -23,7 +23,7 @@ The appendix reports journal-by-year and publication-cohort-by-year effects, abs
 
 ## Reproduce
 
-Install R 4.6.0, GNU Make, and a TeX distribution providing XeLaTeX and `latexmk`. From the repository root:
+Install R 4.6.0, Python 3.10 or newer, GNU Make, and a TeX distribution providing XeLaTeX and `latexmk`. From the repository root:
 
 ```sh
 make restore
@@ -35,6 +35,8 @@ make check
 For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make lint`, or `make test`. Edit the README’s prose in `docs/README.in.md`; numerical values come from the analysis. Edit the paper in `ms/main.tex`.
 
 ## Files
+
+The [extension pilot](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding are still in progress; it does not yet provide estimates of continued reliance.
 
 | Path | Contents |
 | --- | --- |

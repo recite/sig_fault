@@ -1,0 +1,33 @@
+{
+  "status": "awaiting_independent_claim_verification_and_citation_coding",
+  "selected_papers": 20,
+  "sampled_pairs": 250,
+  "pre_pairs": 78,
+  "post_pairs": 172,
+  "retrieval_attempted": 250,
+  "retrieval_status": {
+    "retrieved_xml": 57,
+    "downloaded_pdf_unchecked": 48,
+    "unavailable": 145
+  },
+  "rating_rows": 0,
+  "initial_agreement": {
+    "relies_on_claim": {
+      "paired_completed": 0,
+      "confusion": {},
+      "exact_agreement": null,
+      "yes_agreement": null,
+      "no_agreement": null
+    },
+    "qualification": {
+      "paired_completed": 0,
+      "confusion": {},
+      "exact_agreement": null,
+      "yes_agreement": null,
+      "no_agreement": null
+    }
+  },
+  "continued_reliance_estimate": null,
+  "seed": "20261004",
+  "citation_cutoff": "2025-12-31"
+}

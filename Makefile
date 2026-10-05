@@ -1,4 +1,4 @@
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean
+.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test
 
 restore:
 	Rscript --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
@@ -26,6 +26,27 @@ lint:
 
 test: analysis
 	Rscript -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
+	$(MAKE) pilot-test
+
+pilot:
+	Rscript scripts/pilot_registry.R
+	Rscript scripts/pilot_iv_check.R
+	python3 scripts/pilot.py sample
+	python3 scripts/pilot.py validate
+	python3 scripts/pilot.py report
+
+pilot-fetch:
+	python3 scripts/pilot.py fetch
+
+pilot-fulltext:
+	python3 scripts/pilot.py fulltext
+	python3 scripts/pilot.py landing
+	python3 scripts/pilot.py contexts
+	python3 scripts/pilot.py report
+
+pilot-test: pilot
+	python3 -m unittest discover -s tests -p 'test_pilot.py'
+	python3 scripts/pilot.py validate
 
 check: paper lint test
 

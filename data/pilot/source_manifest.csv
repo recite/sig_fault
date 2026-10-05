@@ -1,0 +1,13 @@
+path,sha256,bytes,source_url,license,dataset_version,retrieved_at_utc
+data/pilot/sources/iv_archive.json,fc058eb8f9788a1ee6eb089bc83710fe609d3032fb3ef105abd559521245d478,165739,https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/MM5THZ,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/ajps_Carnegie_etal_2017.rds,ee9ea706a3f51253fde6f4ddb91a7229f303eda1a1ef811fe6f0d91fba4a78dc,68850,https://dataverse.harvard.edu/api/access/datafile/7527264?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/ajps_Sexton_etal_2019.rds,0e1b7bd5a95851258157c2e80f8ca7e357b1a52717c3a78c436635a64d4a69f5,12913,https://dataverse.harvard.edu/api/access/datafile/7527244?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/apsr_Hager_Krakowski_2022.rds,bcdfe933534eae96875674a3d620470561d467da5b98a4cb1d7afdd5f473cc37,30380,https://dataverse.harvard.edu/api/access/datafile/7527246?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_Acharya_etal_2016.rds,ee761322a73f26648a63be139a7c7583b5eff4070965ee71288198f8ea4418db,84600,https://dataverse.harvard.edu/api/access/datafile/7527208?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_Alt_etal_2015.rds,7cd14c499355c5b7a671b0c2c9344a08cd428fdc383f66eac0743d26afcefd8a,219009,https://dataverse.harvard.edu/api/access/datafile/7527248?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_Gelbach_etal_2012.rds,fab55a11714c8298f4283fd670203cec9d7538d3d3ca5406ffd9786ce645bd6a,35780,https://dataverse.harvard.edu/api/access/datafile/7527218?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_Grossman_2017.rds,c4622405db1852da7b5392dace085528c970faeb75c35f4fc8d88e2254f39cd4,21454,https://dataverse.harvard.edu/api/access/datafile/7527227?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_Pianzola_etal_2019.rds,9937ec7138646b200ddfec6dcf2ee010f39a5320766406ca06c4f006daf6c995,45910,https://dataverse.harvard.edu/api/access/datafile/7527184?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_Schleiter_etal_2016.rds,0a09939db7cbf429def3f061f9788a97289cad9142882991e3bd19fba6ecdd15,11481,https://dataverse.harvard.edu/api/access/datafile/7527204?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_raw/jop_urpelainen_2022.rds,d805fd1b9adaa674f32e0067c6a4e2df7842891f173e88ed53927f2df35d753f,1179500,https://dataverse.harvard.edu/api/access/datafile/7527129?format=original,CC0-1.0,1.0,2026-10-05
+data/pilot/sources/iv_replicate.rds,0fdda663357d8e03c0c89ac7a6e54654c6a1b9123f27806ce37da71ef690aafc,27985,https://dataverse.harvard.edu/api/access/datafile/7527252?format=original,CC0-1.0,1.0,2026-10-05

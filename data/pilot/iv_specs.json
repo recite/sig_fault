@@ -1,0 +1,277 @@
+[
+  {
+    "paper_id": "iv_Acharya2016",
+    "source_rmd": "Acharya2016.Rmd",
+    "file": "jop_Acharya_etal_2016.rds",
+    "Y": [
+      "dem"
+    ],
+    "D": [
+      "pslave1860"
+    ],
+    "Z": [
+      "cottonsuit"
+    ],
+    "controls": [
+      "x2",
+      "rugged",
+      "latitude",
+      "x2",
+      "longitude",
+      "x3",
+      "x4",
+      "water1860"
+    ],
+    "cl": [],
+    "FE": [
+      "code"
+    ],
+    "weights": [
+      "sample.size"
+    ]
+  },
+  {
+    "paper_id": "iv_Alt2015",
+    "source_rmd": "Alt2015.Rmd",
+    "file": "jop_Alt_etal_2015.rds",
+    "Y": [
+      "gov"
+    ],
+    "D": [
+      "urate_fut"
+    ],
+    "Z": [
+      "treatment"
+    ],
+    "controls": [
+      "urate_now"
+    ],
+    "cl": [],
+    "FE": [],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Carnegie2017",
+    "source_rmd": "Carnegie2017.Rmd",
+    "file": "ajps_Carnegie_etal_2017.rds",
+    "Y": [
+      "new_empinxavg"
+    ],
+    "D": [
+      "EV"
+    ],
+    "Z": [
+      "l2CPcol2"
+    ],
+    "controls": [
+      "covloggdp",
+      "covloggdpCF",
+      "covloggdpC",
+      "covdemregionF",
+      "covdemregion",
+      "coviNY_GDP_PETR_RT_ZSF",
+      "coviNY_GDP_PETR_RT_ZS",
+      "covwvs_relF",
+      "covwvs_rel",
+      "covwdi_imp",
+      "covwdi_fdiF",
+      "covwdi_fdi",
+      "covwdi_expF",
+      "covwdi_exp",
+      "covihme_ayemF",
+      "covihme_ayem"
+    ],
+    "cl": [
+      "year",
+      "ccode"
+    ],
+    "FE": [
+      "year",
+      "ccode"
+    ],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Gelbach2012",
+    "source_rmd": "Gehlbach2012.Rmd",
+    "file": "jop_Gelbach_etal_2012.rds",
+    "Y": [
+      "gfcf_priv_gdp"
+    ],
+    "D": [
+      "gov1_yrs"
+    ],
+    "Z": [
+      "military_first_alt"
+    ],
+    "controls": [
+      "tenure",
+      "stabs",
+      "fuelex_gdp",
+      "oresex_gdp",
+      "frac_ethn",
+      "frac_relig",
+      "frac_ling",
+      "pop_yng_pct",
+      "pop_tot",
+      "pop_ru_pct",
+      "land_km",
+      "gdppc_ppp_2005_us"
+    ],
+    "cl": [
+      "ifs_code"
+    ],
+    "FE": [],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Grossman2017",
+    "source_rmd": "Grossman2017.Rmd",
+    "file": "jop_Grossman_2017.rds",
+    "Y": [
+      "ServicesCA"
+    ],
+    "D": [
+      "ladminpc_l5"
+    ],
+    "Z": [
+      "lmeanMINUSi_adminpc_l6",
+      "lmeanMINUSi_adminpc2_l6",
+      "herf",
+      "herf2",
+      "llength",
+      "llength2"
+    ],
+    "controls": [
+      "lpop_l",
+      "wdi_urban_l",
+      "lgdppc_l",
+      "conflict_l",
+      "dpi_state_l",
+      "p_polity2_l",
+      "loilpc_l",
+      "aid_pc_l",
+      "al_ethnic"
+    ],
+    "cl": [
+      "ccodecow"
+    ],
+    "FE": [
+      "year"
+    ],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Hager2022",
+    "source_rmd": "Hager2022.Rmd",
+    "file": "apsr_Hager_Krakowski_2022.rds",
+    "Y": [
+      "y"
+    ],
+    "D": [
+      "commanders"
+    ],
+    "Z": [
+      "priests_continuous"
+    ],
+    "controls": [],
+    "cl": [],
+    "FE": [],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Pianzola2019",
+    "source_rmd": "Pianzola2019.Rmd",
+    "file": "jop_Pianzola_etal_2019.rds",
+    "Y": [
+      "diff_top_ptv"
+    ],
+    "D": [
+      "smartvote"
+    ],
+    "Z": [
+      "email"
+    ],
+    "controls": [],
+    "cl": [],
+    "FE": [],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Schleiter2016",
+    "source_rmd": "Schleiter2016.Rmd",
+    "file": "jop_Schleiter_etal_2016.rds",
+    "Y": [
+      "pm_voteshare_next"
+    ],
+    "D": [
+      "term2"
+    ],
+    "Z": [
+      "disspm"
+    ],
+    "controls": [
+      "pm_voteshare",
+      "gdp_chg1yr",
+      "cpi1yr",
+      "dumcpi1yr"
+    ],
+    "cl": [
+      "countryn"
+    ],
+    "FE": [
+      "decade"
+    ],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Sexton2019",
+    "source_rmd": "Sexton2019.Rmd",
+    "file": "ajps_Sexton_etal_2019.rds",
+    "Y": [
+      "Finfant_mortality"
+    ],
+    "D": [
+      "socialservice_b"
+    ],
+    "Z": [
+      "Lgk_budget"
+    ],
+    "controls": [
+      "Lgk_prebudget",
+      "ln_pbi_pc",
+      "execution_nohealth"
+    ],
+    "cl": [
+      "deptcode"
+    ],
+    "FE": [
+      "year",
+      "deptcode"
+    ],
+    "weights": []
+  },
+  {
+    "paper_id": "iv_Urpelainen2022",
+    "source_rmd": "Urpelainen2022.Rmd",
+    "file": "jop_urpelainen_2022.rds",
+    "Y": [
+      "demvotesmajorpercent"
+    ],
+    "D": [
+      "cum_capacity_turbine"
+    ],
+    "Z": [
+      "inter"
+    ],
+    "controls": [],
+    "cl": [
+      "district_fixed"
+    ],
+    "FE": [
+      "stateyear_fixed",
+      "district_fixed"
+    ],
+    "weights": []
+  }
+]
