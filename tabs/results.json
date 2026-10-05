@@ -1,0 +1,68 @@
+{
+  "classified": 157,
+  "classified_flagged": 79,
+  "covered": 155,
+  "missing": [95, 124],
+  "questioned": [23, 25],
+  "analyzed": 153,
+  "flagged": 76,
+  "comparison": 77,
+  "serious": 43,
+  "records": 16437,
+  "repaired": 1,
+  "duplicates": 15,
+  "false_links": 2,
+  "zero_years": 29,
+  "prepublication_records": 54,
+  "main": [
+    {
+      "specification": "Main comparison",
+      "n_flagged": 76,
+      "n_comparison": 77,
+      "estimate": 1.78485987696514,
+      "se": 1.98502696132277,
+      "df": 150.15327605572,
+      "lower": -2.13733291876137,
+      "upper": 5.70705267269166,
+      "method": "Welch t"
+    }
+  ],
+  "levels": [
+    {
+      "flag": 0,
+      "before": 6.50649350649351,
+      "after": 16.6558441558442,
+      "change": 10.1493506493506
+    },
+    {
+      "flag": 1,
+      "before": 9.43421052631579,
+      "after": 21.3684210526316,
+      "change": 11.9342105263158
+    }
+  ],
+  "bootstrap": [-2.03617993848257, 5.64031100478468],
+  "bootstrap_draws": 9999,
+  "bootstrap_seed": 31415,
+  "leave_one_out": [1.27398268398268, 2.47368421052632],
+  "citing_documents": 13084,
+  "shared_citing_documents": 1789,
+  "citing_overlap_percent": 13.6731886273311,
+  "coding_n": 100,
+  "rated": 96,
+  "acknowledgment": 1,
+  "nonacknowledgment": 95,
+  "acknowledgment_percent": 1.04166666666667,
+  "acknowledgment_ci": [0.184117021681625, 5.66661762271578],
+  "coding_partial_year": 7,
+  "coding_uncoded": 1,
+  "coding_unavailable": 1,
+  "coding_false": 2,
+  "acknowledgment_bounds": [1.02040816326531, 3.06122448979592],
+  "source_sha256": {
+    "flagged_citations": "a783e98394ebe182e905eb351533228a935fd1af2b852b0bbfc337632bc87931",
+    "comparison_citations": "4e880fe4d08ac0fec9edd337dc1c1cd9b08d89e01ab4e05bbfd3044aada5d673",
+    "classification": "feac782ef4d099719738c168baec85b34de4124616ff6cda3caae1ec8d6b0ab6",
+    "coding": "10a2a35020f37c3327ef80261e33fb7797e67c356a79f3e534d1ec65706d8014"
+  }
+}

@@ -1,0 +1,23 @@
+Package: sigfault
+Type: Project
+Title: Significant Error: Citations to Research With Publicized Statistical Errors
+Version: 0.1.0
+Authors@R: c(
+    person("Ken", "Cor", role = "aut"),
+    person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"))
+Description: Reproducible analysis of citation patterns following a critique
+    of statistical practice in neuroscience, with article classifications,
+    citation exports, coding records, and a generated research manuscript.
+Encoding: UTF-8
+Imports:
+    digest,
+    ggplot2,
+    jsonlite,
+    readxl,
+    sandwich
+Suggests:
+    lintr,
+    renv,
+    styler,
+    testthat
+Config/testthat/edition: 3
