@@ -42,7 +42,7 @@ These estimates are retrospective and conditional on the available literature sa
 
 ## Validation
 
-The build checks classification agreement, unique keys, source-record membership, row conservation, recovery of the malformed export, duplicate definitions, missing whole histories, and complete paper-year grids. Data-source hashes accompany the generated output. Tests reconstruct the main estimate and interval independently from a citation-count matrix, compare its standard error with the equivalent paper-level HC2 regression, and recover a known planted change from synthetic panel data.
+The build checks classification agreement, unique keys, source-record membership, row conservation, recovery of the malformed export, duplicate definitions, missing whole histories, and complete paper-year grids. Data-source hashes accompany the generated output. Tests reconstruct the absolute estimate and interval independently from a citation-count matrix, compare its standard error with the equivalent paper-level HC2 regression, and recover a known planted change from synthetic panel data. The proportional tests compare the Poisson fixed-effects coefficient and clustered covariance with an explicit dummy-variable regression and independent sandwich calculation, recover a planted multiplicative change, and verify zero-history accounting.
 
 The data audit distinguishes true zeros within exports from missing histories; identifies the two unreliable searches by chronology and target-self matches; and retains unknown coding separately from false links and completed ratings. Every model uses the same producing functions. Generated tables, manuscript macros, README values, and JSON summaries consume the same results object.
 
