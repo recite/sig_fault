@@ -30,7 +30,7 @@ test_that("deduplication counts citing relationships rather than global document
   unique_edges <- raw[!raw$duplicate, ]
   expect_equal(anyDuplicated(unique_edges[c("article_id", "key")]), 0L)
   expect_gt(anyDuplicated(unique_edges$key), 0L)
-  expect_equal(sum(raw$false_link), 2L)
+  expect_equal(sum(raw$false_link), 3L)
   expect_setequal(raw$article_id[raw$before_target_year], c(23L, 25L))
   expect_setequal(raw$article_id[raw$is_target_itself], c(23L, 25L))
 })
@@ -55,11 +55,18 @@ test_that("zero completion never substitutes zeros for missing whole histories",
 test_that("missing codes and false matches are not counted as ordinary citations", {
   coding <- read_coding(root)
   expect_equal(nrow(coding), 100L)
-  expect_equal(sum(coding$status == "No concern recorded"), 95L)
+  expect_equal(sum(coding$status == "No concern recorded"), 94L)
   expect_equal(sum(coding$status == "Concern recorded"), 1L)
   expect_equal(sum(coding$status == "Uncoded"), 1L)
   expect_equal(sum(coding$status == "Article unavailable"), 1L)
-  expect_equal(sum(coding$status == "False citation link"), 2L)
+  expect_equal(sum(coding$status == "False citation link"), 3L)
   expect_equal(sum(coding$year == 2016L), 7L)
   expect_false(anyNA(coding$status))
+})
+
+test_that("an explicit false-link note takes priority over an ordinary-citation code", {
+  coding <- read_coding(root)
+  conflict <- coding[coding$sample_id == 6937L, ]
+  expect_equal(conflict$original_code, "yes")
+  expect_equal(conflict$status, "False citation link")
 })

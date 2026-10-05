@@ -10,14 +10,14 @@ Does drawing attention to a statistical mistake change how researchers use paper
 
 **Flagged papers continued to attract citations, and recorded acknowledgment of concerns was rare.** Annual citations rose from 9.4 in 2010 to 21.4 on average during 2012–2015 for flagged papers, and from 6.5 to 16.7 for comparison papers. The difference in those increases was 1.8 citations per paper per year (95% interval [-2.1, 5.7]). That estimate does not show the predicted relative decline, but its uncertainty and the groups’ different earlier trajectories prevent a confident claim that the critique had no effect.
 
-In the separate citation-context sample, 95 of 96 completed ratings recorded no acknowledgment of concerns. This describes what citing papers said; it does not establish whether their authors noticed the mistake or whether the finding they cited depended on it.
+In the separate citation-context sample, 94 of 95 completed ratings of valid citation relationships recorded no acknowledgment of concerns. This describes what citing papers said; it does not establish whether their authors noticed the mistake or whether the finding they cited depended on it.
 
 ## Research design
 
 - **Source papers:** the supplied classification covers 157 papers published in five neuroscience and general-science journals in 2009–2010. Citation exports cover 155. The main analysis uses 76 flagged and 77 comparison papers after excluding two unreliable citation histories; the inclusive result is also reported.
 - **Comparison:** each paper’s mean annual citations in 2012–2015 minus its citations in 2010, followed by flagged minus comparison. The critique appeared in August 2011, so 2011 is a transition year. All covered paper-years, including citation-free years, enter the calculation.
 - **Interpretation:** a relative decline would be consistent with researchers changing their use of affected papers. A causal interpretation additionally requires comparable citation trajectories without the critique. Among the 2009 papers, flagged papers’ citations were already growing faster before it appeared. Neither error status nor awareness of the critique was randomized.
-- **Citation context:** the archived sample contains 100 citation relationships from 2012 through the partial 2016 export: 96 completed ratings, 2 false links, 1 unavailable article, and 1 uncoded record. The historical sample and original ratings are preserved.
+- **Citation context:** the archived sample contains 100 citation relationships from 2012 through the partial 2016 export: 95 completed ratings of valid citation relationships, 3 false links, 1 unavailable article, and 1 uncoded record. The historical sample and original ratings are preserved.
 
 The main estimate uses a Welch interval over paper-level changes. The paper reports journal and publication-year adjustment, publication-cohort comparisons, later citation windows, potentially serious errors, data-cleaning sensitivities, and influence checks. These are retrospective analyses, not preregistered tests.
 

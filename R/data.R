@@ -93,9 +93,10 @@ read_coding <- function(root = ".") {
   data.frame(
     sample_id = x$citing_100_ID, article_id = x[["orig_article_article.id"]],
     accession = x$accession_num, year = x$pub_year, original_code = x$approving,
-    status = ifelse(!is.na(x$approving),
-      ifelse(x$approving == "yes", "No concern recorded", "Concern recorded"),
-      ifelse(grepl("doesn't cite", x$notes, fixed = TRUE), "False citation link",
+    original_note = x$notes,
+    status = ifelse(grepl("doesn't cite", x$notes, fixed = TRUE), "False citation link",
+      ifelse(!is.na(x$approving),
+        ifelse(x$approving == "yes", "No concern recorded", "Concern recorded"),
         ifelse(grepl("not found", x$notes, fixed = TRUE), "Article unavailable", "Uncoded")
       )
     ), stringsAsFactors = FALSE
