@@ -1,0 +1,2 @@
+"specification","model","scale","n_flagged","n_comparison","observations","clusters","excluded_observations","excluded_papers","vcov_parameters","estimate","se","df","lower","upper","lower_one_sided","ratio","percent","percent_lower","percent_upper","percent_lower_one_sided","method"
+"Linear article and year effects","OLS","citations per paper per year",76,77,765,153,0,"",6,1.78157040328093,1.98532612302804,152,-2.1408263627186,5.70396716928045,-1.5040255576152,,,,,,"Article-clustered; nonnested FE adjustment; t(G-1)"

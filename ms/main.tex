@@ -16,96 +16,56 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-\noindent Does drawing attention to a statistical mistake change how researchers use papers containing it? A 2011 critique in \textit{Nature Neuroscience} explained a common mistake: inferring that two effects differ because one is statistically significant and the other is not. Using classifications supplied by the critique's authors, we compare citation patterns for papers that made the mistake and papers that used the relevant test correctly. Flagged papers continued to attract citations. From 2010 to the annual average for 2012--2015, citations increased by \FlaggedChange{} per flagged paper and \ComparisonChange{} per comparison paper, a difference of \MainEstimate{} (95\% interval \MainInterval). In a separate sample of citing articles, \Nonack{} of \Rated{} valid completed ratings recorded no acknowledgment of concerns. These findings show continued use of affected papers with little recorded acknowledgment. They do not establish that publicity had no effect: citation growth already differed before the critique, and the records do not reveal whether citing authors recognized the mistake or relied on a conclusion it undermined.
+\noindent Publicizing a statistical error could sharply reduce reliance on affected papers or prompt researchers to qualify their citations. We examine both responses after a 2011 critique of a common mistake in neuroscience: inferring that two effects differ because one is statistically significant and the other is not. Papers flagged for the mistake continued to receive citations well beyond a handful of highly cited cases. Their median annual citations rose from \MedianFlaggedBefore{} in 2010 to \MedianFlaggedMin--\MedianFlaggedMax{} during 2012--2015; comparison papers rose from \MedianComparisonBefore{} to \MedianComparisonMin--\MedianComparisonMax. In a separate sample of citations to flagged papers, \Nonack{} of \Rated{} valid completed ratings recorded no acknowledgment of concerns. These findings document widespread continued use with little recorded qualification. Comparisons with unflagged papers leave the size of any citation penalty uncertain; continued citation does not establish that publicity had no effect.
 \end{abstract}
 \vspace{1em}
 \noindent\small We thank Danielle Portnoy and Xiaoran Huang for research assistance, and Andrew Gelman, Kabir Khanna, and Daniel Stone for comments. Replication materials: \url{https://github.com/recite/sig_fault}.\normalsize
 
 \newpage
 \section{Introduction}
-Scientific articles build on findings reported by others. When those findings rest on faulty reasoning, later citations can carry the mistake forward. Retraction is one signal that a paper should be treated with caution, but statistical errors also occur in papers that remain part of the published literature. Researchers may recognize such errors themselves, especially after a methodological critique draws attention to them. Whether that recognition changes subsequent use of the affected research is an empirical question.
+Publicizing a statistical error gives researchers a reason to reconsider their reliance on affected findings. A substantial response could take two forms: fewer citations to papers containing the error, or more citations that acknowledge the problem. We examine both after a prominent methodological critique in neuroscience.
 
-One recurring mistake is to treat a statistically significant effect in one group and a nonsignificant effect in another as evidence that the groups differ. That conclusion requires a test of the difference itself. Significance in one group can reflect greater precision rather than a larger effect \citep{gelman2006}. Failure to test the difference leaves the claimed contrast unsupported by that argument; it does not establish that the underlying effects are equal or that every conclusion in the paper is false.
+The mistake is to treat a statistically significant effect in one group and a nonsignificant effect in another as evidence that the groups differ. That conclusion requires a test of the difference itself. Significance in one group can reflect greater precision rather than a larger effect \citep{gelman2006}. The missing test leaves the claimed contrast unsupported by that argument; it does not establish that every conclusion in the paper is false.
 
-\citet{nieuwenhuis2011} documented the problem in neuroscience research. Their review identified \Classified{} papers in which a comparison of effects was relevant and classified \ClassifiedFlagged{} as making the mistake. They supplied us with the paper-level classifications. Those records let us follow the affected papers and compare their citations with those of papers in the review that used the appropriate test.
+\citet{nieuwenhuis2011} identified \Classified{} papers in which a comparison of effects was relevant and classified \ClassifiedFlagged{} as making the mistake. They supplied us with the paper-level classifications. Researchers who understand the critique can recognize the mistake in an original paper and reconsider its use. The critique therefore need not name each affected paper to influence citations.
 
-Our hypothesis is that papers containing the mistake receive fewer subsequent citations relative to comparison papers after the critique appears. Researchers who understand the critique can inspect the original analyses and reconsider whether to rely on them. They might instead continue to cite the paper while qualifying the affected finding. We therefore examine both citation rates and whether citing papers acknowledge concerns.
+The affected papers remained widely cited, and recorded qualifications were rare. Median as well as mean citations increased after the critique; \IncreasedFlagged{} of \Flagged{} flagged papers received more citations per year in 2012--2015 than in 2010. Almost all valid completed ratings in our citation-context sample recorded no concern. The comparison with unflagged papers is less conclusive about how much publicity changed citation growth. We distinguish that causal question from the observed persistence of largely unqualified citation.
 
-A general methodological warning can change how readers evaluate particular studies by making the mistake easier to recognize. The response depends on whether researchers encounter the warning, recognize the mistake, and regard it as consequential for the claim they wish to support. Citation records reveal the resulting use of a paper, not each of these steps. This distinction matters when interpreting continued citation.
+\section{Data and comparison}
+The source review covers behavioral, systems, and cognitive neuroscience papers published in 2009--2010 in \textit{Nature}, \textit{Science}, \textit{Nature Neuroscience}, \textit{Neuron}, and sampled issues of the \textit{Journal of Neuroscience}. The classification concerns the particular statistical inference reviewed, not the validity of every result in a paper.
 
-\section{Data and research design}
-\subsection{Source papers and citation histories}
-The source review covers behavioral, systems, and cognitive neuroscience papers published in 2009--2010 in \textit{Nature}, \textit{Science}, \textit{Nature Neuroscience}, \textit{Neuron}, and sampled issues of the \textit{Journal of Neuroscience}. We use its classification of whether a paper made the particular statistical mistake, rather than attempting a new assessment of each scientific result. ``Comparison'' consequently means no such mistake in the reviewed analysis, not freedom from all possible errors.
+The archived citation exports cover \Covered{} of the \Classified{} classified papers. Two further histories contain the intended cited paper itself and records predating it, indicating invalid citation searches. Excluding these histories leaves \Flagged{} flagged and \Comparison{} comparison papers. We count distinct citing documents per paper and year, retain citation-free years within covered histories, and exclude the incomplete 2016 export. Appendix~\ref{app:data} documents coverage, duplicates, and linkage checks.
 
-The local citation exports cover \Covered{} of the \Classified{} classified papers. Two have no exported history and are excluded rather than assigned zero citations. Two further histories contain the target paper itself and records published before it, indicating that the exported lists are not valid citing-article searches. The main analysis excludes those histories, leaving \Flagged{} flagged and \Comparison{} comparison papers. Appendix~\ref{app:data} describes the checks, and Table~\ref{tab:sensitivity} reports the estimate with the two histories retained.
+The critique appeared online on August 26, 2011. We use 2010 as the baseline and 2012--2015 as the post-publicity period, omitting the transition year 2011. The main regression is Poisson pseudo-maximum likelihood with article and calendar-year fixed effects. It compares proportional citation changes in flagged and comparison papers; uncertainty is clustered by article. A relative post/pre citation ratio below one indicates slower proportional growth for flagged papers. Appendix~\ref{app:inference} gives the specification and alternative comparisons.
 
-The outcome is the number of distinct citing documents recorded for a paper in a calendar year. We collapse duplicate records for the same cited paper using DOI where available and database accession otherwise. A document citing several study papers contributes to each paper's count. We repair a malformed export row and remove the false citation links explicitly identified in the archived coding. All original source files remain in the replication materials.
+Interpreting that contrast as an effect of publicity requires comparable proportional citation trajectories without the critique. Error status was not randomized, and papers may differ in topic, prominence, and ordinary citation growth. A general warning could also affect both groups; the comparison concerns their differential response, not the critique's total influence on science.
 
-For every covered paper we retain years with no citation records and assign a count of zero. These are zeros within an available export, not a claim that the database captures every citation in the world. The descriptive series runs from 2009 through 2015. The export was saved in April 2016, so that year's incomplete counts are excluded from the rate analysis.
-
-\subsection{Timing and comparison}
-The critique appeared online on August 26, 2011 \citep{nieuwenhuis2011}. Our baseline is 2010, the last full calendar year before its publication, and the post-critique period is 2012--2015. We omit 2011 from the main before--after contrast because it combines months before and after publication. The first citation counts after publicity can also include manuscripts written or accepted earlier. We therefore examine later windows while keeping the baseline fixed.
-
-Let $C_{it}$ be citations to paper $i$ in year $t$, and let $F_i$ indicate a paper flagged for the mistake. We calculate each paper's change,
-\[
- D_i = \frac{1}{4}\sum_{t=2012}^{2015} C_{it} - C_{i,2010},
-\]
-and compare the mean changes:
-\[
- \widehat\delta = \overline D_{F=1} - \overline D_{F=0}.
-\]
-A negative value is the relative decline predicted by our hypothesis. The unit is additional citations per paper per year; each source paper receives equal weight. Comparing annual averages avoids treating a longer post-critique observation window as evidence of increased citation rates.
-
-This is a difference-in-differences comparison. Interpreting it as the critique's effect requires the groups to have followed comparable changes in citation rates without the critique. Papers making the mistake may differ in topic, prominence, findings, and ordinary citation growth. Publication in the same journals and years helps define a relevant comparison but does not guarantee comparable trajectories. Both groups can be affected by a general methodological warning, so any causal interpretation would concern a differential response, not the critique's total influence on research.
-
-We report a Welch confidence interval over paper-level changes, allowing different variances in the two groups. Collapsing each paper to its before--after change keeps its repeated annual counts together. The interval treats papers as independent units; common topics and shared citing documents may introduce dependence across papers. We use it as model-based uncertainty for the comparison, not as a randomized-treatment interval or a correction for confounding. Appendix~\ref{app:inference} reports influence and bootstrap checks.
-
-\section{Citation patterns}
-\subsection{Continued citation and changes relative to comparison papers}
-Citation rates rose in both groups as these recently published papers accumulated attention (Figure~\ref{fig:paths}). Flagged papers averaged \FlaggedBefore{} citations in 2010 and \FlaggedAfter{} per year in 2012--2015. Comparison papers increased from \ComparisonBefore{} to \ComparisonAfter{} (Table~\ref{tab:levels}). Continued citation is therefore clear, but an increase by itself does not demonstrate that the critique failed: citations might have grown still more without it.
+\section{Continued citation and qualification}
+\subsection{Citation trajectories}
+Continued citation extends beyond a few prominent papers. Flagged papers' median annual citations rose from \MedianFlaggedBefore{} in 2010 to between \MedianFlaggedMin{} and \MedianFlaggedMax{} in each year from 2012 through 2015 (Figure~\ref{fig:paths}). Comparison papers' medians rose from \MedianComparisonBefore{} to \MedianComparisonMin--\MedianComparisonMax. Mean citations also rose: from \FlaggedBefore{} to a post-period annual average of \FlaggedAfter{} for flagged papers, and from \ComparisonBefore{} to \ComparisonAfter{} for comparison papers. For \IncreasedPercent\% of flagged papers, the post-period annual average exceeded the baseline.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{../figs/citation_paths.pdf}
-\caption{Citation trajectories for \Flagged{} flagged and \Comparison{} comparison papers. Lines show observed annual means and medians, including years with no recorded citations. The vertical line marks August 2011, when the critique appeared. These are descriptive summaries of the included papers, without sampling intervals. The 2009 series includes prepublication zeros for the papers published in 2010; the main comparison uses 2010 as its baseline.}
+\caption{Median and mean annual citations to \Flagged{} flagged and \Comparison{} comparison papers, including citation-free years. The vertical line marks August 2011, when the critique appeared. The 2009 series includes prepublication zeros for papers published in 2010; the regression baseline is 2010. Lines describe the covered papers rather than a probability sample of all research.}
 \label{fig:paths}
 \end{figure}
 
-\begin{table}[htbp]
-\centering
-\caption{Mean annual citations before and after the critique}
-\label{tab:levels}
-\input{../tabs/levels.tex}
-\par\smallskip
-\begin{minipage}{.95\linewidth}\footnotesize
-2012--2015 is the annual average over that period. Change is the post-period average minus 2010. Each source paper has equal weight. The difference between group changes is \MainEstimate{} citations per paper per year, with a 95\% Welch interval of \MainInterval.
-\end{minipage}
-\end{table}
+The main regression estimates a \ProportionalReduction\% smaller post/pre citation ratio for flagged papers (95\% interval [\ProportionalLower, \ProportionalUpper]\%). Thus, widespread continued citation coexists with considerable uncertainty about a relative citation penalty. The medians establish that continued use was typical, while the regression addresses how growth compares with other papers. Neither an observed increase nor an imprecise comparison establishes that publicity had no effect.
 
-The flagged group gained \FlaggedChange{} annual citations per paper, compared with \ComparisonChange{} for the comparison group. The difference, \MainEstimate{} (95\% interval \MainInterval), runs opposite to the predicted decline. Its uncertainty nevertheless allows a relative reduction of roughly \MainLoss{} citations per paper per year as well as a larger increase. We cannot equate an imprecise positive estimate with evidence that publicity had no effect.
+Allowing citation trajectories to differ by journal and publication cohort produces estimates from \AdjustedPercentMin\% to \AdjustedPercentMax\%. Absolute citation gains instead favor flagged papers by \MainEstimate{} citations per paper per year (95\% interval \MainInterval): flagged papers started from a higher citation level, so absolute and proportional changes answer different questions. The appendix reports the full comparisons, later response windows, and bounds on the magnitude of a relative decline.
 
-The earlier trajectory further limits a causal reading. Among papers published in 2009, the flagged group's increase from 2009 to 2010 was already \PretrendEstimate{} citations larger (95\% interval \PretrendInterval). The publication year is a short and uneven exposure window, so this is not a definitive test of what later trends would have been. It does show that equal growth cannot simply be assumed. We have too little comparable pre-critique history to establish a persuasive counterfactual trajectory.
+\subsection{Qualifications in citing papers}
+The archived citation-context sample contains \CodingN{} relationships selected after 2011, including \PartialYear{} from the incomplete 2016 export. All concern citations to flagged papers. Of \Rated{} valid completed ratings, \Nonack{} recorded no acknowledgment of concerns and \Ack{} recorded acknowledgment. Unqualified citation was therefore common in the observed sample. The protocol records any concern about the cited paper, not only the specific interaction error.
 
-\subsection{Alternative comparisons}
-Adjusting the paper-level changes for journal and publication year gives a difference of \AdjustedEstimate{} (95\% interval \AdjustedInterval). Retaining the two questionable histories gives \InclusiveEstimate{} (\InclusiveInterval). Neither data cleaning nor this adjustment produces the predicted relative decline, but the adjustment cannot remove unmeasured differences in papers' citation trajectories.
-
-Later post-critique windows also yield positive point estimates, with considerable uncertainty (Table~\ref{tab:sensitivity}). These comparisons allow more time for citing manuscripts to respond; they do not redefine early post-critique years as untreated years. Year-specific comparisons are shown in Appendix~\ref{app:inference}.
-
-The original reviewers also described some errors as ``potentially serious.'' Their notes express uncertainty about the consequences of the missing test; they do not establish that the main findings would fail under a correct analysis. Comparing the \Serious{} included papers with that classification against the same \Comparison{} comparison papers gives a difference of \SeriousEstimate{} (95\% interval \SeriousInterval). Other flagged papers do not enter this comparison group.
-
-\section{Acknowledgment in citing papers}
-Researchers can respond to a problematic finding by qualifying it rather than withholding a citation. The archived citation-context sample lets us examine that response. It contains \CodingN{} citation relationships selected after 2011, including \PartialYear{} from the incomplete 2016 export. This sample therefore has a slightly longer window than the annual citation analysis.
-
-The available file contains \Rated{} completed ratings of valid citation relationships: \Nonack{} record no acknowledgment of concerns, and \Ack{} records acknowledgment. The remaining records comprise \CodingFalse{} false citation links, \Unavailable{} article that could not be located, and \Uncoded{} record with no completed rating. Among valid completed ratings, the acknowledgment share is \AckPercent\% (95\% Wilson interval [\AckLower, \AckUpper]\%). Assigning both unresolved, non-false records to either category puts that share between \AckBoundLower\% and \AckBoundUpper\% among all non-false sampled relationships. These bounds concern missing coding, not sampling uncertainty.
-
-This finding describes recorded acknowledgment. The coding protocol counts acknowledgment of any concern about the cited paper, not only the specific interaction error. Absence of a concern does not establish that the citation endorses the faulty inference: a paper may be cited for a different finding, a method, or background. Nor does it reveal whether the citing authors noticed the mistake and judged it unimportant. The distinction between recognizing an error and changing citation behavior remains unresolved.
+A citation without criticism need not endorse the faulty inference. It may use another finding, a method, or background information. Nor do the codes reveal whether the authors recognized the mistake. Because the coding sample covers only the post-publicity period, it establishes the rarity of recorded qualifications after publicity, not how their frequency changed. Appendix~\ref{app:data} reports missing ratings and uncertainty.
 
 \section{Discussion}
-The affected papers remained in use after a prominent critique explained their statistical mistake. Their citations did not show the predicted decline relative to the comparison papers, and explicit acknowledgment of concerns was rare in the archived coding.
+The affected papers continued to circulate after their statistical mistake was publicized. This pattern appears in median as well as mean citations and is accompanied by very little recorded qualification in the context sample. The evidence is inconsistent with wholesale abandonment of these papers. It is less informative about how many citations publicity prevented.
 
-The evidence is weaker about the critique's causal effect. Citation growth differed before publication, individual awareness is unobserved, and some citations could have been committed to print before the warning appeared. A warning could reduce reliance on a faulty claim while total citations to its paper continue to grow. Conversely, continued unqualified use of the faulty claim would be consistent with failure to recognize or act on the problem. Citation totals and the available context codes cannot distinguish these possibilities.
+Citation growth already differed before the critique. Among papers published in 2009, flagged papers' increase from 2009 to 2010 exceeded that of comparison papers by \PretrendEstimate{} citations (95\% interval \PretrendInterval). That short publication-year baseline cannot establish the later counterfactual trajectory. Awareness is also unobserved, and some later citations may concern findings unaffected by the mistake. These limits leave room for a citation penalty even as the affected papers remain widely used.
 
-The practical implication is a question about how criticism reaches the point of use. Methodological critiques give readers the tools to recognize a mistake, but doing so requires them to connect that guidance to an analysis in another paper. Linking methodological concerns to specific findings could make that assessment easier. Establishing whether such links improve citation practice would require a design that measures or varies exposure and distinguishes use of the affected finding from other reasons to cite the paper.
+The practical question is how methodological criticism reaches the point of use. Readers can recognize an error from the original analysis, but doing so requires connecting a general warning to a particular paper. Our results document continued citation with little recorded acknowledgment; they do not identify which step in that process accounts for it.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
@@ -115,7 +75,7 @@ The practical implication is a question about how criticism reaches the point of
 \section{Data construction and citation-context records}\label{app:data}
 The supplied classification spreadsheet identifies the articles by journal, publication year, page, and study characteristics. The identified Excel and CSV versions agree on the paper-level YES/NO codes. The citation import reads \Records{} database records across the covered sheets, repairs \Repaired{} malformed record, and marks \Duplicates{} duplicate DOI records within cited papers. It removes \FalseLinks{} citation relationships identified as false in the historical context coding. Full source hashes and record-level indicators are generated by the replication scripts.
 
-The unreliable histories are source IDs 23 and 25. Matching the intended papers' journal, year, and supplied page locates the target papers themselves in their supposed citing-article exports. Those histories also contain \Prepublication{} records before the target publication year. This combination is consistent with exporting literature-search results instead of the intended citation results. The saved workbook contains no query log with which to reconstruct the precise operation. Deleting only the early records would not establish the validity or completeness of the remaining links. The principal estimates exclude both histories, while the inclusive estimate shows the effect of retaining them. The other sheets contain neither a target-self match nor a record before the target year under these checks.
+The unreliable histories are source IDs 23 and 25. Matching the intended papers' journal, year, and supplied page locates the target papers themselves in their supposed citing-article exports. Those histories also contain \Prepublication{} records before the target publication year. This combination is consistent with exporting literature-search results instead of the intended citation results. The saved workbook contains no query log with which to reconstruct the precise operation. Deleting only the early records would not establish the validity or completeness of the remaining links. The principal estimates exclude both histories, while the appendix reports estimates retaining them. The other sheets contain neither a target-self match nor a record before the target year under these checks.
 
 Missing sheets, source IDs 95 and 124, remain missing. In covered histories the completed 2010--2015 panel includes \ZeroYears{} paper-years with zero recorded citations. The scripts check that every paper has each required year and that joining the classification does not multiply or discard citation records.
 
@@ -132,29 +92,58 @@ The sample consists of citation relationships from 2012 through the partial 2016
 
 The original coding protocol instructed the rater to assess whether a citing paper noted concerns about the cited paper, using the citing text and original article. The distributed file contains the rating and selected contextual text, not the full highlighted PDFs. We retain those ratings rather than claiming to have independently recoded the articles. The available materials contain one set of item-level ratings, so intercoder agreement cannot be independently checked.
 
-\section{Sensitivity and uncertainty}\label{app:inference}
-Table~\ref{tab:sensitivity} reports the full set of specified comparisons. The cohort and potentially-serious-error rows describe restricted populations. The pre-critique row is a diagnostic, not an estimate of the critique's effect. All choices were made retrospectively; these are not preregistered confirmatory tests.
+
+Among valid completed ratings, the acknowledgment share is \AckPercent\% (95\% Wilson interval [\AckLower, \AckUpper]\%). Assigning both unresolved, non-false records to either category gives a share between \AckBoundLower\% and \AckBoundUpper\% among all non-false sampled relationships. These are missing-rating bounds, not sampling intervals. The Wilson interval is a binomial reference interval for sampled citation relationships; repeated source papers, selection, and coding errors are not represented by it.
+
+\section{Models, sensitivity, and uncertainty}\label{app:inference}
+\subsection{Proportional changes}
+For paper $i$ in year $t$, the main model is
+\[
+ E[C_{it}\mid i,t,F_i]=\exp\{\alpha_i+\lambda_t+\beta F_i P_t\},
+\]
+where $F_i$ denotes a flagged paper and $P_t$ denotes 2012--2015. Article effects absorb stable differences in citation levels and year effects absorb common calendar-year changes. Poisson pseudo-maximum likelihood retains zero counts and does not require equality of conditional mean and variance for the robust inference used here \citep{santos2006}. The reported percentage is $100(e^\beta-1)$, a relative post/pre citation change rather than a percentage change in the number of additional citations gained. In this balanced baseline specification, $e^{\widehat\beta}$ equals the ratio of the groups' post/pre mean citation ratios.
+
+The covariance clusters score contributions by paper. We apply the $G/(G-1)$ and $(N-1)/(N-K)$ corrections, counting fixed effects not nested within article clusters in $K$, and use $t_{G-1}$ critical values. Table~\ref{tab:proportional} reports both two-sided 95\% intervals and one-sided 95\% lower bounds, transformed from the log scale. These are conditional model-based comparisons, not randomized-treatment intervals. No papers are excluded from the main fit for zero outcomes.
 
 \begin{table}[htbp]
 \centering
-\caption{Differences in citation changes under alternative comparisons}
+\caption{Proportional citation comparisons}
+\label{tab:proportional}
+\small
+\input{../tabs/proportional.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+Change and bounds are percentages, $100(e^\beta-1)$. The last column is the one-sided 95\% lower bound. Every model includes article effects. The first row includes year effects; the next three replace common year effects with journal-by-year effects, publication-cohort-by-year effects, or both. Other rows use the first row's specification with the stated inclusion or post-period change. The baseline is always 2010. The potentially-serious subgroup retains the same comparison papers and excludes other flagged papers. Standard errors cluster by article.
+\end{minipage}
+\end{table}
+
+The main lower bound excludes proportional reductions greater than \ProportionalBound\% at the one-sided 95\% confidence level under this model. This leaves substantial reductions compatible with the data. The journal/cohort-adjusted lower bounds permit reductions of \AdjustedBoundMin--\AdjustedBoundMax\%; these bounds do not resolve uncertainty about the counterfactual trend. A stratified bootstrap resampling whole papers within each group gives a two-sided percentile interval of [\ProportionalBootLower, \ProportionalBootUpper]\% and a one-sided bound permitting a reduction of \ProportionalBootBound\%. It uses \BootstrapDraws{} draws with seed \BootstrapSeed; no draws are discarded. The baseline ratio identity allows each bootstrap estimate to be calculated directly from the resampled paper-level before and after means.
+
+Year-specific comparisons use 2010 as the baseline (Figure~\ref{fig:years}). A paper with zero citations in both the baseline and the comparison year has no finite Poisson article intercept and contributes no information to the slope; such papers are excluded from that fit and listed in the generated results. The 2011 contrast describes the transition year. The available history is too short to justify fitting article-specific trends from predominantly post-publicity observations.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../figs/year_contrasts.pdf}
+\caption{Year-specific proportional citation changes for flagged relative to comparison papers, using 2010 as the baseline. Points are $100(e^\beta-1)$ from Poisson article/year fixed-effects models; bars are simultaneous 95\% Bonferroni intervals across the five contrasts, with article-clustered uncertainty. Papers with zero counts in both compared years contribute no identifying information and are omitted from the corresponding fit. The 2011 contrast is transitional and is excluded from the main post period.}
+\label{fig:years}
+\end{figure}
+
+\subsection{Absolute changes}
+For an absolute comparison, each paper's change is its mean annual citations in 2012--2015 minus its 2010 citations. Comparing the two groups' mean changes gives \MainEstimate{} (95\% Welch interval \MainInterval), allowing unequal variances of paper-level changes. OLS with article and year fixed effects on the same balanced panel reproduces this point estimate exactly; it is another implementation of the same comparison, not independent corroboration. The generated results also report its article-clustered interval. Journal and publication-year adjustment in the paper-level change regression uses HC3 uncertainty.
+
+\begin{table}[htbp]
+\centering
+\caption{Absolute citation changes under alternative comparisons}
 \label{tab:sensitivity}
 \small
 \input{../tabs/estimates.tex}
 \par\smallskip
 \begin{minipage}{\linewidth}\footnotesize
-Differences are flagged minus comparison, in citations per paper per year. Except for the final row, the baseline is 2010; the post period is 2012--2015 unless another window is named. Intervals are pointwise 95\% Welch intervals, except the journal/year-adjusted estimate, which uses OLS with HC3 standard errors and a residual-degrees-of-freedom $t$ critical value. The final row compares 2010 with 2009 among papers published in 2009.
+Differences are flagged minus comparison, in citations per paper per year. Except for the final row, the baseline is 2010; the post period is 2012--2015 unless otherwise stated. Intervals are pointwise 95\% Welch intervals, except the journal/year-adjusted estimate, which uses OLS with HC3 standard errors and a residual-degrees-of-freedom $t$ critical value. The final row compares 2010 with 2009 among papers published in 2009; it is a diagnostic, not a publicity-effect estimate.
 \end{minipage}
 \end{table}
 
-Citation counts are skewed, so we retain the mean as the estimand and separately display medians in Figure~\ref{fig:paths}. Removing each source paper in turn gives main point estimates from \LeaveMin{} to \LeaveMax. A stratified bootstrap that resamples whole papers within the flagged and comparison groups gives a percentile interval of [\BootstrapLower, \BootstrapUpper]. The replication uses \BootstrapDraws{} draws and seed \BootstrapSeed. Both this bootstrap and the Welch interval treat papers as independent; neither addresses a common omitted determinant of their citation trajectories.
+Removing each source paper in turn gives absolute point estimates from \LeaveMin{} to \LeaveMax. A whole-paper stratified bootstrap gives a percentile interval of [\BootstrapLower, \BootstrapUpper]. Medians describe typical citation levels; neither medians nor these sensitivity checks make error status or publicity exposure random. All analytical choices are retrospective.
 
-Of the distinct citing documents in the main papers' 2010--2015 records, \SharedPercent\% cite more than one study paper. Shared citing documents and related research topics can connect citation counts across source papers. The reported intervals do not model those connections. The data are also a selected set of papers from particular journals and years, so the numerical comparison is not a probability-sample estimate for all scientific publishing.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../figs/year_contrasts.pdf}
-\caption{Year-specific changes from 2010, flagged minus comparison. Points compare changes for the same \Flagged{} flagged and \Comparison{} comparison papers. Bars are simultaneous 95\% Bonferroni intervals for the five displayed contrasts, using Welch standard errors and degrees of freedom. The 2011 point describes the transition year and is excluded from the main post-period average. The zero line denotes equal changes in citation rates.}
-\label{fig:years}
-\end{figure}
+Of the distinct citing documents in the main papers' 2010--2015 records, \SharedPercent\% cite more than one study paper. Shared citing documents and related topics can induce dependence across papers. Article clustering and the whole-paper bootstrap do not model those connections. The source review is also a selected set of journals and years, so these comparisons are not probability-sample estimates for all scientific publishing.
 \end{document}

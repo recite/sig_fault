@@ -33,7 +33,36 @@ write_table(
   c("Recorded status", "Citation relationships"),
   as.matrix(results$coding_counts), "lr", "tabs/coding.tex"
 )
+q <- results$proportional
+write_table(
+  c("Specification", "Flagged / other", "Change (\\%)", "95\\% interval", "Lower bound"),
+  cbind(
+    q$specification, paste(q$n_flagged, q$n_comparison, sep = " / "),
+    fmt(q$percent), paste0("[", fmt(q$percent_lower), ", ", fmt(q$percent_upper), "]"),
+    fmt(q$percent_lower_one_sided)
+  ), "p{5.5cm}rrrr", "tabs/proportional.tex"
+)
+p <- m$main
+d <- m$descriptive
 macros <- c(
+  ProportionalEstimate = fmt(p$percent), ProportionalReduction = fmt(-p$percent),
+  ProportionalLower = fmt(p$percent_lower), ProportionalUpper = fmt(p$percent_upper),
+  ProportionalBound = fmt(-p$percent_lower_one_sided),
+  ProportionalRatio = unname(formatC(p$ratio, format = "f", digits = 3)),
+  ProportionalBootLower = fmt(m$proportional_bootstrap$percent_ci[1]),
+  ProportionalBootUpper = fmt(m$proportional_bootstrap$percent_ci[2]),
+  ProportionalBootBound = fmt(-m$proportional_bootstrap$percent_lower_one_sided),
+  AdjustedPercentMin = fmt(min(q$percent[2:4])), AdjustedPercentMax = fmt(max(q$percent[2:4])),
+  AdjustedBoundMin = fmt(min(-q$percent_lower_one_sided[2:4])),
+  AdjustedBoundMax = fmt(max(-q$percent_lower_one_sided[2:4])),
+  MedianFlaggedBefore = d$flagged_median_before,
+  MedianComparisonBefore = d$comparison_median_before,
+  MedianFlaggedMin = d$flagged_median_post_range[1],
+  MedianFlaggedMax = d$flagged_median_post_range[2],
+  MedianComparisonMin = d$comparison_median_post_range[1],
+  MedianComparisonMax = d$comparison_median_post_range[2],
+  IncreasedFlagged = d$flagged_increased, IncreasedComparison = d$comparison_increased,
+  IncreasedPercent = unname(formatC(d$flagged_increased_percent, format = "f", digits = 0)),
   Classified = m$classified, ClassifiedFlagged = m$classified_flagged,
   ClassifiedComparison = m$classified - m$classified_flagged,
   Covered = m$covered, Analyzed = m$analyzed, Flagged = m$flagged,
@@ -41,9 +70,11 @@ macros <- c(
   Records = format(m$records, big.mark = ",", trim = TRUE), Repaired = m$repaired,
   Duplicates = m$duplicates, FalseLinks = m$false_links,
   Prepublication = m$prepublication_records,
-  MainEstimate = fmt(m$main$estimate), MainLower = fmt(m$main$lower), MainUpper = fmt(m$main$upper),
-  MainLoss = fmt(abs(m$main$lower)),
-  MainInterval = interval(m$main), FlaggedBefore = fmt(levels$before[2]),
+  MainEstimate = fmt(m$absolute_comparison$estimate),
+  MainLower = fmt(m$absolute_comparison$lower),
+  MainUpper = fmt(m$absolute_comparison$upper),
+  MainLoss = fmt(abs(m$absolute_comparison$lower)),
+  MainInterval = interval(m$absolute_comparison), FlaggedBefore = fmt(levels$before[2]),
   FlaggedAfter = fmt(levels$after[2]), ComparisonBefore = fmt(levels$before[1]),
   ComparisonAfter = fmt(levels$after[1]), FlaggedChange = fmt(levels$change[2]),
   ComparisonChange = fmt(levels$change[1]),

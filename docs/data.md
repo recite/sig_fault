@@ -59,4 +59,4 @@ The original manuscript reports an independent reliability check, but the reposi
 | `year_changes.csv` | year-specific comparisons to 2010, with pointwise and simultaneous intervals |
 | `leave_one_out.csv` | omitted paper; recomputed main comparison |
 
-In `panel.csv`, the 2009 counts for papers published in 2010 are structural prepublication zeros. They appear in the descriptive trajectory but do not enter the main 2010-baseline comparison or the pre-critique check restricted to 2009 papers. Source-file SHA-256 hashes and aggregate diagnostics are generated in `tabs/results.json`.
+In `panel.csv`, the 2009 counts for papers published in 2010 are structural prepublication zeros. They appear in the descriptive trajectory but do not enter the main 2010-baseline comparison or the pre-critique check restricted to 2009 papers. Poisson models exclude and report all-zero histories within their own estimation window; these remain in the descriptive panel and OLS comparisons. No such exclusion occurs in the main Poisson model. Source-file SHA-256 hashes and aggregate diagnostics are generated in `tabs/results.json`.

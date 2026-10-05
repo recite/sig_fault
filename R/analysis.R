@@ -51,3 +51,70 @@ wilson_interval <- function(successes, n, level = .95) {
   half <- z * sqrt(p * (1 - p) / n + z^2 / (4 * n^2)) / (1 + z^2 / n)
   c(lower = center - half, upper = center + half)
 }
+
+panel_model <- function(panel, label, post = 2012:2015, effects = "basic", poisson = TRUE) {
+  stopifnot(!2010L %in% post, all(c(2010L, post) %in% panel$year))
+  x <- panel[panel$year %in% c(2010L, post), ]
+  stopifnot(!anyDuplicated(x[c("article_id", "year")]))
+  stopifnot(all(table(x$article_id) == length(post) + 1L))
+  requested_n <- nrow(x)
+  excluded_ids <- integer()
+  if (poisson) {
+    totals <- aggregate(citations ~ article_id, x, sum)
+    excluded_ids <- totals$article_id[totals$citations == 0]
+    x <- x[!x$article_id %in% excluded_ids, ]
+  }
+  stopifnot(length(unique(x$flag)) == 2L)
+  x$flag_post <- x$flag * as.integer(x$year %in% post)
+  fe <- switch(effects,
+    basic = "article_id + year",
+    journal = "article_id + journal^year",
+    cohort = "article_id + cohort^year",
+    both = "article_id + journal^year + cohort^year",
+    stop("Unknown fixed effects")
+  )
+  formula <- as.formula(paste("citations ~ flag_post |", fe))
+  correction <- fixest::ssc(
+    K.adj = TRUE, K.fixef = "nonnested", K.exact = FALSE,
+    G.adj = TRUE, G.df = "min", t.df = "min"
+  )
+  fit <- if (poisson) {
+    fixest::fepois(formula, x,
+      vcov = ~article_id, ssc = correction,
+      glm.tol = 1e-10, fixef.tol = 1e-10, nthreads = 1
+    )
+  } else {
+    fixest::feols(formula, x, vcov = ~article_id, ssc = correction, nthreads = 1)
+  }
+  stopifnot(nobs(fit) == nrow(x), "flag_post" %in% names(coef(fit)))
+  if (poisson) stopifnot(isTRUE(fit$convStatus))
+  b <- unname(coef(fit)["flag_post"])
+  se <- sqrt(vcov(fit)["flag_post", "flag_post"])
+  g <- length(unique(x$article_id))
+  df <- g - 1L
+  lower <- b - qt(.975, df) * se
+  upper <- b + qt(.975, df) * se
+  lower_one <- b - qt(.95, df) * se
+  meta <- unique(x[c("article_id", "flag")])
+  data.frame(
+    specification = label, model = if (poisson) "PPML" else "OLS",
+    scale = if (poisson) "log relative post/pre citation ratio" else "citations per paper per year",
+    n_flagged = sum(meta$flag), n_comparison = sum(meta$flag == 0L),
+    observations = nrow(x), clusters = g, excluded_observations = requested_n - nobs(fit),
+    excluded_papers = paste(excluded_ids, collapse = ","),
+    vcov_parameters = attr(vcov(fit, attr = TRUE), "df.K"),
+    estimate = b, se = se, df = df, lower = lower, upper = upper, lower_one_sided = lower_one,
+    ratio = if (poisson) exp(b) else NA_real_,
+    percent = if (poisson) 100 * expm1(b) else NA_real_,
+    percent_lower = if (poisson) 100 * expm1(lower) else NA_real_,
+    percent_upper = if (poisson) 100 * expm1(upper) else NA_real_,
+    percent_lower_one_sided = if (poisson) 100 * expm1(lower_one) else NA_real_,
+    method = "Article-clustered; nonnested FE adjustment; t(G-1)"
+  )
+}
+
+log_growth_ratio <- function(x) {
+  group <- aggregate(cbind(before, after) ~ flag, x, mean)
+  stopifnot(identical(group$flag, c(0L, 1L)), all(group$before > 0), all(group$after > 0))
+  log(group$after[2] / group$before[2]) - log(group$after[1] / group$before[1])
+}

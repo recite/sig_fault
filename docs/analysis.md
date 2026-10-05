@@ -1,6 +1,26 @@
 # Analysis guide
 
+## Main specification
+
+The main regression uses `fixest::fepois` on 2010 and 2012–2015, with article and year fixed effects and a flagged-paper × post-period term. The outcome is annual citation counts including zeros. We report `100 * (exp(beta) - 1)`, a relative post/pre citation change. Article-clustered covariance uses `ssc(K.adj = TRUE, K.fixef = "nonnested", K.exact = FALSE, G.adj = TRUE, G.df = "min", t.df = "min")`; intervals use `t(G - 1)` critical values. One-sided lower bounds use the 0.95 quantile and two-sided intervals the 0.975 quantile, then transform from the log scale. Bounds appear in the appendix, not the headline.
+
+The main text emphasizes the observed median and mean trajectories and post-publicity qualification codes. Rising medians show continued use beyond a few highly cited papers; they do not identify a counterfactual citation path. Percentage effects and absolute citation differences are different estimands and may have different signs.
+
+The proportional model variations add journal-by-year effects, publication-cohort-by-year effects, or both; the remaining rows preserve the baseline fixed effects and change only the labeled sample or post window. All-zero article histories within a particular fit imply an infinite negative article intercept and no slope information. The pipeline explicitly removes those histories, reports their IDs and observation counts, and rejects any additional silent removal. The main model retains all 153 papers.
+
+The proportional bootstrap resamples whole articles within groups, uses 9,999 draws and seed 31415, and computes each baseline estimate from the exactly equivalent ratio of group post/pre mean ratios. A draw with a zero group mean fails the build rather than being silently discarded.
+
+`tabs/proportional.csv` and `tabs/proportional_years.csv` contain coefficients on the log scale, ratios, percentage transformations, two-sided intervals, one-sided lower bounds, and sample accounting. `tabs/linear_fe.csv` contains the absolute fixed-effects comparison. In `tabs/results.json`, `main` is the proportional model; `absolute_comparison` names the original absolute estimand explicitly. Existing absolute sensitivity outputs retain their units.
+
 ## Claims and computations
+
+| Question | Quantity | Output |
+| --- | --- | --- |
+| Did typical papers remain in use? | Annual group medians and share of papers with higher post-period annual means | `tabs/annual.csv`, `tabs/results.json` |
+| Did proportional citation growth differ? | Relative post/pre ratio with article and year effects | `tabs/proportional.csv` |
+| How large a relative decline is excluded under the model? | One-sided 95% lower bound on the ratio, transformed to percent | `tabs/proportional.csv` |
+
+### Absolute comparisons and coding
 
 | Question | Quantity and denominator | Computation | Output | Interpretation |
 | --- | --- | --- | --- | --- |
@@ -12,7 +32,7 @@
 
 ## Statistical choices
 
-The main comparison gives equal weight to source papers. It averages post-critique years within each paper before calculating a between-group contrast. Its Welch interval permits unequal variances and keeps repeated observations on each paper together. The adjusted comparison regresses the paper-level change on the error flag, journal, and publication cohort, using HC3 standard errors. Error status is not randomized; no permutation test treats it as randomized.
+The absolute comparison gives equal weight to source papers. It averages post-critique years within each paper before calculating a between-group contrast. Its Welch interval permits unequal variances and keeps repeated observations on each paper together. The adjusted comparison regresses the paper-level change on the error flag, journal, and publication cohort, using HC3 standard errors. Error status is not randomized; no permutation test treats it as randomized.
 
 The mean is appropriate for the number of citations received per paper. Medians describe a different feature of the distribution and are plotted separately. Whole-paper bootstrap and leave-one-paper-out calculations assess sampling approximation and influence. The bootstrap resamples within groups, uses a local fixed seed in the build script, and retains every draw. It does not model dependence across papers. The rate of shared citing documents is reported as a diagnostic of that assumption.
 

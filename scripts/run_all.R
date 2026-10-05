@@ -47,6 +47,32 @@ estimates <- rbind(
     pre = 2009L, post = 2010L
   ), "Pre-critique change: 2009 cohort, 2009 to 2010")
 )
+proportional <- rbind(
+  panel_model(panel, "Article and year effects"),
+  panel_model(panel, "Journal-by-year effects", effects = "journal"),
+  panel_model(panel, "Cohort-by-year effects", effects = "cohort"),
+  panel_model(panel, "Journal/year and cohort/year effects", effects = "both"),
+  panel_model(all_panel, "Retain questionable histories"),
+  panel_model(make_panel(classification, raw[!raw$false_link, ], ids), "Retain duplicates"),
+  panel_model(make_panel(classification, raw[!raw$duplicate, ], ids), "Retain false links"),
+  panel_model(panel[panel$cohort == 2009L, ], "2009 publication cohort"),
+  panel_model(panel[panel$cohort == 2010L, ], "2010 publication cohort"),
+  panel_model(panel, "Post period: 2013--2015", post = 2013:2015),
+  panel_model(panel, "Post period: 2014--2015", post = 2014:2015),
+  panel_model(panel[panel$flag == 0L | panel$serious, ], "Potentially serious errors")
+)
+linear_fe <- panel_model(panel, "Linear article and year effects", poisson = FALSE)
+proportional_years <- do.call(rbind, lapply(2011:2015, function(year) {
+  cbind(year = year, panel_model(panel, as.character(year), post = year))
+}))
+proportional_years$lower_simultaneous <- 100 * expm1(
+  proportional_years$estimate - qt(1 - .05 / 10, proportional_years$df) * proportional_years$se
+)
+proportional_years$upper_simultaneous <- 100 * expm1(
+  proportional_years$estimate + qt(1 - .05 / 10, proportional_years$df) * proportional_years$se
+)
+stopifnot(abs(proportional$estimate[1] - log_growth_ratio(changes)) < 1e-8)
+stopifnot(abs(linear_fe$estimate - main$estimate) < 1e-8)
 annual <- annual_summary(panel)
 year_changes <- do.call(rbind, lapply(2011:2015, function(year) {
   cbind(year = year, estimate_change(article_changes(panel, post = year), as.character(year)))
@@ -71,6 +97,15 @@ boot <- replicate(bootstrap_draws, {
   b <- changes$change[changes$flag == 0L]
   mean(sample(a, replace = TRUE)) - mean(sample(b, replace = TRUE))
 })
+set.seed(bootstrap_seed)
+proportional_boot <- replicate(bootstrap_draws, {
+  a <- changes[changes$flag == 1L, ]
+  b <- changes[changes$flag == 0L, ]
+  log_growth_ratio(rbind(
+    a[sample(nrow(a), replace = TRUE), ], b[sample(nrow(b), replace = TRUE), ]
+  ))
+})
+stopifnot(all(is.finite(proportional_boot)))
 levels <- aggregate(cbind(before, after, change) ~ flag, changes, mean)
 coding_counts <- as.data.frame(table(coding$status), stringsAsFactors = FALSE)
 names(coding_counts) <- c("status", "n")
@@ -90,7 +125,27 @@ metrics <- list(
   prepublication_records = sum(raw$year < classification$cohort[
     match(raw$article_id, classification$article_id)
   ]),
-  main = main, levels = levels, bootstrap = unname(quantile(boot, c(.025, .975))),
+  main = proportional[1, ], absolute_comparison = main,
+  descriptive = list(
+    flagged_median_before = median(changes$before[changes$flag == 1L]),
+    comparison_median_before = median(changes$before[changes$flag == 0L]),
+    flagged_median_post_range = range(
+      annual$median[annual$flag == 1L & annual$year %in% 2012:2015]
+    ),
+    comparison_median_post_range = range(
+      annual$median[annual$flag == 0L & annual$year %in% 2012:2015]
+    ),
+    flagged_increased = sum(changes$change[changes$flag == 1L] > 0),
+    comparison_increased = sum(changes$change[changes$flag == 0L] > 0),
+    flagged_increased_percent = 100 * mean(changes$change[changes$flag == 1L] > 0)
+  ),
+  proportional_models = proportional, linear_fe = linear_fe,
+  proportional_bootstrap = list(
+    percent_ci = 100 * expm1(unname(quantile(proportional_boot, c(.025, .975)))),
+    percent_lower_one_sided = 100 * expm1(unname(quantile(proportional_boot, .05))),
+    draws = bootstrap_draws, failed_draws = 0L, seed = bootstrap_seed
+  ),
+  levels = levels, bootstrap = unname(quantile(boot, c(.025, .975))),
   bootstrap_draws = bootstrap_draws, bootstrap_seed = bootstrap_seed,
   leave_one_out = range(leave_one_out$estimate),
   citing_documents = length(shared), shared_citing_documents = sum(shared > 1L),
@@ -115,20 +170,24 @@ metrics <- list(
 )
 for (name in c(
   "classification", "raw", "coding", "panel", "changes", "annual",
-  "estimates", "year_changes", "leave_one_out"
+  "estimates", "year_changes", "leave_one_out", "proportional", "proportional_years", "linear_fe"
 )) {
   write.csv(get(name), file.path("data/derived", paste0(name, ".csv")),
     row.names = FALSE, na = ""
   )
 }
-for (name in c("annual", "estimates", "year_changes", "coding_counts", "levels")) {
+for (name in c(
+  "annual", "estimates", "year_changes", "coding_counts", "levels",
+  "proportional", "proportional_years", "linear_fe"
+)) {
   write.csv(get(name), file.path("tabs", paste0(name, ".csv")), row.names = FALSE, na = "")
 }
 jsonlite::write_json(metrics, "tabs/results.json", auto_unbox = TRUE, pretty = TRUE, digits = NA)
 saveRDS(list(
   metrics = metrics, estimates = estimates, annual = annual,
-  year_changes = year_changes, coding_counts = coding_counts, changes = changes
+  year_changes = year_changes, coding_counts = coding_counts, changes = changes,
+  proportional = proportional, proportional_years = proportional_years, linear_fe = linear_fe
 ), "data/derived/results.rds")
-print(main)
+print(proportional)
 print(levels)
 print(coding_counts)

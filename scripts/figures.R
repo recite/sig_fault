@@ -13,6 +13,9 @@ plot_data <- rbind(
   transform(annual, value = mean, statistic = "Mean citations per paper"),
   transform(annual, value = median, statistic = "Median citations per paper")
 )
+plot_data$statistic <- factor(plot_data$statistic,
+  levels = c("Median citations per paper", "Mean citations per paper")
+)
 p <- ggplot(plot_data, aes(year, value, color = group, linetype = group)) +
   geom_vline(xintercept = 2011.65, color = "grey55", linewidth = .4) +
   geom_line(linewidth = .7) +
@@ -25,8 +28,8 @@ p <- ggplot(plot_data, aes(year, value, color = group, linetype = group)) +
   labs(x = "Citing publication year", y = NULL, color = NULL, linetype = NULL) +
   paper_theme
 ggsave("figs/citation_paths.pdf", p, width = 6.5, height = 3.1, device = cairo_pdf)
-y <- results$year_changes
-p <- ggplot(y, aes(year, estimate)) +
+y <- results$proportional_years
+p <- ggplot(y, aes(year, percent)) +
   geom_hline(yintercept = 0, color = "grey55", linewidth = .4) +
   geom_linerange(aes(ymin = lower_simultaneous, ymax = upper_simultaneous),
     linewidth = .65, color = "#156082"
@@ -35,7 +38,7 @@ p <- ggplot(y, aes(year, estimate)) +
   scale_x_continuous(breaks = 2011:2015) +
   labs(
     x = "Citing publication year",
-    y = "Difference in citation changes\n(citations per paper per year)"
+    y = "Relative post/pre citation change (%)"
   ) +
   paper_theme
 ggsave("figs/year_contrasts.pdf", p, width = 6.5, height = 3.4, device = cairo_pdf)
