@@ -205,10 +205,10 @@
         "evidence": "DP287 PDF p.93, section12.17 roster entry10; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
     ],
-    "assessment_unit_id": "",
-    "assessment_link_status": "unresolved",
+    "assessment_unit_id": "i4r_dp107_row010_assessment",
+    "assessment_link_status": "matched",
     "assessment_report_url": "https://osf.io/69px3/",
-    "assessment_link_evidence": "DP107 Appendix B.1.10, PDF p.148; corresponding DP287 section12.17.10. Overview links OSF 69px3; no target-specific assessment unit is yet verified in the inventory."
+    "assessment_link_evidence": "DP107 Appendix B.1.10 and DP287 section12.17.10 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked. Individual report recovered from the printed link; repository timestamps are not used as disclosure dates."
   },
   {
     "roster_row": 11,
@@ -248,7 +248,7 @@
     "assessment_unit_id": "",
     "assessment_link_status": "unresolved",
     "assessment_report_url": "https://www.socialsciencereproduction.org/reproductions/791/published/index",
-    "assessment_link_evidence": "DP107 Appendix B.1.12, PDF p.150; corresponding DP287 section12.17.12. Overview links Social Science Reproduction report791; no target-specific assessment unit is yet verified in the inventory."
+    "assessment_link_evidence": "DP107 Appendix B.1.12, PDF p.150; corresponding DP287 section12.17.12. Overview links Social Science Reproduction report791; no target-specific assessment unit is yet verified in the inventory. On October 6, 2026, both www and bare-domain report URLs failed DNS resolution. The overview-linked GitHub repository supplies replication materials, but no assessment report was verified from its landing page."
   },
   {
     "roster_row": 13,
@@ -413,10 +413,10 @@
         "evidence": "DP287 PDF p.103, section12.17 roster entry20; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
     ],
-    "assessment_unit_id": "",
-    "assessment_link_status": "unresolved",
+    "assessment_unit_id": "i4r_dp107_row020_assessment",
+    "assessment_link_status": "matched",
     "assessment_report_url": "https://osf.io/fe2tr/",
-    "assessment_link_evidence": "DP107 Appendix B.1.20, PDF p.158; corresponding DP287 section12.17.20. DP107 says report forthcoming. DP287 PDF p.103 links OSF fe2tr; no target-specific assessment unit is yet verified in the inventory."
+    "assessment_link_evidence": "DP107 Appendix B.1.20 and DP287 section12.17.20 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked. Individual report recovered from the printed link; repository timestamps are not used as disclosure dates."
   },
   {
     "roster_row": 21,
@@ -537,10 +537,10 @@
         "evidence": "DP287 PDF p.109, section12.17 roster entry26; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
     ],
-    "assessment_unit_id": "",
-    "assessment_link_status": "unresolved",
+    "assessment_unit_id": "i4r_dp107_row026_assessment",
+    "assessment_link_status": "matched",
     "assessment_report_url": "https://osf.io/nwds7",
-    "assessment_link_evidence": "DP107 Appendix B.1.26, PDF p.164; corresponding DP287 section12.17.26. Overview links OSF nwds7 and replication package yfdet; no target-specific assessment unit is yet verified in the inventory."
+    "assessment_link_evidence": "DP107 Appendix B.1.26 and DP287 section12.17.26 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked. Individual report recovered from the printed link; repository timestamps are not used as disclosure dates."
   },
   {
     "roster_row": 27,
@@ -1850,10 +1850,10 @@
         "evidence": "DP287 PDF p.172, section12.17 roster entry88; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
     ],
-    "assessment_unit_id": "",
-    "assessment_link_status": "unresolved",
+    "assessment_unit_id": "i4r_dp107_row088_assessment",
+    "assessment_link_status": "matched",
     "assessment_report_url": "https://osf.io/tmn2j/",
-    "assessment_link_evidence": "DP107 Appendix B.1.88, PDF p.227; corresponding DP287 section12.17.88. Overview links OSF tmn2j; no target-specific assessment unit is yet verified in the inventory."
+    "assessment_link_evidence": "DP107 Appendix B.1.88 and DP287 section12.17.88 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked. Individual report recovered from the printed link; repository timestamps are not used as disclosure dates."
   },
   {
     "roster_row": 89,
@@ -1895,7 +1895,7 @@
     "assessment_unit_id": "",
     "assessment_link_status": "unresolved",
     "assessment_report_url": "https://www.socialsciencereproduction.org/reproductions/789/published/index?step=4",
-    "assessment_link_evidence": "DP107 Appendix B.1.90, PDF p.229; corresponding DP287 section12.17.90. Overview links Social Science Reproduction report789; no target-specific assessment unit is yet verified in the inventory."
+    "assessment_link_evidence": "DP107 Appendix B.1.90, PDF p.229; corresponding DP287 section12.17.90. Overview links Social Science Reproduction report789; no target-specific assessment unit is yet verified in the inventory. On October 6, 2026, both www and bare-domain report URLs failed DNS resolution. The overview-linked GitHub repository supplies replication materials, but no assessment report was verified from its landing page."
   },
   {
     "roster_row": 91,

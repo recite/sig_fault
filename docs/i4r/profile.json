@@ -24,8 +24,8 @@
       },
       "unit_id": {
         "type": "string",
-        "missing": 10,
-        "distinct_nonmissing": 100
+        "missing": 6,
+        "distinct_nonmissing": 104
       },
       "link_status": {
         "type": "string",
@@ -317,7 +317,7 @@
     }
   },
   "assessment_documents.csv": {
-    "rows": 707,
+    "rows": 713,
     "duplicate_keys": 0,
     "key": [
       "unit_id",
@@ -327,22 +327,22 @@
       "unit_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 500
+        "distinct_nonmissing": 504
       },
       "document_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 650
+        "distinct_nonmissing": 656
       },
       "document_role": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 22
+        "distinct_nonmissing": 23
       }
     }
   },
   "assessment_inventory.csv": {
-    "rows": 500,
+    "rows": 504,
     "duplicate_keys": 0,
     "key": [
       "unit_id"
@@ -351,17 +351,17 @@
       "unit_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 500
+        "distinct_nonmissing": 504
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 478
+        "distinct_nonmissing": 482
       },
       "reviewer_team": {
         "type": "string",
         "missing": 37,
-        "distinct_nonmissing": 381
+        "distinct_nonmissing": 385
       },
       "reviewer_team_identification": {
         "type": "string",
@@ -391,17 +391,17 @@
       "evidence_summary": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 457
+        "distinct_nonmissing": 461
       },
       "evidence_locator": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 479
+        "distinct_nonmissing": 483
       },
       "limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 42
+        "distinct_nonmissing": 43
       }
     }
   },
@@ -440,7 +440,7 @@
     }
   },
   "assessment_sources.csv": {
-    "rows": 895,
+    "rows": 907,
     "duplicate_keys": 0,
     "key": [
       "unit_id",
@@ -451,7 +451,7 @@
       "unit_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 500
+        "distinct_nonmissing": 504
       },
       "source_id": {
         "type": "string",
@@ -466,7 +466,7 @@
     }
   },
   "assessments.csv": {
-    "rows": 37,
+    "rows": 38,
     "duplicate_keys": 0,
     "key": [
       "assessment_id"
@@ -475,17 +475,17 @@
       "assessment_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "category": {
         "type": "string",
@@ -505,27 +505,27 @@
       "affected_claim": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "evidence_summary": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "evidence_locator": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "dispute_status": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 17
+        "distinct_nonmissing": 18
       },
       "verification_scope": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 12
+        "distinct_nonmissing": 13
       },
       "public_year": {
         "type": "integer",
@@ -859,7 +859,7 @@
     }
   },
   "curated_claims.csv": {
-    "rows": 37,
+    "rows": 38,
     "duplicate_keys": 0,
     "key": [
       "assessment_id"
@@ -868,22 +868,22 @@
       "title": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "doi": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "assessment_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "category": {
         "type": "string",
@@ -903,37 +903,37 @@
       "affected_claim": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "evidence_summary": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "evidence_locator": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "dispute_status": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 17
+        "distinct_nonmissing": 18
       },
       "verification_scope": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 12
+        "distinct_nonmissing": 13
       },
       "public_year": {
         "type": "integer",
-        "missing": 25,
+        "missing": 26,
         "distinct_nonmissing": 3
       },
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "warning_id": {
         "type": "string",
@@ -963,12 +963,12 @@
       "date_evidence_url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "date_evidence": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "already_retracted": {
         "type": "string",
@@ -978,7 +978,7 @@
     }
   },
   "document_retrieval.csv": {
-    "rows": 1514,
+    "rows": 1520,
     "duplicate_keys": 0,
     "key": [
       "document_id"
@@ -987,7 +987,7 @@
       "document_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 1514
+        "distinct_nonmissing": 1520
       },
       "status": {
         "type": "string",
@@ -996,18 +996,18 @@
       },
       "detail": {
         "type": "string",
-        "missing": 1514,
+        "missing": 1520,
         "distinct_nonmissing": 0
       },
       "sha256": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 767
+        "distinct_nonmissing": 773
       }
     }
   },
   "documents.csv": {
-    "rows": 2116,
+    "rows": 2122,
     "duplicate_keys": 0,
     "key": [
       "document_id"
@@ -1021,17 +1021,17 @@
       "document_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2116
+        "distinct_nonmissing": 2122
       },
       "name": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 509
+        "distinct_nonmissing": 515
       },
       "url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 904
+        "distinct_nonmissing": 910
       },
       "format": {
         "type": "string",
@@ -1040,18 +1040,18 @@
       },
       "created_at": {
         "type": "string",
-        "missing": 332,
-        "distinct_nonmissing": 572
+        "missing": 334,
+        "distinct_nonmissing": 576
       },
       "modified_at": {
         "type": "string",
-        "missing": 332,
-        "distinct_nonmissing": 572
+        "missing": 334,
+        "distinct_nonmissing": 576
       },
       "date_meaning": {
         "type": "string",
-        "missing": 0,
-        "distinct_nonmissing": 3
+        "missing": 2,
+        "distinct_nonmissing": 4
       }
     }
   },
@@ -1112,7 +1112,7 @@
     }
   },
   "events.csv": {
-    "rows": 37,
+    "rows": 38,
     "duplicate_keys": 0,
     "key": [
       "event_id"
@@ -1121,7 +1121,7 @@
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "warning_id": {
         "type": "string",
@@ -1131,17 +1131,17 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "assessment_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "date": {
         "type": "string",
@@ -1166,12 +1166,12 @@
       "date_evidence_url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "date_evidence": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "error_verified": {
         "type": "string",
@@ -1341,7 +1341,7 @@
     }
   },
   "match_exclusions.csv": {
-    "rows": 111,
+    "rows": 114,
     "duplicate_keys": 0,
     "key": [
       "event_id",
@@ -1351,12 +1351,12 @@
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 37
+        "distinct_nonmissing": 38
       },
       "reason": {
         "type": "string",
@@ -1482,7 +1482,7 @@
     }
   },
   "repository_documents.csv": {
-    "rows": 1784,
+    "rows": 1790,
     "duplicate_keys": 0,
     "key": [
       "document_id"
@@ -1491,22 +1491,22 @@
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 317
+        "distinct_nonmissing": 318
       },
       "document_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 1784
+        "distinct_nonmissing": 1790
       },
       "name": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 507
+        "distinct_nonmissing": 513
       },
       "url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 572
+        "distinct_nonmissing": 578
       },
       "format": {
         "type": "string",
@@ -1515,17 +1515,17 @@
       },
       "created_at": {
         "type": "string",
-        "missing": 0,
-        "distinct_nonmissing": 572
+        "missing": 2,
+        "distinct_nonmissing": 576
       },
       "modified_at": {
         "type": "string",
-        "missing": 0,
-        "distinct_nonmissing": 572
+        "missing": 2,
+        "distinct_nonmissing": 576
       },
       "date_meaning": {
         "type": "string",
-        "missing": 0,
+        "missing": 2,
         "distinct_nonmissing": 1
       }
     }
@@ -1803,7 +1803,7 @@
       "evidence": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 625
+        "distinct_nonmissing": 629
       }
     }
   },
@@ -1835,7 +1835,7 @@
     }
   },
   "source_manifest.csv": {
-    "rows": 6436,
+    "rows": 6445,
     "duplicate_keys": 0,
     "key": [
       "path"
@@ -1844,27 +1844,27 @@
       "path": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 6436
+        "distinct_nonmissing": 6445
       },
       "url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 5486
+        "distinct_nonmissing": 5495
       },
       "retrieved_at": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 5692
+        "distinct_nonmissing": 5701
       },
       "sha256": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 5053
+        "distinct_nonmissing": 5062
       },
       "bytes": {
         "type": "integer",
         "missing": 0,
-        "distinct_nonmissing": 4347
+        "distinct_nonmissing": 4356
       }
     }
   },

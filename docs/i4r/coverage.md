@@ -7,15 +7,15 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Catalog entries | 714 |
 | Discussion papers | 331 |
 | Report listings | 383 |
-| Retrieved documents (including separate replies and repeated files) | 1514 |
-| Distinct retrieved document URLs | 770 |
+| Retrieved documents (including separate replies and repeated files) | 1520 |
+| Distinct retrieved document URLs | 776 |
 | Retrieved listing metadata records | 707 |
 | Candidate article identities (not a final distinct-paper count) | 511 |
 | Publisher/OpenAlex-verified article identities | 495 |
 | Source review/disposition records | 714 |
-| Assessment records explicitly enumerated | 500 |
+| Assessment records explicitly enumerated | 504 |
 | Assessment records with unresolved reviewer-team equivalence | 37 |
-| Articles in those enumerated assessments | 478 |
+| Articles in those enumerated assessments | 482 |
 | Catalog entries with assessment scope accounted for | 598 |
 | ZIP archives inventoried | 62 |
 | Root ZIP files listed | 62 |
@@ -30,7 +30,7 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Source units containing article-specific assessments | 539 |
 | Source units with resolved target classification | 398 |
 | Units whose assessment eligibility remains unresolved | 7 |
-| Curated material-error candidate records | 37 |
+| Curated material-error candidate records | 38 |
 | Source-verified material-error disclosures with verified public year | 28 |
 | Disclosures satisfying the primary date/age window | 6 |
 | Events with selected controls | 0 |
@@ -51,7 +51,7 @@ This review asks how many assessments each source contains and which versions be
 | supporting document | 26 |
 | unresolved | 116 |
 
-The two economics/political-science overviews (DP107 and DP287) describe the same 110 assessment entries. Explicit report links and target identities connect 100 entries to existing assessments; 10 remain unmatched. These links add no assessments or verified errors. The two entries for the monetary-policy uncertainty paper refer to different teams and remain separate. See the [row-level crosswalk](../../data/i4r/aggregate_assessment_links.csv). Both overview sources retain unresolved scope until the remaining entries are reconciled.
+The two economics/political-science overviews (DP107 and DP287) describe the same 110 assessment entries. Explicit report links and target identities connect 104 entries to existing assessments; 6 remain unmatched. Overview versions are not counted as additional assessment teams. The two entries for the monetary-policy uncertainty paper refer to different teams and remain separate. See the [row-level crosswalk](../../data/i4r/aggregate_assessment_links.csv). Both overview sources retain unresolved scope until the remaining entries are reconciled.
 
 ## Initial screening depth
 

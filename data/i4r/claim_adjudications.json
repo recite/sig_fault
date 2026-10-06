@@ -1313,5 +1313,51 @@
       "https://osf.io/hce6n/"
     ],
     "cohort_recommendation": "Verified 2024 disclosure with subsequent 2026 retraction. Original publication in 2023 leaves insufficient pre-disclosure age for the declared main comparison."
+  },
+  {
+    "source_id": "dp_107",
+    "assessment_id": "dp_107_row026_error",
+    "original_title": "Enabling or Limiting Cognitive Flexibility? Evidence of Demand for Moral Commitment",
+    "original_doi": "10.1257/aer.20201333",
+    "original_publication_year": 2023,
+    "original_publication_date": "2023-02",
+    "error_verified": true,
+    "material_error_verified": true,
+    "error": "Counts of incentivized-product choices were replaced by 5-count for interior counts 1,2,3,4, while endpoints 0 and 5 were unchanged.",
+    "affected_claim": "More selfish advisors more often prefer to see incentive information before product-quality information; the reported strength of this association is understated.",
+    "materiality_scope": "Material strengthening of a substantive secondary association; broad experimental findings survive. Direction alone is not the inclusion criterion.",
+    "quantitative_consequence": {
+      "selfishness_column2": {
+        "original": 0.028,
+        "corrected": 0.056,
+        "original_se": 0.007,
+        "corrected_se": 0.007
+      },
+      "selfishness_column3": {
+        "original": 0.039,
+        "corrected": 0.075,
+        "original_se": 0.009,
+        "corrected_se": 0.01
+      },
+      "original_n": 5196,
+      "corrected_n": 5196
+    },
+    "corrected_direction": "Stronger positive association; no reversal or refutation of the main conclusion.",
+    "isolated_correction": "Report Table 1 keeps the original model and sample; Tables 2-3 additionally change the measure or drop respondents and are not used for the isolated correction.",
+    "first_substantiated_public_year": null,
+    "first_disclosure_precision": "unresolved",
+    "verified_public_by": "2024-04",
+    "reported_earlier_manuscript_date": "2023-11-29",
+    "public_date_evidence": "DP 107 April 2024 series issue, Appendix B.1.26 PDF p.164, publicly identifies the coding error. This is a located public account, not a verified first-disclosure year: the linked report is datedNovember 29,2023 and earlier public availability remains unresolved. Keep outside estimation. The original article appeared in 2023 and cannot provide two full pre-disclosure years even for the 2024 account.",
+    "dispute_status": "No original-author response to this coding correction verified.",
+    "verification_scope": "Lead and independent reviewer inspected the operation and compared original and corrected tables; original code was not independently rerun.",
+    "evidence_locator": "Report PDF pp.4-5,12,36; original article PDF p.21 (printed416), Table2.",
+    "sources": [
+      "https://osf.io/nwds7/",
+      "https://osf.io/nwds7/download",
+      "https://par.nsf.gov/servlets/purl/10473378",
+      "https://ideas.repec.org/p/zbw/i4rdps/107.html"
+    ],
+    "cohort_recommendation": "Retain verified material error in registry; exclude effect estimation because earliest public year is unresolved and the original is too recent for the required pre-period."
   }
 ]

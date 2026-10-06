@@ -22359,5 +22359,210 @@
       ]
     },
     "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+  },
+  {
+    "unit_id": "i4r_dp107_row010_assessment",
+    "original_title": "Can’t We All Just Get Along? How Women MPs Can Ameliorate Affective Polarization in Western Publics",
+    "original_doi": "10.1017/S0003055422000491",
+    "doi_verification_source": "DP107 Appendix B.1.10; verified article identity in public registry",
+    "reviewer_team": [
+      "Daniel Benenson Markovits",
+      "Nadjim Fréchet",
+      "Rémi Thériault",
+      "Chris Yurris"
+    ],
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_65db793847a5b70339410232",
+        "role": "assessment_report",
+        "cached_filename": "dp_107_65db793847a5b70339410232.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "minor_error_and_robustness",
+    "material_error_verified": false,
+    "evidence": "The report reproduces the main results, examines party-family heterogeneity and investigates listwise deletion across unused variables. The original-author response in DP 107 acknowledges a case-exclusion error without substantive change. The report separately compares imputed data: the controlled female-MP coefficient changes from 1.726 to 1.741 (N 1842 to 1898). That imputation comparison is not an isolated correction; the report's intermediate missing-case arithmetic is not used as a verified count.",
+    "evidence_locator": {
+      "document_id": "dp_107_65db793847a5b70339410232",
+      "pdf_pages": [
+        1,
+        6,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "identity_evidence": "DP107 Appendix B.1.10 and DP287 section12.17.10 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked.",
+      "additional_evidence": {
+        "overview_author_reply_dp107_pdf_page": 148
+      }
+    },
+    "limitations": "Documentary verification, not an independent rerun of original code. The report is linked from the overview, not an additional assessment by the overview authors. Printed and upload dates do not establish first public disclosure."
+  },
+  {
+    "unit_id": "i4r_dp107_row020_assessment",
+    "original_title": "Do Thank-You Calls Increase Charitable Giving? Expert Forecasts and Field Experimental Evidence",
+    "original_doi": "10.1257/app.20210068",
+    "doi_verification_source": "DP107 Appendix B.1.20; verified article identity in public registry",
+    "reviewer_team": [
+      "Jonathan Borowsky",
+      "Grant Gibson",
+      "Audrée Langlois",
+      "Rosalie Montambeault",
+      "Moyo Sogaolu"
+    ],
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_65f1db848520371010880b0b",
+        "role": "assessment_report",
+        "cached_filename": "dp_107_65f1db848520371010880b0b.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "minor_error_and_robustness",
+    "material_error_verified": false,
+    "evidence": "Main charitable-giving findings reproduce. Replacing means of categorical donor attributes with minima adds 95 treated and 7 control observations in experiment 1; treatment/control donation rates change 27.97/28.06 to 27.98/28.07 percent. Date-format and unused error-bar code issues do not change reported output. Poisson significance changes are model sensitivity, not an error correction.",
+    "evidence_locator": {
+      "document_id": "dp_107_65f1db848520371010880b0b",
+      "pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "identity_evidence": "DP107 Appendix B.1.20 and DP287 section12.17.20 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked.",
+      "additional_evidence": {}
+    },
+    "limitations": "Documentary verification, not an independent rerun of original code. The report is linked from the overview, not an additional assessment by the overview authors. Printed and upload dates do not establish first public disclosure."
+  },
+  {
+    "unit_id": "i4r_dp107_row026_assessment",
+    "original_title": "Enabling or Limiting Cognitive Flexibility? Evidence of Demand for Moral Commitment",
+    "original_doi": "10.1257/aer.20201333",
+    "doi_verification_source": "DP107 Appendix B.1.26; verified article identity in public registry",
+    "reviewer_team": [
+      "Yu-Hsiang Dexter Hsu",
+      "Joseph Tao-yi Wang",
+      "Wei-Chien Weng",
+      "Gustav Chung Yang"
+    ],
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_nwds7",
+        "role": "assessment_report",
+        "cached_filename": "dp_107_nwds7.txt"
+      },
+      {
+        "document_id": "dp_107_saccardo_original",
+        "role": "original_article",
+        "cached_filename": "dp_107_saccardo_original.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "demonstrated_material_error",
+    "material_error_verified": true,
+    "evidence": "The incentivized-product count used to construct standardized Selfishness reverses interior values 1 through 4, leaving 0 and 5 correct. Isolating the coding repair changes the Selfishness coefficient from 0.028(SE 0.007) to 0.056(SE 0.007) in column 2 and 0.039(SE 0.009) to 0.075(SE 0.010) in column 3, with N 5196 unchanged. This materially strengthens the association with preferring incentive information first. Later measure redefinitions and respondent exclusions are separate robustness checks, not the isolated repair.",
+    "evidence_locator": {
+      "document_id": "dp_107_nwds7",
+      "pdf_pages": [
+        1,
+        4,
+        5,
+        6,
+        10,
+        12,
+        36
+      ],
+      "identity_evidence": "DP107 Appendix B.1.26 and DP287 section12.17.26 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked.",
+      "additional_evidence": {
+        "original_article_pdf_page": 21,
+        "original_article_printed_page": 416
+      }
+    },
+    "limitations": "Documentary verification, not an independent rerun of original code. The report is linked from the overview, not an additional assessment by the overview authors. Printed and upload dates do not establish first public disclosure."
+  },
+  {
+    "unit_id": "i4r_dp107_row088_assessment",
+    "original_title": "The Economic Effects of Long-Term Climate Change: Evidence from the Little Ice Age",
+    "original_doi": "10.1086/720393",
+    "doi_verification_source": "DP107 Appendix B.1.88; verified article identity in public registry",
+    "reviewer_team": [
+      "Nikolai Cook",
+      "Hugo Cordeau",
+      "Tongzhe Li",
+      "Taylor Wright"
+    ],
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_65eef9518992ec0c4078865b",
+        "role": "assessment_report",
+        "cached_filename": "dp_107_65eef9518992ec0c4078865b.txt"
+      },
+      {
+        "document_id": "dp_107_65eef957719c060c2ad49a41",
+        "role": "original_author_reply",
+        "cached_filename": "dp_107_65eef957719c060c2ad49a41.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
+    "disposition": "robustness_dispute",
+    "material_error_verified": false,
+    "evidence": "Published results reproduce. The main sensitivity deletes city-years coded as below 1000 inhabitants rather than assigning the disclosed midpoint 500: the temperature coefficient changes 0.532 to-0.592 while N falls 10600 to 8114. The reviewer report acknowledges the category meaning; Waldinger's reply disputes calling these observations missing and argues deletion changes sample selection. This substantial sensitivity changes an assumption/sample rather than repairing a demonstrated coding or data error.",
+    "evidence_locator": {
+      "document_id": "dp_107_65eef9518992ec0c4078865b",
+      "pdf_pages": [
+        1,
+        4,
+        11,
+        13
+      ],
+      "identity_evidence": "DP107 Appendix B.1.88 and DP287 section12.17.88 link this target-specific report. Full-text target, reviewer byline and substantive assessment checked.",
+      "additional_evidence": {
+        "author_reply_pdf_pages": [
+          1,
+          2,
+          4
+        ]
+      }
+    },
+    "limitations": "Documentary verification, not an independent rerun of original code. The report is linked from the overview, not an additional assessment by the overview authors. Printed and upload dates do not establish first public disclosure."
   }
 ]
