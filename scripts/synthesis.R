@@ -40,29 +40,6 @@ for (diagnostic in names(labels)) {
 }
 contrasts <- do.call(rbind, rows)
 write.csv(contrasts, "data/meta/audit_contrasts.csv", row.names = FALSE)
-jsonlite::write_json(list(
-  status = "provisional_two_audit_synthesis_available",
-  secondary_synthesis = "three_component_status.json describes the retrospective I4R extension",
-  estimand = paste(
-    "Equal-audit average of log flagged-versus-comparison post/pre citation ratios",
-    "from the full calendar year preceding the warning year to the year following it."
-  ),
-  limitations = c(
-    "Historical Nieuwenhuis cohort includes partial publication-year baselines.",
-    "Database and document-type harmonization remains incomplete.",
-    "Lal formal publication followed earlier circulation; diagnostics differ from verified errors.",
-    paste(
-      "Primary I4R article/review citation panels remain incomplete;",
-      "secondary all-type absolute contrasts and a three-component",
-      "proportional sensitivity are available."
-    ),
-    "Intervals assume independent audit errors and omit generalization uncertainty."
-  ),
-  pooling_rule = paste(
-    "Display study-specific contrasts first. Multiple diagnostics from one audit are dependent",
-    "alternatives, not independent studies. Each synthesis includes one contrast per audit."
-  )
-), "data/meta/status.json", pretty = TRUE, auto_unbox = TRUE)
 
 combined <- list()
 for (sample in unique(contrasts$sample[contrasts$audit == "Nieuwenhuis"])) {
@@ -170,9 +147,9 @@ report <- c(
   "",
   "See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),",
   "[synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).",
-  "Run `make synthesis` to reproduce these results and the manuscript table."
+  "Run `make synthesis` to reproduce these results and the current three-audit summary."
 )
-writeLines(report, "docs/meta/README.md")
+writeLines(report, "docs/meta/two-audit.md")
 
 fragment <- c(
   "\\begin{tabular}{lrrrr}", "\\toprule",

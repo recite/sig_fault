@@ -46,7 +46,7 @@ is used. Duplicate DOIs stop the build for review. PMID 22648583 (flagged) and
 The [dictionary](dictionary.md) specifies recodes and missing values; the
 [analysis design](design.md) records the comparison before citation collection.
 The [results](results.md) report the primary comparison and sensitivity checks.
-Run `make lazic-analysis` to regenerate them, or `make lazic-synthesis` to include
+Run `make lazic-analysis` to regenerate them, or `make synthesis` to include
 the audit in the equal-weight synthesis.
 An [additional primate-research audit](other-audits.md) was inspected, but its
 deposited data omit the article identities needed for citation linkage.

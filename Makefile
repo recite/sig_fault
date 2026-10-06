@@ -17,7 +17,7 @@ tables: analysis i4r-aggregate lazic-analysis
 manuscript:
 	cd ms && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 
-paper: figures tables synthesis lazic-synthesis
+paper: figures tables synthesis
 	$(MAKE) manuscript
 
 format:
@@ -123,7 +123,7 @@ nieuwenhuis-test: nieuwenhuis
 	python3 -m unittest discover -s tests -p 'test_nieuwenhuis*.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "nieuwenhuis", stop_on_failure = TRUE)'
 
-synthesis: analysis lal nieuwenhuis i4r-aggregate i4r-synthetic
+synthesis-components: analysis lal nieuwenhuis i4r-aggregate i4r-synthetic
 	$(RSCRIPT) scripts/synthesis.R
 	$(RSCRIPT) scripts/synthesis_secondary.R
 
@@ -171,10 +171,10 @@ lazic-test: lazic
 lazic-fetch:
 	python3 scripts/lazic_citations.py fetch
 
-.PHONY: lazic-analysis lazic-synthesis
+.PHONY: lazic-analysis synthesis-components
 lazic-analysis: lazic
 	$(RSCRIPT) scripts/lazic_analysis.R
 	python3 scripts/lazic_report.py
 
-lazic-synthesis: lazic-analysis synthesis
+synthesis: lazic-analysis synthesis-components
 	$(RSCRIPT) scripts/lazic_synthesis.R

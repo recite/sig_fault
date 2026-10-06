@@ -1,34 +1,18 @@
-# Provisional synthesis across two methodological audits
+# Three-audit synthesis
 
-The completed neuroscience and IV cohorts permit a common-window summary, while
-the full OpenAlex neuroscience comparison and primary I4R article/review panels remain pending.
-Every row below includes one estimate from each audit, with equal audit weights.
-Alternative IV diagnostics are separate analyses of the same evidence.
+The synthesis gives equal weight to the Nieuwenhuis, Lal and Lazic audit contrasts on the log ratio-of-ratios scale. It summarizes these assembled audits, not a random sample of publicized errors. I4R remains a separate four-component sensitivity.
 
-| Neuroscience sample | IV diagnostic | Neuroscience (%) | IV (%) | Combined (%) | 95% interval |
-| --- | --- | ---: | ---: | ---: | --- |
-| Historical cohort | Effective F below 10 | -14.1 | -14.5 | -14.3 | [-29.0, 3.4] |
-| Historical cohort | Inferential sensitivity | -14.1 | 23.9 | 3.1 | [-14.5, 24.4] |
-| Historical cohort | Either diagnostic | -14.1 | 11.8 | -2.0 | [-18.2, 17.4] |
-| Historical cohort | AR-only sensitivity | -14.1 | -44.0 | -30.6 | [-45.2, -12.2] |
-| 2009 publication cohort | Effective F below 10 | -8.5 | -14.5 | -11.5 | [-25.8, 5.4] |
-| 2009 publication cohort | Inferential sensitivity | -8.5 | 23.9 | 6.5 | [-10.6, 26.9] |
-| 2009 publication cohort | Either diagnostic | -8.5 | 11.8 | 1.2 | [-14.4, 19.6] |
-| 2009 publication cohort | AR-only sensitivity | -8.5 | -44.0 | -28.4 | [-42.8, -10.3] |
+| IV definition | Lazic follow-up | Three audits, % [95% interval] | With I4R, % [95% interval] |
+| --- | ---: | ---: | ---: |
+| Effective F below 10 | 2018 | -12.0 [-24.6, 2.7] | -4.5 [-23.6, 19.5] |
+| Inferential sensitivity | 2018 | -0.4 [-14.7, 16.1] | 4.8 [-16.2, 31.2] |
+| Effective F below 10 | 2019 | -10.9 [-23.4, 3.7] | -3.5 [-22.9, 20.7] |
+| Inferential sensitivity | 2019 | 0.9 [-13.3, 17.3] | 5.9 [-15.4, 32.5] |
 
-The combined estimate changes with the IV diagnostic. It is not evidence for
-a uniform citation response, nor an estimate of the effect of the typical scientific error.
-The AR-only rows are exploratory: their IV component has only three flagged papers.
+Nieuwenhuis uses 2010 and 2012; Lal uses 2023 and 2025; Lazic uses 2016 and 2018 for the common before/after-warning contrast, with its main 2019 follow-up shown separately. The two IV definitions are alternatives from one audit, not independent studies. The I4R component summarizes only three selected matched disclosures.
 
-A [secondary three-component synthesis](secondary.md) adds the proportional contrast
-from the separately matched I4R annual-total analysis. It preserves the different
-measurement and exposure definitions and is an exploratory descriptive extension.
+Neither three-audit definition establishes a common citation penalty. The intervals are conditional on these audits and assume independent component errors; they omit audit-selection and generalization uncertainty. Citation databases, document types, publicity clocks and error definitions remain different. An imprecise synthesis is not evidence that publicity had no effect.
 
-A [source sensitivity](../../data/meta/opencitations_synthesis.csv) replaces the
-neuroscience component with OpenCitations on the same papers and years. It does
-not add another independent audit; see the
-[measurement comparison](../nieuwenhuis/opencitations.md).
+No known Lazic DOI overlaps the existing original/control DOI inventory; one included Lazic paper has no DOI. See the [component ledger](../../data/meta/lazic_components.csv), [identity ledger](../../data/meta/lazic_component_identities.csv), and [cohort results](../lazic/results.md). Run `make synthesis` to reproduce.
 
-See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),
-[synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).
-Run `make synthesis` to reproduce these results and the manuscript table.
+See [methods and sample definitions](design.md) and [current status](../../data/meta/status.json). The [two-audit comparisons](two-audit.md) retain additional IV definitions and neuroscience source/cohort sensitivities; the [I4R extension without Lazic](secondary.md) is also available. These are alternative summaries of overlapping evidence, not additional independent studies.

@@ -27,18 +27,29 @@ write.csv(do.call(rbind, components), "data/meta/lazic_components.csv", row.name
 write.csv(do.call(rbind, results), "data/meta/lazic_synthesis.csv", row.names = FALSE)
 jsonlite::write_json(list(
   status = "three_audit_descriptive_synthesis",
+  estimand = paste(
+    "Equal-audit mean log flagged-versus-comparison post/pre citation ratios,",
+    "transformed as 100 * (exp(mean_log_ratio) - 1)."
+  ),
+  components = c("Nieuwenhuis", "Lal", "Lazic"),
+  synthesis_results = "data/meta/lazic_synthesis.csv",
+  component_estimates = "data/meta/lazic_components.csv",
+  i4r_sensitivity = "data/meta/lazic_with_i4r.csv",
+  openalex_source_comparison = "data/nieuwenhuis/status.json",
   primary_lazic_contrast = "2016 to 2019, first-known-publicity cohort",
   harmonized_lazic_contrast = "2016 to 2018; journal publication occurred in 2018",
   weights = "One third per audit on the log ratio-of-ratios scale",
   population = "The three assembled audits, not a random sample of publicized errors",
   limitations = c(
     "Different error definitions, databases and document types remain.",
+    "The complete Nieuwenhuis OpenAlex comparison remains pending.",
+    "Nieuwenhuis papers published in 2010 have partial publication-year baselines.",
     "Public availability is not verified reader exposure.",
     "Only three audits; intervals omit across-audit generalization uncertainty.",
     "The Lal formal-publication contrast follows earlier circulation.",
     "Lazic counts distinct indexed citing works of all types, including book chapters."
   )
-), "data/meta/lazic_status.json", pretty = TRUE, auto_unbox = TRUE)
+), "data/meta/status.json", pretty = TRUE, auto_unbox = TRUE)
 
 ids <- read.csv("data/meta/component_identities.csv", stringsAsFactors = FALSE)
 articles <- read.csv("data/lazic/articles.csv", stringsAsFactors = FALSE)
@@ -135,7 +146,13 @@ lines <- c(lines, "", paste(
   "included Lazic paper has no DOI. See the [component ledger]",
   "(../../data/meta/lazic_components.csv), [identity ledger]",
   "(../../data/meta/lazic_component_identities.csv), and [cohort results]",
-  "(../lazic/results.md). Run `make lazic-synthesis` to reproduce."
+  "(../lazic/results.md). Run `make synthesis` to reproduce."
+), "", paste(
+  "See [methods and sample definitions](design.md) and [current status]",
+  "(../../data/meta/status.json). The [two-audit comparisons](two-audit.md)",
+  "retain additional IV definitions and neuroscience source/cohort sensitivities;",
+  "the [I4R extension without Lazic](secondary.md) is also available. These are",
+  "alternative summaries of overlapping evidence, not additional independent studies."
 ))
 lines <- gsub("] (", "](", lines, fixed = TRUE)
-writeLines(lines, "docs/meta/lazic.md")
+writeLines(lines, "docs/meta/README.md")
