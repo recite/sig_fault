@@ -14,7 +14,7 @@ Several Science papers share an endpoint page with an adjacent article. Those ca
 
 The OpenAlex acquisition verifies the target DOI and every incoming reference, complete pagination, stable result counts and unique work IDs. A completed history is bound to its target DOI; correcting an identity prevents reuse of a history for another target. API responses are cached with URLs, retrieval times and SHA-256 hashes. Acquisition reads the same rate-limit checkpoint as I4R.
 
-The ten completed neuroscience pilot histories are reused from their frozen public records, with `origin=frozen_pilot` and the target DOI retained. The pilot's raw responses remain in its private cache and source manifest. `input_hashes.json` identifies the exact frozen pilot and historical inputs used in each bridge build.
+The ten completed neuroscience pilot histories are reused from their frozen public records, with `origin=frozen_pilot` and the target DOI retained. The pilot's raw responses remain in its private cache and source manifest. `input_hashes.json` identifies the frozen pilot and historical inputs used in each bridge build. Its text-input hashes normalize CRLF to LF so Git checkout conventions do not change the fingerprint; downloaded source hashes remain byte-exact.
 
 The historical bridge always contains the original 153 included source IDs. Source IDs 23 and 25 retain their historical unreliable-search exclusion; IDs 95 and 124 retain their missing-export exclusion. All four remain in the full OpenAlex acquisition roster. They cannot enter paired overlap denominators without a valid historical comparator.
 
@@ -37,7 +37,7 @@ The DOI crosswalk uses the same complete historical-cohort papers on both sides.
 | `doi_overlap.csv` | Paired original–citing DOI; `paper_id,doi` | Both source years, OpenAlex type and target-relative date indicator, presence and year agreement |
 | `status.json` | Current bridge | Complete-pair and group counts, full-cohort readiness, DOI overlap counts |
 | `source_manifest.csv` | Cached source file; `path` | Source URL, retrieval timestamp, SHA-256 and byte count |
-| `input_hashes.json` | Local input file | SHA-256 hashes of the frozen pilot and regenerated historical inputs |
+| `input_hashes.json` | Local input file | SHA-256 hashes after the documented line-ending normalization |
 
 Raw PDFs and API responses remain private; public metadata and derived records support the offline build. Counts describe database records, not independently read full-text citations.
 

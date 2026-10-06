@@ -813,8 +813,13 @@ def report():
     (DATA / "input_hashes.json").write_text(
         json.dumps(
             {
-                str(path.relative_to(pilot.ROOT)): pilot.sha256(path.read_bytes())
-                for path in inputs
+                "normalization": "CRLF to LF; otherwise unchanged bytes",
+                "sha256": {
+                    str(path.relative_to(pilot.ROOT)): pilot.sha256(
+                        path.read_bytes().replace(b"\r\n", b"\n")
+                    )
+                    for path in inputs
+                },
             },
             indent=2,
         )
