@@ -308,21 +308,8 @@ def report(support, summaries):
         )
     tex += [r"\bottomrule", r"\end{tabular}"]
     (ROOT / "tabs/i4r_synthetic.tex").write_text("\n".join(tex) + "\n")
-    omit = next(
-        r
-        for r in summaries
-        if r["event_id"] == "dp_148_disclosure"
-        and r["specification"] == "omit_largest_donor"
-    )
-    macros = {
-        "ScInternetGap": main["dp_148_disclosure"]["post_gap"],
-        "ScInternetOmit": omit["post_gap"],
-    }
     (ROOT / "tabs/i4r_synthetic_macros.tex").write_text(
-        "\n".join(
-            f"\\newcommand{{\\{key}}}{{{value:+.1f}}}" for key, value in macros.items()
-        )
-        + "\n"
+        f"\\newcommand{{\\ScCases}}{{{len(main)}}}\n"
     )
     lines += [
         "",

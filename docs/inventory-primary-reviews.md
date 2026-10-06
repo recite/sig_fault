@@ -1,11 +1,13 @@
-# First reviews of the error candidates
+# Primary-source reviews of the error candidates
 
 The complete reproduction-excerpt screen supplies candidates for primary-source
-review. The [review table](../data/inventories/primary_review_summary.csv) covers
-older reports, their original-paper identities and available author responses.
+review. Every explicit-error candidate now has a [review record](../data/inventories/primary_review_summary.csv)
+covering its original-paper identity, retrieved report and available author response.
 Some document acknowledged coding errors; others reveal specification disputes or
-remain limited by inaccessible full texts. None has yet been added to the
-citation-effect sample. The inventory report gives current coverage counts.
+remain limited by inaccessible full texts. Overlaps with I4R are linked to the
+existing assessment, rather than counted as new disclosures. The external cases
+have not yet supplied additional matched citation comparisons. The
+[inventory report](inventories.md) gives current coverage counts.
 
 The [structured reviews](../data/inventories/primary_reviews.json) retain the error
 mechanism, affected claim, exact source locations, response, date evidence,

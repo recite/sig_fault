@@ -54,3 +54,15 @@ Source-complete inventory first; verified article/assessment/event tables second
 Implementation note: estimate the two-period model in first differences to avoid redundant fixed-effect rank counting in disconnected matched stacks. Tests require exact equality with the direct matched change. This changes the computation, not the estimand.
 
 Acquisition-completeness clarification (2026-10-05): matching waits for pre-disclosure citation histories for every otherwise eligible control in a retrieved risk set. A partly downloaded pool must not change candidate rankings or the scaling/calipers. Candidate metadata and age exclusions remain explicit. This gate was tightened before estimating the I4R matched contrasts.
+
+
+Materiality correction (2026-10-06, after the pilot estimates): the fast-internet
+case remains a verified coding error with a January 2024 public disclosure, but
+its materiality is now unresolved. In both the original arXiv version and the
+later report, the reported coefficient changes combine the indicator repair with
+new distance calculations and spatial resolution; later columns also change
+calibration and treatment zones. The later report attributes part of the increase
+to the coding repair without isolating its magnitude. The strict material-error
+analysis excludes this case pending a repair-only comparison. This corrects our
+application of the existing definition; it does not establish that the error was
+immaterial. Sources and numerical comparisons are in `claim_adjudications.json`.

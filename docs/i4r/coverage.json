@@ -21,8 +21,8 @@
   "complete_citation_histories": 426,
   "collected_citation_edges": 32069,
   "curated_error_candidates": 38,
-  "verified_dated_disclosures": 28,
-  "date_age_eligible_disclosures": 6,
+  "verified_dated_disclosures": 27,
+  "date_age_eligible_disclosures": 5,
   "matched_events": 0,
   "complete_panel_rows": 0,
   "unresolved_assessment_eligibility": 7,
@@ -31,8 +31,8 @@
   "unresolved_unit_eligibility": 7,
   "verified_duplicate_listings": 83,
   "eligible_assessments": 539,
-  "resolved_assessments": 398,
-  "source_resolution_fraction": 0.738404452690167,
-  "source_resolution_unknown_inclusive_fraction": 0.7289377289377289,
+  "resolved_assessments": 397,
+  "source_resolution_fraction": 0.7365491651205937,
+  "source_resolution_unknown_inclusive_fraction": 0.7271062271062271,
   "substantially_complete_assessment_coverage": false
 }

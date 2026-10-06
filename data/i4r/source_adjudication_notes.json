@@ -4893,8 +4893,8 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "report_52bea92b7c10",
-    "disposition": "material_error",
-    "evidence": "Specific treatment-indicator coding error materially changes nighttime-light coefficient; geography, calibration and treatment-zone sensitivity are separate issues. Earliest error-specific version still requires verification.",
+    "disposition": "verified_error_materiality_unresolved",
+    "evidence": "The post-treatment indicator exceeds one instead of being binary. Reported coefficient changes also recalculate distance and increase spatial resolution; neither reviewed version supplies an isolated repair estimate. Materiality remains unresolved. The error is present in January 2024 arXiv v1.",
     "evidence_locator": [],
     "duplicate_verification": [
       {
@@ -4908,7 +4908,7 @@
     "related_source_ids": [
       "dp_148"
     ],
-    "limitations": "Source coverage or independent adjudication incomplete. A linked earlier review is not automatically a completed assessment. Missing full text is not evidence of no error. Explicit link to a related discussion paper is retained, but canonical duplication is not asserted without text/version identity evidence.",
+    "limitations": "Verified coding error; numerical consequence of this repair alone is not established. See data/i4r/claim_adjudications.json, dp_148, for version, table and source hashes. Original code not independently rerun.",
     "review_basis": "independent_screen_or_unresolved"
   },
   {
@@ -6176,10 +6176,10 @@
   {
     "source_id": "dp_148",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "yes",
+    "assessment_resolved": "no",
     "canonical_source_id": "dp_148",
-    "disposition": "material_error",
-    "evidence": "Specific treatment-indicator coding error materially changes nighttime-light coefficient; geography, calibration and treatment-zone sensitivity are separate issues. Earliest error-specific version still requires verification.",
+    "disposition": "verified_error_materiality_unresolved",
+    "evidence": "The post-treatment indicator exceeds one instead of being binary. Reported coefficient changes also recalculate distance and increase spatial resolution; neither reviewed version supplies an isolated repair estimate. Materiality remains unresolved. The error is present in January 2024 arXiv v1.",
     "evidence_locator": {
       "documents": [
         "dp_148_download_0.txt"
@@ -6193,7 +6193,7 @@
       ],
       "independent_scope": "Opening/abstract and substantive reproduction, error or conclusion passages; priority material cases read in detail."
     },
-    "limitations": "Source-level evidence assessment; original code/data not rerun. Favorable/minor disposition does not establish an error-free article."
+    "limitations": "Verified coding error; numerical consequence of this repair alone is not established. See data/i4r/claim_adjudications.json, dp_148, for version, table and source hashes. Original code not independently rerun."
   },
   {
     "source_id": "dp_149",

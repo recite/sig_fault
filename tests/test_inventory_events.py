@@ -10,6 +10,7 @@ class EventTests(unittest.TestCase):
     def setUp(self):
         self.review = dict(
             record_id="a",
+            original_title="Original",
             original_doi="10.1234/wp",
             original_journal_doi="10.1234/article",
         )
@@ -61,6 +62,12 @@ class EventTests(unittest.TestCase):
         self.assertEqual(row["material_error_verified"], "pending")
         self.assertEqual(row["ready_for_citation_collection"], "no")
         self.assertEqual(row["public_year"], "")
+
+    def test_missing_metadata_remains_visible_and_ineligible(self):
+        row = events.make_rows([self.review], [], [self.decision])[0]
+        self.assertEqual(row["original_publication_date"], "")
+        self.assertEqual(row["ready_for_citation_collection"], "no")
+        self.assertIn("original_metadata_unresolved", row["collection_exclusion"])
 
     def test_date_and_consequence_evidence_required(self):
         for change in [

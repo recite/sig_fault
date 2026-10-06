@@ -1,6 +1,6 @@
 # Larger assessment inventories
 
-The four matched I4R papers remain a pilot. The next expansion starts from complete
+The small matched I4R extension remains a pilot. Expansion starts from complete
 external inventories, before selecting papers with verified consequential errors.
 No citation outcomes were used to choose or classify these new records.
 
@@ -25,8 +25,8 @@ FLoRA contains 365 reproduction records covering
 200 original DOIs describe computational
 issues or robustness challenges. Among those originals,
 156 do not occur in the current I4R
-DOI registry. This is a larger and more relevant starting pool than repeatedly
-changing the specification on four papers.
+DOI registry. These records supply a broader pool for checking errors and their
+public disclosure dates.
 
 The [review queue](../data/inventories/reproduction_review_queue.csv) retains **all**
 reproduction records, including favorable and technical-failure assessments.
@@ -48,7 +48,7 @@ response before verification. Other records remain in the
 reproduction failures, minor discrepancies and specification disputes. Excerpt
 screening does not establish material error or rule it out.
 
-Primary-source review now covers 20 records,
+Primary-source review now covers 47 records,
 with full reports where recovered and explicitly limited reviews otherwise.
 The [review table](../data/inventories/primary_review_summary.csv) separates the
 error mechanism, numerical consequence, author response and unresolved date evidence.

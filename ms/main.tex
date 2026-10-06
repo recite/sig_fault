@@ -256,7 +256,7 @@ The preceding year shows a matched growth difference of +\IfrPreChange{} citatio
 
 \clearpage
 \subsection{Synthetic-control sensitivity}
-We also fit nonnegative donor weights summing to one to match each affected paper's pre-disclosure citation path. Donors retain the journal, publication-age, identity and exposure restrictions, but the citation caliper and text ranking are removed. We require at least three full pre-years, first withholding the last year to check prediction and then refitting on all pre-years. This supports three cases; inventor clusters has only two full pre-years. A fixed small ridge penalty resolves the many possible donor combinations. All choices are retrospective.
+We also fit nonnegative donor weights summing to one to match each affected paper's pre-disclosure citation path. Donors retain the journal, publication-age, identity and exposure restrictions, but the citation caliper and text ranking are removed. We require at least three full pre-years, first withholding the last year to check prediction and then refitting on all pre-years. This supports \ScCases{} cases; inventor clusters has only two full pre-years. A fixed small ridge penalty resolves the many possible donor combinations. All choices are retrospective.
 
 \begin{table}[htbp]
 \centering
@@ -270,6 +270,6 @@ Annual all-type citations. Pre-fit RMSE describes the final fit using all pre-ye
 \end{minipage}
 \end{table}
 
-The synthetic comparisons are mixed and do not resolve the counterfactual problem. Parental leave is close to its synthetic comparison and electrification is below it. Fast internet's positive gap of \ScInternetGap{} citations changes to \ScInternetOmit{} when its largest-weight donor is removed. The held-out pre-year predictions also exceed actual citations in all three cases. Close in-sample fit therefore does not establish a reliable untreated trajectory, and these gaps are not pooled into a causal estimate.
+The synthetic comparisons are mixed and do not resolve the counterfactual problem. Parental leave is close to its synthetic comparison and electrification is below it. The held-out pre-year predictions exceed actual citations in both cases. Close in-sample fit therefore does not establish a reliable untreated trajectory, and these gaps are not pooled into a causal estimate.
 
 \end{document}

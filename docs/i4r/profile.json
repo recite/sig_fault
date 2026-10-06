@@ -401,7 +401,7 @@
       "limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 46
+        "distinct_nonmissing": 47
       }
     }
   },
@@ -1295,7 +1295,7 @@
     }
   },
   "match_candidates.csv": {
-    "rows": 1341,
+    "rows": 1095,
     "duplicate_keys": 0,
     "key": [
       "event_id",
@@ -1306,21 +1306,21 @@
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 4
+        "distinct_nonmissing": 3
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 4
+        "distinct_nonmissing": 3
       },
       "control_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 696
+        "distinct_nonmissing": 535
       },
       "distance": {
         "type": "number",
-        "missing": 1341,
+        "missing": 1095,
         "distinct_nonmissing": 0
       },
       "eligible": {
@@ -1331,7 +1331,7 @@
       "reason": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 7
+        "distinct_nonmissing": 6
       },
       "horizon": {
         "type": "integer",
@@ -1763,12 +1763,12 @@
       "evidence_locator": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 542
+        "distinct_nonmissing": 541
       },
       "limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 86
+        "distinct_nonmissing": 87
       },
       "adjudication_date": {
         "type": "string",
@@ -1977,12 +1977,12 @@
       "adjudication_locator": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 542
+        "distinct_nonmissing": 541
       },
       "adjudication_limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 86
+        "distinct_nonmissing": 87
       }
     }
   },
@@ -2020,7 +2020,7 @@
       },
       "disposition": {
         "type": "string",
-        "missing": 233,
+        "missing": 234,
         "distinct_nonmissing": 61
       },
       "adjudication_conflict": {

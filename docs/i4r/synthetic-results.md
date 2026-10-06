@@ -5,7 +5,6 @@ These retrospective checks use the same annual all-type citation data as the mat
 | Paper | Pre-years | Donors | Pre-fit RMS error | Held-out year: actual / predicted | Post year: actual / synthetic | Post gap | Change in gap |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Parental leave | 2018;2019;2020 | 194 | 0.00 | 6.0 / 8.4 | 9.0 / 9.6 | -0.6 | -0.6 |
-| Fast internet | 2020;2021;2022;2023 | 217 | 10.52 | 125.0 / 148.0 | 137.0 / 100.3 | +36.7 | +37.9 |
 | Inventor clusters | 2022;2023 | 197 | Not fit: fewer than three pre-years | — | — | — | — |
 | Electrification | 2017;2018;2019;2020 | 114 | 0.00 | 34.0 / 40.5 | 28.0 / 35.2 | -7.2 | -7.2 |
 
@@ -18,9 +17,6 @@ The held-out prediction fits weights on all but the last pre-disclosure year. Th
 | Parental leave | main | -0.6 | 8.4 | 0.102 | 20.4 |
 | Parental leave | ridge_0.01 | -0.6 | 8.4 | 0.100 | 20.7 |
 | Parental leave | omit_largest_donor | -0.6 | 8.8 | 0.137 | 15.8 |
-| Fast internet | main | +36.7 | 148.0 | 0.646 | 2.1 |
-| Fast internet | ridge_0.01 | +13.7 | 133.6 | 0.479 | 2.9 |
-| Fast internet | omit_largest_donor | -57.3 | 113.3 | 0.689 | 1.9 |
 | Electrification | main | -7.2 | 40.5 | 0.070 | 29.0 |
 | Electrification | ridge_0.01 | -7.4 | 40.5 | 0.069 | 29.6 |
 | Electrification | omit_largest_donor | -8.6 | 41.1 | 0.066 | 24.3 |

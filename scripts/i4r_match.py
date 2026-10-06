@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import json
 from pathlib import Path
 
 import i4r_registry as registry
@@ -498,9 +499,13 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--cutoff", type=int, default=2025)
     p.add_argument("--controls", type=int, default=3)
-    p.add_argument("--citation-file", type=Path, default=sources.DATA / "citations.csv")
-    p.add_argument("--output-dir", type=Path, default=sources.DATA)
+    p.add_argument("--data-dir", type=Path, default=sources.DATA)
+    p.add_argument("--citation-file", type=Path)
+    p.add_argument("--output-dir", type=Path)
     args = p.parse_args()
+    sources.DATA = args.data_dir
+    args.citation_file = args.citation_file or sources.DATA / "citations.csv"
+    args.output_dir = args.output_dir or sources.DATA
 
     def write(name, rows, fields):
         pilot.write_csv(args.output_dir / name, rows, fields)
@@ -510,6 +515,14 @@ if __name__ == "__main__":
     articles = assessed + controls
     inventory = pilot.read_csv(sources.ROOT / "data/inventories/article_crosswalk.csv")
     externally_assessed = [{"doi": r["original_doi"]} for r in inventory]
+    reviewed = json.loads(
+        (sources.ROOT / "data/inventories/primary_reviews.json").read_text()
+    )["cases"]
+    externally_assessed += [
+        {"doi": r["original_journal_doi"]}
+        for r in reviewed
+        if r.get("original_journal_doi")
+    ]
     control_exclusions = assessed_control_exclusions(
         controls, assessed + externally_assessed
     )

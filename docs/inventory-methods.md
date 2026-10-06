@@ -223,3 +223,21 @@ from an independent replication. `make inventories-test` rebuilds the inventory
 and disclosure outputs offline and tests the identity and eligibility gates.
 Publication metadata acquisition is a separate explicit command; see the
 [Crossref API documentation](https://www.crossref.org/documentation/retrieve-metadata/rest-api/).
+
+
+## Bibliographic identity and shared collection workflow
+
+The raw inventory DOI remains unchanged. Primary reviews record both legitimate
+publication-version aliases and incorrectly linked originals. A corrected link
+requires explicit identity evidence; the wrong DOI is not treated as an alias of
+the verified original. Publisher metadata may be missing, in which case the case
+remains visible but cannot pass the collection gate. A book chapter without a
+verified DOI is retained with that limitation. The metadata retrieval log records
+successful and unresolved lookups separately.
+
+The [external registry](external/README.md) consolidates repeated originals and
+connects adjudicated disclosures to the existing citation collector and matcher.
+It excludes originals already represented in I4R from new external events, screens
+verified DOI aliases against the frozen Retraction Watch release, and preserves
+all matching exclusions. Citation collection and control selection are separate
+commands. An uncollected history remains missing, not a sequence of zero counts.

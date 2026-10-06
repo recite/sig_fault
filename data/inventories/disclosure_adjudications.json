@@ -2,6 +2,60 @@
   "scope": "Manual adjudications of material errors and earliest substantiated public disclosure; no citation outcomes used. Readiness gates do not establish an identified effect.",
   "cases": [
     {
+      "record_id": "flora_01584",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2016-07-19",
+      "date_precision": "day",
+      "date_evidence": "ClevelandFed public catalogue dates WP16-19 July19,2016. Retained original report contains the invalid-bootstrap argument and empirical application; 2019 journal publication is later.",
+      "date_sources": [
+        {
+          "file": "tax_working_full.pdf",
+          "url": "https://www.clevelandfed.org/-/media/project/clevelandfedtenant/clevelandfedsite/publications/working-papers/2016/wp1619.pdf",
+          "locator": "ClevelandFed WP16-19 July2016; printed pp.1–3 mechanism, p.22 empirical intervals, tables1–2 simulation",
+          "sha256": "fcfcd535344be6a28eff487e6c36338662a564b6c3969a359607a1a7e5d5f8e1",
+          "retrieved_at": "2026-10-06T06:29:22.879155+00:00",
+          "artifact_kind": "downloaded source",
+          "cache_path": "private-data/inventories/primary-review-b4/tax_working_full.pdf"
+        },
+        {
+          "file": "tax_working_catalog.html",
+          "url": "https://www.clevelandfed.org/publications/working-paper/2016/wp-1619-proxy-svars",
+          "locator": "Public release07.19.2016, DOI10.26509/frbc-wp-201619",
+          "sha256": "8cc627fdaa15850574ab792e05dd58e8e02170d0e3fdf2d5cc7a6e560dab8ca3",
+          "retrieved_at": "2026-10-06T06:28:22.203607+00:00",
+          "artifact_kind": "downloaded source",
+          "cache_path": "private-data/inventories/primary-review-b4/tax_working_catalog.html"
+        },
+        {
+          "file": "tax_reply.pdf",
+          "url": "https://discovery.ucl.ac.uk/id/eprint/10071937/1/manuscript_20180707.pdf",
+          "locator": "Printed p.2 admission; pp.5–7 identification and alternative inference; author manuscript hosted by UCL",
+          "sha256": "611e979c6b677e2441a00c8bc808791b3e458019b7ff4a3de1067793ecbfa0af",
+          "retrieved_at": "2026-10-06T06:28:20.339425+00:00",
+          "artifact_kind": "downloaded source",
+          "cache_path": "private-data/inventories/primary-review-b4/tax_reply.pdf"
+        },
+        {
+          "file": "corrections_web.json",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20162011",
+          "locator": "AEA comment and reply identities, July2019 issue",
+          "sha256": "966e0a867c7481815a0e70bc20d51bce4cee4d5038e99e787acf8caced116bd5",
+          "retrieved_at": "2026-10-06T06:35:15.980313+00:00",
+          "artifact_kind": "web-tool extraction/search record",
+          "cache_path": "private-data/inventories/primary-review-b4/corrections_web.json"
+        }
+      ],
+      "search_scope": "Primary report, original-author correction/reply and institutional publication records; earlier version leads retained in primary review.",
+      "decision_evidence": "2016 WP p.22: personal-tax cut output response becomes non-significant even with 68% intervals, where original wild-bootstrap95% intervals excluded zero. Peak (third-step) corrected68% output interval is [−.3%,2.8%] with corporate tax ordered first, versus [−2.9%,4.0%] for the opposite ordering. These two corrected intervals are different identification orderings, not an old/new pair. Reply pp.6–7 confirms wild-bootstrap intervals narrower and MBB includes zero at every displayed output horizon, but other valid inference methods retain significance. Monte Carlo original nominal95% coverage16–18% versus MBB91–92% is a simulation finding, not an empirical effect estimate.",
+      "affected_claim": "Uncertainty around the estimated output response to personal-income-tax cuts.",
+      "original_value": "Original wild-bootstrap 95% intervals exclude zero at reported output horizons.",
+      "corrected_value": "Replacement moving-block 68% intervals include zero; peak interval [−.3%,2.8%] when corporate tax is ordered first.",
+      "correction_scope": "Invalid wild bootstrap understates structural-shock uncertainty; replacement inference holds the underlying point-estimate specification fixed within each ordering. Confidence levels differ and are labeled explicitly; the broader claim of no inferable economic effect is disputed because other valid methods retain significance.",
+      "limitations": "Original code not independently rerun. Full author reply recovered. Printed p.2 explicitly acknowledges wild bootstrap not generally asymptotically valid. Authors defend significant effects under delta method/parametric bootstrap and explain that some critique intervals reflect combined tax changes.",
+      "reviewed_at": "2026-10-06T06:39:13.342320+00:00"
+    },
+    {
       "record_id": "flora_01593",
       "material_error_verified": "yes",
       "publicity_verified": "pending",
@@ -315,6 +369,60 @@
       "original_value": "−0.028",
       "corrected_value": "−0.013",
       "correction_scope": "Restore omitted state-year interactions with otherwise identical columns. Per-capita arrests and alternative abortion proxies are separate analytical changes; negative coefficient remains significant at .01."
+    },
+    {
+      "record_id": "flora_01657",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2002",
+      "date_precision": "year",
+      "date_evidence": "Dated July10,2002 author correction; Imai full report explicitly says corrections were posted publicly and labels the website version2002. Exact first posting day is not established.",
+      "date_sources": [
+        {
+          "file": "calls2005.pdf",
+          "sha256": "c651c914e16421b5af3de0c16bc8999718c389cd832474f096069f8d8097612b",
+          "url": "https://imai.fas.harvard.edu/research/files/matching.pdf",
+          "locator": "p284 states corrections posted publicly; p298/Figure3 explicitly labels Web site2002; p283 acknowledgment cites July2002 conference version; Table 5p291 distinguishes methods",
+          "retrieved_at": "2026-10-06T06:25:59.919214+00:00",
+          "format_note": "Preserved source bytes; derived extraction and images stored separately",
+          "cache_path": "private-data/inventories/primary-review-a4/calls2005.pdf"
+        },
+        {
+          "file": "callscorrection.html",
+          "sha256": "6b3cb95bb4c61bc2e0d6f92290780fd70d51a311e9d762d96d04b41d37789b42",
+          "url": "https://imai.fas.harvard.edu/research/files/correction_third.htm",
+          "locator": "July 10, 2002 header; Background; Table 1 original/corrected coefficients",
+          "retrieved_at": "2026-10-06T06:25:59.788770+00:00",
+          "format_note": "Preserved source bytes; derived extraction and images stored separately",
+          "cache_path": "private-data/inventories/primary-review-a4/callscorrection.html"
+        },
+        {
+          "file": "callsreply_primary.html",
+          "sha256": "ca04f04746e94a0d76fad48dc7b55ecdbeb4cf26641ac0fd6b6cef1b4a909f68",
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5FD2A691AC3ADF31291806B02E43FAFF/S000305540505166Xa.pdf/correction-to-gerber-and-green-2000-replication-of-disputed-findings-and-reply-to-imai-2005.pdf",
+          "locator": "Publisher2005 response abstract only; PDF request redirected to article landing page",
+          "retrieved_at": "2026-10-06T06:29:36.279915+00:00",
+          "format_note": "Preserved source bytes; derived extraction and images stored separately",
+          "cache_path": "private-data/inventories/primary-review-a4/callsreply_primary.html"
+        },
+        {
+          "file": "web_callsreplyid.json",
+          "sha256": "d077a7eb6261ad290a7339ab1a7d320312f096daab23e1720041af964f2beecd",
+          "url": "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/correction-to-gerber-and-green-2000-replication-of-disputed-findings-and-reply-to-imai-2005/5FD2A691AC3ADF31291806B02E43FAFF",
+          "locator": "Formal reply DOI/identity and abstract",
+          "retrieved_at": "2026-10-06T06:32:47.136130+00:00",
+          "format_note": "Web-tool extracted/search evidence; raw publisher PDF not acquired",
+          "cache_path": "private-data/inventories/primary-review-a4/web_callsreplyid.json"
+        }
+      ],
+      "search_scope": "Primary report, original-author correction/reply and institutional publication records; earlier version leads retained in primary review.",
+      "decision_evidence": "Authors July 10, 2002 correction Table 1: no-covariate2SLS phone coefficient -.047(SE.023)→-.018(.022) or -.020(.022), under two hybrid-code assignments. Covariate2SLS -.035(.020)→-.018(.018) or -.022(.019). N29380 unchanged.",
+      "affected_claim": "Estimated effect of nonpartisan telephone contact on voter turnout.",
+      "original_value": "−.047 (SE .023), no-covariate 2SLS",
+      "corrected_value": "−.018 (.022) or −.020 (.022), depending on ambiguous hybrid-call assignment",
+      "correction_scope": "Same estimator and N=29380; repair phone-treatment and contact coding. Imai’s positive matching estimate is a separate methodological change.",
+      "limitations": "Original code not independently rerun. Full2002 author correction acquired;2005 formal reply abstract acquired. Authors acknowledge processing errors but defend substantive null and dispute Imai methodology.",
+      "reviewed_at": "2026-10-06T06:39:13.342253+00:00"
     }
   ]
 }

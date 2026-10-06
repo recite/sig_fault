@@ -17,25 +17,32 @@ def fetch_metadata():
     import i4r_sources as acquisition
 
     reviews = json.loads((DATA / "primary_reviews.json").read_text())["cases"]
-    records = []
+    metadata_path = DATA / "original_metadata.json"
+    records = {r["record_id"]: r for r in json.loads(metadata_path.read_text())}
+    log = []
     for review in reviews:
+        rid = review["record_id"]
         doi = review.get("original_journal_doi") or review["original_doi"]
-        path = CACHE / (review["record_id"] + ".json")
-        url = "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="")
-        work = acquisition.fetch(url, path)["message"]
-        title = (work.get("title") or [""])[0]
-        if inventory.doi(work["DOI"]) != doi:
-            raise ValueError("Crossref DOI differs from requested identity")
-        if registry.identity_title_key(title) != registry.identity_title_key(
-            review["original_title"]
-        ):
-            raise ValueError("Original title requires manual identity adjudication")
-        date = registry.publisher_date({"doi": doi}, work).get("publication_date", "")
-        if not date:
-            raise ValueError("Original lacks publication date")
-        records.append(
-            dict(
-                record_id=review["record_id"],
+        try:
+            if not inventory.doi(doi):
+                raise ValueError("Original DOI unresolved")
+            path = CACHE / (review["record_id"] + ".json")
+            url = "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="")
+            work = acquisition.fetch(url, path)["message"]
+            title = (work.get("title") or [""])[0]
+            if inventory.doi(work["DOI"]) != doi:
+                raise ValueError("Crossref DOI differs from requested identity")
+            if registry.identity_title_key(title) != registry.identity_title_key(
+                review.get("verified_original_title") or review["original_title"]
+            ):
+                raise ValueError("Original title requires manual identity adjudication")
+            date = registry.publisher_date({"doi": doi}, work).get(
+                "publication_date", ""
+            )
+            if not date:
+                raise ValueError("Original lacks publication date")
+            records[rid] = dict(
+                record_id=rid,
                 inventory_doi=review["original_doi"],
                 journal_doi=doi,
                 title=title,
@@ -48,8 +55,15 @@ def fetch_metadata():
                     path.with_suffix(".json.source.json").read_text()
                 )["retrieved_at"],
             )
-        )
-    (DATA / "original_metadata.json").write_text(json.dumps(records, indent=2) + "\n")
+            log.append(dict(record_id=rid, status="complete", detail=""))
+        except Exception as exc:
+            log.append(dict(record_id=rid, status="unresolved", detail=str(exc)[:200]))
+            if "429" in str(exc) or "rate limit" in str(exc):
+                break
+        metadata_path.write_text(json.dumps(list(records.values()), indent=2) + "\n")
+        inventory.write_csv("original_metadata_retrieval.csv", log)
+    metadata_path.write_text(json.dumps(list(records.values()), indent=2) + "\n")
+    inventory.write_csv("original_metadata_retrieval.csv", log)
 
 
 def date_year(value, precision):
@@ -67,14 +81,19 @@ def make_rows(reviews, metadata, decisions, last_complete_year=2025):
     if len(lookup) != len(reviews):
         raise ValueError("Repeated review identity")
     meta = {r["record_id"]: r for r in metadata}
-    if len(meta) != len(metadata) or set(meta) != set(lookup):
-        raise ValueError("Metadata must cover each reviewed original exactly once")
+    if len(meta) != len(metadata) or not set(meta).issubset(lookup):
+        raise ValueError("Repeated or unknown original metadata record")
     choices = {r["record_id"]: r for r in decisions}
     if len(choices) != len(decisions) or not set(choices).issubset(lookup):
         raise ValueError("Repeated or unknown disclosure adjudication")
     rows = []
     for rid, review in lookup.items():
-        m = meta[rid]
+        m = meta.get(rid) or dict(
+            inventory_doi=review["original_doi"],
+            journal_doi=review.get("original_journal_doi") or review["original_doi"],
+            title=review.get("verified_original_title") or review["original_title"],
+            publication_date="",
+        )
         if m["inventory_doi"] != review["original_doi"] or m["journal_doi"] != (
             review.get("original_journal_doi") or review["original_doi"]
         ):
@@ -106,15 +125,19 @@ def make_rows(reviews, metadata, decisions, last_complete_year=2025):
             ]
         ):
             raise ValueError("Verified material error lacks its numerical consequence")
-        publication_year = int(m["publication_date"][:4])
-        age = bool(year and publication_year < year - 2)
+        publication_year = (
+            int(m["publication_date"][:4]) if m["publication_date"] else None
+        )
+        age = bool(year and publication_year and publication_year < year - 2)
         followup = bool(year and year + 1 <= last_complete_year)
         reasons = []
+        if rid not in meta:
+            reasons.append("original_metadata_unresolved")
         if status != "yes":
             reasons.append("material_error_" + status)
         if not year:
             reasons.append("disclosure_year_unresolved")
-        elif not age:
+        elif publication_year and not age:
             reasons.append("original_too_recent_for_two_full_preyears")
         if year and not followup:
             reasons.append("first_full_postyear_unavailable")

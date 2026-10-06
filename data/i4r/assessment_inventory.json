@@ -7580,10 +7580,10 @@
     ],
     "assessment_type": "computational_reproduction_and_robustness",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "yes",
-    "disposition": "material_error",
-    "material_error_verified": true,
-    "evidence": "Specific treatment-indicator coding error materially changes nighttime-light coefficient; geography, calibration and treatment-zone sensitivity are separate issues. Earliest error-specific version still requires verification.",
+    "assessment_resolved": "no",
+    "disposition": "verified_error_materiality_unresolved",
+    "material_error_verified": false,
+    "evidence": "The post-treatment indicator exceeds one instead of being binary. Reported coefficient changes also recalculate distance and increase spatial resolution; neither reviewed version supplies an isolated repair estimate. Materiality remains unresolved. The error is present in January 2024 arXiv v1.",
     "evidence_locator": {
       "document_id": "dp_148_download_0",
       "pdf_pages": [
@@ -7597,7 +7597,7 @@
       ],
       "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors."
+    "limitations": "Verified coding error; numerical consequence of this repair alone is not established. See data/i4r/claim_adjudications.json, dp_148, for version, table and source hashes. Original code not independently rerun."
   },
   {
     "unit_id": "i4r_dp149_assessment",

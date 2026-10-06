@@ -124,7 +124,7 @@ One row: independently enumerated reviewer-team assessment of one original artic
 | `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 0 | 62 distinct nonmissing values |
 | `evidence_summary` | string | Paraphrased evidence supporting a candidate assessment, including limitations. | 0 | 468 distinct nonmissing values |
 | `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 569 distinct nonmissing values |
-| `limitations` | string | Scope limits of the source adjudication. | 0 | 46 distinct nonmissing values |
+| `limitations` | string | Scope limits of the source adjudication. | 0 | 47 distinct nonmissing values |
 
 ## assessment_scope.csv
 
@@ -408,16 +408,16 @@ One row: selected control balance. Rows: 0. Key: event_id, control_id, horizon. 
 
 ## match_candidates.csv
 
-One row: screened event–control–horizon. Rows: 1341. Key: event_id, control_id, horizon. Producer: `i4r_match`.
+One row: screened event–control–horizon. Rows: 1095. Key: event_id, control_id, horizon. Producer: `i4r_match`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | dp_021_disclosure; dp_148_disclosure; dp_292_disclosure; dp_294_disclosure |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_19321c88424658; i4r_55d334eaeb4010; i4r_ece0397b04bfa9; i4r_f45e09f5bc283f |
-| `control_id` | string | Original control-article ID retained across reused matches. | 0 | 696 distinct nonmissing values |
-| `distance` | number | Standardized pre-citation and text matching distance; no post outcomes used. | 1341 |  |
+| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | dp_021_disclosure; dp_292_disclosure; dp_294_disclosure |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_55d334eaeb4010; i4r_ece0397b04bfa9; i4r_f45e09f5bc283f |
+| `control_id` | string | Original control-article ID retained across reused matches. | 0 | 535 distinct nonmissing values |
+| `distance` | number | Standardized pre-citation and text matching distance; no post outcomes used. | 1095 |  |
 | `eligible` | string | yes/no after metadata, age, exposure and citation-caliper gates. | 0 | no |
-| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | assessment_or_reply; historical_republication; incomplete_pre_citations; insufficient_article_age; known_assessed_article; known_retraction_in_window; nonresearch_publication |
+| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | assessment_or_reply; incomplete_pre_citations; insufficient_article_age; known_assessed_article; known_retraction_in_window; nonresearch_publication |
 | `horizon` | integer | Full calendar years after disclosure, primary 1; secondary 2 and 3. | 0 | 1 to 3 |
 
 ## match_exclusions.csv
@@ -559,8 +559,8 @@ One row: independent source eligibility/classification decision. Rows: 714. Key:
 | `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 631 distinct nonmissing values |
 | `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 0 | 92 distinct nonmissing values |
 | `evidence` | string | Source pointer or documented identity/link decision. | 7 | 556 distinct nonmissing values |
-| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 542 distinct nonmissing values |
-| `limitations` | string | Scope limits of the source adjudication. | 0 | 86 distinct nonmissing values |
+| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 541 distinct nonmissing values |
+| `limitations` | string | Scope limits of the source adjudication. | 0 | 87 distinct nonmissing values |
 | `adjudication_date` | string | Date the source evidence was adjudicated; not public disclosure date. | 0 | 2026-10-05; 2026-10-06 |
 
 ## source_articles.csv
@@ -628,8 +628,8 @@ One row: source reading/disposition. Rows: 714. Key: source_id. Producer: `i4r_r
 | `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 631 distinct nonmissing values |
 | `adjudicated_disposition` | string | Independent source-level classification; distinct from verified exposure or paper-wide validity. | 0 | 92 distinct nonmissing values |
 | `adjudication_evidence` | string | Evidence supporting source eligibility, classification and any version equivalence. | 7 | 556 distinct nonmissing values |
-| `adjudication_locator` | string | Document/page/section references supporting independent source adjudication. | 0 | 542 distinct nonmissing values |
-| `adjudication_limitations` | string | Unresolved evidence or limits to source-level adjudication. | 0 | 86 distinct nonmissing values |
+| `adjudication_locator` | string | Document/page/section references supporting independent source adjudication. | 0 | 541 distinct nonmissing values |
+| `adjudication_limitations` | string | Unresolved evidence or limits to source-level adjudication. | 0 | 87 distinct nonmissing values |
 
 ## source_units.csv
 
@@ -642,7 +642,7 @@ One row: catalog source-equivalence group, not necessarily one independent artic
 | `catalog_entries` | integer | Number of catalog listings in a source-assessment unit. | 0 | 1 to 3 |
 | `assessment_eligibility` | string | yes/no/unresolved: whether the source is an eligible article-specific assessment for the coverage denominator. | 0 | no; unresolved; yes |
 | `assessment_resolved` | string | yes/no: explicit final adjudication for the coverage gate; default no. | 0 | no; yes |
-| `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 233 | 61 distinct nonmissing values |
+| `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 234 | 61 distinct nonmissing values |
 | `adjudication_conflict` | string | yes if resolved reviewers assign inconsistent dispositions to purported versions. | 0 | no |
 
 ## sources.csv

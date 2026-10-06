@@ -1,9 +1,10 @@
 # External error disclosures
 
-Of 20 primary-source reviews, 7 have an adjudicated material error and 5 have a supported public disclosure year. 4 pass both these checks and the article-age/follow-up restrictions for citation collection. None yet contributes a new matched effect estimate.
+Of 47 primary-source reviews, 9 have an adjudicated material error and 7 have a supported public disclosure year. 5 pass both these checks and the article-age/follow-up restrictions for citation collection. None yet contributes a new matched effect estimate.
 
 | Original paper | Public year | Material error | Collection status |
 | --- | ---: | --- | --- |
+| The Dynamic Effects of Personal and Corporate Income Tax Changes in the United States | 2016 | yes | Ready |
 | Testing Efficient Risk Sharing with Heterogeneous Risk Preferences | Unresolved | yes | Disclosure year unresolved |
 | Heterogeneity and Aggregation: Implications for Labor-Market Fluctuations | Unresolved | yes | Disclosure year unresolved |
 | Risk Matters: The Real Effects of Volatility Shocks | 2014 | yes | Ready |
@@ -11,6 +12,7 @@ Of 20 primary-source reviews, 7 have an adjudicated material error and 5 have a 
 | Stationary Concepts for Experimental 2x2-Games | 2009 | yes | Insufficient pre-disclosure history |
 | Antidumping Investigations and the Pass-Through of Antidumping Duties and Exchange Rates | 2010 | yes | Ready |
 | The Impact of Legalized Abortion on Crime | 2005 | yes | Ready |
+| The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment | 2002 | yes | Insufficient pre-disclosure history |
 
 ## Definition and evidence
 

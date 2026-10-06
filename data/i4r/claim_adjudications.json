@@ -1359,5 +1359,40 @@
       "https://ideas.repec.org/p/zbw/i4rdps/107.html"
     ],
     "cohort_recommendation": "Retain verified material error in registry; exclude effect estimation because earliest public year is unresolved and the original is too recent for the required pre-period."
+  },
+  {
+    "source_id": "dp_148",
+    "original_title": "The Arrival of Fast Internet and Employment in Africa",
+    "original_doi": "10.1257/aer.20161385",
+    "error_verified": true,
+    "material_error_verified": false,
+    "materiality_status": "unresolved",
+    "error": "Post-treatment indicator exceeds one instead of being binary.",
+    "quantitative_consequence": {
+      "original_coefficient": 0.024,
+      "original_n": 80360,
+      "joint_revision_coefficient": 0.046,
+      "joint_revision_n": 11499453,
+      "contrast_scope": "arXiv v1 Table7; jointly corrects indicators, recalculates distance and increases spatial resolution. Not an isolated coding correction."
+    },
+    "materiality": "Later report calls the coding repair a major reason for the coefficient increase, but neither reviewed version reports a repair-only estimate. Further .053 in v1 additionally changes calibration, treatment radii and node classification. Verified error retained; strict material-error cohort eligibility unresolved.",
+    "first_substantiated_public_date": "2024-01-17",
+    "public_date_evidence": "Exact arXiv v1 contains the indicator error; later journal/working-paper version does not reset event.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/pdf/2401.13694v1",
+        "locator": "Printed pp.35–38; Table7",
+        "sha256": "60b00d74e1eb92fe7e5af2bd00f5d7800942f1c1cb664a5b585236cc57de80b7",
+        "cache_path": "private-data/inventories/primary-review-c4/dp148_arxiv_v1.pdf"
+      },
+      {
+        "url": "https://www.econstor.eu/bitstream/10419/302282/1/I4R-DP148.pdf",
+        "locator": "Printed pp.39–43; Table7",
+        "sha256": "fc9b94f5e5e68370bcb2b6bff4c42f0860281decffc6131cba9180846059ae54",
+        "cache_path": "private-data/i4r/documents/dp_148_download_0.pdf"
+      }
+    ],
+    "verification_scope": "Central check of source passages and tables following independent review; original code not rerun.",
+    "reviewed_at": "2026-10-06T06:33:46.201631+00:00"
   }
 ]

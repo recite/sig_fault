@@ -1,9 +1,9 @@
 {
   "status": "secondary_three_component_descriptive_synthesis",
   "estimand": "Equal-component average of log relative growth in group mean citations",
-  "i4r_cases": 4,
+  "i4r_cases": 3,
   "overlapping_original_control_dois": 0,
   "covariance_assumption": "Zero cross-component covariance; absence of shared DOIs is insufficient proof",
   "primary_i4r_article_review_analysis_complete": false,
-  "caveats": ["Retrospective, selected I4R all-type outcome with 4 disclosure events", "Different source coverage, warning definitions and exposure clocks", "Exploratory case-delta and Welch intervals; no between-component generalization variance", "This is not an identified common causal publicity effect"]
+  "caveats": ["Retrospective, selected I4R all-type outcome with 3 disclosure events", "Different source coverage, warning definitions and exposure clocks", "Exploratory case-delta and Welch intervals; no between-component generalization variance", "This is not an identified common causal publicity effect"]
 }

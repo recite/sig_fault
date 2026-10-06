@@ -305,7 +305,7 @@ def report(counts):
     table_rows = "\n".join(rows)
     text = f"""# Larger assessment inventories
 
-The four matched I4R papers remain a pilot. The next expansion starts from complete
+The small matched I4R extension remains a pilot. Expansion starts from complete
 external inventories, before selecting papers with verified consequential errors.
 No citation outcomes were used to choose or classify these new records.
 
@@ -328,8 +328,8 @@ FLoRA contains {counts['reproduction_records']:,} reproduction records covering
 {counts['challenged_reproduction_original_dois']:,} original DOIs describe computational
 issues or robustness challenges. Among those originals,
 {counts['challenged_reproduction_dois_absent_i4r']:,} do not occur in the current I4R
-DOI registry. This is a larger and more relevant starting pool than repeatedly
-changing the specification on four papers.
+DOI registry. These records supply a broader pool for checking errors and their
+public disclosure dates.
 
 The [review queue](../data/inventories/reproduction_review_queue.csv) retains **all**
 reproduction records, including favorable and technical-failure assessments.

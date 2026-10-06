@@ -28,15 +28,15 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Source units after verified duplicate links | 631 |
 | Verified duplicate listings collapsed | 83 |
 | Source units containing article-specific assessments | 539 |
-| Source units with resolved target classification | 398 |
+| Source units with resolved target classification | 397 |
 | Units whose assessment eligibility remains unresolved | 7 |
 | Curated material-error candidate records | 38 |
-| Source-verified material-error disclosures with verified public year | 28 |
-| Disclosures satisfying the primary date/age window | 6 |
+| Source-verified material-error disclosures with verified public year | 27 |
+| Disclosures satisfying the primary date/age window | 5 |
 | Events with selected controls | 0 |
 | Complete matched article-period observations | 0 |
 
-The source-level resolution fraction among confirmed assessment listings is 73.8%. Including unresolved-eligibility source units in the denominator gives 72.9%.
+The source-level resolution fraction among confirmed assessment listings is 73.7%. Including unresolved-eligibility source units in the denominator gives 72.7%.
 
 These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. Explicitly enumerated assessments are not yet a census of the total assessment population. The source-by-source enumeration ledger is `data/i4r/assessment_scope.csv`. See `data/i4r/coverage_scope.json` for resolved and unresolved scope.
 

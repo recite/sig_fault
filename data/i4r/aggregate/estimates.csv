@@ -1,4 +1,4 @@
 "horizon","articles","affected_articles","disclosure_events","estimate","standard_error","lower","upper","inference"
-1,16,4,4,7.66666666666667,10.6560587133136,-26.2456680144045,41.5790013477379,"two-way article/disclosure clusters, conditional on matches"
+1,12,3,3,8.55555555555556,15.2125273263295,-56.8986666714643,74.0097777825754,"two-way article/disclosure clusters, conditional on matches"
 2,8,2,2,-0.666666666666668,6.84078184831941,-87.5870413869206,86.2537080535873,"two-way article/disclosure clusters, conditional on matches"
 3,8,2,2,8.66666666666667,2.88032919929238,-27.9313858471245,45.2647191804578,"two-way article/disclosure clusters, conditional on matches"
