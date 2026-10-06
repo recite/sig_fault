@@ -1,5 +1,6 @@
 source("R/analysis.R")
 source("R/lal.R")
+source("R/meta.R")
 dir.create("data/meta", recursive = TRUE, showWarnings = FALSE)
 
 nw <- read.csv("data/derived/panel.csv", stringsAsFactors = FALSE)
@@ -40,22 +41,99 @@ for (diagnostic in names(labels)) {
 contrasts <- do.call(rbind, rows)
 write.csv(contrasts, "data/meta/audit_contrasts.csv", row.names = FALSE)
 jsonlite::write_json(list(
-  status = "study_specific_estimates_available_synthesis_pending",
+  status = "provisional_two_audit_synthesis_available",
   estimand = paste(
-    "Study-specific log ratio of flagged and comparison groups' post/pre citation ratios",
+    "Equal-audit average of log flagged-versus-comparison post/pre citation ratios",
     "from the full calendar year preceding the warning year to the year following it."
   ),
   limitations = c(
     "Historical Nieuwenhuis cohort includes partial publication-year baselines.",
     "Database and document-type harmonization remains incomplete.",
     "Lal formal publication followed earlier circulation; diagnostics differ from verified errors.",
-    "I4R matched citation panels remain incomplete."
+    "I4R matched citation panels remain incomplete.",
+    "Intervals assume independent audit errors and omit generalization uncertainty."
   ),
   pooling_rule = paste(
     "Display study-specific contrasts first. Multiple diagnostics from one audit are dependent",
-    "alternatives, not independent studies. No pooled estimate is emitted at this stage."
+    "alternatives, not independent studies. Each synthesis includes one contrast per audit."
   )
 ), "data/meta/status.json", pretty = TRUE, auto_unbox = TRUE)
+
+combined <- list()
+for (sample in unique(contrasts$sample[contrasts$audit == "Nieuwenhuis"])) {
+  for (diagnostic in names(labels)) {
+    take <- (contrasts$audit == "Nieuwenhuis" & contrasts$sample == sample) |
+      (contrasts$audit == "Lal" & contrasts$diagnostic == labels[diagnostic])
+    selected <- contrasts[take, ]
+    result <- equal_audit_synthesis(selected)
+    combined[[length(combined) + 1L]] <- cbind(
+      nw_sample = sample, lal_diagnostic = labels[diagnostic],
+      nw_percent = selected$percent[selected$audit == "Nieuwenhuis"],
+      lal_percent = selected$percent[selected$audit == "Lal"], result
+    )
+  }
+}
+combined <- do.call(rbind, combined)
+write.csv(combined, "data/meta/synthesis.csv", row.names = FALSE)
+body <- c(
+  "\\begin{tabular}{lrrrl}", "\\toprule",
+  "IV diagnostic & Neuroscience & IV audit & Combined & 95\\% interval \\\\", "\\midrule"
+)
+primary_rows <- combined$nw_sample == "Historical cohort" &
+  combined$lal_diagnostic %in% labels[c("weak", "sensitive")]
+for (i in which(primary_rows)) {
+  row <- combined[i, ]
+  body <- c(body, sprintf(
+    "%s & %.1f & %.1f & %.1f & [%.1f, %.1f] \\\\", row$lal_diagnostic,
+    row$nw_percent, row$lal_percent, row$percent, row$lower, row$upper
+  ))
+}
+writeLines(c(body, "\\bottomrule", "\\end{tabular}"), "tabs/meta_summary.tex")
+
+meta_macros <- c()
+for (diagnostic in c("weak", "sensitive")) {
+  main_cohort <- combined$nw_sample == "Historical cohort"
+  row <- combined[main_cohort & combined$lal_diagnostic == labels[diagnostic], ]
+  prefix <- if (diagnostic == "weak") "MetaWeak" else "MetaSensitive"
+  for (field in c("percent", "lower", "upper")) {
+    meta_macros[paste0(prefix, tools::toTitleCase(field))] <- sprintf("%.1f", row[[field]])
+  }
+}
+writeLines(
+  paste0("\\newcommand{\\", names(meta_macros), "}{", meta_macros, "}"),
+  "tabs/meta_macros.tex"
+)
+dir.create("docs/meta", recursive = TRUE, showWarnings = FALSE)
+report <- c(
+  "# Provisional synthesis across two methodological audits", "",
+  "The completed neuroscience and IV cohorts permit a common-window summary, while",
+  "the full OpenAlex neuroscience comparison and matched I4R panels remain pending.",
+  "Every row below includes one estimate from each audit, with equal audit weights.",
+  "Alternative IV diagnostics are separate analyses of the same evidence.", "",
+  paste0(
+    "| Neuroscience sample | IV diagnostic | Neuroscience (%) | IV (%) | ",
+    "Combined (%) | 95% interval |"
+  ),
+  "| --- | --- | ---: | ---: | ---: | --- |"
+)
+for (i in seq_len(nrow(combined))) {
+  row <- combined[i, ]
+  report <- c(report, sprintf(
+    "| %s | %s | %.1f | %.1f | %.1f | [%.1f, %.1f] |",
+    row$nw_sample, row$lal_diagnostic, row$nw_percent, row$lal_percent,
+    row$percent, row$lower, row$upper
+  ))
+}
+report <- c(
+  report, "",
+  "The combined estimate changes with the IV diagnostic. It is not evidence for",
+  "a uniform citation response, nor an estimate of the effect of the typical scientific error.",
+  "The AR-only rows are exploratory: their IV component has only three flagged papers.", "",
+  "See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),",
+  "[synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).",
+  "Run `make synthesis` to reproduce these results and the manuscript table."
+)
+writeLines(report, "docs/meta/README.md")
 
 fragment <- c(
   "\\begin{tabular}{lrrrr}", "\\toprule",

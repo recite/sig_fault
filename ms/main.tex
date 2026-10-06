@@ -10,6 +10,8 @@
 \setlength{\emergencystretch}{2em}
 \input{../tabs/macros.tex}
 \input{../tabs/lal_macros.tex}
+\input{../tabs/nieuwenhuis_macros.tex}
+\input{../tabs/meta_macros.tex}
 \title{Significant Error:\\Citations to Research With Publicized Statistical Errors}
 \author{Ken Cor \and Gaurav Sood}
 \date{October 2026}
@@ -180,5 +182,27 @@ Document types materially affect the IV comparison. The original broad outcome i
 
 The source-comparison protocol preserves the original neuroscience analysis cohort and compares identical papers and years before considering a pooled result. Exact DOI matches identify shared citing relationships, with each database's publication year retained. Historical exports lack the detailed document-type field needed to impose an identical article/review filter. Missing histories stay missing; a relationship absent from one database is not automatically a false citation. Source discrepancies therefore measure differences between the recorded citation histories rather than bias relative to an assumed ground truth.
 
-For comparison across audits, the repository also reports the contrast between the calendar year before and the calendar year after the warning year, excluding the warning year itself. This uses 2010 and 2012 for neuroscience and 2023 and 2025 for the IV audit. The neuroscience papers published in 2010 have a partial publication-year baseline, so a separate 2009-publication cohort has a complete baseline year. These common-window results remain study-specific; multiple diagnostics from the IV audit are not counted as independent replications of a publicity effect.
+The currently available paired subset contains \NwPairedFlagged{} flagged and \NwPairedComparison{} comparison papers. Among \NwYearMismatch{} shared citation relationships with conflicting years, OpenAlex dates \NwEarlier{} earlier; publisher-deposited online and print dates account for \NwDateExplained{} of these differences. Moving shared eligible citations between years accounts for \NwBaselineShift{} of the \NwBaselineGap{} additional baseline-year citations recorded by OpenAlex. This preliminary comparison shows why citation dating can change measured growth. Estimating how database choice changes the flagged-versus-comparison contrast requires paired histories for both groups.
+
+For comparison across audits, the repository also reports the contrast between the calendar year before and the calendar year after the warning year, excluding the warning year itself. This uses 2010 and 2012 for neuroscience and 2023 and 2025 for the IV audit. The neuroscience papers published in 2010 have a partial publication-year baseline, so a separate 2009-publication cohort has a complete baseline year. The synthesis below uses these common windows; alternative IV diagnostics are not counted as independent replications.
+
+\section{Provisional synthesis across audits}\label{app:synthesis}
+The completed cohorts support a provisional summary of their relative citation-growth contrasts. We give each audit equal weight on the log scale: $\bar\beta=(\widehat\beta_N+\widehat\beta_L)/2$. The reported quantity, $100(e^{\bar\beta}-1)$, transforms the geometric average of their relative growth ratios. It is neither the citation ratio obtained by pooling papers nor the arithmetic average percentage change. Each analysis includes one contrast from each audit; changing the IV diagnostic changes the estimand.
+
+\begin{table}[htbp]
+\centering
+\caption{Equal-audit synthesis under the two primary IV definitions}
+\label{tab:meta}
+\small
+\input{../tabs/meta_summary.tex}
+\begin{minipage}{\textwidth}
+\footnotesize
+All entries are percentage relative growth contrasts. Component estimates compare 2010 with 2012 in neuroscience and 2023 with 2025 in the IV audit. Combined estimates give the two log contrasts equal weight. The intervals condition on these audits and assume independent audit estimates; they do not include uncertainty from choosing audits, databases, timing or diagnostic definitions.
+\end{minipage}
+\end{table}
+
+The combined contrast is \MetaWeakPercent\% (95\% interval [\MetaWeakLower, \MetaWeakUpper]\%) under the instrument-strength screen and \MetaSensitivePercent\% ([\MetaSensitiveLower, \MetaSensitiveUpper]\%) under inferential sensitivity. The difference illustrates why the diagnostic definition matters. The repository also reports the union and AR-only alternatives and repeats the synthesis using only neuroscience papers published in 2009. The AR-only comparison remains exploratory because its IV component contains only \LalARCount{} flagged papers.
+
+With component variances $s_N^2$ and $s_L^2$, the variance of the equal-audit mean is $(s_N^2+s_L^2)/4$. Intervals use a Welch--Satterthwaite approximation, with degrees of freedom $(s_N^2+s_L^2)^2/(s_N^4/d_N+s_L^4/d_L)$ and component article-cluster degrees of freedom $d_N,d_L$. This approximation uses cluster-robust component variances and assumes independence across audits. The interval describes estimation uncertainty for these fixed cases; it is not a random-effects prediction interval for other critiques. Different citation sources, incomplete type harmonization, prior circulation of the IV critique, and the distinction between a demonstrated error and an adverse diagnostic remain embedded in the combined estimates. We therefore interpret them as descriptive summaries, not a general causal effect of publicizing errors.
+
 \end{document}

@@ -14,7 +14,7 @@ For each database, show annual means and medians for 2009–2015, the 2010 basel
 
 OpenAlex's primary count includes articles and reviews, matching the Lal extension. Historical exports lack a document-type field beyond Web of Science's broad publication type, so their original counts cannot be described as identically type-restricted. Report that asymmetry and preserve a broader OpenAlex sensitivity. DOI overlap and year disagreement among shared citation links separate some sources of discrepancy; non-DOI links remain unresolved rather than automatically false. Manual review can establish particular false or missing links, but absence from one database alone cannot.
 
-Source differences in the growth contrast must be estimated on the same complete-paper sample. When both groups are available, bootstrap paired paper histories within flag groups to estimate uncertainty in the difference between database contrasts. Do not subtract independent standard errors for paired measurements. Existing ten-paper pilot histories include flagged papers only and cannot identify a flagged-versus-comparison effect.
+Source differences in the growth contrast must be estimated on the same complete-paper sample. The completed mixed-source cohorts can support a provisional descriptive synthesis while that source comparison is pending. When both groups are available, bootstrap paired paper histories within flag groups to estimate uncertainty in the difference between database contrasts. Do not subtract independent standard errors for paired measurements. Existing ten-paper pilot histories include flagged papers only and cannot identify a flagged-versus-comparison effect.
 
 ## Reproducibility and status
 

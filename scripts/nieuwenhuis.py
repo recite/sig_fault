@@ -796,6 +796,7 @@ def report():
         "requests. No key is stored in the data.",
         "",
         "See [design](design.md), [construction and dictionary](data.md), "
+        "[source-discrepancy diagnostics](diagnostics.md), "
         "[status JSON](../../data/nieuwenhuis/status.json), and "
         "[paired records](../../data/nieuwenhuis/paired_panel.csv).",
     ]

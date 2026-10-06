@@ -1,0 +1,21 @@
+{
+  "paired_papers": 10,
+  "reconciled_doi_links": {
+    "both": 1130,
+    "openalex_only": 292,
+    "wos_only": 8
+  },
+  "link_reviews": {
+    "doi_transcription_error": 2,
+    "book_reference_component": 1,
+    "unresolved": 6,
+    "translation": 1
+  },
+  "shared_year_disagreements": 219,
+  "openalex_earlier": 218,
+  "date_explanations": {
+    "openalex_online_wos_print": 97,
+    "incomplete_dates": 111,
+    "dates_disagree": 11
+  }
+}

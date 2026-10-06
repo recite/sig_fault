@@ -1,0 +1,15 @@
+# Synthesis estimand and inference
+
+The target is the equally weighted average log relative citation-growth contrast in the two completed audits. Within each audit, the contrast compares flagged and comparison papers' post/pre citation ratios. Exponentiating the average gives the geometric average of those relative ratios. It does not give a pooled-paper ratio, an arithmetic average percentage change, or the effect of the typical error in science.
+
+Use the calendar year before and after the warning year, excluding that year: 2010 and 2012 for the neuroscience critique; 2023 and 2025 for formal publication of the IV audit. The latter had circulated earlier, so this is not a shared first-exposure estimand. Historical neuroscience counts use Web of Science, whereas IV counts use OpenAlex articles/reviews. The mixed-source summary does not wait for all additional acquisitions, but retains these differences explicitly. A separate neuroscience 2009-publication cohort removes partial publication-year baselines.
+
+For each synthesis, include one neuroscience contrast and one IV diagnostic contrast. The effective-F and inferential-sensitivity definitions are the two primary alternatives. Their union and the three-paper AR-only classification are secondary; the latter is exploratory. Never enter those overlapping diagnostics as independent audits. Equal audit weights define the summary rather than allowing sample size or citation dispersion to decide which critique dominates. These choices are retrospective and made with the component estimates already known.
+
+The variance of the equal-audit mean is the sum of component variances divided by four, assuming independent audit estimates. A Welch–Satterthwaite approximation combines their article-cluster degrees of freedom. This is approximate because component variances are cluster-robust. Intervals condition on the included audits and classifications; they omit between-audit generalization uncertainty, unmeasured exposure, database error and specification selection. We do not estimate a heterogeneity distribution or a random-effects prediction interval from two critiques.
+
+The two original-paper rosters have no shared DOI. That check prevents direct double counting but does not establish independence of all scientific processes or unobserved influences across the audits. Different citation windows also prevent a single dated citing document from contributing to both main outcome windows under consistent dates.
+
+`R/meta.R` implements the fixed-audit average, variance, transformation and interval. `scripts/synthesis.R` assembles completed contrasts and regenerates the manuscript table, macros, data and report. Tests compare inference with an independently calculated Welch contrast, verify the geometric rather than arithmetic transformation, and reject multiple rows carrying the same audit identity.
+
+An independent calculation reproduced every synthesis row, including standard errors, degrees of freedom, transformations and interval endpoints. These checks validate the calculation conditional on its inputs, not the publicity identification assumptions.

@@ -45,7 +45,7 @@ The [Lal et al. extension](docs/lal/README.md) applies the citation-trajectory a
 
 The [Nieuwenhuis source comparison](docs/nieuwenhuis/README.md) links every original assessment to a verified article DOI and compares historical Web of Science counts with available OpenAlex histories for the same papers. The current paired sample contains only flagged papers; it can reveal source discrepancies but cannot yet compare the databases’ estimates of the publicity effect.
 
-`make synthesis` generates [comparable one-year contrasts](data/meta/audit_contrasts.csv) for the completed cohorts and the manuscript’s IV-audit table. Alternative diagnostic definitions from the same audit are dependent comparisons. A pooled estimate awaits the remaining citation collection; the [synthesis status](data/meta/status.json) records the outstanding differences in timing, measurement, and error definitions.
+`make synthesis` generates [comparable one-year contrasts](data/meta/audit_contrasts.csv) for the completed cohorts and the manuscript’s IV-audit table. Alternative diagnostic definitions from the same audit are dependent comparisons. The [provisional equal-audit synthesis](docs/meta/README.md) combines one contrast from each completed audit and shows how the result changes with the IV diagnostic. It summarizes these cases, with differences in timing, citation measurement, and error definitions still present; it is not a general causal effect of publicizing errors. The [synthesis status](data/meta/status.json) records the remaining collection work.
 
 | Path | Contents |
 | --- | --- |
