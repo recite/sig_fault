@@ -1295,7 +1295,7 @@
     }
   },
   "match_candidates.csv": {
-    "rows": 1335,
+    "rows": 1341,
     "duplicate_keys": 0,
     "key": [
       "event_id",
@@ -1316,11 +1316,11 @@
       "control_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 694
+        "distinct_nonmissing": 696
       },
       "distance": {
         "type": "number",
-        "missing": 1335,
+        "missing": 1341,
         "distinct_nonmissing": 0
       },
       "eligible": {

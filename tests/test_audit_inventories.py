@@ -9,6 +9,46 @@ import audit_inventories as inventory  # noqa: E402
 
 
 class InventoryTests(unittest.TestCase):
+    def test_primary_reviews_require_unique_identities_and_source_evidence(self):
+        row = dict(
+            record_id="a",
+            original_doi="10.1234/a",
+            report_doi="10.1234/b",
+            original_title="Study",
+        )
+        review = row | dict(
+            adjudication="Unresolved",
+            mechanism="Coding",
+            consequence="Unknown",
+            correction_only="Not isolated",
+            response_status="Not recovered",
+            sources=[
+                dict(
+                    url="https://example.org/report", locator="Table 1", sha256="a" * 64
+                )
+            ],
+            date_evidence=[],
+            remaining_unknowns=["Materiality"],
+        )
+        result = inventory.primary_review_rows([row], [review])
+        self.assertEqual(result[0]["citation_analysis_eligible"], "pending")
+        for reviews in [
+            [review, review],
+            [review | {"record_id": "missing"}],
+            [review | {"original_doi": "10.1234/other"}],
+            [review | {"sources": []}],
+            [
+                review
+                | {
+                    "sources": [
+                        dict(url="https://example.org", locator="", sha256="bad")
+                    ]
+                }
+            ],
+        ]:
+            with self.assertRaises(ValueError):
+                inventory.primary_review_rows([row], reviews)
+
     def test_identifiers_are_not_invented(self):
         self.assertEqual(inventory.doi("https://doi.org/10.1234/ABC"), "10.1234/abc")
         for value in [

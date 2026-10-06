@@ -48,6 +48,12 @@ response before verification. Other records remain in the
 reproduction failures, minor discrepancies and specification disputes. Excerpt
 screening does not establish material error or rule it out.
 
+Primary-source review now covers 20 records,
+with full reports where recovered and explicitly limited reviews otherwise.
+The [review table](../data/inventories/primary_review_summary.csv) separates the
+error mechanism, numerical consequence, author response and unresolved date evidence.
+These reviews do not automatically create eligible treatment events.
+
 ## Second priority: the large statistical-reporting audit
 
 The archived statcheck release supplies all 50,845
@@ -90,4 +96,7 @@ missing values, attribution and the remaining eligibility checks. Source labels 
 not automatically establish material errors. Separate
 [primary-report reviews](inventory-primary-reviews.md) document the first adjudications
 and remaining questions. These inventories contribute **zero new eligible citation
-comparisons** so far. The existing citation estimates are unchanged.
+comparisons** so far. They also expand the screen for previously assessed comparison
+papers, which changes one I4R pilot match; see the updated
+[pilot results](i4r/aggregate-results.md). The Nieuwenhuis and Lal estimates are
+unchanged.

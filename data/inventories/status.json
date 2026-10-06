@@ -31,6 +31,7 @@
     "robustness_dispute": 96
   },
   "explicit_error_candidate_records": 47,
+  "primary_source_reviews": 20,
   "explicit_error_candidate_dois": 45,
   "candidate_dois_absent_i4r": 36,
   "repeated_complete_assessment_keys": 5,

@@ -1,7 +1,108 @@
 {
-  "scope": "Primary-source audit of four selected FLoRA leads; findings are not automatic treatment eligibility decisions. No original analyses rerun.",
+  "scope": "Primary-source reviews of selected FLoRA leads, including full reports where recovered and explicitly limited abstract/metadata reviews otherwise. No automatic treatment eligibility; original empirical analyses not rerun.",
   "reviewed_at": "2026-10-06T05:43:46.059316+00:00",
   "cases": [
+    {
+      "record_id": "flora_01458",
+      "original_doi": "10.1111/j.1540-5907.2006.00220.x",
+      "report_doi": "10.1177/2053168014559094",
+      "original_title": "Is Democracy Good for the Poor?",
+      "report_title": "Democracy is good for the poor: A procedural replication of Ross (2006)",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "Mixed methodological critique and documented data/reporting discrepancies. Do not promote the null reversal as a verified material computational error.",
+      "mechanism": "Forward five-year averages are labeled by the first year: a quinquennial lag has an effective lag around three years rather than five. Report also identifies mislabeled dependent-variable source and overall-versus-within R-squared, omitted pre-1970 data before averaging, and manually imputed initial lag outcomes.",
+      "consequence": "Page 4: published Polity slope -0.0021 (SE .002); centering averaging windows gives -.005 (.002) with a different sovereign-country panel, or -.0054 (.002) retaining original panel. No isolated numerical consequence established for the hard reporting/data discrepancies.",
+      "correction_only": "Changing forward to centered averages changes exposure timing, and is defended as relaxing restrictive dynamics. It is not proven to repair an accidental implementation mismatch. Later imputation and lagged-outcome changes introduce further choices.",
+      "response_status": "No formal Ross reply located. Report acknowledges Ross supplied datasets; original code and imputation seed unavailable to replicator.",
+      "sources": [
+        {
+          "file": "a2_rossfull.json",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/2053168014559094",
+          "locator": "Full publisher PDF extraction pp.2–4; data defects pp.2–3; centered-average comparison p.4",
+          "sha256": "82a17ae10cd8daf2668d1d8cff6e8cf0e18c026a4decc9469a42cdd602d217f3",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_rossfull.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2014",
+          "precision": "year",
+          "kind": "Recovered published report, October–December issue",
+          "qualifier": "Earlier-version search did not identify an earlier verified public error report. Journal year is earliest located, not established first-ever disclosure."
+        }
+      ],
+      "remaining_unknowns": [
+        "Recover dated preprint and any response.",
+        "Adjudicate whether the intended lag was five years; quantify consequences of source-label and missing-lag defects separately."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
+    {
+      "record_id": "flora_01593",
+      "original_doi": "10.1257/aer.102.1.428",
+      "report_doi": "10.1257/aer.20170413",
+      "original_title": "Testing Efficient Risk Sharing with Heterogeneous Risk Preferences",
+      "report_title": "Testing Efficient Risk Sharing with Heterogeneous Risk Preferences: Comment",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "Author-acknowledged materially wrong reported benchmark and a separately documented aggregation error; no automatic eligibility decision.",
+      "mechanism": "Village-expenditure coefficients mislabeled as nonlabor-income coefficients in published Table 3; caste-specific tests additionally used village rather than caste average expenditure.",
+      "consequence": "Comment Table 2 p.4: caste rejections at 10% fall from 13/13 to 7/13 after correcting coefficient labels, then 5/13 correcting aggregation. Bonferroni subsequently gives 1/13. Example Table 1: Aurepalle caste rank 30 reported .190 (SE .030), correctly labeled income .074 (.027), corrected caste averaging .025 (.021).",
+      "correction_only": "13→7→5 isolates labeling and averaging corrections in the report. 5→1 is a multiple-testing adjustment, not another code correction. The heterogeneous-preference test itself is not invalidated.",
+      "response_doi": "10.1257/aer.20180041",
+      "response_status": "Recovered author reply acknowledges misreporting and explicitly confirms corrected caste rejection counts 2/6,2/3,1/4. Authors argue the benchmark was not novel and does not invalidate their method.",
+      "sources": [
+        {
+          "file": "risk_comment.pdf",
+          "url": "https://web.stanford.edu/~fafchamp/adi.pdf",
+          "locator": "pp.2–4; Table 1 p.3 and Table 2 p.4",
+          "sha256": "05b0c1b8afa2d9c6e08d220868be65c2a86015a57e27e9ea889c09e1c3fa200f",
+          "cache_path": "private-data/inventories/primary-review-a2/risk_comment.pdf",
+          "retrieved_at": "2026-10-06T05:52:13.230400+00:00"
+        },
+        {
+          "file": "risk_erratum.pdf",
+          "url": "http://www.econ.ucla.edu/mazzocco/doc/EfficiencyInVillagesErratum.pdf",
+          "locator": "Author reply dated Jan 9 2018, pp.1–2 and Table 1 p.4",
+          "sha256": "902723b28325a2170ff037832fc61cd92f07f5e0798d510af827d5bee97e614e",
+          "cache_path": "private-data/inventories/primary-review-a2/risk_erratum.pdf",
+          "retrieved_at": "2026-10-06T05:53:31.642567+00:00"
+        },
+        {
+          "file": "a2_dates.json",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20180041",
+          "locator": "AEA reply journal identity/date",
+          "sha256": "fcadce3426be4493f1281dc4fb393dde6ae6d4549f339e01b94ce2b2738f6d4e",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_dates.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2017",
+          "precision": "year",
+          "kind": "Comment reference to author erratum",
+          "qualifier": "Indirect date evidence only: live cited Erratum URL now serves a Jan 9 2018 reply."
+        },
+        {
+          "date": "2018-01-09",
+          "precision": "day",
+          "kind": "Printed date on recovered author reply",
+          "qualifier": "Document date, not verified posting date."
+        },
+        {
+          "date": "2018-10",
+          "precision": "month",
+          "kind": "Journal comment and reply publication",
+          "qualifier": "Cannot treat as first public disclosure while 2017 erratum is unresolved."
+        }
+      ],
+      "remaining_unknowns": [
+        "Retrieve archived 2017 erratum or dated comment preprint to establish exposure.",
+        "Reply village coefficients differ modestly from comment replication; caste corrected coefficients match. No code rerun undertaken."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
     {
       "record_id": "flora_01600",
       "original_doi": "10.1257/aer.102.5.1927",
@@ -62,7 +163,11 @@
         "Recover Lundstrom 2015 working paper and dated public availability; inspect whether the exact coding-error claim was already present.",
         "Need separate dates for public methodological critique and publicized coding error."
       ],
-      "citation_analysis_eligible": "pending"
+      "citation_analysis_eligible": "pending",
+      "original_title": "The Impact of Family Income on Child Achievement: Evidence from the Earned Income Tax Credit",
+      "report_title": "The Impact of Family Income on Child Achievement: Evidence from the Earned Income Tax Credit: Comment",
+      "reviewed_at": "2026-10-06T05:43:46.059316+00:00",
+      "analysis_rerun": false
     },
     {
       "record_id": "flora_01601",
@@ -117,7 +222,1212 @@
         "Verify the earlier reply content and search archived author preprints for first public disclosure.",
         "Do not treat skewness alone as an OLS assumption violation or changing to logs as an unambiguous correction."
       ],
-      "citation_analysis_eligible": "pending"
+      "citation_analysis_eligible": "pending",
+      "original_title": "Does Diversity Pay?: Race, Gender, and the Business Case for Diversity",
+      "report_title": "Does Diversity Pay? A Replication of Herring (2009)",
+      "reviewed_at": "2026-10-06T05:43:46.059316+00:00",
+      "analysis_rerun": false
+    },
+    {
+      "record_id": "flora_01616",
+      "original_doi": "10.1257/aer.97.5.1939",
+      "report_doi": "10.1257/aer.104.4.1446",
+      "original_title": "Heterogeneity and Aggregation: Implications for Labor-Market Fluctuations",
+      "report_title": "Heterogeneity and Aggregation: Implications for Labor-Market Fluctuations: Comment",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "primary documented material numerical error. See qualifications and unresolved eligibility.",
+      "mechanism": "Polynomial interpolation across a discontinuous nonworking value function near the borrowing constraint produced incorrect labor choices. Simulation also used households forecast wage instead of clearing the labor market each period. The dissertation solves the same model with a more accurate numerical method.",
+      "consequence": "Correlation of aggregate hours with labor productivity: 0.23 -> 0.8 (correction_only; takahashi_thesis.pdf, Chapter 2 pp. 38–40 and Table 2.3 p. 54); Labor wedge volatility relative to output volatility: 0.76 -> 0.24 (correction_only; flora_01616_report.html, Publisher abstract); Share of empirical labor wedge volatility explained: 0.43 -> 0.18 (correction_only; heterogeneity_reply.html, Publisher abstract)",
+      "correction_only": "Model solution error, not a new population or new empirical specification. Dissertation separates interpolation correction without market clearing (correlation .72) from both changes (.80). Published report adds the labor-wedge result; the authors acknowledge coding errors but retain a smaller explanatory role for heterogeneity. Do not confuse the .76→.24 model wedge/output ratio with the .43→.18 share of empirical wedge volatility.",
+      "response_status": "{\"status\": \"located_acknowledges_errors\", \"doi\": \"10.1257/aer.104.4.1461\", \"source\": \"heterogeneity_reply.html\", \"scope\": \"Primary publisher abstract only; full reply not obtained.\"}",
+      "sources": [
+        {
+          "file": "flora_01616_original.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.97.5.1939",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "823a2e7f571a9495dc00838cfd08107a03da61f9518a46720226d77567eba785",
+          "retrieved_at": "2026-10-06T05:52:45.808932+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01616_original.html"
+        },
+        {
+          "file": "flora_01616_report.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.104.4.1446",
+          "locator": "Publisher abstract",
+          "sha256": "a4fd5414ae19ec7bb250cce43e5ddaeab6111ceeb68c5d9309a518827db11ef4",
+          "retrieved_at": "2026-10-06T05:52:45.813820+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01616_report.html"
+        },
+        {
+          "file": "heterogeneity_reply.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.104.4.1461",
+          "locator": "Publisher abstract",
+          "sha256": "450d2c0140d4d8a1c9770fe8910d5387cefc0408df7a348245f22ef3eec39f13",
+          "retrieved_at": "2026-10-06T05:52:48.105768+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/heterogeneity_reply.html"
+        },
+        {
+          "file": "heterogeneity_appendix.pdf",
+          "url": "https://www.aeaweb.org/aer/app/10404/20130058_app.pdf",
+          "locator": "Original/report comparison and author-response passages described in this review",
+          "sha256": "33da5d6367780a73276865b08f2398943460eb237d4d024c40b274ccc28dd5ee",
+          "retrieved_at": "2026-10-06T05:53:59.411424+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/heterogeneity_appendix.pdf"
+        },
+        {
+          "file": "takahashi_thesis.pdf",
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1337873816&disposition=inline",
+          "locator": "Chapter 2 pp. 38–40 and Table 2.3 p. 54; takahashi_thesis.pdf title page and Chapter 2",
+          "sha256": "54277c39928a873bb4cd326942b12dd32ffc9ca0cafb5bbb6d6fd4941968b190",
+          "retrieved_at": "2026-10-06T05:55:42.573380+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/takahashi_thesis.pdf"
+        },
+        {
+          "file": "takahashi_thesis_metadata.html",
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=osu1337873816",
+          "locator": "takahashi_thesis_metadata.html OhioLINK year/degree record",
+          "sha256": "dbfdd3f5bff9b654d23edde9a2f48561b7914f52d351868b6c5840fc1c0d99bb",
+          "retrieved_at": "2026-10-06T05:55:24.098178+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/takahashi_thesis_metadata.html"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2012",
+          "precision": "year",
+          "kind": "2012 dissertation",
+          "qualifier": "Institutional open-access 2012 dissertation predates journal article, but exact original deposit/release day is not shown; do not silently use April 2014 as first disclosure.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "Original/report identity checked against AEA pages; full final report unavailable, but dissertation contains detailed same-model numerical correction. Replication code not rerun.",
+        "Institutional open-access 2012 dissertation predates journal article, but exact original deposit/release day is not shown; do not silently use April 2014 as first disclosure."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Correlation of aggregate hours with labor productivity",
+          "original": 0.23,
+          "corrected": 0.8,
+          "source": "takahashi_thesis.pdf",
+          "locator": "Chapter 2 pp. 38–40 and Table 2.3 p. 54",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Labor wedge volatility relative to output volatility",
+          "original": 0.76,
+          "corrected": 0.24,
+          "source": "flora_01616_report.html",
+          "locator": "Publisher abstract",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Share of empirical labor wedge volatility explained",
+          "original": 0.43,
+          "corrected": 0.18,
+          "source": "heterogeneity_reply.html",
+          "locator": "Publisher abstract",
+          "contrast_type": "correction_only"
+        }
+      ],
+      "author_reply": {
+        "status": "located_acknowledges_errors",
+        "doi": "10.1257/aer.104.4.1461",
+        "source": "heterogeneity_reply.html",
+        "scope": "Primary publisher abstract only; full reply not obtained."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "2012 dissertation",
+        "date": "2012",
+        "evidence": [
+          "takahashi_thesis.pdf title page and Chapter 2",
+          "takahashi_thesis_metadata.html OhioLINK year/degree record"
+        ],
+        "journal_date": "2014-04",
+        "public_posting_date_verified": false,
+        "caveat": "Institutional open-access 2012 dissertation predates journal article, but exact original deposit/release day is not shown; do not silently use April 2014 as first disclosure."
+      }
+    },
+    {
+      "record_id": "flora_01617",
+      "original_doi": "10.1257/aer.101.6.2530",
+      "report_doi": "10.1257/aer.104.12.4231",
+      "original_title": "Risk Matters: The Real Effects of Volatility Shocks",
+      "report_title": "Risk Matters: The Real Effects of Volatility Shocks: Comment",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "primary documented material numerical error. See qualifications and unresolved eligibility.",
+      "mechanism": "Monthly percentage deviations were summed instead of averaged to produce quarterly flows; net exports were computed by subtracting percentage deviations without steady-state level weights.",
+      "consequence": "Output standard deviation with fixed original parameters: 5.3 -> 1.77 (correction_only; risk_comment.pdf, Table 1 PDF p. 4); Correlation of net exports with output, aggregation correction only versus both corrections: 0.05 -> 0.43 (correction_only; risk_comment.pdf, Table 4 PDF p. 8); Relative net export volatility, aggregation correction only versus both corrections: 1.43 -> 1.63 (correction_only; risk_comment.pdf, Table 4 PDF p. 8)",
+      "correction_only": "The 5.30→1.77 comparison isolates aggregation with original parameters. Ratios of C/Y and I/Y volatility do not fall by three. Recalibrating the corrected model subsequently increases the peak output response to risk shocks by 63%; that is a recalibration result, not a pure coding correction. Correct net exports uses steady-state Y,C,I weights.",
+      "response_status": "{\"status\": \"not_located\", \"caveat\": \"Search did not identify a formal reply; absence is not established.\"}",
+      "sources": [
+        {
+          "file": "flora_01617_original.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2530",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "914534589665438543fbecfa96093aaa0822453b61ab5a46426cd7eb9b75eda4",
+          "retrieved_at": "2026-10-06T05:52:45.820135+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01617_original.html"
+        },
+        {
+          "file": "flora_01617_report.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.104.12.4231",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "66b44756b4dd8e67af2de19d517726c3bada9b6734f75ff1280f4e631eac9d88",
+          "retrieved_at": "2026-10-06T05:52:45.820135+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01617_report.html"
+        },
+        {
+          "file": "risk_comment.pdf",
+          "url": "https://www.benjaminborn.de/files/BP_RiskMatters_Comment_2014.pdf",
+          "locator": "Table 1 PDF p. 4; Table 4 PDF p. 8",
+          "sha256": "fa0d547f7057df2120c36dae0fe762afa213c970fc10a4cb36505dc00edd5d09",
+          "retrieved_at": "2026-10-06T05:51:55.781847+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/risk_comment.pdf"
+        },
+        {
+          "file": "risk_working.pdf",
+          "url": "https://www.ifo.de/DocDL/cesifo1_wp4793.pdf",
+          "locator": "risk_working.pdf cover and abstract",
+          "sha256": "35e39b7fba909b42bf0a8b4fef1325b5dbc8b5d145e09f95e2c909a9667a6a5a",
+          "retrieved_at": "2026-10-06T05:52:49.541352+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/risk_working.pdf"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2014-05",
+          "precision": "month",
+          "kind": "CESifo Working Paper 4793",
+          "qualifier": "Public institutional working-paper series cover is dated May 2014; precise first online day not verified.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "No independent rerun of model code. Full report explicitly tabulates original and correction-only values.",
+        "Public institutional working-paper series cover is dated May 2014; precise first online day not verified."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Output standard deviation with fixed original parameters",
+          "original": 5.3,
+          "corrected": 1.77,
+          "source": "risk_comment.pdf",
+          "locator": "Table 1 PDF p. 4",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Correlation of net exports with output, aggregation correction only versus both corrections",
+          "original": 0.05,
+          "corrected": 0.43,
+          "source": "risk_comment.pdf",
+          "locator": "Table 4 PDF p. 8",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Relative net export volatility, aggregation correction only versus both corrections",
+          "original": 1.43,
+          "corrected": 1.63,
+          "source": "risk_comment.pdf",
+          "locator": "Table 4 PDF p. 8",
+          "contrast_type": "correction_only"
+        }
+      ],
+      "author_reply": {
+        "status": "not_located",
+        "caveat": "Search did not identify a formal reply; absence is not established."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "CESifo Working Paper 4793",
+        "date": "2014-05",
+        "evidence": [
+          "risk_working.pdf cover and abstract"
+        ],
+        "journal_date": "2014-12",
+        "public_posting_date_verified": false,
+        "caveat": "Public institutional working-paper series cover is dated May 2014; precise first online day not verified."
+      }
+    },
+    {
+      "record_id": "flora_01619",
+      "original_doi": "10.1257/aer.98.1.519",
+      "report_doi": "10.1257/aer.104.3.1072",
+      "original_title": "The Dynamic Behavior of the Real Exchange Rate in Sticky Price Models",
+      "report_title": "The Dynamic Behavior of the Real Exchange Rate in Sticky Price Models: Comment",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "primary documented error materiality mixed. See qualifications and unresolved eligibility.",
+      "mechanism": "Author erratum identifies an omitted calibration assumption, missing Ybar/Cbar term in heterogeneous-labor model, up-life one quarter too long, and higher-order fitted AR(5) coefficients incorrectly zeroed when computing simulated persistence measures.",
+      "consequence": "Reported homogeneous-model strategic complementarity: 8 -> 5 (reporting_correction; exchange_erratum.pdf, p. 1 item 1); Empirical median up-life/half-life: 0.44 -> 0.37 (correction_only; exchange_erratum.pdf, Table I p. 3); Homogeneous Phillips-curve-shock model half-life: 3.3 -> 3.6 (correction_only; exchange_erratum.pdf, Table I p. 3); Heterogeneous Phillips-curve-shock model half-life: 4.1 -> 4.2 (correction_only; exchange_erratum.pdf, Table I p. 3); Homogeneous model up-life/half-life: 0.41 -> 0.47 (correction_only; exchange_erratum.pdf, Table I p. 3); Heterogeneous model up-life/half-life: 0.4 -> 0.51 (correction_only; exchange_erratum.pdf, Table I p. 3)",
+      "correction_only": "Actual implementation errors change reported numbers but preserve model half-lives near the empirical benchmark. Do not attribute an adverse homogeneous-model result under omega=3 to correction of the coded omega=0 model. Authors dispute broad substantive criticism; changing calibration and elasticity is a robustness exercise distinct from the errors.",
+      "response_status": "{\"status\": \"located_acknowledges_errors_disputes_broad_conclusion\", \"sources\": [\"exchange_erratum.pdf\", \"exchange_reply.pdf\"], \"reply_date\": \"2014-03\", \"details\": \"Heterogeneous-model results maintained; author says Iversen/Soderstrom find results sensitive to changes away from simplifying homogeneous-model assumptions.\"}",
+      "sources": [
+        {
+          "file": "flora_01619_original.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.98.1.519",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "b34e9ac7813eb4a350a630da687af0da8dcf9cc613a492ccdee01069df9bfc48",
+          "retrieved_at": "2026-10-06T05:52:46.407699+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01619_original.html"
+        },
+        {
+          "file": "flora_01619_report.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.104.3.1072",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "04f543f8c0ed2924292192efea98d1ddf6b222613790876071fef39778dcbe23",
+          "retrieved_at": "2026-10-06T05:52:46.407655+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01619_report.html"
+        },
+        {
+          "file": "exchange_erratum.pdf",
+          "url": "https://eml.berkeley.edu/~jsteinsson/papers/persistErratum.pdf",
+          "locator": "p. 1 item 1; Table I p. 3; exchange_erratum.pdf title and acknowledgement",
+          "sha256": "f90229aa0c7944140619c549c241b3af4c9dcdc717f2fdc62b91fc404cacaf70",
+          "retrieved_at": "2026-10-06T05:52:47.510877+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/exchange_erratum.pdf"
+        },
+        {
+          "file": "exchange_reply.pdf",
+          "url": "https://eml.berkeley.edu/~jsteinsson/papers/ResponseToIversenAndSoderstrom.pdf",
+          "locator": "Original/report comparison and author-response passages described in this review",
+          "sha256": "dbf249909b803472d7a6ab94292d4bd16a45fb908a8c056bf06f6710e57a78f8",
+          "retrieved_at": "2026-10-06T05:52:47.506871+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/exchange_reply.pdf"
+        },
+        {
+          "file": "exchange_research_news.pdf",
+          "url": "https://archive.riksbank.se/upload/Dokument_riksbank/Kat_foa/2011/Research%20News%202010.pdf",
+          "locator": "Original/report comparison and author-response passages described in this review",
+          "sha256": "764b1ba201e3506bf6af1e5c03069bdd25a3572bb3499ec03e232375231c132f",
+          "retrieved_at": "2026-10-06T05:55:25.956255+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/exchange_research_news.pdf"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2011-12",
+          "precision": "month",
+          "kind": "Author erratum dated December 2011",
+          "qualifier": "Exact public posting date and earliest report version remain unresolved.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "Some confirmed errors appear nonmaterial for the headline. Final comment full text not acquired; author erratum is direct primary evidence. No code rerun.",
+        "Exact public posting date and earliest report version remain unresolved."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Reported homogeneous-model strategic complementarity",
+          "original": 8,
+          "corrected": 5,
+          "source": "exchange_erratum.pdf",
+          "locator": "p. 1 item 1",
+          "contrast_type": "reporting_correction"
+        },
+        {
+          "quantity": "Empirical median up-life/half-life",
+          "original": 0.44,
+          "corrected": 0.37,
+          "source": "exchange_erratum.pdf",
+          "locator": "Table I p. 3",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Homogeneous Phillips-curve-shock model half-life",
+          "original": 3.3,
+          "corrected": 3.6,
+          "source": "exchange_erratum.pdf",
+          "locator": "Table I p. 3",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Heterogeneous Phillips-curve-shock model half-life",
+          "original": 4.1,
+          "corrected": 4.2,
+          "source": "exchange_erratum.pdf",
+          "locator": "Table I p. 3",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Homogeneous model up-life/half-life",
+          "original": 0.41,
+          "corrected": 0.47,
+          "source": "exchange_erratum.pdf",
+          "locator": "Table I p. 3",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Heterogeneous model up-life/half-life",
+          "original": 0.4,
+          "corrected": 0.51,
+          "source": "exchange_erratum.pdf",
+          "locator": "Table I p. 3",
+          "contrast_type": "correction_only"
+        }
+      ],
+      "author_reply": {
+        "status": "located_acknowledges_errors_disputes_broad_conclusion",
+        "sources": [
+          "exchange_erratum.pdf",
+          "exchange_reply.pdf"
+        ],
+        "reply_date": "2014-03",
+        "details": "Heterogeneous-model results maintained; author says Iversen/Soderstrom find results sensitive to changes away from simplifying homogeneous-model assumptions."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "Author erratum dated December 2011",
+        "date": "2011-12",
+        "evidence": [
+          "exchange_erratum.pdf title and acknowledgement"
+        ],
+        "journal_date": "2014-03",
+        "public_posting_date_verified": false,
+        "earlier_lead": "exchange_research_news.pdf lists the comment under research projects pursued in 2010, not under published working papers. This confirms an earlier critique existed but does not date public error disclosure. Erratum cites Iversen/Soderstrom 2011 working paper.",
+        "caveat": "Exact public posting date and earliest report version remain unresolved."
+      }
+    },
+    {
+      "record_id": "flora_01620",
+      "original_doi": "10.3386/w15639",
+      "report_doi": "10.1093/cje/bet075",
+      "original_title": "Growth in a Time of Debt",
+      "report_title": "Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "original_journal_doi": "10.1257/aer.100.2.573",
+      "adjudication": "Acknowledged spreadsheet-range omission; magnitude of broader published revision must be separated from weighting/data-coverage choices.",
+      "mechanism": "Spreadsheet average excludes first five alphabetic countries (Australia, Austria, Belgium, Canada, Denmark); separate New Zealand transcription -7.6 to -7.9. Additional disputed changes restore postwar years and replace equal-country by country-year weighting.",
+      "consequence": "Table 3 printed p.21/PDF22: original high-debt mean -.1%; removing transcription alone yields .0%; removing spreadsheet plus transcription, retaining excluded years and equal-country weights, gives .3%. Full revised country-year/all-data mean is 2.2%. Therefore -.1→2.2 is not solely the spreadsheet error.",
+      "correction_only": "Table 3 permits isolating range+transcription corrections (approximately +.4 percentage points with original exclusion and weighting). Pure spreadsheet correction retaining transcription is not separately printed; do not label +2.3 points a coding-only consequence.",
+      "response_status": "Author April 18 2013 response explicitly acknowledges the range error in Figure 2, disputes claims of selective omission and maintains broader findings, especially medians and longer-history results.",
+      "sources": [
+        {
+          "file": "debt_comment.pdf",
+          "url": "https://peri.umass.edu/wp-content/uploads/joomla/images/WP322.pdf",
+          "locator": "Summary printed p.10/PDF11; Table 3 printed p.21/PDF22; New Zealand footnote 6 printed p.9",
+          "sha256": "b481030e538a1222fb1116bd2cc0646d031b8e36a0bf3b7057f1378800e0f0e5",
+          "cache_path": "private-data/inventories/primary-review-a2/debt_comment.pdf",
+          "retrieved_at": "2026-10-06T05:52:13.496247+00:00"
+        },
+        {
+          "file": "debt_page.html",
+          "url": "https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/",
+          "locator": "Institutional update history April 17 and April 22 2013",
+          "sha256": "7985ea5820833af792160d8dd1ca792e4fc77678eeb7e02fcbecb569e1e459a2",
+          "cache_path": "private-data/inventories/primary-review-a2/debt_page.html",
+          "retrieved_at": "2026-10-06T05:53:31.669618+00:00"
+        },
+        {
+          "file": "a2_finalsearch.json",
+          "url": "https://scholar.harvard.edu/files/rogoff/files/response_to_herndon_ash_and_pollin.pdf",
+          "locator": "Author response PDF indexed full passages; NBER identity links to published AER version",
+          "sha256": "d413e3faba48a8bdabc1d2b6fa1d2b527eb7b6ecf70c57d94922456dd8dff507",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_finalsearch.json"
+        },
+        {
+          "file": "debt_original.pdf",
+          "url": "https://www.nber.org/system/files/working_papers/w15639/w15639.pdf",
+          "locator": "NBER original version; same title/authors and AER Papers and Proceedings context",
+          "sha256": "4e522bb976cf2a2ffead5829c1f316d46e283e4125890342b1b15a19523cc10f",
+          "cache_path": "private-data/inventories/primary-review-a2/debt_original.pdf",
+          "retrieved_at": "2026-10-06T05:55:22.980424+00:00"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2013-04",
+          "precision": "month",
+          "kind": "PERI institutional working-paper publication",
+          "qualifier": "Preserved source explicitly records public updates April 17 and 22; first release day not independently fixed here."
+        },
+        {
+          "date": "2013-04-17",
+          "precision": "day",
+          "kind": "Institutional documented update",
+          "qualifier": "Verified public by this date; not necessarily initial release."
+        },
+        {
+          "date": "2013-04-18",
+          "precision": "day",
+          "kind": "Dated author response",
+          "qualifier": "Supports contemporaneous acknowledgement; PDF text obtained via search extraction, direct server downloads blocked."
+        }
+      ],
+      "remaining_unknowns": [
+        "Recover original public release timestamp (often stated April 15/16) rather than infer from later update.",
+        "Merge NBER and AER aliases as versions of the focal work; do not count twice.",
+        "Separate debt-growth descriptive association from causal claim; correction is not a causal debt estimate."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
+    {
+      "record_id": "flora_01622",
+      "original_doi": "10.1257/aer.98.1.439",
+      "report_doi": "10.1257/aer.102.7.3774",
+      "original_title": "Growth Dynamics: The Myth of Economic Recovery",
+      "report_title": "Growth Dynamics: The Myth of Economic Recovery: Comment",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "provisional estimand and interpretation mismatch. See qualifications and unresolved eligibility.",
+      "mechanism": "Civil-war dummy covers every war year whereas banking-crisis dummy marks onset. Interpreting a one-period war-dummy impulse as the typical multi-year war confuses exposure length and estimand. Appendix reproduces original regression/IRFs and compares coding algebra.",
+      "consequence": "Average civil-war output loss: original value not verified -> 18 percent (changed_episode_coding_or_estimand; flora_01622_report.html, Publisher abstract)",
+      "correction_only": "Not established as a mechanical data miscoding error. Onset and ongoing-war coding answer different questions; the alleged error may be interpretation of the impulse rather than wrong regression arithmetic. A significant-error classification needs full report and exact original/corrected comparable numerical contrast.",
+      "response_status": "{\"status\": \"not_located\", \"caveat\": \"No formal reply identified; not proof none exists.\"}",
+      "sources": [
+        {
+          "file": "flora_01622_original.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.98.1.439",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "f9407b07f6c65e26a27acec6a038639279b876a9107c038b6fb3474c957859e5",
+          "retrieved_at": "2026-10-06T05:52:46.403320+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01622_original.html"
+        },
+        {
+          "file": "flora_01622_report.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.102.7.3774",
+          "locator": "Publisher abstract; flora_01622_report.html",
+          "sha256": "964953bf25049118be22fc1051b05ae05f4ea0a9de3e57523cc66b9a958eaee2",
+          "retrieved_at": "2026-10-06T05:52:46.403321+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01622_report.html"
+        },
+        {
+          "file": "growth_appendix.pdf",
+          "url": "https://www.aeaweb.org/aer/data/dec2012/20110586_app.pdf",
+          "locator": "Original/report comparison and author-response passages described in this review",
+          "sha256": "fae774fd51cb15e4edb467e86c2d16bbbf3dcb81e92559a360c850aa12a99543",
+          "retrieved_at": "2026-10-06T05:54:00.688912+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/growth_appendix.pdf"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2012-12",
+          "precision": "month",
+          "kind": "Final journal comment; earlier working-draft lead unresolved",
+          "qualifier": "First public disclosure unresolved; journal date is only an upper bound on known publication.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "Full main comment unavailable through public publisher link (403). Original number for comparable average-war estimand not verified. Preserve as provisional, not confirmed error.",
+        "First public disclosure unresolved; journal date is only an upper bound on known publication."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Average civil-war output loss",
+          "original": null,
+          "corrected": "18 percent",
+          "source": "flora_01622_report.html",
+          "locator": "Publisher abstract",
+          "contrast_type": "changed_episode_coding_or_estimand"
+        }
+      ],
+      "author_reply": {
+        "status": "not_located",
+        "caveat": "No formal reply identified; not proof none exists."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "Final journal comment; earlier working-draft lead unresolved",
+        "date": "2012-12",
+        "evidence": [
+          "flora_01622_report.html"
+        ],
+        "public_posting_date_verified": false,
+        "earlier_lead": "Author-uploaded ResearchGate record describes a June 9 2011 draft but shows upload January 13 2015; draft date is not proof of public release in 2011.",
+        "caveat": "First public disclosure unresolved; journal date is only an upper bound on known publication."
+      }
+    },
+    {
+      "record_id": "flora_01629",
+      "original_doi": "10.1073/pnas.1002632107",
+      "report_doi": "10.1073/pnas.1202049109",
+      "original_title": "Linkages among climate change, crop yields and Mexico–US cross-border migration",
+      "report_title": "Unobserved time effects confound the identification of climate change impacts",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "Acknowledged description/implementation mismatch. Estimating the stated equations changes results materially, but authors defend the implemented specification; a unique correction to the intended model is not established.",
+      "mechanism": "Original equations claim common time effects but regressions omit time dummies. Re-estimating the stated model with time effects sharply reduces crop-yield coefficients.",
+      "consequence": "Corn FE-2SLS yield coefficient: -0.211 -> -0.0645 (correction_only; climate_comment_ncbi.html, Table 1; original-replication SE .0358; corrected SE .0417); Corn plus wheat FE-2SLS yield coefficient: -0.183 -> -0.0369 (correction_only; climate_comment_ncbi.html, Table 1; original-replication SE .0354; corrected SE .0277); Corn FE-LIML yield coefficient: -0.224 -> -0.0911 (correction_only; climate_comment_ncbi.html, Table 1; original-replication SE .0415; corrected SE .0637)",
+      "correction_only": "Correction estimates the published equations, with same data; omission acknowledged by authors. Authors instead correct the equations to describe their original no-time-dummy implementation and defend its identifying assumption. Thus confirmed description/implementation mismatch and material numerical consequence, alongside a genuine specification dispute. Corrected coefficients remain negative; lack of statistical significance is not proof of zero causal effect. Reply rural-state result restricts sample and is not same-sample correction; GDP controls are a separate robustness check.",
+      "response_status": "{\"status\": \"located_acknowledges_mismatch_disputes_implication\", \"doi\": \"10.1073/pnas.1212226109\", \"source\": \"climate_reply.html\", \"online_date\": \"2012-08-20\", \"details\": \"Authors acknowledge models omitted time dummies, defend no-dummy approach; 16-rural-state result with dummy remains significant. Same 16-state subset existed in original Table 2, so do not claim it was first invented in reply.\"}",
+      "sources": [
+        {
+          "file": "climate_original_verified.html",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2922556/?pdf=render",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "af0c392060a70bddfb3416a8e84b60e9b3980bea751f14ba19b8d320e704c89b",
+          "retrieved_at": "2026-10-06T06:00:26.546187+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/climate_original_verified.html"
+        },
+        {
+          "file": "climate_comment_ncbi.html",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3409766/?pdf=render",
+          "locator": "Table 1; original-replication SE .0358; corrected SE .0417; Table 1; original-replication SE .0354; corrected SE .0277; Table 1; original-replication SE .0415; corrected SE .0637; climate_comment_ncbi.html citation_publication_date and article header",
+          "sha256": "745f8d060a3090ca2367819ecfc94d5ef51c8087f399417a054124ea5e2834ab",
+          "retrieved_at": "2026-10-06T05:59:32.585556+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/climate_comment_ncbi.html"
+        },
+        {
+          "file": "climate_reply.html",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3491464/?pdf=render",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "847bce7d18fcf7fc5745647dd5fcea40d8100727af309c74d85fd8490c26d54f",
+          "retrieved_at": "2026-10-06T05:59:46.899007+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/climate_reply.html"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2012-07-10",
+          "precision": "day",
+          "kind": "Published online report",
+          "qualifier": "No earlier public working version located; earliest located is not guaranteed first ever.",
+          "public_posting_date_verified": true
+        }
+      ],
+      "remaining_unknowns": [
+        "Original/report DOI and identity verified in primary full texts. Numerical values are report reproduction, not a local code rerun. Some minor rounding differences from original are acknowledged in report.",
+        "No earlier public working version located; earliest located is not guaranteed first ever."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Corn FE-2SLS yield coefficient",
+          "original": -0.211,
+          "corrected": -0.0645,
+          "source": "climate_comment_ncbi.html",
+          "locator": "Table 1; original-replication SE .0358; corrected SE .0417",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Corn plus wheat FE-2SLS yield coefficient",
+          "original": -0.183,
+          "corrected": -0.0369,
+          "source": "climate_comment_ncbi.html",
+          "locator": "Table 1; original-replication SE .0354; corrected SE .0277",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Corn FE-LIML yield coefficient",
+          "original": -0.224,
+          "corrected": -0.0911,
+          "source": "climate_comment_ncbi.html",
+          "locator": "Table 1; original-replication SE .0415; corrected SE .0637",
+          "contrast_type": "correction_only"
+        }
+      ],
+      "author_reply": {
+        "status": "located_acknowledges_mismatch_disputes_implication",
+        "doi": "10.1073/pnas.1212226109",
+        "source": "climate_reply.html",
+        "online_date": "2012-08-20",
+        "details": "Authors acknowledge models omitted time dummies, defend no-dummy approach; 16-rural-state result with dummy remains significant. Same 16-state subset existed in original Table 2, so do not claim it was first invented in reply."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "Published online report",
+        "date": "2012-07-10",
+        "evidence": [
+          "climate_comment_ncbi.html citation_publication_date and article header"
+        ],
+        "journal_issue_date": "2012-07-24",
+        "public_posting_date_verified": true,
+        "caveat": "No earlier public working version located; earliest located is not guaranteed first ever."
+      }
+    },
+    {
+      "record_id": "flora_01631",
+      "original_doi": "10.1257/aer.98.3.938",
+      "report_doi": "10.1257/aer.101.2.1029",
+      "original_title": "Stationary Concepts for Experimental 2x2-Games",
+      "report_title": "Stationary Concepts for Experimental 2 × 2 Games: Comment",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "primary documented material numerical error. See qualifications and unresolved eligibility.",
+      "mechanism": "Incorrect computations of QRE and action-sampling equilibrium predictions, one impulse-balance prediction and Game 3 sample mean. Re-estimation uses same mean-squared-distance objective.",
+      "consequence": "Optimal QRE precision parameter lambda: 8.84 -> 1.05 (correction_only; games_comment.pdf, p. 1032 item iv; original games_original.pdf p. 945); Game 3 observed frequency U: 0.198 -> 0.163 (correction_only; games_comment.pdf, Table 1 p. 1031 vs original Table 1 p. 954); Game 3 QRE probability U: 0.25 -> 0.168 (correction_only; games_comment.pdf, Table 1 p. 1031 vs original Table 1 p. 954)",
+      "correction_only": "Corrected QRE fits much better than originally reported. Authors acknowledge computational mistakes but disagree that four non-Nash concepts perform equally; corrected pooled comparisons still favor payoff/action sampling in some tests. Switching Wilcoxon to Fisher-Pitman, adding loss aversion or using other experiments are additional analyses, not the original computational correction.",
+      "response_status": "{\"status\": \"located_acknowledges_computational_errors_disputes_ranking\", \"source\": \"games_reply.pdf\", \"doi\": \"10.1257/aer.101.2.1041\", \"details\": \"Reply favors Fisher-Pitman test and retains better performance of sampling equilibria than QRE; broad equivalence claim should not be encoded as an uncontested consequence.\"}",
+      "sources": [
+        {
+          "file": "flora_01631_original.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.98.3.938",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "11f91e87e8564f045704983a6cf5bd1b207e66924954a335e0a47e6af952da42",
+          "retrieved_at": "2026-10-06T05:52:46.985296+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01631_original.html"
+        },
+        {
+          "file": "flora_01631_report.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.101.2.1029",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "42aa922b81315a20d3a0abae817b3b613b2ac3c664de48eff7969e672426dad1",
+          "retrieved_at": "2026-10-06T05:52:46.985296+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01631_report.html"
+        },
+        {
+          "file": "games_original.pdf",
+          "url": "https://irep.ntu.ac.uk/id/eprint/33302/1/PubSub10818_Chmura.pdf",
+          "locator": "Original/report comparison and author-response passages described in this review",
+          "sha256": "42388b6bbe25e554fcb6dd77a13da4972928c86e8e85cdfa27f901ddae045585",
+          "retrieved_at": "2026-10-06T05:54:43.004007+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/games_original.pdf"
+        },
+        {
+          "file": "games_comment.pdf",
+          "url": "https://www.agora.group/_files/ugd/a4ac94_f97b2e43c4e24a67a7929a52483fce22.pdf",
+          "locator": "p. 1032 item iv; original games_original.pdf p. 945; Table 1 p. 1031 vs original Table 1 p. 954",
+          "sha256": "05442e5ded0401db2b57b3f86d26838cf3719f2b973de6c72f8dd3b035d86974",
+          "retrieved_at": "2026-10-06T05:51:56.504660+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/games_comment.pdf"
+        },
+        {
+          "file": "games_reply.pdf",
+          "url": "https://irep.ntu.ac.uk/id/eprint/33312/1/10814_Chmura.pdf",
+          "locator": "Original/report comparison and author-response passages described in this review",
+          "sha256": "e8765c6b2a3ae568cff1a616bfa88f95fa958972052c9f4ede9c4ebad2e95b51",
+          "retrieved_at": "2026-10-06T05:51:58.337674+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/games_reply.pdf"
+        },
+        {
+          "file": "games_working.pdf",
+          "url": "https://authors.library.caltech.edu/records/7da3z-kby87/files/iewwp437.pdf?download=1",
+          "locator": "games_working.pdf cover and September 15 2009 internal date",
+          "sha256": "c7b2eaa2647de01704f7a6e4d1e4034def9c3e9f9a839ea3eb8dc2a525443cd4",
+          "retrieved_at": "2026-10-06T05:54:43.872854+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/games_working.pdf"
+        },
+        {
+          "file": "games_working_metadata.html",
+          "url": "https://authors.library.caltech.edu/records/7da3z-kby87",
+          "locator": "games_working_metadata.html published September 2009 record",
+          "sha256": "c30288233893b56a715537593c7c63dbd4235f9425da57a70614fbfd9abe998b",
+          "retrieved_at": "2026-10-06T05:53:57.051970+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/games_working_metadata.html"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2009-09",
+          "precision": "month",
+          "kind": "Zurich working paper 437",
+          "qualifier": "Caltech repository record created in 2019, but source is numbered September 2009 public WP series. November 2008 conference thanks alone cannot establish error disclosure then.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "Code not independently rerun. Low-level cause of wrong optimizer output not established beyond published recalculation.",
+        "Caltech repository record created in 2019, but source is numbered September 2009 public WP series. November 2008 conference thanks alone cannot establish error disclosure then."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Optimal QRE precision parameter lambda",
+          "original": 8.84,
+          "corrected": 1.05,
+          "source": "games_comment.pdf",
+          "locator": "p. 1032 item iv; original games_original.pdf p. 945",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Game 3 observed frequency U",
+          "original": 0.198,
+          "corrected": 0.163,
+          "source": "games_comment.pdf",
+          "locator": "Table 1 p. 1031 vs original Table 1 p. 954",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Game 3 QRE probability U",
+          "original": 0.25,
+          "corrected": 0.168,
+          "source": "games_comment.pdf",
+          "locator": "Table 1 p. 1031 vs original Table 1 p. 954",
+          "contrast_type": "correction_only"
+        }
+      ],
+      "author_reply": {
+        "status": "located_acknowledges_computational_errors_disputes_ranking",
+        "source": "games_reply.pdf",
+        "doi": "10.1257/aer.101.2.1041",
+        "details": "Reply favors Fisher-Pitman test and retains better performance of sampling equilibria than QRE; broad equivalence claim should not be encoded as an uncontested consequence."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "Zurich working paper 437",
+        "date": "2009-09",
+        "evidence": [
+          "games_working.pdf cover and September 15 2009 internal date",
+          "games_working_metadata.html published September 2009 record"
+        ],
+        "journal_date": "2011-04",
+        "public_posting_date_verified": false,
+        "caveat": "Caltech repository record created in 2019, but source is numbered September 2009 public WP series. November 2008 conference thanks alone cannot establish error disclosure then."
+      }
+    },
+    {
+      "record_id": "flora_01636",
+      "original_doi": "10.1111/j.1538-4616.2008.00172.x",
+      "report_doi": "10.1111/j.1538-4616.2011.00406.x",
+      "original_title": "Political Regimes and the Cost of Disinflation",
+      "report_title": "Central Bank Independence, Political Regimes, and the Sacrifice Ratio: A Replication Study of Caporale and Caporale (2008)",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "provisional primary abstract only. See qualifications and unresolved eligibility.",
+      "mechanism": "Author institutional abstract alleges data errors; exact variables, erroneous entries and repair operations not available in accessed source.",
+      "consequence": "No verified original/corrected numerical comparison recovered.",
+      "correction_only": "Abstract says original no-significant-CBI association becomes positive/significant after correcting data, but no numerical old/new estimate is available. Do not classify a verified consequential error from this assertion alone.",
+      "response_status": "{\"status\": \"not_located\", \"caveat\": \"Full report and any reply not obtained.\"}",
+      "sources": [
+        {
+          "file": "bank_author_record.html",
+          "url": "https://w-rdb.waseda.jp/html/100001022_ja.html",
+          "locator": "bank_author_record.html article entry",
+          "sha256": "fd9a139f7ffd5d254bac0fb8ded8caac9a4860d6d91a7c249056868b47a5c27c",
+          "retrieved_at": "2026-10-06T06:00:28.380139+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/bank_author_record.html"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2011-08",
+          "precision": "month",
+          "kind": "Journal article catalogued by author institution",
+          "qualifier": "Earlier versions and first online date unresolved; August 2011 issue date alone is insufficient treatment timing.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "Report identity and DOI checked against institutional author record; original identity comes from report title/reference and queue, not independently downloaded original full text. Publisher access returned 403. No numerical consequence or specific operation verified.",
+        "Earlier versions and first online date unresolved; August 2011 issue date alone is insufficient treatment timing."
+      ],
+      "numerical_comparisons": [],
+      "author_reply": {
+        "status": "not_located",
+        "caveat": "Full report and any reply not obtained."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "Journal article catalogued by author institution",
+        "date": "2011-08",
+        "evidence": [
+          "bank_author_record.html article entry"
+        ],
+        "public_posting_date_verified": false,
+        "caveat": "Earlier versions and first online date unresolved; August 2011 issue date alone is insufficient treatment timing."
+      }
+    },
+    {
+      "record_id": "flora_01639",
+      "original_doi": "10.1257/00028280260344597",
+      "report_doi": "10.1257/aer.100.3.1280",
+      "original_title": "Antidumping Investigations and the Pass-Through of Antidumping Duties and Exchange Rates",
+      "report_title": "Antidumping Investigations and the Pass-Through of Antidumping Duties and Exchange Rates: Comment",
+      "reviewed_at": "2026-10-06T06:02:49.868577+00:00",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "primary documented material construction error. See qualifications and unresolved eligibility.",
+      "mechanism": "Incorrect interpretation of antidumping statute treated AD duties as subtracted in subsequent duty calculation. Original dependent US price added full AD duty to border price even though ex-post assessed duty can differ or be zero.",
+      "consequence": "Theoretical pass-through needed to avoid duty: 200 percent -> 100 percent (theoretical_correction; flora_01639_report.html, Publisher abstract); Empirical AD-duty pass-through coefficient shift: original coefficients -> original minus approximately 1.0 (correction_only; antidumping_reply.pdf, p. 1283 re-estimation paragraph); Post-final-determination border-price pass-through: original value not verified -> approximately 60 percent (correction_with_endpoint_definition_change; antidumping_reply.pdf, p. 1283)",
+      "correction_only": "Authors acknowledge invalid statutory assumption and inappropriate dependent-variable construction; recalculation sharply lowers empirical duty pass-through. Reported change is almost exactly one coefficient unit, not one percent. Corrected 60% is border-price pass-through; original endpoint included duty. Total pass-through additionally depends on actual assessed duty. Exchange-rate pass-through and structural-break conclusions essentially unchanged.",
+      "response_status": "{\"status\": \"located_acknowledges_error_reestimates\", \"doi\": \"10.1257/aer.100.3.1283\", \"source\": \"antidumping_reply.pdf\", \"details\": \"Authors reject over-complete pass-through for this empirical case while retaining broader statement that AD differs from ordinary tariffs.\"}",
+      "sources": [
+        {
+          "file": "flora_01639_original.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/00028280260344597",
+          "locator": "Bibliographic identity and abstract",
+          "sha256": "df8feb7f3512dfddc32db6aa4ed933714923e8093956236d11ade03adca6b216",
+          "retrieved_at": "2026-10-06T05:52:47.554397+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01639_original.html"
+        },
+        {
+          "file": "flora_01639_report.html",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.100.3.1280",
+          "locator": "Publisher abstract; flora_01639_report.html",
+          "sha256": "5a8184486bb994a45506d20ca338ea0b6d775991a905c41b165ddc25da7bb689",
+          "retrieved_at": "2026-10-06T05:52:47.554398+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/flora_01639_report.html"
+        },
+        {
+          "file": "antidumping_reply.pdf",
+          "url": "https://pages.uoregon.edu/bruceb/Antidumping_Investigations_Reply.pdf",
+          "locator": "p. 1283 re-estimation paragraph; p. 1283; antidumping_reply.pdf header",
+          "sha256": "dfba350737a2f32bbdc5d8f48fd081f908491236ecabf188f9b7cc7bca0a2e9d",
+          "retrieved_at": "2026-10-06T05:53:56.507420+00:00",
+          "cache_path": "private-data/inventories/primary-review-b2/antidumping_reply.pdf"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2010-06",
+          "precision": "month",
+          "kind": "Journal comment and reply",
+          "qualifier": "Reply explicitly refers to an earlier comment version, but earlier public date is unresolved. June 2010 is not established first disclosure.",
+          "public_posting_date_verified": false
+        }
+      ],
+      "remaining_unknowns": [
+        "Comment full text unavailable; primary publisher abstract and author full reply substantiate error. Exact original post-final coefficient not transcribed from original table; no code rerun.",
+        "Reply explicitly refers to an earlier comment version, but earlier public date is unresolved. June 2010 is not established first disclosure."
+      ],
+      "numerical_comparisons": [
+        {
+          "quantity": "Theoretical pass-through needed to avoid duty",
+          "original": "200 percent",
+          "corrected": "100 percent",
+          "source": "flora_01639_report.html",
+          "locator": "Publisher abstract",
+          "contrast_type": "theoretical_correction"
+        },
+        {
+          "quantity": "Empirical AD-duty pass-through coefficient shift",
+          "original": "original coefficients",
+          "corrected": "original minus approximately 1.0",
+          "source": "antidumping_reply.pdf",
+          "locator": "p. 1283 re-estimation paragraph",
+          "contrast_type": "correction_only"
+        },
+        {
+          "quantity": "Post-final-determination border-price pass-through",
+          "original": null,
+          "corrected": "approximately 60 percent",
+          "source": "antidumping_reply.pdf",
+          "locator": "p. 1283",
+          "contrast_type": "correction_with_endpoint_definition_change"
+        }
+      ],
+      "author_reply": {
+        "status": "located_acknowledges_error_reestimates",
+        "doi": "10.1257/aer.100.3.1283",
+        "source": "antidumping_reply.pdf",
+        "details": "Authors reject over-complete pass-through for this empirical case while retaining broader statement that AD differs from ordinary tariffs."
+      },
+      "earliest_version": {
+        "earliest_substantiated_version": "Journal comment and reply",
+        "date": "2010-06",
+        "evidence": [
+          "flora_01639_report.html",
+          "antidumping_reply.pdf header"
+        ],
+        "public_posting_date_verified": false,
+        "caveat": "Reply explicitly refers to an earlier comment version, but earlier public date is unresolved. June 2010 is not established first disclosure."
+      }
+    },
+    {
+      "record_id": "flora_01652",
+      "original_doi": "10.3386/w8004",
+      "report_doi": "10.1162/qjec.2008.123.1.407",
+      "original_title": "The Impact of Legalized Abortion on Crime",
+      "report_title": "The Impact of Legalized Abortion on Crime: Comment*",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "original_journal_doi": "10.1162/00335530151144050",
+      "response_working_doi": "10.3386/w11987",
+      "adjudication": "Author-acknowledged omission of specified controls with substantial coefficient shrinkage; broader abortion-crime conclusion remains disputed.",
+      "mechanism": "Four Table VII regressions omitted state-by-year fixed effects despite text saying they were included.",
+      "consequence": "Foote–Goetz Table I printed p.22/PDF23: property coefficient -.025 (SE .003 cohort-state clustered)→-.010 (.002) and violent -.028 (.004)→-.013 (.004) after adding state-year FE, same data and outcomes. Both remain significant with reported clustering. Further switching to per-capita outcomes gives -.001 and -.004, a separate estimand/specification change.",
+      "correction_only": "Use columns 1→2 as missing-control correction. Columns 2→4 divide arrests by population; adjusted exposure and longer sample in column5 are further changes. Critique does not mechanically refute other original analyses.",
+      "response_status": "Donohue/Levitt reply explicitly acknowledges omitted interactions, including same omission in a 2004 paper; attributes subsequent per-capita null to measurement error and provides revised exposure measures. Footnote says Gruber/Levine/Staiger first privately discovered the code error; discovery is not public disclosure.",
+      "sources": [
+        {
+          "file": "abortion_comment.pdf",
+          "url": "https://www.bostonfed.org/-/media/Documents/Workingpapers/PDF/wp0515.pdf",
+          "locator": "Section 2 printed pp.3–5/PDF4–6; Table I printed p.22/PDF23; current WP revised Jan2008",
+          "sha256": "10f7d3157af7825f12b4113b6d7bc57f1edb8942c51f2b026f573fcba9d9c5e5",
+          "cache_path": "private-data/inventories/primary-review-a2/abortion_comment.pdf",
+          "retrieved_at": "2026-10-06T05:52:13.801697+00:00"
+        },
+        {
+          "file": "abortion_response.pdf",
+          "url": "https://www.nber.org/system/files/working_papers/w11987/w11987.pdf",
+          "locator": "PDF pp.3–5, especially acknowledgment and notes3–4",
+          "sha256": "250a5d0b0e5dd735ab1c4f42c37b74ef594621b6e2f089be1ebcfc5aef4375dc",
+          "cache_path": "private-data/inventories/primary-review-a2/abortion_response.pdf",
+          "retrieved_at": "2026-10-06T05:52:15.774091+00:00"
+        },
+        {
+          "file": "abortion_levitt_2005.html",
+          "url": "https://freakonomics.com/2005/11/everything-in-freakonomics-is-wrong/",
+          "locator": "Author blog November28,2005, numbered point2 acknowledges code error",
+          "sha256": "1084235d1cfe9df57e40b6cc71ca1cedb90c4e774ccf182d926513f00cef5543",
+          "cache_path": "private-data/inventories/primary-review-a2/abortion_levitt_2005.html",
+          "retrieved_at": "2026-10-06T05:53:31.963940+00:00"
+        },
+        {
+          "file": "abortion_page.html",
+          "url": "https://www.bostonfed.org/publications/research-department-working-paper/2005/the-impact-of-legalized-abortion-on-crime-comment.aspx",
+          "locator": "Institutional record WP05–15 and earlier title; revised January2008",
+          "sha256": "bf157dbe1c8e6aef463676e45c96e180e648fffd5cfa9d79eda1ddb3d3878085",
+          "cache_path": "private-data/inventories/primary-review-a2/abortion_page.html",
+          "retrieved_at": "2026-10-06T05:53:31.911528+00:00"
+        },
+        {
+          "file": "a2_finalsearch.json",
+          "url": "https://academic.oup.com/qje/article-abstract/116/2/379/1904158",
+          "locator": "Original QJE identity DOI and publication May1,2001",
+          "sha256": "d413e3faba48a8bdabc1d2b6fa1d2b527eb7b6ecf70c57d94922456dd8dff507",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_finalsearch.json"
+        },
+        {
+          "file": "abortion_original.pdf",
+          "url": "https://www.nber.org/system/files/working_papers/w8004/w8004.pdf",
+          "locator": "NBER8004 version of focal article",
+          "sha256": "254571d34fd7d28aca31beae4157f51e868cd5b007acc669f9e1aaf40b710cc0",
+          "cache_path": "private-data/inventories/primary-review-a2/abortion_original.pdf",
+          "retrieved_at": "2026-10-06T05:55:22.979563+00:00"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2005-11-28",
+          "precision": "day",
+          "kind": "Dated public author acknowledgment of circulating Foote–Goetz working paper",
+          "qualifier": "Verified public no later than this date, likely earlier November release. Do not use 2008 journal date."
+        },
+        {
+          "date": "2005",
+          "precision": "year",
+          "kind": "Boston Fed original WP series",
+          "qualifier": "Current downloadable file overwritten with Jan2008 revision; first-release exact day unresolved."
+        }
+      ],
+      "remaining_unknowns": [
+        "Retrieve original2005version/release timestamp and retain distinction from2008revised report.",
+        "Map NBER and QJE identity before citation matching."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
+    {
+      "record_id": "flora_01654",
+      "original_doi": "10.1002/(sici)1099-1255(200001/02)15:1<59::aid-jae544>3.0.co;2-1",
+      "report_doi": "10.1002/jae.895",
+      "original_title": "Asymptotically perfect and relative convergence of productivity",
+      "report_title": "Convergence of productivity: a comment",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "Concrete original-versus-corrected code defect verified; published empirical number change remains unverified, so materiality provisional.",
+      "mechanism": "Original Gauss PVALUE.G uses final two asymptotic quantiles for interpolation regardless of statistic position, rather than bracketing quantiles. Its base-probability calculation also differs from supplied correction; both routines return one minus that intermediate probability.",
+      "consequence": "Synthetic diagnostic of exact formulas with 99 increasing quantiles 1..99 and statistic95.5: original p=.985, corrected p=.045. This validates a computational defect but is not a published-paper estimate or evidence which country clusters change. No checked before/after published statistic available.",
+      "correction_only": "JAE Wang archive supplies revised Pvalue_R.txt; comparison changes probability calculation without changing economic estimand. Need rerun actual data to quantify empirical consequences.",
+      "response_status": "No author reply identified. Full two-page Wang comment not recovered from blocked publisher; abstract and official archive verified.",
+      "sources": [
+        {
+          "file": "convergence_pvalues.txt",
+          "url": "http://qed.econ.queensu.ca/jae/datasets/wang002/Pvalue_R.txt",
+          "locator": "Corrected Gauss pvalue procedure, interior interpolation branches",
+          "sha256": "5fe30dba5b6a22ccc636a5a5aee61d7dd6407d02e4e23f2dfd04811fe0cd922f",
+          "cache_path": "private-data/inventories/primary-review-a2/convergence_pvalues.txt",
+          "retrieved_at": "2026-10-06T05:54:32.842081+00:00"
+        },
+        {
+          "file": "convergence_original.zip",
+          "url": "http://qed.econ.queensu.ca/jae/2000-v15.1/hobijn-franses/hobijn-franses.zip",
+          "locator": "Original PVALUE.G member",
+          "sha256": "6499d49bffd894769416e42bbbd5d332ab9095a1b6792a1fa443f2b6acf22e55",
+          "cache_path": "private-data/inventories/primary-review-a2/convergence_original.zip",
+          "retrieved_at": "2026-10-06T05:55:54.964082+00:00"
+        },
+        {
+          "file": "convergence_readme.txt",
+          "url": "http://qed.econ.queensu.ca/jae/datasets/wang002/readme.zw.txt",
+          "locator": "Official JAE readme identifies corrected procedure and original-data archive",
+          "sha256": "2dd22e5d7e1229ca04e5eb7ba86facfc67481183131d9d5b2c1a0a7a1f1dcc16",
+          "cache_path": "private-data/inventories/primary-review-a2/convergence_readme.txt",
+          "retrieved_at": "2026-10-06T05:54:32.842246+00:00"
+        },
+        {
+          "file": "convergence_code_comparison.txt",
+          "url": "local derived audit",
+          "locator": "Extracted original/corrected code diff and synthetic diagnostic (not published effect)",
+          "sha256": "ad28e9dfb80d57b2a7f2e91b08789c19431439bc9222121c714983aeb43785e2",
+          "cache_path": "private-data/inventories/primary-review-a2/convergence_code_comparison.txt"
+        },
+        {
+          "file": "a2_dates3.json",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.895",
+          "locator": "Publisher abstract and publication history",
+          "sha256": "e322a32517bedead7a9fec1c5a0398aef8bdb6dfe0c27b4876c0c30bdf429a57",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_dates3.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2006-11-27",
+          "precision": "day",
+          "kind": "Publisher first online date",
+          "qualifier": "Earliest substantiated public report found; manuscript received June2005 is not public disclosure. Earlier public code correction date unresolved."
+        }
+      ],
+      "remaining_unknowns": [
+        "Recover full comment or run published data through original and corrected routine; must establish changed empirical numbers/materiality.",
+        "Do not promote the synthetic calibration as an original study result."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
+    {
+      "record_id": "flora_01670",
+      "original_doi": "10.1162/rest_a_00412",
+      "report_doi": "10.1002/jae.2667",
+      "original_title": "An Empirical Examination of the Procyclicality of R&D Investment and Innovation",
+      "report_title": "The cyclicality of R&D investment revisited",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "Concrete missing-to-zero operation and materially changed estimates supported by full report; original intentional policy and author response remain to be assessed.",
+      "mechanism": "Missing R&D expenditures and some other variables replaced by0, generating artificial jumps in log growth. Removing those imputations reduces full-model sample71,264→40,922.",
+      "consequence": "Report Table1 same OLS specification columns3→6: output-growth×obsolescence .341 (SE .088)→.091 (.057); average marginal output effect .157→.089. Baseline no-interaction output growth columns1→4 .272 (.034)→.143 (.022). The broad procyclicality result survives.",
+      "correction_only": "Those Table1 contrasts hold reported estimator/specification constant and alter missing treatment/sample. Later claims that patent effectiveness and obsolescence cease to matter combine further fixed-effects and model changes. Report replication closely approximates, but is not numerically identical to, published Table5.",
+      "response_status": "No formal Fabrizio/Tsolmon response located. Institutional report inspects their public data/code; we did not independently rerun those code lines.",
+      "sources": [
+        {
+          "file": "rnd_comment_2017.pdf",
+          "url": "https://pure.uva.nl/ws/files/21133535/The_cyclicality_of_R_D.pdf",
+          "locator": "Printed pp.5–8/PDF8–11: Table1 and section3 Treating missings differently; archive footnotes5–8",
+          "sha256": "1fad2340e52f17b4d269f01cfca20a991b686268cc4ae043a6833a7083b6779a",
+          "cache_path": "private-data/inventories/primary-review-a2/rnd_comment_2017.pdf",
+          "retrieved_at": "2026-10-06T05:52:14.844591+00:00"
+        },
+        {
+          "file": "rnd_repository.html",
+          "url": "https://dare.uva.nl/id/41548285-8d87-4175-a45a-08dc0b06f844",
+          "locator": "Institutional publication metadata December2017, UvA Econometrics Discussion Paper2017/01",
+          "sha256": "83488e3eaaa44f8fb8986c30ca18719f5a1a2474f17a22719583e1ce740196e7",
+          "cache_path": "private-data/inventories/primary-review-a2/rnd_repository.html",
+          "retrieved_at": "2026-10-06T05:55:18.841594+00:00"
+        },
+        {
+          "file": "a2_dates0.json",
+          "url": "https://dare.uva.nl/id/41548285-8d87-4175-a45a-08dc0b06f844",
+          "locator": "Institutional source description/date",
+          "sha256": "cfa7bab568be538c30cd0008876e7e30e84e0d71aaa5ccdc8efd443d2c44b7e4",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_dates0.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2017-12",
+          "precision": "month",
+          "kind": "Institutional working-paper publication and printed date",
+          "qualifier": "Earliest recovered public version; precedes October25,2018 online journal and2019issue. Working-paper number2017/01 is not proof of January release."
+        }
+      ],
+      "remaining_unknowns": [
+        "Check original missing-to-zero rationale and exact operation; zeros may sometimes encode nonreporting, but must not presume all missing R&D represents0.",
+        "Verify final2019journal tables against this December2017working version."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
+    {
+      "record_id": "flora_01677",
+      "original_doi": "10.3982/ecta7767",
+      "report_doi": "10.1080/17421772.2022.2123111",
+      "original_title": "Nature or Nurture? Learning and the Geography of Female Labor Force Participation",
+      "report_title": "The rise and spread of female labour force participation at the US county level",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "adjudication": "Specific implemented/described estimator discrepancies and changed numbers documented; correcting descriptive mismatch does not establish one unique estimator is required by the substantive question.",
+      "mechanism": "Original description says county fixed effects, code allegedly runs random effects; IV instruments described as second-lag levels but implemented as lag differences; GMM lag orders shifted and wage endogeneity/time dummies differ from description.",
+      "consequence": "Original appendix TableS.III OLS own-lag .664 (SE .010), neighbor-lag .195 (.011); report Table2 corrected county-FE OLS .383 and .213, both significant. IV neighbor coefficient .577→.278. Original3-lag GMM own+neighbor .916+.570=1.486; adjusted Table2 .525+.689=1.214 still unstable. More favorable common-factor model is a separate substantial extension.",
+      "correction_only": "OLS FE-vsRE is clearest isolated description/implementation mismatch. GMM adjustment bundles lag correction, all time dummies and treating wages as exogenous. Table3 changes spatial model, estimator, sample and weight matrix; not coding-only correction.",
+      "response_status": "No formal Fogli/Veldkamp reply located. Original appendix checked; original Stata code not rerun in this audit.",
+      "sources": [
+        {
+          "file": "female_comment.pdf",
+          "url": "https://pure.rug.nl/ws/portalfiles/portal/637586111/The_rise_and_spread_of_female_labour_force_participation_at_the_US_county_level.pdf",
+          "locator": "Printed pp.145–146/PDF5–6 section2/Table2; pp.147–150 extensions and Table3",
+          "sha256": "63ca707d53ac301a2d5ba9225e38ed29c0e0b984a5797cebdf16902caabcbe9c",
+          "cache_path": "private-data/inventories/primary-review-a2/female_comment.pdf",
+          "retrieved_at": "2026-10-06T05:52:14.294336+00:00"
+        },
+        {
+          "file": "female_original_appendix.pdf",
+          "url": "https://www.econometricsociety.org/publications/econometrica/browse/2011/07/01/nature-or-nurture-learning-and-geography-female-labor-force/supp/7767_data%20description_0.pdf",
+          "locator": "TableS.III PDFp.9; sectionS2 model/estimation descriptions",
+          "sha256": "a85c583786251dc9350d9c96cf5f53b3df3c2506052bda0bc9abeeadd028e3f5",
+          "cache_path": "private-data/inventories/primary-review-a2/female_original_appendix.pdf",
+          "retrieved_at": "2026-10-06T05:55:18.517107+00:00"
+        },
+        {
+          "file": "a2_dates1.json",
+          "url": "https://spatial-panels.com/?page_id=2",
+          "locator": "Author supplemental software page and October2022 archive path",
+          "sha256": "8082a65c7ca107012861dc8002515d6f9795c78987ee2c8b0566e88a80abc991",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_dates1.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2022-10-14",
+          "precision": "day",
+          "kind": "Publisher online date shown on recovered paper",
+          "qualifier": "Earliest identified report; author code ZIP path also2022/10, but does not establish exact upload day. No earlier public version located."
+        }
+      ],
+      "remaining_unknowns": [
+        "Check original Stata calls and align identical sample before attributing each coefficient difference solely to correction.",
+        "Substantive theory supported after model revision; do not classify as simple refutation."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
+    },
+    {
+      "record_id": "flora_01696",
+      "original_doi": "10.1016/j.jfineco.2005.09.009",
+      "report_doi": "10.1016/j.jfineco.2013.08.003",
+      "original_title": "Profitability, investment and average returns",
+      "report_title": "Stock returns and the Miller Modigliani valuation formula: Revisiting the Fama French analysis",
+      "analysis_rerun": false,
+      "citation_analysis_eligible": "pending",
+      "earlier_report_doi": "10.2139/ssrn.1800603",
+      "adjudication": "Provisional theoretical measurement/estimand mismatch; full report and changed numerical coefficients not recovered.",
+      "mechanism": "Report says Miller–Modigliani comparative statics apply to firm-level investment and profitability, whereas original empirical tests use per-share variables. No specific arithmetic or coding mistake established from accessible primary abstract/section preview.",
+      "consequence": "Primary abstract states positive insignificant investment-return relation becomes theory-consistent after firm-level measurement. No checked old/new coefficient available; cannot label a verified numerical correction.",
+      "correction_only": "Changing from per-share to firm-level variables changes measured construct. Whether this fixes a formal derivation error requires checking full derivation and original operational definitions, not treating every alternative measure as a correction.",
+      "response_status": "No formal Fama/French reply located. Later five-factor-model discussion is not treated as an admission without direct inspection.",
+      "sources": [
+        {
+          "file": "a2_gaps.json",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1800603",
+          "locator": "SSRN primary metadata/abstract with first posted and revision dates",
+          "sha256": "828f21932a3ffb77b97a493b7b122583efa0060bc3faab661c7630305b96fe41",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_gaps.json"
+        },
+        {
+          "file": "a2_archives.json",
+          "url": "https://researchportalplus.anu.edu.au/en/publications/stock-returns-and-the-miller-modigliani-valuation-formula-revisit/",
+          "locator": "Author institutional article identity/abstract",
+          "sha256": "c762145a042af43549733b75e107accd39bbdcc564365446c15fe34f3d0c311d",
+          "cache_path": "private-data/inventories/primary-review-a2/a2_archives.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2011-04-06",
+          "precision": "day",
+          "kind": "SSRN first posted date",
+          "qualifier": "Live abstract/version revised June27,2012; exact claims in initial2011version not recovered. Do not assume current content was present on first-posted day."
+        },
+        {
+          "date": "2012-06-27",
+          "precision": "day",
+          "kind": "SSRN latest revision date",
+          "qualifier": "Posted record of earlier report; currently accessible primary abstract contains mismatch claim. FullPDF blocked."
+        },
+        {
+          "date": "2013-11",
+          "precision": "month",
+          "kind": "Final journal publication",
+          "qualifier": "Not first public version."
+        }
+      ],
+      "remaining_unknowns": [
+        "Recover working or final full text and before/after numerical tables.",
+        "Resolve first-version content before2011event dating.",
+        "Do not treat restoration of theoretical prediction as evidence of corrected coding without mechanism verification."
+      ],
+      "reviewed_at": "2026-10-06T05:58:09.307097+00:00"
     },
     {
       "record_id": "flora_01722",
@@ -188,7 +1498,11 @@
         "Earlier CESifo conference presentations and journal received date are not evidence of public content.",
         "Comment and reply cite different original Table 7 column numbers for their baseline; match numerical specification/code rather than uncritically propagating column number."
       ],
-      "citation_analysis_eligible": "pending"
+      "citation_analysis_eligible": "pending",
+      "original_title": "Trade Induced Technical Change? The Impact of Chinese Imports on Innovation, IT and Productivity",
+      "report_title": "On “Trade Induced Technical Change: The Impact of Chinese Imports on Innovation, IT, and Productivity”",
+      "reviewed_at": "2026-10-06T05:43:46.059316+00:00",
+      "analysis_rerun": false
     },
     {
       "record_id": "flora_01728",
@@ -260,7 +1574,11 @@
         "Check original coding documentation and any author response before interpreting excluded negative giving as accidental rather than intentional scope.",
         "Final full PDF not downloaded, but complete author-uploaded final text, including Table 2 (-0.603), is preserved in web extraction. Ignore ResearchGate March-2025 metadata: publisher establishes 2013 online publication."
       ],
-      "citation_analysis_eligible": "pending"
+      "citation_analysis_eligible": "pending",
+      "original_title": "Dictator games: a meta study",
+      "report_title": "The effects of the take-option in dictator-game experiments: a comment on Engel’s (2011) meta-study",
+      "reviewed_at": "2026-10-06T05:43:46.059316+00:00",
+      "analysis_rerun": false
     }
   ],
   "verification_scope": "Primary report and author-response passages checked against downloaded documents; original empirical analyses were not rerun. Dates distinguish document dates, public posting evidence, and unresolved earlier versions."

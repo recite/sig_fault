@@ -508,7 +508,11 @@ if __name__ == "__main__":
     assessed = sources.read("articles.csv")
     controls = sources.read("control_articles.csv")
     articles = assessed + controls
-    control_exclusions = assessed_control_exclusions(controls, assessed)
+    inventory = pilot.read_csv(sources.ROOT / "data/inventories/article_crosswalk.csv")
+    externally_assessed = [{"doi": r["original_doi"]} for r in inventory]
+    control_exclusions = assessed_control_exclusions(
+        controls, assessed + externally_assessed
+    )
     control_exclusions.update(
         {r["article_id"]: r["reason"] for r in sources.read("control_exclusions.csv")}
     )

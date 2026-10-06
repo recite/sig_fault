@@ -1,15 +1,18 @@
 # First reviews of the error candidates
 
-The complete reproduction-excerpt screen supplies candidates for full-report
-review. This first batch checks four older reports, their original-paper identities
-and available author responses. It establishes two acknowledged coding errors;
-the other two cases need further adjudication. None has yet been added to the
-citation-effect sample.
+The complete reproduction-excerpt screen supplies candidates for primary-source
+review. The [review table](../data/inventories/primary_review_summary.csv) covers
+older reports, their original-paper identities and available author responses.
+Some document acknowledged coding errors; others reveal specification disputes or
+remain limited by inaccessible full texts. None has yet been added to the
+citation-effect sample. The inventory report gives current coverage counts.
 
 The [structured reviews](../data/inventories/primary_reviews.json) retain the error
 mechanism, affected claim, exact source locations, response, date evidence,
 unresolved questions and source hashes. These are readings of the reports, not
-independent reruns of the original analyses.
+independent reruns of the original analyses. Each record states its access and
+verification limits. The cases below illustrate the distinctions; the linked
+table contains every completed review, including unresolved findings.
 
 | Original paper | What the primary sources establish | What remains before estimation |
 | --- | --- | --- |

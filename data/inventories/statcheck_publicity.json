@@ -1,0 +1,78 @@
+{
+  "scope": "Source-readiness review, not an exposure roster or citation-effect sample.",
+  "sources": [
+    {
+      "file": "private-data/inventories/statcheck-publicity/pubpeer-example.html",
+      "url": "https://pubpeer.com/publications/DCE07BC7DD0BA211BC5B41365F4BB5",
+      "retrieved_at": "2026-10-06T05:52:38.820180+00:00",
+      "sha256": "6eb4cedcfdf2a74d5d873a9989189d04c53e34604678ec40d7f5601b5a1c4d05",
+      "bytes": 46712
+    },
+    {
+      "file": "private-data/inventories/statcheck-publicity/hartgerink-response.pdf",
+      "url": "https://retractionwatch.com/wp-content/uploads/2016/10/20161026dgps.pdf",
+      "retrieved_at": "2026-10-06T05:52:38.500100+00:00",
+      "sha256": "a24694db9558308a91e93ceb8ab4c51b98b8dea33f7e36c9d083bb1cd3eb3f0e",
+      "bytes": 25820
+    },
+    {
+      "file": "private-data/inventories/statcheck-publicity/pubpeer-faq.html",
+      "url": "https://pubpeer.com/static/faq",
+      "retrieved_at": "2026-10-06T05:54:06.866177+00:00",
+      "sha256": "6221745f68ee10ec61c91d68c5c089f309928ce151e1fcbac627e2268e614434",
+      "bytes": 45441
+    },
+    {
+      "file": "private-data/inventories/statcheck-publicity/extension-pubpeer.js",
+      "url": "https://raw.githubusercontent.com/PubPeerFoundation/PubPeerBrowserExtensions/master/js/contentScript/pubpeer.js",
+      "retrieved_at": "2026-10-06T05:54:07.180215+00:00",
+      "sha256": "f47e8093d896ec80b552c7a3a309ce9fa62177948f86eebdb78445393b62c1b6",
+      "bytes": 18160
+    }
+  ],
+  "example": {
+    "original_doi": "10.1037/a0036260",
+    "title": "Reducing implicit racial preferences: I. A comparative investigation of 17 interventions",
+    "pubpeer_id": "DCE07BC7DD0BA211BC5B41365F4BB5",
+    "reports": [
+      {
+        "comment_id": 44762,
+        "platform_accepted_at": "2016-09-03T12:40:21.000000Z",
+        "version": "1.0.1",
+        "tests": 62,
+        "inconsistent_tests": 6,
+        "decision_inconsistent_tests": 4
+      },
+      {
+        "comment_id": 44764,
+        "platform_accepted_at": "2016-11-07T21:17:51.000000Z",
+        "version": "1.2.2",
+        "tests": 60,
+        "inconsistent_tests": 4,
+        "decision_inconsistent_tests": 2
+      }
+    ],
+    "archive_matches": "Original 2016-09-03 report, not revised 2016-11-07 report.",
+    "author_response": {
+      "comment_id": 44763,
+      "platform_accepted_at": "2016-09-10T16:52:24.000000Z",
+      "summary": "Authors acknowledge reporting mistakes in test statistics/degrees of freedom but state that effect sizes, reported p-values and substantive interpretation are unchanged.",
+      "verification_scope": "Public response read; original data and analyses not independently rerun."
+    },
+    "material_error_status": "not_established",
+    "identity_note": "The DOI printed in the Hartgerink response letter is 10.1037/a0036769; the linked PubPeer page and frozen statcheck record identify 10.1037/a0036260. The page title and DOI, not the letter DOI, anchor this example."
+  },
+  "collection_status": {
+    "full_posting_roster": "not_acquired",
+    "public_page_history": "accessible for verified URL",
+    "public_search": "HTTP 403 on DOI query",
+    "official_api_access": "FAQ requires requesting a key; credential-free probe returned missing-devkey validation error. No authenticated collection performed."
+  },
+  "implications": [
+    "Keep original and revised report versions; do not overwrite first-warning classifications with later rescans.",
+    "Distinguish accepted/posting metadata from scan dates and from earliest disclosure elsewhere.",
+    "Flagged-versus-unflagged reports estimate an adverse-versus-clean report comparison, since unflagged papers also received reports.",
+    "Automated significance-threshold inconsistencies do not establish consequential errors; review test context and responses.",
+    "Do not infer that every archived paper has verified report timing from one accessible example."
+  ]
+}

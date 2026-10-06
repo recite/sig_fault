@@ -1,5 +1,5 @@
 event_id,article_id,title,disclosure_year,pre_years,n_pre,donors,status
 dp_021_disclosure,i4r_ece0397b04bfa9,Paid Parental Leave and Children’s Schooling Outcomes,2021,2018;2019;2020,3,194,fit
-dp_148_disclosure,i4r_19321c88424658,The Arrival of Fast Internet and Employment in Africa,2024,2020;2021;2022;2023,4,218,fit
-dp_292_disclosure,i4r_55d334eaeb4010,The Effect of High-Tech Clusters on the Productivity of Top Inventors,2024,2022;2023,2,198,insufficient_support
-dp_294_disclosure,i4r_f45e09f5bc283f,Development Effects of Electrification: Evidence from the Topographic Placement of Hydropower Plants in Brazil,2021,2017;2018;2019;2020,4,117,fit
+dp_148_disclosure,i4r_19321c88424658,The Arrival of Fast Internet and Employment in Africa,2024,2020;2021;2022;2023,4,217,fit
+dp_292_disclosure,i4r_55d334eaeb4010,The Effect of High-Tech Clusters on the Productivity of Top Inventors,2024,2022;2023,2,197,insufficient_support
+dp_294_disclosure,i4r_f45e09f5bc283f,Development Effects of Electrification: Evidence from the Topographic Placement of Hydropower Plants in Brazil,2021,2017;2018;2019;2020,4,114,fit

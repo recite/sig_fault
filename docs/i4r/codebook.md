@@ -408,14 +408,14 @@ One row: selected control balance. Rows: 0. Key: event_id, control_id, horizon. 
 
 ## match_candidates.csv
 
-One row: screened event–control–horizon. Rows: 1335. Key: event_id, control_id, horizon. Producer: `i4r_match`.
+One row: screened event–control–horizon. Rows: 1341. Key: event_id, control_id, horizon. Producer: `i4r_match`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
 | `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | dp_021_disclosure; dp_148_disclosure; dp_292_disclosure; dp_294_disclosure |
 | `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_19321c88424658; i4r_55d334eaeb4010; i4r_ece0397b04bfa9; i4r_f45e09f5bc283f |
-| `control_id` | string | Original control-article ID retained across reused matches. | 0 | 694 distinct nonmissing values |
-| `distance` | number | Standardized pre-citation and text matching distance; no post outcomes used. | 1335 |  |
+| `control_id` | string | Original control-article ID retained across reused matches. | 0 | 696 distinct nonmissing values |
+| `distance` | number | Standardized pre-citation and text matching distance; no post outcomes used. | 1341 |  |
 | `eligible` | string | yes/no after metadata, age, exposure and citation-caliper gates. | 0 | no |
 | `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | assessment_or_reply; historical_republication; incomplete_pre_citations; insufficient_article_age; known_assessed_article; known_retraction_in_window; nonresearch_publication |
 | `horizon` | integer | Full calendar years after disclosure, primary 1; secondary 2 and 3. | 0 | 1 to 3 |

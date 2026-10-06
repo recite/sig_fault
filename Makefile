@@ -77,6 +77,7 @@ clean:
 i4r:
 	python3 scripts/i4r_registry.py build
 	python3 scripts/i4r_registry.py validate
+	$(MAKE) inventories
 	python3 scripts/i4r_match.py
 	$(RSCRIPT) scripts/i4r_analysis.R
 	python3 scripts/i4r_report.py

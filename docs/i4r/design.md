@@ -26,6 +26,15 @@ Publication-genre correction (2026-10-06, before estimating I4R effects): the in
 
 Match with replacement, up to three controls per affected article, using only pre-disclosure information. Standardized Euclidean distance uses log(1 + citations) in the two complete pre-years, their change, and cosine distance of original title/abstract text. Each component receives equal weight after scaling over the eligible risk set plus treated article. Each citation component must lie within one pooled standard deviation; zero-variance components require equality and contribute zero distance. Stable article IDs break ties. No automatic journal expansion. Missing abstracts use titles, with this limitation flagged. Retain candidate distances, selected weights, exclusions, and unmatched affected articles. Each treated article has total weight one and its controls combined weight one.
 
+Inventory expansion (2026-10-06, after the pilot estimates): the control identity
+screen now also excludes exact normalized DOI matches to the full FORRT/statcheck
+crosswalk. This applies the existing conservative rule for known assessed papers
+to the newly acquired inventories, including favorable and unresolved assessments.
+It does not classify those papers as erroneous or assign disclosure dates from
+inventory years. Version aliases can still evade an exact-DOI screen. The build
+refreshes the crosswalk before matching. This is a retrospective expansion of
+known coverage; citation outcomes do not determine inclusion in the crosswalk.
+
 ## Outcomes and estimation
 
 Count deduplicated incoming journal-article/review citation relationships using complete calendar years through 2025. Missing or incomplete retrieval is not zero. The primary contrast is the equal-treated-weight average of (treated year +1 minus year -1) minus the same weighted control change. Exclude disclosure year 0. Require two complete pre-years and one complete post-year, with original publication before the first pre-year starts. Collect at least three pre-years when the article age permits.

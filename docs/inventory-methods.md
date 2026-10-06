@@ -58,7 +58,8 @@ of its source flags, but running that code is not part of this build.
 | `repeated_assessment_keys.csv` | Repeated valid original DOI × report DOI × assessment type | Source row IDs and outcomes, including conflicts; these are review candidates, not automatically duplicate assessments |
 | `status.json` | Source-specific inventory counts | Counts of records, distinct valid DOI strings, missing identities and review candidates; distinct from eligible error events |
 | `sources.json` | One frozen input | Source URL/version, retrieval time, hashes, license and attribution |
-| `primary_reviews.json` | One manually reviewed reproduction report | Error mechanism, consequence, author response, primary-source locations and hashes, competing date evidence and unresolved eligibility |
+| `primary_reviews.json` | One manually reviewed reproduction record | Error mechanism, consequence, author response, primary-source locations and hashes, competing date evidence and unresolved eligibility |
+| `primary_review_summary.csv` | One reviewed record linked back to its frozen inventory identity | Generated flat summary of the manual review; source URLs, date evidence, unknowns and pending citation eligibility |
 
 `record_id` combines the source and its one-based data-row index in this frozen
 snapshot. It is a row locator, not a stable scholarly identity across source
@@ -133,6 +134,10 @@ includes failed manipulation checks among failed replications and uses assessors
 reported conclusions. Such records do not establish that the original result was
 incorrect.
 
+The [statcheck publicity review](statcheck-publicity.md) checks an actual report
+history and documents the remaining posting-roster gap. It preserves original
+flags, rescans and author responses as different observations.
+
 Freeze exposure and comparison definitions before collecting or examining new
 citation outcomes. Report denominators at each stage: source records, original
 papers, assessed claims, verified material errors, dated first disclosures and
@@ -145,7 +150,7 @@ An independent review reproduced the source record counts, DOI overlaps and
 statcheck flag counts. It identified six reproduction records without usable
 original DOIs; those records now retain unknown I4R membership. A temporary build
 containing only public source snapshots, the excerpt-screen annotations, the import
-script and the I4R article roster reproduced all ten inventory/report outputs byte
+script, primary-source reviews and the I4R article roster reproduced all eleven inventory/report outputs byte
 for byte, without private files or network access. Local checks cover malformed identifiers, conflicting
 assessments, missing flags and repeated papers across sources. The full repository
 lint, tests and manuscript build also pass.
@@ -174,11 +179,13 @@ also catches possible identity mismatches and consequential corrections hidden
 under favorable source labels. No screen category automatically adds an event to
 the I4R registry or changes a citation estimate.
 
-The [first primary-report reviews](inventory-primary-reviews.md) retain four
-case assessments separately from the excerpt screen. The central review checked
+The [primary-source reviews](inventory-primary-reviews.md) retain case assessments
+separately from the excerpt screen. The central review checked
 the numerical claims and key passages in the downloaded documents. Original
 analyses were not rerun. Source files are cached with hashes; the public review
-includes source URLs and locations. No reviewed case is yet assigned an eligible
+includes source URLs and locations. Abstract-only or partially retrieved sources
+remain explicitly limited reviews. The build rejects repeated review IDs,
+identity mismatches and sources without hashes and locations. No reviewed case is yet assigned an eligible
 treatment date or added to matching. The inventory status field
 `imported_verified_material_errors` counts automatic classifications by the import
 (always zero), not findings from these separate manual reviews.

@@ -246,6 +246,53 @@ def annotate_screens(rows, screens):
     return result
 
 
+def primary_review_rows(inventory, reviews):
+    """Link manual source reviews without turning them into eligible exposures."""
+    lookup = {r["record_id"]: r for r in inventory}
+    seen = set()
+    result = []
+    for review in reviews:
+        rid = review["record_id"]
+        if rid in seen or rid not in lookup:
+            raise ValueError("Repeated or unknown primary-review record")
+        seen.add(rid)
+        if any(review[k] != lookup[rid][k] for k in ["original_doi", "report_doi"]):
+            raise ValueError("Primary-review identity differs from inventory")
+        if not review["sources"] or any(
+            not source.get("url")
+            or not source.get("locator")
+            or not re.fullmatch(r"[0-9a-f]{64}", source.get("sha256", ""))
+            for source in review["sources"]
+        ):
+            raise ValueError("Primary review lacks located, hashed sources")
+        result.append(
+            {
+                k: lookup[rid][k]
+                for k in ["record_id", "original_doi", "original_title", "report_doi"]
+            }
+            | {
+                k: review[k]
+                for k in [
+                    "adjudication",
+                    "mechanism",
+                    "consequence",
+                    "correction_only",
+                    "response_status",
+                ]
+            }
+            | dict(
+                citation_analysis_eligible="pending",
+                source_count=len(review["sources"]),
+                source_urls=";".join(s["url"] for s in review["sources"]),
+                date_evidence=json.dumps(review["date_evidence"], ensure_ascii=False),
+                remaining_unknowns=json.dumps(
+                    review["remaining_unknowns"], ensure_ascii=False
+                ),
+            )
+        )
+    return result
+
+
 def report(counts):
     rows = []
     for key, label, unit in [
@@ -304,6 +351,12 @@ response before verification. Other records remain in the
 reproduction failures, minor discrepancies and specification disputes. Excerpt
 screening does not establish material error or rule it out.
 
+Primary-source review now covers {counts['primary_source_reviews']} records,
+with full reports where recovered and explicitly limited reviews otherwise.
+The [review table](../data/inventories/primary_review_summary.csv) separates the
+error mechanism, numerical consequence, author response and unresolved date evidence.
+These reviews do not automatically create eligible treatment events.
+
 ## Second priority: the large statistical-reporting audit
 
 The archived statcheck release supplies all {counts['statcheck']['original_dois']:,}
@@ -346,7 +399,10 @@ missing values, attribution and the remaining eligibility checks. Source labels 
 not automatically establish material errors. Separate
 [primary-report reviews](inventory-primary-reviews.md) document the first adjudications
 and remaining questions. These inventories contribute **zero new eligible citation
-comparisons** so far. The existing citation estimates are unchanged.
+comparisons** so far. They also expand the screen for previously assessed comparison
+papers, which changes one I4R pilot match; see the updated
+[pilot results](i4r/aggregate-results.md). The Nieuwenhuis and Lal estimates are
+unchanged.
 """
     (ROOT / "docs/inventories.md").write_text(text)
 
@@ -405,6 +461,9 @@ def build():
         r for r in screened if r["screen_category"] == "explicit_error_candidate"
     ]
     write_csv("error_review_queue.csv", candidates)
+    primary = json.loads((DATA / "primary_reviews.json").read_text())["cases"]
+    reviewed = primary_review_rows(queue, primary)
+    write_csv("primary_review_summary.csv", reviewed)
     duplicate_groups = collections.defaultdict(list)
     for r in flora:
         if r["original_doi"] and r["report_doi"]:
@@ -456,6 +515,7 @@ def build():
             sorted(collections.Counter(r["screen_category"] for r in screened).items())
         ),
         explicit_error_candidate_records=len(candidates),
+        primary_source_reviews=len(reviewed),
         explicit_error_candidate_dois=len(
             {r["original_doi"] for r in candidates} - {""}
         ),
