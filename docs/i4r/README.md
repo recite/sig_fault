@@ -2,7 +2,7 @@
 
 This extension builds an article-level record of consequential errors documented in the Institute for Replication (I4R) collection. The question is how citations change **after the error becomes public**, relative to comparable articles without a public assessment in the observation window.
 
-The [coverage report](coverage.md) gives the current counts and unresolved stages. The inventory includes all 331 discussion papers and 383 report listings found in the frozen catalogs. These are overlapping source records, not 714 distinct original articles. Every listing now has a documented scope review. Confirmed duplicate versions are linked; large audits, unavailable reports and uncertain reviewer-team identities remain explicit coverage gaps. **The 90% assessment-resolution target has not been met. No I4R treatment-effect estimate is available.**
+The [coverage report](coverage.md) gives the current counts and unresolved stages. The inventory includes all 331 discussion papers and 383 report listings found in the frozen catalogs. These are overlapping source records, not 714 distinct original articles. Every listing now has a documented scope review. Confirmed duplicate versions are linked; large audits, unavailable reports and uncertain reviewer-team identities remain explicit coverage gaps. **The 90% assessment-resolution target has not been met. The primary article/review citation analysis remains incomplete.** A [secondary analysis](aggregate-results.md) uses already cached annual totals across citing document types. Its small matched subset supports case-level comparisons, with substantial limits on causal interpretation and generalization.
 
 See [validation](validation.md) for the local checks and independent review.
 
@@ -26,6 +26,7 @@ Install R dependencies with the repository's `make restore`. Install the Python 
 python3 -m pip install -r requirements-i4r.txt
 make i4r
 make i4r-test
+make i4r-aggregate
 ```
 
 The offline build uses committed source inventories, reviewed evidence, verified bibliographic metadata, and any completed citation tables. `source_adjudications.csv` records the catalog review decisions; `claim_adjudications.json` preserves claim-specific consequences, disputes and dating evidence; `curated_claims.csv` supplies the verified and unresolved claims to the registry. `assessment_inventory.json` records observed article assessments in reviewed discussion papers and report bundles, with unresolved reviewer identities explicit; its generated tables link each unit to its original article, reports, plans and replies. These units are distinct from claim-level error records. `assessment_scope.csv` shows which catalog sources have been fully enumerated, are supporting replies or non-assessments, or remain open. It regenerates registry tables, matching decisions, analysis outputs, and the coverage report. Private PDFs and API caches are not needed. Empty analysis output is an explicit incomplete-data status, not a zero effect.
@@ -47,6 +48,8 @@ make i4r
 ```
 
 The optional `fetch --targets-only` command collects affected-article histories independently of control-date verification. Matching waits for all otherwise eligible controls to have complete pre-year histories.
+
+The secondary annual totals can be re-extracted from cached OpenAlex responses with `python3 scripts/i4r_aggregate.py extract`. Its public inputs, source provenance, candidate exclusions and selected matches are in `data/i4r/aggregate/`; `make i4r-aggregate` reproduces the analysis without those private caches. [The secondary design](aggregate-design.md) records its outcome and rematching differences. The explicit control-exclusion ledger removes verified frontmatter, financial reports, introductions, article assessments/replies and a historical republication from both analyses. Substantive research is not excluded merely because it is presented as a lecture or methodological article.
 
 `make i4r-sources` resumes the frozen inventory. To deliberately refresh the catalog, first run `python3 scripts/i4r_sources.py discover`; changing the study cutoff requires an explicit design update. Document extraction also requires Poppler's `pdftotext`.
 

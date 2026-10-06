@@ -220,6 +220,19 @@ One row: external control candidate. Rows: 1022. Key: article_id. Producer: `i4r
 | `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 1021 | 2023-07-01 |
 | `retraction_source` | string | Notice URL establishing retraction date. | 1021 | https://doi.org/10.1257/aer.113.7.2053 |
 
+## control_exclusions.csv
+
+One row: verified control-publication exclusion. Rows: 44. Key: article_id. Producer: `manual publication-genre and identity review`.
+
+| Column | Type | Meaning | Missing | Observed range / values |
+| --- | --- | --- | ---: | --- |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 44 distinct nonmissing values |
+| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 42 distinct nonmissing values |
+| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 44 distinct nonmissing values |
+| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | assessment_or_reply; historical_republication; nonresearch_publication |
+| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 44 distinct nonmissing values |
+| `source_url` | string | Public evidence or notice URL. | 0 | 44 distinct nonmissing values |
+
 ## control_metadata_provenance.csv
 
 One row: accepted control publisher-metadata response. Rows: 1000. Key: article_id, provider. Producer: `i4r_citations control-metadata`.
@@ -381,16 +394,16 @@ One row: selected control balance. Rows: 0. Key: event_id, control_id, horizon. 
 
 ## match_candidates.csv
 
-One row: screened event–control–horizon. Rows: 1295. Key: event_id, control_id, horizon. Producer: `i4r_match`.
+One row: screened event–control–horizon. Rows: 1323. Key: event_id, control_id, horizon. Producer: `i4r_match`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
 | `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | dp_021_disclosure; dp_148_disclosure; dp_292_disclosure; dp_294_disclosure |
 | `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_19321c88424658; i4r_55d334eaeb4010; i4r_ece0397b04bfa9; i4r_f45e09f5bc283f |
-| `control_id` | string | Original control-article ID retained across reused matches. | 0 | 672 distinct nonmissing values |
-| `distance` | number | Standardized pre-citation and text matching distance; no post outcomes used. | 1295 |  |
+| `control_id` | string | Original control-article ID retained across reused matches. | 0 | 687 distinct nonmissing values |
+| `distance` | number | Standardized pre-citation and text matching distance; no post outcomes used. | 1323 |  |
 | `eligible` | string | yes/no after metadata, age, exposure and citation-caliper gates. | 0 | no |
-| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | incomplete_pre_citations; insufficient_article_age; known_retraction_in_window |
+| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | assessment_or_reply; historical_republication; incomplete_pre_citations; insufficient_article_age; known_retraction_in_window; nonresearch_publication |
 | `horizon` | integer | Full calendar years after disclosure, primary 1; secondary 2 and 3. | 0 | 1 to 3 |
 
 ## match_exclusions.csv

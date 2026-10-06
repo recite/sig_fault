@@ -12,6 +12,7 @@
 \input{../tabs/lal_macros.tex}
 \input{../tabs/nieuwenhuis_macros.tex}
 \input{../tabs/meta_macros.tex}
+\input{../tabs/i4r_aggregate_macros.tex}
 \title{Significant Error:\\Citations to Research With Publicized Statistical Errors}
 \author{Ken Cor \and Gaurav Sood}
 \date{October 2026}
@@ -87,6 +88,11 @@ Change is $100(e^{\widehat\beta}-1)$, comparing flagged and comparison papers' 2
 Papers below the $F$ threshold received an average of \LalWeakBefore{} citations in 2023 and \LalWeakAfter{} in 2025; their median rose from \LalWeakMedianBefore{} to \LalWeakMedianAfter. Papers meeting the broader inferential-sensitivity definition rose from \LalSensitiveBefore{} to \LalSensitiveAfter{} citations on average, while their median remained \LalSensitiveMedianBefore. Continued citation thus appears under both definitions, but the relative changes differ: \LalWeakChange\% for the weak-instrument screen and \LalSensitiveChange\% for inferential sensitivity. On a fixed older cohort, moving the baseline from 2023 to 2022 changes the weak-instrument estimate from \LalWeakOlderBaseline\% to \LalWeakAlternate\%, and the sensitivity estimate from \LalSensitiveOlderBaseline\% to \LalSensitiveAlternate\%.
 
 These estimates do not support a single, stable citation response across diagnostics. Nor can the studies yet be treated as interchangeable measurements of a common publicity effect: the neuroscience study concerns a general warning, whereas the IV audit assesses named designs and circulated before formal publication. The historical neuroscience exports and the IV citation histories also come from different databases. A comparison of the same neuroscience papers across databases is needed to assess how that measurement difference affects the contrasts.
+
+\section{Individually publicized errors}
+A secondary analysis follows \IfrCases{} papers with verified material errors and dated public disclosures in the Institute for Replication collection. These cases address publicity about an identified paper more directly than a general methodological warning. We compare the full calendar year before disclosure with the full year afterward, matching each affected paper to articles from the same journal and neighboring publication years using only earlier citation counts and text. The outcome is OpenAlex's precomputed annual citation total across document types. This available subset and its separately selected matches differ from the primary article/review-link analysis, which remains incomplete.
+
+Citations increased for \IfrIncreased{} of the \IfrCases{} affected papers. Their median rose from \IfrMedianBefore{} to \IfrMedianAfter{}, compared with \IfrControlMedianBefore{} to \IfrControlMedianAfter{} among controls. Relative to controls, however, the cases differ (Appendix~\ref{app:i4r}). The average contrast is +\IfrChange{} citations, but becomes \IfrOmitInventors{} when the inventor-clusters paper is omitted. The affected papers were already gaining citations faster before disclosure. Continued citation is evident in these cases; a stable causal response to disclosure is not. We retain these absolute, all-type contrasts separately from the proportional cross-audit synthesis.
 
 \section{Discussion}
 The affected papers continued to circulate after their statistical mistake was publicized. This pattern appears in median as well as mean citations and is accompanied by very little recorded qualification in the context sample. The evidence is inconsistent with wholesale abandonment of these papers. It is less informative about how many citations publicity prevented.
@@ -204,5 +210,35 @@ All entries are percentage relative growth contrasts. Component estimates compar
 The combined contrast is \MetaWeakPercent\% (95\% interval [\MetaWeakLower, \MetaWeakUpper]\%) under the instrument-strength screen and \MetaSensitivePercent\% ([\MetaSensitiveLower, \MetaSensitiveUpper]\%) under inferential sensitivity. The difference illustrates why the diagnostic definition matters. The repository also reports the union and AR-only alternatives and repeats the synthesis using only neuroscience papers published in 2009. The AR-only comparison remains exploratory because its IV component contains only \LalARCount{} flagged papers.
 
 With component variances $s_N^2$ and $s_L^2$, the variance of the equal-audit mean is $(s_N^2+s_L^2)/4$. Intervals use a Welch--Satterthwaite approximation, with degrees of freedom $(s_N^2+s_L^2)^2/(s_N^4/d_N+s_L^4/d_L)$ and component article-cluster degrees of freedom $d_N,d_L$. This approximation uses cluster-robust component variances and assumes independence across audits. The interval describes estimation uncertainty for these fixed cases; it is not a random-effects prediction interval for other critiques. Different citation sources, incomplete type harmonization, prior circulation of the IV critique, and the distinction between a demonstrated error and an adverse diagnostic remain embedded in the combined estimates. We therefore interpret them as descriptive summaries, not a general causal effect of publicizing errors.
+
+
+\clearpage
+\section{Matched cases with individually publicized errors}\label{app:i4r}
+The public I4R registry links each original article to the demonstrated error, affected claim, source passage, replies and earliest substantiated public disclosure. Material corrections can strengthen or weaken a finding; these are not necessarily refuted papers. A later I4R listing does not reset the disclosure clock. The repository's \href{https://github.com/recite/sig_fault/blob/main/data/i4r/assessments.csv}{claim assessments} and \href{https://github.com/recite/sig_fault/blob/main/data/i4r/events.csv}{disclosure ledger} provide the case-level evidence.
+
+The secondary analysis uses cached OpenAlex work records with verified identities, source hashes, retrieval dates and supported annual coverage. Missing histories remain missing. Controls exclude known assessed papers, retracted papers and verified nonresearch items. Matching waits for a complete eligible journal pool and uses up to three controls, selected by pre-disclosure citation levels, growth and text distance with fixed calipers. The matching rules and measurement choice were recorded before these contrasts were estimated; this remains a retrospective analysis. Post-disclosure outcomes do not enter matching.
+
+\begin{table}[htbp]
+\centering
+\caption{Citation changes after individually publicized errors}
+\label{tab:i4r}
+\small
+\input{../tabs/i4r_aggregate_cases.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+Annual citing works of all document types. The years column gives the calendar year before and after first documented disclosure; the disclosure year is excluded. Controls are equally weighted within each matched set. The final column subtracts the control change from the affected paper's change. These are individual observed contrasts, not independently identified causal effects.
+\end{minipage}
+\end{table}
+
+Mean citations rose from \IfrMeanBefore{} to \IfrMeanAfter{} among affected papers and from \IfrControlMeanBefore{} to \IfrControlMeanAfter{} among controls. The equal-paper average difference in changes is \IfrChange{} citations (exploratory 95\% interval [\IfrLower, \IfrUpper]). First differences with matched-set effects reproduce this average. The covariance clusters by original article and disclosure event, retaining original identities when controls recur; the critical value uses the smaller cluster count minus one as degrees of freedom. Inference conditions on selected matches and is fragile with only \IfrCases{} disclosures.
+
+The preceding year shows a matched growth difference of +\IfrPreChange{} citations, despite matching on pre-period outcomes. Figure~\ref{fig:i4r} shows the differing trajectories. Leaving out the inventor-clusters case changes the average post-disclosure contrast to \IfrOmitInventors{}. The repository reports all leave-one-disclosure-out contrasts, alternative baselines and longer horizons on common cohorts. These diagnostics prevent treating the positive pooled contrast as evidence that publicity increases citations. They also show why continued citation alone cannot measure the citations that publicity prevented.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../figs/i4r_aggregate_paths.pdf}
+\caption{Citation paths for the supported I4R cases. Solid lines show each affected paper; dashed lines show its equally weighted matched controls. Counts include citing works of all types. Year zero marks the calendar year of first documented public disclosure, not its exact date. All panels use the same scale. These descriptive counts have no sampling intervals and do not measure endorsement of the erroneous claim.}
+\label{fig:i4r}
+\end{figure}
 
 \end{document}

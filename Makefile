@@ -1,6 +1,6 @@
 RSCRIPT ?= Rscript
 
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test i4r i4r-sources i4r-test nieuwenhuis nieuwenhuis-fetch nieuwenhuis-test synthesis
+.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test i4r i4r-sources i4r-test i4r-aggregate nieuwenhuis nieuwenhuis-fetch nieuwenhuis-test synthesis
 
 restore:
 	$(RSCRIPT) --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
@@ -11,7 +11,7 @@ analysis:
 figures: analysis
 	$(RSCRIPT) scripts/figures.R
 
-tables: analysis
+tables: analysis i4r-aggregate
 	$(RSCRIPT) scripts/tables.R
 
 manuscript:
@@ -24,9 +24,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/i4r_*.py tests/test_i4r.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
-	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
-	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
+	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
+	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
+	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
 	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
@@ -90,8 +90,14 @@ i4r-sources:
 	python3 scripts/i4r_sources.py manifest
 
 i4r-test: i4r
-	python3 -m unittest discover -s tests -p 'test_i4r.py'
+	$(MAKE) i4r-aggregate
+	python3 -m unittest discover -s tests -p 'test_i4r*.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "i4r", stop_on_failure = TRUE)'
+
+i4r-aggregate: i4r
+	python3 scripts/i4r_aggregate.py validate
+	python3 scripts/i4r_match.py --citation-file data/i4r/aggregate/citations.csv --output-dir data/i4r/aggregate
+	$(RSCRIPT) scripts/i4r_analysis.R data/i4r/aggregate docs/i4r/aggregate-results.md
 
 nieuwenhuis: analysis
 	python3 scripts/nieuwenhuis.py compare

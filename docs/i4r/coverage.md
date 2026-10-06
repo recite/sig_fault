@@ -84,6 +84,6 @@ The aggregate economics/political-science package anonymizes article identities;
 
 The strict primary window requires two complete calendar years after publication before disclosure and one complete year afterward. Recent errors remain in the registry but cannot enter that comparison. Do not substitute a later I4R report date to obtain a longer baseline.
 
-No treatment-effect conclusion is available until verified identities, complete risk sets and complete citation retrieval produce supported matched panels.
+The primary article/review analysis remains pending until verified identities, complete risk sets and complete citation retrieval produce supported matched panels. The separately matched [annual-total analysis](aggregate-results.md) reports secondary contrasts from cached all-type totals.
 
 See [the evidence catalog](catalog.html), [design](design.md), [data dictionary](codebook.md), and [analysis status](results.md).

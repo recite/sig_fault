@@ -12,6 +12,8 @@ The 2011 *Nature Neuroscience* critique explained the mistake of treating a sign
 
 Continued use is clear; how much publicity changed citation growth is less certain. A Poisson model with article and year fixed effects estimates a 11.5% smaller post/pre citation ratio for flagged papers (95% interval [-31.6, 14.4]%). Their absolute citation gain was slightly larger because they started from a higher level. The appendix reports alternative specifications and magnitude bounds. Neither continued citation nor an imprecise comparison establishes that publicity had no effect.
 
+In a secondary analysis of individually publicized errors, citations increased for 3 of 4 affected papers. Their median annual citations rose from 41 to 65; matched controls’ median rose from 35 to 47.5. The average difference in changes is +7.7 citations, but becomes -2.2 when the inventor-clusters paper is omitted. Earlier growth also differed. These cases do not establish a stable causal response to disclosure. See the [individual comparisons](docs/i4r/aggregate-results.md).
+
 ## Research design
 
 - **Papers and timing:** 76 flagged and 77 comparison papers, with 2010 as the baseline and 2012–2015 as the post period. The critique appeared in August 2011; that transition year is excluded from the main model. Citation-free years within covered histories remain zero.
@@ -37,7 +39,7 @@ For individual steps, use `make analysis`, `make figures`, `make tables`, `make 
 
 ## Files
 
-The [I4R extension](docs/i4r/README.md) builds a sourced registry of significant errors and their earliest public disclosures, followed by separate control matching and citation-effect analysis. It inventories both full discovered catalogs, keeps unresolved assessments visible, and does not yet report treatment effects. See the [coverage report](docs/i4r/coverage.md) and [evidence catalog](docs/i4r/catalog.html).
+The [I4R extension](docs/i4r/README.md) builds a sourced registry of significant errors and their earliest public disclosures, followed by separate control matching and citation-effect analysis. It inventories both full discovered catalogs, keeps unresolved assessments visible, and reports a separately matched [secondary analysis of annual citation totals](docs/i4r/aggregate-results.md). The primary analysis of deduplicated article/review links remains pending. See the [coverage report](docs/i4r/coverage.md) and [evidence catalog](docs/i4r/catalog.html).
 
 The [extension pilot](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding are still in progress; it does not yet provide estimates of continued reliance.
 

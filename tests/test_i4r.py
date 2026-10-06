@@ -272,6 +272,23 @@ class AcquisitionTests(unittest.TestCase):
 
 
 class PipelineIntegrityTests(unittest.TestCase):
+    def test_nonresearch_control_does_not_block_complete_research_pool(self):
+        articles = [article("treated"), article("research"), article("frontmatter")]
+        citations = counts("treated", {2013: 10, 2014: 12}) + counts(
+            "research", {2013: 10, 2014: 12}
+        )
+        matches, candidates, excluded, _ = matching.match(
+            articles,
+            [event()],
+            citations,
+            [],
+            control_exclusions={"frontmatter": "nonresearch_publication"},
+        )
+        self.assertEqual([r["control_id"] for r in matches], ["research"])
+        self.assertFalse(excluded)
+        omitted = [r for r in candidates if r["control_id"] == "frontmatter"][0]
+        self.assertEqual(omitted["reason"], "nonresearch_publication")
+
     def test_partial_control_histories_do_not_change_the_matching_pool(self):
         articles = [article("treated"), article("c1"), article("c2")]
         pre = counts("treated", {2013: 3, 2014: 4}) + counts("c1", {2013: 3, 2014: 4})

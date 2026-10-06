@@ -71,3 +71,10 @@ testthat::test_that("reused-control inference equals independent sandwich arithm
   p$weight[p$treated == 0] <- 0.5
   testthat::expect_error(i4r_estimate(p), "unit weight")
 })
+testthat::test_that("weighted medians agree with ordinary medians at equal weights", {
+  testthat::expect_equal(i4r_weighted_median(c(7, 1, 5, 3), rep(1, 4)), 4)
+  testthat::expect_equal(i4r_weighted_median(c(7, 1, 5), rep(1, 3)), 5)
+  testthat::expect_equal(i4r_weighted_median(c(1, 4, 9), c(0.6, 0.2, 0.2)), 1)
+  testthat::expect_equal(i4r_weighted_median(c(1, 4, 9), c(0.5, 0.25, 0.25)), 2.5)
+  testthat::expect_error(i4r_weighted_median(c(1, NA), c(1, 1)), "Invalid")
+})

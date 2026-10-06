@@ -50,7 +50,10 @@ jsonlite::write_json(list(
     "Historical Nieuwenhuis cohort includes partial publication-year baselines.",
     "Database and document-type harmonization remains incomplete.",
     "Lal formal publication followed earlier circulation; diagnostics differ from verified errors.",
-    "I4R matched citation panels remain incomplete.",
+    paste(
+      "Primary I4R article/review citation panels remain incomplete;",
+      "secondary all-type absolute contrasts are reported separately."
+    ),
     "Intervals assume independent audit errors and omit generalization uncertainty."
   ),
   pooling_rule = paste(
@@ -107,7 +110,7 @@ dir.create("docs/meta", recursive = TRUE, showWarnings = FALSE)
 report <- c(
   "# Provisional synthesis across two methodological audits", "",
   "The completed neuroscience and IV cohorts permit a common-window summary, while",
-  "the full OpenAlex neuroscience comparison and matched I4R panels remain pending.",
+  "the full OpenAlex neuroscience comparison and primary I4R article/review panels remain pending.",
   "Every row below includes one estimate from each audit, with equal audit weights.",
   "Alternative IV diagnostics are separate analyses of the same evidence.", "",
   paste0(

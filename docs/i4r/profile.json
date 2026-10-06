@@ -696,6 +696,45 @@
       }
     }
   },
+  "control_exclusions.csv": {
+    "rows": 44,
+    "duplicate_keys": 0,
+    "key": [
+      "article_id"
+    ],
+    "columns": {
+      "article_id": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 44
+      },
+      "title": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 42
+      },
+      "doi": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 44
+      },
+      "reason": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 3
+      },
+      "evidence": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 44
+      },
+      "source_url": {
+        "type": "string",
+        "missing": 0,
+        "distinct_nonmissing": 44
+      }
+    }
+  },
   "control_metadata_provenance.csv": {
     "rows": 1000,
     "duplicate_keys": 0,
@@ -1211,7 +1250,7 @@
     }
   },
   "match_candidates.csv": {
-    "rows": 1295,
+    "rows": 1323,
     "duplicate_keys": 0,
     "key": [
       "event_id",
@@ -1232,11 +1271,11 @@
       "control_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 672
+        "distinct_nonmissing": 687
       },
       "distance": {
         "type": "number",
-        "missing": 1295,
+        "missing": 1323,
         "distinct_nonmissing": 0
       },
       "eligible": {
@@ -1247,7 +1286,7 @@
       "reason": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 3
+        "distinct_nonmissing": 6
       },
       "horizon": {
         "type": "integer",

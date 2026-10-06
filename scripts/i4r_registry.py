@@ -956,8 +956,17 @@ def validate():
         ("assessment_sources.csv", ["unit_id", "source_id", "relation"]),
         ("assessment_documents.csv", ["unit_id", "document_id"]),
         ("assessment_scope.csv", ["source_id"]),
+        ("control_exclusions.csv", ["article_id"]),
     ]:
         pilot.unique(s.read(name), fields)
+    controls = {r["article_id"]: r for r in s.read("control_articles.csv")}
+    for r in s.read("control_exclusions.csv"):
+        if r["article_id"] not in controls or not all(
+            r.get(k) for k in ["reason", "evidence", "source_url"]
+        ):
+            raise ValueError("Control exclusion lacks identity or evidence")
+        if r["doi"] != controls[r["article_id"]]["doi"]:
+            raise ValueError("Control exclusion DOI mismatch")
     for r in (
         s.read("source_articles.csv") + s.read("assessments.csv") + s.read("events.csv")
     ):

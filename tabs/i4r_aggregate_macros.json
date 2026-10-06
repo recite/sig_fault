@@ -1,0 +1,19 @@
+{
+  "IfrCases": "4",
+  "IfrIncreased": "3",
+  "IfrMeanBefore": "53.2",
+  "IfrMeanAfter": "69",
+  "IfrMedianBefore": "41",
+  "IfrMedianAfter": "65",
+  "IfrControlMeanBefore": "43.2",
+  "IfrControlMeanAfter": "51.3",
+  "IfrControlMedianBefore": "35",
+  "IfrControlMedianAfter": "47.5",
+  "IfrChange": "7.7",
+  "IfrLower": "-26.2",
+  "IfrUpper": "41.6",
+  "IfrPreChange": "10.7",
+  "IfrOmitInventors": "-2.2",
+  "IfrMinimum": "-9",
+  "IfrMaximum": "37.3"
+}

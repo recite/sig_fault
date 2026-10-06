@@ -912,6 +912,13 @@
         "source_id"
       ],
       "producer": "scripts/i4r_registry.py from assessment_scope.json"
+    },
+    "control_exclusions.csv": {
+      "unit": "verified control-publication exclusion",
+      "key": [
+        "article_id"
+      ],
+      "producer": "manual publication-genre and identity review"
     }
   }
 }

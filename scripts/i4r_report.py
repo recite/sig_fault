@@ -361,9 +361,12 @@ def report():
         ),
         "",
         (
-            "No treatment-effect conclusion is available until verified identities,"
+            "The primary article/review analysis remains pending until verified"
+            " identities,"
             " complete risk sets and complete citation retrieval produce supported"
-            " matched panels."
+            " matched panels. The separately matched [annual-total analysis]"
+            "(aggregate-results.md) reports secondary contrasts from cached"
+            " all-type totals."
         ),
         "",
         (

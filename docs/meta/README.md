@@ -1,7 +1,7 @@
 # Provisional synthesis across two methodological audits
 
 The completed neuroscience and IV cohorts permit a common-window summary, while
-the full OpenAlex neuroscience comparison and matched I4R panels remain pending.
+the full OpenAlex neuroscience comparison and primary I4R article/review panels remain pending.
 Every row below includes one estimate from each audit, with equal audit weights.
 Alternative IV diagnostics are separate analyses of the same evidence.
 

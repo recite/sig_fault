@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+from pathlib import Path
 
 import i4r_registry as registry
 import i4r_sources as sources
@@ -130,6 +131,7 @@ def match(
     k=3,
     control_ids=None,
     complete_risk_sets=None,
+    control_exclusions=None,
 ):
     pilot.unique(articles, ["article_id"])
     pilot.unique(events, ["event_id"])
@@ -196,7 +198,9 @@ def match(
             ):
                 continue
             reason = ""
-            if r.get("identity_verified") != "yes":
+            if r["article_id"] in (control_exclusions or {}):
+                reason = control_exclusions[r["article_id"]]
+            elif r.get("identity_verified") != "yes":
                 reason = "identity_unverified"
             elif any(y <= year + horizon for y in exposures[r["article_id"]]):
                 reason = "known_public_assessment_in_window"
@@ -482,9 +486,16 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--cutoff", type=int, default=2025)
     p.add_argument("--controls", type=int, default=3)
+    p.add_argument("--citation-file", type=Path, default=sources.DATA / "citations.csv")
+    p.add_argument("--output-dir", type=Path, default=sources.DATA)
     args = p.parse_args()
+
+    def write(name, rows, fields):
+        pilot.write_csv(args.output_dir / name, rows, fields)
+
     articles = sources.read("articles.csv") + sources.read("control_articles.csv")
-    events, citations = sources.read("events.csv"), sources.read("citations.csv")
+    events = sources.read("events.csv")
+    citations = pilot.read_csv(args.citation_file)
     article_lookup = {r["article_id"]: r for r in articles}
     event_lookup = {r["event_id"]: r for r in events}
     all_matches, all_candidates, all_excluded, all_balance = [], [], [], []
@@ -508,19 +519,23 @@ if __name__ == "__main__":
                     article_lookup[event_lookup[r["event_id"]]["article_id"]]
                 )
             },
+            control_exclusions={
+                r["article_id"]: r["reason"]
+                for r in sources.read("control_exclusions.csv")
+            },
         )
         all_matches.extend(m)
         all_candidates.extend(c)
         all_excluded.extend(e)
         all_balance.extend(b)
-    sources.write("matches.csv", all_matches, MATCH_FIELDS)
-    sources.write("match_candidates.csv", all_candidates, CANDIDATE_FIELDS)
-    sources.write(
+    write("matches.csv", all_matches, MATCH_FIELDS)
+    write("match_candidates.csv", all_candidates, CANDIDATE_FIELDS)
+    write(
         "match_exclusions.csv",
         all_excluded,
         ["event_id", "article_id", "reason", "horizon"],
     )
-    sources.write(
+    write(
         "match_balance.csv",
         all_balance,
         [
@@ -534,7 +549,7 @@ if __name__ == "__main__":
         ],
     )
     rows, omissions = panel(all_matches, events, citations)
-    sources.write(
+    write(
         "analysis_panel.csv",
         rows,
         [
@@ -551,9 +566,9 @@ if __name__ == "__main__":
             "citations",
         ],
     )
-    sources.write("panel_exclusions.csv", omissions, ["event_id", "horizon", "reason"])
+    write("panel_exclusions.csv", omissions, ["event_id", "horizon", "reason"])
     sensitivity = sensitivity_panels(all_matches, events, citations, articles)
-    sources.write(
+    write(
         "sensitivity_panel.csv",
         sensitivity,
         [
@@ -569,7 +584,7 @@ if __name__ == "__main__":
             "citations",
         ],
     )
-    sources.write(
+    write(
         "event_trajectories.csv",
         trajectories(all_matches, events, citations, articles),
         [

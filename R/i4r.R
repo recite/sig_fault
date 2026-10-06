@@ -1,3 +1,20 @@
+i4r_weighted_median <- function(values, weights) {
+  if (
+    !length(values) || length(values) != length(weights) ||
+      any(!is.finite(values)) || any(!is.finite(weights)) || any(weights <= 0)
+  ) {
+    stop("Invalid weighted-median inputs")
+  }
+  ordered <- order(values)
+  values <- values[ordered]
+  cumulative <- cumsum(weights[ordered]) / sum(weights)
+  boundary <- which(cumulative >= 0.5 - 1e-12)[1]
+  if (abs(cumulative[boundary] - 0.5) <= 1e-12 && boundary < length(values)) {
+    return(mean(values[c(boundary, boundary + 1L)]))
+  }
+  values[boundary]
+}
+
 i4r_direct <- function(panel) {
   splits <- split(panel, panel$stack_id)
   contrasts <- vapply(splits, function(s) {
