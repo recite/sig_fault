@@ -46,12 +46,13 @@ def validate_response(rows, count, doi):
             raise ValueError("Unexpected citation date representation")
 
 
-def fetch_links(pid, doi):
+def fetch_links(pid, doi, cache=None):
+    cache = CACHE if cache is None else cache
     url = BASE + "citations/doi:" + doi
-    csv_path = CACHE / (pid + "_opencitations.csv")
+    csv_path = cache / (pid + "_opencitations.csv")
     if not csv_path.exists():
         try:
-            return acquisition.fetch(url, CACHE / (pid + "_opencitations.json"))
+            return acquisition.fetch(url, cache / (pid + "_opencitations.json"))
         except http.client.IncompleteRead:
             time.sleep(0.4)
     payload = acquisition.fetch(url + "?format=csv", csv_path, json_response=False)

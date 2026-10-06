@@ -1,18 +1,23 @@
 """Connect adjudicated external disclosures to the shared citation workflow."""
 
 import argparse
+import collections
 import csv
 import datetime as dt
 import hashlib
 import io
 import json
+import time
 from pathlib import Path
 
 import audit_inventories as inventory
 import i4r_citations as citations
+import i4r_match as matching
 import i4r_registry as registry
 import i4r_sources as sources
 import inventory_events
+import nieuwenhuis_opencitations as oc
+import nieuwenhuis_validation as oc_validation
 import pilot
 
 DATA = inventory.ROOT / "data/external"
@@ -316,6 +321,148 @@ def screen_retractions():
     build()
 
 
+def opencitations_targets():
+    articles = sources.read("articles.csv")
+    events, _ = matching.eligible_events(sources.read("events.csv"), articles, 2025, 1)
+    selected = {r["article_id"] for r in events}
+    return [r for r in articles if r["article_id"] in selected]
+
+
+def opencitations_fetch():
+    folder = DATA / "opencitations"
+    cache = sources.CACHE / "external_opencitations"
+    coverage = {r["paper_id"]: r for r in sources.read("opencitations/coverage.csv")}
+    edges = sources.read("opencitations/edges.csv")
+    for article in opencitations_targets():
+        aid, doi = article["article_id"], article["doi"]
+        prior = coverage.get(aid, {})
+        if prior.get("complete") == "yes" and prior.get("doi") == doi:
+            continue
+        row = dict.fromkeys(oc_validation.COVERAGE_FIELDS, "") | dict(
+            paper_id=aid, doi=doi, complete="no"
+        )
+        try:
+            records = oc_validation.fetch_links(aid, doi, cache=cache)
+            time.sleep(0.4)
+            count = int(
+                sources.fetch(
+                    oc_validation.BASE + "citation-count/doi:" + doi,
+                    cache / (aid + "_opencitations_count.json"),
+                )[0]["count"]
+            )
+            oc_validation.validate_response(records, count, doi)
+            if count == 0:
+                raise ValueError("zero_records_require_index_coverage_verification")
+            edges = [r for r in edges if r["paper_id"] != aid] + [
+                {k: r[k] for k in oc_validation.EDGE_FIELDS if k != "paper_id"}
+                | dict(paper_id=aid)
+                for r in records
+            ]
+            row.update(
+                records=len(records),
+                reported_count=count,
+                undated_records=sum(not r["creation"] for r in records),
+                complete="yes",
+            )
+        except Exception as exc:
+            row["detail"] = str(exc)[:200]
+        coverage[aid] = row
+        pilot.write_csv(folder / "edges.csv", edges, oc_validation.EDGE_FIELDS)
+        pilot.write_csv(
+            folder / "coverage.csv",
+            list(coverage.values()),
+            oc_validation.COVERAGE_FIELDS,
+        )
+        manifest = []
+        for path in sorted(cache.glob("*.source.json")):
+            raw = path.with_name(path.name.removesuffix(".source.json"))
+            record = json.loads(path.read_text())
+            if hashlib.sha256(raw.read_bytes()).hexdigest() != record["sha256"]:
+                raise ValueError("OpenCitations source hash mismatch")
+            manifest.append(
+                dict(
+                    path="private-data/i4r/" + str(raw.relative_to(sources.CACHE)),
+                    **record
+                )
+            )
+        pilot.write_csv(
+            folder / "sources.csv",
+            manifest,
+            ["path", "url", "retrieved_at", "sha256", "bytes"],
+        )
+        print(aid, row["complete"], row["records"], row["detail"], flush=True)
+        if "429" in row["detail"] or "rate limit" in row["detail"]:
+            break
+        time.sleep(0.4)
+    opencitations_build()
+
+
+def opencitations_panel(articles, edges, coverage, last_year=2025):
+    """Keep missing acquisitions out of annual counts and unresolved dates visible."""
+    targets = {r["article_id"]: r for r in articles}
+    pilot.unique(coverage, ["paper_id"])
+    pilot.unique(edges, ["paper_id", "oci"])
+    if any(r["paper_id"] not in targets for r in coverage + edges):
+        raise ValueError("Citation history belongs to an unknown target")
+    complete = set()
+    selected_edges = []
+    for row in coverage:
+        aid = row["paper_id"]
+        if row["doi"] != targets[aid]["doi"]:
+            raise ValueError("Citation history target DOI changed")
+        if row["complete"] != "yes":
+            continue
+        records = [r for r in edges if r["paper_id"] == aid]
+        oc_validation.validate_response(records, int(row["reported_count"]), row["doi"])
+        if len(records) != int(row["records"]) or not records:
+            raise ValueError("Completed history has inconsistent or empty records")
+        complete.add(aid)
+        selected_edges.extend(records)
+    works = oc.merge_works(selected_edges)
+    counts = collections.Counter(
+        (r["paper_id"], r["year"]) for r in works if r["date_status"] == "dated"
+    )
+    annual = [
+        dict(article_id=aid, year=year, citations=counts[aid, year], status="complete")
+        for aid in sorted(complete)
+        for year in range(int(targets[aid]["publication_year"]), last_year + 1)
+    ]
+    return works, annual, complete
+
+
+def opencitations_build():
+    folder = DATA / "opencitations"
+    coverage = sources.read("opencitations/coverage.csv")
+    edges = sources.read("opencitations/edges.csv")
+    articles = sources.read("articles.csv")
+    works, annual, complete = opencitations_panel(articles, edges, coverage)
+    pilot.write_csv(folder / "works.csv", works, oc.WORK_FIELDS)
+    pilot.write_csv(
+        folder / "citations.csv", annual, ["article_id", "year", "citations", "status"]
+    )
+    selected = {r["article_id"] for r in opencitations_targets()}
+    status = dict(
+        eligible_targets=len(selected),
+        complete_eligible_targets=len(selected & complete),
+        raw_relationships=sum(int(r["raw_relationships"]) for r in works),
+        distinct_citing_works=len(works),
+        undated_works=sum(r["date_status"] == "undated" for r in works),
+        conflicting_year_works=sum(
+            r["date_status"] == "conflicting_years" for r in works
+        ),
+        control_histories=0,
+        matched_effect_estimates=0,
+        outcome="Distinct dated citing works in OpenCitations, all document types",
+        limitation=(
+            "Unresolved years remain unassigned. Complete API acquisition does not "
+            "establish complete real-world citation coverage. No effect estimate "
+            "without controls."
+        ),
+    )
+    (folder / "status.json").write_text(json.dumps(status, indent=2) + "\n")
+    print(json.dumps(status))
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -327,6 +474,8 @@ if __name__ == "__main__":
             "candidates",
             "control-metadata",
             "fetch",
+            "opencitations-fetch",
+            "opencitations-build",
         ],
     )
     parser.add_argument("--cache-dir", type=Path, default=sources.CACHE)
@@ -341,4 +490,6 @@ if __name__ == "__main__":
         "candidates": citations.candidates,
         "control-metadata": citations.control_metadata,
         "fetch": citations.collect,
+        "opencitations-fetch": opencitations_fetch,
+        "opencitations-build": opencitations_build,
     }[args.command]()

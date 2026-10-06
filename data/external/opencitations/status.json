@@ -1,0 +1,12 @@
+{
+  "eligible_targets": 5,
+  "complete_eligible_targets": 5,
+  "raw_relationships": 3873,
+  "distinct_citing_works": 3873,
+  "undated_works": 28,
+  "conflicting_year_works": 0,
+  "control_histories": 0,
+  "matched_effect_estimates": 0,
+  "outcome": "Distinct dated citing works in OpenCitations, all document types",
+  "limitation": "Unresolved years remain unassigned. Complete API acquisition does not establish complete real-world citation coverage. No effect estimate without controls."
+}

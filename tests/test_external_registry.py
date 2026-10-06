@@ -5,6 +5,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import external_registry as external  # noqa: E402
@@ -44,6 +45,83 @@ class ExternalTests(unittest.TestCase):
             external.merge_article(
                 verified, verified | dict(publication_date="2011-01-01")
             )
+
+    def test_fresh_failed_collection_keeps_history_missing(self):
+        with tempfile.TemporaryDirectory() as name:
+            folder = Path(name)
+            article = dict(article_id="a", doi="10.1234/a", publication_year="2010")
+            with (
+                patch.object(external, "DATA", folder),
+                patch.object(external.sources, "DATA", folder),
+                patch.object(external.sources, "CACHE", folder / "cache"),
+                patch.object(external, "opencitations_targets", return_value=[article]),
+                patch.object(
+                    external.oc_validation,
+                    "fetch_links",
+                    side_effect=TimeoutError("unavailable"),
+                ),
+                patch.object(external.time, "sleep"),
+            ):
+                pilot.write_csv(folder / "articles.csv", [article], list(article))
+                external.opencitations_fetch()
+                coverage = pilot.read_csv(folder / "opencitations/coverage.csv")
+                self.assertEqual(coverage[0]["complete"], "no")
+                self.assertEqual(
+                    pilot.read_csv(folder / "opencitations/citations.csv"), []
+                )
+
+    def test_citation_panel_preserves_missing_and_ambiguous_dates(self):
+        articles = [
+            dict(article_id=a, doi="10.1234/" + a, publication_year="2010")
+            for a in ["observed", "missing"]
+        ]
+        edges = [
+            dict(
+                paper_id="observed",
+                oci=str(i),
+                cited="doi:10.1234/observed",
+                citing=citing,
+                creation=year,
+                timespan="",
+            )
+            for i, (citing, year) in enumerate(
+                [
+                    ("omid:1 doi:10.1234/citing", "2011"),
+                    ("omid:2 doi:10.1234/citing", "2011"),
+                    ("omid:3", "2012"),
+                    ("omid:3", "2013"),
+                    ("omid:4", ""),
+                ]
+            )
+        ]
+        coverage = [
+            dict(
+                paper_id="observed",
+                doi="10.1234/observed",
+                complete="yes",
+                records=5,
+                reported_count=5,
+            )
+        ]
+        works, panel, complete = external.opencitations_panel(
+            articles, edges, coverage, 2013
+        )
+        self.assertEqual(complete, {"observed"})
+        self.assertEqual([r["citations"] for r in panel], [0, 1, 0, 0])
+        self.assertEqual(len(works), 3)
+        self.assertEqual(
+            {r["date_status"] for r in works}, {"dated", "undated", "conflicting_years"}
+        )
+        self.assertFalse(any(r["article_id"] == "missing" for r in panel))
+
+    def test_citation_panel_rejects_changed_identity_and_empty_completion(self):
+        article = dict(article_id="a", doi="10.1234/a", publication_year="2010")
+        row = dict(paper_id="a", doi="10.1234/other", complete="no")
+        with self.assertRaisesRegex(ValueError, "DOI changed"):
+            external.opencitations_panel([article], [], [row])
+        row.update(doi="10.1234/a", complete="yes", records=0, reported_count=0)
+        with self.assertRaisesRegex(ValueError, "empty records"):
+            external.opencitations_panel([article], [], [row])
 
     def test_external_directory_runs_real_matcher_and_completeness_gate(self):
         with tempfile.TemporaryDirectory() as folder:

@@ -153,6 +153,7 @@ nieuwenhuis-opencitations-fetch:
 .PHONY: external external-test
 external: inventories
 	python3 scripts/external_registry.py build
+	python3 scripts/external_registry.py opencitations-build
 	python3 scripts/i4r_match.py --data-dir data/external
 
 external-test: external

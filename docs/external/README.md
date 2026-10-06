@@ -59,3 +59,43 @@ restrictions, pre-disclosure citation levels and growth, text distance, fixed
 calipers, and at most three controls. Post-disclosure outcomes do not choose controls.
 Matching and effect estimation remain separate steps. No broad citation total or
 statistical inconsistency is interpreted as continued use of the erroneous claim.
+
+
+## OpenCitations histories
+
+`python3 scripts/external_registry.py opencitations-fetch` acquires a separate
+all-document-type citation series for eligible disclosed papers. This does not
+replace the OpenAlex article/review outcome. It uses the same response validation
+and citing-work deduplication as the full-cohort Nieuwenhuis comparison. The
+[API documentation](https://api.opencitations.net/index/v2) defines citation
+creation as the citing work's publication date.
+
+`data/external/opencitations/coverage.csv` records successes and failures;
+`edges.csv` preserves the incoming relationships (its shared `paper_id` field
+is the external registry article ID); `sources.csv` lists raw-source
+URLs, retrieval timestamps and hashes. `works.csv` merges shared DOI or OpenCitations
+work identities within each original paper. Conflicting years and missing dates
+remain unassigned. `citations.csv` contains annual counts through 2025 only for
+completed acquisitions, beginning in the original's publication year. Earlier and
+later citing works remain in `works.csv`. An API response with no relationships
+requires index-coverage verification before being treated as a completed history.
+
+The [collection status](../../data/external/opencitations/status.json) gives current
+coverage. An absent citation year in a completed, nonempty response is an observed
+zero in this index; a failed or uncollected history produces no annual-count rows.
+These distinctions do not establish exhaustive real-world coverage. Target histories
+alone do not estimate the effect of publicity: comparable control histories and
+pre-disclosure matching are still required. No external estimate enters the
+meta-analysis yet.
+
+`make external-test` rebuilds the public annual series without network access.
+Acquisition honors the provider's rate limit and checkpoints each paper, so a
+failed request does not erase completed histories.
+
+
+Validation independently reconstructs the acquired annual counts from the frozen
+JSON or CSV responses and checks every source hash and API count. The public-only
+build reproduces the citing-work table, annual counts and status byte for byte.
+Regression tests cover shared work identities, conflicting dates, missing histories,
+changed target DOIs, empty acquisitions and first-run request failures. The
+existing Nieuwenhuis source-comparison inputs remain unchanged.
