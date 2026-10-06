@@ -532,6 +532,18 @@
     "local_path": {
       "type": "string",
       "meaning": "Repository-relative ignored-cache path for a successfully extracted archive member; path is content-independent and does not trust the internal ZIP path."
+    },
+    "unit_ids": {
+      "type": "string",
+      "meaning": "Semicolon-separated independent assessment IDs whose source linkage has been verified; empty for non-assessment or unenumerated sources."
+    },
+    "reviewer_team_identification": {
+      "type": "string",
+      "meaning": "named or not_reported; missing bylines do not erase an observed article assessment."
+    },
+    "unit_equivalence": {
+      "type": "string",
+      "meaning": "verified or unresolved; unidentified report authors prevent treating a potentially revised or duplicate assessment as a confirmed independent team."
     }
   },
   "tables": {
@@ -583,7 +595,7 @@
       "producer": "i4r_sources inventory"
     },
     "source_articles.csv": {
-      "unit": "source\u2013article relationship",
+      "unit": "source–article relationship",
       "key": [
         "source_id",
         "article_id"
@@ -675,7 +687,7 @@
       "producer": "i4r_citations retractions"
     },
     "matches.csv": {
-      "unit": "selected event\u2013control\u2013horizon",
+      "unit": "selected event–control–horizon",
       "key": [
         "event_id",
         "control_id",
@@ -684,7 +696,7 @@
       "producer": "i4r_match"
     },
     "match_candidates.csv": {
-      "unit": "screened event\u2013control\u2013horizon",
+      "unit": "screened event–control–horizon",
       "key": [
         "event_id",
         "control_id",
@@ -693,7 +705,7 @@
       "producer": "i4r_match"
     },
     "match_exclusions.csv": {
-      "unit": "excluded event\u2013horizon",
+      "unit": "excluded event–horizon",
       "key": [
         "event_id",
         "horizon"
@@ -710,7 +722,7 @@
       "producer": "i4r_match"
     },
     "panel_exclusions.csv": {
-      "unit": "incomplete event\u2013horizon",
+      "unit": "incomplete event–horizon",
       "key": [
         "event_id",
         "horizon"
@@ -736,7 +748,7 @@
       "producer": "i4r_match"
     },
     "event_trajectories.csv": {
-      "unit": "matched article\u2013event\u2013relative-year",
+      "unit": "matched article–event–relative-year",
       "key": [
         "event_id",
         "article_id",
@@ -745,7 +757,7 @@
       "producer": "i4r_match"
     },
     "citations.csv": {
-      "unit": "original article\u2013calendar-year",
+      "unit": "original article–calendar-year",
       "key": [
         "article_id",
         "year"
@@ -753,7 +765,7 @@
       "producer": "i4r_citations fetch"
     },
     "citation_edges.csv": {
-      "unit": "deduplicated original\u2013citing article pair",
+      "unit": "deduplicated original–citing article pair",
       "key": [
         "article_id",
         "citing_work_id"
@@ -789,7 +801,7 @@
       "producer": "i4r_analysis.R"
     },
     "descriptive.csv": {
-      "unit": "horizon\u2013group\u2013relative-year",
+      "unit": "horizon–group–relative-year",
       "key": [
         "horizon",
         "treated",
@@ -893,6 +905,13 @@
         "url"
       ],
       "producer": "scripts/i4r_sources.py expand"
+    },
+    "assessment_scope.csv": {
+      "unit": "catalog source with reviewed independent-assessment enumeration status; pending sources retained",
+      "key": [
+        "source_id"
+      ],
+      "producer": "scripts/i4r_registry.py from assessment_scope.json"
     }
   }
 }

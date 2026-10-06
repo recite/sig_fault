@@ -253,7 +253,7 @@ def normalize_edges(article_id, works):
     return list(unique.values())
 
 
-def collect():
+def collect(targets_only=False):
     rows = sources.read("citations.csv")
     logs = {r["article_id"]: r for r in sources.read("citation_retrieval.csv")}
     edges = sources.read("citation_edges.csv")
@@ -265,18 +265,14 @@ def collect():
         and r["publicity_verified"] == "yes"
     ]
     if not events:
-        sources.write("citation_retrieval.csv", [], ["article_id", "status", "detail"])
-        sources.write(
-            "citations.csv", [], ["article_id", "year", "citations", "status"]
-        )
-        sources.write("citation_edges.csv", [], EDGE_FIELDS)
         return
     minimum = min(int(r["year"]) - 3 for r in events)
     target_ids = {r["article_id"] for r in events}
     articles = [
         r for r in sources.read("articles.csv") if r["article_id"] in target_ids
     ]
-    for article in articles + sources.read("control_articles.csv"):
+    controls = [] if targets_only else sources.read("control_articles.csv")
+    for index, article in enumerate(articles + controls, 1):
         aid = article["article_id"]
         if (
             not article["openalex_id"]
@@ -326,6 +322,10 @@ def collect():
                     row["status"] = "incomplete"
             if "429" in str(exc) or "rate limit" in str(exc):
                 break
+        if index % 25 == 0:
+            print(
+                "Citation histories:", index, "/", len(articles + controls), flush=True
+            )
     sources.write("citations.csv", rows, ["article_id", "year", "citations", "status"])
     sources.write("citation_edges.csv", edges, EDGE_FIELDS)
     sources.write(
@@ -386,10 +386,22 @@ if __name__ == "__main__":
     parser.add_argument(
         "command", choices=["candidates", "control-metadata", "fetch", "retractions"]
     )
+    parser.add_argument(
+        "--targets-only",
+        action="store_true",
+        help=(
+            "Collect affected-article histories while control metadata "
+            "is being verified."
+        ),
+    )
     args = parser.parse_args()
+    if args.command == "fetch":
+        collect(args.targets_only)
+        raise SystemExit(0)
+    if args.targets_only:
+        parser.error("--targets-only requires fetch")
     {
         "candidates": candidates,
         "control-metadata": control_metadata,
-        "fetch": collect,
         "retractions": retractions,
     }[args.command]()

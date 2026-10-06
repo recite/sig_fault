@@ -125,6 +125,87 @@ class MatchingTests(unittest.TestCase):
 
 
 class AcquisitionTests(unittest.TestCase):
+    def test_docx_report_body_and_notes_are_extracted_without_execution(self):
+        import io
+        import zipfile
+
+        payload = io.BytesIO()
+        with zipfile.ZipFile(payload, "w") as archive:
+            for name, text in [
+                ("document", "Report finding"),
+                ("footnotes", "Supporting note"),
+            ]:
+                archive.writestr(
+                    f"word/{name}.xml",
+                    '<w:document xmlns:w="http://schemas.openxmlformats.org/'
+                    'wordprocessingml/2006/main"><w:body><w:p><w:r><w:t>'
+                    + text
+                    + "</w:t></w:r></w:p></w:body></w:document>",
+                )
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "CACHE", Path(tmp)
+        ):
+            folder = Path(tmp) / "documents"
+            folder.mkdir()
+            with patch.object(sources, "fetch", return_value=payload.getvalue()):
+                result = sources.acquire_document(
+                    dict(
+                        document_id="d",
+                        format="docx",
+                        url="https://example.org/report.docx",
+                    )
+                )
+            self.assertEqual(result["status"], "retrieved")
+            self.assertEqual(
+                (folder / "d.txt").read_text(), "Report finding\nSupporting note\n"
+            )
+
+    def test_no_events_does_not_erase_collected_citations(self):
+        records = {
+            "events.csv": [],
+            "citations.csv": counts("control", {2014: 3}),
+            "citation_edges.csv": [dict(article_id="control", citing_work_id="W9")],
+            "citation_retrieval.csv": [
+                dict(article_id="control", status="complete", detail="")
+            ],
+        }
+        with patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ), patch.object(sources, "write") as write:
+            citations.collect(targets_only=True)
+            citations.collect()
+        write.assert_not_called()
+
+    def test_target_only_citations_preserve_existing_control_histories(self):
+        records = {
+            "articles.csv": [article("treated") | dict(openalex_id="W1")],
+            "events.csv": [event()],
+            "citations.csv": counts("control", {2014: 3}),
+            "citation_edges.csv": [dict(article_id="control", citing_work_id="W9")],
+            "citation_retrieval.csv": [
+                dict(article_id="control", status="complete", detail="")
+            ],
+            "control_articles.csv": [article("control") | dict(openalex_id="W2")],
+        }
+        saved = {}
+        with patch.object(
+            sources, "read", side_effect=lambda name: records.get(name, [])
+        ), patch.object(
+            sources,
+            "write",
+            side_effect=lambda name, rows, fields: saved.update({name: rows}),
+        ), patch.object(
+            citations, "all_works", return_value=[]
+        ) as fetch:
+            citations.collect(targets_only=True)
+        self.assertEqual(fetch.call_count, 1)
+        self.assertIn(records["citations.csv"][0], saved["citations.csv"])
+        self.assertEqual(saved["citation_edges.csv"], records["citation_edges.csv"])
+        self.assertEqual(
+            {r["article_id"] for r in saved["citation_retrieval.csv"]},
+            {"treated", "control"},
+        )
+
     def test_hidden_catalog_entries_are_included(self):
         entries = [{"title": "Visible"}, {"title": "Beyond show more"}]
         payload = '13:["$",null,{"reports":' + json.dumps(entries) + "}]"
@@ -191,6 +272,19 @@ class AcquisitionTests(unittest.TestCase):
 
 
 class PipelineIntegrityTests(unittest.TestCase):
+    def test_partial_control_histories_do_not_change_the_matching_pool(self):
+        articles = [article("treated"), article("c1"), article("c2")]
+        pre = counts("treated", {2013: 3, 2014: 4}) + counts("c1", {2013: 3, 2014: 4})
+        selected, _, exclusions, _ = matching.match(articles, [event()], pre, [])
+        self.assertFalse(selected)
+        self.assertEqual(
+            exclusions[0]["reason"], "incomplete_control_citation_retrieval"
+        )
+        complete = pre + counts("c2", {2013: 3, 2014: 4})
+        self.assertEqual(len(matching.match(articles, [event()], complete, [])[0]), 2)
+        articles[2]["publication_date"] = "2014-01-01"
+        self.assertEqual(len(matching.match(articles, [event()], pre, [])[0]), 1)
+
     def test_partial_pool_is_never_matched(self):
         articles = [article("treated"), article("control")]
         pre = counts("treated", {2013: 3, 2014: 4}) + counts(
@@ -457,6 +551,68 @@ class AdjudicationTests(unittest.TestCase):
 
 
 class CrossrefIdentityTests(unittest.TestCase):
+    def test_title_entities_are_formatting_not_a_different_article(self):
+        import i4r_registry as registry
+
+        work = dict(
+            title=["Public R&amp;D and Innovation"],
+            DOI="10.1/a",
+            type="journal-article",
+        )
+        self.assertEqual(
+            registry.crossref_title_match(
+                "Public R&D and Innovation", [work], known_doi=True
+            ),
+            work,
+        )
+        self.assertIsNone(
+            registry.crossref_title_match(
+                "Private R&D and Innovation", [work], known_doi=True
+            )
+        )
+
+    def test_indexed_retraction_prefix_keeps_verified_identity_and_retraction(self):
+        import i4r_registry as registry
+
+        title = "An empirical study of schooling and wages"
+        aid = registry.article_id(title)
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "ROOT", Path(tmp)
+        ), patch.object(sources, "DATA", Path(tmp) / "data"), patch.object(
+            sources, "CACHE", Path(tmp) / "private-data"
+        ):
+            sources.write(
+                "sources.csv",
+                [dict(source_id="s", title=title, collection="reports")],
+                sources.SOURCE_FIELDS,
+            )
+            p = sources.CACHE / "identities" / (aid + ".json")
+            p.parent.mkdir(parents=True)
+            work = dict(
+                id="https://openalex.org/W1",
+                title="RETRACTED ARTICLE: " + title,
+                doi="https://doi.org/10.1/a",
+                publication_date="2010-06-01",
+                publication_year=2010,
+                type="article",
+                is_retracted=True,
+            )
+            p.write_text(json.dumps(work))
+            p.with_suffix(".json.source.json").write_text(
+                json.dumps(
+                    dict(
+                        url="https://api.openalex.org/works/W1",
+                        retrieved_at="2026-10-05",
+                        sha256="fixture",
+                    )
+                )
+            )
+            registry.build(refresh_metadata=True)
+            rebuilt = sources.read("articles.csv")[0]
+            self.assertEqual(rebuilt["openalex_id"], work["id"])
+            self.assertEqual(rebuilt["retracted"], "yes")
+            self.assertEqual(rebuilt["identity_verified"], "yes")
+
     def test_exact_titles_are_unique_and_generic_titles_stay_unresolved(self):
         import i4r_registry as registry
 
@@ -891,6 +1047,22 @@ class ArchiveAndUnitTests(unittest.TestCase):
             self.assertEqual(len(rows), 2)
             self.assertEqual(len({r["article_id"] for r in rows}), 1)
             self.assertEqual(len(docs), 4)
+            unnamed = common | dict(
+                unit_id="anonymous",
+                reviewer_team=[],
+                reviewer_team_identification="not_reported",
+            )
+            anonymous_rows, _, _ = registry.assessment_inventory([unnamed], {})
+            self.assertEqual(anonymous_rows[0]["unit_equivalence"], "unresolved")
+            for status in ["named", "typo"]:
+                with self.assertRaises(ValueError):
+                    registry.assessment_inventory(
+                        [unnamed | dict(reviewer_team_identification=status)], {}
+                    )
+            with self.assertRaisesRegex(ValueError, "contains reviewer names"):
+                registry.assessment_inventory(
+                    [unnamed | dict(reviewer_team=["Reported name"])], {}
+                )
             with self.assertRaises(ValueError):
                 registry.assessment_inventory([units[0], units[0]], {})
             units[0]["document_ids"] = [dict(document_id="missing", role="assessment")]
@@ -904,12 +1076,74 @@ class AssessmentValidationTests(unittest.TestCase):
 
         resolved = dict(assessment_eligibility="yes", assessment_resolved="yes")
         unknown = dict(assessment_eligibility="unresolved", assessment_resolved="no")
-        self.assertFalse(report.assessment_completion([resolved] * 10, False))
+        scope = [dict(source_id="s", status="fully_enumerated")]
         self.assertFalse(
-            report.assessment_completion([resolved] * 8 + [unknown] * 2, True)
+            report.assessment_completion([resolved] * 10, False, scope, ["s"])
         )
-        self.assertTrue(report.assessment_completion([resolved] * 9 + [unknown], True))
-        self.assertFalse(report.assessment_completion([], True))
+        self.assertFalse(
+            report.assessment_completion(
+                [resolved] * 8 + [unknown] * 2, True, scope, ["s"]
+            )
+        )
+        self.assertTrue(
+            report.assessment_completion([resolved] * 9 + [unknown], True, scope, ["s"])
+        )
+        self.assertFalse(report.assessment_completion([], True, scope, ["s"]))
+        self.assertFalse(
+            report.assessment_completion(
+                [resolved | dict(unit_equivalence="unresolved")], True, scope, ["s"]
+            )
+        )
+        self.assertFalse(
+            report.assessment_completion([resolved] * 10, True, scope, ["s", "missing"])
+        )
+        self.assertFalse(
+            report.assessment_completion(
+                [resolved] * 10, True, [dict(source_id="s", status="unresolved")], ["s"]
+            )
+        )
+
+    def test_scope_requires_all_units_and_does_not_use_retrieval_aliases(self):
+        import i4r_registry as registry
+
+        catalog = [dict(source_id="s"), dict(source_id="other")]
+        links = [
+            dict(source_id="s", unit_id=u, relation="assessment_source")
+            for u in ["u1", "u2"]
+        ] + [dict(source_id="other", unit_id="u1", relation="verified_retrieval_alias")]
+        record = dict(
+            source_id="s",
+            status="fully_enumerated",
+            unit_ids=["u1", "u2"],
+            evidence="Two distinct teams verified in the reports.",
+        )
+        result = registry.assessment_scope([record], catalog, links)
+        self.assertEqual([r["status"] for r in result], ["fully_enumerated", "pending"])
+        cases = [
+            (record | dict(unit_ids=["u1"]), "omits linked units"),
+            (
+                record | dict(source_id="other", unit_ids=["u1"]),
+                "Invalid assessment scope unit link",
+            ),
+            (record | dict(unit_ids=[]), "lacks units"),
+            (record | dict(status="non_assessment"), "contains assessment units"),
+            (record | dict(evidence=""), "lacks evidence"),
+        ]
+        for bad, message in cases:
+            with self.assertRaisesRegex(ValueError, message):
+                registry.assessment_scope([bad], catalog, links)
+        supporting = [
+            dict(source_id="s", unit_id=u, relation="supporting_response")
+            for u in ["u1", "u2"]
+        ]
+        partial = record | dict(status="supporting_document", unit_ids=["u1"])
+        with self.assertRaisesRegex(ValueError, "Supporting scope omits linked units"):
+            registry.assessment_scope([partial], catalog, supporting)
+        complete = record | dict(status="supporting_document")
+        self.assertEqual(
+            registry.assessment_scope([complete], catalog, supporting)[0]["status"],
+            "supporting_document",
+        )
 
     def test_resolved_units_require_eligibility_report_and_source_provenance(self):
         import copy

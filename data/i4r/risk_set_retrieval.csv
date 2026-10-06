@@ -1,4 +1,7 @@
 event_id,status,candidates,query_filter
 dp_020_disclosure,api.openalex.org rate limit: resume after time in api.openalex.org_anonymous_retry_after.json,0,
-dp_294_disclosure,unresolved_target_metadata,0,
-dp_021_disclosure,api.openalex.org rate limit: resume after time in api.openalex.org_anonymous_retry_after.json,0,"primary_location.source.id:https://openalex.org/S45992627,publication_year:2016-2018,type:article"
+dp_294_disclosure,complete,128,"primary_location.source.id:https://openalex.org/S42893225,publication_year:2012-2014,type:article"
+dp_021_disclosure,complete,311,"primary_location.source.id:https://openalex.org/S45992627,publication_year:2016-2018,type:article"
+dp_148_disclosure,complete,381,"primary_location.source.id:https://openalex.org/S23254222,publication_year:2018-2020,type:article"
+dp_292_disclosure,complete,356,"primary_location.source.id:https://openalex.org/S23254222,publication_year:2020-2022,type:article"
+report_2f792d86ba6c_disclosure,api.openalex.org rate limit: resume after time in api.openalex.org_anonymous_retry_after.json,0,"primary_location.source.id:https://openalex.org/S45992627,publication_year:2020-2022,type:article"

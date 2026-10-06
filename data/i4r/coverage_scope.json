@@ -1,11 +1,11 @@
 {
   "assessment_population_enumerated": false,
   "as_of": "2026-10-05",
-  "reason": "Catalog entries and even verified duplicate groups do not enumerate every independent assessment in shared projects.",
+  "reason": "All 714 catalog sources have a documented scope review. Several large audits, unavailable or misdirected reports, and unnamed-team equivalences remain unresolved; the independent-assessment population is not yet fully enumerated.",
   "unresolved_scope": [
     {
       "source": "Full assessment population",
-      "issue": "The 27 explicitly enumerated assessment units cover selected bundled or misdirected sources, not the full population. Remaining source-equivalence groups still require unit-level mapping; source resolution percentages cannot establish assessment coverage."
+      "issue": "The explicit inventory contains observed assessments across all discussion-paper and report listings. Several large audits remain incompletely enumerated and some anonymous reports may duplicate other versions. assessment_scope.csv retains each unresolved source; reviewing every listing does not establish complete assessment coverage."
     },
     {
       "source_id": "report_d20485341bfd",
@@ -17,10 +17,6 @@
         "report_adddaac3ae6f"
       ],
       "issue": "Repository provider and child-component queries return HTTP401; public file access unresolved."
-    },
-    {
-      "source": "Nested archives",
-      "issue": "Nested ZIP members are inventoried but not recursively extracted. Templates/data may include assessment files; content role needs verification."
     },
     {
       "source": "Source review",
@@ -53,6 +49,18 @@
     {
       "source": "ZIP archives",
       "result": "Inventoried all 62 root ZIP archives using streamed downloads; members retain archive/member hashes and original internal paths. Large archives are preserved locally."
+    },
+    {
+      "source": "Discussion-paper enumeration",
+      "result": "All331 discussion papers examined for independent team/article scope; assessment units, supporting replies and unresolved multi-article audits distinguished."
+    },
+    {
+      "source": "Nested archives",
+      "result": "All five nested archives reviewed;29 members individually hashed. Input data, original-paper documentation and unfilled templates contain no additional identified assessment. See nested_archive_reviews.json."
+    },
+    {
+      "source": "Frozen catalog scope review",
+      "result": "All 331 discussion papers and 383 report listings have explicit reviewed scope dispositions. Reports without reviewer bylines remain in the inventory with unresolved equivalence."
     }
   ]
 }

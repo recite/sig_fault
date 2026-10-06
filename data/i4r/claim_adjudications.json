@@ -210,14 +210,14 @@
     "limitations": "Changing treatment of the other-race category and clustering level are contested analytical choices; numerical contrasts here isolate acknowledged city-string error."
   },
   {
-    "verification_scope": "Independent reading of assessment, relevant response, and cited primary publication metadata; original code was not independently rerun.",
-    "first_disclosure_precision": "unknown",
+    "verification_scope": "Independent source reading of exact report sections4.1/4.2 and Tables2/3, publisher-linked aggregate appendix and verified identity metadata. Original code was not rerun; these are reported corrections corroborated by source text, not an independent computational replication.",
+    "first_disclosure_precision": "year",
     "earlier_public_version_unverified": true,
     "source_id": "report_2f792d86ba6c",
     "original_title": "Major Reforms in Electricity Pricing: Evidence from a Quasi-Experiment",
     "original_doi": "10.1093/ej/ueab076",
-    "original_publication_year": 2022,
-    "original_publication_date": null,
+    "original_publication_year": 2021,
+    "original_publication_date": "2021-09-22",
     "error_verified": true,
     "material_error_verified": true,
     "materiality_scope": "Two IV robustness specifications lose precision; main OLS result remains. Other omitted-quarter-control corrections strengthen estimates.",
@@ -245,15 +245,53 @@
       }
     },
     "evidence_locator": "Report PDF p. 5 and Tables 2–3 PDF p. 10. Table brackets explicitly contain p-values, not standard errors.",
-    "first_substantiated_public_date": null,
-    "first_substantiated_public_year": null,
-    "public_date_evidence": "Internal February 15, 2024 report date and February 28, 2024 OSF upload do not independently establish when the project/file became public.",
+    "first_substantiated_public_date": "",
+    "first_substantiated_public_year": 2024,
+    "public_date_evidence": "EconStor lists I4R DP107 as published in 2024; its linked PDF Appendix B.1.49 (PDF p.187, printed p.181) names the original article/DOI and both IV coding errors. IZA DP16912 independently dates another error-containing version April 2024. The annual event is 2024; neither an exact earliest day nor the first public availability of the standalone report is established. Current institutional bitstreams were checked, not historical archived snapshots.",
     "sources": [
       "https://osf.io/bysa7/",
       "https://osf.io/download/5wbcu/",
-      "https://portalcientifico.uned.es/documentos/63950bc337f90f20be7bae29?lang=en"
+      "https://portalcientifico.uned.es/documentos/63950bc337f90f20be7bae29?lang=en",
+      "https://www.iza.org/publications/dp/16912/mass-reproducibility-and-replicability-a-new-hope",
+      "https://docs.iza.org/dp16912.pdf",
+      "https://www.econstor.eu/handle/10419/289437",
+      "https://www.econstor.eu/bitstream/10419/289437/1/I4R-DP107.pdf"
     ],
-    "cohort_recommendation": "Retain secondary error claim; event date unresolved, so not presently analysis-eligible."
+    "cohort_recommendation": "Material secondary-claim error qualifies; substantiated annual exposure is 2024 from DP107 and IZA DP16912.",
+    "existing_claim": true,
+    "existing_assessment_id": "report_2f792d86ba6c_error",
+    "action": "Refine existing adjudication; do not add duplicate claim",
+    "original_authors": [
+      "Xavier Labandeira",
+      "José M. Labeaga",
+      "Jordi J. Teixidó"
+    ],
+    "original_issue_year": 2022,
+    "original_identity_evidence": "Verified metadata CSV preserves Crossref first-publication date and DOI 10.1093/ej/ueab076; report refers to 2022 journal issue.",
+    "significant_secondary_claim": true,
+    "main_claim_overturned": false,
+    "public_date_evidence_sources": [
+      {
+        "url": "https://www.iza.org/publications/dp/16912/mass-reproducibility-and-replicability-a-new-hope",
+        "locator": "Publisher publication page: IZA Discussion Paper No.16912, April 2024; Download links to docs.iza.org/dp16912.pdf"
+      },
+      {
+        "url": "https://docs.iza.org/dp16912.pdf",
+        "locator": "Appendix B.1.49, PDF page 183 (zero-based182), printed p.181: target title/DOI, both coding errors and consequences, standalone report link."
+      },
+      {
+        "url": "https://www.econstor.eu/handle/10419/289437",
+        "locator": "Year of Publication: 2024; linked PDF Appendix B.1.49 names both errors."
+      }
+    ],
+    "publicity_version_caveat": "Publisher date plus matching linked dated PDF supports month/year; a timestamped archived April-2024 bitstream was not independently retrieved. SSRN lists a later revision of its own version, so its initial-post date should not independently date every current appendix claim.",
+    "reply_evidence": {
+      "standalone_reply_available": false,
+      "report_acknowledgment": "Report PDF p.5 section4.1 states original authors discovered and alerted replicators to omitted quarter dummies after seeing first report version. This acknowledges that specific error; no separate original-author reply was present in the project listing.",
+      "aggregate_reply_record": "IZA appendix B.1.49 says original authors provided feedback with multiple rounds of exchange. This does not itself establish blanket author agreement with all criticisms."
+    },
+    "table_caveat": "Report Table3 note mistakenly says original columns4/5; its headings and section4.2 identify columns4/8. Numeric brackets are explicitly p-values, not standard errors.",
+    "retraction_screen": "Cached OpenAlex identity reports is_retracted=false; no DOI match in the frozen Retraction Watch retraction screen. No known retraction at disclosure; this screen is not proof of complete notice coverage."
   },
   {
     "verification_scope": "Independent reading of assessment, relevant response, and cited primary publication metadata; original code was not independently rerun.",
@@ -405,7 +443,36 @@
     "date_caveat": "Publisher explicitly says online24January2025. Cached replication cover says9August2024 but public release on that date is unverified. Eventyear may be2024if independent archived/public announcement evidence emerges; hold earliest-year uncertainty explicit.",
     "main_claim_or_secondary": "secondary",
     "evidence_locator": "report_7e04fdf7bfb2_6a8f810961d9e2d139e3a10e.txt PDF2–4; corrigendumpublisherpage",
-    "limitations": "Eligibility depends on prespecified inclusion of substantive secondary-claim errors. Do not advertise as refutation of central acquiescence finding; unresolved earlier exposure prevents treating2025as proven first year."
+    "limitations": "Eligibility depends on prespecified inclusion of substantive secondary-claim errors. Do not advertise as refutation of central acquiescence finding; unresolved earlier exposure prevents treating2025as proven first year.",
+    "additional_source_reviews": [
+      {
+        "unit_id": "i4r_report_7e04fdf7bfb2_assessment_39e3a10e",
+        "source_id": "report_7e04fdf7bfb2",
+        "original_title": "Acquiescence Bias Inflates Estimates of Conspiratorial Beliefs and Political Misperceptions",
+        "original_doi": "",
+        "error_verified": true,
+        "material_error_verified": true,
+        "affected_claim": "Association between education and susceptibility to acquiescence; not the average randomized effect of question wording.",
+        "evidence": "Fourteen Lucid2020 respondents have education=-3105, entered as continuous. Dropping these records alone changes education×question-wording association from -0.00005 (p=.02376) to +.02370; Table2 rounds corrected interaction to .024 (SE .005), and .026 (SE .005) for Big Fake items. Categorical recoding is a separate further check. Average wording effect persists; interpretation of education and acquiescence reverses.",
+        "evidence_locator": {
+          "document_id": "report_7e04fdf7bfb2_6a8f810961d9e2d139e3a10e",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "identity_evidence": "Target and named byline/body inspected."
+        },
+        "public_disclosure_date": "",
+        "public_disclosure_year": "",
+        "date_evidence": "Report cover is dated August9,2024; no first-public-disclosure date established. OSF upload is not public-disclosure proof.",
+        "limitations": "Education codebook unavailable to reviewers; they interpret -3105 as invalid/missing and larger valid codes as greater education. Report isolates deleting invalid observations from later categorical specification; no public date inferred."
+      }
+    ]
   },
   {
     "source_id": "dp_267",
@@ -622,5 +689,160 @@
     "evidence": "Author response identifies incorrect reverse scoring affecting four of six Agreeableness items (and one Openness item), not merely unusual correlations. The original abstract and discussion prominently characterize elite players as less agreeable. Authors acknowledge that the scoring correction substantially changes Agreeableness scores and that their revised personality analysis yields the opposite direction. This materially undermines that original substantive personality claim independently of unresolved broad data-integrity allegations.",
     "evidence_locator": "dp312 PDF pp.17,26-28 (especially lines 415–425 and 613–678),63; original abstract/discussion https://pmc.ncbi.nlm.nih.gov/articles/PMC11760505/",
     "limitations": "Only a small subset of questionnaires was recovered. Authors fit calibration models to that subset and apply them elsewhere, then compare players against German norms instead of original Brazilian controls. Therefore neither the exact corrected effect nor reversal of the original matched-control contrast is independently established. The narrow qualifying error is wrong scoring invalidating an emphasized original trait interpretation; fabrication and global dataset invalidity remain unproven."
+  },
+  {
+    "source_id": "dp_278",
+    "original_title": "The Effects of Rural Electrification on Employment: New Evidence from South Africa",
+    "original_doi": "10.1257/aer.101.7.3078",
+    "doi_verified": true,
+    "doi_source": "https://www.aeaweb.org/articles?id=10.1257/aer.101.7.3078",
+    "original_publication_year": 2011,
+    "error_verified": true,
+    "material_error_verified": true,
+    "verification_level": "Source-verified independent reading; original code not rerun",
+    "error_type": "incorrect_confidence_level_in_weak_instrument_inference",
+    "affected_claim": "Precision and finite upper bound of the IV estimate of rural electrification on female employment in South Africa",
+    "substantive_consequence": "The report states that Anderson–Rubin confidence intervals labeled 95% were calculated at 90%. Recomputing at 95% yields a lower bound near 1 percentage point and no finite upper bound. The conclusion that the effect is positive remains; the correction removes the bounded magnitude inference.",
+    "corrected_direction": "Uncertainty expands upward without a finite upper endpoint; positive lower endpoint remains. This is not a demonstrated reversal of the point estimate or sign.",
+    "evidence": "DP278 PDF p.20, section 4.4, expressly identifies the 90/95 confidence-level coding error and gives the corrected unbounded interval. Appendix Table C2, PDF p.54, labels corresponding finite intervals AR90%, including approximately [0.02,0.25] and [0.02,0.26].",
+    "evidence_locator": {
+      "document_id": "dp_278_download_0",
+      "targeted_pdf_pages": [
+        20,
+        54
+      ]
+    },
+    "earliest_public_disclosure_year": "2025",
+    "earliest_substantiated_public_date": "",
+    "public_year_verified": true,
+    "exact_earliest_public_date_verified": false,
+    "public_date_source": "https://www.econstor.eu/handle/10419/334159",
+    "public_date_evidence": "Institutional repository explicitly lists Year of Publication: 2025 for I4R DP278 and links its error-containing PDF. Series cover says December 2025; author title page is dated December 18, 2025. These establish the publication year and stated version month, not an exact first-publication day.",
+    "error_containing_source": "https://www.econstor.eu/bitstream/10419/334159/1/I4R-DP278.pdf",
+    "earlier_versions_checked": [
+      {
+        "source": "https://www.econstor.eu/bitstream/10419/214184/1/1690488735.pdf",
+        "date": "February 2020 (institutional working paper series)",
+        "title": "Effects of Rural Electrification on Employment: A Comment on Dinkelman (2011)",
+        "finding": "No substantiated disclosure of the confidence-level error. PDF p.31 Table A2 itself labels finite intervals AR95%, and its note attributes differences from original [0.05,0.30] to grid precision. It is an earlier identification critique, not the same error disclosure.",
+        "targeted_pdf_pages": [
+          6,
+          16,
+          17,
+          31
+        ]
+      },
+      {
+        "source": "https://www.zbw.eu/fileadmin/pdf/veranstaltungen/2024/15-haveresch-leibniz-open-science-day.pdf",
+        "date": "November 29, 2024 (date on slide deck)",
+        "finding": "Deck labels a plotted interval AR90% on PDF p.35 and discusses weak-IV inference on p.28, but does not substantiate that the original paper mislabeled 90% as95%. Cannot treat this as verified public error disclosure.",
+        "targeted_pdf_pages": [
+          28,
+          35
+        ]
+      },
+      {
+        "source": "Cached dp_123_download_0.txt",
+        "date": "2024",
+        "finding": "Checked for confidence-level/error discussion; no90/95 or unbounded-interval disclosure found. This is not proof that every historical version lacked it."
+      }
+    ],
+    "later_source": {
+      "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7093978",
+      "posted": "2026-07-14",
+      "finding": "Later SSRN version; not earliest given institutional 2025 source."
+    },
+    "limitations": "No independent numerical reproduction of the original Stata confidence-set inversion. Treat the precise corrected endpoint as report-based. Source p.20 summarizes finite ranges approximately; original [0.05,0.30] grid and replicated [.02,.25]/[.02,.26] grids should not be conflated. Exclusion restriction, collider bias and road-access robustness are distinct, disputed identification questions. Exact earliest public date remains unresolved; 2020 criticism must not be used as this error event. No formal correction was established in this targeted search."
+  },
+  {
+    "source_id": "report_fd4ca10d5639",
+    "unit_id": "report_fd4ca10d5639_assessment",
+    "original_title": "The motion-silencing illusion depends on object-centered representation",
+    "original_doi": "10.1177/09567976241235104",
+    "precise_operation": "Using independent-measures ANOVAs for within-subject experiments and analyzing unfiltered RTs despite stated exclusions; Exp2b mean difference misreported as confidence-interval lower bound.",
+    "substantive_consequence": "Corrected analyses change three tests to significant, but the report explicitly says primary findings remain unaffected. Additional omitted preregistered tests are a separate interpretive concern.",
+    "reply_or_dispute": "No original-author reply in acquired attachments.",
+    "evidence_locator": {
+      "assessment_document": "report_fd4ca10d5639_6a22c8d5b955ea17088f95e2",
+      "pdf_pages": [
+        3,
+        4,
+        9,
+        10
+      ]
+    },
+    "error_verified": "yes",
+    "material_error_verified": "not_established",
+    "earliest_substantiated_public_date": "",
+    "earliest_substantiated_public_year": "",
+    "disclosure_date_evidence": "Not independently verified. Manuscript/upload dates not used as public exposure.",
+    "recommendation": "Do not add to significant-error exposure cohort without independent consequence and disclosure adjudication."
+  },
+  {
+    "source_id": "report_c0c9f446a6ce",
+    "unit_id": "report_c0c9f446a6ce_assessment",
+    "original_title": "Distinct Inhibitory-Control Processes Underlie Children’s Judgments of Fairness",
+    "original_doi": "10.1177/09567976231217420",
+    "precise_operation": "Age-effect statistic taken from wrong model output; report also alleges adult curvature interpretation problems and notes missing odds-ratio outputs.",
+    "substantive_consequence": "Report retains response-threshold conclusions but characterizes response-selection findings as fragile; clear error-specific correction magnitude is not established by its mixed package/model-sensitivity discussion.",
+    "reply_or_dispute": "No original-author reply in acquired attachments.",
+    "evidence_locator": {
+      "assessment_document": "report_c0c9f446a6ce_6a8361300f861fee9bd42150",
+      "pdf_pages": [
+        17,
+        18
+      ]
+    },
+    "error_verified": "yes",
+    "material_error_verified": "unresolved",
+    "earliest_substantiated_public_date": "",
+    "earliest_substantiated_public_year": "",
+    "disclosure_date_evidence": "Not independently verified. Manuscript/upload dates not used as public exposure.",
+    "recommendation": "Do not add to significant-error exposure cohort without independent consequence and disclosure adjudication."
+  },
+  {
+    "source_id": "report_e8a4d40d8d58",
+    "unit_id": "report_e8a4d40d8d58_assessment",
+    "original_title": "Can Financial Incentives to Firms Improve Apprenticeship Training? Experimental Evidence from Ghana",
+    "original_doi": "10.1257/aeri.20220696",
+    "precise_operation": "Alleged replacing missing earnings with zero and excluding additional districts.",
+    "substantive_consequence": "Comment says earnings treatment effects lose significance after dropping observations/districts, but this changes the earnings estimand/sample.",
+    "reply_or_dispute": "Original reply pp1–3 says zeroes are actual zero earnings among surveyed respondents, only pilot assessment district excluded, and other districts had no assessment participants. It disputes causal premise of alleged error.",
+    "evidence_locator": {
+      "assessment_document": "report_e8a4d40d8d58_6a904bb22b5cedeb0be39fe7",
+      "pdf_pages": [
+        16
+      ]
+    },
+    "error_verified": "disputed",
+    "material_error_verified": "unresolved",
+    "earliest_substantiated_public_date": "",
+    "earliest_substantiated_public_year": "",
+    "disclosure_date_evidence": "Not independently verified. Manuscript/upload dates not used as public exposure.",
+    "recommendation": "Do not add to significant-error exposure cohort without independent consequence and disclosure adjudication."
+  },
+  {
+    "source_id": "report_f6b9ffef58cb",
+    "unit_id": "report_f6b9ffef58cb_assessment",
+    "original_title": "Resisting Social Pressure in the Household Using Mobile Money: Experimental Evidence on Microenterprise Investment in Uganda",
+    "original_doi": "10.1257/aer.20220717",
+    "precise_operation": "Alleged inconsistencies between stratification protocol/data and use of combined assets/inventory capital versus prespecified assets.",
+    "substantive_consequence": "Comment claims these choices undermine the sharing-pressure mechanism; corrected operation and magnitude are disputed.",
+    "reply_or_dispute": "Riley reply pp1–2 describes standard random assignment of remainder strata and says prespecified assets preserve significant main/heterogeneity findings. Its August 28 2026 manuscript date is not verified first public disclosure.",
+    "evidence_locator": {
+      "assessment_document": "report_f6b9ffef58cb_6a91a365e953445174136480",
+      "pdf_pages": [
+        4,
+        5,
+        32,
+        34
+      ]
+    },
+    "error_verified": "disputed",
+    "material_error_verified": "unresolved",
+    "earliest_substantiated_public_date": "",
+    "earliest_substantiated_public_year": "",
+    "disclosure_date_evidence": "Not independently verified. Manuscript/upload dates not used as public exposure.",
+    "recommendation": "Do not add to significant-error exposure cohort without independent consequence and disclosure adjudication."
   }
 ]

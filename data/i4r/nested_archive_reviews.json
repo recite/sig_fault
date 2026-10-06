@@ -1,0 +1,251 @@
+[
+  {
+    "source_id": "report_3957dceafbb8",
+    "archive_document_id": "report_3957dceafbb8_65e5d09ce5e51c01ccbc5b2c",
+    "member_id": "report_3957dceafbb8_65e5d09ce5e51c01ccbc5b2c_member_d406ebade5de",
+    "member_path": "Data/ged221-dta.zip",
+    "archive_sha256": "5c6315eb2486a1e69592e395ee6b8ec54c4716602f69700bf8ff7c5a5e1790c5",
+    "nested_archive_sha256": "6db021d946aa3e813ec57915672d06e6855908a5bbad1abb5d62f3b741327546",
+    "reviewed_on": "2026-10-05",
+    "content_role": "input_data",
+    "evidence": "Complete member inventory contains only input data files; no report or manuscript source.",
+    "additional_assessment_identified": false,
+    "members": [
+      {
+        "member_path": "GEDEvent_v22_1.dta",
+        "bytes": 511265869,
+        "crc32": "061b1edf",
+        "sha256": "49e98223b527b8917ebdde18a07b63c05b53f35e1bcac827a7f8f2cf6c78f17e"
+      }
+    ],
+    "limitations": "Content-role review; original analyses not rerun. Parent archive preserved. Files remain nested in the acquisition cache."
+  },
+  {
+    "source_id": "report_54760f3ce87e",
+    "archive_document_id": "report_54760f3ce87e_65e4b992e5e51c00febc556a",
+    "member_id": "report_54760f3ce87e_65e4b992e5e51c00febc556a_member_330b8983b6aa",
+    "member_path": "Replication/Latex Template Replication I4R v2.zip",
+    "archive_sha256": "449686f5f649eaeac581d97f9891312f7946ad8f64d086b814228e2294b8a3cf",
+    "nested_archive_sha256": "ce365939aa93af842d150707111d92a96bece7453f17ab0bc955aaecfae84e71",
+    "reviewed_on": "2026-10-05",
+    "content_role": "unfilled_report_template_and_result_tables",
+    "evidence": "Full Template.tex inspected: unfilled author/instruction fields and fictional Speedy Analyst/Labas examples. Tables are numerical supporting outputs; no completed narrative assessment. The two Template.tex files in these archives have identical SHA-256 hashes.",
+    "additional_assessment_identified": false,
+    "members": [
+      {
+        "member_path": "Latex Template Replication I4R v2/biblio.bib",
+        "bytes": 815,
+        "crc32": "4a819c91",
+        "sha256": "0769391f8fe9a746370c1f5f76a928088d59db32acb969ce7230d5a33d75ac7e"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/MJOARTI.STY",
+        "bytes": 4477,
+        "crc32": "82969d53",
+        "sha256": "30b401f3d6169bc6027ba1e01aecd34dd0c2a40aad5b50c3447316f4cb37395b"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table1.tex",
+        "bytes": 859,
+        "crc32": "c5566a99",
+        "sha256": "3f1e9ae793db28078f755ad1114714428a80a1f0576097f84a1e79f6dc9873c5"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table2.tex",
+        "bytes": 1018,
+        "crc32": "7c7df7a3",
+        "sha256": "dd8a1e8cfc10d6bb8cadfdaf384f3e97fa84978036244e1906140a730f4d73e4"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table3.tex",
+        "bytes": 1013,
+        "crc32": "62a6527b",
+        "sha256": "1c5ac03094e0874b9e0646c768457e4a08f171b3d7cc597f7e12f9e9dc53229c"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table4.tex",
+        "bytes": 1028,
+        "crc32": "c0297a08",
+        "sha256": "3987cf1f6740f57a82b34e2e2948c59f16e79e18a40a9cf7998f727c488f0521"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table5.tex",
+        "bytes": 1038,
+        "crc32": "76cdf2c8",
+        "sha256": "d97f6317d3c6f44a075ab0c6b0531e13a7d1279c1cb714f1a9afe8c64382a92b"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table6.tex",
+        "bytes": 1048,
+        "crc32": "57276bf7",
+        "sha256": "7448fb4871d4ec51d001b1d0e67ba2e487b57ea81c8fbefffef8266baec7835a"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Tables/table7.tex",
+        "bytes": 1038,
+        "crc32": "b065f03d",
+        "sha256": "8f4271ed74dfffbaa39e10ee2f44bb382e27b2ac28c128e084e1d12149846e13"
+      },
+      {
+        "member_path": "Latex Template Replication I4R v2/Template.tex",
+        "bytes": 30936,
+        "crc32": "171e7fb5",
+        "sha256": "98f74a9ce3217c942610ff9f3c031e44dfa27a840e9bb485362982e37b266079"
+      }
+    ],
+    "limitations": "Content-role review; original analyses not rerun. Parent archive preserved. Files remain nested in the acquisition cache."
+  },
+  {
+    "source_id": "report_68458202da63",
+    "archive_document_id": "report_68458202da63_65ca25b89b32ca106f97eec7",
+    "member_id": "report_68458202da63_65ca25b89b32ca106f97eec7_member_340e5fbbe3b2",
+    "member_path": "szakony_AJPS_2021_rep-main/Latex Template Replication I4R.zip",
+    "archive_sha256": "f18bfccc210fb01b3c44cfd1d04e2f25d0044a17e0ca3f0afab7b1968cd8252f",
+    "nested_archive_sha256": "ba9f70eaa85b8843d275fbc6bdbe291947f5e7e3bd7fcc9fded3c016c673ac96",
+    "reviewed_on": "2026-10-05",
+    "content_role": "unfilled_report_template_and_result_tables",
+    "evidence": "Full Template.tex inspected: unfilled author/instruction fields and fictional Speedy Analyst/Labas examples. Tables are numerical supporting outputs; no completed narrative assessment. The two Template.tex files in these archives have identical SHA-256 hashes.",
+    "additional_assessment_identified": false,
+    "members": [
+      {
+        "member_path": "biblio.bib",
+        "bytes": 815,
+        "crc32": "4a819c91",
+        "sha256": "0769391f8fe9a746370c1f5f76a928088d59db32acb969ce7230d5a33d75ac7e"
+      },
+      {
+        "member_path": "MJOARTI.STY",
+        "bytes": 4477,
+        "crc32": "82969d53",
+        "sha256": "30b401f3d6169bc6027ba1e01aecd34dd0c2a40aad5b50c3447316f4cb37395b"
+      },
+      {
+        "member_path": "Template.tex",
+        "bytes": 30936,
+        "crc32": "171e7fb5",
+        "sha256": "98f74a9ce3217c942610ff9f3c031e44dfa27a840e9bb485362982e37b266079"
+      },
+      {
+        "member_path": "Tables/table1.tex",
+        "bytes": 753,
+        "crc32": "a7099b42",
+        "sha256": "c225e37c070ecbc4a63354435ca2112f0d4c21df94c01a8b0411eef58a9c0182"
+      },
+      {
+        "member_path": "Tables/table2.tex",
+        "bytes": 893,
+        "crc32": "1a34d7bc",
+        "sha256": "9cdc5ca366dfffce1ddd0aef068928516f0bf3120729d9f36149c6efc6290002"
+      },
+      {
+        "member_path": "Tables/table3.tex",
+        "bytes": 886,
+        "crc32": "a74bd4b7",
+        "sha256": "1853ddccad120f030b4b9e096c0b85ae4b5d5bc6876974d609d59d8a543d95b2"
+      },
+      {
+        "member_path": "Tables/table4.tex",
+        "bytes": 883,
+        "crc32": "3993e400",
+        "sha256": "f7a95e0ee660a774f999eef46386c0ca965efec2a98158fd023293be2d14d470"
+      },
+      {
+        "member_path": "Tables/table5.tex",
+        "bytes": 879,
+        "crc32": "eeb24116",
+        "sha256": "abdfdb219c24d23ed96d84393334ee8ac94325cb0270ffff7fbf557883960537"
+      },
+      {
+        "member_path": "Tables/table6.tex",
+        "bytes": 889,
+        "crc32": "c6b2f051",
+        "sha256": "6c203a19157572ce9e1bcc28d7681d187f3a41fadc19b1e8e5ae33e1229443a3"
+      },
+      {
+        "member_path": "Tables/table7.tex",
+        "bytes": 879,
+        "crc32": "7fc41eea",
+        "sha256": "be2bc64e21bf5f1de69c9f4587fecf8902c92bfe91c101c3eefd9e208d940d76"
+      }
+    ],
+    "limitations": "Content-role review; original analyses not rerun. Parent archive preserved. Files remain nested in the acquisition cache."
+  },
+  {
+    "source_id": "report_68458202da63",
+    "archive_document_id": "report_68458202da63_65ca25b89b32ca106f97eec7",
+    "member_id": "report_68458202da63_65ca25b89b32ca106f97eec7_member_333800100e4d",
+    "member_path": "szakony_AJPS_2021_rep-main/dataverse_file.zip",
+    "archive_sha256": "f18bfccc210fb01b3c44cfd1d04e2f25d0044a17e0ca3f0afab7b1968cd8252f",
+    "nested_archive_sha256": "6202f90fbee5798d748e402fcf7b451de2b844962223a7bbe661813ebc870bdf",
+    "reviewed_on": "2026-10-05",
+    "content_role": "original_article_replication_package",
+    "evidence": "ReadMe.txt identifies David Szakonyi and Indecent Disclosures: Anti-Corruption Reforms and Political Selection. Codebook PDF opening identifies the original candidate/election datasets. Remaining files are original data and replication code, not an independent assessment.",
+    "additional_assessment_identified": false,
+    "members": [
+      {
+        "member_path": "cands.Rda",
+        "bytes": 23356019,
+        "crc32": "1e55f9e4",
+        "sha256": "db4b934d9b6acb79b192ab9aab0cc4da8e546ebb9bc855b30791e6907d59b16e"
+      },
+      {
+        "member_path": "Codebooks - Indecent Disclosures.pdf",
+        "bytes": 102232,
+        "crc32": "cd707576",
+        "sha256": "ea55e4222c62a6b9bee0251c1d5173c7b941fe69f871464b457900040c628293"
+      },
+      {
+        "member_path": "els.Rda",
+        "bytes": 1466102,
+        "crc32": "3a741401",
+        "sha256": "a7b5972081d468fe0e5cec1e64e0bb18eabc313715f7c56c5d488b4ee22855f0"
+      },
+      {
+        "member_path": "ReadMe.txt",
+        "bytes": 1107,
+        "crc32": "4cafa92f",
+        "sha256": "13a9aef4f88cd64d2e10a862a643a4a6246fbcd9282f32bd2d24f3faa41455a2"
+      },
+      {
+        "member_path": "Replication.R",
+        "bytes": 80419,
+        "crc32": "5b3153bb",
+        "sha256": "adec90e41ce9063951aad85872f70bff475186d81d889ee1609902457bb5a10a"
+      }
+    ],
+    "limitations": "Content-role review; original analyses not rerun. Parent archive preserved. Files remain nested in the acquisition cache."
+  },
+  {
+    "source_id": "report_e19ed9fa8b88",
+    "archive_document_id": "report_e19ed9fa8b88_65c915d19b32ca0f9897f457",
+    "member_id": "report_e19ed9fa8b88_65c915d19b32ca0f9897f457_member_2a2003614d18",
+    "member_path": "brahmin_replication/Da/Repli_Data_for_Figure/API_SP.POP.TOTL_DS2_en_csv_v2_4770387.zip",
+    "archive_sha256": "9fb1a7b492e60924cae71866d26072e37d312498d4b368926188408084f87c89",
+    "nested_archive_sha256": "2f2a6e7f86931c14b07207002ee3a96f5503e94a3ce38c298fabebabfd554e05",
+    "reviewed_on": "2026-10-05",
+    "content_role": "input_data",
+    "evidence": "Complete member inventory contains only input data files; no report or manuscript source.",
+    "additional_assessment_identified": false,
+    "members": [
+      {
+        "member_path": "Metadata_Indicator_API_SP.POP.TOTL_DS2_en_csv_v2_4770387.csv",
+        "bytes": 731,
+        "crc32": "69e9f696",
+        "sha256": "b8cbc5660da9ed518f984648b749c1baaf5a25623223e9a7063f6d85f5f82d02"
+      },
+      {
+        "member_path": "API_SP.POP.TOTL_DS2_en_csv_v2_4770387.csv",
+        "bytes": 185341,
+        "crc32": "45ef6e25",
+        "sha256": "0d16bd52b97a552b968964089cedfa1cf7bf6228a452ceacfbb0b2b4d8ba0133"
+      },
+      {
+        "member_path": "Metadata_Country_API_SP.POP.TOTL_DS2_en_csv_v2_4770387.csv",
+        "bytes": 58978,
+        "crc32": "da72e03f",
+        "sha256": "f2282b6aa3b3f2834123cda8e53cf43ffc8225799170ce114a675555676ada94"
+      }
+    ],
+    "limitations": "Content-role review; original analyses not rerun. Parent archive preserved. Files remain nested in the acquisition cache."
+  }
+]

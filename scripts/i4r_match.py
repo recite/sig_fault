@@ -173,6 +173,7 @@ def match(
             )
             continue
         pool = []
+        incomplete_control_histories = False
         for r in articles:
             if r["article_id"] == treated["article_id"]:
                 continue
@@ -214,6 +215,7 @@ def match(
             cv = [count(index, r["article_id"], y) for y in past]
             if not reason and any(v is None for v in cv):
                 reason = "incomplete_pre_citations"
+                incomplete_control_histories = True
             if reason:
                 candidates.append(
                     dict(
@@ -228,6 +230,16 @@ def match(
                 )
             else:
                 pool.append((r, cv))
+        if incomplete_control_histories:
+            excluded.append(
+                dict(
+                    event_id=event["event_id"],
+                    article_id=treated["article_id"],
+                    reason="incomplete_control_citation_retrieval",
+                    horizon=horizon,
+                )
+            )
+            continue
         if not pool:
             excluded.append(
                 dict(

@@ -39,3 +39,5 @@ Parallel counterfactual trends and absence of anticipatory citation changes/diff
 Source-complete inventory first; verified article/assessment/event tables second; standalone matching and analysis third. Keep every eligibility loss visible. No effect is reported from unverified classifications. Log changes to this specification with reasons and label resulting analyses appropriately.
 
 Implementation note: estimate the two-period model in first differences to avoid redundant fixed-effect rank counting in disconnected matched stacks. Tests require exact equality with the direct matched change. This changes the computation, not the estimand.
+
+Acquisition-completeness clarification (2026-10-05): matching waits for pre-disclosure citation histories for every otherwise eligible control in a retrieved risk set. A partly downloaded pool must not change candidate rankings or the scaling/calipers. Candidate metadata and age exclusions remain explicit. This gate was tightened before estimating the I4R matched contrasts.

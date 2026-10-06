@@ -82,14 +82,29 @@ def dictionary(folder):
     (folder / "profile.json").write_text(json.dumps(profile, indent=2) + "\n")
 
 
-def assessment_completion(units, population_enumerated):
+def assessment_completion(units, population_enumerated, scope=(), catalog_ids=()):
     eligible = [r for r in units if r["assessment_eligibility"] != "no"]
     resolved = sum(
         r["assessment_eligibility"] == "yes" and r["assessment_resolved"] == "yes"
         for r in eligible
     )
     fraction = resolved / len(eligible) if eligible else None
-    return population_enumerated is True and fraction is not None and fraction >= 0.9
+    sources_complete = (
+        bool(catalog_ids)
+        and len(scope) == len(set(catalog_ids))
+        and {r["source_id"] for r in scope} == set(catalog_ids)
+        and all(
+            r["status"] in {"fully_enumerated", "non_assessment", "supporting_document"}
+            for r in scope
+        )
+    )
+    return (
+        population_enumerated is True
+        and sources_complete
+        and all(r.get("unit_equivalence", "verified") == "verified" for r in units)
+        and fraction is not None
+        and fraction >= 0.9
+    )
 
 
 def report():
@@ -118,7 +133,13 @@ def report():
     lower_bound = resolved / denominator_bound if denominator_bound else None
     scope = json.loads((s.DATA / "coverage_scope.json").read_text())
     enumerated = scope["assessment_population_enumerated"] is True
-    complete = assessment_completion(s.read("assessment_inventory.csv"), enumerated)
+    assessment_scope = s.read("assessment_scope.csv")
+    complete = assessment_completion(
+        s.read("assessment_inventory.csv"),
+        enumerated,
+        assessment_scope,
+        [r["source_id"] for r in sources],
+    )
     counts = dict(
         catalog_entries=len(sources),
         discussion_papers=sum(r["collection"] == "discussion_papers" for r in sources),
@@ -141,8 +162,16 @@ def report():
         ),
         source_review_records=len(reviews),
         enumerated_assessment_units=len(s.read("assessment_inventory.csv")),
+        unresolved_assessment_equivalences=sum(
+            r["unit_equivalence"] == "unresolved"
+            for r in s.read("assessment_inventory.csv")
+        ),
         enumerated_assessment_articles=len(
             {r["article_id"] for r in s.read("assessment_inventory.csv")}
+        ),
+        catalog_sources_with_enumerated_scope=sum(
+            r["status"] in {"fully_enumerated", "non_assessment", "supporting_document"}
+            for r in assessment_scope
         ),
         inventoried_archives=sum(
             r["status"] == "inventoried" for r in s.read("archive_retrieval.csv")
@@ -152,6 +181,15 @@ def report():
         repository_sources_checked=len(
             {r["source_id"] for r in s.read("repository_queries.csv")}
         ),
+        candidate_controls=len(s.read("control_articles.csv")),
+        controls_with_verified_publisher_dates=sum(
+            bool(r["publication_date_source"] and r["publication_date"])
+            for r in s.read("control_articles.csv")
+        ),
+        complete_citation_histories=sum(
+            r["status"] == "complete" for r in s.read("citation_retrieval.csv")
+        ),
+        collected_citation_edges=len(s.read("citation_edges.csv")),
         curated_error_candidates=len(s.read("assessments.csv")),
         verified_dated_disclosures=len(primary),
         date_age_eligible_disclosures=len(direct[0]),
@@ -203,12 +241,24 @@ def report():
         ),
         "verified_article_identities": "Publisher/OpenAlex-verified article identities",
         "source_review_records": "Source review/disposition records",
-        "enumerated_assessment_units": "Units enumerated in selected bundles",
-        "enumerated_assessment_articles": "Articles in those enumerated units",
+        "enumerated_assessment_units": "Assessment records explicitly enumerated",
+        "unresolved_assessment_equivalences": (
+            "Assessment records with unresolved reviewer-team equivalence"
+        ),
+        "enumerated_assessment_articles": "Articles in those enumerated assessments",
+        "catalog_sources_with_enumerated_scope": (
+            "Catalog entries with assessment scope accounted for"
+        ),
         "inventoried_archives": "ZIP archives inventoried",
         "archive_files": "Root ZIP files listed",
         "archive_member_records": "Archive members, including code/data/plots",
         "repository_sources_checked": "OSF sources checked for components/providers",
+        "candidate_controls": "Distinct candidate control articles",
+        "controls_with_verified_publisher_dates": (
+            "Controls with verified publisher dates"
+        ),
+        "complete_citation_histories": "Complete affected/control citation histories",
+        "collected_citation_edges": "Deduplicated article–citing-work relationships",
         "source_units": "Source units after verified duplicate links",
         "verified_duplicate_listings": "Verified duplicate listings collapsed",
         "eligible_assessments": (
@@ -240,9 +290,25 @@ def report():
         "These are source-listing progress measures, not coverage of all independent"
         " article assessments. Shared projects can contain several assessment teams or"
         " articles. The 90% gate remains blocked until those units are enumerated and"
-        " reviewed. The separately enumerated units cover selected bundled/misdirected"
-        " sources and are not an estimate of the total assessment population. See"
+        " reviewed. Explicitly enumerated assessments are not yet a census of the"
+        " total assessment population. The source-by-source enumeration ledger is"
+        " `data/i4r/assessment_scope.csv`. See"
         " `data/i4r/coverage_scope.json` for resolved and unresolved scope.",
+        "",
+        "## Current scope review",
+        "",
+        "This review asks how many assessments each source contains and which"
+        " versions belong together. An unresolved source has been examined but"
+        " still lacks sufficient evidence to close that question.",
+        "",
+        "| Status | Catalog entries |",
+        "| --- | ---: |",
+    ]
+    for status, n in sorted(
+        collections.Counter(r["status"] for r in assessment_scope).items()
+    ):
+        lines.append(f'| {status.replace("_", " ")} | {n} |')
+    lines += [
         "",
         "## Initial screening depth",
         "",
@@ -307,6 +373,7 @@ def report():
     ]
     (folder / "coverage.md").write_text("\n".join(lines) + "\n")
     by_id = {r["source_id"]: r for r in sources}
+    scope_by_id = {r["source_id"]: r for r in assessment_scope}
     rows = []
     for r in reviews:
         source = by_id[r["source_id"]]
@@ -320,6 +387,8 @@ def report():
             r.get("adjudication_locator") or r["evidence_pages"],
             r.get("assessment_resolved"),
             r.get("canonical_source_id"),
+            scope_by_id[r["source_id"]]["status"],
+            scope_by_id[r["source_id"]]["evidence"],
         ]
         esc = [html.escape(str(x)) for x in cells]
         esc[1] = (
@@ -381,6 +450,7 @@ or a treatment-effect estimate.
 <th>Classification</th>
 <th>Evidence summary</th>
 <th>Location</th><th>Assessment resolved</th><th>Canonical source</th>
+<th>Current scope status</th><th>Scope evidence</th>
 </tr>
 </thead>
 <tbody>"""

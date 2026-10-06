@@ -276,7 +276,7 @@ dp_274,dp_274,1,yes,yes,minor_error_no_verified_material_consequence,no
 dp_275,dp_275,1,yes,yes,favorable_assessment,no
 dp_276,dp_276;report_780942f101b3,2,unresolved,no,robustness;robustness_concern,yes
 dp_277,dp_277;report_23a9252aef51,2,yes,yes,favorable_assessment,no
-dp_278,dp_278,1,no,no,,no
+dp_278,dp_278,1,yes,yes,verified_material_statistical_error,no
 dp_280,dp_280;report_746e7973905e,2,unresolved,no,favorable;favorable_assessment,yes
 dp_281,dp_281,1,no,no,,no
 dp_282,dp_282,1,no,no,,no
@@ -590,7 +590,7 @@ report_d20485341bfd,report_d20485341bfd,1,yes,no,,no
 report_d31287601c51,report_d31287601c51,1,yes,yes,favorable_assessment,no
 report_d587e96a9879,report_d587e96a9879,1,yes,yes,minor_error,no
 report_d5c37735e1a6,report_d5c37735e1a6,1,yes,no,,no
-report_d5ca85edae17,report_d5ca85edae17,1,yes,yes,robustness_concern,no
+report_d5ca85edae17,report_d5ca85edae17,1,yes,yes,robustness_assessment,no
 report_d5f67b495034,report_d5f67b495034,1,yes,yes,favorable_assessment,no
 report_d6df41f8f42c,report_d6df41f8f42c,1,yes,no,,no
 report_d73130c4281a,report_d73130c4281a,1,yes,yes,favorable_assessment,no
@@ -627,11 +627,11 @@ report_ee9729d69397,report_ee9729d69397,1,yes,yes,favorable_assessment,no
 report_ef395cda5e19,report_ef395cda5e19,1,yes,no,,no
 report_f3193586784a,report_f3193586784a,1,yes,no,,no
 report_f6b9ffef58cb,report_f6b9ffef58cb,1,yes,no,,no
-report_f7e5230b8c75,report_f7e5230b8c75,1,yes,no,,no
+report_f7e5230b8c75,report_f7e5230b8c75,1,yes,yes,software_version_reproducibility,no
 report_f8f4a01aaac4,report_f8f4a01aaac4,1,yes,no,,no
 report_f9082a063d37,report_f9082a063d37,1,yes,yes,robustness_concern,no
 report_f92779f10701,report_f92779f10701,1,yes,yes,favorable_assessment,no
-report_fd4ca10d5639,report_fd4ca10d5639,1,yes,yes,minor_error_no_verified_material_consequence,no
+report_fd4ca10d5639,report_fd4ca10d5639,1,yes,yes,minor_errors_or_reproducible,no
 report_fd69ad23f868,report_fd69ad23f868,1,yes,no,,no
 report_ff0cd29c98e7,report_ff0cd29c98e7,1,yes,yes,minor_error,no
 report_ffebba29c24d,report_ffebba29c24d,1,yes,yes,robustness_concern,no

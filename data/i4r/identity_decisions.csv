@@ -1,2 +1,3 @@
 article_id,title,doi,evidence,source_url
 i4r_40fdc820b2481c,Peer Effects in Academic Research: Senders and Receivers,10.1093/ej/ueac031,Exact source-supplied DOI resolves to publisher title; source roster omits final r in Receivers.,https://api.crossref.org/works/10.1093/ej/ueac031
+i4r_20d617740fb019,Disloyal Managers and Shareholders’ Wealth,10.1093/rfs/hhac070,Source-supplied DOI and original authors match Crossref and OpenAlex; catalog/claim target omitted plural possessive s in Shareholders’ Wealth.,https://api.crossref.org/works/10.1093/rfs/hhac070

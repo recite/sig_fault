@@ -19,6 +19,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
@@ -586,6 +587,28 @@ def acquire_document(row):
                     check=True,
                     capture_output=True,
                 )
+        elif row["format"] == "docx":
+            namespace = {
+                "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+            }
+            paragraphs = []
+            with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+                for name in [
+                    "word/document.xml",
+                    "word/footnotes.xml",
+                    "word/endnotes.xml",
+                ]:
+                    if name not in archive.namelist():
+                        continue
+                    tree = ET.fromstring(archive.read(name))
+                    paragraphs.extend(
+                        "".join(
+                            node.text or ""
+                            for node in paragraph.findall(".//w:t", namespace)
+                        )
+                        for paragraph in tree.findall(".//w:p", namespace)
+                    )
+            path.with_suffix(".txt").write_text("\n".join(paragraphs) + "\n")
         return dict(
             document_id=row["document_id"],
             status="retrieved",
@@ -632,7 +655,8 @@ def documents(workers=4):
     rows = [
         r
         for r in read("documents.csv")
-        if r["format"] in {"pdf", "csv", "xlsx", "", "unknown"}
+        if r["format"]
+        in {"pdf", "docx", "txt", "tex", "rmd", "csv", "xlsx", "", "unknown"}
     ]
     grouped = collections.defaultdict(list)
     for row in rows:

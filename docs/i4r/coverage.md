@@ -7,32 +7,49 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Catalog entries | 714 |
 | Discussion papers | 331 |
 | Report listings | 383 |
-| Retrieved documents (including separate replies and repeated files) | 1355 |
-| Distinct retrieved document URLs | 754 |
+| Retrieved documents (including separate replies and repeated files) | 1514 |
+| Distinct retrieved document URLs | 770 |
 | Retrieved listing metadata records | 707 |
-| Candidate article identities (not a final distinct-paper count) | 435 |
-| Publisher/OpenAlex-verified article identities | 384 |
+| Candidate article identities (not a final distinct-paper count) | 517 |
+| Publisher/OpenAlex-verified article identities | 458 |
 | Source review/disposition records | 714 |
-| Units enumerated in selected bundles | 27 |
-| Articles in those enumerated units | 22 |
+| Assessment records explicitly enumerated | 500 |
+| Assessment records with unresolved reviewer-team equivalence | 37 |
+| Articles in those enumerated assessments | 478 |
+| Catalog entries with assessment scope accounted for | 584 |
 | ZIP archives inventoried | 62 |
 | Root ZIP files listed | 62 |
 | Archive members, including code/data/plots | 3952 |
 | OSF sources checked for components/providers | 378 |
+| Distinct candidate control articles | 1022 |
+| Controls with verified publisher dates | 1000 |
+| Complete affected/control citation histories | 426 |
+| Deduplicated article–citing-work relationships | 32069 |
 | Source units after verified duplicate links | 636 |
 | Verified duplicate listings collapsed | 78 |
-| Source units containing article-specific assessments | 523 |
-| Source units with resolved target classification | 378 |
+| Source units containing article-specific assessments | 524 |
+| Source units with resolved target classification | 380 |
 | Units whose assessment eligibility remains unresolved | 27 |
-| Curated material-error candidate records | 29 |
-| Source-verified material-error disclosures with verified public year | 20 |
-| Disclosures satisfying the primary date/age window | 4 |
+| Curated material-error candidate records | 30 |
+| Source-verified material-error disclosures with verified public year | 22 |
+| Disclosures satisfying the primary date/age window | 5 |
 | Events with selected controls | 0 |
 | Complete matched article-period observations | 0 |
 
-The source-level resolution fraction among confirmed assessment listings is 72.3%. Including unresolved-eligibility source units in the denominator gives 68.7%.
+The source-level resolution fraction among confirmed assessment listings is 72.5%. Including unresolved-eligibility source units in the denominator gives 69.0%.
 
-These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. The separately enumerated units cover selected bundled/misdirected sources and are not an estimate of the total assessment population. See `data/i4r/coverage_scope.json` for resolved and unresolved scope.
+These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. Explicitly enumerated assessments are not yet a census of the total assessment population. The source-by-source enumeration ledger is `data/i4r/assessment_scope.csv`. See `data/i4r/coverage_scope.json` for resolved and unresolved scope.
+
+## Current scope review
+
+This review asks how many assessments each source contains and which versions belong together. An unresolved source has been examined but still lacks sufficient evidence to close that question.
+
+| Status | Catalog entries |
+| --- | ---: |
+| fully enumerated | 513 |
+| non assessment | 45 |
+| supporting document | 26 |
+| unresolved | 130 |
 
 ## Initial screening depth
 

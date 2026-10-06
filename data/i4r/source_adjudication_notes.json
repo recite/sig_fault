@@ -10717,13 +10717,19 @@
   },
   {
     "source_id": "dp_278",
-    "assessment_eligibility": "no",
-    "assessment_resolved": "no",
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "yes",
     "canonical_source_id": "dp_278",
-    "disposition": "methods_aggregate_or_reply_only",
-    "evidence": "Exploiting exogenous natural variation to study the impact of hard-to-randomize policies based on instrumental variables (IVs) is a widespread research design in economics. The key identification assumption underlying this design is the exclusion restriction, requiring the IV to affect the outcome variable only through the instrumented treatment variable. We review the literature using topography as an IV to show that systematic violations of this assumption are likely because of topography's ubiquity in socio-economic relationships. Furthermore, as topography often lacks first-stage strength, even subtle violations of the exclusion restriction undermine any causal inference. Instead of the vindication that often accompanies IV applications, we advocate a falsificationist approach to the use of topographic IVs, grounded in precaution and skepticism. We apply this approach to a seminal example of a topographic IV, Dinkelman (2011).",
-    "evidence_locator": "PDF opening and conclusion, independently inspected where text available",
-    "limitations": "Independent targeted document review, not a numerical reproduction; unreviewed sections may contain additional issues."
+    "disposition": "verified_material_statistical_error",
+    "evidence": "The report states that Anderson–Rubin confidence intervals labeled 95% were calculated at 90%. Recomputing at 95% yields a lower bound near 1 percentage point and no finite upper bound. The conclusion that the effect is positive remains; the correction removes the bounded magnitude inference.",
+    "evidence_locator": {
+      "document_id": "dp_278_download_0",
+      "targeted_pdf_pages": [
+        20,
+        54
+      ]
+    },
+    "limitations": "No independent numerical reproduction of the original Stata confidence-set inversion. Treat the precise corrected endpoint as report-based. Source p.20 summarizes finite ranges approximately; original [0.05,0.30] grid and replicated [.02,.25]/[.02,.26] grids should not be conflated. Exclusion restriction, collider bias and road-access robustness are distinct, disputed identification questions. Exact earliest public date remains unresolved; 2020 criticism must not be used as this error event. No formal correction was established in this targeted search."
   },
   {
     "source_id": "dp_279",
@@ -12000,10 +12006,20 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "yes",
     "canonical_source_id": "report_d5ca85edae17",
-    "disposition": "robustness_concern",
-    "evidence": "Readability gender gaps vary by metric/software. Author identifies errors in replicators’ textstat software and argues corrected gaps agree. No verified consequential error in original isolated.",
-    "evidence_locator": "PDF assessment pp.9–10; replies opening",
-    "limitations": "Independent targeted document review of opening/relevant evidence/conclusion, not a numerical reproduction. Material error not inferred merely from altered specifications or missing inputs."
+    "disposition": "robustness_assessment",
+    "evidence": "Alternative readability software/measures change gender gaps. Hengel's December 2024 reply identifies errors in the replication software textstat rather than in her original pipeline; corrected scores largely restore original gaps. The same team rejoinder shifts to measurement interpretation, not a verified consequential original error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "targeted_pdf_pages": [
+        1,
+        10
+      ],
+      "identity_evidence": [
+        "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
+      ]
+    },
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "review_basis": "independent_full_text_review"
   },
   {
     "source_id": "report_d5f67b495034",
@@ -12276,10 +12292,19 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "report_e8a4d40d8d58",
-    "disposition": "unresolved",
-    "evidence": "Apprenticeship replicators allege missing-to-zero coding and extra district exclusion; authors explain zero true earnings and trial-district design, and identify changed point estimates in purported SE-only check. Error not verified.",
-    "evidence_locator": "PDF assessment p.16; response pp.1–3",
-    "limitations": "Independent targeted document review of opening/relevant evidence/conclusion, not a numerical reproduction. Material error not inferred merely from altered specifications or missing inputs."
+    "disposition": "disputed_error_claim_unresolved",
+    "evidence": "Report alleges earnings zero-imputation and district exclusions undermine Ghana apprenticeship effects. Original-author reply explains zero earnings among surveyed participants, distinct conditional/unconditional estimands, and districts with no assessment participants; it also identifies changed samples under purported clustering-only changes. No verified consequential error after this dispute.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "targeted_pdf_pages": [
+        16
+      ],
+      "identity_evidence": [
+        "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
+      ]
+    },
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "review_basis": "independent_full_text_review"
   },
   {
     "source_id": "report_e8c36ade9112",
@@ -12486,20 +12511,45 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
     "canonical_source_id": "report_f6b9ffef58cb",
-    "disposition": "unresolved",
-    "evidence": "Mobile-money treatment stratification/reporting discrepancies disputed; response explains remainder randomization and different baseline medians. Independent material-error adjudication not complete.",
-    "evidence_locator": "PDF assessment p.32; response p.12",
-    "limitations": "Independent targeted document review of opening/relevant evidence/conclusion, not a numerical reproduction. Material error not inferred merely from altered specifications or missing inputs."
+    "disposition": "disputed_error_claim_unresolved",
+    "evidence": "Comment questions mobile-money randomization strata and capital construction versus preregistration. Riley's August 2026 reply explains global assignment of remainders and says prespecified assets yield the same significant conclusions; unresolved design/documentation dispute is not a verified consequential error.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "targeted_pdf_pages": [
+        4,
+        5,
+        32,
+        34
+      ],
+      "identity_evidence": [
+        "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
+      ]
+    },
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "review_basis": "independent_full_text_review"
   },
   {
     "source_id": "report_f7e5230b8c75",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
+    "assessment_resolved": "yes",
     "canonical_source_id": "report_f7e5230b8c75",
-    "disposition": "unresolved",
-    "evidence": "Multiracial-identity case study focuses software-version execution problems. Need distinguish lack of reproducibility from verified material numerical error.",
-    "evidence_locator": "PDF opening and discussion",
-    "limitations": "Independent targeted document review of opening/relevant evidence/conclusion, not a numerical reproduction. Material error not inferred merely from altered specifications or missing inputs."
+    "disposition": "software_version_reproducibility",
+    "evidence": "Concrete assessment of Davenport/Franco/Iyengar shows changing R's sampling default alters weighted Zelig estimates; pre-3.6 behavior largely reproduces published results despite an inaccurate declared software version. This is an article-specific reproducibility assessment, without proof original estimates were substantively wrong.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "targeted_pdf_pages": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "identity_evidence": [
+        "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
+      ]
+    },
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "review_basis": "independent_full_text_review"
   },
   {
     "source_id": "report_f7f8e5b7ec44",
@@ -12550,10 +12600,22 @@
     "assessment_eligibility": "yes",
     "assessment_resolved": "yes",
     "canonical_source_id": "report_fd4ca10d5639",
-    "disposition": "minor_error_no_verified_material_consequence",
-    "evidence": "Motion-silencing study uses independent instead of stated repeated-measures ANOVA and inconsistently filters reaction time. Most corrected directions/significance persist; report says main findings unaffected but secondary tests warrant nuanced interpretation.",
-    "evidence_locator": "PDF 9–10",
-    "limitations": "Independent targeted document review of opening/relevant evidence/conclusion, not a numerical reproduction. Material error not inferred merely from altered specifications or missing inputs."
+    "disposition": "minor_errors_or_reproducible",
+    "evidence": "Motion-silencing report identifies between-subject ANOVAs applied to within-subject data and mismatched RT filtering, reproducing some original outputs under the erroneous procedure. Corrected analyses change significance of three tests but explicitly leave main results unaffected; consequential materiality is not established.",
+    "evidence_locator": {
+      "report_opening_pdf_page": 1,
+      "targeted_pdf_pages": [
+        3,
+        4,
+        9,
+        10
+      ],
+      "identity_evidence": [
+        "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
+      ]
+    },
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "review_basis": "independent_full_text_review"
   },
   {
     "source_id": "report_fd69ad23f868",

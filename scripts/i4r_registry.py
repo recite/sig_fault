@@ -6,6 +6,7 @@ import argparse
 import collections
 import concurrent.futures
 import hashlib
+import html
 import json
 import re
 import unicodedata
@@ -92,6 +93,7 @@ def title_key(text):
 
 
 def identity_title_key(text):
+    text = html.unescape(text)
     text = re.sub(r"^RETRACTED(?: ARTICLE)?\s*:\s*", "", text, flags=re.I)
     text = re.sub(r"\s*\(Team \d+\)\s*$", "", text, flags=re.I)
     text = re.sub(r"</?(?:i|b|sup|sub|em|strong)[^>]*>", "", text)
@@ -255,9 +257,20 @@ def assessment_inventory(units, aliases):
             row["source_ids"]
             + row.get("aggregate_context_source_ids", [])
             + row.get("retrieval_source_ids", [])
+            + row.get("supporting_source_ids", [])
         )
-        if not row.get("original_title") or not row.get("reviewer_team"):
+        team_status = row.get("reviewer_team_identification", "named")
+        if team_status not in {"named", "not_reported"}:
+            raise ValueError("Invalid reviewer identification status: " + uid)
+        unidentified = team_status == "not_reported"
+        if unidentified and row.get("reviewer_team"):
+            raise ValueError("Unnamed assessment contains reviewer names: " + uid)
+        if not row.get("original_title") or (
+            not row.get("reviewer_team") and not unidentified
+        ):
             raise ValueError("Assessment unit lacks target/team: " + uid)
+        if unidentified and not row.get("document_ids"):
+            raise ValueError("Unnamed assessment lacks a report document: " + uid)
         if row["assessment_resolved"] == "yes" and not all(
             row.get(k) for k in ["evidence", "evidence_locator", "document_ids"]
         ):
@@ -269,6 +282,10 @@ def assessment_inventory(units, aliases):
                 unit_id=uid,
                 article_id=aliases.get(aid, aid),
                 reviewer_team="; ".join(row["reviewer_team"]),
+                reviewer_team_identification=row.get(
+                    "reviewer_team_identification", "named"
+                ),
+                unit_equivalence=("unresolved" if unidentified else "verified"),
                 assessment_eligibility=row["assessment_eligibility"],
                 assessment_resolved=row["assessment_resolved"],
                 disposition=row["disposition"],
@@ -285,6 +302,7 @@ def assessment_inventory(units, aliases):
             ("assessment_source", row["source_ids"]),
             ("aggregate_context", row.get("aggregate_context_source_ids", [])),
             ("verified_retrieval_alias", row.get("retrieval_source_ids", [])),
+            ("supporting_response", row.get("supporting_source_ids", [])),
         ]:
             for sid in ids:
                 if sid not in catalog:
@@ -305,6 +323,78 @@ def assessment_inventory(units, aliases):
                 dict(unit_id=uid, document_id=did, document_role=document["role"])
             )
     return inventory, links, evidence
+
+
+def assessment_scope(records, sources, unit_links):
+    """Account for each catalog source without equating it to an assessment."""
+    pilot.unique(records, ["source_id"])
+    catalog = {r["source_id"] for r in sources}
+    all_links = {(r["source_id"], r["unit_id"]) for r in unit_links}
+    links = {
+        (r["source_id"], r["unit_id"])
+        for r in unit_links
+        if r["relation"] in {"assessment_source", "aggregate_context"}
+    }
+    reviewed = {}
+    for row in records:
+        sid = row["source_id"]
+        status = row["status"]
+        units = row["unit_ids"]
+        if sid not in catalog:
+            raise ValueError("Scope source outside catalog: " + sid)
+        if status not in {
+            "fully_enumerated",
+            "non_assessment",
+            "supporting_document",
+            "unresolved",
+        }:
+            raise ValueError("Invalid assessment scope: " + sid)
+        if not row.get("evidence"):
+            raise ValueError("Assessment scope lacks evidence: " + sid)
+        if status in {"fully_enumerated", "supporting_document"} and not units:
+            raise ValueError("Enumerated assessment source lacks units: " + sid)
+        if status == "non_assessment" and units:
+            raise ValueError("Non-assessment source contains assessment units: " + sid)
+        allowed = all_links if status == "unresolved" else links
+        if status == "supporting_document":
+            allowed = {
+                (r["source_id"], r["unit_id"])
+                for r in unit_links
+                if r["relation"] == "supporting_response"
+            }
+            if {u for source, u in allowed if source == sid} != set(units):
+                raise ValueError("Supporting scope omits linked units: " + sid)
+        if len(units) != len(set(units)) or any((sid, u) not in allowed for u in units):
+            raise ValueError("Invalid assessment scope unit link: " + sid)
+        linked = {u for source, u in links if source == sid}
+        if status == "supporting_document" and linked:
+            raise ValueError(
+                "Supporting source also contains independent assessments: " + sid
+            )
+        if status == "non_assessment" and linked:
+            raise ValueError("Non-assessment scope contradicts linked units: " + sid)
+        if status == "fully_enumerated" and linked != set(units):
+            raise ValueError("Assessment scope omits linked units: " + sid)
+        reviewed[sid] = dict(
+            source_id=sid,
+            status=status,
+            unit_ids=";".join(units),
+            evidence=row["evidence"],
+            limitations=row.get("limitations", ""),
+        )
+    return [
+        reviewed.get(
+            r["source_id"],
+            dict(
+                source_id=r["source_id"],
+                status="pending",
+                unit_ids="",
+                evidence="",
+                limitations="Independent assessment scope has not been enumerated.",
+            ),
+        )
+        for r in sources
+    ]
 
 
 def build(refresh_metadata=False):
@@ -412,6 +502,15 @@ def build(refresh_metadata=False):
                             evidence=r["source_id"],
                         )
                     )
+            for related in r.get("related_aggregate_sources", []):
+                links.append(
+                    dict(
+                        source_id=related["source_id"],
+                        article_id=aid,
+                        relation="same_cohort_aggregate_roster",
+                        evidence=related["evidence"],
+                    )
+                )
     inventory_path = s.DATA / "assessment_inventory.json"
     unit_records = (
         json.loads(inventory_path.read_text()) if inventory_path.exists() else []
@@ -507,9 +606,9 @@ def build(refresh_metadata=False):
                 and pilot.normalize_doi(work.get("doi") or "") != record["doi"]
             ):
                 raise ValueError("DOI mismatch " + aid)
-            if title_key(record["title"]) != title_key(work["title"]) and not any(
-                r["article_id"] == aid for r in decisions
-            ):
+            if identity_title_key(record["title"]) != identity_title_key(
+                work["title"]
+            ) and not any(r["article_id"] == aid for r in decisions):
                 continue
             articles[aid] = article_from_work(work, aid) | {"title": record["title"]}
             accepted_sources.append(metadata_provenance(aid, path, "openalex"))
@@ -610,6 +709,8 @@ def build(refresh_metadata=False):
             "unit_id",
             "article_id",
             "reviewer_team",
+            "reviewer_team_identification",
+            "unit_equivalence",
             "assessment_eligibility",
             "assessment_resolved",
             "disposition",
@@ -619,6 +720,13 @@ def build(refresh_metadata=False):
         ],
     )
     s.write("assessment_sources.csv", unit_links, ["unit_id", "source_id", "relation"])
+    scope_path = s.DATA / "assessment_scope.json"
+    scope_records = json.loads(scope_path.read_text()) if scope_path.exists() else []
+    s.write(
+        "assessment_scope.csv",
+        assessment_scope(scope_records, s.read("sources.csv"), unit_links),
+        ["source_id", "status", "unit_ids", "evidence", "limitations"],
+    )
     s.write(
         "assessment_documents.csv",
         unit_docs,
@@ -847,6 +955,7 @@ def validate():
         ("assessment_inventory.csv", ["unit_id"]),
         ("assessment_sources.csv", ["unit_id", "source_id", "relation"]),
         ("assessment_documents.csv", ["unit_id", "document_id"]),
+        ("assessment_scope.csv", ["source_id"]),
     ]:
         pilot.unique(s.read(name), fields)
     for r in (
@@ -867,6 +976,18 @@ def validate():
     for r in s.read("assessment_documents.csv"):
         if r["unit_id"] not in unit_ids or r["document_id"] not in document_ids:
             raise ValueError("Broken assessment-unit document link")
+    scope = s.read("assessment_scope.csv")
+    if {r["source_id"] for r in scope} != sources:
+        raise ValueError("Assessment scope does not cover the frozen catalog")
+    assessment_scope(
+        [
+            r | {"unit_ids": r["unit_ids"].split(";") if r["unit_ids"] else []}
+            for r in scope
+            if r["status"] != "pending"
+        ],
+        s.read("sources.csv"),
+        s.read("assessment_sources.csv"),
+    )
     assessments = {r["assessment_id"]: r for r in s.read("assessments.csv")}
     for r in s.read("events.csv"):
         if r["assessment_id"] not in assessments:
