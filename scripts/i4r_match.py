@@ -121,6 +121,18 @@ def eligible_events(events, articles, cutoff, horizon):
     return list(earliest.values()), exclusions
 
 
+def assessed_control_exclusions(controls, assessed):
+    """Recheck cached controls when the assessed-article registry expands."""
+    dois = {pilot.normalize_doi(r["doi"]) for r in assessed if r.get("doi")}
+    titles = {registry.title_key(r["title"]) for r in assessed if r.get("title")}
+    return {
+        r["article_id"]: "known_assessed_article"
+        for r in controls
+        if (r.get("doi") and pilot.normalize_doi(r["doi"]) in dois)
+        or (r.get("title") and registry.title_key(r["title"]) in titles)
+    }
+
+
 def match(
     articles,
     events,
@@ -493,7 +505,13 @@ if __name__ == "__main__":
     def write(name, rows, fields):
         pilot.write_csv(args.output_dir / name, rows, fields)
 
-    articles = sources.read("articles.csv") + sources.read("control_articles.csv")
+    assessed = sources.read("articles.csv")
+    controls = sources.read("control_articles.csv")
+    articles = assessed + controls
+    control_exclusions = assessed_control_exclusions(controls, assessed)
+    control_exclusions.update(
+        {r["article_id"]: r["reason"] for r in sources.read("control_exclusions.csv")}
+    )
     events = sources.read("events.csv")
     citations = pilot.read_csv(args.citation_file)
     article_lookup = {r["article_id"]: r for r in articles}
@@ -519,10 +537,7 @@ if __name__ == "__main__":
                     article_lookup[event_lookup[r["event_id"]]["article_id"]]
                 )
             },
-            control_exclusions={
-                r["article_id"]: r["reason"]
-                for r in sources.read("control_exclusions.csv")
-            },
+            control_exclusions=control_exclusions,
         )
         all_matches.extend(m)
         all_candidates.extend(c)

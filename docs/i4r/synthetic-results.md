@@ -6,7 +6,7 @@ These retrospective checks use the same annual all-type citation data as the mat
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Parental leave | 2018;2019;2020 | 194 | 0.00 | 6.0 / 8.4 | 9.0 / 9.6 | -0.6 | -0.6 |
 | Fast internet | 2020;2021;2022;2023 | 218 | 10.52 | 125.0 / 148.0 | 137.0 / 100.3 | +36.7 | +37.9 |
-| Inventor clusters | 2022;2023 | 209 | Not fit: fewer than three pre-years | — | — | — | — |
+| Inventor clusters | 2022;2023 | 198 | Not fit: fewer than three pre-years | — | — | — | — |
 | Electrification | 2017;2018;2019;2020 | 117 | 0.00 | 34.0 / 40.5 | 28.0 / 35.2 | -7.2 | -7.2 |
 
 The held-out prediction fits weights on all but the last pre-disclosure year. The final synthetic path refits weights using every pre-year. Pre-fit error measures this final fit; it is not out-of-sample accuracy. Post gap is actual minus synthetic citations in the year after disclosure; change in gap subtracts the final pre-year gap. None is a significance test.

@@ -21,6 +21,10 @@
     {
       "source": "Source review",
       "issue": "Unresolved data/materiality disputes, absent reports, and non-OSF attachments remain. A successful repository query or an extracted plot is not a reviewed assessment."
+    },
+    {
+      "source_id": "dp_125",
+      "issue": "All 81 final-reanalysis article DOIs enumerated from Appendix B; Appendix C repeats that roster despite describing excluded papers. The stated 158-article attempted-reproduction universe is not fully identified, and article-specific equivalence-test findings remain unresolved."
     }
   ],
   "completion_rule": "At least 90% of enumerated eligible article-specific assessments resolved; source fractions alone cannot pass this gate.",

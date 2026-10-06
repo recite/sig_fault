@@ -80,6 +80,37 @@ class MatchingTests(unittest.TestCase):
         )
         self.assertEqual([r["control_id"] for r in m], ["c4"])
 
+    def test_new_assessments_exclude_cached_control_aliases(self):
+        members = [r | {"title": "Study " + r["article_id"]} for r in self.articles]
+        members[1]["doi"] = "https://doi.org/10.1234/NEW"
+        newly_assessed = [
+            article("new_doi") | {"title": "A revised title", "doi": "10.1234/new"},
+            article("new_title") | {"title": "STUDY C2!"},
+        ]
+        exclusions = matching.assessed_control_exclusions(
+            members[1:], [members[0]] + newly_assessed
+        )
+        self.assertEqual(
+            exclusions, {"c1": "known_assessed_article", "c2": "known_assessed_article"}
+        )
+        selected, candidates, _, _ = matching.match(
+            members + newly_assessed,
+            [event()],
+            self.pre,
+            [],
+            control_ids={"c1", "c2", "c3", "c4"},
+            control_exclusions=exclusions,
+        )
+        self.assertEqual({r["control_id"] for r in selected}, {"c3", "c4"})
+        self.assertEqual(
+            {
+                r["control_id"]
+                for r in candidates
+                if r["reason"] == "known_assessed_article"
+            },
+            {"c1", "c2"},
+        )
+
     def test_unknown_citations_are_not_zero(self):
         missing = [r for r in self.pre if r["article_id"] != "treated"]
         m, _, exclusions, _ = matching.match(self.articles, [event()], missing, [])

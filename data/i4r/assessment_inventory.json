@@ -7997,7 +7997,8 @@
       "Jack Fitzgerald"
     ],
     "source_ids": [
-      "dp_158"
+      "dp_158",
+      "dp_125"
     ],
     "document_ids": [
       {
@@ -8009,14 +8010,19 @@
         "document_id": "dp_159_download_0",
         "role": "original_author_reply",
         "cached_filename": "dp_159_download_0.txt"
+      },
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
       }
     ],
     "assessment_type": "computational_reproduction_and_robustness",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "yes",
-    "disposition": "robustness_dispute",
+    "assessment_resolved": "no",
+    "disposition": "robustness_dispute_with_equivalence_findings_unresolved",
     "material_error_verified": false,
-    "evidence": "Disputed proxy/functional-form critique; reply159 confirms minor appendix error but contests material-error claims. Do not treat99.8% shrinkage under different exposure definition as corrected-code effect.",
+    "evidence": "Disputed proxy/functional-form critique; reply159 confirms minor appendix error but contests material-error claims. Do not treat99.8% shrinkage under different exposure definition as corrected-code effect. The same reviewer assesses the same original article in DP125 Appendix B; this is linked to the existing team/article unit rather than counted as an independent team.",
     "evidence_locator": {
       "document_id": "dp_158_download_0",
       "pdf_pages": [
@@ -8026,9 +8032,17 @@
         8,
         30
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "additional_assessment_context": {
+        "document_id": "dp_125_download_0",
+        "pdf_pages": [
+          64
+        ],
+        "section": "Appendix B: Final Sample",
+        "article_doi": "10.1093/qje/qjac039"
+      }
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors.",
+    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors. The prior robustness-dispute adjudication applies to DP158 only. DP125 article-specific equivalence-test findings remain unresolved, so the combined team/article unit is not a completed substantive assessment.",
     "supporting_source_ids": [
       "dp_159"
     ]
@@ -22816,5 +22830,2725 @@
       "corresponding_later_overview": "DP287 section12.17.97"
     },
     "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
+  },
+  {
+    "unit_id": "i4r_dp125_efb605a09288",
+    "original_title": "Anonymity or distance? job search and labour market exclusion in a growing African city",
+    "original_doi": "10.1093/restud/rdaa057",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        51
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdaa057"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_673c0c88e114",
+    "original_title": "War, Socialism, and the Rise of Fascism: an Empirical Exploration",
+    "original_doi": "10.1093/qje/qjac001",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        51
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac001"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_397786bd2d60",
+    "original_title": "Weak states: Causes and consequences of the Sicilian mafia",
+    "original_doi": "10.1093/restud/rdz009",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        51
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdz009"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_708fb8d74051",
+    "original_title": "The Intergenerational Effects of a Large Wealth Shock: White Southerners after the Civil War",
+    "original_doi": "10.1257/aer.20191422",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        52
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20191422"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_2b8081b6ac6d",
+    "original_title": "Political Turnover, Bureaucratic Turnover, and the Quality of Public Services",
+    "original_doi": "10.1257/aer.20171867",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        52
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20171867"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_84ec8e4cb3ef",
+    "original_title": "Immigration and Redistribution",
+    "original_doi": "10.1093/restud/rdac011",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        52
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdac011"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_0189d62cb4d9",
+    "original_title": "Cutthroat capitalism versus cuddly socialism: Are Americans more meritocratic and efficiency-seeking than Scandinavians?",
+    "original_doi": "10.1086/705551",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        52
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/705551"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_7a24a02fbd29",
+    "original_title": "Upping the Ante: The Equilibrium Effects of Unconditional Grants to Private Schools",
+    "original_doi": "10.1257/aer.20180924",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        52
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20180924"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_95266815f733",
+    "original_title": "Diversity and conflict",
+    "original_doi": "10.3982/ecta13734",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        52
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta13734"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_21a0ce8ecf69",
+    "original_title": "Rural Roads and Local Economic Development",
+    "original_doi": "10.1257/aer.20180268",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        53
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20180268"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_4578159bda77",
+    "original_title": "Losing Prosociality in the Quest for Talent? Sorting, Selection, and Productivity in the Delivery of Public Services",
+    "original_doi": "10.1257/aer.20180326",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        53
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20180326"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_8358245f0668",
+    "original_title": "Negotiating a better future: How interpersonal skills facilitate intergenerational investment",
+    "original_doi": "10.1093/qje/qjz039",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        53
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjz039"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_3198b4cf3d50",
+    "original_title": "Bride price and female education",
+    "original_doi": "10.1086/704572",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        53
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/704572"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_ac6cce976bca",
+    "original_title": "Nonlinear pricing in village economies",
+    "original_doi": "10.3982/ecta13918",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        53
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta13918"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_c1174817db6c",
+    "original_title": "Women and power: Unpopular, unwilling, or held back? A comment",
+    "original_doi": "10.1086/705669",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        53
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/705669"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_6df1f97ae039",
+    "original_title": "Local Elites as State Capacity: How City Chiefs Use Local Information to Increase Tax Compliance in the Democratic Republic of the Congo",
+    "original_doi": "10.1257/aer.20201159",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        54
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20201159"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_14c86a746aaa",
+    "original_title": "The allocation of authority in organizations: A field experiment with bureaucrats",
+    "original_doi": "10.1093/qje/qjab029",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        54
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjab029"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_fcaeed7b9ade",
+    "original_title": "The institutional foundations of religious politics: Evidence from Indonesia",
+    "original_doi": "10.1093/qje/qjz038",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        54
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjz038"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_81e1e4940c39",
+    "original_title": "Forced Migration and Human Capital: Evidence from Post-WWII Population Transfers",
+    "original_doi": "10.1257/aer.20181518",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        54
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20181518"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_e9f250379d0e",
+    "original_title": "AI-tocracy",
+    "original_doi": "10.1093/qje/qjad012",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        54
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjad012"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_667bc4716098",
+    "original_title": "Competition and Entry in Agricultural Markets: Experimental Evidence from Kenya",
+    "original_doi": "10.1257/aer.20171397",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        55
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20171397"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_7720cc4d5749",
+    "original_title": "Credit, Attention, and Externalities in the Adoption of Energy Efficient Technologies by Low-Income Households",
+    "original_doi": "10.1257/aer.20210766",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        55
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20210766"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_c8b89dc78c52",
+    "original_title": "The economic consequences of increasing sleep among the urban poor",
+    "original_doi": "10.1093/qje/qjab013",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        55
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjab013"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_985e93db795a",
+    "original_title": "Way Down in the Hole: Adaptation to Long-Term Water Loss in Rural India",
+    "original_doi": "10.1257/aer.20180976",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        55
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20180976"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_a87332a5639d",
+    "original_title": "Market Access and Quality Upgrading: Evidence from Four Field Experiments",
+    "original_doi": "10.1257/aer.20210122",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        56
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20210122"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_3b1c2cba13f8",
+    "original_title": "Labor Rationing",
+    "original_doi": "10.1257/aer.20201385",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        56
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20201385"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_e7f8c2b7f560",
+    "original_title": "Steps of reasoning in children and adolescents",
+    "original_doi": "10.1086/714118",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        56
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/714118"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_726cecc8e87a",
+    "original_title": "Methods Matter: p-Hacking and Publication Bias in Causal Analysis in Economics",
+    "original_doi": "10.1257/aer.20190687",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        56
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20190687"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_3f7593b24850",
+    "original_title": "Improving college instruction through incentives",
+    "original_doi": "10.1086/707025",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        56
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/707025"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_149185b201cf",
+    "original_title": "Randomizing religion: The impact of Protestant evangelism on economic outcomes",
+    "original_doi": "10.1093/qje/qjaa023",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        57
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjaa023"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_9049a35c3ead",
+    "original_title": "Price Discrimination by Negotiation: a Field Experiment in Retail Electricity",
+    "original_doi": "10.1093/qje/qjac021",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        57
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac021"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_c9d92748e561",
+    "original_title": "On “Trade induced technical change: The impact of Chinese imports on innovation, IT, and productivity”",
+    "original_doi": "10.1093/restud/rdab037",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        57
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdab037"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_23c4d3173319",
+    "original_title": "New Deal, new patriots: How 1930s government spending boosted patriotism during World War II",
+    "original_doi": "10.1093/qje/qjac028",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        57
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac028"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_0af2b0c795c8",
+    "original_title": "Goals and gaps: Educational careers of immigrant children",
+    "original_doi": "10.3982/ecta17458",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        58
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta17458"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_2d83ba5776a8",
+    "original_title": "Who Chooses Commitment? Evidence and Welfare Implications",
+    "original_doi": "10.1093/restud/rdab056",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        58
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdab056"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_9cd0b218b5da",
+    "original_title": "Motivated false memory",
+    "original_doi": "10.1086/709971",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        58
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/709971"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_11540c15bdf7",
+    "original_title": "Stock Market Wealth and the Real Economy: A Local Labor Market Approach",
+    "original_doi": "10.1257/aer.20200208",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        58
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20200208"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_080dedc802ad",
+    "original_title": "Interaction, Stereotypes, and Performance: Evidence from South Africa",
+    "original_doi": "10.1257/aer.20181805",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        58
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20181805"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_b4ccd14badb3",
+    "original_title": "Estimating Social Preferences and Gift Exchange at Work",
+    "original_doi": "10.1257/aer.20190920",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        59
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20190920"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_957b938045b4",
+    "original_title": "Minimum wages and racial inequality",
+    "original_doi": "10.1093/qje/qjaa031",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        59
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjaa031"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_392b18d6c1e5",
+    "original_title": "Reshaping Adolescents' Gender Attitudes: Evidence from a School-Based Experiment in India",
+    "original_doi": "10.1257/aer.20201112",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        59
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20201112"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_44a61f00124f",
+    "original_title": "Persuasion through Slanted Language: Evidence from the Media Coverage of Immigration",
+    "original_doi": "10.1257/aer.20211537",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        59
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20211537"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_4659cefcebb9",
+    "original_title": "General equilibrium effects of cash transfers: Experimental evidence from Kenya",
+    "original_doi": "10.3982/ecta17945",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        59
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta17945"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_2707b86faaa6",
+    "original_title": "Monetary policy and the predictability of nominal exchange rates",
+    "original_doi": "10.1093/restud/rdaa024",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdaa024"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_fb62ebd0c825",
+    "original_title": "Social Media and protest participation: Evidence from Russia",
+    "original_doi": "10.3982/ecta14281",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta14281"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_d534881ef9d1",
+    "original_title": "The Gender Gap in Self-Promotion",
+    "original_doi": "10.1093/qje/qjac003",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac003"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_f63e8372df32",
+    "original_title": "Knowing when to ask: The cost of leaning in",
+    "original_doi": "10.1086/704616",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/704616"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_762953ec6799",
+    "original_title": "The return to protectionism",
+    "original_doi": "10.1093/qje/qjz036",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjz036"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_a260c5dcd2c7",
+    "original_title": "Cognitive skills, strategic sophistication, and life outcomes",
+    "original_doi": "10.1086/720460",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/720460"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_798fc44239d1",
+    "original_title": "Poor and rational: Decisionmaking under scarcity",
+    "original_doi": "10.1086/720466",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        60
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/720466"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_15d86698ec63",
+    "original_title": "Roman transport network connectivity and economic integration",
+    "original_doi": "10.1093/restud/rdab036",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        61
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdab036"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_bf1bd6126779",
+    "original_title": "What would you do with $500? spending responses to gains, losses, news, and loans",
+    "original_doi": "10.1093/restud/rdaa076",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        61
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdaa076"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_3e41aea3993e",
+    "original_title": "Unemployment fluctuations, match quality, and the wage cyclicality of new hires",
+    "original_doi": "10.1093/restud/rdaa004",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        61
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdaa004"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_c95ff064d759",
+    "original_title": "Copyrights and creativity: Evidence from Italian opera in the napoleonic age",
+    "original_doi": "10.1086/710534",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        61
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/710534"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_03ee30196a3f",
+    "original_title": "Inflammatory Political Campaigns and Racial Bias in Policing",
+    "original_doi": "10.1093/qje/qjac037",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        61
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac037"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_36b4c611b599",
+    "original_title": "Cultural distance and conflict-related sexual violence",
+    "original_doi": "10.1093/qje/qjad015",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        61
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjad015"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_9ad0b16a555d",
+    "original_title": "Welfare reform and the intergenerational transmission of dependence",
+    "original_doi": "10.1086/717893",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/717893"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_5b9c3f674dc3",
+    "original_title": "Firm response to competitive shocks: Evidence from China’s minimum wage policy",
+    "original_doi": "10.1093/restud/rdz058",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdz058"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_816649e1e54e",
+    "original_title": "The slope of the Phillips curve: Evidence from U.S. states",
+    "original_doi": "10.1093/qje/qjac010",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac010"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_8b2dfaad9a07",
+    "original_title": "Watering down environmental regulation in China",
+    "original_doi": "10.1093/qje/qjaa024",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjaa024"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_fbb8b20ef7de",
+    "original_title": "Are bigger banks better? Firm-level evidence from Germany",
+    "original_doi": "10.1086/714120",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/714120"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_165746a032b4",
+    "original_title": "Credit access, selection, and incentives in a market for asset-collateralized loans: Evidence from Kenya",
+    "original_doi": "10.1093/restud/rdad026",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdad026"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_f8f41e355169",
+    "original_title": "Bank capital redux: Solvency, liquidity, and crisis",
+    "original_doi": "10.1093/restud/rdaa040",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        62
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdaa040"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_6cd897695177",
+    "original_title": "The Mechanics of the Industrial Revolution",
+    "original_doi": "10.1086/720890",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        63
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/720890"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_0c9dbe1e1671",
+    "original_title": "Systemic discrimination among large U.S. employers",
+    "original_doi": "10.1093/qje/qjac024",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        63
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac024"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_48c26e2149d6",
+    "original_title": "The formation of prosociality: Causal evidence on the role of social environment",
+    "original_doi": "10.1086/704386",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        63
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/704386"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_5cda46d4262c",
+    "original_title": "Methods Matter: p-Hacking and Publication Bias in Causal Analysis in Economics: Comment",
+    "original_doi": "10.1257/aer.20210121",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        63
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20210121"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_9b9c99086044",
+    "original_title": "How do campaigns shape vote choice? Multicountry evidence from 62 elections and 56 TV debates",
+    "original_doi": "10.1093/qje/qjad002",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        63
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjad002"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_07d981e8dcb2",
+    "original_title": "Experimental evidence on the economics of rural electrification",
+    "original_doi": "10.1086/705417",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        63
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/705417"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_5c90c791477a",
+    "original_title": "Predictable Effects of Visual Salience in Experimental Decisions and Games",
+    "original_doi": "10.1093/qje/qjac025",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        64
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjac025"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_f8a92dac2f87",
+    "original_title": "The Origin of the State: Land Productivity or Appropriability?",
+    "original_doi": "10.1086/718372",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        64
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/718372"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_1b284d63b9aa",
+    "original_title": "Job Seekers’ Perceptions and Employment Prospects: Heterogeneity, Duration Dependence, and Bias",
+    "original_doi": "10.1257/aer.20190808",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        64
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20190808"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_e40f4625b467",
+    "original_title": "When a Doctor Falls from the Sky: The Impact of Easing Doctor Supply Constraints on Mortality",
+    "original_doi": "10.1257/aer.20210701",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20210701"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_3ab3c6a9b773",
+    "original_title": "Outsourcing Education: Experimental Evidence from Liberia",
+    "original_doi": "10.1257/aer.20181478",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1257/aer.20181478"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_5a9a698c224d",
+    "original_title": "Dynamic inconsistency in food choice: Experimental evidence from two food deserts",
+    "original_doi": "10.1093/restud/rdz030",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdz030"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_d6e7bda31408",
+    "original_title": "Whither formal contracts?",
+    "original_doi": "10.3982/ecta16083",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta16083"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_62425b89dcb4",
+    "original_title": "Gender differences in recognition for group work",
+    "original_doi": "10.1086/711401",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1086/711401"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_512f35639dff",
+    "original_title": "Understanding tax policy: How do people reason?",
+    "original_doi": "10.1093/qje/qjab033",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/qje/qjab033"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_f78fccf43cc4",
+    "original_title": "Gifts of the immigrants, woes of the natives: Lessons from the age of mass migration",
+    "original_doi": "10.1093/restud/rdz027",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        65
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.1093/restud/rdz027"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
+  },
+  {
+    "unit_id": "i4r_dp125_90e34a3a08a0",
+    "original_title": "Team players: How social skills improve team performance",
+    "original_doi": "10.3982/ecta18461",
+    "doi_verification_source": "DP125 Appendix B printed article DOI; source-listed identity, with publisher verification recorded separately",
+    "reviewer_team": [
+      "Jack Fitzgerald"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_125"
+    ],
+    "aggregate_context_source_ids": [],
+    "document_ids": [
+      {
+        "document_id": "dp_125_download_0",
+        "role": "assessment_report",
+        "cached_filename": "dp_125_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "article_in_equivalence_reanalysis_individual_findings_unresolved",
+    "evidence": "Appendix B identifies this article in the final sample of 81 papers subjected to equivalence-testing reanalysis by Jack Fitzgerald. Sample construction is described on PDF pages 20-22 and 49-51. Inclusion establishes an assessment, not a failed equivalence test or a verified material error.",
+    "evidence_locator": {
+      "document_id": "dp_125_download_0",
+      "pdf_pages": [
+        66
+      ],
+      "section": "Appendix B: Final Sample",
+      "article_doi": "10.3982/ecta18461"
+    },
+    "limitations": "Article-specific null claims and test results have not been recovered or adjudicated. Failure of an equivalence test would not by itself establish a nonzero effect or a material error. Appendix C repeats the final roster despite describing excluded papers, so the full 158-article attempted-reproduction population remains unresolved."
   }
 ]
