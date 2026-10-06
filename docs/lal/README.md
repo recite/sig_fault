@@ -1,5 +1,10 @@
 # Citation trajectories after the Lal et al. IV audit
 
+Papers flagged for statistical problems continued to receive citations after the audit.
+The comparisons leave uncertain how much, if at all, publicity reduced citation growth.
+Opposite point estimates across the overlapping definitions do not establish different
+responses to different statistical problems.
+
 This analysis extends the Nieuwenhuis design to all 67 papers in the IV audit. It compares
 annual citations from articles and reviews to papers meeting specified adverse diagnostics
 with other assessed papers. Book chapters and preprints enter only the sensitivity analyses.

@@ -1,20 +1,18 @@
 # What the second audit adds
 
-The Lal cohort does not show a stable, uniform citation penalty across diagnostic definitions and baselines. With 2023 as baseline, papers with weak instruments grow more slowly than their comparison papers while the broader inferential-sensitivity group grows faster. Moving the baseline to 2022 reverses the latter contrast. The three papers whose conventional inference is overturned by the Anderson–Rubin procedure all receive fewer journal citations in 2025 than in 2023. These patterns warrant a study across critiques; they do not yet establish a general response to methodological criticism.
+Papers flagged for statistical problems continued to receive citations after the Lal et al. audit appeared. The comparisons with other assessed papers leave uncertain how much, if at all, the audit reduced citation growth. The two main estimates are imprecise and change substantially with the starting year. Their opposite signs do not establish that researchers responded differently to different statistical problems.
 
-## Substantive reading
+## What the citation counts show
 
-For the weak-instrument group, annual journal citations are approximately flat while the comparison group grows. That is a relative shortfall, not a collapse in the flagged papers' own citation counts. Their median also changes little.
+Under the two main definitions, flagged papers' mean annual citations rose from 7.0 to 7.2 and from 7.1 to 10.3 between 2023 and 2025. Their medians changed little: 7.0 to 7.5 and 5.0 to 5.0. These counts document continued citation. They do not show how many citations the papers would have received without the critique.
 
-For inferential sensitivity, average journal citations grow more than in the comparison group, while the flagged median remains unchanged. The mean and median answer different questions; the unchanged median does not cancel the mean increase. This group includes losses under tF as well as Anderson–Rubin inference and should not be conflated with the much smaller AR-only group.
+The estimated relative changes are -14.5% (95% interval [-36.0, 14.2]) for the instrument-strength screen and 23.9% ([-7.1, 65.3]) for inferential sensitivity. Both intervals include reductions and increases. The definitions overlap and use different comparison populations, so the rows are alternative comparisons within one audit, not independent evidence of different responses.
 
-For the three AR-loss papers, both the mean and median decline: their total journal citations fall from 16 to 11. The relative decline remains negative when any one of those papers is omitted and with the alternative baselines. That makes it a substantive pattern worth pursuing. Three papers and one complete post-publication calendar year nevertheless offer little basis for a general conclusion about the scientific response to methodological criticism. The nominal clustered interval is exploratory; its many comparison-paper clusters and negative leave-one-out estimates do not establish reliable coverage with only three flagged papers. The earlier-circulation comparison is also negative, so the precise timing of the response is unresolved.
-
-The broad union of adverse diagnostics receives more average citations in 2025 than in 2023, and grows somewhat more than its comparison group. This aggregate masks the differences between diagnostics. It supports neither a blanket claim that methodological warnings are ignored nor a blanket claim that they reduce citations.
+The narrower Anderson–Rubin definition flags only three papers. Their total article/review citations fell from 16 to 11, and the relative point estimate remains negative under the reported baseline and leave-one-out checks. Those checks do not establish reliable inference with only three flagged papers or show that publicity caused the decline. We retain the comparison as exploratory; it does not support a separate account of how readers respond to this particular statistical problem.
 
 ## Baseline dependence
 
-The apparent faster growth for inferential sensitivity is specific to the 2023 baseline. The estimate changes from +23.9% to −17.0% with 2022, and to −2.6% with the two-year average baseline. The group had relatively weak growth in 2022–2023, so part of the subsequent increase is a rebound from that year. The weak-F contrast changes from −14.5% to approximately zero with the earlier baseline.
+The inferential-sensitivity estimate depends strongly on the baseline year. The estimate changes from +23.9% to −17.0% with 2022, and to −2.6% with the two-year average baseline. The group had relatively weak growth in 2022–2023, which makes the subsequent comparison sensitive to starting in that year. The weak-F contrast changes from −14.5% to approximately zero with the earlier baseline.
 
 The earlier baseline also excludes four recently published target papers. A common-cohort check separates those issues: retaining the same eligible papers, the sensitivity estimate is +15.7% from 2023 but −17.0% from 2022. Thus sample changes do not explain the reversal. A single before/after coefficient would overstate the stability of these results. The generated tables report all windows and the fixed older-cohort trajectories make the earlier evolution visible.
 
