@@ -398,11 +398,23 @@
       ],
       "identity_evidence": [
         "Catalog title matches this report and catalog URL points to shared w7vpu project."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 44,
+        "dp107_pdf_page": 182,
+        "report_url": "https://osf.io/w7vpu/files",
+        "evidence": "DP287 PDF p.127 links the shared w7vpu project. The target DOI and report abstract identify the Corno/La Ferrara/Burns assessment, already mapped to file6602ddad9dc8ef00f88981bb; the shared repository URL alone does not identify a unit."
+      }
     },
     "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
     "aggregate_context_source_ids": [
-      "dp_124"
+      "dp_107",
+      "dp_124",
+      "dp_287"
     ],
     "shared_project": "https://osf.io/w7vpu/",
     "retrieval_source_ids": [
@@ -855,11 +867,23 @@
       "specific_error_pdf_pages": [],
       "identity_evidence": [
         "Separate catalog project contains titled Campbell-team report version with same target and substantive exercise; different date/version retained."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 84,
+        "dp107_pdf_page": 223,
+        "report_url": "https://osf.io/qws2p/",
+        "evidence": "DP107 PDF p.223 explicitly links report_cb45594f8f09; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Independent document adjudication, not code rerun. Robustness changes are not automatically errors. Manuscript and upload dates do not establish public exposure. This unit is one reviewer-team assessment of one original article; plans/replies are supporting documents. ",
     "aggregate_context_source_ids": [
-      "dp_124"
+      "dp_107",
+      "dp_124",
+      "dp_287"
     ],
     "shared_project": "https://osf.io/w7vpu/",
     "retrieval_source_ids": [
@@ -1556,9 +1580,23 @@
         4,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 105,
+        "dp107_pdf_page": 244,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/7.htm",
+        "evidence": "DP107 PDF p.244 explicitly links dp_007; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_009_assessment_d832e9c3da",
@@ -1651,9 +1689,23 @@
           7,
           8
         ]
+      },
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 70,
+        "dp107_pdf_page": 208,
+        "report_url": "https://www.econstor.eu/bitstream/10419/266385/1/I4R-DP010.pdf",
+        "evidence": "DP107 PDF p.208 explicitly links dp_010; the linked assessment source and original title/DOI jointly identify the existing unit."
       }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_012_assessment_3d6bffccda",
@@ -1697,7 +1749,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 37,
+        "dp107_pdf_page": 175,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/12.htm",
+        "evidence": "DP107 PDF p.175 explicitly links dp_012; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -1707,6 +1769,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP012; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -1787,9 +1853,23 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 54,
+        "dp107_pdf_page": 192,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/16.htm",
+        "evidence": "DP107 PDF p.192 explicitly links dp_016; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_019_assessment_7bd7b96eed",
@@ -1828,9 +1908,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 5,
+        "dp107_pdf_page": 143,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/19.htm",
+        "evidence": "DP107 PDF p.143 explicitly links dp_019; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_020_assessment_9008b2600d",
@@ -1873,9 +1967,23 @@
         9,
         10
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 16,
+        "dp107_pdf_page": 154,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/20.htm",
+        "evidence": "DP107 PDF p.154 explicitly links dp_020; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_021_assessment_ece0397b04",
@@ -2069,9 +2177,23 @@
         4,
         9
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 73,
+        "dp107_pdf_page": 211,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/24.htm",
+        "evidence": "DP107 PDF p.211 explicitly links dp_024; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_025_assessment_a1aa774c08",
@@ -2108,9 +2230,23 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 72,
+        "dp107_pdf_page": 210,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/25.htm",
+        "evidence": "DP107 PDF p.210 explicitly links dp_025; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_026_assessment_ba8ec4cdcb",
@@ -2208,7 +2344,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 33,
+        "dp107_pdf_page": 171,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/27.htm",
+        "evidence": "DP107 PDF p.171 explicitly links dp_027; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "supporting_source_ids": [
@@ -2221,6 +2367,10 @@
         "relation": "supporting_response",
         "evidence": "Reply identifies original target and assessment reviewer team; member listing inspected for additional assessments."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2261,9 +2411,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 22,
+        "dp107_pdf_page": 160,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/28.htm",
+        "evidence": "DP107 PDF p.160 explicitly links dp_028; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_029_assessment_76744d86ba",
@@ -2302,9 +2466,23 @@
         8,
         9
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 76,
+        "dp107_pdf_page": 214,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/29.htm",
+        "evidence": "DP107 PDF p.214 explicitly links dp_029; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_030_assessment_19321c8842",
@@ -2383,9 +2561,23 @@
         9,
         14
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 35,
+        "dp107_pdf_page": 173,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/32.htm",
+        "evidence": "DP107 PDF p.173 explicitly links dp_032; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_033_assessment_67cc01d8c9",
@@ -2431,7 +2623,17 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 93,
+        "dp107_pdf_page": 232,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/33.htm",
+        "evidence": "DP107 PDF p.232 explicitly links dp_033; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -2441,6 +2643,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP033; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2480,7 +2686,17 @@
         4,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 13,
+        "dp107_pdf_page": 151,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/34.htm",
+        "evidence": "DP107 PDF p.151 explicitly links dp_034; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -2490,6 +2706,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP034; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2530,7 +2750,17 @@
         4,
         21
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 68,
+        "dp107_pdf_page": 206,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/35.htm",
+        "evidence": "DP107 PDF p.206 explicitly links dp_035; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "supporting_source_ids": [
@@ -2543,6 +2773,10 @@
         "relation": "supporting_response",
         "evidence": "Reply identifies original target and assessment reviewer team; member listing inspected for additional assessments."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2582,7 +2816,17 @@
         4,
         18
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 31,
+        "dp107_pdf_page": 169,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/36.htm",
+        "evidence": "DP107 PDF p.169 explicitly links dp_036; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -2592,6 +2836,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP036; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2637,7 +2885,17 @@
         4,
         10
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 57,
+        "dp107_pdf_page": 195,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/37.htm",
+        "evidence": "DP107 PDF p.195 explicitly links dp_037; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -2647,6 +2905,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP037; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2702,9 +2964,23 @@
           7,
           8
         ]
+      },
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 67,
+        "dp107_pdf_page": 205,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/39.htm",
+        "evidence": "DP107 PDF p.205 explicitly links dp_039; the linked assessment source and original title/DOI jointly identify the existing unit."
       }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_040_assessment_5882c373b9",
@@ -2742,9 +3018,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 41,
+        "dp107_pdf_page": 179,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/40.htm",
+        "evidence": "DP107 PDF p.179 explicitly links dp_040; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_041_assessment_faaae14cc9",
@@ -2786,7 +3076,17 @@
         7
       ],
       "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
-      "claim_adjudication": "DP041 PDF pp. 5 and 10, Table 1 PanelA columns 1/6; author reply DP044 PDF pp. 7–8."
+      "claim_adjudication": "DP041 PDF pp. 5 and 10, Table 1 PanelA columns 1/6; author reply DP044 PDF pp. 7–8.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 86,
+        "dp107_pdf_page": 225,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/41.htm",
+        "evidence": "DP107 PDF p.225 explicitly links dp_041; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Authors acknowledge the May coding error but defend the case study and dispute the broader robustness interpretation. Verified errors with unresolved substantive materiality; keep alternative clustering and removal of May separate from literal corrections.",
     "source_link_evidence": [
@@ -2797,7 +3097,11 @@
         "evidence": "Explicit project link or literal report copy identifies DP041; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
     ],
-    "material_error_verified": false
+    "material_error_verified": false,
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_042_assessment_f044775aa7",
@@ -2838,9 +3142,23 @@
         4,
         16
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 15,
+        "dp107_pdf_page": 153,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/42.htm",
+        "evidence": "DP107 PDF p.153 explicitly links dp_042; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_043_assessment_73d67d705f",
@@ -2879,9 +3197,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 45,
+        "dp107_pdf_page": 183,
+        "report_url": "https://www.econstor.eu/bitstream/10419/272845/1/I4R-DP043.pdf",
+        "evidence": "DP107 PDF p.183 explicitly links dp_043; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_045_assessment_0283bc57bb",
@@ -2927,7 +3259,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 95,
+        "dp107_pdf_page": 234,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/45.htm",
+        "evidence": "DP107 PDF p.234 explicitly links dp_045; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -2937,6 +3279,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP045; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -2978,9 +3324,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 92,
+        "dp107_pdf_page": 231,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/46.htm",
+        "evidence": "DP107 PDF p.231 explicitly links dp_046; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_047_assessment_e712723ecd",
@@ -3025,7 +3385,17 @@
         4,
         9
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 3,
+        "dp107_pdf_page": 141,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/47.htm",
+        "evidence": "DP107 PDF p.141 explicitly links dp_047; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3035,6 +3405,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP047; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3075,7 +3449,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 63,
+        "dp107_pdf_page": 201,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/48.htm",
+        "evidence": "DP107 PDF p.201 explicitly links dp_048; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3085,6 +3469,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP048; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3124,7 +3512,17 @@
         6,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 82,
+        "dp107_pdf_page": 221,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/49.htm",
+        "evidence": "DP107 PDF p.221 explicitly links dp_049; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3134,6 +3532,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP049; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3173,9 +3575,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 46,
+        "dp107_pdf_page": 184,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/50.htm",
+        "evidence": "DP107 PDF p.184 explicitly links dp_050; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_051_assessment_54473a4b19",
@@ -3216,7 +3632,17 @@
         6,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 59,
+        "dp107_pdf_page": 197,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/51.htm",
+        "evidence": "DP107 PDF p.197 explicitly links dp_051; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3226,6 +3652,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP051; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3266,9 +3696,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 106,
+        "dp107_pdf_page": 245,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/53.htm",
+        "evidence": "DP107 PDF p.245 explicitly links dp_053; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_054_assessment_15f81063b3",
@@ -3307,9 +3751,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 62,
+        "dp107_pdf_page": 200,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/54.htm",
+        "evidence": "DP107 PDF p.200 explicitly links dp_054; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_055_assessment_cd3a18dd7f",
@@ -3351,7 +3809,17 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 36,
+        "dp107_pdf_page": 174,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/55.htm",
+        "evidence": "DP107 PDF p.174 explicitly links dp_055; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3361,6 +3829,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP055; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3439,9 +3911,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 7,
+        "dp107_pdf_page": 145,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/57.htm",
+        "evidence": "DP107 PDF p.145 explicitly links dp_057; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_058_assessment_d1d9e8ef38",
@@ -3481,7 +3967,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 110,
+        "dp107_pdf_page": 249,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/58.htm",
+        "evidence": "DP107 PDF p.249 explicitly links dp_058; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3491,6 +3987,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP058; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3535,7 +4035,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 98,
+        "dp107_pdf_page": 237,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/59.htm",
+        "evidence": "DP107 PDF p.237 explicitly links dp_059; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3545,6 +4055,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP059; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3584,9 +4098,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 4,
+        "dp107_pdf_page": 142,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/61.htm",
+        "evidence": "DP107 PDF p.142 explicitly links dp_061; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_062_assessment_4d967f7e70",
@@ -3625,7 +4153,17 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 101,
+        "dp107_pdf_page": 240,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/62.htm",
+        "evidence": "DP107 PDF p.240 explicitly links dp_062; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3635,6 +4173,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP062; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3672,9 +4214,23 @@
         7,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 53,
+        "dp107_pdf_page": 191,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/64.htm",
+        "evidence": "DP107 PDF p.191 explicitly links dp_064; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_065_assessment_0864b55462",
@@ -3712,9 +4268,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 56,
+        "dp107_pdf_page": 194,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/65.htm",
+        "evidence": "DP107 PDF p.194 explicitly links dp_065; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_066_assessment_ea3969dc59",
@@ -3755,7 +4325,17 @@
         4,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 87,
+        "dp107_pdf_page": 226,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/66.htm",
+        "evidence": "DP107 PDF p.226 explicitly links dp_066; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3765,6 +4345,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP066; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3814,7 +4398,17 @@
         5,
         20
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 79,
+        "dp107_pdf_page": 217,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/67.htm",
+        "evidence": "DP107 PDF p.217 explicitly links dp_067; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -3825,6 +4419,10 @@
         "evidence": "Extracted archive README explicitly names original target Córdova/Kras State Action to Prevent Violence against Women and the same six reviewers as DP067. Archive contains supporting code/data/output and README; no separate assessment team identified.",
         "document_id": "report_0ed9bf5f9a71_65ca24989b32ca106997ee5b_member_d8ba4050d545"
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -3864,9 +4462,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 81,
+        "dp107_pdf_page": 219,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/69.htm",
+        "evidence": "DP107 PDF p.219 explicitly links dp_069; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_070_assessment_6d77bf53ba",
@@ -3946,9 +4558,23 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 50,
+        "dp107_pdf_page": 188,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/72.htm",
+        "evidence": "DP107 PDF p.188 explicitly links dp_072; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_073_assessment_898bb4a89f",
@@ -3985,9 +4611,23 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 65,
+        "dp107_pdf_page": 203,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/73.htm",
+        "evidence": "DP107 PDF p.203 explicitly links dp_073; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_074_assessment_19a02c91c9",
@@ -4026,9 +4666,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 85,
+        "dp107_pdf_page": 224,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/74.htm",
+        "evidence": "DP107 PDF p.224 explicitly links dp_074; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_075_assessment_0a185bb51f",
@@ -4068,7 +4722,17 @@
         7,
         15
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 32,
+        "dp107_pdf_page": 170,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/75.htm",
+        "evidence": "DP107 PDF p.170 explicitly links dp_075; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "supporting_source_ids": [
@@ -4081,6 +4745,10 @@
         "relation": "supporting_response",
         "evidence": "Reply identifies original target and assessment reviewer team; member listing inspected for additional assessments."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -4121,9 +4789,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 52,
+        "dp107_pdf_page": 190,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/76.htm",
+        "evidence": "DP107 PDF p.190 explicitly links dp_076; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_077_assessment_6768b961e4",
@@ -4165,9 +4847,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 51,
+        "dp107_pdf_page": 189,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/77.htm",
+        "evidence": "DP107 PDF p.189 explicitly links dp_077; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_078_assessment_09d3d6d357",
@@ -4222,9 +4918,23 @@
           5,
           6
         ]
+      },
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 103,
+        "dp107_pdf_page": 242,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/78.htm",
+        "evidence": "DP107 PDF p.242 explicitly links dp_078; the linked assessment source and original title/DOI jointly identify the existing unit."
       }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_079_assessment_a2116d1d00",
@@ -4265,9 +4975,23 @@
         5,
         16
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 40,
+        "dp107_pdf_page": 178,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/79.htm",
+        "evidence": "DP107 PDF p.178 explicitly links dp_079; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_080_assessment_11aff0427c",
@@ -4308,9 +5032,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 91,
+        "dp107_pdf_page": 230,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/80.htm",
+        "evidence": "DP107 PDF p.230 explicitly links dp_080; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_081_assessment_a437edb3c2",
@@ -4350,9 +5088,23 @@
         7,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 89,
+        "dp107_pdf_page": 228,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/81.htm",
+        "evidence": "DP107 PDF p.228 explicitly links dp_081; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_082_assessment_c18466c112",
@@ -4392,9 +5144,23 @@
         4,
         5
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 96,
+        "dp107_pdf_page": 235,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/82.htm",
+        "evidence": "DP107 PDF p.235 explicitly links dp_082; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_083_assessment_0bb3b6960e",
@@ -4434,9 +5200,23 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 102,
+        "dp107_pdf_page": 241,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/83.htm",
+        "evidence": "DP107 PDF p.241 explicitly links dp_083; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_085_assessment_bc2979a789",
@@ -4534,9 +5314,23 @@
         4,
         18
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 25,
+        "dp107_pdf_page": 163,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/86.htm",
+        "evidence": "DP107 PDF p.163 explicitly links dp_086; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_087_assessment_3f4e753653",
@@ -4638,7 +5432,17 @@
         4,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 75,
+        "dp107_pdf_page": 213,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/88.htm",
+        "evidence": "DP107 PDF p.213 explicitly links dp_088; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -4648,6 +5452,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP088; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -4745,9 +5553,23 @@
         5,
         6
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 55,
+        "dp107_pdf_page": 193,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/90.htm",
+        "evidence": "DP107 PDF p.193 explicitly links dp_090; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_091_assessment_2e21157d94",
@@ -4824,9 +5646,23 @@
         9,
         10
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 69,
+        "dp107_pdf_page": 207,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/92.htm",
+        "evidence": "DP107 PDF p.207 explicitly links dp_092; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_093_assessment_fc5b9e224b",
@@ -4865,9 +5701,23 @@
         4,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 18,
+        "dp107_pdf_page": 156,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/93.htm",
+        "evidence": "DP107 PDF p.156 explicitly links dp_093; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_094_assessment_a55044729b",
@@ -4973,7 +5823,17 @@
         6,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 30,
+        "dp107_pdf_page": 168,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/95.htm",
+        "evidence": "DP107 PDF p.168 explicitly links dp_095; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
     "source_link_evidence": [
@@ -4983,6 +5843,10 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP095; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -5023,9 +5887,23 @@
         4,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 1,
+        "dp107_pdf_page": 139,
+        "report_url": "https://econpapers.repec.org/paper/zbwi4rdps/97.htm",
+        "evidence": "DP107 PDF p.139 explicitly links dp_097; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_099_assessment_0d8ed83ff0",
@@ -5077,9 +5955,23 @@
           3,
           4
         ]
+      },
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 74,
+        "dp107_pdf_page": 212,
+        "report_url": "https://osf.io/a8cev/",
+        "evidence": "DP107 PDF p.212 explicitly links report_318a2dea7b11; the linked assessment source and original title/DOI jointly identify the existing unit."
       }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_103_assessment_0a422a46c0",
@@ -5294,9 +6186,23 @@
           5,
           8
         ]
+      },
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 83,
+        "dp107_pdf_page": 222,
+        "report_url": "https://osf.io/qnbfa/",
+        "evidence": "DP107 PDF p.222 explicitly links report_f65390241feb; the linked assessment source and original title/DOI jointly identify the existing unit."
       }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_108_assessment_f0ac45a4d0",
@@ -5359,9 +6265,23 @@
           7,
           8
         ]
+      },
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 77,
+        "dp107_pdf_page": 215,
+        "report_url": "https://osf.io/vwgxd/",
+        "evidence": "DP107 PDF p.215 explicitly links report_c44a94ff33b4; the linked assessment source and original title/DOI jointly identify the existing unit."
       }
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors.  Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "dp_110_assessment_05967d9d4f",
@@ -5422,10 +6342,24 @@
           8
         ]
       },
-      "claim_adjudication": "DP110 PDF pp. 6–7 and 10, section 2.4.1."
+      "claim_adjudication": "DP110 PDF pp. 6–7 and 10, section 2.4.1.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 28,
+        "dp107_pdf_page": 166,
+        "report_url": "https://osf.io/scgbt/",
+        "evidence": "DP107 PDF p.166 explicitly links report_013c1e38ca22; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Report states that the original authors were informed and adjusted their appendix; the report finds the central results robust. Exclude as a verified limited error; do not infer a material finding change merely from an incorrect formula.",
-    "material_error_verified": false
+    "material_error_verified": false,
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_dp111_assessment",
@@ -5470,9 +6404,23 @@
         7,
         8
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 80,
+        "dp107_pdf_page": 218,
+        "report_url": "https://osf.io/9hx3b/",
+        "evidence": "DP107 PDF p.218 explicitly links report_917ba368c8fa; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors."
+    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_dp112_assessment",
@@ -5566,9 +6514,23 @@
         6,
         18
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 9,
+        "dp107_pdf_page": 147,
+        "report_url": "https://osf.io/b7dn2/",
+        "evidence": "DP107 PDF p.147 explicitly links report_64d2bdaadf68; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors."
+    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_dp114_assessment",
@@ -7227,7 +8189,17 @@
         12,
         13
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 109,
+        "dp107_pdf_page": 248,
+        "report_url": "https://osf.io/3pqbt/",
+        "evidence": "DP107 PDF p.248 explicitly links report_dc096d9a7b69; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors.",
     "source_link_evidence": [
@@ -7238,6 +8210,10 @@
         ],
         "evidence": "Report heading names the same original and reviewer team as the existing DP unit; shared substantive text and conclusion verify a version of the same assessment, not title-only equivalence."
       }
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -8419,11 +9395,25 @@
         21
       ],
       "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
-      "claim_adjudication": "DP191 PDF p. 9; author reply DP192 PDF pp. 5 and 21."
+      "claim_adjudication": "DP191 PDF p. 9; author reply DP192 PDF pp. 5 and 21.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 48,
+        "dp107_pdf_page": 186,
+        "report_url": "https://ideas.repec.org/p/zbw/i4rdps/191.html",
+        "evidence": "DP287 PDF p.131 explicitly links DP191 for this target and DP192 as its author response."
+      }
     },
     "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Authors acknowledge the sign error; broader mechanism disagreements involve additional sample and model choices. Hold outside the primary cohort pending substantive materiality of this peripheral mechanism statement; do not decide materiality from its p-value.",
     "supporting_source_ids": [
       "dp_192"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
     ]
   },
   {
@@ -14914,9 +15904,23 @@
       "identity": "Report opening/byline and target discussion",
       "substantive": "Reproducibility/results discussion and conclusion, where present",
       "cached_filename": "report_03df53dc216f_657a37b85190bf01bee75ba8.txt",
-      "first_conclusion_or_discussion_pdf_page": 5
+      "first_conclusion_or_discussion_pdf_page": 5,
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 78,
+        "dp107_pdf_page": 216,
+        "report_url": "https://osf.io/t4avf/",
+        "evidence": "DP107 PDF p.216 explicitly links report_03df53dc216f; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims."
+    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a7f1f4f0ee6a1e5000021a0",
@@ -15044,9 +16048,23 @@
       "identity": "Report opening/byline and target discussion",
       "substantive": "Reproducibility/results discussion and conclusion, where present",
       "cached_filename": "report_0a1270bb9a9d_659c319e523af90c250b4276.txt",
-      "first_conclusion_or_discussion_pdf_page": 7
+      "first_conclusion_or_discussion_pdf_page": 7,
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 61,
+        "dp107_pdf_page": 199,
+        "report_url": "https://osf.io/unhkr/",
+        "evidence": "DP107 PDF p.199 explicitly links report_0a1270bb9a9d; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims."
+    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_69cd152aa2dded5a4d744e3e",
@@ -15245,9 +16263,23 @@
       "identity": "Report opening/byline and target discussion",
       "substantive": "Reproducibility/results discussion and conclusion, where present",
       "cached_filename": "report_0facb9bdb772_65b3dcb8ebe5e608e9f5e2dc.txt",
-      "first_conclusion_or_discussion_pdf_page": 7
+      "first_conclusion_or_discussion_pdf_page": 7,
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 39,
+        "dp107_pdf_page": 177,
+        "report_url": "https://osf.io/4sk52/",
+        "evidence": "DP107 PDF p.177 explicitly links report_0facb9bdb772; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims."
+    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a871a51131c1a965c6c5929",
@@ -15778,9 +16810,23 @@
       "identity": "Report opening/byline and target discussion",
       "substantive": "Reproducibility/results discussion and conclusion, where present",
       "cached_filename": "report_350263be01cc_65df830d0d9acb0825c2df22.txt",
-      "first_conclusion_or_discussion_pdf_page": 8
+      "first_conclusion_or_discussion_pdf_page": 8,
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 8,
+        "dp107_pdf_page": 146,
+        "report_url": "https://osf.io/zn98a/",
+        "evidence": "DP107 PDF p.146 explicitly links report_350263be01cc; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims."
+    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a7b5d4fd83ececc006a59be",
@@ -15907,9 +16953,23 @@
       "identity": "Report opening/byline and target discussion",
       "substantive": "Reproducibility/results discussion and conclusion, where present",
       "cached_filename": "report_3c7368c75d1c_download_0.txt",
-      "first_conclusion_or_discussion_pdf_page": 6
+      "first_conclusion_or_discussion_pdf_page": 6,
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 94,
+        "dp107_pdf_page": 233,
+        "report_url": "https://github.com/atyho/Ottawa-Replication-Games-2023/blob/main/Ho_Huynh_Rea_Replication_Report.pdf",
+        "evidence": "DP107 PDF p.233 links the Ho_Huynh_Rea_Replication_Report.pdf file in atyho/Ottawa-Replication-Games-2023, exactly the catalog report; PDF text extraction renders the filename underscores as spaces."
+      }
     },
-    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims."
+    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a329b55eb896e778ff36066",
@@ -16041,9 +17101,23 @@
       "identity": "Report opening/byline and target discussion",
       "substantive": "Reproducibility/results discussion and conclusion, where present",
       "cached_filename": "report_4533b3f73770_65984eea9513848b6a23860b.txt",
-      "first_conclusion_or_discussion_pdf_page": 15
+      "first_conclusion_or_discussion_pdf_page": 15,
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 21,
+        "dp107_pdf_page": 159,
+        "report_url": "https://osf.io/m3hwg/",
+        "evidence": "DP107 PDF p.159 explicitly links report_4533b3f73770; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims."
+    "limitations": "Independent document review, not a code rerun. Public disclosure timing not established by this inventory; no upload-date inference. Resolution is limited to assessed claims.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a8f87aeb64ff64bfb6b11c5",
@@ -16324,9 +17398,23 @@
     "evidence_locator": {
       "identity": "Report opening explicitly identifies original target; reviewer byline not reported",
       "substantive": "Reproduction/results and conclusion sections",
-      "cached_filename": "report_19c9277027f4_65984b179513848b562385fb.txt"
+      "cached_filename": "report_19c9277027f4_65984b179513848b562385fb.txt",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 107,
+        "dp107_pdf_page": 246,
+        "report_url": "https://osf.io/752q9/",
+        "evidence": "DP107 PDF p.246 explicitly links report_19c9277027f4; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure."
+    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a981e679137634b898fca51",
@@ -16388,9 +17476,23 @@
       "error_pdf_pages": [
         4,
         5
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 49,
+        "dp107_pdf_page": 187,
+        "report_url": "https://osf.io/bysa7/",
+        "evidence": "DP107 PDF p.187 explicitly links report_2f792d86ba6c; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure. Explicit Anonymous byline. Error affects IV robustness evidence, not the original main OLS result; treatment-cohort materiality must respect this scope."
+    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure. Explicit Anonymous byline. Error affects IV robustness evidence, not the original main OLS result; treatment-cohort materiality must respect this scope.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a9041436462cf4a736b1273",
@@ -16448,9 +17550,23 @@
     "evidence_locator": {
       "identity": "Report opening explicitly identifies original target; reviewer byline not reported",
       "substantive": "Reproduction/results and conclusion sections",
-      "cached_filename": "report_317bbaa7f373_659700da95138484222385d1.txt"
+      "cached_filename": "report_317bbaa7f373_659700da95138484222385d1.txt",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 17,
+        "dp107_pdf_page": 155,
+        "report_url": "https://osf.io/q3dpt/",
+        "evidence": "DP107 PDF p.155 explicitly links report_317bbaa7f373; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure."
+    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_6a830b8ae493fe6817d41fe3",
@@ -16508,9 +17624,23 @@
     "evidence_locator": {
       "identity": "Report opening explicitly identifies original target; reviewer byline not reported",
       "substantive": "Reproduction/results and conclusion sections",
-      "cached_filename": "report_38042f8fab98_657c65458e942d085aa0f133.txt"
+      "cached_filename": "report_38042f8fab98_657c65458e942d085aa0f133.txt",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 14,
+        "dp107_pdf_page": 152,
+        "report_url": "https://osf.io/5yhxc/",
+        "evidence": "DP107 PDF p.152 explicitly links report_38042f8fab98; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure."
+    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_657b20f34a0e9000ef8e913d",
@@ -16538,9 +17668,23 @@
     "evidence_locator": {
       "identity": "Report opening explicitly identifies original target; reviewer byline not reported",
       "substantive": "Reproduction/results and conclusion sections",
-      "cached_filename": "report_393f26b87c95_657b20f34a0e9000ef8e913d.txt"
+      "cached_filename": "report_393f26b87c95_657b20f34a0e9000ef8e913d.txt",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 43,
+        "dp107_pdf_page": 181,
+        "report_url": "https://osf.io/xadb6/",
+        "evidence": "DP107 PDF p.181 explicitly links report_393f26b87c95; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure."
+    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_69d908480e86b0b75578e9da",
@@ -16670,9 +17814,23 @@
     "evidence_locator": {
       "identity": "Report opening explicitly identifies original target; reviewer byline not reported",
       "substantive": "Reproduction/results and conclusion sections",
-      "cached_filename": "report_5d24a4102638_65ef135de5e51c0c79bc570a.txt"
+      "cached_filename": "report_5d24a4102638_65ef135de5e51c0c79bc570a.txt",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 6,
+        "dp107_pdf_page": 144,
+        "report_url": "https://osf.io/d76tn/",
+        "evidence": "DP107 PDF p.144 explicitly links report_5d24a4102638; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure."
+    "limitations": "Observed article-assessment report, not a proven independent reviewer team. Missing byline limits cross-report deduplication. No manuscript/upload date used as earliest public disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_osf_66d9c7fde03a3e89401eb2b2",
@@ -16841,9 +17999,23 @@
         3,
         6
       ],
-      "identity_evidence": "Target and named byline/body inspected."
+      "identity_evidence": "Target and named byline/body inspected.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 42,
+        "dp107_pdf_page": 180,
+        "report_url": "https://osf.io/gx4d6/",
+        "evidence": "DP107 PDF p.180 explicitly links report_68458202da63; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure."
+    "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_report_6876536c6342_assessment_51edd88d",
@@ -17022,9 +18194,23 @@
         24,
         25
       ],
-      "identity_evidence": "Target and named byline/body inspected."
+      "identity_evidence": "Target and named byline/body inspected.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 11,
+        "dp107_pdf_page": 149,
+        "report_url": "https://osf.io/zes6g/",
+        "evidence": "DP287 PDF p.94 explicitly links OSF zes6g, the catalog repository for this target-specific report."
+      }
     },
-    "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure."
+    "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_report_6e760b3ec360_assessment_a3fe8808",
@@ -17268,10 +18454,24 @@
         3,
         7
       ],
-      "identity_evidence": "Target and substantive assessment body inspected; byline not reported."
+      "identity_evidence": "Target and substantive assessment body inspected; byline not reported.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 60,
+        "dp107_pdf_page": 198,
+        "report_url": "https://osf.io/kbwap/",
+        "evidence": "DP107 PDF p.198 explicitly links report_73f84ad32827; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure. No reviewer byline established; PDF-author metadata is not treated as a complete team identification. Possible duplicate/revised assessment identity remains unresolved.",
-    "reviewer_team_identification": "not_reported"
+    "reviewer_team_identification": "not_reported",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_report_74c8331744fa_assessment_edeffe4d",
@@ -17526,9 +18726,23 @@
         5,
         6
       ],
-      "identity_evidence": "Target and named byline/body inspected."
+      "identity_evidence": "Target and named byline/body inspected.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 19,
+        "dp107_pdf_page": 157,
+        "report_url": "https://osf.io/8kvdf/",
+        "evidence": "DP107 PDF p.157 explicitly links report_79b3dfcb472d; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure."
+    "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_report_7bb8243d4722_assessment_64e39f61",
@@ -17989,10 +19203,24 @@
         3,
         4
       ],
-      "identity_evidence": "Target and substantive assessment body inspected; byline not reported."
+      "identity_evidence": "Target and substantive assessment body inspected; byline not reported.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 108,
+        "dp107_pdf_page": 247,
+        "report_url": "https://osf.io/b6s9k/",
+        "evidence": "DP107 PDF p.247 explicitly links report_876371161281; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure. No reviewer byline established; PDF-author metadata is not treated as a complete team identification. Possible duplicate/revised assessment identity remains unresolved.",
-    "reviewer_team_identification": "not_reported"
+    "reviewer_team_identification": "not_reported",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_report_8b644d8dbe22_assessment_2b8fca8c",
@@ -18623,10 +19851,24 @@
         3,
         4
       ],
-      "identity_evidence": "Target and substantive assessment body inspected; byline not reported."
+      "identity_evidence": "Target and substantive assessment body inspected; byline not reported.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 104,
+        "dp107_pdf_page": 243,
+        "report_url": "https://osf.io/a672c/",
+        "evidence": "DP107 PDF p.243 explicitly links report_a25f2ad859e3; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
     "limitations": "Independent full-text documentary review, not a rerun of original code. Report date and OSF upload date do not establish first public error disclosure. No reviewer byline established; PDF-author metadata is not treated as a complete team identification. Possible duplicate/revised assessment identity remains unresolved.",
-    "reviewer_team_identification": "not_reported"
+    "reviewer_team_identification": "not_reported",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "i4r_report_a55b58fb15e6_assessment_d42c371a",
@@ -18730,9 +19972,23 @@
       "report_opening_pdf_page": 1,
       "targeted_pdf_pages": [
         14
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 71,
+        "dp107_pdf_page": 209,
+        "report_url": "https://osf.io/dhn6e/",
+        "evidence": "DP107 PDF p.209 explicitly links report_a73316183cbc; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment body preserved despite missing reviewer names. Independent-team identity and equivalence to other listings remain unresolved; this should not be interpreted as verified independence from every existing unit. Targeted document review, not original-code rerun; no exposure date inferred."
+    "limitations": "Observed article-assessment body preserved despite missing reviewer names. Independent-team identity and equivalence to other listings remain unresolved; this should not be interpreted as verified independence from every existing unit. Targeted document review, not original-code rerun; no exposure date inferred.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_aa6015a229e9_assessment",
@@ -19065,9 +20321,23 @@
       "targeted_pdf_pages": [
         1,
         6
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 24,
+        "dp107_pdf_page": 162,
+        "report_url": "https://osf.io/bqz6w/",
+        "evidence": "DP107 PDF p.162 explicitly links report_bdaec4a6ba60; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment body preserved despite missing reviewer names. Independent-team identity and equivalence to other listings remain unresolved; this should not be interpreted as verified independence from every existing unit. Targeted document review, not original-code rerun; no exposure date inferred."
+    "limitations": "Observed article-assessment body preserved despite missing reviewer names. Independent-team identity and equivalence to other listings remain unresolved; this should not be interpreted as verified independence from every existing unit. Targeted document review, not original-code rerun; no exposure date inferred.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_bdf26a445bbc_assessment",
@@ -19101,9 +20371,23 @@
       ],
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 100,
+        "dp107_pdf_page": 239,
+        "report_url": "https://osf.io/gdne3/",
+        "evidence": "DP107 PDF p.239 explicitly links report_bdf26a445bbc; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_be97b2010c5d_assessment",
@@ -19175,9 +20459,23 @@
       ],
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 2,
+        "dp107_pdf_page": 140,
+        "report_url": "https://osf.io/yf48r/",
+        "evidence": "DP107 PDF p.140 explicitly links report_be9c14ba21ae; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_bffa1271e151_assessment",
@@ -19515,9 +20813,23 @@
       "targeted_pdf_pages": [
         1,
         7
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 34,
+        "dp107_pdf_page": 172,
+        "report_url": "https://osf.io/5n3ds/",
+        "evidence": "DP107 PDF p.172 explicitly links report_c8481e245c47; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Observed article-assessment body preserved despite missing reviewer names. Independent-team identity and equivalence to other listings remain unresolved; this should not be interpreted as verified independence from every existing unit. Targeted document review, not original-code rerun; no exposure date inferred."
+    "limitations": "Observed article-assessment body preserved despite missing reviewer names. Independent-team identity and equivalence to other listings remain unresolved; this should not be interpreted as verified independence from every existing unit. Targeted document review, not original-code rerun; no exposure date inferred.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_c8f2b1557cdf_assessment",
@@ -19747,9 +21059,23 @@
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
       ],
-      "archive_identity_evidence": "Archive report heading, team, target, and body checked; no second team/article assessment."
+      "archive_identity_evidence": "Archive report heading, team, target, and body checked; no second team/article assessment.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 64,
+        "dp107_pdf_page": 202,
+        "report_url": "https://osf.io/czkgw/",
+        "evidence": "DP107 PDF p.202 explicitly links report_cef722f52f77; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_cfd8f82c70d7_assessment",
@@ -19978,9 +21304,23 @@
       ],
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 23,
+        "dp107_pdf_page": 161,
+        "report_url": "https://osf.io/x7g9z/",
+        "evidence": "DP107 PDF p.161 explicitly links report_d31287601c51; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_d587e96a9879_assessment",
@@ -20211,9 +21551,23 @@
       ],
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 27,
+        "dp107_pdf_page": 165,
+        "report_url": "https://osf.io/xf5w2/",
+        "evidence": "DP107 PDF p.165 explicitly links report_d7b86b942111; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_d92c5a205682_assessment",
@@ -20542,9 +21896,23 @@
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
       ],
-      "archive_identity_evidence": "Archive report heading, team, target, and body checked; no second team/article assessment."
+      "archive_identity_evidence": "Archive report heading, team, target, and body checked; no second team/article assessment.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 66,
+        "dp107_pdf_page": 204,
+        "report_url": "https://osf.io/y8ubt/",
+        "evidence": "DP107 PDF p.204 explicitly links report_e4f54b0dd964; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_e71897f8921a_assessment",
@@ -20586,9 +21954,23 @@
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
       ],
-      "archive_identity_evidence": "Archive report heading, team, target, and body checked; no second team/article assessment."
+      "archive_identity_evidence": "Archive report heading, team, target, and body checked; no second team/article assessment.",
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 99,
+        "dp107_pdf_page": 238,
+        "report_url": "https://osf.io/728ud/",
+        "evidence": "DP107 PDF p.238 explicitly links report_e71897f8921a; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_e8a4d40d8d58_assessment",
@@ -20846,9 +22228,23 @@
       ],
       "identity_evidence": [
         "Report heading and introduction identify the catalog original; the named team and substantive report body were checked. All cached project attachment inventory inspected for additional reports."
-      ]
+      ],
+      "aggregate_roster_link": {
+        "source_ids": [
+          "dp_107",
+          "dp_287"
+        ],
+        "roster_row": 58,
+        "dp107_pdf_page": 196,
+        "report_url": "https://osf.io/ecymu/",
+        "evidence": "DP107 PDF p.196 explicitly links report_f7e5230b8c75; the linked assessment source and original title/DOI jointly identify the existing unit."
+      }
     },
-    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates."
+    "limitations": "Independent targeted document/body review, not an original-code rerun or an exhaustive check of every reported statistic. Scope enumeration identifies reviewer-team/original-article units, not individual experiments. No exposure date inferred from manuscript or upload dates.",
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ]
   },
   {
     "unit_id": "report_f92779f10701_assessment",

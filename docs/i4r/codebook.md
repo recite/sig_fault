@@ -4,6 +4,20 @@ Empty strings mean unavailable metadata or structurally absent evidence; complet
 
 Generated from the declared schema and current CSV contents. Row units, sources and transformations are explained in [the construction contract](data-construction.md).
 
+## aggregate_assessment_links.csv
+
+One row: one assessment entry in the DP107 overview roster, also appearing in DP287; matched to an existing unit or explicitly unresolved. Rows: 110. Key: source_id, roster_row. Producer: `scripts/i4r_registry.py build from aggregate_article_roster.json and assessment_inventory.json`.
+
+| Column | Type | Meaning | Missing | Observed range / values |
+| --- | --- | --- | ---: | --- |
+| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | dp_107 |
+| `roster_row` | integer | Number of the assessment entry in the source overview; repeated original papers can have different assessment teams. | 0 | 1 to 110 |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 109 distinct nonmissing values |
+| `unit_id` | string | Stable independent assessment identifier: one reviewer team assessing one original article; distinct from a claim-level assessment_id. | 10 | 100 distinct nonmissing values |
+| `link_status` | string | matched: explicit report link and target identity connect this roster entry to an existing assessment unit; unresolved: no verified unit link. A match does not resolve errors, disclosure timing or reviewer-team equivalence. | 0 | matched; unresolved |
+| `report_url` | string | Assessment report or repository link printed in the overview; empty when none is supplied. Presence alone does not establish an acquired or verified report. | 4 | 106 distinct nonmissing values |
+| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 110 distinct nonmissing values |
+
 ## analysis_panel.csv
 
 One row: article-period in a matched stack. Rows: 0. Key: stack_id, article_id, post. Producer: `i4r_match`.
@@ -109,7 +123,7 @@ One row: independently enumerated reviewer-team assessment of one original artic
 | `assessment_resolved` | string | yes/no: explicit final adjudication for the coverage gate; default no. | 0 | no; yes |
 | `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 0 | 59 distinct nonmissing values |
 | `evidence_summary` | string | Paraphrased evidence supporting a candidate assessment, including limitations. | 0 | 457 distinct nonmissing values |
-| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 472 distinct nonmissing values |
+| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 479 distinct nonmissing values |
 | `limitations` | string | Scope limits of the source adjudication. | 0 | 42 distinct nonmissing values |
 
 ## assessment_scope.csv
@@ -120,18 +134,18 @@ One row: catalog source with reviewed independent-assessment enumeration status;
 | --- | --- | --- | ---: | --- |
 | `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 714 distinct nonmissing values |
 | `status` | string | Stage-specific observed disposition; see values and the construction contract. | 0 | fully_enumerated; non_assessment; supporting_document; unresolved |
-| `unit_ids` | string | Semicolon-separated independent assessment IDs whose source linkage has been verified; empty for non-assessment or unenumerated sources. | 122 | 438 distinct nonmissing values |
-| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 491 distinct nonmissing values |
-| `limitations` | string | Scope limits of the source adjudication. | 44 | 36 distinct nonmissing values |
+| `unit_ids` | string | Semicolon-separated independent assessment IDs whose source linkage has been verified; empty for non-assessment or unenumerated sources. | 120 | 439 distinct nonmissing values |
+| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 490 distinct nonmissing values |
+| `limitations` | string | Scope limits of the source adjudication. | 44 | 37 distinct nonmissing values |
 
 ## assessment_sources.csv
 
-One row: assessment-to-catalog-source relation. Rows: 695. Key: unit_id, source_id, relation. Producer: `scripts/i4r_registry.py build`.
+One row: assessment-to-catalog-source relation. Rows: 895. Key: unit_id, source_id, relation. Producer: `scripts/i4r_registry.py build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
 | `unit_id` | string | Stable independent assessment identifier: one reviewer team assessing one original article; distinct from a claim-level assessment_id. | 0 | 500 distinct nonmissing values |
-| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 592 distinct nonmissing values |
+| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 594 distinct nonmissing values |
 | `relation` | string | Meaning of a source-to-source or source-to-article relationship. | 0 | aggregate_context; assessment_source; misdirected_catalog_attachment; supporting_response; verified_retrieval_alias |
 
 ## assessments.csv
@@ -573,14 +587,14 @@ One row: explicit external source link. Rows: 448. Key: no unique key declared. 
 
 ## source_manifest.csv
 
-One row: cached response. Rows: 6396. Key: path. Producer: `i4r_sources manifest`.
+One row: cached response. Rows: 6436. Key: path. Producer: `i4r_sources manifest`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `path` | string | Repository-relative cache path; private raw contents are not redistributed. | 0 | 6396 distinct nonmissing values |
-| `url` | string | Source or download URL; no authentication credentials. | 0 | 5449 distinct nonmissing values |
-| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 5652 distinct nonmissing values |
-| `sha256` | string | SHA-256 content checksum of retrieved bytes. | 0 | 5016 distinct nonmissing values |
+| `path` | string | Repository-relative cache path; private raw contents are not redistributed. | 0 | 6436 distinct nonmissing values |
+| `url` | string | Source or download URL; no authentication credentials. | 0 | 5486 distinct nonmissing values |
+| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 5692 distinct nonmissing values |
+| `sha256` | string | SHA-256 content checksum of retrieved bytes. | 0 | 5053 distinct nonmissing values |
 | `bytes` | integer | Response size in bytes. | 0 | 129 to 2.92204e+09 |
 
 ## source_metadata.csv

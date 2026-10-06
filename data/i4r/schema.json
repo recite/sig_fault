@@ -544,6 +544,18 @@
     "unit_equivalence": {
       "type": "string",
       "meaning": "verified or unresolved; unidentified report authors prevent treating a potentially revised or duplicate assessment as a confirmed independent team."
+    },
+    "roster_row": {
+      "type": "integer",
+      "meaning": "Number of the assessment entry in the source overview; repeated original papers can have different assessment teams."
+    },
+    "link_status": {
+      "type": "string",
+      "meaning": "matched: explicit report link and target identity connect this roster entry to an existing assessment unit; unresolved: no verified unit link. A match does not resolve errors, disclosure timing or reviewer-team equivalence."
+    },
+    "report_url": {
+      "type": "string",
+      "meaning": "Assessment report or repository link printed in the overview; empty when none is supplied. Presence alone does not establish an acquired or verified report."
     }
   },
   "tables": {
@@ -919,6 +931,14 @@
         "article_id"
       ],
       "producer": "manual publication-genre and identity review"
+    },
+    "aggregate_assessment_links.csv": {
+      "unit": "one assessment entry in the DP107 overview roster, also appearing in DP287; matched to an existing unit or explicitly unresolved",
+      "key": [
+        "source_id",
+        "roster_row"
+      ],
+      "producer": "scripts/i4r_registry.py build from aggregate_article_roster.json and assessment_inventory.json"
     }
   }
 }

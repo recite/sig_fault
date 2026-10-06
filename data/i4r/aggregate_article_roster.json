@@ -16,7 +16,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.83, section12.17 roster entry1; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_097_assessment_e7ab287715",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/97.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.1, PDF p.139; corresponding DP287 section12.17.1. DP107 PDF p.139 explicitly links dp_097; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 2,
@@ -32,7 +36,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.84, section12.17 roster entry2; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_be9c14ba21ae_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/yf48r/",
+    "assessment_link_evidence": "DP107 Appendix B.1.2, PDF p.140; corresponding DP287 section12.17.2. DP107 PDF p.140 explicitly links report_be9c14ba21ae; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 3,
@@ -50,7 +58,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.85, section12.17 roster entry3; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_047_assessment_e712723ecd",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/47.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.3, PDF p.141; corresponding DP287 section12.17.3. DP107 PDF p.141 explicitly links dp_047; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 4,
@@ -68,7 +80,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.87, section12.17 roster entry4; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_061_assessment_1f8aaf983f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/61.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.4, PDF p.142; corresponding DP287 section12.17.4. DP107 PDF p.142 explicitly links dp_061; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 5,
@@ -86,7 +102,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.88, section12.17 roster entry5; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_019_assessment_7bd7b96eed",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/19.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.5, PDF p.143; corresponding DP287 section12.17.5. DP107 PDF p.143 explicitly links dp_019; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 6,
@@ -102,7 +122,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.89, section12.17 roster entry6; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_65ef135de5e51c0c79bc570a",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/d76tn/",
+    "assessment_link_evidence": "DP107 Appendix B.1.6, PDF p.144; corresponding DP287 section12.17.6. DP107 PDF p.144 explicitly links report_5d24a4102638; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 7,
@@ -120,7 +144,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.90, section12.17 roster entry7; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_057_assessment_4666b3c9df",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/57.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.7, PDF p.145; corresponding DP287 section12.17.7. DP107 PDF p.145 explicitly links dp_057; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 8,
@@ -136,7 +164,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.91, section12.17 roster entry8; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_65df830d0d9acb0825c2df22",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/zn98a/",
+    "assessment_link_evidence": "DP107 Appendix B.1.8, PDF p.146; corresponding DP287 section12.17.8. DP107 PDF p.146 explicitly links report_350263be01cc; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 9,
@@ -152,7 +184,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.92, section12.17 roster entry9; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_dp113_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/b7dn2/",
+    "assessment_link_evidence": "DP107 Appendix B.1.9, PDF p.147; corresponding DP287 section12.17.9. DP107 PDF p.147 explicitly links report_64d2bdaadf68; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 10,
@@ -168,7 +204,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.93, section12.17 roster entry10; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "https://osf.io/69px3/",
+    "assessment_link_evidence": "DP107 Appendix B.1.10, PDF p.148; corresponding DP287 section12.17.10. Overview links OSF 69px3; no target-specific assessment unit is yet verified in the inventory."
   },
   {
     "roster_row": 11,
@@ -184,7 +224,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.94, section12.17 roster entry11; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_report_6e16fa666cce_assessment_0fc181f2",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/zes6g/",
+    "assessment_link_evidence": "DP107 Appendix B.1.11, PDF p.149; corresponding DP287 section12.17.11. DP287 PDF p.94 explicitly links OSF zes6g, the catalog repository for this target-specific report."
   },
   {
     "roster_row": 12,
@@ -200,7 +244,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.95, section12.17 roster entry12; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "https://www.socialsciencereproduction.org/reproductions/791/published/index",
+    "assessment_link_evidence": "DP107 Appendix B.1.12, PDF p.150; corresponding DP287 section12.17.12. Overview links Social Science Reproduction report791; no target-specific assessment unit is yet verified in the inventory."
   },
   {
     "roster_row": 13,
@@ -218,7 +266,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.96, section12.17 roster entry13; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_034_assessment_fb4a182ac1",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/34.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.13, PDF p.151; corresponding DP287 section12.17.13. DP107 PDF p.151 explicitly links dp_034; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 14,
@@ -234,7 +286,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.97, section12.17 roster entry14; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_657c65458e942d085aa0f133",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/5yhxc/",
+    "assessment_link_evidence": "DP107 Appendix B.1.14, PDF p.152; corresponding DP287 section12.17.14. DP107 PDF p.152 explicitly links report_38042f8fab98; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 15,
@@ -252,7 +308,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.98, section12.17 roster entry15; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_042_assessment_f044775aa7",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/42.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.15, PDF p.153; corresponding DP287 section12.17.15. DP107 PDF p.153 explicitly links dp_042; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 16,
@@ -270,7 +330,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.99, section12.17 roster entry16; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_020_assessment_9008b2600d",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/20.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.16, PDF p.154; corresponding DP287 section12.17.16. DP107 PDF p.154 explicitly links dp_020; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 17,
@@ -286,7 +350,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.100, section12.17 roster entry17; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_659700da95138484222385d1",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/q3dpt/",
+    "assessment_link_evidence": "DP107 Appendix B.1.17, PDF p.155; corresponding DP287 section12.17.17. DP107 PDF p.155 explicitly links report_317bbaa7f373; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 18,
@@ -304,7 +372,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.101, section12.17 roster entry18; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_093_assessment_fc5b9e224b",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/93.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.18, PDF p.156; corresponding DP287 section12.17.18. DP107 PDF p.156 explicitly links dp_093; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 19,
@@ -320,7 +392,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.102, section12.17 roster entry19; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_report_79b3dfcb472d_assessment_4c8801a6",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/8kvdf/",
+    "assessment_link_evidence": "DP107 Appendix B.1.19, PDF p.157; corresponding DP287 section12.17.19. DP107 PDF p.157 explicitly links report_79b3dfcb472d; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 20,
@@ -336,7 +412,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.103, section12.17 roster entry20; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "https://osf.io/fe2tr/",
+    "assessment_link_evidence": "DP107 Appendix B.1.20, PDF p.158; corresponding DP287 section12.17.20. DP107 says report forthcoming. DP287 PDF p.103 links OSF fe2tr; no target-specific assessment unit is yet verified in the inventory."
   },
   {
     "roster_row": 21,
@@ -352,7 +432,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.104, section12.17 roster entry21; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_65984eea9513848b6a23860b",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/m3hwg/",
+    "assessment_link_evidence": "DP107 Appendix B.1.21, PDF p.159; corresponding DP287 section12.17.21. DP107 PDF p.159 explicitly links report_4533b3f73770; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 22,
@@ -370,7 +454,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.105, section12.17 roster entry22; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_028_assessment_1900591db5",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/28.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.22, PDF p.160; corresponding DP287 section12.17.22. DP107 PDF p.160 explicitly links dp_028; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 23,
@@ -386,7 +474,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.106, section12.17 roster entry23; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_d31287601c51_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/x7g9z/",
+    "assessment_link_evidence": "DP107 Appendix B.1.23, PDF p.161; corresponding DP287 section12.17.23. DP107 PDF p.161 explicitly links report_d31287601c51; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 24,
@@ -402,7 +494,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.107, section12.17 roster entry24; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_bdaec4a6ba60_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/bqz6w/",
+    "assessment_link_evidence": "DP107 Appendix B.1.24, PDF p.162; corresponding DP287 section12.17.24. DP107 PDF p.162 explicitly links report_bdaec4a6ba60; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 25,
@@ -420,7 +516,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.108, section12.17 roster entry25; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_086_assessment_309fd636c0",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/86.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.25, PDF p.163; corresponding DP287 section12.17.25. DP107 PDF p.163 explicitly links dp_086; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 26,
@@ -436,7 +536,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.109, section12.17 roster entry26; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "https://osf.io/nwds7",
+    "assessment_link_evidence": "DP107 Appendix B.1.26, PDF p.164; corresponding DP287 section12.17.26. Overview links OSF nwds7 and replication package yfdet; no target-specific assessment unit is yet verified in the inventory."
   },
   {
     "roster_row": 27,
@@ -452,7 +556,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.110, section12.17 roster entry27; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_d7b86b942111_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/xf5w2/",
+    "assessment_link_evidence": "DP107 Appendix B.1.27, PDF p.165; corresponding DP287 section12.17.27. DP107 PDF p.165 explicitly links report_d7b86b942111; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 28,
@@ -468,7 +576,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.111, section12.17 roster entry28; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_110_assessment_05967d9d4f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/scgbt/",
+    "assessment_link_evidence": "DP107 Appendix B.1.28, PDF p.166; corresponding DP287 section12.17.28. DP107 PDF p.166 explicitly links report_013c1e38ca22; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 29,
@@ -484,7 +596,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.112, section12.17 roster entry29; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "",
+    "assessment_link_evidence": "DP107 Appendix B.1.29, PDF p.167; corresponding DP287 section12.17.29. Overview explicitly says no report; the stated computational-reproduction result does not identify the reviewer team."
   },
   {
     "roster_row": 30,
@@ -503,7 +619,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.113, section12.17 roster entry30; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_095_assessment_943c99d261",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/95.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.30, PDF p.168; corresponding DP287 section12.17.30. DP107 PDF p.168 explicitly links dp_095; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 31,
@@ -521,7 +641,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.114, section12.17 roster entry31; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_036_assessment_8cc2e537f0",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/36.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.31, PDF p.169; corresponding DP287 section12.17.31. DP107 PDF p.169 explicitly links dp_036; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 32,
@@ -539,7 +663,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.115, section12.17 roster entry32; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_075_assessment_0a185bb51f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/75.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.32, PDF p.170; corresponding DP287 section12.17.32. DP107 PDF p.170 explicitly links dp_075; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 33,
@@ -557,7 +685,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.116, section12.17 roster entry33; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_027_assessment_8352cdb6c9",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/27.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.33, PDF p.171; corresponding DP287 section12.17.33. DP107 PDF p.171 explicitly links dp_027; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 34,
@@ -573,7 +705,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.117, section12.17 roster entry34; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_c8481e245c47_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/5n3ds/",
+    "assessment_link_evidence": "DP107 Appendix B.1.34, PDF p.172; corresponding DP287 section12.17.34. DP107 PDF p.172 explicitly links report_c8481e245c47; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 35,
@@ -591,7 +727,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.118, section12.17 roster entry35; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_032_assessment_ba9c5a9dc1",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/32.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.35, PDF p.173; corresponding DP287 section12.17.35. DP107 PDF p.173 explicitly links dp_032; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 36,
@@ -609,7 +749,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.119, section12.17 roster entry36; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_055_assessment_cd3a18dd7f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/55.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.36, PDF p.174; corresponding DP287 section12.17.36. DP107 PDF p.174 explicitly links dp_055; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 37,
@@ -627,7 +771,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.120, section12.17 roster entry37; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_012_assessment_3d6bffccda",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/12.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.37, PDF p.175; corresponding DP287 section12.17.37. DP107 PDF p.175 explicitly links dp_012; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 38,
@@ -643,7 +791,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.121, section12.17 roster entry38; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "",
+    "assessment_link_evidence": "DP107 Appendix B.1.38, PDF p.176; corresponding DP287 section12.17.38. Overview reports computational reproduction without reanalyses and gives no assessment-report link or reviewer team."
   },
   {
     "roster_row": 39,
@@ -659,7 +811,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.122, section12.17 roster entry39; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_65b3dcb8ebe5e608e9f5e2dc",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/4sk52/",
+    "assessment_link_evidence": "DP107 Appendix B.1.39, PDF p.177; corresponding DP287 section12.17.39. DP107 PDF p.177 explicitly links report_0facb9bdb772; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 40,
@@ -677,7 +833,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.123, section12.17 roster entry40; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_079_assessment_a2116d1d00",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/79.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.40, PDF p.178; corresponding DP287 section12.17.40. DP107 PDF p.178 explicitly links dp_079; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 41,
@@ -695,7 +855,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.124, section12.17 roster entry41; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_040_assessment_5882c373b9",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/40.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.41, PDF p.179; corresponding DP287 section12.17.41. DP107 PDF p.179 explicitly links dp_040; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 42,
@@ -711,7 +875,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.125, section12.17 roster entry42; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_report_68458202da63_assessment_0b1bba7a",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/gx4d6/",
+    "assessment_link_evidence": "DP107 Appendix B.1.42, PDF p.180; corresponding DP287 section12.17.42. DP107 PDF p.180 explicitly links report_68458202da63; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 43,
@@ -727,7 +895,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.126, section12.17 roster entry43; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_657b20f34a0e9000ef8e913d",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/xadb6/",
+    "assessment_link_evidence": "DP107 Appendix B.1.43, PDF p.181; corresponding DP287 section12.17.43. DP107 PDF p.181 explicitly links report_393f26b87c95; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 44,
@@ -743,7 +915,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.127, section12.17 roster entry44; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "w7vpu_assessment_6602ddad9dc8ef00f88981bb",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/w7vpu/files",
+    "assessment_link_evidence": "DP107 Appendix B.1.44, PDF p.182; corresponding DP287 section12.17.44. DP287 PDF p.127 links the shared w7vpu project. The target DOI and report abstract identify the Corno/La Ferrara/Burns assessment, already mapped to file6602ddad9dc8ef00f88981bb; the shared repository URL alone does not identify a unit."
   },
   {
     "roster_row": 45,
@@ -759,7 +935,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.128, section12.17 roster entry45; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_043_assessment_73d67d705f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://www.econstor.eu/bitstream/10419/272845/1/I4R-DP043.pdf",
+    "assessment_link_evidence": "DP107 Appendix B.1.45, PDF p.183; corresponding DP287 section12.17.45. DP107 PDF p.183 explicitly links dp_043; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 46,
@@ -777,7 +957,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.129, section12.17 roster entry46; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_050_assessment_197f83228f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/50.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.46, PDF p.184; corresponding DP287 section12.17.46. DP107 PDF p.184 explicitly links dp_050; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 47,
@@ -793,7 +977,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.130, section12.17 roster entry47; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "",
+    "assessment_link_evidence": "DP107 Appendix B.1.47, PDF p.185; corresponding DP287 section12.17.47. Overview reports computational reproduction without reanalyses and gives no assessment-report link or reviewer team."
   },
   {
     "roster_row": 48,
@@ -809,7 +997,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.131, section12.17 roster entry48; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_dp191_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://ideas.repec.org/p/zbw/i4rdps/191.html",
+    "assessment_link_evidence": "DP107 Appendix B.1.48, PDF p.186; corresponding DP287 section12.17.48. DP287 PDF p.131 explicitly links DP191 for this target and DP192 as its author response."
   },
   {
     "roster_row": 49,
@@ -825,7 +1017,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.132, section12.17 roster entry49; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_65df848909c5790149d672dd",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/bysa7/",
+    "assessment_link_evidence": "DP107 Appendix B.1.49, PDF p.187; corresponding DP287 section12.17.49. DP107 PDF p.187 explicitly links report_2f792d86ba6c; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 50,
@@ -843,7 +1039,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.133, section12.17 roster entry50; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_072_assessment_2832a2e08a",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/72.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.50, PDF p.188; corresponding DP287 section12.17.50. DP107 PDF p.188 explicitly links dp_072; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 51,
@@ -861,7 +1061,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.134, section12.17 roster entry51; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_077_assessment_6768b961e4",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/77.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.51, PDF p.189; corresponding DP287 section12.17.51. DP107 PDF p.189 explicitly links dp_077; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 52,
@@ -879,7 +1083,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.135, section12.17 roster entry52; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_076_assessment_6768b961e4",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/76.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.52, PDF p.190; corresponding DP287 section12.17.52. DP107 PDF p.190 explicitly links dp_076; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 53,
@@ -897,7 +1105,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.136, section12.17 roster entry53; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_064_assessment_3b061a93c3",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/64.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.53, PDF p.191; corresponding DP287 section12.17.53. DP107 PDF p.191 explicitly links dp_064; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 54,
@@ -916,7 +1128,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.137, section12.17 roster entry54; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_016_assessment_4d93df3063",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/16.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.54, PDF p.192; corresponding DP287 section12.17.54. DP107 PDF p.192 explicitly links dp_016; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 55,
@@ -934,7 +1150,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.138, section12.17 roster entry55; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_090_assessment_2483d635b1",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/90.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.55, PDF p.193; corresponding DP287 section12.17.55. DP107 PDF p.193 explicitly links dp_090; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 56,
@@ -952,7 +1172,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.139, section12.17 roster entry56; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_065_assessment_0864b55462",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/65.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.56, PDF p.194; corresponding DP287 section12.17.56. DP107 PDF p.194 explicitly links dp_065; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 57,
@@ -970,7 +1194,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.140, section12.17 roster entry57; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_037_assessment_5627b3380d",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/37.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.57, PDF p.195; corresponding DP287 section12.17.57. DP107 PDF p.195 explicitly links dp_037; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 58,
@@ -986,7 +1214,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.141, section12.17 roster entry58; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_f7e5230b8c75_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/ecymu/",
+    "assessment_link_evidence": "DP107 Appendix B.1.58, PDF p.196; corresponding DP287 section12.17.58. DP107 PDF p.196 explicitly links report_f7e5230b8c75; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 59,
@@ -1004,7 +1236,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.142, section12.17 roster entry59; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_051_assessment_54473a4b19",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/51.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.59, PDF p.197; corresponding DP287 section12.17.59. DP107 PDF p.197 explicitly links dp_051; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 60,
@@ -1020,7 +1256,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.143, section12.17 roster entry60; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_report_73f84ad32827_assessment_590bf299",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/kbwap/",
+    "assessment_link_evidence": "DP107 Appendix B.1.60, PDF p.198; corresponding DP287 section12.17.60. DP107 PDF p.198 explicitly links report_73f84ad32827; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 61,
@@ -1036,7 +1276,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.144, section12.17 roster entry61; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_659c319e523af90c250b4276",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/unhkr/",
+    "assessment_link_evidence": "DP107 Appendix B.1.61, PDF p.199; corresponding DP287 section12.17.61. DP107 PDF p.199 explicitly links report_0a1270bb9a9d; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 62,
@@ -1054,7 +1298,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.145, section12.17 roster entry62; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_054_assessment_15f81063b3",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/54.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.62, PDF p.200; corresponding DP287 section12.17.62. DP107 PDF p.200 explicitly links dp_054; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 63,
@@ -1072,7 +1320,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.146, section12.17 roster entry63; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_048_assessment_3e46b1dc59",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/48.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.63, PDF p.201; corresponding DP287 section12.17.63. DP107 PDF p.201 explicitly links dp_048; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 64,
@@ -1088,7 +1340,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.147, section12.17 roster entry64; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_cef722f52f77_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/czkgw/",
+    "assessment_link_evidence": "DP107 Appendix B.1.64, PDF p.202; corresponding DP287 section12.17.64. DP107 PDF p.202 explicitly links report_cef722f52f77; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 65,
@@ -1106,7 +1362,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.148, section12.17 roster entry65; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_073_assessment_898bb4a89f",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/73.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.65, PDF p.203; corresponding DP287 section12.17.65. DP107 PDF p.203 explicitly links dp_073; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 66,
@@ -1122,7 +1382,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.149, section12.17 roster entry66; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_e4f54b0dd964_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/y8ubt/",
+    "assessment_link_evidence": "DP107 Appendix B.1.66, PDF p.204; corresponding DP287 section12.17.66. DP107 PDF p.204 explicitly links report_e4f54b0dd964; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 67,
@@ -1140,7 +1404,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.150, section12.17 roster entry67; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_039_assessment_4a3c9f4f09",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/39.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.67, PDF p.205; corresponding DP287 section12.17.67. DP107 PDF p.205 explicitly links dp_039; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 68,
@@ -1158,7 +1426,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.151, section12.17 roster entry68; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_035_assessment_c65f039028",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/35.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.68, PDF p.206; corresponding DP287 section12.17.68. DP107 PDF p.206 explicitly links dp_035; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 69,
@@ -1176,7 +1448,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.152, section12.17 roster entry69; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_092_assessment_40a2331682",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/92.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.69, PDF p.207; corresponding DP287 section12.17.69. DP107 PDF p.207 explicitly links dp_092; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 70,
@@ -1192,7 +1468,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.153, section12.17 roster entry70; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_010_assessment_0d948c8c79",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://www.econstor.eu/bitstream/10419/266385/1/I4R-DP010.pdf",
+    "assessment_link_evidence": "DP107 Appendix B.1.70, PDF p.208; corresponding DP287 section12.17.70. DP107 PDF p.208 explicitly links dp_010; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 71,
@@ -1208,7 +1488,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.154, section12.17 roster entry71; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_a73316183cbc_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/dhn6e/",
+    "assessment_link_evidence": "DP107 Appendix B.1.71, PDF p.209; corresponding DP287 section12.17.71. DP107 PDF p.209 explicitly links report_a73316183cbc; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 72,
@@ -1226,7 +1510,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.155, section12.17 roster entry72; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_025_assessment_a1aa774c08",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/25.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.72, PDF p.210; corresponding DP287 section12.17.72. DP107 PDF p.210 explicitly links dp_025; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 73,
@@ -1244,7 +1532,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.156, section12.17 roster entry73; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_024_assessment_2baf592b86",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/24.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.73, PDF p.211; corresponding DP287 section12.17.73. DP107 PDF p.211 explicitly links dp_024; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 74,
@@ -1260,7 +1552,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.157, section12.17 roster entry74; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_099_assessment_0d8ed83ff0",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/a8cev/",
+    "assessment_link_evidence": "DP107 Appendix B.1.74, PDF p.212; corresponding DP287 section12.17.74. DP107 PDF p.212 explicitly links report_318a2dea7b11; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 75,
@@ -1278,7 +1574,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.158, section12.17 roster entry75; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_088_assessment_157f2e64e1",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/88.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.75, PDF p.213; corresponding DP287 section12.17.75. DP107 PDF p.213 explicitly links dp_088; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 76,
@@ -1296,7 +1596,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.159, section12.17 roster entry76; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_029_assessment_76744d86ba",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/29.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.76, PDF p.214; corresponding DP287 section12.17.76. DP107 PDF p.214 explicitly links dp_029; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 77,
@@ -1312,7 +1616,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.160, section12.17 roster entry77; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_108_assessment_f0ac45a4d0",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/vwgxd/",
+    "assessment_link_evidence": "DP107 Appendix B.1.77, PDF p.215; corresponding DP287 section12.17.77. DP107 PDF p.215 explicitly links report_c44a94ff33b4; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 78,
@@ -1328,7 +1636,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.161, section12.17 roster entry78; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_657a37b85190bf01bee75ba8",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/t4avf/",
+    "assessment_link_evidence": "DP107 Appendix B.1.78, PDF p.216; corresponding DP287 section12.17.78. DP107 PDF p.216 explicitly links report_03df53dc216f; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 79,
@@ -1346,7 +1658,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.162, section12.17 roster entry79; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_067_assessment_4cccca425b",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/67.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.79, PDF p.217; corresponding DP287 section12.17.79. DP107 PDF p.217 explicitly links dp_067; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 80,
@@ -1362,7 +1678,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.163, section12.17 roster entry80; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_dp111_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/9hx3b/",
+    "assessment_link_evidence": "DP107 Appendix B.1.80, PDF p.218; corresponding DP287 section12.17.80. DP107 PDF p.218 explicitly links report_917ba368c8fa; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 81,
@@ -1380,7 +1700,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.164, section12.17 roster entry81; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_069_assessment_9509bf1041",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/69.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.81, PDF p.219; corresponding DP287 section12.17.81. DP107 PDF p.219 explicitly links dp_069; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 82,
@@ -1398,7 +1722,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.166, section12.17 roster entry82; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_049_assessment_9add9d2fff",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/49.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.82, PDF p.221; corresponding DP287 section12.17.82. DP107 PDF p.221 explicitly links dp_049; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 83,
@@ -1414,7 +1742,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.167, section12.17 roster entry83; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_106_assessment_e4b77e6ae7",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/qnbfa/",
+    "assessment_link_evidence": "DP107 Appendix B.1.83, PDF p.222; corresponding DP287 section12.17.83. DP107 PDF p.222 explicitly links report_f65390241feb; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 84,
@@ -1430,7 +1762,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.168, section12.17 roster entry84; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "w7vpu_assessment_6602ddb49dc8ef010089875e",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/qws2p/",
+    "assessment_link_evidence": "DP107 Appendix B.1.84, PDF p.223; corresponding DP287 section12.17.84. DP107 PDF p.223 explicitly links report_cb45594f8f09; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 85,
@@ -1448,7 +1784,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.169, section12.17 roster entry85; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_074_assessment_19a02c91c9",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/74.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.85, PDF p.224; corresponding DP287 section12.17.85. DP107 PDF p.224 explicitly links dp_074; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 86,
@@ -1467,7 +1807,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.170, section12.17 roster entry86; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_041_assessment_faaae14cc9",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/41.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.86, PDF p.225; corresponding DP287 section12.17.86. DP107 PDF p.225 explicitly links dp_041; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 87,
@@ -1485,7 +1829,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.171, section12.17 roster entry87; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_066_assessment_ea3969dc59",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/66.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.87, PDF p.226; corresponding DP287 section12.17.87. DP107 PDF p.226 explicitly links dp_066; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 88,
@@ -1501,7 +1849,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.172, section12.17 roster entry88; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "https://osf.io/tmn2j/",
+    "assessment_link_evidence": "DP107 Appendix B.1.88, PDF p.227; corresponding DP287 section12.17.88. Overview links OSF tmn2j; no target-specific assessment unit is yet verified in the inventory."
   },
   {
     "roster_row": 89,
@@ -1519,7 +1871,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.173, section12.17 roster entry89; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_081_assessment_a437edb3c2",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/81.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.89, PDF p.228; corresponding DP287 section12.17.89. DP107 PDF p.228 explicitly links dp_081; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 90,
@@ -1535,7 +1891,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.174, section12.17 roster entry90; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "https://www.socialsciencereproduction.org/reproductions/789/published/index?step=4",
+    "assessment_link_evidence": "DP107 Appendix B.1.90, PDF p.229; corresponding DP287 section12.17.90. Overview links Social Science Reproduction report789; no target-specific assessment unit is yet verified in the inventory."
   },
   {
     "roster_row": 91,
@@ -1553,7 +1913,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.175, section12.17 roster entry91; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_080_assessment_11aff0427c",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/80.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.91, PDF p.230; corresponding DP287 section12.17.91. DP107 PDF p.230 explicitly links dp_080; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 92,
@@ -1571,7 +1935,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.176, section12.17 roster entry92; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_046_assessment_c3732e5fd2",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/46.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.92, PDF p.231; corresponding DP287 section12.17.92. DP107 PDF p.231 explicitly links dp_046; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 93,
@@ -1589,7 +1957,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.177, section12.17 roster entry93; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_033_assessment_67cc01d8c9",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/33.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.93, PDF p.232; corresponding DP287 section12.17.93. DP107 PDF p.232 explicitly links dp_033; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 94,
@@ -1605,7 +1977,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.178, section12.17 roster entry94; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_3c7368c75d1c",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://github.com/atyho/Ottawa-Replication-Games-2023/blob/main/Ho_Huynh_Rea_Replication_Report.pdf",
+    "assessment_link_evidence": "DP107 Appendix B.1.94, PDF p.233; corresponding DP287 section12.17.94. DP107 PDF p.233 links the Ho_Huynh_Rea_Replication_Report.pdf file in atyho/Ottawa-Replication-Games-2023, exactly the catalog report; PDF text extraction renders the filename underscores as spaces."
   },
   {
     "roster_row": 95,
@@ -1623,7 +1999,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.179, section12.17 roster entry95; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_045_assessment_0283bc57bb",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/45.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.95, PDF p.234; corresponding DP287 section12.17.95. DP107 PDF p.234 explicitly links dp_045; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 96,
@@ -1641,7 +2021,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.180, section12.17 roster entry96; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_082_assessment_c18466c112",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/82.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.96, PDF p.235; corresponding DP287 section12.17.96. DP107 PDF p.235 explicitly links dp_082; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 97,
@@ -1657,7 +2041,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.181, section12.17 roster entry97; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "",
+    "assessment_link_status": "unresolved",
+    "assessment_report_url": "",
+    "assessment_link_evidence": "DP107 Appendix B.1.97, PDF p.236; corresponding DP287 section12.17.97. Overview reports computational reproduction without coding errors and gives no assessment-report link or reviewer team."
   },
   {
     "roster_row": 98,
@@ -1675,7 +2063,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.182, section12.17 roster entry98; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_059_assessment_eab3b128d6",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/59.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.98, PDF p.237; corresponding DP287 section12.17.98. DP107 PDF p.237 explicitly links dp_059; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 99,
@@ -1691,7 +2083,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.183, section12.17 roster entry99; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_e71897f8921a_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/728ud/",
+    "assessment_link_evidence": "DP107 Appendix B.1.99, PDF p.238; corresponding DP287 section12.17.99. DP107 PDF p.238 explicitly links report_e71897f8921a; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 100,
@@ -1707,7 +2103,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.184, section12.17 roster entry100; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "report_bdf26a445bbc_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/gdne3/",
+    "assessment_link_evidence": "DP107 Appendix B.1.100, PDF p.239; corresponding DP287 section12.17.100. DP107 PDF p.239 explicitly links report_bdf26a445bbc; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 101,
@@ -1726,7 +2126,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.185, section12.17 roster entry101; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_062_assessment_4d967f7e70",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/62.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.101, PDF p.240; corresponding DP287 section12.17.101. DP107 PDF p.240 explicitly links dp_062; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 102,
@@ -1745,7 +2149,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.186, section12.17 roster entry102; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_083_assessment_0bb3b6960e",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/83.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.102, PDF p.241; corresponding DP287 section12.17.102. DP107 PDF p.241 explicitly links dp_083; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 103,
@@ -1763,7 +2171,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.187, section12.17 roster entry103; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_078_assessment_09d3d6d357",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/78.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.103, PDF p.242; corresponding DP287 section12.17.103. DP107 PDF p.242 explicitly links dp_078; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 104,
@@ -1779,7 +2191,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.188, section12.17 roster entry104; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_report_a25f2ad859e3_assessment_bb68f502",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/a672c/",
+    "assessment_link_evidence": "DP107 Appendix B.1.104, PDF p.243; corresponding DP287 section12.17.104. DP107 PDF p.243 explicitly links report_a25f2ad859e3; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 105,
@@ -1797,7 +2213,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.189, section12.17 roster entry105; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_007_assessment_a22e222715",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/7.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.105, PDF p.244; corresponding DP287 section12.17.105. DP107 PDF p.244 explicitly links dp_007; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 106,
@@ -1815,7 +2235,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.190, section12.17 roster entry106; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_053_assessment_d12ff19f2a",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/53.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.106, PDF p.245; corresponding DP287 section12.17.106. DP107 PDF p.245 explicitly links dp_053; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 107,
@@ -1831,7 +2255,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.191, section12.17 roster entry107; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_osf_65984b179513848b562385fb",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/752q9/",
+    "assessment_link_evidence": "DP107 Appendix B.1.107, PDF p.246; corresponding DP287 section12.17.107. DP107 PDF p.246 explicitly links report_19c9277027f4; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 108,
@@ -1847,7 +2275,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.192, section12.17 roster entry108; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_report_876371161281_assessment_2f1a94f0",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/b6s9k/",
+    "assessment_link_evidence": "DP107 Appendix B.1.108, PDF p.247; corresponding DP287 section12.17.108. DP107 PDF p.247 explicitly links report_876371161281; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 109,
@@ -1863,7 +2295,11 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.193, section12.17 roster entry109; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "i4r_dp163_assessment",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://osf.io/3pqbt/",
+    "assessment_link_evidence": "DP107 Appendix B.1.109, PDF p.248; corresponding DP287 section12.17.109. DP107 PDF p.248 explicitly links report_dc096d9a7b69; the linked assessment source and original title/DOI jointly identify the existing unit."
   },
   {
     "roster_row": 110,
@@ -1881,6 +2317,10 @@
         "source_id": "dp_287",
         "evidence": "DP287 PDF p.194, section12.17 roster entry110; all110 DOI/row identities agree with DP107 after the previously documented110.1257 typo correction. This is the same assessment cohort in a later synthesis, not110 additional assessments."
       }
-    ]
+    ],
+    "assessment_unit_id": "dp_058_assessment_d1d9e8ef38",
+    "assessment_link_status": "matched",
+    "assessment_report_url": "https://econpapers.repec.org/paper/zbwi4rdps/58.htm",
+    "assessment_link_evidence": "DP107 Appendix B.1.110, PDF p.249; corresponding DP287 section12.17.110. DP107 PDF p.249 explicitly links dp_058; the linked assessment source and original title/DOI jointly identify the existing unit."
   }
 ]

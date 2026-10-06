@@ -308,6 +308,21 @@ def report():
         collections.Counter(r["status"] for r in assessment_scope).items()
     ):
         lines.append(f'| {status.replace("_", " ")} | {n} |')
+    roster_links = s.read("aggregate_assessment_links.csv")
+    if roster_links:
+        matched = sum(r["link_status"] == "matched" for r in roster_links)
+        lines += [
+            "",
+            f"The two economics/political-science overviews (DP107 and DP287)"
+            f" describe the same {len(roster_links)} assessment entries. Explicit"
+            f" report links and target identities connect {matched} entries to"
+            f" existing assessments; {len(roster_links) - matched} remain unmatched."
+            " These links add no assessments or verified errors. The two entries"
+            " for the monetary-policy uncertainty paper refer to different teams"
+            " and remain separate. See the [row-level crosswalk]"
+            "(../../data/i4r/aggregate_assessment_links.csv). Both overview sources"
+            " retain unresolved scope until the remaining entries are reconciled.",
+        ]
     lines += [
         "",
         "## Initial screening depth",

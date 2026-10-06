@@ -325,6 +325,55 @@ def assessment_inventory(units, aliases):
     return inventory, links, evidence
 
 
+def aggregate_assessment_links(roster, units, aliases):
+    """Link each overview entry to an existing assessment or retain its gap."""
+    pilot.unique(roster, ["source_id", "roster_row"])
+    by_unit = {r["unit_id"]: r for r in units}
+    result = []
+    matched = set()
+    for row in roster:
+        uid = row["assessment_unit_id"]
+        status = row["assessment_link_status"]
+        if status != ("matched" if uid else "unresolved"):
+            raise ValueError("Aggregate assessment link status contradicts unit ID")
+        if not row.get("assessment_link_evidence"):
+            raise ValueError("Aggregate assessment link lacks evidence")
+        aid = article_id(row["title"])
+        aid = aliases.get(aid, aid)
+        if uid:
+            if uid not in by_unit:
+                raise ValueError("Aggregate assessment unit outside inventory")
+            unit = by_unit[uid]
+            target = article_id(unit["original_title"])
+            target = aliases.get(target, target)
+            doi = pilot.normalize_doi(unit.get("original_doi", ""))
+            if aid != target or (
+                doi and doi != pilot.normalize_doi(row.get("doi", ""))
+            ):
+                raise ValueError("Aggregate assessment target mismatch")
+            contexts = {row["source_id"]} | {
+                r["source_id"] for r in row.get("related_aggregate_sources", [])
+            }
+            if not contexts <= set(unit.get("aggregate_context_source_ids", [])):
+                raise ValueError("Aggregate assessment lacks source-context link")
+            key = (row["source_id"], uid)
+            if key in matched:
+                raise ValueError("Aggregate roster repeats an assessment unit")
+            matched.add(key)
+        result.append(
+            dict(
+                source_id=row["source_id"],
+                roster_row=row["roster_row"],
+                article_id=aid,
+                unit_id=uid,
+                link_status=status,
+                report_url=row["assessment_report_url"],
+                evidence=row["assessment_link_evidence"],
+            )
+        )
+    return result
+
+
 def assessment_scope(records, sources, unit_links):
     """Account for each catalog source without equating it to an assessment."""
     pilot.unique(records, ["source_id"])
@@ -720,6 +769,21 @@ def build(refresh_metadata=False):
         ["alias", "article_id"],
     )
     unit_rows, unit_links, unit_docs = assessment_inventory(unit_records, aliases)
+    roster_path = s.DATA / "aggregate_article_roster.json"
+    roster = json.loads(roster_path.read_text()) if roster_path.exists() else []
+    s.write(
+        "aggregate_assessment_links.csv",
+        aggregate_assessment_links(roster, unit_records, aliases),
+        [
+            "source_id",
+            "roster_row",
+            "article_id",
+            "unit_id",
+            "link_status",
+            "report_url",
+            "evidence",
+        ],
+    )
     s.write(
         "assessment_inventory.csv",
         unit_rows,
@@ -979,6 +1043,7 @@ def validate():
         ("assessment_sources.csv", ["unit_id", "source_id", "relation"]),
         ("assessment_documents.csv", ["unit_id", "document_id"]),
         ("assessment_scope.csv", ["source_id"]),
+        ("aggregate_assessment_links.csv", ["source_id", "roster_row"]),
         ("control_exclusions.csv", ["article_id"]),
     ]:
         pilot.unique(s.read(name), fields)
@@ -991,11 +1056,17 @@ def validate():
         if r["doi"] != controls[r["article_id"]]["doi"]:
             raise ValueError("Control exclusion DOI mismatch")
     for r in (
-        s.read("source_articles.csv") + s.read("assessments.csv") + s.read("events.csv")
+        s.read("source_articles.csv")
+        + s.read("assessments.csv")
+        + s.read("events.csv")
+        + s.read("aggregate_assessment_links.csv")
     ):
         if r["source_id"] not in sources or r["article_id"] not in articles:
             raise ValueError("Broken source/article foreign key")
     unit_ids = {r["unit_id"] for r in s.read("assessment_inventory.csv")}
+    for r in s.read("aggregate_assessment_links.csv"):
+        if r["unit_id"] and r["unit_id"] not in unit_ids:
+            raise ValueError("Aggregate assessment link outside inventory")
     document_ids = {r["document_id"] for r in s.read("documents.csv")} | {
         r["member_id"] for r in s.read("archive_members.csv")
     }

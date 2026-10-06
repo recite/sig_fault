@@ -51,6 +51,8 @@ This review asks how many assessments each source contains and which versions be
 | supporting document | 26 |
 | unresolved | 116 |
 
+The two economics/political-science overviews (DP107 and DP287) describe the same 110 assessment entries. Explicit report links and target identities connect 100 entries to existing assessments; 10 remain unmatched. These links add no assessments or verified errors. The two entries for the monetary-policy uncertainty paper refer to different teams and remain separate. See the [row-level crosswalk](../../data/i4r/aggregate_assessment_links.csv). Both overview sources retain unresolved scope until the remaining entries are reconciled.
+
 ## Initial screening depth
 
 | Status | Catalog entries |

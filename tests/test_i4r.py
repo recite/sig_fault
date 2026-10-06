@@ -1136,6 +1136,71 @@ class ArchiveAndUnitTests(unittest.TestCase):
 
 
 class AssessmentValidationTests(unittest.TestCase):
+    def test_overview_links_preserve_distinct_teams_and_unmatched_entries(self):
+        import i4r_registry as registry
+
+        units = [
+            dict(
+                unit_id=uid,
+                original_title="The same original paper",
+                original_doi="10.1234/original",
+                aggregate_context_source_ids=["overview", "revision"],
+            )
+            for uid in ["team_a", "team_b"]
+        ]
+        roster = [
+            dict(
+                source_id="overview",
+                roster_row=i,
+                title="The same original paper",
+                doi="10.1234/original",
+                assessment_unit_id=uid,
+                assessment_link_status="matched" if uid else "unresolved",
+                assessment_report_url="https://example.org/report" if uid else "",
+                assessment_link_evidence="Explicit report link and target checked",
+                related_aggregate_sources=[dict(source_id="revision")],
+            )
+            for i, uid in enumerate(["team_a", "team_b", ""], 1)
+        ]
+        result = registry.aggregate_assessment_links(roster, units, {})
+        self.assertEqual([r["unit_id"] for r in result], ["team_a", "team_b", ""])
+        self.assertEqual(result[2]["link_status"], "unresolved")
+        self.assertEqual(len({r["article_id"] for r in result}), 1)
+        with self.assertRaisesRegex(ValueError, "repeats an assessment"):
+            registry.aggregate_assessment_links(
+                [roster[0], roster[1] | dict(assessment_unit_id="team_a")], units, {}
+            )
+
+    def test_overview_links_reject_wrong_targets_and_missing_evidence(self):
+        import i4r_registry as registry
+
+        unit = dict(
+            unit_id="assessment",
+            original_title="An original article",
+            original_doi="10.1234/original",
+            aggregate_context_source_ids=["overview"],
+        )
+        row = dict(
+            source_id="overview",
+            roster_row=1,
+            title="An original article",
+            doi="10.1234/original",
+            assessment_unit_id="assessment",
+            assessment_link_status="matched",
+            assessment_report_url="https://example.org/report",
+            assessment_link_evidence="Explicit report link and target checked",
+        )
+        for change in [
+            dict(title="A different article"),
+            dict(doi="10.1234/different"),
+            dict(assessment_unit_id="unknown"),
+            dict(assessment_link_status="unresolved"),
+            dict(assessment_link_evidence=""),
+            dict(related_aggregate_sources=[dict(source_id="unlinked")]),
+        ]:
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                registry.aggregate_assessment_links([row | change], [unit], {})
+
     def test_completion_uses_full_assessment_population_not_selected_bundles(self):
         import i4r_report as report
 
