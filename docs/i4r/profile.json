@@ -159,7 +159,7 @@
     }
   },
   "article_aliases.csv": {
-    "rows": 6,
+    "rows": 12,
     "duplicate_keys": 0,
     "key": [
       "alias"
@@ -168,17 +168,17 @@
       "alias": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 6
+        "distinct_nonmissing": 12
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 3
+        "distinct_nonmissing": 9
       }
     }
   },
   "articles.csv": {
-    "rows": 517,
+    "rows": 511,
     "duplicate_keys": 0,
     "key": [
       "article_id"
@@ -187,66 +187,66 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 517
+        "distinct_nonmissing": 511
       },
       "title": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 517
+        "distinct_nonmissing": 511
       },
       "doi": {
         "type": "string",
-        "missing": 59,
-        "distinct_nonmissing": 458
+        "missing": 16,
+        "distinct_nonmissing": 495
       },
       "openalex_id": {
         "type": "string",
-        "missing": 134,
+        "missing": 128,
         "distinct_nonmissing": 383
       },
       "journal": {
         "type": "string",
-        "missing": 26,
-        "distinct_nonmissing": 71
+        "missing": 5,
+        "distinct_nonmissing": 70
       },
       "journal_id": {
         "type": "string",
-        "missing": 134,
+        "missing": 128,
         "distinct_nonmissing": 26
       },
       "publication_date": {
         "type": "string",
-        "missing": 59,
-        "distinct_nonmissing": 315
+        "missing": 16,
+        "distinct_nonmissing": 329
       },
       "publication_year": {
         "type": "integer",
-        "missing": 59,
+        "missing": 16,
         "distinct_nonmissing": 21
       },
       "indexed_publication_date": {
         "type": "string",
-        "missing": 134,
+        "missing": 128,
         "distinct_nonmissing": 282
       },
       "indexed_publication_year": {
         "type": "integer",
-        "missing": 134,
+        "missing": 128,
         "distinct_nonmissing": 15
       },
       "publication_date_source": {
         "type": "string",
-        "missing": 59,
-        "distinct_nonmissing": 458
+        "missing": 16,
+        "distinct_nonmissing": 495
       },
       "type": {
         "type": "string",
-        "missing": 59,
+        "missing": 16,
         "distinct_nonmissing": 2
       },
       "abstract": {
         "type": "string",
-        "missing": 195,
+        "missing": 189,
         "distinct_nonmissing": 322
       },
       "identity_verified": {
@@ -261,12 +261,12 @@
       },
       "retraction_date": {
         "type": "string",
-        "missing": 513,
+        "missing": 507,
         "distinct_nonmissing": 4
       },
       "retraction_source": {
         "type": "string",
-        "missing": 513,
+        "missing": 507,
         "distinct_nonmissing": 4
       }
     }
@@ -795,7 +795,7 @@
     }
   },
   "crossref_retrieval.csv": {
-    "rows": 517,
+    "rows": 511,
     "duplicate_keys": 0,
     "key": [
       "article_id"
@@ -804,12 +804,12 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 517
+        "distinct_nonmissing": 511
       },
       "status": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 3
+        "distinct_nonmissing": 2
       }
     }
   },
@@ -1146,7 +1146,7 @@
     }
   },
   "identity_decisions.csv": {
-    "rows": 2,
+    "rows": 13,
     "duplicate_keys": 0,
     "key": [
       "article_id"
@@ -1155,27 +1155,27 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 13
       },
       "title": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 13
       },
       "doi": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 13
       },
       "evidence": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 13
       },
       "source_url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 13
       }
     }
   },
@@ -1372,7 +1372,7 @@
     }
   },
   "metadata_provenance.csv": {
-    "rows": 843,
+    "rows": 883,
     "duplicate_keys": 0,
     "key": [
       "article_id",
@@ -1382,7 +1382,7 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 460
+        "distinct_nonmissing": 500
       },
       "provider": {
         "type": "string",
@@ -1392,22 +1392,22 @@
       "path": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 843
+        "distinct_nonmissing": 883
       },
       "url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 841
+        "distinct_nonmissing": 878
       },
       "sha256": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 841
+        "distinct_nonmissing": 878
       },
       "retrieved_at": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 843
+        "distinct_nonmissing": 883
       }
     }
   },
@@ -1733,7 +1733,7 @@
     }
   },
   "source_articles.csv": {
-    "rows": 1010,
+    "rows": 1004,
     "duplicate_keys": 0,
     "key": [
       "source_id",
@@ -1748,7 +1748,7 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 517
+        "distinct_nonmissing": 511
       },
       "relation": {
         "type": "string",
@@ -2035,7 +2035,7 @@
     }
   },
   "verified_metadata.csv": {
-    "rows": 460,
+    "rows": 500,
     "duplicate_keys": 0,
     "key": [
       "article_id"
@@ -2044,37 +2044,37 @@
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 460
+        "distinct_nonmissing": 500
       },
       "title": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 460
+        "distinct_nonmissing": 497
       },
       "doi": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 458
+        "distinct_nonmissing": 495
       },
       "openalex_id": {
         "type": "string",
-        "missing": 77,
+        "missing": 117,
         "distinct_nonmissing": 383
       },
       "journal": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 60
+        "distinct_nonmissing": 63
       },
       "journal_id": {
         "type": "string",
-        "missing": 77,
+        "missing": 117,
         "distinct_nonmissing": 26
       },
       "publication_date": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 315
+        "distinct_nonmissing": 329
       },
       "publication_year": {
         "type": "integer",
@@ -2083,18 +2083,18 @@
       },
       "indexed_publication_date": {
         "type": "string",
-        "missing": 77,
+        "missing": 117,
         "distinct_nonmissing": 282
       },
       "indexed_publication_year": {
         "type": "integer",
-        "missing": 77,
+        "missing": 117,
         "distinct_nonmissing": 15
       },
       "publication_date_source": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 458
+        "distinct_nonmissing": 495
       },
       "type": {
         "type": "string",
@@ -2103,7 +2103,7 @@
       },
       "abstract": {
         "type": "string",
-        "missing": 138,
+        "missing": 178,
         "distinct_nonmissing": 322
       },
       "identity_verified": {
@@ -2118,28 +2118,28 @@
       },
       "retraction_date": {
         "type": "string",
-        "missing": 460,
+        "missing": 500,
         "distinct_nonmissing": 0
       },
       "retraction_source": {
         "type": "string",
-        "missing": 460,
+        "missing": 500,
         "distinct_nonmissing": 0
       },
       "metadata_source": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 458
+        "distinct_nonmissing": 495
       },
       "metadata_sha256": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 458
+        "distinct_nonmissing": 495
       },
       "retrieved_at": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 460
+        "distinct_nonmissing": 500
       }
     }
   }

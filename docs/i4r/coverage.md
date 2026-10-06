@@ -10,8 +10,8 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Retrieved documents (including separate replies and repeated files) | 1514 |
 | Distinct retrieved document URLs | 770 |
 | Retrieved listing metadata records | 707 |
-| Candidate article identities (not a final distinct-paper count) | 517 |
-| Publisher/OpenAlex-verified article identities | 458 |
+| Candidate article identities (not a final distinct-paper count) | 511 |
+| Publisher/OpenAlex-verified article identities | 495 |
 | Source review/disposition records | 714 |
 | Assessment records explicitly enumerated | 500 |
 | Assessment records with unresolved reviewer-team equivalence | 37 |

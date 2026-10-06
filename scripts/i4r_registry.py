@@ -397,6 +397,30 @@ def assessment_scope(records, sources, unit_links):
     ]
 
 
+def canonical_article_aliases(articles):
+    """Retain the verified work identity when duplicate titles resolve to one DOI."""
+    groups = collections.defaultdict(list)
+    for aid, record in articles.items():
+        if record["doi"]:
+            groups[record["doi"]].append((aid, record))
+    aliases = {}
+    for doi, group in groups.items():
+        work_ids = {r.get("openalex_id") for _, r in group if r.get("openalex_id")}
+        if len(work_ids) > 1:
+            raise ValueError("Conflicting OpenAlex identities for DOI: " + doi)
+        ordered = sorted(
+            group,
+            key=lambda item: (
+                not bool(item[1].get("openalex_id")),
+                item[1].get("identity_verified") != "yes",
+                item[0],
+            ),
+        )
+        canonical = ordered[0][0]
+        aliases.update({aid: canonical for aid, _ in ordered[1:]})
+    return dict(sorted(aliases.items()))
+
+
 def build(refresh_metadata=False):
     reviews = {}
     for path in sorted((s.DATA / "reviews").glob("*.json")):
@@ -679,13 +703,7 @@ def build(refresh_metadata=False):
     for record in articles.values():
         add_retraction(record)
     # Merge identical resolved DOIs; do not merge approximate titles automatically.
-    doi_ids, aliases = {}, {}
-    for aid, r in sorted(articles.items()):
-        doi = r["doi"]
-        if doi and doi in doi_ids:
-            aliases[aid] = doi_ids[doi]
-        elif doi:
-            doi_ids[doi] = aid
+    aliases = canonical_article_aliases(articles)
     for r in links:
         r["article_id"] = aliases.get(r["article_id"], r["article_id"])
     links = list({(r["source_id"], r["article_id"]): r for r in links}.values())
@@ -880,6 +898,11 @@ def crossref_title_match(title, works, *, known_doi=False):
     matches = []
     for work in works:
         if work.get("type") != "journal-article" or not work.get("DOI"):
+            continue
+        if pilot.normalize_doi(work["DOI"]).startswith("10.2139/ssrn.") or any(
+            title_key(name) == "ssrnelectronicjournal"
+            for name in work.get("container-title", [])
+        ):
             continue
         base = (work.get("title") or [""])[0]
         combined = base + (": " + work["subtitle"][0] if work.get("subtitle") else "")

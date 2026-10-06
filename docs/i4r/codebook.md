@@ -53,36 +53,36 @@ One row: ZIP acquisition/inventory attempt. Rows: 62. Key: archive_document_id. 
 
 ## article_aliases.csv
 
-One row: superseded article ID. Rows: 6. Key: alias. Producer: `i4r_registry build`.
+One row: superseded article ID. Rows: 12. Key: alias. Producer: `i4r_registry build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `alias` | string | Superseded title-derived ID mapping to canonical article_id. | 0 | i4r_1ba6b15fcc8cd9; i4r_3105fba3e9d050; i4r_975b8fb7dcee2d; i4r_a92040849a75db; i4r_bdbd4c55c23f42; i4r_ed0c323ab14dc4 |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_093bc85ab4502e; i4r_1e972a57ca9cf5; i4r_3b074ab4b2ae3d |
+| `alias` | string | Superseded title-derived ID mapping to canonical article_id. | 0 | i4r_1ba6b15fcc8cd9; i4r_3105fba3e9d050; i4r_5d2f66b5f64432; i4r_78ab55be3f8943; i4r_944bc3145f3838; i4r_975b8fb7dcee2d; i4r_9f44d8002de179; i4r_a92040849a75db; i4r_bdbd4c55c23f42; i4r_c1f40f99263ace; i4r_d31d9a2088e2b1; i4r_ed0c323ab14dc4 |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_093bc85ab4502e; i4r_1e972a57ca9cf5; i4r_3b061a93c341ed; i4r_3b074ab4b2ae3d; i4r_466d580ff67801; i4r_571311af04836a; i4r_7318933aa2e4cc; i4r_907e66b1c46d77; i4r_cea7cbf66ea2ff |
 
 ## articles.csv
 
-One row: candidate original article. Rows: 517. Key: article_id. Producer: `i4r_registry build`.
+One row: candidate original article. Rows: 511. Key: article_id. Producer: `i4r_registry build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 517 distinct nonmissing values |
-| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 517 distinct nonmissing values |
-| `doi` | string | Normalized original-article DOI; empty if unresolved. | 59 | 458 distinct nonmissing values |
-| `openalex_id` | string | Full OpenAlex work URL for resolved identity. | 134 | 383 distinct nonmissing values |
-| `journal` | string | Journal name from catalog or verified metadata. | 26 | 71 distinct nonmissing values |
-| `journal_id` | string | OpenAlex journal/source URL used for exact journal matching. | 134 | 26 distinct nonmissing values |
-| `publication_date` | string | Earliest publication date reported in the accepted Crossref record; may be later than online-first. Conservative age gate; no outcome-derived dates. | 59 | 315 distinct nonmissing values |
-| `publication_year` | integer | Calendar year of original publication. | 59 | 2001 to 2026 |
-| `indexed_publication_date` | string | OpenAlex indexed original-publication date, preserved separately from publisher metadata. | 134 | 282 distinct nonmissing values |
-| `indexed_publication_year` | integer | OpenAlex publication year used symmetrically for treated/control cohort retrieval and matching. | 134 | 2001 to 2026 |
-| `publication_date_source` | string | Publisher metadata URL supporting the conservative article-age date; empty when unresolved. | 59 | 458 distinct nonmissing values |
-| `type` | string | OpenAlex-compatible document type; primary outcomes count article and review. | 59 | article; review |
-| `abstract` | string | Original-article abstract text where supplied by OpenAlex; blank uses title-only matching. | 195 | 322 distinct nonmissing values |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 511 distinct nonmissing values |
+| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 511 distinct nonmissing values |
+| `doi` | string | Normalized original-article DOI; empty if unresolved. | 16 | 495 distinct nonmissing values |
+| `openalex_id` | string | Full OpenAlex work URL for resolved identity. | 128 | 383 distinct nonmissing values |
+| `journal` | string | Journal name from catalog or verified metadata. | 5 | 70 distinct nonmissing values |
+| `journal_id` | string | OpenAlex journal/source URL used for exact journal matching. | 128 | 26 distinct nonmissing values |
+| `publication_date` | string | Earliest publication date reported in the accepted Crossref record; may be later than online-first. Conservative age gate; no outcome-derived dates. | 16 | 329 distinct nonmissing values |
+| `publication_year` | integer | Calendar year of original publication. | 16 | 2001 to 2026 |
+| `indexed_publication_date` | string | OpenAlex indexed original-publication date, preserved separately from publisher metadata. | 128 | 282 distinct nonmissing values |
+| `indexed_publication_year` | integer | OpenAlex publication year used symmetrically for treated/control cohort retrieval and matching. | 128 | 2001 to 2026 |
+| `publication_date_source` | string | Publisher metadata URL supporting the conservative article-age date; empty when unresolved. | 16 | 495 distinct nonmissing values |
+| `type` | string | OpenAlex-compatible document type; primary outcomes count article and review. | 16 | article; review |
+| `abstract` | string | Original-article abstract text where supplied by OpenAlex; blank uses title-only matching. | 189 | 322 distinct nonmissing values |
 | `identity_verified` | string | yes only after accepted bibliographic match; pending otherwise. | 0 | pending; yes |
 | `retracted` | string | Current indexed retraction flag: yes, no or unknown; not a historical treatment indicator. | 0 | no; unknown; yes |
-| `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 513 | 2025-04-06; 2025-06-24; 2026-01-08; 2026-05-21 |
-| `retraction_source` | string | Notice URL establishing retraction date. | 513 | https://doi.org/10.1007/s00148-025-01114-2; https://doi.org/10.1016/j.euroecorev.2025.105026; https://doi.org/10.1371/journal.pone.0349829; https://www.nature.com/articles/s41562-025-02393-1 |
+| `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 507 | 2025-04-06; 2025-06-24; 2026-01-08; 2026-05-21 |
+| `retraction_source` | string | Notice URL establishing retraction date. | 507 | https://doi.org/10.1007/s00148-025-01114-2; https://doi.org/10.1016/j.euroecorev.2025.105026; https://doi.org/10.1371/journal.pone.0349829; https://www.nature.com/articles/s41562-025-02393-1 |
 
 ## assessment_documents.csv
 
@@ -257,12 +257,12 @@ One row: control publisher-metadata retrieval. Rows: 1022. Key: article_id. Prod
 
 ## crossref_retrieval.csv
 
-One row: publisher lookup. Rows: 517. Key: article_id. Producer: `i4r_registry crossref`.
+One row: publisher lookup. Rows: 511. Key: article_id. Producer: `i4r_registry crossref`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 517 distinct nonmissing values |
-| `status` | string | Stage-specific observed disposition; see values and the construction contract. | 0 | exact_title_resolved; no_unambiguous_exact_title_match; retrieved |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 511 distinct nonmissing values |
+| `status` | string | Stage-specific observed disposition; see values and the construction contract. | 0 | no_unambiguous_exact_title_match; retrieved |
 
 ## curated_claims.csv
 
@@ -358,15 +358,15 @@ One row: candidate error disclosure. Rows: 37. Key: event_id. Producer: `i4r_reg
 
 ## identity_decisions.csv
 
-One row: clerical identity decision. Rows: 2. Key: article_id. Producer: `manual evidence review`.
+One row: clerical identity decision. Rows: 13. Key: article_id. Producer: `manual evidence review`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | i4r_20d617740fb019; i4r_40fdc820b2481c |
-| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | Disloyal Managers and Shareholders’ Wealth; Peer Effects in Academic Research: Senders and Receivers |
-| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 10.1093/ej/ueac031; 10.1093/rfs/hhac070 |
-| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 2 distinct nonmissing values |
-| `source_url` | string | Public evidence or notice URL. | 0 | https://api.crossref.org/works/10.1093/ej/ueac031; https://api.crossref.org/works/10.1093/rfs/hhac070 |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 13 distinct nonmissing values |
+| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 13 distinct nonmissing values |
+| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 13 distinct nonmissing values |
+| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 13 distinct nonmissing values |
+| `source_url` | string | Public evidence or notice URL. | 0 | 13 distinct nonmissing values |
 
 ## identity_resolution.csv
 
@@ -433,16 +433,16 @@ One row: selected event–control–horizon. Rows: 0. Key: event_id, control_id,
 
 ## metadata_provenance.csv
 
-One row: accepted bibliographic provider response for an identity. Rows: 843. Key: article_id, provider. Producer: `i4r_registry build --refresh-metadata`.
+One row: accepted bibliographic provider response for an identity. Rows: 883. Key: article_id, provider. Producer: `i4r_registry build --refresh-metadata`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 460 distinct nonmissing values |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 500 distinct nonmissing values |
 | `provider` | string | Accepted bibliographic provider: crossref or openalex. | 0 | crossref; openalex |
-| `path` | string | Repository-relative cache path; private raw contents are not redistributed. | 0 | 843 distinct nonmissing values |
-| `url` | string | Source or download URL; no authentication credentials. | 0 | 841 distinct nonmissing values |
-| `sha256` | string | SHA-256 content checksum of retrieved bytes. | 0 | 841 distinct nonmissing values |
-| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 843 distinct nonmissing values |
+| `path` | string | Repository-relative cache path; private raw contents are not redistributed. | 0 | 883 distinct nonmissing values |
+| `url` | string | Source or download URL; no authentication credentials. | 0 | 878 distinct nonmissing values |
+| `sha256` | string | SHA-256 content checksum of retrieved bytes. | 0 | 878 distinct nonmissing values |
+| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 883 distinct nonmissing values |
 
 ## panel_exclusions.csv
 
@@ -551,12 +551,12 @@ One row: independent source eligibility/classification decision. Rows: 714. Key:
 
 ## source_articles.csv
 
-One row: source–article relationship. Rows: 1010. Key: source_id, article_id. Producer: `i4r_registry build`.
+One row: source–article relationship. Rows: 1004. Key: source_id, article_id. Producer: `i4r_registry build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
 | `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 654 distinct nonmissing values |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 517 distinct nonmissing values |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 511 distinct nonmissing values |
 | `relation` | string | Meaning of a source-to-source or source-to-article relationship. | 0 | assessed_article_roster; catalog_or_review_target_hint; curated_error_evidence; document_verified_assessment_target; linked_assessment_or_reply; misdirected_catalog_attachment; roster_linked_report_or_reply; same_cohort_aggregate_roster |
 | `evidence` | string | Source pointer or documented identity/link decision. | 0 | 625 distinct nonmissing values |
 
@@ -648,27 +648,27 @@ One row: catalog listing. Rows: 714. Key: source_id. Producer: `i4r_sources disc
 
 ## verified_metadata.csv
 
-One row: verified bibliographic identity. Rows: 460. Key: article_id. Producer: `i4r_registry build --refresh-metadata`.
+One row: verified bibliographic identity. Rows: 500. Key: article_id. Producer: `i4r_registry build --refresh-metadata`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 460 distinct nonmissing values |
-| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 460 distinct nonmissing values |
-| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 458 distinct nonmissing values |
-| `openalex_id` | string | Full OpenAlex work URL for resolved identity. | 77 | 383 distinct nonmissing values |
-| `journal` | string | Journal name from catalog or verified metadata. | 0 | 60 distinct nonmissing values |
-| `journal_id` | string | OpenAlex journal/source URL used for exact journal matching. | 77 | 26 distinct nonmissing values |
-| `publication_date` | string | Earliest publication date reported in the accepted Crossref record; may be later than online-first. Conservative age gate; no outcome-derived dates. | 0 | 315 distinct nonmissing values |
+| `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 500 distinct nonmissing values |
+| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 497 distinct nonmissing values |
+| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 495 distinct nonmissing values |
+| `openalex_id` | string | Full OpenAlex work URL for resolved identity. | 117 | 383 distinct nonmissing values |
+| `journal` | string | Journal name from catalog or verified metadata. | 0 | 63 distinct nonmissing values |
+| `journal_id` | string | OpenAlex journal/source URL used for exact journal matching. | 117 | 26 distinct nonmissing values |
+| `publication_date` | string | Earliest publication date reported in the accepted Crossref record; may be later than online-first. Conservative age gate; no outcome-derived dates. | 0 | 329 distinct nonmissing values |
 | `publication_year` | integer | Calendar year of original publication. | 0 | 2001 to 2026 |
-| `indexed_publication_date` | string | OpenAlex indexed original-publication date, preserved separately from publisher metadata. | 77 | 282 distinct nonmissing values |
-| `indexed_publication_year` | integer | OpenAlex publication year used symmetrically for treated/control cohort retrieval and matching. | 77 | 2001 to 2026 |
-| `publication_date_source` | string | Publisher metadata URL supporting the conservative article-age date; empty when unresolved. | 0 | 458 distinct nonmissing values |
+| `indexed_publication_date` | string | OpenAlex indexed original-publication date, preserved separately from publisher metadata. | 117 | 282 distinct nonmissing values |
+| `indexed_publication_year` | integer | OpenAlex publication year used symmetrically for treated/control cohort retrieval and matching. | 117 | 2001 to 2026 |
+| `publication_date_source` | string | Publisher metadata URL supporting the conservative article-age date; empty when unresolved. | 0 | 495 distinct nonmissing values |
 | `type` | string | OpenAlex-compatible document type; primary outcomes count article and review. | 0 | article; review |
-| `abstract` | string | Original-article abstract text where supplied by OpenAlex; blank uses title-only matching. | 138 | 322 distinct nonmissing values |
+| `abstract` | string | Original-article abstract text where supplied by OpenAlex; blank uses title-only matching. | 178 | 322 distinct nonmissing values |
 | `identity_verified` | string | yes only after accepted bibliographic match; pending otherwise. | 0 | yes |
 | `retracted` | string | Current indexed retraction flag: yes, no or unknown; not a historical treatment indicator. | 0 | no; unknown; yes |
-| `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 460 |  |
-| `retraction_source` | string | Notice URL establishing retraction date. | 460 |  |
-| `metadata_source` | string | URL of accepted bibliographic lookup. | 0 | 458 distinct nonmissing values |
-| `metadata_sha256` | string | Checksum of the raw accepted bibliographic response. | 0 | 458 distinct nonmissing values |
-| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 460 distinct nonmissing values |
+| `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 500 |  |
+| `retraction_source` | string | Notice URL establishing retraction date. | 500 |  |
+| `metadata_source` | string | URL of accepted bibliographic lookup. | 0 | 495 distinct nonmissing values |
+| `metadata_sha256` | string | Checksum of the raw accepted bibliographic response. | 0 | 495 distinct nonmissing values |
+| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 500 distinct nonmissing values |

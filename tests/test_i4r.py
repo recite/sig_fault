@@ -661,6 +661,54 @@ class CrossrefIdentityTests(unittest.TestCase):
             )
         )
 
+    def test_ssrn_deposit_is_not_a_competing_journal_article(self):
+        import i4r_registry as registry
+
+        original = dict(
+            title=["An empirical study of schooling"],
+            DOI="10.1/original",
+            type="journal-article",
+        )
+        preprint = original | {"DOI": "10.2139/ssrn.1234567"}
+        by_container = original | {
+            "DOI": "10.1/preprint",
+            "container-title": ["SSRN Electronic Journal"],
+        }
+        self.assertEqual(
+            registry.crossref_title_match(
+                original["title"][0], [preprint, original, by_container]
+            ),
+            original,
+        )
+        self.assertIsNone(
+            registry.crossref_title_match(
+                original["title"][0], [preprint, by_container]
+            )
+        )
+        self.assertIsNone(
+            registry.crossref_title_match(
+                original["title"][0],
+                [preprint, original, original | {"DOI": "10.1/other-journal"}],
+            )
+        )
+
+    def test_title_alias_keeps_existing_verified_work_identity(self):
+        import i4r_registry as registry
+
+        old = dict(
+            doi="10.1/original",
+            openalex_id="https://openalex.org/W123",
+            identity_verified="yes",
+        )
+        newly_resolved = old | {"openalex_id": ""}
+        records = {"a_new": newly_resolved, "z_existing": old}
+        self.assertEqual(
+            registry.canonical_article_aliases(records), {"a_new": "z_existing"}
+        )
+        records["other"] = old | {"openalex_id": "https://openalex.org/W456"}
+        with self.assertRaisesRegex(ValueError, "Conflicting OpenAlex"):
+            registry.canonical_article_aliases(records)
+
 
 class NewIntegrityTests(unittest.TestCase):
     def test_grouped_download_repairs_stale_peer_and_records_actual_hash(self):
