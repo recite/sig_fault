@@ -13,7 +13,9 @@
 \input{../tabs/nieuwenhuis_macros.tex}
 \input{../tabs/nieuwenhuis_validation_macros.tex}
 \input{../tabs/meta_macros.tex}
+\input{../tabs/meta_secondary_macros.tex}
 \input{../tabs/i4r_aggregate_macros.tex}
+\input{../tabs/i4r_synthetic_macros.tex}
 \title{Significant Error:\\Citations to Research With Publicized Statistical Errors}
 \author{Ken Cor \and Gaurav Sood}
 \date{October 2026}
@@ -214,6 +216,10 @@ The combined contrast is \MetaWeakPercent\% (95\% interval [\MetaWeakLower, \Met
 
 With component variances $s_N^2$ and $s_L^2$, the variance of the equal-audit mean is $(s_N^2+s_L^2)/4$. Intervals use a Welch--Satterthwaite approximation, with degrees of freedom $(s_N^2+s_L^2)^2/(s_N^4/d_N+s_L^4/d_L)$ and component article-cluster degrees of freedom $d_N,d_L$. This approximation uses cluster-robust component variances and assumes independence across audits. The interval describes estimation uncertainty for these fixed cases; it is not a random-effects prediction interval for other critiques. Different citation sources, incomplete type harmonization, prior circulation of the IV critique, and the distinction between a demonstrated error and an adverse diagnostic remain embedded in the combined estimates. We therefore interpret them as descriptive summaries, not a general causal effect of publicizing errors.
 
+A retrospective sensitivity adds the \IfrCases{} matched I4R cases described in Appendix~\ref{app:i4r}. Its component compares the post/pre ratio of affected papers' mean citations with that of their weighted controls, giving \IfrProportional\%. This is a ratio of group means, not the equal-case average log ratio, which gives \IfrEqualCaseProportional\%. The preceding-year relative-growth contrast is +\IfrProportionalPre\%; omitting the inventor-clusters case changes the post-disclosure contrast to \IfrProportionalOmitInventors\%. These diagnostics limit its interpretation as a publicity response.
+
+Giving each of the three components one third of the log-scale weight yields \ThreeWeakPercent\% ([\ThreeWeakLower, \ThreeWeakUpper]\%) under the IV strength diagnostic and \ThreeSensitivePercent\% ([\ThreeSensitiveLower, \ThreeSensitiveUpper]\%) under inferential sensitivity. This is an equal-component descriptive summary: I4R contains multiple disclosures rather than one audit and uses all-type citation totals. Its variance uses a case-level delta calculation with \IfrCases{} disclosures; the combined intervals use the same Welch approximation. No original or control DOI is shared across components, but the I4R and IV calendar windows overlap. The intervals assume zero cross-component covariance and do not resolve the differences in outcomes, exposure clocks or sample selection.
+
 
 \clearpage
 \section{Matched cases with individually publicized errors}\label{app:i4r}
@@ -243,5 +249,24 @@ The preceding year shows a matched growth difference of +\IfrPreChange{} citatio
 \caption{Citation paths for the supported I4R cases. Solid lines show each affected paper; dashed lines show its equally weighted matched controls. Counts include citing works of all types. Year zero marks the calendar year of first documented public disclosure, not its exact date. All panels use the same scale. These descriptive counts have no sampling intervals and do not measure endorsement of the erroneous claim.}
 \label{fig:i4r}
 \end{figure}
+
+
+\clearpage
+\subsection{Synthetic-control sensitivity}
+We also fit nonnegative donor weights summing to one to match each affected paper's pre-disclosure citation path. Donors retain the journal, publication-age, identity and exposure restrictions, but the citation caliper and text ranking are removed. We require at least three full pre-years, first withholding the last year to check prediction and then refitting on all pre-years. This supports three cases; inventor clusters has only two full pre-years. A fixed small ridge penalty resolves the many possible donor combinations. All choices are retrospective.
+
+\begin{table}[htbp]
+\centering
+\caption{Synthetic-control fit and prediction checks}
+\label{tab:synthetic}
+\scriptsize
+\input{../tabs/i4r_synthetic.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+Annual all-type citations. Pre-fit RMSE describes the final fit using all pre-years; the held-out prediction uses only earlier years. Post is the calendar year after disclosure. The gap is actual minus synthetic citations. No sampling or randomization interval is implied. Full donor weights, paths and sensitivity estimates are in the repository.
+\end{minipage}
+\end{table}
+
+The synthetic comparisons are mixed and do not resolve the counterfactual problem. Parental leave is close to its synthetic comparison and electrification is below it. Fast internet's positive gap of \ScInternetGap{} citations changes to \ScInternetOmit{} when its largest-weight donor is removed. The held-out pre-year predictions also exceed actual citations in all three cases. Close in-sample fit therefore does not establish a reliable untreated trajectory, and these gaps are not pooled into a causal estimate.
 
 \end{document}

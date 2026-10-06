@@ -42,6 +42,7 @@ contrasts <- do.call(rbind, rows)
 write.csv(contrasts, "data/meta/audit_contrasts.csv", row.names = FALSE)
 jsonlite::write_json(list(
   status = "provisional_two_audit_synthesis_available",
+  secondary_synthesis = "three_component_status.json describes the retrospective I4R extension",
   estimand = paste(
     "Equal-audit average of log flagged-versus-comparison post/pre citation ratios",
     "from the full calendar year preceding the warning year to the year following it."
@@ -52,7 +53,8 @@ jsonlite::write_json(list(
     "Lal formal publication followed earlier circulation; diagnostics differ from verified errors.",
     paste(
       "Primary I4R article/review citation panels remain incomplete;",
-      "secondary all-type absolute contrasts are reported separately."
+      "secondary all-type absolute contrasts and a three-component",
+      "proportional sensitivity are available."
     ),
     "Intervals assume independent audit errors and omit generalization uncertainty."
   ),
@@ -132,6 +134,9 @@ report <- c(
   "The combined estimate changes with the IV diagnostic. It is not evidence for",
   "a uniform citation response, nor an estimate of the effect of the typical scientific error.",
   "The AR-only rows are exploratory: their IV component has only three flagged papers.", "",
+  "A [secondary three-component synthesis](secondary.md) adds the proportional contrast",
+  "from the separately matched I4R annual-total analysis. It preserves the different",
+  "measurement and exposure definitions and is an exploratory descriptive extension.", "",
   "See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),",
   "[synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).",
   "Run `make synthesis` to reproduce these results and the manuscript table."

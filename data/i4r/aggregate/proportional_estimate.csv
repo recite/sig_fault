@@ -1,0 +1,2 @@
+"cases","disclosures","estimate","se","df","percent","lower","upper","treated_before","treated_after","control_before","control_after","inference"
+4,4,0.0877656196400938,0.14971472799517,3,9.17322114505214,-32.2057947724562,75.8084216074566,53.25,69,43.25,51.3333333333333,"exploratory_case_delta"

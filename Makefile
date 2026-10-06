@@ -121,5 +121,10 @@ nieuwenhuis-test: nieuwenhuis
 	python3 -m unittest discover -s tests -p 'test_nieuwenhuis*.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "nieuwenhuis", stop_on_failure = TRUE)'
 
-synthesis: analysis lal nieuwenhuis
+synthesis: analysis lal nieuwenhuis i4r-aggregate i4r-synthetic
 	$(RSCRIPT) scripts/synthesis.R
+	$(RSCRIPT) scripts/synthesis_secondary.R
+
+.PHONY: i4r-synthetic
+i4r-synthetic: i4r-aggregate
+	OPENBLAS_NUM_THREADS=1 python3 scripts/i4r_synthetic.py

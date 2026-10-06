@@ -20,6 +20,10 @@ The combined estimate changes with the IV diagnostic. It is not evidence for
 a uniform citation response, nor an estimate of the effect of the typical scientific error.
 The AR-only rows are exploratory: their IV component has only three flagged papers.
 
+A [secondary three-component synthesis](secondary.md) adds the proportional contrast
+from the separately matched I4R annual-total analysis. It preserves the different
+measurement and exposure definitions and is an exploratory descriptive extension.
+
 See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),
 [synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).
 Run `make synthesis` to reproduce these results and the manuscript table.

@@ -14,6 +14,8 @@ Continued use is clear; how much publicity changed citation growth is less certa
 
 In a secondary analysis of individually publicized errors, citations increased for {{IfrIncreased}} of {{IfrCases}} affected papers. Their median annual citations rose from {{IfrMedianBefore}} to {{IfrMedianAfter}}; matched controls’ median rose from {{IfrControlMedianBefore}} to {{IfrControlMedianAfter}}. The average difference in changes is +{{IfrChange}} citations, but becomes {{IfrOmitInventors}} when the inventor-clusters paper is omitted. Earlier growth also differed. These cases do not establish a stable causal response to disclosure. See the [individual comparisons](docs/i4r/aggregate-results.md).
 
+The [synthetic-control checks](docs/i4r/synthetic-results.md) give mixed case-level results. Fast internet’s positive gap reverses when its largest-weight donor is omitted, and prediction errors appear before disclosure. The inventor-clusters case has too little pre-history for the declared validation check. These comparisons belong in the appendix, not a pooled causal headline.
+
 ## Research design
 
 - **Papers and timing:** {{Flagged}} flagged and {{Comparison}} comparison papers, with 2010 as the baseline and 2012–2015 as the post period. The critique appeared in August 2011; that transition year is excluded from the main model. Citation-free years within covered histories remain zero.
@@ -48,6 +50,8 @@ The [Lal et al. extension](docs/lal/README.md) applies the citation-trajectory a
 The [Nieuwenhuis source comparison](docs/nieuwenhuis/README.md) links every original assessment to a verified article DOI and compares historical Web of Science counts with available OpenAlex histories for the same papers. The current paired sample contains only flagged papers; it can reveal source discrepancies but cannot yet compare the databases’ estimates of the publicity effect. A [third-source link check](docs/nieuwenhuis/validation.md) finds that OpenCitations also records many of the additional OpenAlex links; shared upstream records prevent treating this as independent bibliographic verification.
 
 `make synthesis` generates [comparable one-year contrasts](data/meta/audit_contrasts.csv) for the completed cohorts and the manuscript’s IV-audit table. Alternative diagnostic definitions from the same audit are dependent comparisons. The [provisional equal-audit synthesis](docs/meta/README.md) combines one contrast from each completed audit and shows how the result changes with the IV diagnostic. It summarizes these cases, with differences in timing, citation measurement, and error definitions still present; it is not a general causal effect of publicizing errors. The [synthesis status](data/meta/status.json) records the remaining collection work.
+
+A [secondary synthesis including I4R](docs/meta/secondary.md) adds proportional growth in affected and matched-control mean citations from the annual-total analysis. The combined direction still depends on the IV diagnostic, and the I4R contrast depends on the inventor-clusters case. This retrospective sensitivity broadens the evidence while preserving the different exposure clocks and citation measures.
 
 | Path | Contents |
 | --- | --- |

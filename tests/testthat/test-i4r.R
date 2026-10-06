@@ -78,3 +78,46 @@ testthat::test_that("weighted medians agree with ordinary medians at equal weigh
   testthat::expect_equal(i4r_weighted_median(c(1, 4, 9), c(0.5, 0.25, 0.25)), 2.5)
   testthat::expect_error(i4r_weighted_median(c(1, NA), c(1, 1)), "Invalid")
 })
+
+testthat::test_that("proportional group contrast equals weighted common-period PPML", {
+  p <- make_i4r_panel(events = 8)
+  p$citations[p$stack_id == "s1"] <- 4 * p$citations[p$stack_id == "s1"]
+  p$treated_post <- p$treated * p$post
+  fit <- fixest::fepois(citations ~ treated_post | article_id + post,
+    data = p, weights = ~weight, glm.tol = 1e-10, fixef.tol = 1e-10,
+    nthreads = 1, notes = FALSE
+  )
+  actual <- i4r_proportional(p)
+  testthat::expect_equal(actual$estimate, unname(coef(fit)["treated_post"]), tolerance = 1e-7)
+  z <- as.matrix(i4r_case_levels(p)[3:6])
+  mu <- colMeans(z)
+  f <- function(x) log(x[2]) - log(x[1]) - log(x[4]) + log(x[3])
+  step <- 1e-4
+  numeric_gradient <- vapply(seq_along(mu), function(i) {
+    shift <- rep(0, length(mu))
+    shift[i] <- step
+    (f(mu + shift) - f(mu - shift)) / (2 * step)
+  }, numeric(1))
+  independent_se <- sd(drop(sweep(z, 2, mu) %*% numeric_gradient)) / sqrt(nrow(z))
+  testthat::expect_equal(actual$se, independent_se, tolerance = 1e-8)
+  testthat::expect_equal(actual$df, 7)
+  testthat::expect_equal(actual$lower, 100 * expm1(actual$estimate - qt(.975, 7) * actual$se))
+})
+
+testthat::test_that("zeros and dependence cannot manufacture proportional precision", {
+  p <- make_i4r_panel(events = 4)
+  p$citations[p$article_id == "p1_0" & p$post == 0] <- 0
+  testthat::expect_true(is.finite(i4r_proportional(p)$estimate))
+  p$citations[p$treated == 1 & p$post == 0] <- 0
+  testthat::expect_true(is.na(i4r_proportional(p)$estimate))
+  p <- make_i4r_panel(events = 4)
+  p$article_id[p$treated == 0 & grepl("_1$", p$article_id)] <- "shared_control"
+  result <- i4r_proportional(p)
+  testthat::expect_true(is.finite(result$estimate))
+  testthat::expect_true(is.na(result$se))
+  testthat::expect_equal(result$inference, "dependent_matched_sets")
+  p <- make_i4r_panel(events = 4)
+  p$warning_id <- "same_disclosure"
+  testthat::expect_true(is.na(i4r_proportional(p)$se))
+  testthat::expect_error(i4r_proportional(p[-1, ]), "Incomplete")
+})

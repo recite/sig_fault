@@ -28,7 +28,7 @@ i4r_direct <- function(panel) {
   mean(contrasts)
 }
 
-i4r_estimate <- function(panel) {
+i4r_changes <- function(panel) {
   if (!nrow(panel)) stop("No complete matched panels")
   if (length(unique(panel$horizon)) != 1L) stop("Estimate one horizon at a time")
   if (anyDuplicated(panel[c("stack_id", "article_id", "post")])) {
@@ -67,6 +67,11 @@ i4r_estimate <- function(panel) {
     row$change <- x$citations[x$post == 1] - x$citations[x$post == 0]
     row
   }))
+  differences
+}
+
+i4r_estimate <- function(panel) {
+  differences <- i4r_changes(panel)
   if (length(unique(differences$change)) == 1L) {
     return(data.frame(
       horizon = unique(panel$horizon), articles = length(unique(panel$article_id)),
@@ -112,5 +117,56 @@ i4r_estimate <- function(panel) {
     affected_articles = length(unique(panel$article_id[panel$treated == 1])),
     disclosure_events = warnings, estimate = direct, standard_error = se,
     lower = lower, upper = upper, inference = inference
+  )
+}
+
+i4r_case_levels <- function(panel) {
+  i4r_changes(panel)
+  do.call(rbind, lapply(split(panel, panel$stack_id), function(s) {
+    value <- function(group, period) {
+      x <- s[s$treated == group & s$post == period, ]
+      sum(x$weight * x$citations)
+    }
+    data.frame(
+      stack_id = s$stack_id[1], warning_id = s$warning_id[1],
+      treated_before = value(1L, 0L), treated_after = value(1L, 1L),
+      control_before = value(0L, 0L), control_after = value(0L, 1L)
+    )
+  }))
+}
+
+i4r_proportional <- function(panel) {
+  cases <- i4r_case_levels(panel)
+  columns <- c("treated_before", "treated_after", "control_before", "control_after")
+  z <- as.matrix(cases[columns])
+  means <- colMeans(z)
+  j <- nrow(z)
+  b <- se <- lower <- upper <- NA_real_
+  status <- "nonpositive_group_mean"
+  memberships <- unique(panel[c("article_id", "stack_id")])
+  if (all(means > 0)) {
+    b <- log(means[2] / means[1]) - log(means[4] / means[3])
+    status <- "insufficient_independent_disclosures"
+    if (j >= 2L) {
+      status <- "dependent_matched_sets"
+      if (!anyDuplicated(cases$warning_id) && !anyDuplicated(memberships$article_id)) {
+        gradient <- c(-1, 1, 1, -1) / means
+        variance <- as.numeric(t(gradient) %*% cov(z) %*% gradient) / j
+        if (variance < -1e-12) stop("Negative delta-method variance")
+        se <- sqrt(max(0, variance))
+        critical <- qt(.975, j - 1L)
+        lower <- b - critical * se
+        upper <- b + critical * se
+        status <- "exploratory_case_delta"
+      }
+    }
+  }
+  data.frame(
+    cases = j, disclosures = length(unique(cases$warning_id)),
+    estimate = unname(b), se = se, df = j - 1L,
+    percent = 100 * expm1(b), lower = 100 * expm1(lower), upper = 100 * expm1(upper),
+    treated_before = means[1], treated_after = means[2],
+    control_before = means[3], control_after = means[4], inference = status,
+    row.names = NULL
   )
 }
