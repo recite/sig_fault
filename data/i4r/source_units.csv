@@ -18,7 +18,7 @@ dp_016,dp_016,1,yes,yes,robustness_or_replication_concern,no
 dp_017,dp_017,1,no,no,,no
 dp_018,dp_018,1,no,no,,no
 dp_019,dp_019,1,yes,yes,favorable_or_no_material_error_reported,no
-dp_020,dp_020,1,yes,yes,verified_material_error,no
+dp_020,dp_020;report_2dde11440492,2,yes,yes,verified_material_error,no
 dp_021,dp_021,1,yes,yes,verified_material_statistical_error,no
 dp_022,dp_022,1,no,no,,no
 dp_023,dp_023,1,yes,no,,no
@@ -37,7 +37,7 @@ dp_035,dp_035,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_036,dp_036,1,yes,yes,robustness_or_replication_concern,no
 dp_037,dp_037,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_038,dp_038,1,no,no,,no
-dp_039,dp_039;report_e493aff15e98,2,unresolved,no,favorable_or_no_material_error_reported;mixed_or_failed_new_data_replication,yes
+dp_039,dp_039;report_e493aff15e98,2,yes,yes,mixed_or_failed_new_data_replication,no
 dp_040,dp_040,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_041,dp_041;report_869b5ee590f1,2,yes,no,,no
 dp_042,dp_042,1,yes,yes,favorable_or_no_material_error_reported,no
@@ -93,7 +93,7 @@ dp_091,dp_091,1,yes,no,,no
 dp_092,dp_092,1,yes,yes,verified_error_in_stated_robustness_sample,no
 dp_093,dp_093,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_094,dp_094;report_95553d627471,2,yes,yes,robustness,no
-dp_095,dp_095,1,yes,yes,verified_material_GMM_error_consequence_disputed,no
+dp_095,dp_095;report_83421b0452f2,2,yes,yes,verified_material_GMM_error_consequence_disputed,no
 dp_096,dp_096,1,no,no,,no
 dp_097,dp_097,1,yes,no,,no
 dp_098,dp_098,1,no,no,,no
@@ -102,11 +102,11 @@ dp_100,dp_100,1,no,no,,no
 dp_101,dp_101,1,no,no,,no
 dp_102,dp_102,1,no,no,,no
 dp_103,dp_103,1,yes,yes,demonstrated_material_error,no
-dp_104,dp_104;report_65803781fe9e,2,unresolved,no,robustness;robustness_or_replication_concern,yes
-dp_105,dp_105;report_847150e275c5,2,unresolved,no,robustness;robustness_or_replication_concern,yes
-dp_106,dp_106;report_f65390241feb,2,unresolved,no,favorable_assessment;favorable_or_no_material_error_reported,yes
+dp_104,dp_104;report_65803781fe9e,2,yes,yes,robustness_or_replication_concern,no
+dp_105,dp_105;report_847150e275c5,2,yes,yes,robustness_concern,no
+dp_106,dp_106;report_f65390241feb,2,yes,yes,favorable_assessment,no
 dp_107,dp_107,1,no,no,,no
-dp_108,dp_108;report_c44a94ff33b4,2,unresolved,no,material_error;verified_material_city_coding_error_secondary_claims,yes
+dp_108,dp_108;report_c44a94ff33b4,2,yes,yes,verified_material_city_coding_error_secondary_claims,no
 dp_109,dp_109,1,no,no,,no
 dp_110,dp_110;report_013c1e38ca22,2,yes,yes,verified_limited_error,no
 dp_111,dp_111;report_917ba368c8fa,2,yes,yes,minor_error,no
@@ -130,7 +130,7 @@ dp_128,dp_128;report_8c8d6dc18f21,2,yes,yes,favorable_assessment,no
 dp_129,dp_129,1,yes,no,,no
 dp_130,dp_130,1,yes,yes,robustness_concern,no
 dp_131,dp_131,1,yes,yes,robustness_concern,no
-dp_132,dp_132;report_859116e7eb38,2,unresolved,no,robustness_assessment;robustness_concern,yes
+dp_132,dp_132;report_859116e7eb38,2,yes,yes,robustness_assessment,no
 dp_133,dp_133,1,yes,yes,robustness_concern,no
 dp_134,dp_134,1,yes,yes,robustness_concern,no
 dp_135,dp_135,1,yes,yes,minor_error,no
@@ -138,7 +138,7 @@ dp_136,dp_136,1,no,no,,no
 dp_137,dp_137;report_63c3f58d6b55,2,yes,no,,no
 dp_138,dp_138;report_c2baf1ad50bb,2,yes,yes,favorable_assessment,no
 dp_139,dp_139;report_ec7dbde1767c,2,yes,yes,favorable_assessment,no
-dp_140,dp_140;report_b26a6524eda1;report_f7f8e5b7ec44,3,unresolved,no,minor_error;robustness_concern,yes
+dp_140,dp_140;report_b26a6524eda1;report_f7f8e5b7ec44,3,yes,yes,minor_reporting_discrepancy_and_robustness_concern,no
 dp_141,dp_141,1,no,no,,no
 dp_142,dp_142;report_5d73ec1dc3d6,2,yes,yes,favorable_assessment,no
 dp_143,dp_143,1,no,no,,no
@@ -146,7 +146,7 @@ dp_144,dp_144;report_438642c3c161,2,yes,yes,minor_error,no
 dp_145,dp_145;report_70623055b3d8,2,yes,yes,minor_error,no
 dp_146,dp_146;report_7b6e3711f962,2,yes,yes,favorable_assessment,no
 dp_147,dp_147,1,yes,yes,favorable_assessment,no
-dp_148,dp_148,1,yes,yes,material_error,no
+dp_148,dp_148;report_52bea92b7c10,2,yes,yes,material_error,no
 dp_149,dp_149,1,yes,yes,verified_limited_error,no
 dp_150,dp_150,1,no,no,,no
 dp_151,dp_151,1,yes,yes,minor_error,no
@@ -170,7 +170,7 @@ dp_168,dp_168;report_5328fbe6f83f,2,yes,yes,robustness_concern,no
 dp_169,dp_169,1,yes,no,,no
 dp_170,dp_170;report_62881c68084b,2,yes,yes,minor_error,no
 dp_171,dp_171,1,yes,yes,favorable_assessment,no
-dp_172,dp_172;report_4cb285ca816f,2,unresolved,no,favorable_assessment;linked_previous_review,yes
+dp_172,dp_172;report_4cb285ca816f,2,yes,yes,favorable_assessment_with_reproducibility_discrepancies,no
 dp_173,dp_173,1,yes,yes,favorable_assessment,no
 dp_174,dp_174,1,yes,yes,favorable_assessment,no
 dp_175,dp_175;report_94a65cd398d5,2,yes,yes,minor_error,no
@@ -213,11 +213,11 @@ dp_211,dp_211;report_5a1b2e97cdc1,2,yes,yes,favorable_assessment,no
 dp_212,dp_212;report_b42733a6a663,2,yes,yes,favorable_assessment,no
 dp_213,dp_213;report_ddc4ef0fbe5d,2,yes,yes,robustness_concern,no
 dp_214,dp_214,1,yes,yes,material_error,no
-dp_215,dp_215;report_bfd18568d399,2,unresolved,no,favorable_assessment;robustness_concern,yes
+dp_215,dp_215;report_bfd18568d399,2,yes,yes,minor_error_with_robustness_concern,no
 dp_216,dp_216,1,yes,no,,no
 dp_217,dp_217,1,no,no,,no
 dp_218,dp_218;report_aefc27d5ae78,2,yes,yes,favorable_assessment,no
-dp_219,dp_219;report_2ee3d7892331,2,unresolved,no,linked_previous_review;minor_error,yes
+dp_219,dp_219;report_2ee3d7892331,2,yes,yes,minor_error,no
 dp_220,dp_220,1,no,no,,no
 dp_221,dp_221;report_e5ae077f3448,2,yes,yes,demonstrated_material_error,no
 dp_222,dp_222;report_6385b2ec544a,2,yes,yes,favorable_assessment,no
@@ -228,7 +228,7 @@ dp_226,dp_226,1,yes,yes,material_error,no
 dp_227,dp_227,1,yes,yes,material_error,no
 dp_228,dp_228,1,yes,yes,favorable_assessment,no
 dp_229,dp_229,1,yes,yes,robustness_concern,no
-dp_230,dp_230;report_3e68a5b034dd,2,unresolved,no,favorable_assessment;minor_error_no_material_consequence_and_robustness_analysis,yes
+dp_230,dp_230;report_3e68a5b034dd,2,yes,no,,no
 dp_231,dp_231,1,yes,yes,favorable_assessment,no
 dp_232,dp_232,1,yes,yes,robustness_concern,no
 dp_233,dp_233;report_ddf1ed671493,2,yes,yes,favorable_assessment,no
@@ -251,7 +251,7 @@ dp_249,dp_249,1,no,no,,no
 dp_250,dp_250,1,yes,yes,mixed_or_failed_new_data_replication,no
 dp_251,dp_251,1,yes,yes,minor_reporting_and_reproduction_discrepancies,no
 dp_252,dp_252,1,yes,yes,favorable_assessment,no
-dp_253,dp_253;report_6a279044dcee,2,unresolved,no,favorable;favorable_assessment,yes
+dp_253,dp_253;report_6a279044dcee,2,yes,yes,favorable_assessment,no
 dp_254,dp_254,1,no,no,,no
 dp_255,dp_255,1,yes,yes,favorable_assessment,no
 dp_256,dp_256,1,yes,yes,favorable_assessment,no
@@ -266,7 +266,7 @@ dp_264,dp_264,1,no,no,,no
 dp_265,dp_265,1,no,no,,no
 dp_266,dp_266,1,no,no,,no
 dp_267,dp_267,1,yes,yes,material_error,no
-dp_268,dp_268;report_9037987430de,2,unresolved,no,minor_error;minor_error_no_verified_material_consequence,yes
+dp_268,dp_268;report_9037987430de,2,yes,yes,limited_coding_and_robustness_concern,no
 dp_269,dp_269,1,yes,yes,minor_error_no_verified_material_consequence,no
 dp_270,dp_270,1,no,no,,no
 dp_271,dp_271,1,yes,yes,acknowledged_units_error_without_verified_material_main_effect_change,no
@@ -274,10 +274,10 @@ dp_272,dp_272,1,no,no,,no
 dp_273,dp_273,1,yes,yes,favorable_assessment,no
 dp_274,dp_274,1,yes,yes,minor_error_no_verified_material_consequence,no
 dp_275,dp_275,1,yes,yes,favorable_assessment,no
-dp_276,dp_276;report_780942f101b3,2,unresolved,no,robustness;robustness_concern,yes
+dp_276,dp_276;report_780942f101b3,2,yes,no,,no
 dp_277,dp_277;report_23a9252aef51,2,yes,yes,favorable_assessment,no
 dp_278,dp_278,1,yes,yes,verified_material_statistical_error,no
-dp_280,dp_280;report_746e7973905e,2,unresolved,no,favorable;favorable_assessment,yes
+dp_280,dp_280;report_746e7973905e,2,yes,yes,favorable_assessment,no
 dp_281,dp_281,1,no,no,,no
 dp_282,dp_282,1,no,no,,no
 dp_283,dp_283,1,yes,yes,robustness_concern,no
@@ -285,7 +285,7 @@ dp_284,dp_284,1,no,no,,no
 dp_285,dp_285,1,yes,yes,material_error,no
 dp_286,dp_286,1,no,no,,no
 dp_287,dp_287,1,no,no,,no
-dp_288,dp_288;report_b41a30aeb61b,2,unresolved,no,minor_error;minor_error_no_verified_material_consequence,yes
+dp_288,dp_288;report_b41a30aeb61b,2,yes,yes,minor_error_no_verified_material_consequence,no
 dp_289,dp_289;report_52b025b81bea,2,yes,yes,favorable_assessment,no
 dp_290,dp_290;report_0990ab487ba5,2,yes,yes,favorable_assessment,no
 dp_291,dp_291;report_3c9cbb3fc4b8,2,yes,yes,favorable_assessment,no
@@ -306,7 +306,7 @@ dp_305,dp_305;report_48e3e8dec4b5,2,yes,no,,no
 dp_306,dp_306,1,no,no,,no
 dp_307,dp_307,1,yes,yes,duplicated_rows_without_verified_change_in_primary_inference,no
 dp_308,dp_308,1,no,no,,no
-dp_309,dp_309;report_ee38b5cf0c36,2,unresolved,no,minor_error;minor_error_no_verified_material_consequence,yes
+dp_309,dp_309;report_ee38b5cf0c36,2,yes,yes,minor_error_no_verified_material_consequence,no
 dp_310,dp_310,1,no,no,,no
 dp_311,dp_311,1,yes,yes,material_scoring_error_in_personality_finding,no
 dp_312,dp_312,1,no,no,,no
@@ -318,9 +318,9 @@ dp_317,dp_317,1,yes,yes,robustness_concern,no
 dp_318,dp_318,1,no,no,,no
 dp_319,dp_319,1,no,no,,no
 dp_320,dp_320,1,no,no,,no
-dp_321,dp_321;report_84be28b9ecb3,2,unresolved,no,minor_error;minor_error_no_verified_material_consequence,yes
+dp_321,dp_321;report_84be28b9ecb3,2,yes,yes,computational_portability_issue_results_reproduced,no
 dp_322,dp_322,1,no,no,,no
-dp_323,dp_323;report_ec8d68edcc23,2,unresolved,no,minor_error;minor_error_no_verified_material_consequence,yes
+dp_323,dp_323;report_ec8d68edcc23,2,yes,yes,minor_reporting_discrepancy_with_data_reconstruction_limitations,no
 dp_324,dp_324,1,yes,yes,material_error,no
 dp_325,dp_325,1,no,no,,no
 dp_326,dp_326,1,no,no,,no
@@ -337,7 +337,7 @@ report_03df53dc216f,report_03df53dc216f,1,yes,yes,robustness_dispute,no
 report_0425a20fb3e7,report_0425a20fb3e7,1,yes,yes,favorable_assessment_with_robustness_caveat,no
 report_04ef61718bc9,report_04ef61718bc9,1,yes,yes,partial_reproduction,no
 report_07d5d343c603,report_07d5d343c603,1,yes,yes,robustness_concern,no
-report_088986d1a728,report_088986d1a728,1,yes,yes,verified_material_error_already_retracted,no
+report_088986d1a728,report_088986d1a728,1,yes,yes,verified_material_error_subsequently_retracted,no
 report_0a1270bb9a9d,report_0a1270bb9a9d,1,yes,yes,reproduced,no
 report_0a3ce4480b8d,report_0a3ce4480b8d,1,unresolved,no,,no
 report_0b5122ccd268,report_0b5122ccd268,1,yes,yes,multiple_independent_reports_minor_error,no
@@ -376,7 +376,6 @@ report_2aedc6cdf5ea,report_2aedc6cdf5ea,1,yes,yes,reproduced,no
 report_2af5962ea1ca,report_2af5962ea1ca,1,yes,yes,minor_error,no
 report_2cbf5df8aefc,report_2cbf5df8aefc,1,unresolved,no,,no
 report_2d0614eec3f5,report_2d0614eec3f5,1,yes,yes,favorable_or_no_material_error_reported,no
-report_2dde11440492,report_2dde11440492,1,yes,yes,verified_material_error,no
 report_2e8015f6771c,report_2e8015f6771c,1,yes,yes,minor_error,no
 report_2f770cb667b4,report_2f770cb667b4,1,yes,yes,robustness_only,no
 report_2f792d86ba6c,report_2f792d86ba6c,1,yes,yes,verified_material_error_in_secondary_IV_robustness,no
@@ -414,7 +413,6 @@ report_4968d35b0fba,report_4968d35b0fba,1,yes,yes,robustness_concern,no
 report_49db3e2bf54e,report_49db3e2bf54e,1,unresolved,no,,no
 report_5003934d7f11,report_5003934d7f11,1,yes,yes,reproduced,no
 report_529ee199e8d9,report_529ee199e8d9,1,yes,no,,no
-report_52bea92b7c10,report_52bea92b7c10,1,yes,no,,no
 report_53da140009b8,report_53da140009b8,1,yes,yes,favorable_or_no_material_error_reported,no
 report_5437ba586f46,report_5437ba586f46,1,yes,yes,verified_material_coding_error,no
 report_545e8437a0f7,report_545e8437a0f7,1,yes,yes,reproduced,no
@@ -482,7 +480,6 @@ report_81150904aedd,report_81150904aedd,1,yes,yes,robustness,no
 report_8179797314d5,report_8179797314d5,1,yes,no,,no
 report_81cf468b169a,report_81cf468b169a,1,yes,no,,no
 report_8290e13f6cb7,report_8290e13f6cb7,1,yes,no,,no
-report_83421b0452f2,report_83421b0452f2,1,yes,no,,no
 report_839e017284ca,report_839e017284ca,1,yes,yes,minor_error,no
 report_83fc3494a79a,report_83fc3494a79a,1,yes,yes,minor_error,no
 report_850e8ee1d4b8,report_850e8ee1d4b8,1,yes,yes,robustness,no

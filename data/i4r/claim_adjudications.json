@@ -1271,5 +1271,47 @@
     "dispute_status": "Authors acknowledge missing-income and weighting errors but characterize their effects as modest. Larger robustness changes also alter the definition of waiting and must be kept separate.",
     "cohort_recommendation": "Include for a demonstrated change to the focal adjusted-gap magnitude, including a strengthening correction; no claim of an overturned income or race conclusion.",
     "source_reporting_discrepancy": "The report prose attributes 69%/29% increases to the missing-income fix, but those approximate ratios compare columns 1/3 and combine that fix with weighting. The missing-income-only contrasts are columns 1/2."
+  },
+  {
+    "source_id": "report_088986d1a728",
+    "original_title": "Arrests and convictions but not sentence length deter terrorism in 28 European Union member states",
+    "original_doi": "10.1038/s41562-023-01695-6",
+    "original_publication_date": "2023-09-04",
+    "original_publication_year": 2023,
+    "error_verified": true,
+    "material_error_verified": true,
+    "error": "Stored outcome and predictors disagree with the described transformations; authors later acknowledged coding errors including IHS(y+1) instead of IHS(y).",
+    "affected_claim": "Arrest and conviction rates deter terrorism; charge rates increase terrorism; sentence length has no deterrent effect.",
+    "materiality_scope": "Post-publication editorial review concluded that the article conclusions were unsupported by the analyses; this is more than a shift in statistical significance.",
+    "quantitative_consequence": {
+      "gmm_arrest_original": -0.018,
+      "gmm_arrest_disclosed_methods": 0.0002,
+      "original_n": 420,
+      "disclosed_methods_n": 83,
+      "outcome": "DVSin remains the outcome in the disclosed-method columns of Table S2.",
+      "warning": "These contrasts change regressors and samples; they are not an isolated IHS(y+1) correction. The 292 distinct positive stored outcomes at zero attack rates cannot be attributed solely to the admitted addition of one from the inspected evidence."
+    },
+    "corrected_direction": "No isolated corrected effect of the acknowledged transformation is established.",
+    "first_substantiated_public_year": 2024,
+    "first_disclosure_precision": "year",
+    "verified_public_by": "2024-10-02",
+    "exact_first_public_day_verified": false,
+    "public_date_evidence": "Wayback captured the error-specific critique on October 2, 2024; its PDF exactly matches the author-website upload committed September 10, 2024. The later report also states that its first replication repository became public April 25, 2024, but that exact first day is not independently established. Use the supported public year 2024, not the 2026 journal publication/retraction or the PDF cover date alone.",
+    "reported_earlier_public_date": "2024-04-25",
+    "reported_date_scope": "Later author testimony about first OSF repository; historical public contents not independently verified for that exact day.",
+    "retraction_date": "2026-01-08",
+    "retraction_doi": "10.1038/s41562-025-02393-1",
+    "retracted_before_disclosure": false,
+    "dispute_status": "Authors accept responsibility for coding errors and agree to retraction, but dispute the other criticisms.",
+    "verification_scope": "Independent source reviews of original archived critique, later report and retraction notice; no original code rerun. Historical GitHub PDF and October 2024 Wayback PDF are byte-identical.",
+    "evidence_locator": "Archived 2024 critique PDF pp. 6–8,15; later supplementary report Table S2 PDF p. 8; retraction notice p. 1.",
+    "sources": [
+      "https://web.archive.org/web/20241002233716/https://jack-fitzgerald.github.io/files/WEA23_Replication.pdf",
+      "https://github.com/jack-fitzgerald/jack-fitzgerald.github.io/commit/5595a30ef4039c2c105ef5fc31837912bc862656",
+      "https://www.nature.com/articles/s41562-025-02393-1",
+      "https://www.nature.com/articles/s41562-025-02347-7",
+      "https://osf.io/hce6n/"
+    ],
+    "cohort_recommendation": "Verified 2024 disclosure with subsequent 2026 retraction. Original publication in 2023 leaves insufficient pre-disclosure age for the declared main comparison."
   }
 ]

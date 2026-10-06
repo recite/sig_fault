@@ -346,7 +346,11 @@ def retractions():
     )
     targets = sources.read("articles.csv") + sources.read("control_articles.csv")
     dois = {r["doi"] for r in targets if r["doi"]}
-    rows = []
+    rows = [
+        r
+        for r in sources.read("retractions.csv")
+        if r["dataset_url"] != RETRACTIONS_URL
+    ]
     for r in csv.DictReader(io.StringIO(payload.decode("utf-8-sig"))):
         doi = pilot.normalize_doi(r["OriginalPaperDOI"])
         if doi not in dois or r["RetractionNature"] != "Retraction":

@@ -81,8 +81,8 @@ One row: candidate original article. Rows: 517. Key: article_id. Producer: `i4r_
 | `abstract` | string | Original-article abstract text where supplied by OpenAlex; blank uses title-only matching. | 195 | 322 distinct nonmissing values |
 | `identity_verified` | string | yes only after accepted bibliographic match; pending otherwise. | 0 | pending; yes |
 | `retracted` | string | Current indexed retraction flag: yes, no or unknown; not a historical treatment indicator. | 0 | no; unknown; yes |
-| `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 514 | 2025-04-06; 2025-06-24; 2026-05-21 |
-| `retraction_source` | string | Notice URL establishing retraction date. | 514 | https://doi.org/10.1007/s00148-025-01114-2; https://doi.org/10.1016/j.euroecorev.2025.105026; https://doi.org/10.1371/journal.pone.0349829 |
+| `retraction_date` | string | Earliest known retraction date from dated notice ledger. | 513 | 2025-04-06; 2025-06-24; 2026-01-08; 2026-05-21 |
+| `retraction_source` | string | Notice URL establishing retraction date. | 513 | https://doi.org/10.1007/s00148-025-01114-2; https://doi.org/10.1016/j.euroecorev.2025.105026; https://doi.org/10.1371/journal.pone.0349829; https://www.nature.com/articles/s41562-025-02393-1 |
 
 ## assessment_documents.csv
 
@@ -136,22 +136,22 @@ One row: assessment-to-catalog-source relation. Rows: 695. Key: unit_id, source_
 
 ## assessments.csv
 
-One row: candidate significant-error assessment. Rows: 40. Key: assessment_id. Producer: `i4r_registry build`.
+One row: candidate significant-error assessment. Rows: 37. Key: assessment_id. Producer: `i4r_registry build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `assessment_id` | string | Identifier for a particular article-specific error assessment. | 0 | 40 distinct nonmissing values |
+| `assessment_id` | string | Identifier for a particular article-specific error assessment. | 0 | 37 distinct nonmissing values |
 | `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 37 distinct nonmissing values |
-| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 40 distinct nonmissing values |
-| `category` | string | Type of error or broader concern; primary cohort requires demonstrated material error. | 0 | demonstrated_material_error; design_and_data_inconsistency_requires_adjudication; source_supported_material_error; verified_error_materiality_unresolved; verified_limited_error |
+| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 37 distinct nonmissing values |
+| `category` | string | Type of error or broader concern; primary cohort requires demonstrated material error. | 0 | demonstrated_material_error; design_and_data_inconsistency_requires_adjudication; verified_error_materiality_unresolved; verified_limited_error |
 | `material` | string | yes/no/unresolved: whether the documented error materially changes a substantive finding. | 0 | no; unresolved; yes |
-| `error_verified` | string | yes, pending_second_review or unresolved; only yes enters verified-error cohort. | 0 | pending_second_review; unresolved; yes |
+| `error_verified` | string | yes, pending_second_review or unresolved; only yes enters verified-error cohort. | 0 | unresolved; yes |
 | `affected_claim` | string | Substantive result affected; does not imply every finding in the article fails. | 0 | 37 distinct nonmissing values |
-| `evidence_summary` | string | Paraphrased evidence supporting a candidate assessment, including limitations. | 0 | 39 distinct nonmissing values |
-| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 1 | 37 distinct nonmissing values |
-| `dispute_status` | string | Author acknowledgment, response, dispute or unresolved status. | 0 | 16 distinct nonmissing values |
-| `verification_scope` | string | Evidence actually checked; source verification is distinct from re-running code. | 0 | 13 distinct nonmissing values |
-| `public_year` | integer | Known public assessment year for time-aware control exclusions. | 5 | 2020 to 2026 |
+| `evidence_summary` | string | Paraphrased evidence supporting a candidate assessment, including limitations. | 0 | 37 distinct nonmissing values |
+| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 37 distinct nonmissing values |
+| `dispute_status` | string | Author acknowledgment, response, dispute or unresolved status. | 0 | 17 distinct nonmissing values |
+| `verification_scope` | string | Evidence actually checked; source verification is distinct from re-running code. | 0 | 12 distinct nonmissing values |
+| `public_year` | integer | Known public assessment year for time-aware control exclusions. | 1 | 2020 to 2026 |
 
 ## citation_edges.csv
 
@@ -266,31 +266,31 @@ One row: publisher lookup. Rows: 517. Key: article_id. Producer: `i4r_registry c
 
 ## curated_claims.csv
 
-One row: adjudicated candidate claim/disclosure. Rows: 40. Key: assessment_id. Producer: `manual evidence review`.
+One row: adjudicated candidate claim/disclosure. Rows: 37. Key: assessment_id. Producer: `manual evidence review`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 38 distinct nonmissing values |
-| `doi` | string | Normalized original-article DOI; empty if unresolved. | 2 | 37 distinct nonmissing values |
-| `assessment_id` | string | Identifier for a particular article-specific error assessment. | 0 | 40 distinct nonmissing values |
-| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 40 distinct nonmissing values |
-| `category` | string | Type of error or broader concern; primary cohort requires demonstrated material error. | 0 | demonstrated_material_error; design_and_data_inconsistency_requires_adjudication; source_supported_material_error; verified_error_materiality_unresolved; verified_limited_error |
+| `title` | string | Catalog or bibliographic title; candidate titles may remain unresolved. | 0 | 37 distinct nonmissing values |
+| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 37 distinct nonmissing values |
+| `assessment_id` | string | Identifier for a particular article-specific error assessment. | 0 | 37 distinct nonmissing values |
+| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 37 distinct nonmissing values |
+| `category` | string | Type of error or broader concern; primary cohort requires demonstrated material error. | 0 | demonstrated_material_error; design_and_data_inconsistency_requires_adjudication; verified_error_materiality_unresolved; verified_limited_error |
 | `material` | string | yes/no/unresolved: whether the documented error materially changes a substantive finding. | 0 | no; unresolved; yes |
-| `error_verified` | string | yes, pending_second_review or unresolved; only yes enters verified-error cohort. | 0 | pending_second_review; unresolved; yes |
+| `error_verified` | string | yes, pending_second_review or unresolved; only yes enters verified-error cohort. | 0 | unresolved; yes |
 | `affected_claim` | string | Substantive result affected; does not imply every finding in the article fails. | 0 | 37 distinct nonmissing values |
-| `evidence_summary` | string | Paraphrased evidence supporting a candidate assessment, including limitations. | 0 | 39 distinct nonmissing values |
-| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 1 | 37 distinct nonmissing values |
-| `dispute_status` | string | Author acknowledgment, response, dispute or unresolved status. | 0 | 16 distinct nonmissing values |
-| `verification_scope` | string | Evidence actually checked; source verification is distinct from re-running code. | 0 | 13 distinct nonmissing values |
-| `public_year` | integer | Known public assessment year for time-aware control exclusions. | 28 | 2023 to 2025 |
-| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | 40 distinct nonmissing values |
-| `warning_id` | string | Shared disclosure identifier for dependence when one warning affects multiple articles. | 0 | 40 distinct nonmissing values |
-| `date` | string | Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown. | 14 | 24 distinct nonmissing values |
-| `year` | integer | Public disclosure year in events; observed citation year in citation/panel tables. | 5 | 2020 to 2026 |
-| `date_precision` | string | day/month/year: precision supported by public evidence. | 4 | day; month; unknown; year |
+| `evidence_summary` | string | Paraphrased evidence supporting a candidate assessment, including limitations. | 0 | 37 distinct nonmissing values |
+| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 37 distinct nonmissing values |
+| `dispute_status` | string | Author acknowledgment, response, dispute or unresolved status. | 0 | 17 distinct nonmissing values |
+| `verification_scope` | string | Evidence actually checked; source verification is distinct from re-running code. | 0 | 12 distinct nonmissing values |
+| `public_year` | integer | Known public assessment year for time-aware control exclusions. | 25 | 2023 to 2025 |
+| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | 37 distinct nonmissing values |
+| `warning_id` | string | Shared disclosure identifier for dependence when one warning affects multiple articles. | 0 | 37 distinct nonmissing values |
+| `date` | string | Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown. | 11 | 24 distinct nonmissing values |
+| `year` | integer | Public disclosure year in events; observed citation year in citation/panel tables. | 1 | 2020 to 2026 |
+| `date_precision` | string | day/month/year: precision supported by public evidence. | 0 | day; month; unknown; year |
 | `publicity_verified` | string | yes only when public timing has a documented source. | 0 | no; yes |
-| `date_evidence_url` | string | Public evidence establishing disclosure timing. | 4 | 36 distinct nonmissing values |
-| `date_evidence` | string | Reasoning for earliest substantiated public year/day and unresolved earlier versions. | 4 | 36 distinct nonmissing values |
+| `date_evidence_url` | string | Public evidence establishing disclosure timing. | 0 | 37 distinct nonmissing values |
+| `date_evidence` | string | Reasoning for earliest substantiated public year/day and unresolved earlier versions. | 0 | 37 distinct nonmissing values |
 | `already_retracted` | string | Retraction status at disclosure: no required for primary cohort. | 0 | no; unknown |
 
 ## document_retrieval.csv
@@ -337,22 +337,22 @@ One row: matched article–event–relative-year. Rows: 0. Key: event_id, articl
 
 ## events.csv
 
-One row: candidate error disclosure. Rows: 40. Key: event_id. Producer: `i4r_registry build`.
+One row: candidate error disclosure. Rows: 37. Key: event_id. Producer: `i4r_registry build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | 40 distinct nonmissing values |
-| `warning_id` | string | Shared disclosure identifier for dependence when one warning affects multiple articles. | 0 | 40 distinct nonmissing values |
+| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | 37 distinct nonmissing values |
+| `warning_id` | string | Shared disclosure identifier for dependence when one warning affects multiple articles. | 0 | 37 distinct nonmissing values |
 | `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 37 distinct nonmissing values |
-| `assessment_id` | string | Identifier for a particular article-specific error assessment. | 0 | 40 distinct nonmissing values |
-| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 40 distinct nonmissing values |
-| `date` | string | Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown. | 14 | 24 distinct nonmissing values |
-| `year` | integer | Public disclosure year in events; observed citation year in citation/panel tables. | 5 | 2020 to 2026 |
-| `date_precision` | string | day/month/year: precision supported by public evidence. | 4 | day; month; unknown; year |
+| `assessment_id` | string | Identifier for a particular article-specific error assessment. | 0 | 37 distinct nonmissing values |
+| `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 37 distinct nonmissing values |
+| `date` | string | Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown. | 11 | 24 distinct nonmissing values |
+| `year` | integer | Public disclosure year in events; observed citation year in citation/panel tables. | 1 | 2020 to 2026 |
+| `date_precision` | string | day/month/year: precision supported by public evidence. | 0 | day; month; unknown; year |
 | `publicity_verified` | string | yes only when public timing has a documented source. | 0 | no; yes |
-| `date_evidence_url` | string | Public evidence establishing disclosure timing. | 4 | 36 distinct nonmissing values |
-| `date_evidence` | string | Reasoning for earliest substantiated public year/day and unresolved earlier versions. | 4 | 36 distinct nonmissing values |
-| `error_verified` | string | yes, pending_second_review or unresolved; only yes enters verified-error cohort. | 0 | pending_second_review; unresolved; yes |
+| `date_evidence_url` | string | Public evidence establishing disclosure timing. | 0 | 37 distinct nonmissing values |
+| `date_evidence` | string | Reasoning for earliest substantiated public year/day and unresolved earlier versions. | 0 | 37 distinct nonmissing values |
+| `error_verified` | string | yes, pending_second_review or unresolved; only yes enters verified-error cohort. | 0 | unresolved; yes |
 | `material` | string | yes/no/unresolved: whether the documented error materially changes a substantive finding. | 0 | no; unresolved; yes |
 | `already_retracted` | string | Retraction status at disclosure: no required for primary cohort. | 0 | no; unknown |
 
@@ -408,13 +408,13 @@ One row: screened event–control–horizon. Rows: 1323. Key: event_id, control_
 
 ## match_exclusions.csv
 
-One row: excluded event–horizon. Rows: 120. Key: event_id, horizon. Producer: `i4r_match`.
+One row: excluded event–horizon. Rows: 111. Key: event_id, horizon. Producer: `i4r_match`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | 40 distinct nonmissing values |
+| `event_id` | string | Identifier for a candidate particular-error disclosure event. | 0 | 37 distinct nonmissing values |
 | `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 37 distinct nonmissing values |
-| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | error_not_verified_material; incomplete_control_citation_retrieval; incomplete_followup; incomplete_risk_set_retrieval; insufficient_article_age; publicity_unverified; retraction_status_not_eligible; subsequent_disclosure |
+| `reason` | string | Explicit exclusion reason; blank if eligible. | 0 | error_not_verified_material; incomplete_control_citation_retrieval; incomplete_followup; incomplete_risk_set_retrieval; insufficient_article_age; publicity_unverified; retraction_status_not_eligible |
 | `horizon` | integer | Full calendar years after disclosure, primary 1; secondary 2 and 3. | 0 | 1 to 3 |
 
 ## matches.csv
@@ -484,16 +484,16 @@ One row: repository relationship page acquisition per catalog source. Rows: 1218
 
 ## retractions.csv
 
-One row: retraction notice. Rows: 4. Key: record_id. Producer: `i4r_citations retractions`.
+One row: retraction notice. Rows: 5. Key: record_id. Producer: `i4r_citations retractions`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 10.1007/s00148-024-00984-2; 10.1016/j.euroecorev.2018.09.008; 10.1257/aer.20210369; 10.1371/journal.pone.0255392 |
-| `date` | string | Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown. | 0 | 2023-07-01; 2025-04-06; 2025-06-24; 2026-05-21 |
-| `source_url` | string | Public evidence or notice URL. | 0 | https://doi.org/10.1007/s00148-025-01114-2; https://doi.org/10.1016/j.euroecorev.2025.105026; https://doi.org/10.1257/aer.113.7.2053; https://doi.org/10.1371/journal.pone.0349829 |
-| `notice_doi` | string | Normalized DOI of the retraction notice. | 0 | 10.1007/s00148-025-01114-2; 10.1016/j.euroecorev.2025.105026; 10.1257/aer.113.7.2053; 10.1371/journal.pone.0349829 |
-| `record_id` | string | Retraction Watch database record ID. | 0 | 45874; 63183; 70777; 70932 |
-| `dataset_url` | string | Public dataset supplying the dated retraction record. | 0 | 1 distinct nonmissing values |
+| `doi` | string | Normalized original-article DOI; empty if unresolved. | 0 | 10.1007/s00148-024-00984-2; 10.1016/j.euroecorev.2018.09.008; 10.1038/s41562-023-01695-6; 10.1257/aer.20210369; 10.1371/journal.pone.0255392 |
+| `date` | string | Disclosure date in events/claims, retraction date in retractions; blank when exact day unknown. | 0 | 2023-07-01; 2025-04-06; 2025-06-24; 2026-01-08; 2026-05-21 |
+| `source_url` | string | Public evidence or notice URL. | 0 | https://doi.org/10.1007/s00148-025-01114-2; https://doi.org/10.1016/j.euroecorev.2025.105026; https://doi.org/10.1257/aer.113.7.2053; https://doi.org/10.1371/journal.pone.0349829; https://www.nature.com/articles/s41562-025-02393-1 |
+| `notice_doi` | string | Normalized DOI of the retraction notice. | 0 | 10.1007/s00148-025-01114-2; 10.1016/j.euroecorev.2025.105026; 10.1038/s41562-025-02393-1; 10.1257/aer.113.7.2053; 10.1371/journal.pone.0349829 |
+| `record_id` | string | Retraction Watch database record ID. | 1 | 45874; 63183; 70777; 70932 |
+| `dataset_url` | string | Public dataset supplying the dated retraction record. | 0 | 2 distinct nonmissing values |
 
 ## retrieval.csv
 
@@ -542,11 +542,11 @@ One row: independent source eligibility/classification decision. Rows: 714. Key:
 | `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 714 distinct nonmissing values |
 | `assessment_eligibility` | string | yes/no/unresolved: whether the source is an eligible article-specific assessment for the coverage denominator. | 0 | no; unresolved; yes |
 | `assessment_resolved` | string | yes/no: explicit final adjudication for the coverage gate; default no. | 0 | no; yes |
-| `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 634 distinct nonmissing values |
-| `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 0 | 87 distinct nonmissing values |
-| `evidence` | string | Source pointer or documented identity/link decision. | 7 | 574 distinct nonmissing values |
-| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 528 distinct nonmissing values |
-| `limitations` | string | Scope limits of the source adjudication. | 0 | 67 distinct nonmissing values |
+| `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 631 distinct nonmissing values |
+| `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 0 | 92 distinct nonmissing values |
+| `evidence` | string | Source pointer or documented identity/link decision. | 7 | 556 distinct nonmissing values |
+| `evidence_locator` | string | Public source and page/table/section identifying the error and consequence. | 0 | 542 distinct nonmissing values |
+| `limitations` | string | Scope limits of the source adjudication. | 0 | 86 distinct nonmissing values |
 | `adjudication_date` | string | Date the source evidence was adjudicated; not public disclosure date. | 0 | 2026-10-05; 2026-10-06 |
 
 ## source_articles.csv
@@ -558,7 +558,7 @@ One row: source–article relationship. Rows: 1010. Key: source_id, article_id. 
 | `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 654 distinct nonmissing values |
 | `article_id` | string | Opaque original-article identity; title-derived for registry, OpenAlex ID for controls. | 0 | 517 distinct nonmissing values |
 | `relation` | string | Meaning of a source-to-source or source-to-article relationship. | 0 | assessed_article_roster; catalog_or_review_target_hint; curated_error_evidence; document_verified_assessment_target; linked_assessment_or_reply; misdirected_catalog_attachment; roster_linked_report_or_reply; same_cohort_aggregate_roster |
-| `evidence` | string | Source pointer or documented identity/link decision. | 1 | 624 distinct nonmissing values |
+| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 625 distinct nonmissing values |
 
 ## source_links.csv
 
@@ -573,14 +573,14 @@ One row: explicit external source link. Rows: 448. Key: no unique key declared. 
 
 ## source_manifest.csv
 
-One row: cached response. Rows: 6390. Key: path. Producer: `i4r_sources manifest`.
+One row: cached response. Rows: 6396. Key: path. Producer: `i4r_sources manifest`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `path` | string | Repository-relative cache path; private raw contents are not redistributed. | 0 | 6390 distinct nonmissing values |
-| `url` | string | Source or download URL; no authentication credentials. | 0 | 5443 distinct nonmissing values |
-| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 5646 distinct nonmissing values |
-| `sha256` | string | SHA-256 content checksum of retrieved bytes. | 0 | 5012 distinct nonmissing values |
+| `path` | string | Repository-relative cache path; private raw contents are not redistributed. | 0 | 6396 distinct nonmissing values |
+| `url` | string | Source or download URL; no authentication credentials. | 0 | 5449 distinct nonmissing values |
+| `retrieved_at` | string | UTC retrieval timestamp from cached response provenance. | 0 | 5652 distinct nonmissing values |
+| `sha256` | string | SHA-256 content checksum of retrieved bytes. | 0 | 5016 distinct nonmissing values |
 | `bytes` | integer | Response size in bytes. | 0 | 129 to 2.92204e+09 |
 
 ## source_metadata.csv
@@ -611,25 +611,25 @@ One row: source reading/disposition. Rows: 714. Key: source_id. Producer: `i4r_r
 | `related_sources` | string | Semicolon-separated linked source IDs or reviewer cross-references. | 499 | 198 distinct nonmissing values |
 | `assessment_eligibility` | string | yes/no/unresolved: whether the source is an eligible article-specific assessment for the coverage denominator. | 0 | no; unresolved; yes |
 | `assessment_resolved` | string | yes/no: explicit final adjudication for the coverage gate; default no. | 0 | no; yes |
-| `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 634 distinct nonmissing values |
-| `adjudicated_disposition` | string | Independent source-level classification; distinct from verified exposure or paper-wide validity. | 0 | 87 distinct nonmissing values |
-| `adjudication_evidence` | string | Evidence supporting source eligibility, classification and any version equivalence. | 7 | 574 distinct nonmissing values |
-| `adjudication_locator` | string | Document/page/section references supporting independent source adjudication. | 0 | 528 distinct nonmissing values |
-| `adjudication_limitations` | string | Unresolved evidence or limits to source-level adjudication. | 0 | 67 distinct nonmissing values |
+| `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 631 distinct nonmissing values |
+| `adjudicated_disposition` | string | Independent source-level classification; distinct from verified exposure or paper-wide validity. | 0 | 92 distinct nonmissing values |
+| `adjudication_evidence` | string | Evidence supporting source eligibility, classification and any version equivalence. | 7 | 556 distinct nonmissing values |
+| `adjudication_locator` | string | Document/page/section references supporting independent source adjudication. | 0 | 542 distinct nonmissing values |
+| `adjudication_limitations` | string | Unresolved evidence or limits to source-level adjudication. | 0 | 86 distinct nonmissing values |
 
 ## source_units.csv
 
-One row: catalog source-equivalence group, not necessarily one independent article assessment. Rows: 634. Key: canonical_source_id. Producer: `i4r_registry build`.
+One row: catalog source-equivalence group, not necessarily one independent article assessment. Rows: 631. Key: canonical_source_id. Producer: `i4r_registry build`.
 
 | Column | Type | Meaning | Missing | Observed range / values |
 | --- | --- | --- | ---: | --- |
-| `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 634 distinct nonmissing values |
-| `source_ids` | string | Semicolon-separated source listings in a verified version group. | 0 | 634 distinct nonmissing values |
+| `canonical_source_id` | string | Canonical catalog source identifying a verified same-assessment version group; otherwise source_id. | 0 | 631 distinct nonmissing values |
+| `source_ids` | string | Semicolon-separated source listings in a verified version group. | 0 | 631 distinct nonmissing values |
 | `catalog_entries` | integer | Number of catalog listings in a source-assessment unit. | 0 | 1 to 3 |
 | `assessment_eligibility` | string | yes/no/unresolved: whether the source is an eligible article-specific assessment for the coverage denominator. | 0 | no; unresolved; yes |
 | `assessment_resolved` | string | yes/no: explicit final adjudication for the coverage gate; default no. | 0 | no; yes |
-| `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 233 | 67 distinct nonmissing values |
-| `adjudication_conflict` | string | yes if resolved reviewers assign inconsistent dispositions to purported versions. | 0 | no; yes |
+| `disposition` | string | Adjudicated source-assessment category; empty if unresolved. | 233 | 61 distinct nonmissing values |
+| `adjudication_conflict` | string | yes if resolved reviewers assign inconsistent dispositions to purported versions. | 0 | no |
 
 ## sources.csv
 

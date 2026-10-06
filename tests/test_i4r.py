@@ -1249,5 +1249,43 @@ class AssessmentValidationTests(unittest.TestCase):
         self.assertIn("Pagination cycle", failed[0]["detail"])
 
 
+class RetractionRefreshTest(unittest.TestCase):
+    def test_publisher_notice_survives_external_database_refresh(self):
+        import i4r_citations as citations
+        import i4r_registry as registry
+
+        fields = ["doi", "date", "source_url", "notice_doi", "record_id", "dataset_url"]
+        publisher = dict(
+            doi="10.1/publisher",
+            date="2024-01-01",
+            source_url="https://publisher.example/notice",
+            notice_doi="10.1/notice",
+            record_id="",
+            dataset_url="https://publisher.example/notice",
+        )
+        stale = dict(publisher, doi="10.1/stale", dataset_url=citations.RETRACTIONS_URL)
+        payload = (
+            "OriginalPaperDOI,RetractionNature,RetractionDate,RetractionDOI,"
+            "Record ID,URLS\n10.1/database,Retraction,02/01/2024,10.1/new,9,\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            sources, "DATA", Path(tmp)
+        ), patch.object(sources, "fetch", return_value=payload.encode()), patch.object(
+            registry, "build"
+        ):
+            sources.write("articles.csv", [{"doi": "10.1/database"}], ["doi"])
+            sources.write("retractions.csv", [publisher, stale], fields)
+            citations.retractions()
+            found = sources.read("retractions.csv")
+            self.assertEqual(
+                {r["doi"] for r in found}, {"10.1/publisher", "10.1/database"}
+            )
+            self.assertEqual(
+                next(r for r in found if r["doi"] == "10.1/publisher"), publisher
+            )
+            citations.retractions()
+            self.assertEqual(sources.read("retractions.csv"), found)
+
+
 if __name__ == "__main__":
     unittest.main()
