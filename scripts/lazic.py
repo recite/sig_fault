@@ -210,18 +210,24 @@ def build():
     rows = build_rows(survey(), pilot.read_csv(DATA / "metadata.csv"))
     pilot.write_csv(DATA / "articles.csv", rows, list(rows[0]))
     counts = collections.Counter(r["classification"] for r in rows)
+    citation_coverage = DATA / "opencitations/coverage.csv"
+    collected = (
+        sum(r["complete"] == "yes" for r in pilot.read_csv(citation_coverage))
+        if citation_coverage.exists()
+        else 0
+    )
     statuses = dict(
         source_papers=len(rows),
         classification_counts=dict(counts),
         verified_pubmed_identities=len(rows),
         with_doi=sum(bool(r["doi"]) for r in rows),
         audit_year=2017,
-        primary_comparison_papers=sum(r["flagged"] != "" for r in rows),
+        classified_comparison_papers=sum(r["flagged"] != "" for r in rows),
         classified_full_baseline=sum(
             r["flagged"] != "" and r["full_baseline_year"] == "yes" for r in rows
         ),
-        citation_histories=0,
-        estimation_status="pending_citation_collection_and_notice_review",
+        citation_histories=collected,
+        analysis_status_file="data/lazic/analysis_status.json",
         classification_scope=(
             "Published audit assessments, not independent reanalyses "
             "or demonstrated corrected effect sizes"

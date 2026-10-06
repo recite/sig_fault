@@ -16,8 +16,9 @@ Sources: [published audit](https://doi.org/10.1371/journal.pbio.2005282),
 [complete deposited dataset](https://doi.org/10.5523/bris.2uad9gecss2r2ksaujt85gj4a).
 The repository records September 6, 2017 as its publication date; the journal article
 appeared April 4, 2018 and links a preprint. Thus 2018 cannot be treated as the first
-public release of the classifications. The earliest preprint date and whether the
-deposited file has changed since release remain timing checks before estimation.
+public release of the classifications. The official bioRxiv API dates the first preprint to September 2, 2017;
+[the timing record](../../data/lazic/timing.json) preserves that evidence. Whether
+the deposited classifications have changed since release remains a timing check.
 
 ## Data and reproduction
 
@@ -44,7 +45,9 @@ is used. Duplicate DOIs stop the build for review. PMID 22648583 (flagged) and
 
 The [dictionary](dictionary.md) specifies recodes and missing values; the
 [analysis design](design.md) records the comparison before citation collection.
-No citation-effect estimates from this cohort are available yet.
+The [results](results.md) report the primary comparison and sensitivity checks.
+Run `make lazic-analysis` to regenerate them, or `make lazic-synthesis` to include
+the audit in the equal-weight synthesis.
 An [additional primate-research audit](other-audits.md) was inspected, but its
 deposited data omit the article identities needed for citation linkage.
 
@@ -57,3 +60,35 @@ are subject to the source's
 [Non-Commercial Government Licence](https://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/).
 They are not relicensed by this repository. The original bytes are retained, including
 the `Correct_analyis` column spelling and the source readme's inconsistent filenames.
+
+## Citation collection and prior publicity
+
+`make lazic-fetch` collects all 200 targets, including unclear papers and the two
+papers without DOI (queried by PMID). The collector validates each target identity
+and reconciles returned links with the API's reported count. It checkpoints each
+completed target and respects service rate limits. `make lazic` rebuilds the annual
+panel offline; missing histories remain missing. Shared DOI/OMID identities count
+once, and conflicting or absent citation years remain in the work ledger.
+
+The [collection status](../../data/lazic/opencitations/status.json) and
+[coverage records](../../data/lazic/opencitations/coverage.csv) distinguish acquisition
+from estimation readiness. The panel counts all indexed document types. It does not
+infer article/review types or whether a citation endorses the original finding.
+
+The [notice review](../../data/lazic/notice_review.csv) distinguishes authorship,
+affiliation and funding corrections from unresolved notice contents. One paper
+(PMID 23449593) received an explicit public criticism of the same statistical issue
+in May 2013, with a response disputing the criticism. It is excluded from the primary
+first-known-publicity comparison (90 flagged, 45 comparison papers) but retained in
+the full-cohort sensitivity. Two other errata and one editorial remain incompletely
+reviewed; excluding all linked errata is an additional sensitivity, not a claim that
+all errata corrected statistical errors.
+
+The [book-reference review](../../data/lazic/book_review.csv) checks 18 chapter–target
+pairs in the largest inspected families, including three chapters in the 2016
+baseline. Publisher-deposited bibliographies differ and contain the target DOI;
+author lists and chapter page ranges also differ. These are retained as distinct
+citing chapters. Sharing a parent book alone is not grounds for deduplication.
+The wider DOI-family screen is in
+[book_records.csv](../../data/lazic/opencitations/book_records.csv); this screen is
+not an assertion that any listed chapter duplicates another publication.

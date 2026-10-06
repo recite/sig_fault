@@ -1,0 +1,10 @@
+pmid,notice_date,notice_type,classification,source_url,evidence
+23449593,2013-05-17,comment,same_error_publicity,https://pubmed.ncbi.nlm.nih.gov/23687029/,"Criticizes completely randomized analysis of pregnant-female and cage-level assignment. Same-day response disputes criticism; this is a public methodological challenge, not an admitted numerical correction."
+23449593,2014-03-07,erratum,authorship,https://www.sciencemagazinedigital.org/sciencemagazine/07_march_2014?pg=29,"Adds Joram Feldon as author, renumbers affiliations, removes him from acknowledgments."
+23449593,2014-04-11,erratum,funding,https://www.sciencemagazinedigital.org/sciencemagazine/11_april_2014?pg=35,Corrects acknowledgment of Feldon grants. Corrections to other papers on this page do not concern this original.
+25801690,2015-09-08,erratum,affiliation,https://www.nature.com/articles/ijo201577,Corrects Bao and Andrade affiliation to University of Chicago Center for Research Informatics; no numerical correction in this notice.
+22832237,2012,erratum,author_name_metadata,https://pubmed.ncbi.nlm.nih.gov/22832237/,PubMed records reversal of Mouihate/Abdeslam author-name fields. Full notice text and exact day unverified.
+25707689,2015-07-27,erratum,unresolved,https://pubmed.ncbi.nlm.nih.gov/26216019/,"Notice DOI10.1002/bdrb.21148; June2015 issue, July27 online date in publisher/Crossref metadata. Text unavailable; do not infer correction type."
+25638314,2015-10,erratum,unresolved,https://www.sciencedirect.com/science/article/abs/pii/S0301562915004615,"Notice DOI10.1016/j.ultrasmedbio.2015.07.015; issue month known, full correction text and online date unverified."
+23315950,2013,comment,different_issue,https://pmc.ncbi.nlm.nih.gov/articles/PMC3695066/,Full editorial questions separation of maternal weight gain from diet composition and offspring feeding behavior; no pseudoreplication criticism.
+23940196,2013-08-12,comment,unresolved,https://pubmed.ncbi.nlm.nih.gov/23940200/,"Full editorial inaccessible. Available portions discuss biological mechanisms and pharmacology; no confirmed same-error warning, but screening incomplete."

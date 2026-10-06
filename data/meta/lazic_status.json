@@ -1,0 +1,8 @@
+{
+  "status": "three_audit_descriptive_synthesis",
+  "primary_lazic_contrast": "2016 to 2019, first-known-publicity cohort",
+  "harmonized_lazic_contrast": "2016 to 2018; journal publication occurred in 2018",
+  "weights": "One third per audit on the log ratio-of-ratios scale",
+  "population": "The three assembled audits, not a random sample of publicized errors",
+  "limitations": ["Different error definitions, databases and document types remain.", "Public availability is not verified reader exposure.", "Only three audits; intervals omit across-audit generalization uncertainty.", "The Lal formal-publication contrast follows earlier circulation.", "Lazic counts distinct indexed citing works of all types, including book chapters."]
+}

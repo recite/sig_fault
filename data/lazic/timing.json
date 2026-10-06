@@ -1,0 +1,27 @@
+{
+  "audit_year": 2017,
+  "preprint_date": "2017-09-02",
+  "dataset_publication_date": "2017-09-06",
+  "journal_publication_date": "2018-04-04",
+  "preprint_doi": "10.1101/183962",
+  "journal_doi": "10.1371/journal.pbio.2005282",
+  "dataset_doi": "10.5523/bris.2uad9gecss2r2ksaujt85gj4a",
+  "preprint_source": {
+    "path": "private-data/lazic/lazic_preprint.json",
+    "url": "https://api.biorxiv.org/details/biorxiv/10.1101/183962/na/json",
+    "retrieved_at": "2026-10-06T07:16:05.176928+00:00",
+    "sha256": "02abb723c6bc59c000fddbc0777ce0c569be570274726235f08d905497865a3a",
+    "bytes": 2186
+  },
+  "remaining_check": "Repository resource creation and byte size support the 2017 release. No historical checksum or file-version log is supplied, so exact byte identity across time is not independently established.",
+  "repository_metadata_source": {
+    "path": "private-data/lazic/lazic_repository_metadata.json",
+    "url": "https://data.bris.ac.uk/data/api/3/action/package_show?id=2uad9gecss2r2ksaujt85gj4a",
+    "retrieved_at": "2026-10-06T07:19:11.806606+00:00",
+    "sha256": "d86341420e780169a8f623f4559414ed99b7a6dcb7aa6edf8bbcc9684b3c85b6",
+    "bytes": 7437
+  },
+  "data_resource_created": "2017-09-06T18:30:18.504254",
+  "data_resource_size": 4664,
+  "data_resource_last_modified": null
+}

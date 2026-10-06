@@ -32,23 +32,31 @@ def identifiers(value, prefix):
     return {t.removeprefix(prefix) for t in value.split() if t.startswith(prefix)}
 
 
-def validate_response(rows, count, doi):
+def validate_response(rows, count, doi, scheme="doi"):
+    if scheme not in {"doi", "pmid"}:
+        raise ValueError("Unsupported target identifier scheme")
     if not isinstance(rows, list) or len(rows) != count:
         raise ValueError("Citation-list length differs from reported count")
     pilot.unique(rows, ["oci"])
     for row in rows:
-        cited = {pilot.normalize_doi(d) for d in identifiers(row["cited"], "doi:")}
+        cited = identifiers(row["cited"], scheme + ":")
+        if scheme == "doi":
+            cited = {pilot.normalize_doi(d) for d in cited}
         if doi not in cited:
-            raise ValueError("Citation target DOI differs from queried original")
+            raise ValueError(
+                f"Citation target {scheme.upper()} differs from queried original"
+            )
         if not identifiers(row["citing"], "omid:"):
             raise ValueError("Citing work lacks OpenCitations identity")
         if row["creation"] and not re.fullmatch(r"\d{4}(-\d{2}){0,2}", row["creation"]):
             raise ValueError("Unexpected citation date representation")
 
 
-def fetch_links(pid, doi, cache=None):
+def fetch_links(pid, doi, cache=None, scheme="doi"):
+    if scheme not in {"doi", "pmid"}:
+        raise ValueError("Unsupported target identifier scheme")
     cache = CACHE if cache is None else cache
-    url = BASE + "citations/doi:" + doi
+    url = BASE + "citations/" + scheme + ":" + doi
     csv_path = cache / (pid + "_opencitations.csv")
     if not csv_path.exists():
         try:

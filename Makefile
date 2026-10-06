@@ -11,22 +11,22 @@ analysis:
 figures: analysis
 	$(RSCRIPT) scripts/figures.R
 
-tables: analysis i4r-aggregate
+tables: analysis i4r-aggregate lazic-analysis
 	$(RSCRIPT) scripts/tables.R
 
 manuscript:
 	cd ms && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 
-paper: figures tables synthesis
+paper: figures tables synthesis lazic-synthesis
 	$(MAKE) manuscript
 
 format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic.py tests/test_lazic.py
-	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic.py tests/test_lazic.py
-	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic.py tests/test_lazic.py
+	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
+	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
+	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
@@ -161,7 +161,20 @@ external-test: external
 
 .PHONY: lazic lazic-test
 lazic:
+	python3 scripts/lazic_citations.py build
 	python3 scripts/lazic.py build
 
 lazic-test: lazic
-	python3 -m unittest discover -s tests -p 'test_lazic.py'
+	python3 -m unittest discover -s tests -p 'test_lazic*.py'
+
+.PHONY: lazic-fetch
+lazic-fetch:
+	python3 scripts/lazic_citations.py fetch
+
+.PHONY: lazic-analysis lazic-synthesis
+lazic-analysis: lazic
+	$(RSCRIPT) scripts/lazic_analysis.R
+	python3 scripts/lazic_report.py
+
+lazic-synthesis: lazic-analysis synthesis
+	$(RSCRIPT) scripts/lazic_synthesis.R

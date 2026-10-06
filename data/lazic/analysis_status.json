@@ -1,0 +1,13 @@
+{
+  "status": "estimated_first_known_publicity_comparison",
+  "baseline": 2016,
+  "post_year": 2019,
+  "flagged_papers": 90,
+  "comparison_papers": 45,
+  "primary_citation_source": "OpenCitations distinct indexed works, all types",
+  "prior_warning_excluded": [
+    "23449593"
+  ],
+  "interpretation": "Descriptive contrast; causal interpretation requires comparable counterfactual trajectories",
+  "synthesis": "data/meta/lazic_synthesis.csv"
+}

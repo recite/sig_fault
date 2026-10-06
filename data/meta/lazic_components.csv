@@ -1,0 +1,13 @@
+"lal_diagnostic","lazic_horizon","audit","estimate","se","df"
+"Effective F below 10","first_followup_year","Nieuwenhuis",-0.152431656103478,0.12380831127347,152
+"Effective F below 10","first_followup_year","Lal",-0.156828391051407,0.144872834611521,66
+"Effective F below 10","first_followup_year","Lazic",-0.0749914133337363,0.138078599137584,126
+"Inferential sensitivity","first_followup_year","Nieuwenhuis",-0.152431656103478,0.12380831127347,152
+"Inferential sensitivity","first_followup_year","Lal",0.21430361717338,0.143800141178238,54
+"Inferential sensitivity","first_followup_year","Lazic",-0.0749914133337363,0.138078599137584,126
+"Effective F below 10","primary","Nieuwenhuis",-0.152431656103478,0.12380831127347,152
+"Effective F below 10","primary","Lal",-0.156828391051407,0.144872834611521,66
+"Effective F below 10","primary","Lazic",-0.0357646919912931,0.129659797491593,124
+"Inferential sensitivity","primary","Nieuwenhuis",-0.152431656103478,0.12380831127347,152
+"Inferential sensitivity","primary","Lal",0.21430361717338,0.143800141178238,54
+"Inferential sensitivity","primary","Lazic",-0.0357646919912931,0.129659797491593,124

@@ -1,0 +1,14 @@
+{
+  "target_papers": 200,
+  "complete_histories": 200,
+  "complete_by_classification": {
+    "pseudoreplication": 91,
+    "correct_analysis": 45,
+    "unclear": 64
+  },
+  "raw_edges": 8818,
+  "distinct_citing_works": 8818,
+  "uncertain_date_works": 70,
+  "measurement": "All indexed document types; shared DOI/OMID records deduplicated",
+  "analysis_status_file": "data/lazic/analysis_status.json"
+}

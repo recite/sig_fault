@@ -11,7 +11,9 @@ Did citations to papers classified as pseudoreplication grow less after the audi
 became public than citations to papers the same audit classified as correctly
 analyzed? The target is the average change attributable to publicizing the problem
 among the flagged papers. The observed contrast is the difference in equal-paper
-mean annual citation changes between 91 flagged and 45 comparison papers.
+mean annual citation changes between flagged and comparison papers with no identified prior public warning
+about the same statistical issue. The original assessed cohort has 91 flagged
+and 45 comparison papers; the primary cohort currently has 90 and 45.
 
 The source sampled 200 eligible studies from a PubMed search of 500 abstracts,
 screening and replenishing the sample until 200 eligible papers were included.
@@ -31,10 +33,15 @@ excluded from the primary contrast. Also report the 2019–2021 average as a
 longer-window sensitivity, keeping the same papers.
 
 The dataset's release date establishes public availability, not readership.
-Verify the earliest preprint date and file-version history before finalizing
-timing. PubMed lists prior errata for five papers (two flagged, one correct, two
-unclear). Review those notices and retain separate dates and types. Main sample
-retains the source classifications; report a sensitivity excluding all papers with
+The official bioRxiv API verifies September 2, 2017 as the first preprint date.
+Verify the deposited file-version history before finalizing timing. PubMed lists prior errata for five papers (two flagged, one correct, two
+unclear). Review those notices and retain separate dates and types. The primary sample excludes PMID 23449593: a public Science comment dated
+May 17, 2013 already raised the incorrect treatment of pregnant-female and cage-level
+assignment. The authors disputed that criticism in a same-day reply. This is first
+*known* publicity; a notice search cannot prove no earlier unlinked criticism exists.
+The [prior-warning ledger](../../data/lazic/prior_warnings.csv) supplies the evidence.
+Keep the original classifications and all 136 papers in a repeated-publicity
+sensitivity. Also report a sensitivity excluding all papers with
 pre-audit erratum links, with a further evidence-based exclusion if a notice already
 publicized the assessed statistical problem. Do not relabel a name correction as
 a substantive statistical error.
@@ -47,13 +54,14 @@ Field, topic, journal, paper age and design quality could produce different grow
 even without the audit. Correctly analyzed papers may themselves benefit from the
 public assessment, so the contrast need not isolate the effect against no publicity.
 
-Design complexity differs: 37/91 flagged and 7/45 comparison papers used split-unit
+In the full classified cohort, design complexity differs: 37/91 flagged and 7/45 comparison papers used split-unit
 designs. Report a split-unit-stratified difference in changes, averaging stratum
 contrasts using the flagged papers' stratum shares. Use article-level resampling
 within classification and stratum for its interval, preserving these target shares.
 This addresses one observable imbalance; it does not establish identification.
 
-Plot a fixed-cohort pretrend for papers published by 2013 (51 flagged, 26 correct),
+Plot a fixed-cohort pretrend for papers published by 2013 (51 flagged, 26 correct before the prior-warning exclusion;
+50 flagged and 26 correct afterward),
 using 2014–2016, and estimate the main contrast within that same restricted cohort.
 Never treat prepublication years as observed citation zeros. Report the size and
 uncertainty of pretrend differences, not a pass/fail significance test. Differing
@@ -92,8 +100,21 @@ effect or continued citations as proof that readers ignored the error. Citations
 may concern unaffected results or criticize the paper; aggregate links cannot
 measure unqualified reliance.
 
+For the existing synthesis of the year before versus the year after a warning,
+also estimate 2016 versus 2018. That is the year after the first public release,
+but the year of journal publication; it is a harmonized secondary contrast, not
+a replacement for the primary 2019 follow-up. Report the horizon difference.
+
 This is one audit-level contribution to synthesis, labeled source-assessed
 pseudoreplication. Do not count its individual papers as independent publicization
 events, pool the unclear group into controls, or equate these assessments with
 independently verified material numerical corrections. Additional models and timing
 changes must be labeled and explained rather than selected by their results.
+
+## Eligibility amendment before estimation
+
+The initial plan retained all 136 classified papers. Primary-notice review identified
+a 2013 warning about the same problem in PMID 23449593. Before estimating citation
+effects, the primary sample was restricted to papers without an identified prior
+warning, preserving the original full-cohort contrast as a sensitivity. Citation
+collection had begun, but no treatment-effect estimates had been examined.
