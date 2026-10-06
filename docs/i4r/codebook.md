@@ -121,7 +121,7 @@ One row: catalog source with reviewed independent-assessment enumeration status;
 | `source_id` | string | Identifier for a catalog listing; not an original article or unique file. | 0 | 714 distinct nonmissing values |
 | `status` | string | Stage-specific observed disposition; see values and the construction contract. | 0 | fully_enumerated; non_assessment; supporting_document; unresolved |
 | `unit_ids` | string | Semicolon-separated independent assessment IDs whose source linkage has been verified; empty for non-assessment or unenumerated sources. | 122 | 438 distinct nonmissing values |
-| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 478 distinct nonmissing values |
+| `evidence` | string | Source pointer or documented identity/link decision. | 0 | 491 distinct nonmissing values |
 | `limitations` | string | Scope limits of the source adjudication. | 44 | 36 distinct nonmissing values |
 
 ## assessment_sources.csv

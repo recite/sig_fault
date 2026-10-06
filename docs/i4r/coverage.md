@@ -16,7 +16,7 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Assessment records explicitly enumerated | 500 |
 | Assessment records with unresolved reviewer-team equivalence | 37 |
 | Articles in those enumerated assessments | 478 |
-| Catalog entries with assessment scope accounted for | 584 |
+| Catalog entries with assessment scope accounted for | 598 |
 | ZIP archives inventoried | 62 |
 | Root ZIP files listed | 62 |
 | Archive members, including code/data/plots | 3952 |
@@ -46,10 +46,10 @@ This review asks how many assessments each source contains and which versions be
 
 | Status | Catalog entries |
 | --- | ---: |
-| fully enumerated | 513 |
+| fully enumerated | 527 |
 | non assessment | 45 |
 | supporting document | 26 |
-| unresolved | 130 |
+| unresolved | 116 |
 
 ## Initial screening depth
 

@@ -978,11 +978,11 @@
   },
   {
     "source_id": "report_07d5d343c603",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddaac9e09000ebbde57c"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Coercive Contract Enforcement: Law and the Labor Market in Nineteenth Century Industrial Britain. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddaac9e09000ebbde57c. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1032,17 +1032,20 @@
         "report_07d5d343c603_6602ddaac9e09000ebbde57c",
         "report_07d5d343c603_6602ddaeb3a1e300f97def18",
         "report_07d5d343c603_689cbae76deea60631bc0a80"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddaac9e09000ebbde57c",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_0f5d0a6ce514",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddaaa8fcbc010736e6b8"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Commercial Imperialism? Political Influence and Trade during the Cold War. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddaaa8fcbc010736e6b8. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1092,17 +1095,20 @@
         "report_0f5d0a6ce514_689cbada9d9b5804761f1ff4",
         "report_0f5d0a6ce514_6602ddb1c9e09000f4bddc78",
         "report_0f5d0a6ce514_67408cf48d42fcc5f496c79d"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddaaa8fcbc010736e6b8",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_117ccd13ae51",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddad9dc8ef00f88981bb"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Interaction, Stereotypes, and Performance: Evidence from South Africa. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddad9dc8ef00f88981bb. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1152,9 +1158,12 @@
         "report_117ccd13ae51_6602ddb1c9e09000f4bddc78",
         "report_117ccd13ae51_67408cf48d42fcc5f496c79d",
         "report_117ccd13ae51_689cbada9d9b5804761f1ff4"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddad9dc8ef00f88981bb",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_2ba6e124788d",
@@ -1192,11 +1201,11 @@
   },
   {
     "source_id": "report_32899d883e60",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddafa8fcbc00f236e905"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names The Out of Africa Hypothesis, Human Genetic Diversity, and Comparative Economic Development. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddafa8fcbc00f236e905. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1246,17 +1255,20 @@
         "report_32899d883e60_688873fc307d62b882234157",
         "report_32899d883e60_688873c9c093c96d1c256d5e",
         "report_32899d883e60_689cbadebbdc58ba53d5a0fb"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddafa8fcbc00f236e905",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_38b5d014475d",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_688a572fce90943bc92341d3"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Self-Enforcing Trade Agreements: Evidence from Time-Varying Trade Policy. Its target-specific report and reviewer team are identified in w7vpu_assessment_688a572fce90943bc92341d3. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1306,9 +1318,12 @@
         "report_38b5d014475d_6602ddacc9e09000ebbde57e",
         "report_38b5d014475d_689cbacd33dc6bbf8c13c4a3",
         "report_38b5d014475d_65aa1753ebe5e60092f5e7a1"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_688a572fce90943bc92341d3",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_3f405379726e",
@@ -1329,11 +1344,11 @@
   },
   {
     "source_id": "report_485c06b26373",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddacc9e09000ebbde57e"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Going to a Better School: Effects and Behavioral Responses. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddacc9e09000ebbde57e. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1383,17 +1398,20 @@
         "report_485c06b26373_6602ddad9dc8ef00f88981bb",
         "report_485c06b26373_689cbae546c026ea11bc0de6",
         "report_485c06b26373_689cbadc14edc3b7e0d5a231"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddacc9e09000ebbde57e",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_4968d35b0fba",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddb1b3a1e300f97def1a"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Partisanship and Fiscal Policy in Economic Unions: Evidence from US States. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddb1b3a1e300f97def1a. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1443,17 +1461,20 @@
         "report_4968d35b0fba_689cbad514edc3b7e0d5a22f",
         "report_4968d35b0fba_688a572fce90943bc92341d3",
         "report_4968d35b0fba_689cbab5dbb82738361f1fc4"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddb1b3a1e300f97def1a",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_5437ba586f46",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddb1d9031c00ef03a99b"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Religious Festivals and Economic Development: Evidence from the Timing of Mexican Saint Day Festivals. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddb1d9031c00ef03a99b. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1503,9 +1524,12 @@
         "report_5437ba586f46_689cbad514edc3b7e0d5a22f",
         "report_5437ba586f46_6807615e4f254e89a1b7d2da",
         "report_5437ba586f46_649c947567aff80dfaedfdba"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddb1d9031c00ef03a99b",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_54760f3ce87e",
@@ -1529,11 +1553,11 @@
   },
   {
     "source_id": "report_550084c248dc",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddb3a8fcbc010736e6ca"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Retail Pharmacies and Drug Diversion During the Opioid Epidemic. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddb3a8fcbc010736e6ca. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1583,17 +1607,20 @@
         "report_550084c248dc_689cbab877543ca1933ccd65",
         "report_550084c248dc_689cbae146c026ea11bc0de4",
         "report_550084c248dc_689cbad75b1a416a873cce1a"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddb3a8fcbc010736e6ca",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_573bd43586da",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddabb3a1e300ec7df9ff"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Convex Supply Curves. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddabb3a1e300ec7df9ff. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1643,9 +1670,12 @@
         "report_573bd43586da_6602ddb1b3a1e300f97def1a",
         "report_573bd43586da_689cbae42674356d821f21ac",
         "report_573bd43586da_6602ddb49dc8ef010089875e"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddabb3a1e300ec7df9ff",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_65803781fe9e",
@@ -1667,11 +1697,11 @@
   },
   {
     "source_id": "report_76e1bc253d3c",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddb1c9e09000f4bddc78"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Persuasion through Slanted Language: Evidence from the Media Coverage of Immigration. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddb1c9e09000f4bddc78. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1721,9 +1751,12 @@
         "report_76e1bc253d3c_688873fc307d62b882234157",
         "report_76e1bc253d3c_689cbadebbdc58ba53d5a0fb",
         "report_76e1bc253d3c_688873c9c093c96d1c256d5e"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddb1c9e09000f4bddc78",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_83fc3494a79a",
@@ -1762,11 +1795,11 @@
   },
   {
     "source_id": "report_859116e7eb38",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddabb3a1e300e07df62d"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Discretionary Tax Changes and the Macroeconomy: New Narrative Evidence from the United Kingdom. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddabb3a1e300e07df62d. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1816,9 +1849,12 @@
         "report_859116e7eb38_689cbae146c026ea11bc0de4",
         "report_859116e7eb38_689cbad75b1a416a873cce1a",
         "report_859116e7eb38_6602ddafa8fcbc00f236e905"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddabb3a1e300e07df62d",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_95553d627471",
@@ -1839,11 +1875,11 @@
   },
   {
     "source_id": "report_b38dbf8f76d0",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddaeb3a1e300f97def18"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names The Effect of Language on Economic Behavior: Evidence from Savings Rates, Health Behaviors, and Retirement Assets. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddaeb3a1e300f97def18. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -1893,9 +1929,12 @@
         "report_b38dbf8f76d0_689cbadc14edc3b7e0d5a231",
         "report_b38dbf8f76d0_6602ddad9dc8ef00f88981bb",
         "report_b38dbf8f76d0_689cbae546c026ea11bc0de6"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddaeb3a1e300f97def18",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_b600ae8b75e9",
@@ -2030,11 +2069,11 @@
   },
   {
     "source_id": "report_ec78c1f06296",
-    "status": "unresolved",
+    "status": "fully_enumerated",
     "unit_ids": [
       "w7vpu_assessment_6602ddacb3a1e300ec7dfa01"
     ],
-    "evidence": "Shared w7vpu inventory has93attachments:45 PDFs include17 distinct article reports,17 preanalysis plans,6 author replies, survey/PAP/replication instructions. All17 report units have independently been identified in assessment_inventory. This catalog row names one article; its current bridge does not declare all17 as assessment_source or aggregate_context.",
+    "evidence": "This catalog listing names Innovation and Institutional Ownership. Its target-specific report and reviewer team are identified in w7vpu_assessment_6602ddacb3a1e300ec7dfa01. The shared project contains 17 distinct article assessments, all separately enumerated under aggregate source dp_124; unrelated reports in that project are not additional assessments of this catalog target.",
     "evidence_locator": {
       "project_url": "https://osf.io/w7vpu/files/osfstorage",
       "indexed_attachment_count": 93,
@@ -2084,9 +2123,12 @@
         "report_ec78c1f06296_689cbadc14edc3b7e0d5a231",
         "report_ec78c1f06296_6602ddad9dc8ef00f88981bb",
         "report_ec78c1f06296_689cbae546c026ea11bc0de6"
-      ]
+      ],
+      "target_report_document_id": "report_76e1bc253d3c_6602ddacb3a1e300ec7dfa01",
+      "target_report_pdf_page": 1,
+      "aggregate_scope_source": "dp_124"
     },
-    "limitations": "Project content is enumerated, but current catalog-to-unit relationship does not support closing this source over all17 units. verified_retrieval_alias is acquisition provenance, not assessment membership. No links added merely to improve coverage."
+    "limitations": "Scope describes the named catalog target, not every article in the shared retrieval project. This does not change error classification, public-disclosure timing, or the number of independent assessments."
   },
   {
     "source_id": "report_ed15002db08e",
