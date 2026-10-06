@@ -1,0 +1,12 @@
+paper_id,target_doi,api_count,pages,complete,origin,detail
+nw_6,10.1038/nn.2599,812,9,yes,frozen_pilot,
+nw_37,10.1038/nature09263,652,7,yes,frozen_pilot,
+nw_53,10.1016/j.neuron.2010.08.012,134,2,yes,frozen_pilot,
+nw_67,10.1523/jneurosci.0693-10.2010,39,1,yes,frozen_pilot,
+nw_74,10.1523/jneurosci.0915-10.2010,125,2,yes,frozen_pilot,
+nw_84,10.1038/nature08389,1217,13,yes,frozen_pilot,
+nw_97,10.1126/science.1168878,1283,13,yes,frozen_pilot,
+nw_105,10.1016/j.neuron.2009.11.016,406,5,yes,frozen_pilot,
+nw_122,10.1523/jneurosci.1708-09.2009,25,1,yes,frozen_pilot,
+nw_128,10.1523/jneurosci.5773-08.2009,29,1,yes,frozen_pilot,
+nw_1,10.1038/nn.2682,0,0,no,full_roster,api.openalex.org rate limit: resume after time in api.openalex.org_anonymous_retry_after.json

@@ -33,7 +33,7 @@ make check
 
 `make restore` installs the packages pinned in `renv.lock`. `make check` reads the original local data, regenerates results, figures, tables, this README, and the PDF, and runs linting and tests. After dependency installation, the analysis requires no network access. No Docker is needed.
 
-For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make lint`, or `make test`. Edit the README’s prose in `docs/README.in.md`; numerical values come from the analysis. Edit the paper in `ms/main.tex`.
+For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make synthesis`, `make lint`, or `make test`. Edit the README’s prose in `docs/README.in.md`; numerical values come from the analysis. Edit the paper in `ms/main.tex`.
 
 ## Files
 
@@ -41,7 +41,11 @@ The [I4R extension](docs/i4r/README.md) builds a sourced registry of significant
 
 The [extension pilot](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding are still in progress; it does not yet provide estimates of continued reliance.
 
-The [Lal et al. extension](docs/lal/README.md) applies the citation-trajectory analysis to all 67 papers in a political-science IV audit. It reports mean and median paths, article fixed-effects estimates, and sensitivity to diagnostic definitions, timing, and the unit counted as a citing publication. The [multi-audit strategy](docs/multiple-audits.md) sets out how to extend these comparisons across critiques.
+The [Lal et al. extension](docs/lal/README.md) applies the citation-trajectory analysis to all 67 papers in a political-science IV audit. It reports mean and median paths, article fixed-effects estimates, and sensitivity to diagnostic definitions, timing, and the unit counted as a citing publication. The manuscript now includes this extension: its conclusions depend on the diagnostic and baseline year, so it does not establish a consistent citation penalty. The [multi-audit strategy](docs/multiple-audits.md) sets out how to extend these comparisons across critiques.
+
+The [Nieuwenhuis source comparison](docs/nieuwenhuis/README.md) links every original assessment to a verified article DOI and compares historical Web of Science counts with available OpenAlex histories for the same papers. The current paired sample contains only flagged papers; it can reveal source discrepancies but cannot yet compare the databases’ estimates of the publicity effect.
+
+`make synthesis` generates [comparable one-year contrasts](data/meta/audit_contrasts.csv) for the completed cohorts and the manuscript’s IV-audit table. Alternative diagnostic definitions from the same audit are dependent comparisons. A pooled estimate awaits the remaining citation collection; the [synthesis status](data/meta/status.json) records the outstanding differences in timing, measurement, and error definitions.
 
 | Path | Contents |
 | --- | --- |

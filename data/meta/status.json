@@ -1,0 +1,6 @@
+{
+  "status": "study_specific_estimates_available_synthesis_pending",
+  "estimand": "Study-specific log ratio of flagged and comparison groups' post/pre citation ratios from the full calendar year preceding the warning year to the year following it.",
+  "limitations": ["Historical Nieuwenhuis cohort includes partial publication-year baselines.", "Database and document-type harmonization remains incomplete.", "Lal formal publication followed earlier circulation; diagnostics differ from verified errors.", "I4R matched citation panels remain incomplete."],
+  "pooling_rule": "Display study-specific contrasts first. Multiple diagnostics from one audit are dependent alternatives, not independent studies. No pooled estimate is emitted at this stage."
+}

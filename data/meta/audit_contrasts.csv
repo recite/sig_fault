@@ -1,0 +1,7 @@
+"audit","diagnostic","source","sample","pre_year","post_year","estimate","se","df","percent","lower","upper","n_flagged","n_comparison"
+"Nieuwenhuis","Interaction-test error","Web of Science","Historical cohort",2010,2012,-0.152431656103478,0.12380831127347,152,-14.1382426778237,-32.7692184730878,9.65574403595508,76,77
+"Nieuwenhuis","Interaction-test error","Web of Science","2009 publication cohort",2010,2012,-0.0883172986282812,0.102251965971485,90,-8.45296468528887,-25.2827110982613,12.1676093726407,44,47
+"Lal","Effective F below 10","OpenAlex articles/reviews","All assessed papers",2023,2025,-0.156828391051407,0.144872834611521,66,-14.5149253731343,-35.9865096363948,14.1587178335706,8,59
+"Lal","Inferential sensitivity","OpenAlex articles/reviews","At least one analytically significant estimate",2023,2025,0.21430361717338,0.143800141178238,54,23.8998778998779,-7.13267343929736,65.302268430979,11,44
+"Lal","Either diagnostic","OpenAlex articles/reviews","All assessed papers",2023,2025,0.111483532454777,0.134777206580894,66,11.7935334203277,-14.5815308934003,46.3125509660569,17,50
+"Lal","AR-only sensitivity","OpenAlex articles/reviews","At least one analytically significant estimate",2023,2025,-0.579270399870627,0.202249303956893,54,-43.969298245614,-62.6469583168132,-15.952238489267,3,52

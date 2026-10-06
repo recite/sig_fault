@@ -9,14 +9,17 @@
 \setstretch{1.15}
 \setlength{\emergencystretch}{2em}
 \input{../tabs/macros.tex}
+\input{../tabs/lal_macros.tex}
 \title{Significant Error:\\Citations to Research With Publicized Statistical Errors}
 \author{Ken Cor \and Gaurav Sood}
 \date{October 2026}
 \hypersetup{pdfauthor={Ken Cor and Gaurav Sood},pdftitle={Significant Error: Citations to Research With Publicized Statistical Errors}}
+\widowpenalty=10000
+\clubpenalty=10000
 \begin{document}
 \maketitle
 \begin{abstract}
-\noindent Publicizing a statistical error could sharply reduce reliance on affected papers or prompt researchers to qualify their citations. We examine both responses after a 2011 critique of a common mistake in neuroscience: inferring that two effects differ because one is statistically significant and the other is not. Papers flagged for the mistake continued to receive citations well beyond a handful of highly cited cases. Their median annual citations rose from \MedianFlaggedBefore{} in 2010 to \MedianFlaggedMin--\MedianFlaggedMax{} during 2012--2015; comparison papers rose from \MedianComparisonBefore{} to \MedianComparisonMin--\MedianComparisonMax. In a separate sample of citations to flagged papers, \Nonack{} of \Rated{} valid completed ratings recorded no acknowledgment of concerns. These findings document widespread continued use with little recorded qualification. Comparisons with unflagged papers leave the size of any citation penalty uncertain; continued citation does not establish that publicity had no effect.
+\noindent Publicizing a statistical error could sharply reduce reliance on affected papers or prompt researchers to qualify their citations. We examine both responses after a 2011 critique of a common mistake in neuroscience: inferring that two effects differ because one is statistically significant and the other is not. Papers flagged for the mistake continued to receive citations well beyond a handful of highly cited cases. Their median annual citations rose from \MedianFlaggedBefore{} in 2010 to \MedianFlaggedMin--\MedianFlaggedMax{} during 2012--2015; comparison papers rose from \MedianComparisonBefore{} to \MedianComparisonMin--\MedianComparisonMax. In a separate sample of citations to flagged papers, \Nonack{} of \Rated{} valid completed ratings recorded no acknowledgment of concerns. These findings document widespread continued use with little recorded qualification. Comparisons with unflagged papers leave the size of any citation penalty uncertain; continued citation does not establish that publicity had no effect. An extension to an instrumental-variables audit in political science finds citation changes that differ across diagnostic definitions and baseline years, limiting a common interpretation across critiques.
 \end{abstract}
 \vspace{1em}
 \noindent\small We thank Danielle Portnoy and Xiaoran Huang for research assistance, and Andrew Gelman, Kabir Khanna, and Daniel Stone for comments. Replication materials: \url{https://github.com/recite/sig_fault}.\normalsize
@@ -59,6 +62,29 @@ Allowing citation trajectories to differ by journal and publication cohort produ
 The archived citation-context sample contains \CodingN{} relationships selected after 2011, including \PartialYear{} from the incomplete 2016 export. All concern citations to flagged papers. Of \Rated{} valid completed ratings, \Nonack{} recorded no acknowledgment of concerns and \Ack{} recorded acknowledgment. Unqualified citation was therefore common in the observed sample. The protocol records any concern about the cited paper, not only the specific interaction error.
 
 A citation without criticism need not endorse the faulty inference. It may use another finding, a method, or background information. Nor do the codes reveal whether the authors recognized the mistake. Because the coding sample covers only the post-publicity period, it establishes the rarity of recorded qualifications after publicity, not how their frequency changed. Appendix~\ref{app:data} reports missing ratings and uncertainty.
+
+\section{Additional evidence from an instrumental-variables audit}
+A second methodological critique permits a comparison across fields and statistical problems. \citet{lal2024} reanalyze instrumental-variable designs in \LalPapers{} political-science papers. We recover citation histories for that entire assessed-paper cohort. These classifications concern instrument strength and sensitivity of inference; they do not establish that the original substantive conclusions are false. The comparison therefore extends the citation design to adverse diagnostics while keeping that distinction from demonstrated errors explicit.
+
+We examine two main classifications. The first flags an effective first-stage $F$ below 10, a screening threshold rather than a universal criterion for weak instruments. The second flags a reported estimate that is significant at $p<.05$ under the archived analytic test but not under the archived Anderson--Rubin or applicable $tF$ procedure. This second comparison is restricted to papers with at least one analytically significant estimate. A paper satisfies a diagnostic if any of its assessed designs does. Table~\ref{tab:lal} also reports their union and the narrower Anderson--Rubin comparison; these overlapping definitions are alternative analyses of one audit.
+
+The audit appeared online in May 2024, but an earlier manuscript is dated July 2021. We compare 2023 with 2025 and omit 2024. This contrast concerns citation changes around formal publication, not the effect of first exposure to previously unknown criticism. We count OpenAlex articles and reviews, deduplicate within original-paper citation histories, retain observed zero years, and fit the same article/year fixed-effects Poisson specification with article-clustered uncertainty. All included papers were published before the baseline year. Appendix~\ref{app:extensions} describes counting and diagnostic checks.
+
+\begin{table}[htbp]
+\centering
+\caption{Citation changes around the 2024 instrumental-variables audit}
+\label{tab:lal}
+\small
+\input{../tabs/lal_summary.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+Change is $100(e^{\widehat\beta}-1)$, comparing flagged and comparison papers' 2025/2023 citation ratios. Intervals use article-clustered covariance and $t_{G-1}$ critical values. The inferential-sensitivity and AR-only rows restrict the comparison population to papers with an analytically significant estimate. The rows overlap and are not independent studies. AR-only inference is especially fragile because only \LalARCount{} papers meet that diagnostic.
+\end{minipage}
+\end{table}
+
+Papers below the $F$ threshold received an average of \LalWeakBefore{} citations in 2023 and \LalWeakAfter{} in 2025; their median rose from \LalWeakMedianBefore{} to \LalWeakMedianAfter. Papers meeting the broader inferential-sensitivity definition rose from \LalSensitiveBefore{} to \LalSensitiveAfter{} citations on average, while their median remained \LalSensitiveMedianBefore. Continued citation thus appears under both definitions, but the relative changes differ: \LalWeakChange\% for the weak-instrument screen and \LalSensitiveChange\% for inferential sensitivity. On a fixed older cohort, moving the baseline from 2023 to 2022 changes the weak-instrument estimate from \LalWeakOlderBaseline\% to \LalWeakAlternate\%, and the sensitivity estimate from \LalSensitiveOlderBaseline\% to \LalSensitiveAlternate\%.
+
+These estimates do not support a single, stable citation response across diagnostics. Nor can the studies yet be treated as interchangeable measurements of a common publicity effect: the neuroscience study concerns a general warning, whereas the IV audit assesses named designs and circulated before formal publication. The historical neuroscience exports and the IV citation histories also come from different databases. A comparison of the same neuroscience papers across databases is needed to assess how that measurement difference affects the contrasts.
 
 \section{Discussion}
 The affected papers continued to circulate after their statistical mistake was publicized. This pattern appears in median as well as mean citations and is accompanied by very little recorded qualification in the context sample. The evidence is inconsistent with wholesale abandonment of these papers. It is less informative about how many citations publicity prevented.
@@ -146,4 +172,13 @@ Differences are flagged minus comparison, in citations per paper per year. Excep
 Removing each source paper in turn gives absolute point estimates from \LeaveMin{} to \LeaveMax. A whole-paper stratified bootstrap gives a percentile interval of [\BootstrapLower, \BootstrapUpper]. Medians describe typical citation levels; neither medians nor these sensitivity checks make error status or publicity exposure random. All analytical choices are retrospective.
 
 Of the distinct citing documents in the main papers' 2010--2015 records, \SharedPercent\% cite more than one study paper. Shared citing documents and related topics can induce dependence across papers. Article clustering and the whole-paper bootstrap do not model those connections. The source review is also a selected set of journals and years, so these comparisons are not probability-sample estimates for all scientific publishing.
+
+\section{Additional-cohort construction and comparability}\label{app:extensions}
+The IV replication archive contains multiple designs for some papers. We retain the design records but assign each paper one citation history and equal weight within its diagnostic group. The repository reproduces the point estimates for the \LalVerifiedDesigns{} designs selected in the separate citation-context pilot. For the Alt design, the instrument is an eight-level factor with seven excluded indicators. Recomputing the joint Anderson--Rubin test with that encoding corrects the archived calculation; its loss-of-significance classification remains the same. The single-instrument $tF$ calculation is inapplicable and does not enter that design's sensitivity classification. These checks do not constitute independent replication of every diagnostic in the full audit.
+
+Document types materially affect the IV comparison. The original broad outcome included preprints, proceedings and book chapters; some books contributed links from numerous chapters and front matter to the same original paper. After observing this problem and the alternative estimates, we selected articles and reviews as the primary outcome. For the weak-instrument screen, the broader count gives \LalWeakBroad\%, compared with \LalWeakChange\% for articles and reviews. This was an outcome-aware measurement revision. The repository retains the broader results and a partial sensitivity that collapses identified Oxford book DOI families; neither procedure resolves all cross-version duplication.
+
+The source-comparison protocol preserves the original neuroscience analysis cohort and compares identical papers and years before considering a pooled result. Exact DOI matches identify shared citing relationships, with each database's publication year retained. Historical exports lack the detailed document-type field needed to impose an identical article/review filter. Missing histories stay missing; a relationship absent from one database is not automatically a false citation. Source discrepancies therefore measure differences between the recorded citation histories rather than bias relative to an assumed ground truth.
+
+For comparison across audits, the repository also reports the contrast between the calendar year before and the calendar year after the warning year, excluding the warning year itself. This uses 2010 and 2012 for neuroscience and 2023 and 2025 for the IV audit. The neuroscience papers published in 2010 have a partial publication-year baseline, so a separate 2009-publication cohort has a complete baseline year. These common-window results remain study-specific; multiple diagnostics from the IV audit are not counted as independent replications of a publicity effect.
 \end{document}

@@ -1,0 +1,8 @@
+{
+  "data/derived/classification.csv": "e44cd51a0996489758f33bb5fd819a7e7690cf94c2089c353623730c76b5d2e4",
+  "data/derived/raw.csv": "834d55f0b332bbbe1405a86eccee10582c43ccf93c956e127ce45b2a823b9e4b",
+  "data/derived/panel.csv": "5994e7939a33838c5874bbecd10089653f4fd8707fc32b6e3f7558bbaea8f31b",
+  "data/pilot/identities.csv": "4708ecff13d32ac5df4af8d463898a86133a85eb0591a61dae7e3a3116d396b2",
+  "data/pilot/coverage.csv": "102845bf28adefd502c4ef636f27136b568a731df0a9217013e688a64db5b45d",
+  "data/pilot/citation_edges.csv": "cfc648a5ae25236a6b3066c51db8a81ca941b86e7ac15b6a1bb4c52830445a28"
+}

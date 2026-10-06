@@ -1,6 +1,6 @@
 RSCRIPT ?= Rscript
 
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test i4r i4r-sources i4r-test
+.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test i4r i4r-sources i4r-test nieuwenhuis nieuwenhuis-fetch nieuwenhuis-test synthesis
 
 restore:
 	$(RSCRIPT) --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
@@ -17,16 +17,16 @@ tables: analysis
 manuscript:
 	cd ms && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 
-paper: figures tables
+paper: figures tables synthesis
 	$(MAKE) manuscript
 
 format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/i4r_*.py tests/test_i4r.py
-	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r.py
-	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r.py
+	python3 -m black --check scripts/i4r_*.py tests/test_i4r.py scripts/nieuwenhuis.py tests/test_nieuwenhuis.py
+	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r.py scripts/nieuwenhuis.py tests/test_nieuwenhuis.py
+	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r.py scripts/nieuwenhuis.py tests/test_nieuwenhuis.py
 	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
@@ -35,6 +35,7 @@ test: analysis
 	$(MAKE) pilot-test
 	python3 -m unittest discover -s tests -p 'test_lal.py'
 	$(MAKE) i4r-test
+	$(MAKE) nieuwenhuis-test
 
 lal:
 	python3 scripts/lal_citations.py registry
@@ -91,3 +92,20 @@ i4r-sources:
 i4r-test: i4r
 	python3 -m unittest discover -s tests -p 'test_i4r.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "i4r", stop_on_failure = TRUE)'
+
+nieuwenhuis: analysis
+	python3 scripts/nieuwenhuis.py compare
+	python3 scripts/nieuwenhuis.py report
+
+nieuwenhuis-fetch:
+	python3 scripts/nieuwenhuis.py resolve
+	python3 scripts/nieuwenhuis.py journals
+	python3 scripts/nieuwenhuis.py reconcile
+	python3 scripts/nieuwenhuis.py fetch
+	python3 scripts/nieuwenhuis.py manifest
+
+nieuwenhuis-test: nieuwenhuis
+	python3 -m unittest discover -s tests -p 'test_nieuwenhuis.py'
+
+synthesis: analysis lal
+	$(RSCRIPT) scripts/synthesis.R
