@@ -1,0 +1,55 @@
+[
+  {
+    "source": "flora",
+    "path": "sources/flora.csv.gz",
+    "url": "https://raw.githubusercontent.com/forrtproject/fred-data/5f238d305876bd90fbc809ec3c1290490fb0b237/output/flora.csv",
+    "commit": "5f238d305876bd90fbc809ec3c1290490fb0b237",
+    "retrieved_at": "2026-10-06T05:16:23.055796+00:00",
+    "sha256": "da262d0b650f0c137909cf5018032a5f3953f793cbcb05d30ad8c69ef72cef6b",
+    "uncompressed_sha256": "7ea3b98df999bddb4ba73149698b241fd877e530e8d5d7577c0d50021bf39163",
+    "license": "CC BY 4.0",
+    "attribution": "FORRT, FReD and FLoRA contributors",
+    "original_bytes": 10007150
+  },
+  {
+    "source": "fred",
+    "path": "sources/fred.json.gz",
+    "url": "https://raw.githubusercontent.com/forrtproject/fred-apps/a188e733179a0b6cade9b12cf4406503c4063064/data/explorer-data.json",
+    "commit": "a188e733179a0b6cade9b12cf4406503c4063064",
+    "retrieved_at": "2026-10-06T05:16:23.101641+00:00",
+    "sha256": "95658359a52ff926e5e4865c008cec917a8c5cf1f536923138270612cdeaee8d",
+    "uncompressed_sha256": "ddd21e391d92d330e23027ba348a1003be2ac2844ccd861cea661929407874c0",
+    "license": "CC BY 4.0",
+    "attribution": "FORRT, FReD and FLoRA contributors",
+    "original_bytes": 4970752
+  },
+  {
+    "source": "statcheck",
+    "path": "sources/statcheck.csv.gz",
+    "url": "https://zenodo.org/api/records/59818/files/2016statcheck_data-v1.0.0.zip/content",
+    "archive_sha256": "798b6f14d3e37b19bfa1db3c5164a2ee0845cfa96152176e0061a2b192d2adc6",
+    "archive_members": 50845,
+    "archive_transform": "df_names_statcheck + sorted statcheck/*.csv",
+    "upstream_lfs_sha256": "61ff1597c2c7903ad50b2c7b4fe99f86c02d85f8fccee96df9709e11c7515a95",
+    "upstream_lfs_byte_match": false,
+    "reconstruction_note": "All 50,845 archived member files concatenated in Python lexical order. Size and published row/paper counts agree; combined-file hash differs from the unavailable LFS object. Original concatenation order is unknown.",
+    "retrieved_at": "2026-10-06T05:19:14.953166+00:00",
+    "sha256": "9bd5405be01f96f1bb0b29f6808a9efb2f328d92c2b28d8243f236649ac174d7",
+    "uncompressed_sha256": "51542f4efd0c87522047be95fcd46b0dd3cbcd437da96e18a0785283fcb7d3b3",
+    "original_bytes": 227377449,
+    "license": "CC0 1.0",
+    "attribution": "Chris H. J. Hartgerink (2016), doi:10.5281/zenodo.59818"
+  },
+  {
+    "source": "flora_faq",
+    "path": "sources/flora_faq.md.gz",
+    "url": "https://raw.githubusercontent.com/forrtproject/fred-data/5f238d305876bd90fbc809ec3c1290490fb0b237/output/flora_faq.md",
+    "commit": "5f238d305876bd90fbc809ec3c1290490fb0b237",
+    "retrieved_at": "2026-10-06T05:16:23.055796+00:00",
+    "sha256": "13b76b16f0316c1a86704753c70d962b6530a9748cd8452713ef4411d98be710",
+    "uncompressed_sha256": "de1da5527a0774f95a0029ac8eb0711aab8031fc96cba7b1acf18b0984b718ca",
+    "license": "CC BY 4.0",
+    "attribution": "FORRT FLoRA contributors",
+    "original_bytes": 7742
+  }
+]

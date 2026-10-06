@@ -24,9 +24,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
-	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
-	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py
+	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py
+	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py
+	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py
 	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
@@ -69,7 +69,7 @@ pilot-test: pilot
 	python3 -m unittest discover -s tests -p 'test_pilot.py'
 	python3 scripts/pilot.py validate
 
-check: paper lint test
+check: paper lint test inventories-test
 
 clean:
 	cd ms && latexmk -C main.tex
@@ -128,3 +128,10 @@ synthesis: analysis lal nieuwenhuis i4r-aggregate i4r-synthetic
 .PHONY: i4r-synthetic
 i4r-synthetic: i4r-aggregate
 	OPENBLAS_NUM_THREADS=1 python3 scripts/i4r_synthetic.py
+
+.PHONY: inventories inventories-test
+inventories:
+	python3 scripts/audit_inventories.py build
+
+inventories-test: inventories
+	python3 -m unittest discover -s tests -p 'test_audit_inventories.py'

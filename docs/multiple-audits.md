@@ -2,7 +2,7 @@
 
 The central question is whether public methodological criticism changes the subsequent use of the criticized research. The first scalable outcome is citation evolution. Citation-context coding can then establish whether later papers use the challenged finding, qualify it, or cite a different contribution.
 
-The immediate priority is the [I4R registry and disclosure design](i4r/README.md): establish consequential errors and their first public disclosure, then select external controls and estimate citation changes. Failed replications and robustness concerns remain distinct. The inventory is broad, but resolved assessment coverage and complete matched citation panels are not yet available. Retraction outcomes are handled in the separate [propagation_of_error](https://github.com/recite/propagation_of_error) project.
+The immediate priority is the [larger assessment inventories](inventories.md): recover complete paper rosters, establish consequential errors and their first public disclosure, then select external controls and estimate citation changes. The I4R extension currently supplies only four matched annual-total cases. We retain that pilot, but further specification changes on those four papers cannot substitute for a larger sample. Failed replications and robustness concerns remain distinct from verified errors. Retraction outcomes are handled in the separate [propagation_of_error](https://github.com/recite/propagation_of_error) project.
 
 The project should repeat the same citation design across a set of critiques, with each critique supplying an assessed-paper population and interpretable comparison groups. Choose critiques before looking at their citation effects. Keep study-specific definitions and timelines visible, and report differences across audits before attempting a pooled average.
 
@@ -10,7 +10,7 @@ The project should repeat the same citation design across a set of critiques, wi
 | --- | --- | --- |
 | Nieuwenhuis, Forstmann, Wagenmakers | Failure to test the difference between effects directly | Existing paper and assessed comparison group; historical citation analysis complete. |
 | Lal, Lockhart, Xu, Zu | Instrument strength and inferential sensitivity in 67 IV papers | Full-cohort citation histories and comparable mean/median/FE analysis completed; timing and diagnostic contrasts remain descriptive. |
-| I4R | Article-specific coding, data and statistical errors, separated from broader adverse assessments | Full catalog inventory; source review and disclosure adjudication in progress; no matched citation estimate yet. |
+| I4R | Article-specific coding, data and statistical errors, separated from broader adverse assessments | Broad catalog inventory; four matched annual-total cases retained as a pilot; primary citation-link analysis and further source adjudication remain incomplete. |
 | Hainmueller, Mummolo, Xu | 46 interaction estimates in 22 papers: linearity, extrapolation, and differences across moderator values | Roster and interaction-level diagnostics are available in Table A1 and Appendix B; possible later cohort after I4R and classification review. |
 
 ## A later interaction-diagnostic cohort needs its own comparison definition
@@ -29,4 +29,4 @@ The [Nieuwenhuis source bridge](nieuwenhuis/README.md) now retains the full clas
 
 A combined study should first show each audit's result. Equal-audit weighting asks about the typical included critique; equal-paper weighting asks about the typical assessed paper in the assembled sample. Neither automatically represents all scientific errors. Track papers shared between audits and avoid counting the same citation history as independent evidence. Heterogeneity by diagnostic seriousness, paper-specific identification, prominence of the warning, and correction versus general criticism is substantively informative, but few audits cannot support an elaborate moderator model.
 
-The inclusion criterion is recoverable data and a defensible comparison, not whether a case confirms continued citation. The Lal results already show why: different diagnostics within one audit yield different citation patterns.
+The inclusion criterion is recoverable data and a defensible comparison, not whether a case confirms continued citation. The Lal comparisons are imprecise and sensitive to the baseline year; opposite point-estimate signs do not establish different reader responses.

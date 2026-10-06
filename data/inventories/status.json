@@ -1,0 +1,29 @@
+{
+  "flora": {
+    "records": 3056,
+    "original_dois": 2772,
+    "rows_without_valid_original_doi": 46
+  },
+  "fred": {
+    "records": 2164,
+    "original_dois": 780,
+    "rows_without_valid_original_doi": 16
+  },
+  "statcheck": {
+    "records": 50845,
+    "original_dois": 50845,
+    "rows_without_valid_original_doi": 0
+  },
+  "statcheck_tests": 688112,
+  "statcheck_papers_with_any_inconsistency": 23523,
+  "statcheck_papers_with_decision_inconsistency": 6008,
+  "reproduction_records": 365,
+  "reproduction_original_dois": 352,
+  "challenged_reproduction_records": 209,
+  "challenged_reproduction_original_dois": 200,
+  "challenged_reproduction_dois_absent_i4r": 156,
+  "repeated_complete_assessment_keys": 5,
+  "combined_original_dois": 53351,
+  "imported_verified_material_errors": 0,
+  "new_estimation_ready_disclosures": 0
+}

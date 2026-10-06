@@ -1,0 +1,6 @@
+original_doi,report_doi,assessment_type,record_ids,outcomes,outcome_conflict
+10.1037/a0012833,10.1126/science.aac4716,replication,flora_01967;flora_01968,failed,no
+10.1111/j.1467-9280.2007.01909.x,10.1098/rsos.231240,replication,flora_02144;flora_02145,failed,no
+10.1111/j.1468-0068.2010.00795.x,10.1007/s13164-018-0400-9,replication,flora_02206;flora_02207,successful,no
+10.1163/156853706776931222,10.1007/s13164-018-0400-9,replication,flora_02259;flora_02260,successful,no
+10.1177/0956797615624492,10.1098/rsos.231240,replication,flora_02317;flora_02318,failed;mixed,yes
