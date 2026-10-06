@@ -35,3 +35,8 @@ The reviews therefore retain competing date evidence rather than assigning the
 journal year by default. Likewise, a critique that combines a coding correction
 with a new specification does not establish the effect of the correction alone.
 Those distinctions determine the eventual exposure and the claim it concerns.
+
+The next stage is the [disclosure registry](external-disclosures.md), which records
+explicit materiality and date adjudications. A source review alone does not
+establish when the error became public or that a matched citation comparison
+is feasible.

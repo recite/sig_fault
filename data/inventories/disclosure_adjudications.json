@@ -1,0 +1,320 @@
+{
+  "scope": "Manual adjudications of material errors and earliest substantiated public disclosure; no citation outcomes used. Readiness gates do not establish an identified effect.",
+  "cases": [
+    {
+      "record_id": "flora_01593",
+      "material_error_verified": "yes",
+      "publicity_verified": "pending",
+      "date": "",
+      "date_precision": "",
+      "date_evidence": "Full comment p2 says the authors acknowledge errors in their recently published Erratum and references Mazzocco and Saini 2017 on p7. This is positive primary-document testimony of a 2017 public erratum, but the referenced UCLA URL now returns a Reply dated January 9, 2018. A dated 2017 posting or archived 2017 document was not recovered. Do not simply substitute the October 2018 final journal date as earliest exposure.",
+      "date_sources": [
+        {
+          "file": "risk_comment.pdf",
+          "url": "https://web.stanford.edu/~fafchamp/adi.pdf",
+          "sha256": "05b0c1b8afa2d9c6e08d220868be65c2a86015a57e27e9ea889c09e1c3fa200f",
+          "retrieved_at": "2026-10-06T05:52:13.230400+00:00",
+          "locator": "p2 first two paragraphs; Table 1 p3; Table 2 p4; Erratum bibliography p7",
+          "role": "error consequences and indirect evidence of 2017 public erratum",
+          "cache_path": "private-data/inventories/disclosure-review-a3/risk_comment.pdf"
+        },
+        {
+          "file": "risk_erratum.pdf",
+          "url": "http://www.econ.ucla.edu/mazzocco/doc/EfficiencyInVillagesErratum.pdf",
+          "sha256": "902723b28325a2170ff037832fc61cd92f07f5e0798d510af827d5bee97e614e",
+          "retrieved_at": "2026-10-06T05:53:31.642567+00:00",
+          "locator": "Title and January 9 2018 date; p1 acknowledgments and caste counts; Table 1 p4",
+          "role": "live overwritten erratum URL / author response",
+          "cache_path": "private-data/inventories/disclosure-review-a3/risk_erratum.pdf"
+        },
+        {
+          "file": "risk_cdx.json",
+          "url": "https://web.archive.org/cdx/search/cdx?url=www.econ.ucla.edu/mazzocco/doc/EfficiencyInVillagesErratum.pdf&output=json&filter=statuscode:200&collapse=timestamp:4&to=2018",
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "retrieved_at": "2026-10-06T06:13:01.525001+00:00",
+          "locator": "Entire result is empty array for exact www.econ.ucla.edu URL, captures through 2018",
+          "role": "limited failed archive corroboration",
+          "cache_path": "private-data/inventories/disclosure-review-a3/risk_cdx.json"
+        }
+      ],
+      "search_scope": "Checked full Stanford author-hosted comment, live UCLA erratum URL, AEA final comment page, targeted earlier-version/erratum searches, exact-URL Wayback CDX through 2018, and two archive.org availability queries. CDX exact URL returned no records; availability queries returned HTTP429 and were not repeatedly retried. Variant URL archive coverage was not exhausted.",
+      "decision_evidence": "Comment Table 2 p.4: caste rejections at 10% fall from 13/13 to 7/13 after correcting coefficient labels, then 5/13 correcting aggregation. Bonferroni subsequently gives 1/13. Example Table 1: Aurepalle caste rank 30 reported .190 (SE .030), correctly labeled income .074 (.027), corrected caste averaging .025 (.021).",
+      "limitations": "2017 is supported by explicit retrospective testimony that the erratum was published, but direct dated public evidence is absent. Parent may adjudicate that testimony sufficient under a prespecified rule; this reviewer conservatively keeps first-public-year pending rather than claiming 2018 or proof of no 2017 publication. Failure to obtain archive evidence does not establish nonpublication. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.318919+00:00",
+      "affected_claim": "Caste-level rejection of standard efficient risk sharing at 10%.",
+      "original_value": "13/13 caste tests",
+      "corrected_value": "5/13 caste tests",
+      "correction_scope": "Correct coefficient labels (13→7) and caste aggregation (7→5); omit additional Bonferroni adjustment."
+    },
+    {
+      "record_id": "flora_01616",
+      "material_error_verified": "yes",
+      "publicity_verified": "pending",
+      "date": "",
+      "date_precision": "",
+      "date_evidence": "The 2012 dissertation contains the particular material correction, but OhioLINK identifies degree year rather than release year. The Kyoto report covers fiscal 2012 and includes completed March2013 events; it cannot substantiate public2012. Retain the earlier version as a timing lead, without assigning2012 or substituting2014.",
+      "date_sources": [
+        {
+          "file": "takahashi_thesis_metadata.html",
+          "locator": "Year and Degree; Recommended Citations; open-access publisher footer",
+          "role": "2012 degree-year record; does not establish release year",
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=osu1337873816",
+          "retrieved_at": "2026-10-06T05:55:24.098178+00:00",
+          "sha256": "dbfdd3f5bff9b654d23edde9a2f48561b7914f52d351868b6c5840fc1c0d99bb",
+          "cache_path": "private-data/inventories/disclosure-review-b3/takahashi_thesis_metadata.html"
+        },
+        {
+          "file": "takahashi_thesis.pdf",
+          "locator": "Title page; Chapter 2 pp. 38–40, 47–48, Table 2.3 p. 54",
+          "role": "2012 dated document contains error, but public release year unverified",
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1337873816&disposition=inline",
+          "retrieved_at": "2026-10-06T05:55:42.573380+00:00",
+          "sha256": "54277c39928a873bb4cd326942b12dd32ffc9ca0cafb5bbb6d6fd4941968b190",
+          "cache_path": "private-data/inventories/disclosure-review-b3/takahashi_thesis.pdf"
+        },
+        {
+          "file": "kyoto_annual_report_2012.pdf",
+          "locator": "PDF p. 146, printed p. 143, Shuhei Takahashi working-paper list",
+          "role": "Fiscal2012 institutional report compiled after March2013; undated working-paper list, not public2012 evidence",
+          "url": "https://www.kier.kyoto-u.ac.jp/wp/wp-content/uploads/2020/11/AnnualReport2012.pdf",
+          "retrieved_at": "2026-10-06T06:12:43.666394+00:00",
+          "sha256": "aada5eaad42fd91bb61baf08ebe41059de6ffa06c0c9ff761d05ad2361f634f8",
+          "cache_path": "private-data/inventories/disclosure-review-b3/kyoto_annual_report_2012.pdf"
+        }
+      ],
+      "search_scope": "Publisher, institutional report and earlier-version sources described in date evidence.",
+      "decision_evidence": "Correlation of aggregate hours with labor productivity: 0.23 -> 0.8 (correction_only; takahashi_thesis.pdf, Chapter 2 pp. 38–40 and Table 2.3 p. 54); Labor wedge volatility relative to output volatility: 0.76 -> 0.24 (correction_only; flora_01616_report.html, Publisher abstract); Share of empirical labor wedge volatility explained: 0.43 -> 0.18 (correction_only; heterogeneity_reply.html, Publisher abstract)",
+      "limitations": "No exact imprint or public issue date found in annual report. PDF created June2013; metadata alone does not establish public release. OhioLINK metadata has degree/citation year2012 but no public release field. Thesis PDF creation May2012 does not establish public availability. Detailed recheck in heterogeneity_date_recheck.json; material-error determination unchanged. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.322439+00:00",
+      "affected_claim": "The calibrated model reproduces a low correlation between hours and productivity.",
+      "original_value": "Published correlation .23; replicating original method .16",
+      "corrected_value": "Both numerical repairs .80; interpolation repair alone .72",
+      "correction_scope": "Same calibrated model with corrected interpolation and market clearing. Published and reproduced original values differ and are retained separately."
+    },
+    {
+      "record_id": "flora_01617",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2014-05",
+      "date_precision": "month",
+      "date_evidence": "Both named institutional series date the critique May 2014, and a critique author publicly linked the Dynare version on May 6. This supports calendar year 2014 without relying on the December journal issue or a modern upload timestamp.",
+      "date_sources": [
+        {
+          "file": "risk_working.pdf",
+          "locator": "CESifo WP 4793 cover; printed p. 4 Table 1",
+          "role": "Public working-paper series May 2014; fixed-parameter correction 5.30→1.77",
+          "url": "https://www.ifo.de/DocDL/cesifo1_wp4793.pdf",
+          "retrieved_at": "2026-10-06T05:52:49.541352+00:00",
+          "sha256": "35e39b7fba909b42bf0a8b4fef1325b5dbc8b5d145e09f95e2c909a9667a6a5a",
+          "cache_path": "private-data/inventories/disclosure-review-b3/risk_working.pdf"
+        },
+        {
+          "file": "risk_dynare_working.pdf",
+          "locator": "Working Paper 39 cover May 2014; Table 1",
+          "role": "Independent public institutional series carrying same material aggregation correction",
+          "url": "https://www.dynare.org/wp-repo/dynarewp039.pdf",
+          "retrieved_at": "2026-10-06T06:13:52.387004+00:00",
+          "sha256": "2e7e03663e6a6779c3cbe5e36bc907e40ab17fe864e4f29a17168a5181dc50c4",
+          "cache_path": "private-data/inventories/disclosure-review-b3/risk_dynare_working.pdf"
+        },
+        {
+          "file": "risk_public_announcement.html",
+          "locator": "Post 4 by jpfeifer, 6 May 2014 15:26, link to dynarewp039.pdf",
+          "role": "Dated primary author announcement independently substantiates public availability by May 6 2014",
+          "url": "https://forum.dynare.org/t/k-order-perturbation-error/3782",
+          "retrieved_at": "2026-10-06T06:13:13.584677+00:00",
+          "sha256": "ff2be1e74b0ac085968ea736ab6b2e648e65ea44199c3b6692868457d595334a",
+          "cache_path": "private-data/inventories/disclosure-review-b3/risk_public_announcement.html"
+        }
+      ],
+      "search_scope": "Publisher, institutional report and earlier-version sources described in date evidence.",
+      "decision_evidence": "Output standard deviation with fixed original parameters: 5.3 -> 1.77 (correction_only; risk_comment.pdf, Table 1 PDF p. 4); Correlation of net exports with output, aggregation correction only versus both corrections: 0.05 -> 0.43 (correction_only; risk_comment.pdf, Table 4 PDF p. 8); Relative net export volatility, aggregation correction only versus both corrections: 1.43 -> 1.63 (correction_only; risk_comment.pdf, Table 4 PDF p. 8)",
+      "limitations": "The earliest precise posting day need not equal May 6; this is a latest-public-by witness within the supported month/year. No earlier public year located. Formal response by original authors not found and acknowledgment is not claimed. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.325724+00:00",
+      "affected_claim": "Volatility of output generated by the original calibrated model.",
+      "original_value": "Output standard deviation 5.30",
+      "corrected_value": "Output standard deviation 1.77",
+      "correction_scope": "Average monthly percentage deviations rather than summing, holding structural parameters fixed. The subsequent recalibration is not this repair contrast."
+    },
+    {
+      "record_id": "flora_01620",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2013",
+      "date_precision": "year",
+      "date_evidence": "PERI institutional public record labels Working Paper Series April 2013 and records a public-paper update at 1:35 pm April 17 explicitly correcting the description of the spreadsheet range exclusion. Its April 22 update expands Table 3 to isolate error effects. This establishes public disclosure in 2013 independently of the current PDF revision date.",
+      "date_sources": [
+        {
+          "file": "debt_comment.pdf",
+          "url": "https://peri.umass.edu/wp-content/uploads/joomla/images/WP322.pdf",
+          "sha256": "b481030e538a1222fb1116bd2cc0646d031b8e36a0bf3b7057f1378800e0f0e5",
+          "retrieved_at": "2026-10-06T05:52:13.496247+00:00",
+          "locator": "Table 3, printed p21 / PDF p22 and notes; discussion of range and transcription errors",
+          "role": "error and isolated numerical consequences",
+          "cache_path": "private-data/inventories/disclosure-review-a3/debt_comment.pdf"
+        },
+        {
+          "file": "debt_page.html",
+          "url": "https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/",
+          "sha256": "7985ea5820833af792160d8dd1ca792e4fc77678eeb7e02fcbecb569e1e459a2",
+          "retrieved_at": "2026-10-06T05:53:31.669618+00:00",
+          "locator": "Working Paper Series April 2013; endnotes 1 and 2 recording April 17 and April 22 updates",
+          "role": "institutional public disclosure record",
+          "cache_path": "private-data/inventories/disclosure-review-a3/debt_page.html"
+        }
+      ],
+      "search_scope": "Checked institutional PERI paper page and full working paper, author-response search results, and NBER working-paper identity. The institutional update history suffices at year precision; exact first day is not asserted.",
+      "decision_evidence": "Table 3 printed p.21/PDF22: original high-debt mean -.1%; removing transcription alone yields .0%; removing spreadsheet plus transcription, retaining excluded years and equal-country weights, gives .3%. Full revised country-year/all-data mean is 2.2%. Therefore -.1→2.2 is not solely the spreadsheet error.",
+      "limitations": "Earliest exact day and any earlier informal public circulation not established. Neither affects the substantiated year-level recommendation absent contrary evidence. Citation coverage, matching and panel eligibility not assessed. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.315721+00:00",
+      "affected_claim": "Average growth at debt/GDP of at least 90%.",
+      "original_value": "Approximately −0.1% growth",
+      "corrected_value": "Approximately 0.3% growth",
+      "correction_scope": "Repair spreadsheet range and transcription, retaining original country weights and selected years. The broader change to 2.2% also changes weighting and coverage."
+    },
+    {
+      "record_id": "flora_01631",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2009-09",
+      "date_precision": "month",
+      "date_evidence": "A dated numbered working paper containing the particular error is corroborated by a national-library bibliography issued in November 2009. Public year 2009 is secure; 2011 journal publication is a later version.",
+      "date_sources": [
+        {
+          "file": "games_working.pdf",
+          "locator": "WP 437 cover, September 2009; dated September 15 2009; section 2 p. 4 and Table 1 p. 5",
+          "role": "The actual public working version contains lambda 8.84→1.05 and corrected predictions",
+          "url": "https://authors.library.caltech.edu/records/7da3z-kby87/files/iewwp437.pdf?download=1",
+          "retrieved_at": "2026-10-06T05:54:43.872854+00:00",
+          "sha256": "c7b2eaa2647de01704f7a6e4d1e4034def9c3e9f9a839ea3eb8dc2a525443cd4",
+          "cache_path": "private-data/inventories/disclosure-review-b3/games_working.pdf"
+        },
+        {
+          "file": "games_working_metadata.html",
+          "locator": "Published September 2009; Series 437",
+          "role": "Institutional published-version identification; modern deposit date not used",
+          "url": "https://authors.library.caltech.edu/records/7da3z-kby87",
+          "retrieved_at": "2026-10-06T05:53:57.051970+00:00",
+          "sha256": "c30288233893b56a715537593c7c63dbd4235f9425da57a70614fbfd9abe998b",
+          "cache_path": "private-data/inventories/disclosure-review-b3/games_working_metadata.html"
+        },
+        {
+          "file": "swiss_bibliography_2009.pdf",
+          "locator": "Cover dated 15 November 2009; PDF p. 15, entry 210 NB 001583502",
+          "role": "Contemporaneous Swiss National Library publication catalog lists this specific 2009 working paper",
+          "url": "https://ead.nb.admin.ch/web/sb-pdf/2009/sb200921.pdf",
+          "retrieved_at": "2026-10-06T06:12:36.453187+00:00",
+          "sha256": "836dce3b1b3997f3cf50b245342f4c693adfd80e38c4a8c7dd49d50e995765b3",
+          "cache_path": "private-data/inventories/disclosure-review-b3/swiss_bibliography_2009.pdf"
+        }
+      ],
+      "search_scope": "Publisher, institutional report and earlier-version sources described in date evidence.",
+      "decision_evidence": "Optimal QRE precision parameter lambda: 8.84 -> 1.05 (correction_only; games_comment.pdf, p. 1032 item iv; original games_original.pdf p. 945); Game 3 observed frequency U: 0.198 -> 0.163 (correction_only; games_comment.pdf, Table 1 p. 1031 vs original Table 1 p. 954); Game 3 QRE probability U: 0.25 -> 0.168 (correction_only; games_comment.pdf, Table 1 p. 1031 vs original Table 1 p. 954)",
+      "limitations": "November 2008 conference thanks does not identify which correction was public then; no conference paper or presentation containing the particular error was located. September issue is the earliest substantiated public version, not a claim that private circulation was impossible. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.327959+00:00",
+      "affected_claim": "Fit of quantal response equilibrium to the original experimental games.",
+      "original_value": "Precision parameter 8.84; Game 3 QRE U prediction .250",
+      "corrected_value": "Precision parameter 1.05; Game 3 QRE U prediction .168",
+      "correction_scope": "Correct numerical minimization of the same mean-squared-distance criterion. Equivalence of model rankings remains disputed; new tests and experiments are separate."
+    },
+    {
+      "record_id": "flora_01639",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2010-06",
+      "date_precision": "month",
+      "date_evidence": "2010 is the earliest substantiated public year for the acknowledged construction error and its numerical consequence. The reply mentions an earlier comment version but supplies neither a public venue nor a date; that does not itself disqualify the earliest documented public journal issue.",
+      "date_sources": [
+        {
+          "file": "flora_01639_report.html",
+          "locator": "AEA June 2010 issue and abstract",
+          "role": "Public issue contains statutory interpretation correction 200%→100%",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.100.3.1280",
+          "retrieved_at": "2026-10-06T05:52:47.554398+00:00",
+          "sha256": "5a8184486bb994a45506d20ca338ea0b6d775991a905c41b165ddc25da7bb689",
+          "cache_path": "private-data/inventories/disclosure-review-b3/flora_01639_report.html"
+        },
+        {
+          "file": "antidumping_reply.pdf",
+          "locator": "June 2010 header; printed p. 1283 paragraphs 2–3",
+          "role": "Same public issue contains original authors admission and empirical dependent-variable correction",
+          "url": "https://pages.uoregon.edu/bruceb/Antidumping_Investigations_Reply.pdf",
+          "retrieved_at": "2026-10-06T05:53:56.507420+00:00",
+          "sha256": "dfba350737a2f32bbdc5d8f48fd081f908491236ecabf188f9b7cc7bca0a2e9d",
+          "cache_path": "private-data/inventories/disclosure-review-b3/antidumping_reply.pdf"
+        },
+        {
+          "file": "kelly_cv.pdf",
+          "locator": "PDF p. 3, refereed publications",
+          "role": "Author institutional CV lists 2010 comment, no earlier public working version identified",
+          "url": "https://www.seattleu.edu/media/seattle-university/directory/faculty-amp-staff-directory/files/albers/brian-kelly-cv.pdf",
+          "retrieved_at": "2026-10-06T06:12:46.971652+00:00",
+          "sha256": "290d16cfe4ef95e2784162bdde36a309a402edb3abc3729623d1ecba3f22d9f2",
+          "cache_path": "private-data/inventories/disclosure-review-b3/kelly_cv.pdf"
+        }
+      ],
+      "search_scope": "Publisher, institutional report and earlier-version sources described in date evidence.",
+      "decision_evidence": "Theoretical pass-through needed to avoid duty: 200 percent -> 100 percent (theoretical_correction; flora_01639_report.html, Publisher abstract); Empirical AD-duty pass-through coefficient shift: original coefficients -> original minus approximately 1.0 (correction_only; antidumping_reply.pdf, p. 1283 re-estimation paragraph); Post-final-determination border-price pass-through: original value not verified -> approximately 60 percent (correction_with_endpoint_definition_change; antidumping_reply.pdf, p. 1283)",
+      "limitations": "Earlier private drafts may exist. Searches of title, author CV, publisher and working-paper leads found no substantiated earlier public version. Full original coefficients not independently re-estimated; reply gives coefficient reduction and approximate corrected level rather than a new regression table. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.329159+00:00",
+      "affected_claim": "Pass-through of antidumping duties exceeds 100% in the studied episode.",
+      "original_value": "Original duty coefficients; implied post-final value approximately 1.60",
+      "corrected_value": "Coefficients lower by approximately 1.0; corrected border-price pass-through approximately .60",
+      "correction_scope": "Remove full nominal duty wrongly added to dependent price. The original 1.60 is derived from reported shift, not a directly reproduced table value; corrected total pass-through also depends on actual assessed duty."
+    },
+    {
+      "record_id": "flora_01652",
+      "material_error_verified": "yes",
+      "publicity_verified": "yes",
+      "date": "2005",
+      "date_precision": "year",
+      "date_evidence": "Original author Steven Levitt publicly acknowledged the implementation error in a blog dated November 28, 2005 and linked Foote and Goetz working paper. Visible date and article published-time metadata agree. Boston Fed institutional record identifies WP 05-15; the current comment bibliography identifies its earlier November 2005 version. Private prior discovery mentioned in the response is not treated as public disclosure.",
+      "date_sources": [
+        {
+          "file": "abortion_levitt_2005.html",
+          "url": "https://freakonomics.com/2005/11/everything-in-freakonomics-is-wrong/",
+          "sha256": "1084235d1cfe9df57e40b6cc71ca1cedb90c4e774ccf182d926513f00cef5543",
+          "retrieved_at": "2026-10-06T05:53:31.963940+00:00",
+          "locator": "Visible date November 28 2005, byline Steven D. Levitt; numbered point 2; point 3 separates additional changes",
+          "role": "dated public acknowledgment",
+          "cache_path": "private-data/inventories/disclosure-review-a3/abortion_levitt_2005.html"
+        },
+        {
+          "file": "abortion_page.html",
+          "url": "https://www.bostonfed.org/publications/research-department-working-paper/2005/the-impact-of-legalized-abortion-on-crime-comment.aspx",
+          "sha256": "bf157dbe1c8e6aef463676e45c96e180e648fffd5cfa9d79eda1ddb3d3878085",
+          "retrieved_at": "2026-10-06T05:53:31.911528+00:00",
+          "locator": "Working Paper 05-15; earlier-title/version description",
+          "role": "institutional report identity",
+          "cache_path": "private-data/inventories/disclosure-review-a3/abortion_page.html"
+        },
+        {
+          "file": "abortion_comment.pdf",
+          "url": "https://www.bostonfed.org/-/media/Documents/Workingpapers/PDF/wp0515.pdf",
+          "sha256": "10f7d3157af7825f12b4113b6d7bc57f1edb8942c51f2b026f573fcba9d9c5e5",
+          "retrieved_at": "2026-10-06T05:52:13.801697+00:00",
+          "locator": "Table I printed p22 / PDF p23; bibliography printed p20 / PDF p21 identifies November 2005 working paper",
+          "role": "critic numerical contrast and earlier-version identity",
+          "cache_path": "private-data/inventories/disclosure-review-a3/abortion_comment.pdf"
+        },
+        {
+          "file": "abortion_response.pdf",
+          "url": "https://www.nber.org/system/files/working_papers/w11987/w11987.pdf",
+          "sha256": "250a5d0b0e5dd735ab1c4f42c37b74ef594621b6e2f089be1ebcfc5aef4375dc",
+          "retrieved_at": "2026-10-06T05:52:15.774091+00:00",
+          "locator": "PDF p6, oversight paragraph and Table 1 discussion; PDF p4 note on earlier private discovery",
+          "role": "original authors acknowledgment and isolated numerical contrast",
+          "cache_path": "private-data/inventories/disclosure-review-a3/abortion_response.pdf"
+        }
+      ],
+      "search_scope": "Checked Boston Fed institutional record and full comment, original-author November 28 and December 5 2005 posts, January 2006 NBER full response, and original NBER/journal identities. November 28 primary acknowledgment establishes year without requiring an archive snapshot of the first working-paper day.",
+      "decision_evidence": "Foote–Goetz Table I printed p.22/PDF23: property coefficient -.025 (SE .003 cohort-state clustered)→-.010 (.002) and violent -.028 (.004)→-.013 (.004) after adding state-year FE, same data and outcomes. Both remain significant with reported clustering. Further switching to per-capita outcomes gives -.001 and -.004, a separate estimand/specification change.",
+      "limitations": "First exact public day could precede November 28 within 2005. Earlier private awareness is documented but not public exposure. Citation coverage, matching and panel eligibility not assessed. Original analysis not independently rerun; retraction screen, citation completeness and matching remain separate.",
+      "reviewed_at": "2026-10-06T06:18:07.317727+00:00",
+      "affected_claim": "Magnitude of the abortion coefficient in violent-arrest regressions.",
+      "original_value": "−0.028",
+      "corrected_value": "−0.013",
+      "correction_scope": "Restore omitted state-year interactions with otherwise identical columns. Per-capita arrests and alternative abortion proxies are separate analytical changes; negative coefficient remains significant at .01."
+    }
+  ]
+}

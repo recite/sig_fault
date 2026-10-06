@@ -150,8 +150,10 @@ An independent review reproduced the source record counts, DOI overlaps and
 statcheck flag counts. It identified six reproduction records without usable
 original DOIs; those records now retain unknown I4R membership. A temporary build
 containing only public source snapshots, the excerpt-screen annotations, the import
-script, primary-source reviews and the I4R article roster reproduced all eleven inventory/report outputs byte
-for byte, without private files or network access. Local checks cover malformed identifiers, conflicting
+script, primary-source reviews and the I4R article roster reproduced the eleven
+inventory/report outputs byte for byte. Adding the public disclosure decisions
+and original metadata also reproduced the three disclosure outputs. Neither build
+used private files or network access. Local checks cover malformed identifiers, conflicting
 assessments, missing flags and repeated papers across sources. The full repository
 lint, tests and manuscript build also pass.
 
@@ -185,7 +187,39 @@ the numerical claims and key passages in the downloaded documents. Original
 analyses were not rerun. Source files are cached with hashes; the public review
 includes source URLs and locations. Abstract-only or partially retrieved sources
 remain explicitly limited reviews. The build rejects repeated review IDs,
-identity mismatches and sources without hashes and locations. No reviewed case is yet assigned an eligible
-treatment date or added to matching. The inventory status field
+identity mismatches and sources without hashes and locations. The separate [disclosure registry](external-disclosures.md) now adjudicates
+material errors and public dates for selected cases. Its collection gate applies
+the existing two-full-pre-year and one-full-post-year requirements; matching and
+effect estimation remain pending. The inventory status field
 `imported_verified_material_errors` counts automatic classifications by the import
 (always zero), not findings from these separate manual reviews.
+
+
+## From reviews to disclosure events
+
+`disclosure_adjudications.json` records manual decisions separately from the
+inventory and excerpt screen. Each verified material error includes an affected
+claim, original and corrected quantities, the scope of the repair and a pointer
+to the primary review. Date sources have URLs, precise locations and hashes.
+`original_metadata.json` preserves Crossref publication metadata and both the
+inventory DOI and the journal DOI, so a working-paper version is not counted as
+a different journal article. Publication dates use the earliest publisher-supplied
+publication date, not deposit or indexing timestamps.
+
+`scripts/inventory_events.py` checks identities, explicit materiality evidence,
+public-date precision and evidence, original article age and completed follow-up.
+It produces `disclosure_candidates.csv` for every reviewed case,
+`disclosure_status.json` and the linked report. Cases without a decision remain
+pending, not negative. The collection gate is deliberately separate from
+`analysis_eligible`, which remains pending until retraction screening, citation
+acquisition and matching are complete. A verified warning appearing too soon after
+the original article remains in the registry but fails the specified age rule.
+
+These judgments were made before collecting citation outcomes for the external
+cases. They apply the material-error definition in the existing analysis design.
+The recovered reports and responses were read and their numerical contrasts
+checked; original empirical code was not rerun. Distinguish source verification
+from an independent replication. `make inventories-test` rebuilds the inventory
+and disclosure outputs offline and tests the identity and eligibility gates.
+Publication metadata acquisition is a separate explicit command; see the
+[Crossref API documentation](https://www.crossref.org/documentation/retrieve-metadata/rest-api/).
