@@ -103,7 +103,12 @@ nieuwenhuis: analysis
 	python3 scripts/nieuwenhuis.py compare
 	python3 scripts/nieuwenhuis_diagnostics.py build
 	$(RSCRIPT) scripts/nieuwenhuis_analysis.R
+	$(MAKE) nieuwenhuis-validation
 	python3 scripts/nieuwenhuis.py report
+
+.PHONY: nieuwenhuis-validation
+nieuwenhuis-validation:
+	python3 scripts/nieuwenhuis_validation.py build
 
 nieuwenhuis-fetch:
 	python3 scripts/nieuwenhuis.py resolve

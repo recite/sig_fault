@@ -42,6 +42,11 @@ The DOI crosswalk uses the same complete historical-cohort papers on both sides.
 | `status.json` | Current bridge | Complete-pair and group counts, full-cohort readiness, DOI overlap counts |
 | `source_manifest.csv` | Cached source file; `path` | Source URL, retrieval timestamp, SHA-256 and byte count |
 | `input_hashes.json` | Local input file | SHA-256 hashes after the documented line-ending normalization |
+| `validation_edges.csv` | Original–OpenCitations citation identifier | All retrieved citation relationships, citing/cited identifier aliases and available publication dates |
+| `validation_coverage.csv` | Paired original paper | Target DOI, response/count-endpoint agreement, undated records and acquisition status |
+| `validation_sources.csv` | Cached OpenCitations response | Exact URL, retrieval time, SHA-256 and bytes |
+| `link_validation.csv` | Original–reconciled citing DOI | Existing source-overlap frame joined to third-source links; present, not found or not collected, matching citation IDs and dates |
+| `validation_summary.csv` | Original-source presence–validation status | Link counts within the selected paired-paper frame |
 
 Raw PDFs and API responses remain private; public metadata and derived records support the offline build. Counts describe database records, not independently read full-text citations.
 
@@ -62,6 +67,10 @@ An offline rebuild in a temporary directory, with no private caches and network 
 Behavioral tests cover journal-specific locators, abbreviated and shared page ranges, DOI and print-year agreement, missing versus zero counts, identical overlap populations, histories bound to the verified target DOI, and conflicting duplicate dates or document types. Independent review identified the need to restrict both sides of the DOI overlap to the same completed historical cohort and to prevent reuse of histories after a target-identity change; both checks now have regression tests. These checks validate construction, not the completeness or accuracy of either citation database.
 
 The paired source-contrast module adds 32 R assertions covering exact agreement, known source discrepancies, proportional invariance to common scaling, agreement with article/year fixed-effects Poisson and OLS estimates, incomplete years, missing groups and undefined proportional resamples. The period summaries and source-contrast table reproduce byte for byte in a temporary directory containing only the frozen paired panel and the two analysis scripts. Independent review found no material implementation defect and separately checked the closed form against numerical Poisson fits. The current ten flagged histories produce explicit unavailable contrasts; they do not generate an estimated database effect.
+
+The [OpenCitations link check](validation.md) uses the same paired-paper frame. It tests whether a third index records each citing DOI for the same target, independently of agreement on publication year. The API list and count endpoints must agree, citation identifiers must be unique and every relationship must identify the queried original DOI. Behavioral tests cover identity mismatch, truncation, duplicates, identifier aliases, unknown dates and uncollected versus absent links. Cross-index agreement corroborates records but is not independent bibliographic verification. Raw responses and source hashes remain available for reconstruction.
+
+All four third-source outputs reproduce byte for byte in a temporary directory containing public inputs only, with network calls disabled. Independent review reproduced the link counts and checked raw-response hashes. The complete repository check passes 292 R expectations and 104 Python tests, and the revised manuscript compiles; the changed appendix pages were rendered and inspected. The twenty raw responses and their provenance sidecars are preserved in the durable checkout.
 
 ## Diagnosing source discrepancies
 

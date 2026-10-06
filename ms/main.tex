@@ -11,6 +11,7 @@
 \input{../tabs/macros.tex}
 \input{../tabs/lal_macros.tex}
 \input{../tabs/nieuwenhuis_macros.tex}
+\input{../tabs/nieuwenhuis_validation_macros.tex}
 \input{../tabs/meta_macros.tex}
 \input{../tabs/i4r_aggregate_macros.tex}
 \title{Significant Error:\\Citations to Research With Publicized Statistical Errors}
@@ -189,6 +190,8 @@ Document types materially affect the IV comparison. The original broad outcome i
 The source-comparison protocol preserves the original neuroscience analysis cohort and compares identical papers and years before considering a pooled result. Exact DOI matches identify shared citing relationships, with each database's publication year retained. Historical exports lack the detailed document-type field needed to impose an identical article/review filter. Missing histories stay missing; a relationship absent from one database is not automatically a false citation. Source discrepancies therefore measure differences between the recorded citation histories rather than bias relative to an assumed ground truth.
 
 The currently available paired subset contains \NwPairedFlagged{} flagged and \NwPairedComparison{} comparison papers. Among \NwYearMismatch{} shared citation relationships with conflicting years, OpenAlex dates \NwEarlier{} earlier; publisher-deposited online and print dates account for \NwDateExplained{} of these differences. Moving shared eligible citations between years accounts for \NwBaselineShift{} of the \NwBaselineGap{} additional baseline-year citations recorded by OpenAlex. This preliminary comparison shows why citation dating can change measured growth. Estimating how database choice changes the flagged-versus-comparison contrast requires paired histories for both groups.
+
+For the \NwValidationPapers{} paired papers checked against OpenCitations, that index also records \NwExtraPrimaryCorroborated{} of the \NwExtraPrimary{} OpenAlex-only links eligible for the primary article/review count. Across all document types in the comparison frame, it records \NwExtraCorroborated{} of \NwExtraAll{} OpenAlex-only links. This corroborates many additional records, but shared upstream sources mean agreement across indexes is not independent verification of the citing bibliography. Undated OpenCitations links remain undated, and this check does not replace either source's annual counts.
 
 For comparison across audits, the repository also reports the contrast between the calendar year before and the calendar year after the warning year, excluding the warning year itself. This uses 2010 and 2012 for neuroscience and 2023 and 2025 for the IV audit. The neuroscience papers published in 2010 have a partial publication-year baseline, so a separate 2009-publication cohort has a complete baseline year. The synthesis below uses these common windows; alternative IV diagnostics are not counted as independent replications.
 

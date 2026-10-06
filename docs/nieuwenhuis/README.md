@@ -63,4 +63,4 @@ make nieuwenhuis-fetch
 
 The first two commands run offline from frozen public inputs. The fetch target resumes publisher identity checks and incoming OpenAlex citations, retaining completed pilot histories and respecting the shared rate-limit checkpoint. Set OPENALEX_API_KEY in the environment for authenticated requests. No key is stored in the data.
 
-See [design](design.md), [construction and dictionary](data.md), [source-discrepancy diagnostics](diagnostics.md), [status JSON](../../data/nieuwenhuis/status.json), and [paired records](../../data/nieuwenhuis/paired_panel.csv).
+See [design](design.md), [construction and dictionary](data.md), [source-discrepancy diagnostics](diagnostics.md), [OpenCitations link check](validation.md), [status JSON](../../data/nieuwenhuis/status.json), and [paired records](../../data/nieuwenhuis/paired_panel.csv).

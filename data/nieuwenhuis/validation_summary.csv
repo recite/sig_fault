@@ -1,0 +1,7 @@
+presence,validation_status,links
+both,not_found,1
+both,present,1129
+openalex_only,not_found,98
+openalex_only,present,194
+wos_only,not_found,5
+wos_only,present,3
