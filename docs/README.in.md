@@ -14,6 +14,8 @@ Continued use is clear; how much publicity changed citation growth is less certa
 
 The I4R extension currently supports matched comparisons for only **{{IfrCases}} affected papers**. This is a pilot, too small and selected to support a general conclusion about the effect of publicizing errors. The [case comparisons](docs/i4r/aggregate-results.md) and [synthetic-control checks](docs/i4r/synthetic-results.md) remain available. Complete [FORRT and statcheck inventories](docs/inventories.md) now provide larger pools for expansion. The reproduction excerpts have been screened; [primary-report reviews](docs/inventory-primary-reviews.md) and a separate [dated-disclosure registry](docs/external-disclosures.md) now distinguish verified errors from cases ready for citation collection. The [external collection workflow](docs/external/README.md) applies the shared control matcher to these disclosures. Identified papers, verified errors and usable citation comparisons remain distinct counts.
 
+The [Lazic pseudoreplication audit](docs/lazic/README.md) adds a complete identified cohort of **200 animal studies: 91 flagged, 45 correctly analyzed, and 64 unclear**. All 200 have verified PubMed identities. The deposited classifications were public in 2017, before the 2018 journal article. This is the next larger within-audit comparison; citation collection and review of earlier correction notices remain pending.
+
 ## Research design
 
 - **Papers and timing:** {{Flagged}} flagged and {{Comparison}} comparison papers, with 2010 as the baseline and 2012–2015 as the post period. The critique appeared in August 2011; that transition year is excluded from the main model. Citation-free years within covered histories remain zero.

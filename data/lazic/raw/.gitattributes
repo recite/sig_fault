@@ -1,0 +1,2 @@
+*.csv -text -diff
+*.txt -text -diff

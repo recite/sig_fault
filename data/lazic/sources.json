@@ -1,0 +1,37 @@
+[
+  {
+    "path": "data/lazic/raw/data.csv",
+    "url": "https://data.bris.ac.uk/datasets/2uad9gecss2r2ksaujt85gj4a/2017.09.05%20WhatIsN%20Data%20Sheet.csv",
+    "retrieved_at": "2026-10-06T06:59:25.099908+00:00",
+    "sha256": "4d4e0634983cadb508720924e602845cf65f63eebafe893afbf7ac6508f20684",
+    "bytes": 4664
+  },
+  {
+    "path": "data/lazic/raw/dictionary.csv",
+    "url": "https://data.bris.ac.uk/datasets/2uad9gecss2r2ksaujt85gj4a/2017.09.05%20WhatIsN%20Data%20Dictionary.csv",
+    "retrieved_at": "2026-10-06T06:59:25.729351+00:00",
+    "sha256": "099bc1346bd328a1b7f0e5b140ca939f30865d1891b4acd1dc36064f58b62234",
+    "bytes": 306
+  },
+  {
+    "path": "data/lazic/raw/readme.txt",
+    "url": "https://data.bris.ac.uk/datasets/2uad9gecss2r2ksaujt85gj4a/readme.txt",
+    "retrieved_at": "2026-10-06T06:59:26.390845+00:00",
+    "sha256": "d22e09966f071eee1547b42ff06aacba71b26f53bfba4682c70b9a1cdfa68b9a",
+    "bytes": 1010
+  },
+  {
+    "path": "private-data/lazic/lazic_repository.html",
+    "url": "https://data.bris.ac.uk/data/dataset/2uad9gecss2r2ksaujt85gj4a",
+    "retrieved_at": "2026-10-06T06:59:37.679136+00:00",
+    "sha256": "562136b3e91ce53511d70b4cc79fbbe629463a4a7f67cb5450b72b202ece8a2c",
+    "bytes": 19864
+  },
+  {
+    "path": "private-data/lazic/lazic_paper.html",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005282",
+    "retrieved_at": "2026-10-06T06:59:38.115389+00:00",
+    "sha256": "1d8938ec3394882b8b6dc07a409d120f5afeff633101db28b31b60dc3b9719f2",
+    "bytes": 181194
+  }
+]

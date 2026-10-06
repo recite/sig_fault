@@ -1,0 +1,16 @@
+{
+  "source_papers": 200,
+  "classification_counts": {
+    "pseudoreplication": 91,
+    "correct_analysis": 45,
+    "unclear": 64
+  },
+  "verified_pubmed_identities": 200,
+  "with_doi": 198,
+  "audit_year": 2017,
+  "primary_comparison_papers": 136,
+  "classified_full_baseline": 136,
+  "citation_histories": 0,
+  "estimation_status": "pending_citation_collection_and_notice_review",
+  "classification_scope": "Published audit assessments, not independent reanalyses or demonstrated corrected effect sizes"
+}

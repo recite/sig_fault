@@ -515,6 +515,7 @@ if __name__ == "__main__":
     articles = assessed + controls
     inventory = pilot.read_csv(sources.ROOT / "data/inventories/article_crosswalk.csv")
     externally_assessed = [{"doi": r["original_doi"]} for r in inventory]
+    externally_assessed += pilot.read_csv(sources.ROOT / "data/lazic/metadata.csv")
     reviewed = json.loads(
         (sources.ROOT / "data/inventories/primary_reviews.json").read_text()
     )["cases"]

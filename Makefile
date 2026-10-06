@@ -24,9 +24,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py
-	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py
-	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py
+	python3 -m black --check scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic.py tests/test_lazic.py
+	python3 -m isort --check-only --profile black scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic.py tests/test_lazic.py
+	python3 -m flake8 --max-line-length=88 scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic.py tests/test_lazic.py
 	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
@@ -69,7 +69,7 @@ pilot-test: pilot
 	python3 -m unittest discover -s tests -p 'test_pilot.py'
 	python3 scripts/pilot.py validate
 
-check: paper lint test inventories-test external-test
+check: paper lint test inventories-test external-test lazic-test
 
 clean:
 	cd ms && latexmk -C main.tex
@@ -158,3 +158,10 @@ external: inventories
 
 external-test: external
 	python3 -m unittest discover -s tests -p 'test_external_registry.py'
+
+.PHONY: lazic lazic-test
+lazic:
+	python3 scripts/lazic.py build
+
+lazic-test: lazic
+	python3 -m unittest discover -s tests -p 'test_lazic.py'
