@@ -5,6 +5,7 @@ This comparison holds the original papers and years fixed while replacing the hi
 The roster retains 157 classified papers; 157 identities are resolved. Complete paired histories currently cover 10 of the 153 historical analysis papers (10 flagged, 0 comparison).
 
 A full-cohort database comparison is still pending.
+These counts measure download progress, not OpenAlex's coverage of the literature. An uncollected history says nothing about how many citations the database contains for that paper.
 
 ## Same-paper annual counts
 
@@ -35,6 +36,16 @@ Web of Science retains the historical counting rules. OpenAlex's primary count i
 | 2015 | Flagged | OpenAlex, broader types | 10 | 27.9 | 14.0 |
 
 The table includes only papers with complete histories in both sources. Missing histories are not zero. These are descriptive counts for the available paired sample, not an estimate of publicity's effect.
+
+## Does the source change the growth comparison?
+
+The paired estimator compares the flagged-minus-comparison change in each database, then subtracts the Web of Science contrast from the OpenAlex contrast. It uses the same papers, a 2010 baseline, and either 2012 or the annual average over 2012–2015. The 2009 publication cohort is also reported separately.
+
+The source contrast is not yet estimable: no comparison-group paper has a complete OpenAlex history. The available flagged histories cannot establish whether switching databases changes the relative citation growth of flagged and comparison papers.
+
+Intervals use 9,999 paired paper resamples within flag groups. Each draw retains the same paper's counts in both databases. Missing groups produce no contrast; undefined proportional draws are counted and withhold that interval rather than being silently discarded. These intervals describe variation across observed papers, not uncertainty about missing citations or the causal effect of publicizing errors.
+
+See [source contrasts](../../data/nieuwenhuis/source_contrasts.csv) and [period means and medians](../../data/nieuwenhuis/period_summary.csv).
 
 ## Citation links and publication years
 

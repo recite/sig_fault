@@ -102,6 +102,7 @@ i4r-aggregate: i4r
 nieuwenhuis: analysis
 	python3 scripts/nieuwenhuis.py compare
 	python3 scripts/nieuwenhuis_diagnostics.py build
+	$(RSCRIPT) scripts/nieuwenhuis_analysis.R
 	python3 scripts/nieuwenhuis.py report
 
 nieuwenhuis-fetch:
@@ -113,6 +114,7 @@ nieuwenhuis-fetch:
 
 nieuwenhuis-test: nieuwenhuis
 	python3 -m unittest discover -s tests -p 'test_nieuwenhuis*.py'
+	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "nieuwenhuis", stop_on_failure = TRUE)'
 
 synthesis: analysis lal nieuwenhuis
 	$(RSCRIPT) scripts/synthesis.R

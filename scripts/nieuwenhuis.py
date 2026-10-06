@@ -4,6 +4,7 @@ import argparse
 import collections
 import hashlib
 import json
+import math
 import re
 import statistics
 import time
@@ -732,6 +733,9 @@ def report():
             if not status["full_bridge_available"]
             else "The historical cohort has complete paired histories."
         ),
+        "These counts measure download progress, not OpenAlex's coverage of "
+        "the literature. An uncollected history says nothing about how many "
+        "citations the database contains for that paper.",
         "",
         "## Same-paper annual counts",
         "",
@@ -759,6 +763,69 @@ def report():
         "The table includes only papers with complete histories in both "
         "sources. Missing histories are not zero. These are descriptive counts "
         "for the available paired sample, not an estimate of publicity's effect.",
+    ]
+    contrasts = read("source_contrasts.csv")
+    lines += [
+        "",
+        "## Does the source change the growth comparison?",
+        "",
+        "The paired estimator compares the flagged-minus-comparison change in "
+        "each database, then subtracts the Web of Science contrast from the "
+        "OpenAlex contrast. It uses the same papers, a 2010 baseline, and either "
+        "2012 or the annual average over 2012–2015. The 2009 publication cohort "
+        "is also reported separately.",
+        "",
+    ]
+    if not contrasts or all(r["status"] == "missing_group" for r in contrasts):
+        lines += [
+            "The source contrast is not yet estimable: no comparison-group "
+            "paper has a complete OpenAlex history. The available flagged "
+            "histories cannot establish whether switching databases changes "
+            "the relative citation growth of flagged and comparison papers.",
+            "",
+        ]
+    else:
+        lines += [
+            "The absolute contrast uses citations per paper per year. The "
+            "proportional contrast is the ratio of flagged post/pre growth to "
+            "comparison post/pre growth. Its source discrepancy below is the "
+            "percentage change in that ratio when switching to OpenAlex, not "
+            "a percentage-point difference between effect estimates.",
+            "",
+            "| Cohort | Post years | OpenAlex types | Contrast | Flagged / "
+            "comparison | Source discrepancy [95% interval] | Status |",
+            "| --- | --- | --- | --- | ---: | ---: | --- |",
+        ]
+        for row in contrasts:
+            proportional = row["estimand"] == "log_ratio"
+
+            def display(value):
+                if value == "":
+                    return "pending"
+                number = float(value)
+                if proportional:
+                    return f"{100 * math.expm1(number):.1f}%"
+                return f"{number:.2f}"
+
+            estimate = display(row["difference"])
+            interval = f"[{display(row['lower'])}, {display(row['upper'])}]"
+            kind = "Growth ratio" if proportional else "Absolute change"
+            lines.append(
+                f"| {row['cohort']} | {row['post']} | {names[row['source']]} | "
+                f"{kind} | {row['n_flagged']} / {row['n_comparison']} | "
+                f"{estimate} {interval} | {row['status']} |"
+            )
+        lines.append("")
+    lines += [
+        "Intervals use 9,999 paired paper resamples within flag groups. Each "
+        "draw retains the same paper's counts in both databases. Missing groups "
+        "produce no contrast; undefined proportional draws are counted and "
+        "withhold that interval rather than being silently discarded. These "
+        "intervals describe variation across observed papers, not uncertainty "
+        "about missing citations or the causal effect of publicizing errors.",
+        "",
+        "See [source contrasts](../../data/nieuwenhuis/source_contrasts.csv) "
+        "and [period means and medians](../../data/nieuwenhuis/period_summary.csv).",
         "",
         "## Citation links and publication years",
         "",
