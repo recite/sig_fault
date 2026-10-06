@@ -311,18 +311,22 @@ def report():
     roster_links = s.read("aggregate_assessment_links.csv")
     if roster_links:
         matched = sum(r["link_status"] == "matched" for r in roster_links)
+        overview_only = sum(r["link_status"] == "overview_only" for r in roster_links)
+        unresolved = sum(r["link_status"] == "unresolved" for r in roster_links)
         lines += [
             "",
             f"The two economics/political-science overviews (DP107 and DP287)"
             f" describe the same {len(roster_links)} assessment entries. Explicit"
             f" report links and target identities connect {matched} entries to"
-            f" existing assessments; {len(roster_links) - matched} remain unmatched."
+            f" individual assessments; {overview_only} entries are represented only"
+            f" by overview summaries, and {unresolved} remain unlinked."
             " Overview versions are not counted as additional assessment teams."
             " The two entries"
             " for the monetary-policy uncertainty paper refer to different teams"
             " and remain separate. See the [row-level crosswalk]"
-            "(../../data/i4r/aggregate_assessment_links.csv). Both overview sources"
-            " retain unresolved scope until the remaining entries are reconciled.",
+            "(../../data/i4r/aggregate_assessment_links.csv). Accounting for the"
+            " overview entries does not establish reviewer identities or resolve"
+            " substantive findings when only a summary is available.",
         ]
     lines += [
         "",

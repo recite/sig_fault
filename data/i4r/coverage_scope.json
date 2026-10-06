@@ -1,6 +1,6 @@
 {
   "assessment_population_enumerated": false,
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "reason": "All 714 catalog sources have a documented scope review. Several large audits, unavailable or misdirected reports, and unnamed-team equivalences remain unresolved; the independent-assessment population is not yet fully enumerated.",
   "unresolved_scope": [
     {
@@ -61,6 +61,13 @@
     {
       "source": "Frozen catalog scope review",
       "result": "All 331 discussion papers and 383 report listings have explicit reviewed scope dispositions. Reports without reviewer bylines remain in the inventory with unresolved equivalence."
+    },
+    {
+      "source_ids": [
+        "dp_107",
+        "dp_287"
+      ],
+      "result": "The two versions describe the same 110 assessment entries. All are represented once:104 linked to individual assessments and6 retained as unresolved overview-only records. Four summaries lack reviewer identities; no claim of110 verified independent teams or completed substantive reviews."
     }
   ]
 }

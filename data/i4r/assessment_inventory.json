@@ -22564,5 +22564,257 @@
       }
     },
     "limitations": "Documentary verification, not an independent rerun of original code. The report is linked from the overview, not an additional assessment by the overview authors. Printed and upload dates do not establish first public disclosure."
+  },
+  {
+    "unit_id": "i4r_dp107_row012_assessment",
+    "original_title": "Changing Tides: Public Attitudes on Climate Migration",
+    "original_doi": "10.1086/715163",
+    "doi_verification_source": "DP107 Appendix B.1.12; verified target identity retained in article registry",
+    "reviewer_team": [
+      "Alexander Kustov"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_107_download_0.txt"
+      },
+      {
+        "document_id": "dp_287_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_287_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "overview_summary_only",
+    "evidence": "The overview prints an author response welcoming the reproduction; the full report was not recovered.",
+    "evidence_locator": {
+      "document_id": "dp_107_download_0",
+      "pdf_pages": [
+        150
+      ],
+      "roster_row": 12,
+      "corresponding_later_overview": "DP287 section12.17.12",
+      "report_doi": "10.48152/ssrp-geaf-x506",
+      "metadata_url": "https://api.crossref.org/works/10.48152/ssrp-geaf-x506",
+      "metadata_sha256": "3d8e724aa138943ab9e62f549950c9826b6a641c2285b72749b032fad565b8cc",
+      "metadata_scope": "Registered authorship and report destination identify the assessment; metadata do not supply its substantive findings."
+    },
+    "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
+  },
+  {
+    "unit_id": "i4r_dp107_row029_assessment",
+    "original_title": "Exposure and Preferences: Evidence from Indian Slums",
+    "original_doi": "10.1111/ajps.12570",
+    "doi_verification_source": "DP107 Appendix B.1.29; verified target identity retained in article registry",
+    "reviewer_team": [],
+    "reviewer_team_identification": "not_reported",
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_107_download_0.txt"
+      },
+      {
+        "document_id": "dp_287_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_287_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "overview_summary_only",
+    "evidence": "The overview states successful computational reproduction, says robustness checks could not be conducted without author help, and explicitly says there is no report.",
+    "evidence_locator": {
+      "document_id": "dp_107_download_0",
+      "pdf_pages": [
+        167
+      ],
+      "roster_row": 29,
+      "corresponding_later_overview": "DP287 section12.17.29"
+    },
+    "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
+  },
+  {
+    "unit_id": "i4r_dp107_row038_assessment",
+    "original_title": "How Effective Are Monetary Incentives to Vote? Evidence from a Nation- wide Policy?",
+    "original_doi": "10.1257/app.20200482",
+    "doi_verification_source": "DP107 Appendix B.1.38; verified target identity retained in article registry",
+    "reviewer_team": [],
+    "reviewer_team_identification": "not_reported",
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_107_download_0.txt"
+      },
+      {
+        "document_id": "dp_287_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_287_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "overview_summary_only",
+    "evidence": "The overview states successful computational reproduction with no reanalyses. Its original-package URL points to DOI10.1086/720458, inconsistent with the target DOI10.1257/app.20200482; that package is not accepted as target evidence.",
+    "evidence_locator": {
+      "document_id": "dp_107_download_0",
+      "pdf_pages": [
+        176
+      ],
+      "roster_row": 38,
+      "corresponding_later_overview": "DP287 section12.17.38"
+    },
+    "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
+  },
+  {
+    "unit_id": "i4r_dp107_row047_assessment",
+    "original_title": "Liquidity Constraints in the U.S. Housing Market",
+    "original_doi": "10.1093/restud/rdab063",
+    "doi_verification_source": "DP107 Appendix B.1.47; verified target identity retained in article registry",
+    "reviewer_team": [],
+    "reviewer_team_identification": "not_reported",
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_107_download_0.txt"
+      },
+      {
+        "document_id": "dp_287_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_287_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "overview_summary_only",
+    "evidence": "The overview states successful computational reproduction with no reanalyses and says the authors supplied feedback; no reviewer byline or full-report link is supplied.",
+    "evidence_locator": {
+      "document_id": "dp_107_download_0",
+      "pdf_pages": [
+        185
+      ],
+      "roster_row": 47,
+      "corresponding_later_overview": "DP287 section12.17.47"
+    },
+    "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
+  },
+  {
+    "unit_id": "i4r_dp107_row090_assessment",
+    "original_title": "The Geography of Repression and Opposition to Autocracy",
+    "original_doi": "10.1111/ajps.12614",
+    "doi_verification_source": "DP107 Appendix B.1.90; verified target identity retained in article registry",
+    "reviewer_team": [
+      "Perry Carter"
+    ],
+    "reviewer_team_identification": "named",
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_107_download_0.txt"
+      },
+      {
+        "document_id": "dp_287_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_287_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "overview_summary_only",
+    "evidence": "The overview describes computational reproduction and alternative matching, flexible regression, exposure and mediation analyses. The printed author response disputes the overlap and identifying assumptions of the extensions. The full report was not recovered.",
+    "evidence_locator": {
+      "document_id": "dp_107_download_0",
+      "pdf_pages": [
+        229
+      ],
+      "roster_row": 90,
+      "corresponding_later_overview": "DP287 section12.17.90",
+      "report_doi": "10.48152/ssrp-9r31-2c74",
+      "metadata_url": "https://api.crossref.org/works/10.48152/ssrp-9r31-2c74",
+      "metadata_sha256": "2de0ebd6273a64055389dae0f2ef5a37541f3dc8212cc698214cbd156eb47d9e",
+      "metadata_scope": "Registered authorship and report destination identify the assessment; metadata do not supply its substantive findings."
+    },
+    "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
+  },
+  {
+    "unit_id": "i4r_dp107_row097_assessment",
+    "original_title": "The Power of Hydroelectric Dams: Historical Evidence from the United States over the Twentieth Century",
+    "original_doi": "10.1093/ej/ueac059",
+    "doi_verification_source": "DP107 Appendix B.1.97; verified target identity retained in article registry",
+    "reviewer_team": [],
+    "reviewer_team_identification": "not_reported",
+    "source_ids": [
+      "dp_107"
+    ],
+    "aggregate_context_source_ids": [
+      "dp_107",
+      "dp_287"
+    ],
+    "document_ids": [
+      {
+        "document_id": "dp_107_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_107_download_0.txt"
+      },
+      {
+        "document_id": "dp_287_download_0",
+        "role": "overview_assessment_summary",
+        "cached_filename": "dp_287_download_0.txt"
+      }
+    ],
+    "assessment_eligibility": "yes",
+    "assessment_resolved": "no",
+    "disposition": "overview_summary_only",
+    "evidence": "The overview states successful computational reproduction with no coding errors uncovered. This is a source assertion, not an independently verified finding of no error.",
+    "evidence_locator": {
+      "document_id": "dp_107_download_0",
+      "pdf_pages": [
+        236
+      ],
+      "roster_row": 97,
+      "corresponding_later_overview": "DP287 section12.17.97"
+    },
+    "limitations": "An explicit completed-assessment entry is retained as an observed record. No individual full report was acquired or substantively adjudicated. The overview version is not another reviewer team. Missing reviewer names leave independence and equivalence unresolved; no verified negative error classification is inferred."
   }
 ]

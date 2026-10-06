@@ -13,10 +13,10 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Candidate article identities (not a final distinct-paper count) | 511 |
 | Publisher/OpenAlex-verified article identities | 495 |
 | Source review/disposition records | 714 |
-| Assessment records explicitly enumerated | 504 |
-| Assessment records with unresolved reviewer-team equivalence | 37 |
-| Articles in those enumerated assessments | 482 |
-| Catalog entries with assessment scope accounted for | 598 |
+| Assessment records explicitly enumerated | 510 |
+| Assessment records with unresolved reviewer-team equivalence | 41 |
+| Articles in those enumerated assessments | 488 |
+| Catalog entries with assessment scope accounted for | 600 |
 | ZIP archives inventoried | 62 |
 | Root ZIP files listed | 62 |
 | Archive members, including code/data/plots | 3952 |
@@ -46,12 +46,12 @@ This review asks how many assessments each source contains and which versions be
 
 | Status | Catalog entries |
 | --- | ---: |
-| fully enumerated | 527 |
+| fully enumerated | 529 |
 | non assessment | 45 |
 | supporting document | 26 |
-| unresolved | 116 |
+| unresolved | 114 |
 
-The two economics/political-science overviews (DP107 and DP287) describe the same 110 assessment entries. Explicit report links and target identities connect 104 entries to existing assessments; 6 remain unmatched. Overview versions are not counted as additional assessment teams. The two entries for the monetary-policy uncertainty paper refer to different teams and remain separate. See the [row-level crosswalk](../../data/i4r/aggregate_assessment_links.csv). Both overview sources retain unresolved scope until the remaining entries are reconciled.
+The two economics/political-science overviews (DP107 and DP287) describe the same 110 assessment entries. Explicit report links and target identities connect 104 entries to individual assessments; 6 entries are represented only by overview summaries, and 0 remain unlinked. Overview versions are not counted as additional assessment teams. The two entries for the monetary-policy uncertainty paper refer to different teams and remain separate. See the [row-level crosswalk](../../data/i4r/aggregate_assessment_links.csv). Accounting for the overview entries does not establish reviewer identities or resolve substantive findings when only a summary is available.
 
 ## Initial screening depth
 

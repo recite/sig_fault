@@ -334,7 +334,9 @@ def aggregate_assessment_links(roster, units, aliases):
     for row in roster:
         uid = row["assessment_unit_id"]
         status = row["assessment_link_status"]
-        if status != ("matched" if uid else "unresolved"):
+        if status not in {"matched", "overview_only", "unresolved"} or (
+            bool(uid) != (status != "unresolved")
+        ):
             raise ValueError("Aggregate assessment link status contradicts unit ID")
         if not row.get("assessment_link_evidence"):
             raise ValueError("Aggregate assessment link lacks evidence")
@@ -344,6 +346,8 @@ def aggregate_assessment_links(roster, units, aliases):
             if uid not in by_unit:
                 raise ValueError("Aggregate assessment unit outside inventory")
             unit = by_unit[uid]
+            if status == "overview_only" and unit["assessment_resolved"] != "no":
+                raise ValueError("Overview-only assessment cannot be resolved")
             target = article_id(unit["original_title"])
             target = aliases.get(target, target)
             doi = pilot.normalize_doi(unit.get("original_doi", ""))

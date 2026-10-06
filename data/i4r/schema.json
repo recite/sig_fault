@@ -551,7 +551,7 @@
     },
     "link_status": {
       "type": "string",
-      "meaning": "matched: explicit report link and target identity connect this roster entry to an existing assessment unit; unresolved: no verified unit link. A match does not resolve errors, disclosure timing or reviewer-team equivalence."
+      "meaning": "matched: report link and target identity connect the entry to an individual assessment; overview_only: explicit assessment entry retained without an acquired individual report or resolved substantive review; unresolved: no unit link. A link does not itself resolve errors, disclosure timing or reviewer-team equivalence."
     },
     "report_url": {
       "type": "string",

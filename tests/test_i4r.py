@@ -1136,6 +1136,38 @@ class ArchiveAndUnitTests(unittest.TestCase):
 
 
 class AssessmentValidationTests(unittest.TestCase):
+    def test_overview_summary_retains_an_unresolved_observed_assessment(self):
+        import i4r_registry as registry
+
+        unit = dict(
+            unit_id="summary",
+            original_title="An original article",
+            original_doi="10.1234/original",
+            aggregate_context_source_ids=["overview"],
+            assessment_resolved="no",
+        )
+        row = dict(
+            source_id="overview",
+            roster_row=1,
+            title="An original article",
+            doi="10.1234/original",
+            assessment_unit_id="summary",
+            assessment_link_status="overview_only",
+            assessment_report_url="",
+            assessment_link_evidence="Explicit overview reproduction statement",
+        )
+        result = registry.aggregate_assessment_links([row], [unit], {})
+        self.assertEqual(result[0]["unit_id"], "summary")
+        self.assertEqual(result[0]["link_status"], "overview_only")
+        with self.assertRaisesRegex(ValueError, "cannot be resolved"):
+            registry.aggregate_assessment_links(
+                [row], [unit | dict(assessment_resolved="yes")], {}
+            )
+        with self.assertRaisesRegex(ValueError, "contradicts unit ID"):
+            registry.aggregate_assessment_links(
+                [row | dict(assessment_unit_id="")], [unit], {}
+            )
+
     def test_overview_links_preserve_distinct_teams_and_unmatched_entries(self):
         import i4r_registry as registry
 
