@@ -341,7 +341,7 @@
       "disposition": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 57
+        "distinct_nonmissing": 59
       },
       "evidence_summary": {
         "type": "string",
@@ -356,7 +356,7 @@
       "limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 32
+        "distinct_nonmissing": 42
       }
     }
   },
@@ -421,7 +421,7 @@
     }
   },
   "assessments.csv": {
-    "rows": 30,
+    "rows": 40,
     "duplicate_keys": 0,
     "key": [
       "assessment_id"
@@ -430,27 +430,27 @@
       "assessment_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "category": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 4
+        "distinct_nonmissing": 5
       },
       "material": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 3
       },
       "error_verified": {
         "type": "string",
@@ -460,27 +460,27 @@
       "affected_claim": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "evidence_summary": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 29
+        "distinct_nonmissing": 39
       },
       "evidence_locator": {
         "type": "string",
         "missing": 1,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "dispute_status": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 6
+        "distinct_nonmissing": 16
       },
       "verification_scope": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 12
+        "distinct_nonmissing": 13
       },
       "public_year": {
         "type": "integer",
@@ -775,7 +775,7 @@
     }
   },
   "curated_claims.csv": {
-    "rows": 30,
+    "rows": 40,
     "duplicate_keys": 0,
     "key": [
       "assessment_id"
@@ -784,32 +784,32 @@
       "title": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 28
+        "distinct_nonmissing": 38
       },
       "doi": {
         "type": "string",
         "missing": 2,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "assessment_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "category": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 4
+        "distinct_nonmissing": 5
       },
       "material": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 3
       },
       "error_verified": {
         "type": "string",
@@ -819,47 +819,47 @@
       "affected_claim": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "evidence_summary": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 29
+        "distinct_nonmissing": 39
       },
       "evidence_locator": {
         "type": "string",
         "missing": 1,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "dispute_status": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 6
+        "distinct_nonmissing": 16
       },
       "verification_scope": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 12
+        "distinct_nonmissing": 13
       },
       "public_year": {
         "type": "integer",
         "missing": 28,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 3
       },
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "warning_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "date": {
         "type": "string",
         "missing": 14,
-        "distinct_nonmissing": 14
+        "distinct_nonmissing": 24
       },
       "year": {
         "type": "integer",
@@ -879,12 +879,12 @@
       "date_evidence_url": {
         "type": "string",
         "missing": 4,
-        "distinct_nonmissing": 26
+        "distinct_nonmissing": 36
       },
       "date_evidence": {
         "type": "string",
         "missing": 4,
-        "distinct_nonmissing": 26
+        "distinct_nonmissing": 36
       },
       "already_retracted": {
         "type": "string",
@@ -1028,7 +1028,7 @@
     }
   },
   "events.csv": {
-    "rows": 30,
+    "rows": 40,
     "duplicate_keys": 0,
     "key": [
       "event_id"
@@ -1037,32 +1037,32 @@
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "warning_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "assessment_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "date": {
         "type": "string",
         "missing": 14,
-        "distinct_nonmissing": 14
+        "distinct_nonmissing": 24
       },
       "year": {
         "type": "integer",
@@ -1082,12 +1082,12 @@
       "date_evidence_url": {
         "type": "string",
         "missing": 4,
-        "distinct_nonmissing": 26
+        "distinct_nonmissing": 36
       },
       "date_evidence": {
         "type": "string",
         "missing": 4,
-        "distinct_nonmissing": 26
+        "distinct_nonmissing": 36
       },
       "error_verified": {
         "type": "string",
@@ -1097,7 +1097,7 @@
       "material": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 2
+        "distinct_nonmissing": 3
       },
       "already_retracted": {
         "type": "string",
@@ -1257,7 +1257,7 @@
     }
   },
   "match_exclusions.csv": {
-    "rows": 90,
+    "rows": 120,
     "duplicate_keys": 0,
     "key": [
       "event_id",
@@ -1267,12 +1267,12 @@
       "event_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 30
+        "distinct_nonmissing": 40
       },
       "article_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 27
+        "distinct_nonmissing": 37
       },
       "reason": {
         "type": "string",
@@ -1664,17 +1664,17 @@
       "canonical_source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 636
+        "distinct_nonmissing": 634
       },
       "disposition": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 88
+        "distinct_nonmissing": 87
       },
       "evidence": {
         "type": "string",
         "missing": 7,
-        "distinct_nonmissing": 579
+        "distinct_nonmissing": 574
       },
       "evidence_locator": {
         "type": "string",
@@ -1684,12 +1684,12 @@
       "limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 58
+        "distinct_nonmissing": 67
       },
       "adjudication_date": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 1
+        "distinct_nonmissing": 2
       }
     }
   },
@@ -1719,7 +1719,7 @@
       "evidence": {
         "type": "string",
         "missing": 1,
-        "distinct_nonmissing": 618
+        "distinct_nonmissing": 624
       }
     }
   },
@@ -1751,7 +1751,7 @@
     }
   },
   "source_manifest.csv": {
-    "rows": 6385,
+    "rows": 6390,
     "duplicate_keys": 0,
     "key": [
       "path"
@@ -1760,27 +1760,27 @@
       "path": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 6385
+        "distinct_nonmissing": 6390
       },
       "url": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 5438
+        "distinct_nonmissing": 5443
       },
       "retrieved_at": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 5641
+        "distinct_nonmissing": 5646
       },
       "sha256": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 5007
+        "distinct_nonmissing": 5012
       },
       "bytes": {
         "type": "integer",
         "missing": 0,
-        "distinct_nonmissing": 4304
+        "distinct_nonmissing": 4309
       }
     }
   },
@@ -1878,17 +1878,17 @@
       "canonical_source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 636
+        "distinct_nonmissing": 634
       },
       "adjudicated_disposition": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 88
+        "distinct_nonmissing": 87
       },
       "adjudication_evidence": {
         "type": "string",
         "missing": 7,
-        "distinct_nonmissing": 579
+        "distinct_nonmissing": 574
       },
       "adjudication_locator": {
         "type": "string",
@@ -1898,12 +1898,12 @@
       "adjudication_limitations": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 58
+        "distinct_nonmissing": 67
       }
     }
   },
   "source_units.csv": {
-    "rows": 636,
+    "rows": 634,
     "duplicate_keys": 0,
     "key": [
       "canonical_source_id"
@@ -1912,12 +1912,12 @@
       "canonical_source_id": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 636
+        "distinct_nonmissing": 634
       },
       "source_ids": {
         "type": "string",
         "missing": 0,
-        "distinct_nonmissing": 636
+        "distinct_nonmissing": 634
       },
       "catalog_entries": {
         "type": "integer",
@@ -1936,8 +1936,8 @@
       },
       "disposition": {
         "type": "string",
-        "missing": 236,
-        "distinct_nonmissing": 68
+        "missing": 233,
+        "distinct_nonmissing": 67
       },
       "adjudication_conflict": {
         "type": "string",

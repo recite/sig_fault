@@ -1730,8 +1730,8 @@
     ],
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
-    "disposition": "materiality_unresolved",
-    "evidence": "Actual transcription errors affect about10% of regency treatment intensities, but paper combines corrections with clustering/weighting/identification changes; isolated error materiality unresolved.",
+    "disposition": "verified_error_materiality_unresolved",
+    "evidence": "Transcription discrepancies in historical regency-level data affect the treatment intensity for about 10% of regencies. The reported unweighted reduced-form coefficient increases from 0.0147 to 0.0187 after the data corrections. Clustering changes its uncertainty, not its coefficient. Subsequent weighting and weak-IV inference are separate changes; materiality for the substantive claims remains unresolved in this review.",
     "evidence_locator": {
       "front_matter_pdf_pages": [
         3,
@@ -1744,9 +1744,11 @@
         13,
         14
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "claim_adjudication": "DP015 PDF pp.6 and13–15, especially Table1 unweighted reduced-form column; annotated original-source reconstruction linked by the report."
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Hold pending claim-specific materiality review. The reduced-form increase is documented; its substantive importance and the error-only change in the headline IV return require further adjudication. Do not attribute coefficient changes to clustering.",
+    "material_error_verified": false
   },
   {
     "unit_id": "dp_016_assessment_4d93df3063",
@@ -2767,8 +2769,8 @@
     ],
     "assessment_eligibility": "yes",
     "assessment_resolved": "no",
-    "disposition": "materiality_unresolved",
-    "evidence": "Election-quarter coding changes global-analysisp.020→.058; reply disputes implications and accepts two other errors that do not change main conclusions. Materiality disputed.",
+    "disposition": "verified_error_materiality_unresolved",
+    "evidence": "Cameron approval responses were attributed to May; global election-quarter and control-variable coding also required correction. Correcting the May coding preserves the central case-study finding. Global corrections change both covariates and sample; the negative estimate remains, and the p-value threshold crossing does not by itself establish a substantive reversal.",
     "evidence_locator": {
       "front_matter_pdf_pages": [
         3,
@@ -2783,9 +2785,10 @@
         6,
         7
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "claim_adjudication": "DP041 PDF pp. 5 and 10, Table 1 PanelA columns 1/6; author reply DP044 PDF pp. 7–8."
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record.",
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Authors acknowledge the May coding error but defend the case study and dispute the broader robustness interpretation. Verified errors with unresolved substantive materiality; keep alternative clustering and removal of May separate from literal corrections.",
     "source_link_evidence": [
       {
         "source_ids": [
@@ -2793,7 +2796,8 @@
         ],
         "evidence": "Explicit project link or literal report copy identifies DP041; cached report target, reviewer team, and substantive body checked against existing assessment."
       }
-    ]
+    ],
+    "material_error_verified": false
   },
   {
     "unit_id": "dp_042_assessment_f044775aa7",
@@ -5097,9 +5101,9 @@
       }
     ],
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
-    "disposition": "materiality_unresolved",
-    "evidence": "District×ageFE leaves birthyear treatment variation driven by survey date; survey-period inflation can manufacture effects. Demonstrated identification problem, distinct from coding mistake.",
+    "assessment_resolved": "yes",
+    "disposition": "demonstrated_material_error",
+    "evidence": "District-by-age fixed effects absorb the intended rollout comparison; remaining constructed treatment variation depends on interview timing during the survey. Survey-time trends also occur in untreated older cohorts. Controlling survey month removes most of the reported associations. The displayed sequence bundles preliminary data/weighting changes and is not an isolated coding repair or proof of zero vaccination benefit.",
     "evidence_locator": {
       "front_matter_pdf_pages": [
         3,
@@ -5112,9 +5116,11 @@
         7,
         8
       ],
-      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate."
+      "target_identity": "Original target checked against report introduction/reference/title and, when available, exact frozen verified metadata title; not inferred from a shared abstract in an aggregate.",
+      "claim_adjudication": "DP103 PDF pp. 5–8, Table 1; arXiv 2401.11100v1 abstract and identification discussion."
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. The 2026 author-reply abstract acknowledges partial survey-time dependence and loss of the consumption result under revised specifications, but defends inflation-adjusted male wage effects and disputes the permutation exercise. Full reply PDF not retrieved; claims are limited to its official search-indexed abstract. Include as a material statistical-identification error, with scope limited to the stated rollout-based causal interpretation.",
+    "material_error_verified": true
   },
   {
     "unit_id": "dp_104_assessment_ee6f868eed",
@@ -5387,9 +5393,9 @@
       }
     ],
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
-    "disposition": "materiality_unresolved",
-    "evidence": "Squared-distance code uses difference of squares instead of squared difference; authors reportedly corrected appendix; material consequence not established in inspected passages.",
+    "assessment_resolved": "yes",
+    "disposition": "verified_limited_error",
+    "evidence": "The squared-distance variable used a difference of squares, (rc^2-rs^2)/100, instead of the squared difference, (rc-rs)^2/100. The correction changes this robustness metric but the reported experiment comparison persists; no consequential change to the substantive conclusion is demonstrated.",
     "evidence_locator": {
       "front_matter_pdf_pages": [
         3,
@@ -5415,9 +5421,11 @@
           7,
           8
         ]
-      }
+      },
+      "claim_adjudication": "DP110 PDF pp. 6–7 and 10, section 2.4.1."
     },
-    "limitations": "Document-based assessment, not independent code rerun. Only reported checks are adjudicated; favorable status does not establish absence of errors. Materiality or full reproducibility remains limited/disputed; do not count as resolved. Source scope and assessment resolution are separate. Public exposure timing not established in this unit record."
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Report states that the original authors were informed and adjusted their appendix; the report finds the central results robust. Exclude as a verified limited error; do not infer a material finding change merely from an incorrect formula.",
+    "material_error_verified": false
   },
   {
     "unit_id": "i4r_dp111_assessment",
@@ -6656,9 +6664,9 @@
     "assessment_type": "computational_reproduction_and_robustness",
     "assessment_eligibility": "yes",
     "assessment_resolved": "yes",
-    "disposition": "robustness_dispute",
+    "disposition": "verified_limited_error",
     "material_error_verified": false,
-    "evidence": "Stargazer exported anti-conservative p-values; reply150 narrows issue to one coefficient moving0.05to0.0548. Main challenge is influential-observation robustness, not demonstrated material correction.",
+    "evidence": "Table export used normal-reference rather than fitted mixed-model finite-degrees-of-freedom p-values. The coefficient remains approximately -0.66; one exported significance annotation changes to p=0.0548.",
     "evidence_locator": {
       "document_id": "dp_149_download_0",
       "pdf_pages": [
@@ -6668,9 +6676,10 @@
         19,
         27
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "claim_adjudication": "DP149 PDF pp. 8–9; author reply DP150 PDF p. 5."
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors.",
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Authors acknowledge the table-export discrepancy. Influential-case removal and alternative models are separate robustness disputes. Exclude as a minor inference-reporting error; crossing a conventional p-value threshold alone does not meet materiality.",
     "supporting_source_ids": [
       "dp_150"
     ]
@@ -8372,8 +8381,8 @@
   {
     "unit_id": "i4r_dp191_assessment",
     "original_title": "Local Elites as State Capacity: How City Chiefs Use Local Information to Increase Tax Compliance in the Democratic Republic of the Congo",
-    "original_doi": "",
-    "doi_verification_source": "",
+    "original_doi": "10.1257/aer.20201159",
+    "doi_verification_source": "https://api.crossref.org/works/10.1257/aer.20201159",
     "reviewer_team": [
       "Sossou Adjisse",
       "Moussa P. Blimpo",
@@ -8396,10 +8405,10 @@
     ],
     "assessment_type": "computational_reproduction_and_robustness",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "yes",
-    "disposition": "minor_error_with_disputed_interpretation",
+    "assessment_resolved": "no",
+    "disposition": "verified_error_materiality_unresolved",
     "material_error_verified": false,
-    "evidence": "Confirmed erroneous sign in incorrect-exemption coefficient; corrigendum discussed in192. Main average effect remains; mechanism disputes separate.",
+    "evidence": "The coefficient on incorrect exemption was printed with the wrong sign in Tables 5 and A9. The corrected coefficient is +1.2 percentage points rather than -1.2; the authors remove the claim that exemptions were more correctly assigned. Main tax-revenue findings are unchanged.",
     "evidence_locator": {
       "document_id": "dp_191_download_0",
       "pdf_pages": [
@@ -8409,9 +8418,10 @@
         15,
         21
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "claim_adjudication": "DP191 PDF p. 9; author reply DP192 PDF pp. 5 and 21."
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Disposition is limited to issues examined in this report; favorable findings do not establish absence of all possible errors.",
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Authors acknowledge the sign error; broader mechanism disagreements involve additional sample and model choices. Hold outside the primary cohort pending substantive materiality of this peripheral mechanism statement; do not decide materiality from its p-value.",
     "supporting_source_ids": [
       "dp_192"
     ]
@@ -8455,10 +8465,10 @@
     ],
     "assessment_type": "computational_reproduction_and_robustness",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
-    "disposition": "unresolved",
-    "material_error_verified": false,
-    "evidence": "Some genuine inclusion/date/score errors admitted in194, but broad41-case characterization disputed. Correcting admitted mistakes vs changing sample criteria must be separated before materiality is determined.",
+    "assessment_resolved": "yes",
+    "disposition": "demonstrated_material_error",
+    "material_error_verified": true,
+    "evidence": "An incorrect match date and a reversed Botswana–Mozambique score enter the individual-level treatment data. Correcting the two match errors reduces the reported ethnic-identification decline from 37% to 29%. The effect remains negative and the separate interethnic-trust result is unchanged.",
     "evidence_locator": {
       "document_id": "dp_193_download_0",
       "pdf_pages": [
@@ -8469,9 +8479,10 @@
         18,
         20
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "claim_adjudication": "AEA official corrigendum PDF pp. 2–5, especially individual-level comparison on p. 3; conflict is the outcome in its Table 5 despite the mislabeled prose."
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Materiality remains unresolved; identification of an assessment is not verification of an original error.",
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. The authors acknowledge the match errors and retain the qualitative conclusions. Larger replication differences also involve contested qualification-sample definitions. Include for a demonstrated revision to a headline magnitude, not as refutation; retain separately from sign/claim reversals.",
     "supporting_source_ids": [
       "dp_194"
     ],
@@ -8904,10 +8915,10 @@
     ],
     "assessment_type": "computational_reproduction_and_robustness",
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
-    "disposition": "unresolved",
-    "material_error_verified": false,
-    "evidence": "Reverse-scoring inconsistency reverses mental-health estimates if labels interpreted literally; authors claim items reversed in field. Verified serious measurement discrepancy but code-error account disputed. Further adjudication required.",
+    "assessment_resolved": "yes",
+    "disposition": "demonstrated_material_error",
+    "material_error_verified": true,
+    "evidence": "The text interprets a negative secondary treatment coefficient as an increase in women believing they make better calculations and decisions than their husbands. The published coefficient is already -0.180: the corrected interpretation is an 18-percentage-point decrease, not an increase. This does not adjudicate the separate disputed mental-health scoring issue.",
     "evidence_locator": {
       "document_id": "dp_207_download_0",
       "pdf_pages": [
@@ -8919,9 +8930,10 @@
         16,
         22
       ],
-      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion."
+      "identity_evidence": "Report author/title pages; opening description of target; body section organization and substantive results/conclusion.",
+      "claim_adjudication": "Original appendix PDF p. 25 Table A15 and p. 37 reverse-scoring definitions; DP207 PDF pp. 50–51 and 57/Table A5; original main-text statement quoted on DP207 p. 51."
     },
-    "limitations": "Independent targeted full-text evidence review, not an independent execution of original data/code. Scope counts an original article and reviewer team, not each outcome, experiment, software implementation, or robustness check. Materiality remains unresolved; identification of an assessment is not verification of an original error."
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. The principal mental-health reverse-scoring allegation is contested and is not the basis of this record. A later expression of concern concerns survey documentation and ethics. Include as a material secondary interpretation error; do not encode the originally negative numerical estimate as positive or claim the main mental-health result was overturned."
   },
   {
     "unit_id": "i4r_dp208_assessment",
@@ -9381,8 +9393,8 @@
   {
     "unit_id": "i4r_dp221_assessment",
     "original_title": "Income and inequality in the Aztec Empire on the eve of the Spanish conquest",
-    "original_doi": "",
-    "doi_verification_source": "",
+    "original_doi": "10.1038/s41562-023-01636-3",
+    "doi_verification_source": "https://api.crossref.org/works/10.1038/s41562-023-01636-3",
     "reviewer_team": [
       "Olle Hammar"
     ],
@@ -9405,9 +9417,9 @@
       }
     ],
     "assessment_eligibility": "yes",
-    "assessment_resolved": "no",
-    "disposition": "minor_error_no_verified_material_consequence",
-    "evidence": "Population-density restriction applied in first stage but not second; manually predicted 2SLS gave wrong standard errors. Corrected IV coefficient 0.157 versus0.198, qualitatively same conclusion; main Gini reproduced. K-S pvalues differ with unclear original implementation.",
+    "assessment_resolved": "yes",
+    "disposition": "demonstrated_material_error",
+    "evidence": "A population-density sample restriction was imposed in the first IV stage but not the second; manual second-stage regression also used inappropriate standard errors. Using the same intended sample in both stages changes the IV input coefficient; the original-corrected calculation reduces estimated Gini from 50.4 to 42.5 and per-capita income from 690 to 593 (1990 PPP dollars).",
     "evidence_locator": {
       "targeted_pdf_pages": [
         7,
@@ -9422,9 +9434,11 @@
           "total_chunks": 55,
           "basis": "Previously adjudicated cross-listing plus direct long-body text match; not target title alone."
         }
-      ]
+      ],
+      "claim_adjudication": "DP221 PDF pp. 7–8/Table 3 and p. 14/Table 6, rows IV.1 and IV.2 (Original corrected)."
     },
-    "limitations": "Independent source review, not an original-code rerun. No claim that the original article is error-free. Article DOI omitted when not verified. Public error-specific timing requires separate adjudication. Materiality or remaining evidence is unresolved; source coverage does not imply a completed error decision."
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. No original-author reply located in the reviewed sources. The positive population-density relationship survives, but its derived headline magnitudes change. Include as a material numerical correction; do not attribute the broader alternative-specification range to this error alone.",
+    "material_error_verified": true
   },
   {
     "unit_id": "i4r_dp222_assessment",
@@ -10181,8 +10195,8 @@
   {
     "unit_id": "i4r_dp243_assessment",
     "original_title": "Examining Inequality in the Time Cost of Waiting",
-    "original_doi": "",
-    "doi_verification_source": "",
+    "original_doi": "10.1038/s41562-023-01524-w",
+    "doi_verification_source": "https://api.crossref.org/works/10.1038/s41562-023-01524-w",
     "reviewer_team": [
       "Jonathan D. Hall",
       "Derek Thiele"
@@ -10212,8 +10226,8 @@
     ],
     "assessment_eligibility": "yes",
     "assessment_resolved": "yes",
-    "disposition": "minor_error_no_verified_material_consequence",
-    "evidence": "Holt and Vinopal (2023) investigate whether there is inequality in how much time people spend waiting for services using the American Time Use Survey (ATUS). They find that (1) high-income people are both less likely to wait and spend less time waiting than low-income people, and that (2) this is true even after conditioning on observable differences. Further, they find that (3) income has heterogeneous effects on waiting time by race and ethnicity. First, we successfully computationally reproduce the paper's main claims, but uncover two minor coding errors. However, we find five parts of Holt and Vinopal (2023) where the description in the paper differs from what is implemented in the code. Fixing these impacts their results. We also conduct several robustness tests, including calculating standard errors using the replication weights provided by ATUS, updating the outcome variables to use all waiting time for services recorded in the ATUS, and using weekly earnings as an alternative measure to household income. Between fixing the differences between the code and the paper, and our robustness tests, we conclude that Claim (1) is robust, Claim (2) is robust in some specifications, and Claim (3) is not robust.",
+    "disposition": "demonstrated_material_error",
+    "evidence": "Negative missing-income codes were classified as low income; several regressions also omitted the survey weights promised in the article. The missing-income correction alone increases the adjusted gap from 0.371 to 0.518 minutes, and the gap conditional on waiting from 5.834 to 7.017. Adding the omitted weights gives 0.626 and 7.518. The direction survives and strengthens.",
     "evidence_locator": {
       "targeted_pdf_pages": [
         7,
@@ -10229,12 +10243,14 @@
           "total_chunks": 122,
           "basis": "Previously adjudicated cross-listing plus direct long-body text match; not target title alone."
         }
-      ]
+      ],
+      "claim_adjudication": "DP243 PDF pp. 8–10 and 28/Table 3; author reply DP244 PDF pp. 6–8. Table 3 checkmarks and body identify operations; its note reverses columns 2/3 descriptions."
     },
-    "limitations": "Independent source review, not an original-code rerun. No claim that the original article is error-free. Article DOI omitted when not verified. Public error-specific timing requires separate adjudication.",
+    "limitations": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun. Authors acknowledge missing-income and weighting errors but characterize their effects as modest. Larger robustness changes also alter the definition of waiting and must be kept separate. Include for a demonstrated change to the focal adjusted-gap magnitude, including a strengthening correction; no claim of an overturned income or race conclusion.",
     "supporting_source_ids": [
       "dp_244"
-    ]
+    ],
+    "material_error_verified": true
   },
   {
     "unit_id": "i4r_dp245_assessment",

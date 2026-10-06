@@ -7,7 +7,7 @@ dp_007,i4r_a22e222715707f,document_verified_assessment_target,dp_007_assessment_
 dp_009,i4r_d832e9c3daf49a,document_verified_assessment_target,dp_009_assessment_d832e9c3da
 dp_010,i4r_0d948c8c796282,document_verified_assessment_target,dp_010_assessment_0d948c8c79
 dp_012,i4r_3d6bffccda47ef,document_verified_assessment_target,dp_012_assessment_3d6bffccda
-dp_015,i4r_a8e2f8f02be321,document_verified_assessment_target,dp_015_assessment_a8e2f8f02b
+dp_015,i4r_a8e2f8f02be321,curated_error_evidence,"DP015 PDF pp.6 and13–15, especially Table1 unweighted reduced-form column; annotated original-source reconstruction linked by the report."
 dp_016,i4r_4d93df3063de24,document_verified_assessment_target,dp_016_assessment_4d93df3063
 dp_017,i4r_4d93df3063de24,roster_linked_report_or_reply,dp_107
 dp_019,i4r_7bd7b96eedcb28,document_verified_assessment_target,dp_019_assessment_7bd7b96eed
@@ -33,7 +33,7 @@ dp_037,i4r_5627b3380d1216,document_verified_assessment_target,dp_037_assessment_
 dp_039,i4r_4a3c9f4f09679b,document_verified_assessment_target,dp_039_assessment_4a3c9f4f09
 dp_040,i4r_5882c373b90c07,document_verified_assessment_target,dp_040_assessment_5882c373b9
 dp_041,i4r_bfbc935ccb3208,catalog_or_review_target_hint,reviewed source target title
-dp_041,i4r_faaae14cc9ebbe,document_verified_assessment_target,dp_041_assessment_faaae14cc9
+dp_041,i4r_faaae14cc9ebbe,curated_error_evidence,"DP041 PDF pp. 5 and 10, Table 1 PanelA columns 1/6; author reply DP044 PDF pp. 7–8."
 dp_042,i4r_f044775aa7eac4,document_verified_assessment_target,dp_042_assessment_f044775aa7
 dp_043,i4r_73d67d705fa1ff,document_verified_assessment_target,dp_043_assessment_73d67d705f
 dp_044,i4r_faaae14cc9ebbe,roster_linked_report_or_reply,dp_107
@@ -90,7 +90,7 @@ dp_096,i4r_943c99d2618261,roster_linked_report_or_reply,dp_107
 dp_097,i4r_e7ab2877159b24,document_verified_assessment_target,dp_097_assessment_e7ab287715
 dp_098,i4r_e7ab2877159b24,roster_linked_report_or_reply,dp_107
 dp_099,i4r_0d8ed83ff029b6,document_verified_assessment_target,dp_099_assessment_0d8ed83ff0
-dp_103,i4r_0a422a46c0cf91,document_verified_assessment_target,dp_103_assessment_0a422a46c0
+dp_103,i4r_0a422a46c0cf91,curated_error_evidence,"DP103 PDF pp. 5–8, Table 1; arXiv 2401.11100v1 abstract and identification discussion."
 dp_104,i4r_ee6f868eed410d,document_verified_assessment_target,dp_104_assessment_ee6f868eed
 dp_105,i4r_7a6c603119c3ca,document_verified_assessment_target,dp_105_assessment_7a6c603119
 dp_106,i4r_e4b77e6ae7c03c,document_verified_assessment_target,dp_106_assessment_e4b77e6ae7
@@ -204,7 +204,7 @@ dp_107,i4r_fb4a182ac194b2,assessed_article_roster,"Appendix B.1, Title Original 
 dp_107,i4r_fc5b9e224be139,assessed_article_roster,"Appendix B.1, Title Original Study / DOI / report links"
 dp_107,i4r_ffa96d98089db3,assessed_article_roster,"Appendix B.1, Title Original Study / DOI / report links"
 dp_108,i4r_f0ac45a4d0b553,curated_error_evidence,DP108 PDF p. 9; DP109 response PDF pp. 5–8.
-dp_110,i4r_05967d9d4f528b,document_verified_assessment_target,dp_110_assessment_05967d9d4f
+dp_110,i4r_05967d9d4f528b,curated_error_evidence,"DP110 PDF pp. 6–7 and 10, section 2.4.1."
 dp_111,i4r_ffa96d98089db3,document_verified_assessment_target,i4r_dp111_assessment
 dp_112,i4r_bbfa8268349fbe,document_verified_assessment_target,i4r_dp112_assessment
 dp_113,i4r_7be5d436e30757,document_verified_assessment_target,i4r_dp113_assessment
@@ -237,7 +237,7 @@ dp_145,i4r_3f304907a7b2b5,document_verified_assessment_target,i4r_dp145_assessme
 dp_146,i4r_a4e62b1e79186f,document_verified_assessment_target,i4r_dp146_assessment
 dp_147,i4r_bb89cad0ac4c42,document_verified_assessment_target,i4r_dp147_assessment
 dp_148,i4r_19321c88424658,curated_error_evidence,"[29, 34, 40, 41, 42]"
-dp_149,i4r_677211167d98b2,document_verified_assessment_target,i4r_dp149_assessment
+dp_149,i4r_677211167d98b2,curated_error_evidence,DP149 PDF pp. 8–9; author reply DP150 PDF p. 5.
 dp_150,i4r_677211167d98b2,linked_assessment_or_reply,report_b9e41e070505: https://econpapers.repec.org/paper/zbwi4rdps/150.htm
 dp_151,i4r_cf513abee94f85,document_verified_assessment_target,i4r_dp151_assessment
 dp_152,i4r_03d52fedeb62e1,document_verified_assessment_target,i4r_dp152_assessment
@@ -283,9 +283,9 @@ dp_190,i4r_3ac8dfe2d52b5c,document_verified_assessment_target,i4r_dp190_andrade2
 dp_190,i4r_52b5336e445c51,document_verified_assessment_target,i4r_dp190_kocher2019
 dp_190,i4r_76f263af7e4525,document_verified_assessment_target,i4r_dp190_corgnet2018
 dp_191,i4r_78ab55be3f8943,catalog_or_review_target_hint,reviewed source target title
-dp_191,i4r_907e66b1c46d77,document_verified_assessment_target,i4r_dp191_assessment
+dp_191,i4r_907e66b1c46d77,curated_error_evidence,DP191 PDF p. 9; author reply DP192 PDF pp. 5 and 21.
 dp_192,i4r_78ab55be3f8943,catalog_or_review_target_hint,reviewed source target title
-dp_193,i4r_ddd0c180402652,document_verified_assessment_target,i4r_dp193_assessment
+dp_193,i4r_ddd0c180402652,curated_error_evidence,"AEA official corrigendum PDF pp. 2–5, especially individual-level comparison on p. 3; conflict is the outcome in its Table 5 despite the mislabeled prose."
 dp_194,i4r_ddd0c180402652,catalog_or_review_target_hint,reviewed source target title
 dp_196,i4r_422c7f8b95afe9,document_verified_assessment_target,i4r_dp196_assessment
 dp_197,i4r_e50f4e30d14f98,document_verified_assessment_target,i4r_dp197_assessment
@@ -297,7 +297,7 @@ dp_203,i4r_e8896e14ad14d2,document_verified_assessment_target,i4r_dp203_assessme
 dp_204,i4r_d8e1e845d340a0,document_verified_assessment_target,i4r_dp204_assessment
 dp_205,i4r_4f2dc5a8fe92a0,document_verified_assessment_target,i4r_dp205_assessment
 dp_206,i4r_e7ca44b52edab3,document_verified_assessment_target,i4r_dp206_assessment
-dp_207,i4r_36c277e19924ef,document_verified_assessment_target,i4r_dp207_assessment
+dp_207,i4r_36c277e19924ef,curated_error_evidence,Original appendix PDF p. 25 Table A15 and p. 37 reverse-scoring definitions; DP207 PDF pp. 50–51 and 57/Table A5; original main-text statement quoted on DP207 p. 51.
 dp_208,i4r_d25399d7025632,curated_error_evidence,"dp_208_download_0.txt PDF7–9,13–14"
 dp_210,i4r_81ed5e78bd7922,curated_error_evidence,dp_210_download_0.txt PDF5–9; publisher retraction
 dp_211,i4r_039b7a3320e8b9,document_verified_assessment_target,i4r_dp211_assessment
@@ -308,7 +308,7 @@ dp_215,i4r_d43db55fa4ff9a,document_verified_assessment_target,i4r_dp215_assessme
 dp_216,i4r_4ad5c8ba27a97a,document_verified_assessment_target,i4r_dp216_assessment
 dp_218,i4r_38d206a0db1875,document_verified_assessment_target,i4r_dp218_assessment
 dp_219,i4r_79625eff586b3c,document_verified_assessment_target,i4r_dp219_assessment
-dp_221,i4r_a5c9015fcc205e,document_verified_assessment_target,i4r_dp221_assessment
+dp_221,i4r_a5c9015fcc205e,curated_error_evidence,"DP221 PDF pp. 7–8/Table 3 and p. 14/Table 6, rows IV.1 and IV.2 (Original corrected)."
 dp_222,i4r_9f44d8002de179,catalog_or_review_target_hint,reviewed source target title
 dp_222,i4r_cea7cbf66ea2ff,document_verified_assessment_target,i4r_dp222_assessment
 dp_223,i4r_ef48ba7d5dda3b,document_verified_assessment_target,i4r_dp223_assessment
@@ -333,7 +333,7 @@ dp_240,i4r_9e03373cf7d1a6,document_verified_assessment_target,i4r_dp240_assessme
 dp_240,i4r_da7d534cd73f21,document_verified_assessment_target,i4r_dp240_assessment_wang2024
 dp_241,i4r_52b826b693564a,document_verified_assessment_target,i4r_dp241_assessment_hassan2024
 dp_241,i4r_da7d534cd73f21,document_verified_assessment_target,i4r_dp241_assessment_wang2024
-dp_243,i4r_904ac0001198bc,document_verified_assessment_target,i4r_dp243_assessment
+dp_243,i4r_904ac0001198bc,curated_error_evidence,DP243 PDF pp. 8–10 and 28/Table 3; author reply DP244 PDF pp. 6–8. Table 3 checkmarks and body identify operations; its note reverses columns 2/3 descriptions.
 dp_245,i4r_466d580ff67801,document_verified_assessment_target,i4r_dp245_assessment
 dp_246,i4r_6801aec0cf277a,document_verified_assessment_target,i4r_dp246_assessment
 dp_247,i4r_51e335b164f78d,document_verified_assessment_target,i4r_dp247_assessment

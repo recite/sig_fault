@@ -39,7 +39,7 @@ dp_037,dp_037,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_038,dp_038,1,no,no,,no
 dp_039,dp_039;report_e493aff15e98,2,unresolved,no,favorable_or_no_material_error_reported;mixed_or_failed_new_data_replication,yes
 dp_040,dp_040,1,yes,yes,favorable_or_no_material_error_reported,no
-dp_041,dp_041,1,yes,no,,no
+dp_041,dp_041;report_869b5ee590f1,2,yes,no,,no
 dp_042,dp_042,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_043,dp_043,1,yes,yes,favorable_or_no_material_error_reported,no
 dp_044,dp_044,1,no,no,,no
@@ -101,14 +101,14 @@ dp_099,dp_099;report_318a2dea7b11,2,yes,yes,favorable_or_no_material_error_repor
 dp_100,dp_100,1,no,no,,no
 dp_101,dp_101,1,no,no,,no
 dp_102,dp_102,1,no,no,,no
-dp_103,dp_103,1,yes,yes,verified_identification_failure_not_code_typo,no
+dp_103,dp_103,1,yes,yes,demonstrated_material_error,no
 dp_104,dp_104;report_65803781fe9e,2,unresolved,no,robustness;robustness_or_replication_concern,yes
 dp_105,dp_105;report_847150e275c5,2,unresolved,no,robustness;robustness_or_replication_concern,yes
 dp_106,dp_106;report_f65390241feb,2,unresolved,no,favorable_assessment;favorable_or_no_material_error_reported,yes
 dp_107,dp_107,1,no,no,,no
 dp_108,dp_108;report_c44a94ff33b4,2,unresolved,no,material_error;verified_material_city_coding_error_secondary_claims,yes
 dp_109,dp_109,1,no,no,,no
-dp_110,dp_110;report_013c1e38ca22,2,yes,yes,minor_coding_error_main_findings_robust,no
+dp_110,dp_110;report_013c1e38ca22,2,yes,yes,verified_limited_error,no
 dp_111,dp_111;report_917ba368c8fa,2,yes,yes,minor_error,no
 dp_112,dp_112,1,yes,yes,robustness_concern,no
 dp_113,dp_113;report_64d2bdaadf68,2,yes,yes,favorable_assessment,no
@@ -147,7 +147,7 @@ dp_145,dp_145;report_70623055b3d8,2,yes,yes,minor_error,no
 dp_146,dp_146;report_7b6e3711f962,2,yes,yes,favorable_assessment,no
 dp_147,dp_147,1,yes,yes,favorable_assessment,no
 dp_148,dp_148,1,yes,yes,material_error,no
-dp_149,dp_149,1,yes,yes,robustness_dispute,no
+dp_149,dp_149,1,yes,yes,verified_limited_error,no
 dp_150,dp_150,1,no,no,,no
 dp_151,dp_151,1,yes,yes,minor_error,no
 dp_152,dp_152,1,yes,yes,minor_error,no
@@ -189,9 +189,9 @@ dp_187,dp_187,1,yes,yes,robustness_concern,no
 dp_188,dp_188,1,yes,yes,favorable_assessment,no
 dp_189,dp_189,1,yes,yes,favorable_assessment,no
 dp_190,dp_190,1,no,no,,no
-dp_191,dp_191,1,yes,yes,minor_error_with_disputed_interpretation,no
+dp_191,dp_191,1,yes,no,,no
 dp_192,dp_192,1,no,no,,no
-dp_193,dp_193,1,yes,no,,no
+dp_193,dp_193;report_f8f4a01aaac4,2,yes,yes,demonstrated_material_error,no
 dp_194,dp_194,1,no,no,,no
 dp_195,dp_195,1,no,no,,no
 dp_196,dp_196;report_b056c7640453,2,yes,yes,minor_error,no
@@ -205,7 +205,7 @@ dp_203,dp_203,1,yes,yes,favorable_assessment,no
 dp_204,dp_204;report_85d27f187f5e,2,yes,yes,robustness_concern,no
 dp_205,dp_205,1,yes,yes,failed_replication,no
 dp_206,dp_206,1,yes,yes,minor_error,no
-dp_207,dp_207;report_1f90474faad5,2,yes,no,,no
+dp_207,dp_207;report_1f90474faad5,2,yes,yes,demonstrated_material_error,no
 dp_208,dp_208;report_e5369beb10cf,2,yes,yes,material_error,no
 dp_209,dp_209,1,no,no,,no
 dp_210,dp_210,1,yes,yes,material_error,no
@@ -219,7 +219,7 @@ dp_217,dp_217,1,no,no,,no
 dp_218,dp_218;report_aefc27d5ae78,2,yes,yes,favorable_assessment,no
 dp_219,dp_219;report_2ee3d7892331,2,unresolved,no,linked_previous_review;minor_error,yes
 dp_220,dp_220,1,no,no,,no
-dp_221,dp_221;report_e5ae077f3448,2,unresolved,no,minor_error;minor_error_no_verified_material_consequence,yes
+dp_221,dp_221;report_e5ae077f3448,2,yes,yes,demonstrated_material_error,no
 dp_222,dp_222;report_6385b2ec544a,2,yes,yes,favorable_assessment,no
 dp_223,dp_223,1,yes,yes,favorable_assessment,no
 dp_224,dp_224,1,yes,yes,favorable_assessment,no
@@ -241,7 +241,7 @@ dp_239,dp_239,1,yes,yes,mixed_or_failed_new_data_replication,no
 dp_240,dp_240,1,yes,no,,no
 dp_241,dp_241,1,yes,no,,no
 dp_242,dp_242,1,no,no,,no
-dp_243,dp_243;report_c6dca261c36a,2,yes,yes,minor_error_no_verified_material_consequence,no
+dp_243,dp_243;report_c6dca261c36a,2,yes,yes,demonstrated_material_error,no
 dp_244,dp_244,1,no,no,,no
 dp_245,dp_245;dp_279,2,yes,yes,favorable_assessment,no
 dp_246,dp_246;report_28c867c4993d,2,yes,yes,favorable_assessment,no
@@ -488,7 +488,6 @@ report_83fc3494a79a,report_83fc3494a79a,1,yes,yes,minor_error,no
 report_850e8ee1d4b8,report_850e8ee1d4b8,1,yes,yes,robustness,no
 report_859394d98638,report_859394d98638,1,yes,no,,no
 report_85fbf173df9d,report_85fbf173df9d,1,yes,no,,no
-report_869b5ee590f1,report_869b5ee590f1,1,yes,no,,no
 report_876371161281,report_876371161281,1,yes,no,,no
 report_8807c6761590,report_8807c6761590,1,yes,no,,no
 report_88c31d5e4579,report_88c31d5e4579,1,yes,no,,no
@@ -628,7 +627,6 @@ report_ef395cda5e19,report_ef395cda5e19,1,yes,no,,no
 report_f3193586784a,report_f3193586784a,1,yes,no,,no
 report_f6b9ffef58cb,report_f6b9ffef58cb,1,yes,no,,no
 report_f7e5230b8c75,report_f7e5230b8c75,1,yes,yes,software_version_reproducibility,no
-report_f8f4a01aaac4,report_f8f4a01aaac4,1,yes,no,,no
 report_f9082a063d37,report_f9082a063d37,1,yes,yes,robustness_concern,no
 report_f92779f10701,report_f92779f10701,1,yes,yes,favorable_assessment,no
 report_fd4ca10d5639,report_fd4ca10d5639,1,yes,yes,minor_errors_or_reproducible,no

@@ -844,5 +844,432 @@
     "earliest_substantiated_public_year": "",
     "disclosure_date_evidence": "Not independently verified. Manuscript/upload dates not used as public exposure.",
     "recommendation": "Do not add to significant-error exposure cohort without independent consequence and disclosure adjudication."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_015",
+    "original_title": "Schooling and Labor Market Consequences of School Construction in Indonesia: Evidence from an Unusual Policy Experiment",
+    "original_doi": "10.1257/aer.91.4.795",
+    "original_publication_year": 2001,
+    "original_publication_date": "2001-09-01",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1257/aer.91.4.795",
+    "error_verified": true,
+    "material_error_verified": false,
+    "materiality_status": "unresolved",
+    "materiality_scope": "Hold pending claim-specific materiality review. The reduced-form increase is documented; its substantive importance and the error-only change in the headline IV return require further adjudication. Do not attribute coefficient changes to clustering.",
+    "error": "Transcription discrepancies in historical regency-level data affect the treatment intensity for about 10% of regencies.",
+    "affected_claim": "Magnitude and precision of the schooling-construction effect on wages.",
+    "corrected_direction": "The reported unweighted reduced-form coefficient increases from 0.0147 to 0.0187 after the data corrections. Clustering changes its uncertainty, not its coefficient. Subsequent weighting and weak-IV inference are separate changes; materiality for the substantive claims remains unresolved in this review.",
+    "quantitative_consequence": {
+      "reduced_form_log_wage": {
+        "original": 0.0147,
+        "data_corrected": 0.0187,
+        "also_weighted": 0.0167
+      },
+      "p_values_not_isolated_data_corrections": {
+        "original": 0.04,
+        "also_clustered": 0.08,
+        "also_weighted": 0.29
+      }
+    },
+    "evidence_locator": "DP015 PDF pp.6 and13–15, especially Table1 unweighted reduced-form column; annotated original-source reconstruction linked by the report.",
+    "first_substantiated_public_date": "2023-01",
+    "first_substantiated_public_year": 2023,
+    "public_date_evidence": "I4R issue cover January 2023 substantiates this version; earlier error-specific public circulation has not been established.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/268346/1/I4R-DP015.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/268346/1/I4R-DP015.pdf",
+      "https://github.com/droodman/Duflo-2001"
+    ],
+    "dispute_status": "Data reconstruction is documented by the critic; broader weak-IV, weighting and identification claims are separate from the transcription mistakes.",
+    "cohort_recommendation": "Hold pending claim-specific materiality review. The reduced-form increase is documented; its substantive importance and the error-only change in the headline IV return require further adjudication. Do not attribute coefficient changes to clustering."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_041",
+    "original_title": "The Curious Case of Theresa May and the Public That Did Not Rally: Gendered Reactions to Terrorist Attacks Can Cause Slumps Not Bumps",
+    "original_doi": "10.1017/s0003055421000861",
+    "original_publication_year": 2021,
+    "original_publication_date": "2021-08-26",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1017/s0003055421000861",
+    "error_verified": true,
+    "material_error_verified": false,
+    "materiality_status": "unresolved",
+    "materiality_scope": "Verified errors with unresolved substantive materiality; keep alternative clustering and removal of May separate from literal corrections.",
+    "error": "Cameron approval responses were attributed to May; global election-quarter and control-variable coding also required correction.",
+    "affected_claim": "May approval after the Manchester attack and the generalization to female leaders across countries.",
+    "corrected_direction": "Correcting the May coding preserves the central case-study finding. Global corrections change both covariates and sample; the negative estimate remains, and the p-value threshold crossing does not by itself establish a substantive reversal.",
+    "quantitative_consequence": {
+      "misattributed_responses": 35060,
+      "global_interaction": {
+        "original": -4.333,
+        "corrected_election_and_controls": -3.452,
+        "original_se": 1.859,
+        "corrected_se": 1.821,
+        "original_n": 4328,
+        "corrected_n": 4429
+      }
+    },
+    "evidence_locator": "DP041 PDF pp. 5 and 10, Table 1 PanelA columns 1/6; author reply DP044 PDF pp. 7–8.",
+    "first_substantiated_public_date": "2023-06",
+    "first_substantiated_public_year": 2023,
+    "public_date_evidence": "I4R issue cover June 2023. The later July reply is not the start of exposure.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/272842/1/I4R-DP041.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/272842/1/I4R-DP041.pdf",
+      "https://www.econstor.eu/bitstream/10419/273452/1/I4R-DP044rev.pdf"
+    ],
+    "dispute_status": "Authors acknowledge the May coding error but defend the case study and dispute the broader robustness interpretation.",
+    "cohort_recommendation": "Verified errors with unresolved substantive materiality; keep alternative clustering and removal of May separate from literal corrections."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_103",
+    "original_title": "A Shot at Economic Prosperity: Long-Term Effects of India’s Childhood Immunization Program on Earnings and Consumption Expenditure",
+    "original_doi": "10.1086/723591",
+    "original_publication_year": 2023,
+    "original_publication_date": "2023-09-01",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1086/723591",
+    "error_verified": true,
+    "material_error_verified": true,
+    "materiality_status": "yes",
+    "materiality_scope": "Include as a material statistical-identification error, with scope limited to the stated rollout-based causal interpretation.",
+    "error": "District-by-age fixed effects absorb the intended rollout comparison; remaining constructed treatment variation depends on interview timing during the survey.",
+    "affected_claim": "A causal effect of infant vaccination exposure on adult wages and household consumption.",
+    "corrected_direction": "Survey-time trends also occur in untreated older cohorts. Controlling survey month removes most of the reported associations. The displayed sequence bundles preliminary data/weighting changes and is not an isolated coding repair or proof of zero vaccination benefit.",
+    "quantitative_consequence": {
+      "log_wage": {
+        "original": 0.13,
+        "revised": 0.089,
+        "revised_deflated": 0.055,
+        "revised_survey_month_fe": 0.0066
+      },
+      "log_consumption": {
+        "original": 0.028,
+        "revised": 0.056,
+        "revised_deflated": 0.025,
+        "revised_survey_month_fe": -0.0024
+      }
+    },
+    "evidence_locator": "DP103 PDF pp. 5–8, Table 1; arXiv 2401.11100v1 abstract and identification discussion.",
+    "first_substantiated_public_date": "2024-01",
+    "first_substantiated_public_year": 2024,
+    "public_date_evidence": "The arXiv version history dates v1 to January 2024; the cached v1 contains the survey-timing identification criticism. January 20 is a submission timestamp, not asserted as the public announcement day. The March 2024 I4R version is later.",
+    "public_date_evidence_url": "https://arxiv.org/abs/2401.11100",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/286487/1/I4R-DP103.pdf",
+      "https://arxiv.org/abs/2401.11100",
+      "https://arxiv.org/pdf/2401.11100v1",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7212279"
+    ],
+    "dispute_status": "The 2026 author-reply abstract acknowledges partial survey-time dependence and loss of the consumption result under revised specifications, but defends inflation-adjusted male wage effects and disputes the permutation exercise. Full reply PDF not retrieved; claims are limited to its official search-indexed abstract.",
+    "cohort_recommendation": "Include as a material statistical-identification error, with scope limited to the stated rollout-based causal interpretation.",
+    "later_author_response": {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7212279",
+      "posted": "2026-08-01",
+      "date_written": "2026-07-31",
+      "verification_scope": "Official SSRN search-indexed abstract independently read by lead and second reviewer; direct page returned 403 and full PDF was not acquired.",
+      "male_log_wage_imf_cpi": 0.125,
+      "male_log_wage_world_bank_cpi": 0.127,
+      "male_p_both": 0.007,
+      "full_sample_wage_p_imf_cpi": 0.071,
+      "full_sample_wage_p_world_bank_cpi": 0.067,
+      "interpretation": "Reply retains a male wage benefit; the critique is not evidence that vaccination had no benefit."
+    }
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_110",
+    "original_title": "Evaluating Deliberative Competence: A Simple Method with an Application to Financial Choice",
+    "original_doi": "10.1257/aer.20210290",
+    "original_publication_year": 2022,
+    "original_publication_date": "2022-11-01",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1257/aer.20210290",
+    "error_verified": true,
+    "material_error_verified": false,
+    "materiality_status": "no",
+    "materiality_scope": "Exclude as a verified limited error; do not infer a material finding change merely from an incorrect formula.",
+    "error": "The squared-distance variable used a difference of squares, (rc^2-rs^2)/100, instead of the squared difference, (rc-rs)^2/100.",
+    "affected_claim": "The squared-distance robustness check for deliberative competence.",
+    "corrected_direction": "The correction changes this robustness metric but the reported experiment comparison persists; no consequential change to the substantive conclusion is demonstrated.",
+    "quantitative_consequence": {},
+    "evidence_locator": "DP110 PDF pp. 6–7 and 10, section 2.4.1.",
+    "first_substantiated_public_date": "2024-04",
+    "first_substantiated_public_year": 2024,
+    "public_date_evidence": "I4R issue cover April 2024; the internal May 2023 manuscript date is not verified public availability.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/289580/1/I4R-DP110.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/289580/1/I4R-DP110.pdf"
+    ],
+    "dispute_status": "Report states that the original authors were informed and adjusted their appendix; the report finds the central results robust.",
+    "cohort_recommendation": "Exclude as a verified limited error; do not infer a material finding change merely from an incorrect formula."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_149",
+    "original_title": "When Do Männerparteien Elect Women? Radical Right Populist Parties and Strategic Descriptive Representation",
+    "original_doi": "10.1017/s0003055422000107",
+    "original_publication_year": 2022,
+    "original_publication_date": "2022-03-22",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1017/s0003055422000107",
+    "error_verified": true,
+    "material_error_verified": false,
+    "materiality_status": "no",
+    "materiality_scope": "Exclude as a minor inference-reporting error; crossing a conventional p-value threshold alone does not meet materiality.",
+    "error": "Table export used normal-reference rather than fitted mixed-model finite-degrees-of-freedom p-values.",
+    "affected_claim": "The significance annotation for the interaction in Table 1, Model 2.",
+    "corrected_direction": "The coefficient remains approximately -0.66; one exported significance annotation changes to p=0.0548.",
+    "quantitative_consequence": {
+      "interaction": {
+        "original": -0.66,
+        "corrected": -0.66,
+        "original_p_annotation": "<0.05",
+        "corrected_p": 0.0548
+      }
+    },
+    "evidence_locator": "DP149 PDF pp. 8–9; author reply DP150 PDF p. 5.",
+    "first_substantiated_public_date": "2024-09",
+    "first_substantiated_public_year": 2024,
+    "public_date_evidence": "I4R issue cover September 2024. Internal code compilation dates do not establish public disclosure.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/302283/1/I4R-DP149.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/302283/1/I4R-DP149.pdf",
+      "https://www.econstor.eu/bitstream/10419/302284/1/I4R-DP150.pdf"
+    ],
+    "dispute_status": "Authors acknowledge the table-export discrepancy. Influential-case removal and alternative models are separate robustness disputes.",
+    "cohort_recommendation": "Exclude as a minor inference-reporting error; crossing a conventional p-value threshold alone does not meet materiality."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_191",
+    "original_title": "Local Elites as State Capacity: How City Chiefs Use Local Information to Increase Tax Compliance in the Democratic Republic of the Congo",
+    "original_doi": "10.1257/aer.20201159",
+    "original_publication_year": 2022,
+    "original_publication_date": "2022-03-01",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1257/aer.20201159",
+    "error_verified": true,
+    "material_error_verified": false,
+    "materiality_status": "unresolved",
+    "materiality_scope": "Hold outside the primary cohort pending substantive materiality of this peripheral mechanism statement; do not decide materiality from its p-value.",
+    "error": "The coefficient on incorrect exemption was printed with the wrong sign in Tables 5 and A9.",
+    "affected_claim": "Whether local chiefs correctly assign tax exemptions.",
+    "corrected_direction": "The corrected coefficient is +1.2 percentage points rather than -1.2; the authors remove the claim that exemptions were more correctly assigned. Main tax-revenue findings are unchanged.",
+    "quantitative_consequence": {
+      "incorrect_exemption_percentage_points": {
+        "original": -1.2,
+        "corrected": 1.2,
+        "p": 0.107
+      }
+    },
+    "evidence_locator": "DP191 PDF p. 9; author reply DP192 PDF pp. 5 and 21.",
+    "first_substantiated_public_date": "2024-12",
+    "first_substantiated_public_year": 2024,
+    "public_date_evidence": "December 2024 I4R issue substantiates public disclosure; the reply manuscript date does not establish an earlier public release.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/307931/1/I4R-DP191.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/307931/1/I4R-DP191.pdf",
+      "https://www.econstor.eu/bitstream/10419/307932/1/I4R-DP192.pdf"
+    ],
+    "dispute_status": "Authors acknowledge the sign error; broader mechanism disagreements involve additional sample and model choices.",
+    "cohort_recommendation": "Hold outside the primary cohort pending substantive materiality of this peripheral mechanism statement; do not decide materiality from its p-value."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "day",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_193",
+    "original_title": "Building Nations through Shared Experiences: Evidence from African Football",
+    "original_doi": "10.1257/aer.20180805",
+    "original_publication_year": 2020,
+    "original_publication_date": "2020-05-01",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1257/aer.20180805",
+    "error_verified": true,
+    "material_error_verified": true,
+    "materiality_status": "yes",
+    "materiality_scope": "Include for a demonstrated revision to a headline magnitude, not as refutation; retain separately from sign/claim reversals.",
+    "error": "An incorrect match date and a reversed Botswana–Mozambique score enter the individual-level treatment data.",
+    "affected_claim": "The magnitude of the fall in ethnic identification after national football victories.",
+    "corrected_direction": "Correcting the two match errors reduces the reported ethnic-identification decline from 37% to 29%. The effect remains negative and the separate interethnic-trust result is unchanged.",
+    "quantitative_consequence": {
+      "ethnic_identification": {
+        "original": -0.053,
+        "corrected": -0.042,
+        "original_relative_decline_percent": 37,
+        "corrected_relative_decline_percent": 29
+      },
+      "interethnic_trust_relative_increase_percent": {
+        "original": 30,
+        "corrected": 30
+      },
+      "conflict_coefficient_separate_sample_corrections": {
+        "original": -0.09,
+        "corrected": -0.079
+      }
+    },
+    "evidence_locator": "AEA official corrigendum PDF pp. 2–5, especially individual-level comparison on p. 3; conflict is the outcome in its Table 5 despite the mislabeled prose.",
+    "first_substantiated_public_date": "2024-12-03",
+    "first_substantiated_public_year": 2024,
+    "public_date_evidence": "The original AEA article page explicitly dates the Online Corrigendum December 3, 2024. Earlier error-specific public disclosure was not substantiated.",
+    "public_date_evidence_url": "https://www.aeaweb.org/articles?id=10.1257/aer.20180805",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/307961/1/I4R-DP193.pdf",
+      "https://www.aeaweb.org/articles/materials/22063",
+      "https://www.aeaweb.org/articles?id=10.1257/aer.20180805",
+      "https://www.econstor.eu/bitstream/10419/307962/1/I4R-DP194.pdf"
+    ],
+    "dispute_status": "The authors acknowledge the match errors and retain the qualitative conclusions. Larger replication differences also involve contested qualification-sample definitions.",
+    "cohort_recommendation": "Include for a demonstrated revision to a headline magnitude, not as refutation; retain separately from sign/claim reversals."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_207",
+    "original_title": "Improving Women’s Mental Health during a Pandemic",
+    "original_doi": "10.1257/app.20210655",
+    "original_publication_year": 2024,
+    "original_publication_date": "2024-04-01",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1257/app.20210655",
+    "error_verified": true,
+    "material_error_verified": true,
+    "materiality_status": "yes",
+    "materiality_scope": "Include as a material secondary interpretation error; do not encode the originally negative numerical estimate as positive or claim the main mental-health result was overturned.",
+    "error": "The text interprets a negative secondary treatment coefficient as an increase in women believing they make better calculations and decisions than their husbands.",
+    "affected_claim": "A claimed improvement in this component of attitudes toward gender norms.",
+    "corrected_direction": "The published coefficient is already -0.180: the corrected interpretation is an 18-percentage-point decrease, not an increase. This does not adjudicate the separate disputed mental-health scoring issue.",
+    "quantitative_consequence": {
+      "binary_agreement": {
+        "published_estimate": -0.18,
+        "corrected_estimate": -0.18,
+        "se": 0.022,
+        "control_mean": 0.419,
+        "n": 2197,
+        "published_interpretation": "increase",
+        "corrected_interpretation": "decrease"
+      },
+      "standardized_item_reanalysis": {
+        "estimate": -0.539,
+        "se": 0.056
+      }
+    },
+    "evidence_locator": "Original appendix PDF p. 25 Table A15 and p. 37 reverse-scoring definitions; DP207 PDF pp. 50–51 and 57/Table A5; original main-text statement quoted on DP207 p. 51.",
+    "first_substantiated_public_date": "2025-02",
+    "first_substantiated_public_year": 2025,
+    "public_date_evidence": "I4R issue cover February 2025 substantiates the disclosure month; February 24 manuscript date is not independently verified public release.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/312258/1/I4R-DP207.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/312258/1/I4R-DP207.pdf",
+      "https://www.aeaweb.org/articles/materials/20485"
+    ],
+    "dispute_status": "The principal mental-health reverse-scoring allegation is contested and is not the basis of this record. A later expression of concern concerns survey documentation and ethics.",
+    "cohort_recommendation": "Include as a material secondary interpretation error; do not encode the originally negative numerical estimate as positive or claim the main mental-health result was overturned."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_221",
+    "original_title": "Income and inequality in the Aztec Empire on the eve of the Spanish conquest",
+    "original_doi": "10.1038/s41562-023-01636-3",
+    "original_publication_year": 2023,
+    "original_publication_date": "2023-06-26",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1038/s41562-023-01636-3",
+    "error_verified": true,
+    "material_error_verified": true,
+    "materiality_status": "yes",
+    "materiality_scope": "Include as a material numerical correction; do not attribute the broader alternative-specification range to this error alone.",
+    "error": "A population-density sample restriction was imposed in the first IV stage but not the second; manual second-stage regression also used inappropriate standard errors.",
+    "affected_claim": "The headline income and inequality estimates for the Aztec Empire.",
+    "corrected_direction": "Using the same intended sample in both stages changes the IV input coefficient; the original-corrected calculation reduces estimated Gini from 50.4 to 42.5 and per-capita income from 690 to 593 (1990 PPP dollars).",
+    "quantitative_consequence": {
+      "iv_population_density": {
+        "original": 0.198,
+        "corrected": 0.157,
+        "original_se": 0.048,
+        "corrected_se": 0.054,
+        "original_n": 66,
+        "corrected_n": 57
+      },
+      "gini": {
+        "original": 50.4,
+        "corrected": 42.5
+      },
+      "income_per_capita_1990_ppp": {
+        "original": 690,
+        "corrected": 593
+      },
+      "top_one_percent_income_share": {
+        "original": 41.8,
+        "corrected": 34.5
+      },
+      "bottom_half_income_share": {
+        "original": 23.3,
+        "corrected": 27.1
+      }
+    },
+    "evidence_locator": "DP221 PDF pp. 7–8/Table 3 and p. 14/Table 6, rows IV.1 and IV.2 (Original corrected).",
+    "first_substantiated_public_date": "2025-04",
+    "first_substantiated_public_year": 2025,
+    "public_date_evidence": "I4R issue cover April 2025. The later OSF upload is not the initial exposure.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/315048/1/I4R-DP221.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/315048/1/I4R-DP221.pdf"
+    ],
+    "dispute_status": "No original-author reply located in the reviewed sources. The positive population-density relationship survives, but its derived headline magnitudes change.",
+    "cohort_recommendation": "Include as a material numerical correction; do not attribute the broader alternative-specification range to this error alone."
+  },
+  {
+    "verification_scope": "Lead and independent reviewers checked the specified source passages and available replies. Original data and code were not independently rerun.",
+    "first_disclosure_precision": "month",
+    "earlier_public_version_unverified": true,
+    "source_id": "dp_243",
+    "original_title": "Examining Inequality in the Time Cost of Waiting",
+    "original_doi": "10.1038/s41562-023-01524-w",
+    "original_publication_year": 2023,
+    "original_publication_date": "2023-02-09",
+    "original_publication_evidence": "https://api.crossref.org/works/10.1038/s41562-023-01524-w",
+    "error_verified": true,
+    "material_error_verified": true,
+    "materiality_status": "yes",
+    "materiality_scope": "Include for a demonstrated change to the focal adjusted-gap magnitude, including a strengthening correction; no claim of an overturned income or race conclusion.",
+    "error": "Negative missing-income codes were classified as low income; several regressions also omitted the survey weights promised in the article.",
+    "affected_claim": "The magnitude of the adjusted waiting-time gap between low- and high-income respondents.",
+    "corrected_direction": "The missing-income correction alone increases the adjusted gap from 0.371 to 0.518 minutes, and the gap conditional on waiting from 5.834 to 7.017. Adding the omitted weights gives 0.626 and 7.518. The direction survives and strengthens.",
+    "quantitative_consequence": {
+      "adjusted_waiting_minutes": {
+        "original": 0.371,
+        "missing_income_corrected": 0.518,
+        "also_weighted": 0.626
+      },
+      "adjusted_minutes_conditional_on_waiting": {
+        "original": 5.834,
+        "missing_income_corrected": 7.017,
+        "also_weighted": 7.518
+      }
+    },
+    "evidence_locator": "DP243 PDF pp. 8–10 and 28/Table 3; author reply DP244 PDF pp. 6–8. Table 3 checkmarks and body identify operations; its note reverses columns 2/3 descriptions.",
+    "first_substantiated_public_date": "2025-07",
+    "first_substantiated_public_year": 2025,
+    "public_date_evidence": "I4R issue cover July 2025; July 2 manuscript date is not independently verified public availability.",
+    "public_date_evidence_url": "https://www.econstor.eu/bitstream/10419/321370/1/I4R-DP243.pdf",
+    "sources": [
+      "https://www.econstor.eu/bitstream/10419/321370/1/I4R-DP243.pdf",
+      "https://www.econstor.eu/bitstream/10419/321371/1/I4R-DP244.pdf"
+    ],
+    "dispute_status": "Authors acknowledge missing-income and weighting errors but characterize their effects as modest. Larger robustness changes also alter the definition of waiting and must be kept separate.",
+    "cohort_recommendation": "Include for a demonstrated change to the focal adjusted-gap magnitude, including a strengthening correction; no claim of an overturned income or race conclusion.",
+    "source_reporting_discrepancy": "The report prose attributes 69%/29% increases to the missing-income fix, but those approximate ratios compare columns 1/3 and combine that fix with weighting. The missing-income-only contrasts are columns 1/2."
   }
 ]

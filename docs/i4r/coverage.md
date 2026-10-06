@@ -25,18 +25,18 @@ The inventory covers both discovered catalogs. Assessment coverage remains incom
 | Controls with verified publisher dates | 1000 |
 | Complete affected/control citation histories | 426 |
 | Deduplicated article–citing-work relationships | 32069 |
-| Source units after verified duplicate links | 636 |
-| Verified duplicate listings collapsed | 78 |
-| Source units containing article-specific assessments | 524 |
-| Source units with resolved target classification | 380 |
-| Units whose assessment eligibility remains unresolved | 27 |
-| Curated material-error candidate records | 30 |
-| Source-verified material-error disclosures with verified public year | 22 |
-| Disclosures satisfying the primary date/age window | 5 |
+| Source units after verified duplicate links | 634 |
+| Verified duplicate listings collapsed | 80 |
+| Source units containing article-specific assessments | 523 |
+| Source units with resolved target classification | 382 |
+| Units whose assessment eligibility remains unresolved | 26 |
+| Curated material-error candidate records | 40 |
+| Source-verified material-error disclosures with verified public year | 27 |
+| Disclosures satisfying the primary date/age window | 6 |
 | Events with selected controls | 0 |
 | Complete matched article-period observations | 0 |
 
-The source-level resolution fraction among confirmed assessment listings is 72.5%. Including unresolved-eligibility source units in the denominator gives 69.0%.
+The source-level resolution fraction among confirmed assessment listings is 73.0%. Including unresolved-eligibility source units in the denominator gives 69.6%.
 
 These are source-listing progress measures, not coverage of all independent article assessments. Shared projects can contain several assessment teams or articles. The 90% gate remains blocked until those units are enumerated and reviewed. Explicitly enumerated assessments are not yet a census of the total assessment population. The source-by-source enumeration ledger is `data/i4r/assessment_scope.csv`. See `data/i4r/coverage_scope.json` for resolved and unresolved scope.
 
