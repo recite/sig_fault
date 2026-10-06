@@ -207,6 +207,45 @@ def crosswalk(inventories, i4r_dois):
     ]
 
 
+def annotate_screens(rows, screens):
+    categories = {
+        "explicit_error_candidate",
+        "minor_or_nonmaterial_issue",
+        "robustness_dispute",
+        "reproduction_failure_unspecified",
+        "no_adverse_claim_in_excerpt",
+        "insufficient_information",
+    }
+    lookup = {r["record_id"]: r for r in screens}
+    if len(lookup) != len(screens) or set(lookup) != {r["record_id"] for r in rows}:
+        raise ValueError(
+            "Screening does not cover each reproduction record exactly once"
+        )
+    result = []
+    for row in rows:
+        screen = lookup[row["record_id"]]
+        if screen["screen_category"] not in categories:
+            raise ValueError("Unknown screening category")
+        if screen["source_excerpt_sha256"] != digest(row["evidence_quote"].encode()):
+            raise ValueError("Screening refers to a different source excerpt")
+        if any(screen[k] != row[k] for k in ["original_doi", "report_doi"]):
+            raise ValueError("Screening identity differs from source inventory")
+        result.append(
+            row
+            | {
+                k: screen[k]
+                for k in [
+                    "screen_category",
+                    "reason",
+                    "error_mechanism_if_stated",
+                    "consequence_if_stated",
+                    "review_scope",
+                ]
+            }
+        )
+    return result
+
+
 def report(counts):
     rows = []
     for key, label, unit in [
@@ -253,6 +292,18 @@ can receive an adverse label, while a reproducible computation can contain a
 consequential coding mistake. Record the actual mistake, affected claim, numerical
 consequence, source passage, author response and earliest public disclosure.
 
+The first pass has now read the supplied excerpts for all
+{counts['reproduction_records']} reproduction records. It identifies
+{counts['explicit_error_candidate_records']} records as explicit error candidates,
+covering {counts['explicit_error_candidate_dois']} valid original DOIs;
+{counts['candidate_dois_absent_i4r']} of those DOIs are absent from the I4R registry.
+The [candidate queue](../data/inventories/error_review_queue.csv) gives the alleged
+mistake and consequence for each. These require the full report and any author
+response before verification. Other records remain in the
+[complete screen](../data/inventories/reproduction_screening.csv), including unclear
+reproduction failures, minor discrepancies and specification disputes. Excerpt
+screening does not establish material error or rule it out.
+
 ## Second priority: the large statistical-reporting audit
 
 The archived statcheck release supplies all {counts['statcheck']['original_dois']:,}
@@ -291,9 +342,11 @@ An umbrella report can contain separate attempts, and one repeated key has confl
 outcomes. No automatic deduplication or majority vote resolves those cases.
 
 The [dictionary and construction notes](inventory-methods.md) define fields, joins,
-missing values, attribution and the remaining eligibility checks. The newly imported
-records contribute **zero newly adjudicated material errors and zero new eligible
-citation comparisons** at this stage. The existing citation estimates are unchanged.
+missing values, attribution and the remaining eligibility checks. Source labels do
+not automatically establish material errors. Separate
+[primary-report reviews](inventory-primary-reviews.md) document the first adjudications
+and remaining questions. These inventories contribute **zero new eligible citation
+comparisons** so far. The existing citation estimates are unchanged.
 """
     (ROOT / "docs/inventories.md").write_text(text)
 
@@ -345,6 +398,13 @@ def build():
         )
     queue.sort(key=lambda r: (r["review_priority"], r["record_id"]))
     write_csv("reproduction_review_queue.csv", queue)
+    screens = json.loads((DATA / "reproduction_screens.json").read_text())
+    screened = annotate_screens(queue, screens)
+    write_csv("reproduction_screening.csv", screened)
+    candidates = [
+        r for r in screened if r["screen_category"] == "explicit_error_candidate"
+    ]
+    write_csv("error_review_queue.csv", candidates)
     duplicate_groups = collections.defaultdict(list)
     for r in flora:
         if r["original_doi"] and r["report_doi"]:
@@ -391,6 +451,16 @@ def build():
         ),
         challenged_reproduction_dois_absent_i4r=len(
             {r["original_doi"] for r in challenged} - i4r_dois - {""}
+        ),
+        excerpt_screening_counts=dict(
+            sorted(collections.Counter(r["screen_category"] for r in screened).items())
+        ),
+        explicit_error_candidate_records=len(candidates),
+        explicit_error_candidate_dois=len(
+            {r["original_doi"] for r in candidates} - {""}
+        ),
+        candidate_dois_absent_i4r=len(
+            {r["original_doi"] for r in candidates} - i4r_dois - {""}
         ),
         repeated_complete_assessment_keys=len(duplicates),
         combined_original_dois=len(linked),

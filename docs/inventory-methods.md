@@ -58,6 +58,7 @@ of its source flags, but running that code is not part of this build.
 | `repeated_assessment_keys.csv` | Repeated valid original DOI × report DOI × assessment type | Source row IDs and outcomes, including conflicts; these are review candidates, not automatically duplicate assessments |
 | `status.json` | Source-specific inventory counts | Counts of records, distinct valid DOI strings, missing identities and review candidates; distinct from eligible error events |
 | `sources.json` | One frozen input | Source URL/version, retrieval time, hashes, license and attribution |
+| `primary_reviews.json` | One manually reviewed reproduction report | Error mechanism, consequence, author response, primary-source locations and hashes, competing date evidence and unresolved eligibility |
 
 `record_id` combines the source and its one-based data-row index in this frozen
 snapshot. It is a row locator, not a stable scholarly identity across source
@@ -143,8 +144,41 @@ until those requirements are met.
 An independent review reproduced the source record counts, DOI overlaps and
 statcheck flag counts. It identified six reproduction records without usable
 original DOIs; those records now retain unknown I4R membership. A temporary build
-containing only public source snapshots, the import script and the I4R article
-roster reproduced all eight inventory/report outputs byte for byte, without private
-files or network access. Local checks cover malformed identifiers, conflicting
+containing only public source snapshots, the excerpt-screen annotations, the import
+script and the I4R article roster reproduced all ten inventory/report outputs byte
+for byte, without private files or network access. Local checks cover malformed identifiers, conflicting
 assessments, missing flags and repeated papers across sources. The full repository
 lint, tests and manuscript build also pass.
+
+## Complete reproduction-excerpt screening
+
+`reproduction_screens.json` records a first reading of every supplied reproduction
+excerpt, with an alleged mechanism, stated consequence, reason and scope.
+`reproduction_screening.csv` joins these annotations one-to-one to all reproduction
+records. The join rejects missing or repeated IDs, changed identities, changed
+excerpt hashes and unknown categories. `error_review_queue.csv` contains the
+explicit-error candidates for full-report review; it is not an eligible treatment
+sample. Source outcomes and unresolved records remain intact.
+
+The categories distinguish an explicit error candidate, a minor/nonmaterial issue,
+a specification dispute, a reproduction failure with no stated mechanism, no
+adverse claim in the excerpt, and insufficient information. These describe what
+the excerpt supports; even an explicit error candidate may turn out to be disputed,
+nonmaterial or incorrectly linked. The screen does not infer the earliest public
+disclosure date from the source's report year.
+
+Two assistant reviewers read disjoint slices covering all 365 reproduction records;
+source IDs, identities and evidence hashes were checked centrally. Full-report
+verification and author-response review follow this screen. The complete screen
+also catches possible identity mismatches and consequential corrections hidden
+under favorable source labels. No screen category automatically adds an event to
+the I4R registry or changes a citation estimate.
+
+The [first primary-report reviews](inventory-primary-reviews.md) retain four
+case assessments separately from the excerpt screen. The central review checked
+the numerical claims and key passages in the downloaded documents. Original
+analyses were not rerun. Source files are cached with hashes; the public review
+includes source URLs and locations. No reviewed case is yet assigned an eligible
+treatment date or added to matching. The inventory status field
+`imported_verified_material_errors` counts automatic classifications by the import
+(always zero), not findings from these separate manual reviews.

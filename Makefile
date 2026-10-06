@@ -104,6 +104,7 @@ nieuwenhuis: analysis
 	python3 scripts/nieuwenhuis_diagnostics.py build
 	$(RSCRIPT) scripts/nieuwenhuis_analysis.R
 	$(MAKE) nieuwenhuis-validation
+	$(MAKE) nieuwenhuis-opencitations
 	python3 scripts/nieuwenhuis.py report
 
 .PHONY: nieuwenhuis-validation
@@ -135,3 +136,12 @@ inventories:
 
 inventories-test: inventories
 	python3 -m unittest discover -s tests -p 'test_audit_inventories.py'
+
+.PHONY: nieuwenhuis-opencitations nieuwenhuis-opencitations-fetch
+nieuwenhuis-opencitations:
+	python3 scripts/nieuwenhuis_opencitations.py build
+	$(RSCRIPT) scripts/nieuwenhuis_opencitations.R
+	python3 scripts/nieuwenhuis_opencitations.py report
+
+nieuwenhuis-opencitations-fetch:
+	python3 scripts/nieuwenhuis_validation.py fetch --full-cohort

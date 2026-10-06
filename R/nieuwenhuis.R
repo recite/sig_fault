@@ -1,5 +1,5 @@
-bridge_changes <- function(panel, post = 2012:2015) {
-  sources <- c("wos", "openalex", "openalex_broad")
+bridge_changes <- function(panel, post = 2012:2015,
+                           sources = c("wos", "openalex", "openalex_broad")) {
   years <- c(2010L, post)
   stopifnot(length(post) > 0L, !anyDuplicated(years), !anyNA(panel$article_id))
   x <- panel[panel$year %in% years, ]
@@ -45,13 +45,16 @@ bridge_contrasts <- function(x, source) {
 }
 
 bridge_comparison <- function(x, source, draws = 9999L, seed = 20261006L) {
-  stopifnot(source %in% c("openalex", "openalex_broad"), draws >= 2L, draws == as.integer(draws))
+  stopifnot(
+    source != "wos", all(paste0(source, c("_before", "_after")) %in% names(x)),
+    draws >= 2L, draws == as.integer(draws)
+  )
   n <- tabulate(x$flag + 1L, nbins = 2L)
   left <- bridge_contrasts(x, "wos")
   right <- bridge_contrasts(x, source)
   result <- data.frame(
     source = source, estimand = names(left), n_flagged = n[2], n_comparison = n[1],
-    wos = unname(left), openalex = unname(right), difference = unname(right - left),
+    wos = unname(left), alternative = unname(right), difference = unname(right - left),
     se = NA_real_, lower = NA_real_, upper = NA_real_,
     bootstrap_draws = 0L, undefined_draws = 0L, seed = seed,
     status = if (any(n == 0L)) {

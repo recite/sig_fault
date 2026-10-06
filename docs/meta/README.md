@@ -24,6 +24,11 @@ A [secondary three-component synthesis](secondary.md) adds the proportional cont
 from the separately matched I4R annual-total analysis. It preserves the different
 measurement and exposure definitions and is an exploratory descriptive extension.
 
+A [source sensitivity](../../data/meta/opencitations_synthesis.csv) replaces the
+neuroscience component with OpenCitations on the same papers and years. It does
+not add another independent audit; see the
+[measurement comparison](../nieuwenhuis/opencitations.md).
+
 See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),
 [synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).
 Run `make synthesis` to reproduce these results and the manuscript table.

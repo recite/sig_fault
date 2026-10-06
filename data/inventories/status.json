@@ -22,6 +22,17 @@
   "challenged_reproduction_records": 209,
   "challenged_reproduction_original_dois": 200,
   "challenged_reproduction_dois_absent_i4r": 156,
+  "excerpt_screening_counts": {
+    "explicit_error_candidate": 47,
+    "insufficient_information": 15,
+    "minor_or_nonmaterial_issue": 34,
+    "no_adverse_claim_in_excerpt": 132,
+    "reproduction_failure_unspecified": 41,
+    "robustness_dispute": 96
+  },
+  "explicit_error_candidate_records": 47,
+  "explicit_error_candidate_dois": 45,
+  "candidate_dois_absent_i4r": 36,
   "repeated_complete_assessment_keys": 5,
   "combined_original_dois": 53351,
   "imported_verified_material_errors": 0,

@@ -82,15 +82,14 @@ def fetch(url, path, json_response=True):
             ):
                 raise ValueError("Cached response URL/hash mismatch: " + str(path))
         return pilot.request(url, path, json_response=json_response)
-    if host not in {"api.osf.io", "api.openalex.org"}:
+    if host not in {"api.osf.io", "api.openalex.org", "api.opencitations.net"}:
         return pilot.request(url, path, json_response=json_response)
-    # Stop the entire OSF acquisition on throttling; never retry ahead of Retry-After.
     with OSF_LOCK:
-        token = (
-            (os.environ.get("OSF_TOKEN") or os.environ.get("OSF_API_TOKEN"))
-            if host == "api.osf.io"
-            else os.environ.get("OPENALEX_API_KEY")
-        )
+        token = None
+        if host == "api.osf.io":
+            token = os.environ.get("OSF_TOKEN") or os.environ.get("OSF_API_TOKEN")
+        elif host == "api.openalex.org":
+            token = os.environ.get("OPENALEX_API_KEY")
         scope = "authenticated" if token else "anonymous"
         blocked = CACHE / (host + "_" + scope + "_retry_after.json")
         if blocked.exists() and time.time() < json.loads(blocked.read_text())["until"]:

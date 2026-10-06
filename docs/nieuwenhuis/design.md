@@ -27,3 +27,20 @@ The stored source discrepancy is OpenAlex minus Web of Science, in citation unit
 The protocol is retrospective: historical estimates and the Lal results are already known, and ten flagged-paper OpenAlex histories have been inspected in the separate context pilot. This document records the bridge design before acquiring the remaining histories. Public metadata, reference edges, acquisition status and source hashes remain distinct. Cached pilot histories may be reused with their original provenance; no new API result silently overwrites a frozen frame. Collection respects the shared OpenAlex rate-limit checkpoint.
 
 A cross-audit synthesis will first display each study-specific contrast. Any pooled quantity must be labeled as an average association in the assembled cases, unless assumptions needed to identify the effect of publicity are separately justified. Lal's diagnostic flags and formal-publication date are not equivalent to verified material errors and their first public disclosure. Report those differences alongside the estimates rather than making perfect population enumeration a prerequisite for every descriptive result.
+
+## Full-cohort OpenCitations comparison
+
+Recorded October 6, 2026 before collecting OpenCitations histories beyond the ten-paper flagged pilot. Historical results, OpenAlex pilot results and the ten-paper third-index link check have already been examined. This is a retrospective measurement check, not a new independent audit of statistical errors.
+
+Keep the 153 historical main-analysis papers, their original error classifications, the 2010 baseline and both post windows (2012 and 2012–2015). Collect the complete OpenCitations incoming-link response and verify its length against the count endpoint. Preserve raw relationships and provenance. Count distinct citing works with a recorded publication year, retaining undated works separately. Merge citation records sharing a citing OMID or DOI; conflicting years within a merged work make its year unresolved rather than selecting the convenient date. Empty or incomplete acquisition is not a zero history. API completeness does not establish that the index captures all real citations.
+
+The outcome is dated citing works recorded by this index, across document types. It is not the primary OpenAlex article/review outcome. Report annual means and medians, absolute differences in changes, and ratios of group post/pre means. Compare each contrast with Web of Science on exactly the same available papers. Use the existing paired, flag-stratified paper bootstrap (9,999 draws, seed 20261006) for the source difference. Also report the subset of histories with no undated works, keeping the two sources on that identical subset. Do not generalize this selected subset as a full-cohort result. Missing years cannot be imputed from citation counts or classified as outside the analysis window. Unresolved records and full-cohort coverage must be visible alongside the dated-work analysis.
+
+A source discrepancy combines coverage, dating, document-type and vintage differences. Neither index is ground truth; shared upstream sources also prevent treating index agreement as independent validation. This measurement check does not add another independent study to the meta-analysis and does not replace the original historical estimate or the pending OpenAlex bridge.
+
+After inspecting the completed OpenCitations source contrasts, we also repeat the
+existing equal-audit, one-full-year synthesis with its neuroscience component
+measured using OpenCitations. This is a retrospective source sensitivity. It keeps
+the same original papers, audit weights, IV alternatives and article-clustered
+component inference; it substitutes the source rather than adding another audit.
+The main historical synthesis and the separate OpenAlex acquisition remain intact.

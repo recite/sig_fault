@@ -2,6 +2,9 @@
 
 import argparse
 import collections
+import csv
+import http.client
+import io
 import json
 import re
 import time
@@ -43,13 +46,31 @@ def validate_response(rows, count, doi):
             raise ValueError("Unexpected citation date representation")
 
 
-def fetch():
+def fetch_links(pid, doi):
+    url = BASE + "citations/doi:" + doi
+    csv_path = CACHE / (pid + "_opencitations.csv")
+    if not csv_path.exists():
+        try:
+            return acquisition.fetch(url, CACHE / (pid + "_opencitations.json"))
+        except http.client.IncompleteRead:
+            time.sleep(0.4)
+    payload = acquisition.fetch(url + "?format=csv", csv_path, json_response=False)
+    reader = csv.DictReader(io.StringIO(payload.decode("utf-8-sig")))
+    if not set(EDGE_FIELDS[1:]).issubset(reader.fieldnames or []):
+        raise ValueError("OpenCitations CSV lacks required relationship fields")
+    return list(reader)
+
+
+def fetch(full_cohort=False):
     panel = pilot.read_csv(DATA / "paired_panel.csv")
-    selected = {r["paper_id"] for r in panel if r["status"] == "complete"}
+    selected = {
+        r["paper_id"] for r in panel if full_cohort or r["status"] == "complete"
+    }
     identities = {r["paper_id"]: r for r in pilot.read_csv(DATA / "identities.csv")}
     old_coverage = {r["paper_id"]: r for r in nw.read("validation_coverage.csv")}
     old_edges = nw.read("validation_edges.csv")
-    edges, coverage = [], []
+    edges = [r for r in old_edges if r["paper_id"] not in selected]
+    coverage = [r for pid, r in old_coverage.items() if pid not in selected]
     for pid in sorted(selected):
         doi = identities[pid]["doi"]
         previous = old_coverage.get(pid, {})
@@ -67,10 +88,7 @@ def fetch():
             detail="",
         )
         try:
-            rows = acquisition.fetch(
-                BASE + "citations/doi:" + doi,
-                CACHE / (pid + "_opencitations.json"),
-            )
+            rows = fetch_links(pid, doi)
             time.sleep(0.4)
             total = acquisition.fetch(
                 BASE + "citation-count/doi:" + doi,
@@ -92,9 +110,25 @@ def fetch():
             status["detail"] = str(exc)[:200]
         coverage.append(status)
         print(pid, status["complete"], status["records"], status["detail"], flush=True)
+        checkpoint(edges, coverage, old_edges, old_coverage)
+        if "429" in status["detail"] or "rate limit" in status["detail"]:
+            break
         time.sleep(0.4)
-    pilot.write_csv(DATA / "validation_edges.csv", edges, EDGE_FIELDS)
-    pilot.write_csv(DATA / "validation_coverage.csv", coverage, COVERAGE_FIELDS)
+    checkpoint(edges, coverage, old_edges, old_coverage)
+
+
+def checkpoint(edges, coverage, old_edges, old_coverage):
+    visited = {r["paper_id"] for r in coverage}
+    pilot.write_csv(
+        DATA / "validation_edges.csv",
+        edges + [r for r in old_edges if r["paper_id"] not in visited],
+        EDGE_FIELDS,
+    )
+    pilot.write_csv(
+        DATA / "validation_coverage.csv",
+        coverage + [r for pid, r in old_coverage.items() if pid not in visited],
+        COVERAGE_FIELDS,
+    )
     sources = {r["path"]: r for r in nw.read("validation_sources.csv")}
     for path in sorted(CACHE.glob("*.source.json")):
         name = str(path.relative_to(pilot.ROOT)).removesuffix(".source.json")
@@ -227,7 +261,12 @@ def report(checked, coverage):
             f"| {label} | {len(subset)} | {counts['present']} | "
             f"{counts['not_found']} | {counts['not_collected']} |"
         )
-    undated = sum(int(r["undated_records"]) for r in coverage if r["complete"] == "yes")
+    observed_papers = {r["paper_id"] for r in observed}
+    undated = sum(
+        int(r["undated_records"])
+        for r in coverage
+        if r["complete"] == "yes" and r["paper_id"] in observed_papers
+    )
     lines += [
         "",
         "OpenCitations and OpenAlex can share upstream records. Agreement "
@@ -237,12 +276,15 @@ def report(checked, coverage):
         "in this index is not thereby false. These records do not replace "
         "either database's annual citation counts.",
         "",
-        f"The complete OpenCitations responses include {undated} undated "
+        f"The responses for these paired pilot papers include {undated} undated "
         "relationships across all years. They remain in the link data with "
         "empty dates. Every accepted response matches the separate count "
         "endpoint, has unique citation identifiers, and identifies the "
         "queried target DOI in every record. Completeness refers to the API "
         "response, not all citations that exist in the literature.",
+        "",
+        "The separate [full-cohort source comparison](opencitations.md) "
+        "collects both flagged and comparison papers from the historical frame.",
         "",
         "## Reproduce",
         "",
@@ -267,5 +309,9 @@ def report(checked, coverage):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["fetch", "build"])
+    parser.add_argument("--full-cohort", action="store_true")
     args = parser.parse_args()
-    {"fetch": fetch, "build": build}[args.command]()
+    if args.command == "fetch":
+        fetch(full_cohort=args.full_cohort)
+    else:
+        build()

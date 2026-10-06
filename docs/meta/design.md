@@ -27,3 +27,15 @@ Report the four case-specific log ratios, their equal-case average as a differen
 The additional synthesis averages the three component log contrasts with weights one third. Call it an **equal-component descriptive synthesis**: I4R combines several individually publicized errors and is not one methodological audit. Retain both primary IV diagnostics, the existing alternative definitions and the 2009 neuroscience cohort. Apply the same Welch approximation with the sum of squared-weight component variances. Check original and control DOI overlap across components before combining them. Unlike the original two-audit comparison, I4R and IV windows overlap, so even without shared original papers the zero-cross-component-covariance assumption is substantive. No independent-error estimate is reported if an original or control appears in multiple components.
 
 This sensitivity preserves the I4R all-type outcome, Lal article/review outcome and historical neuroscience measurement. It also preserves their differing warning definitions and exposure dates. These discrepancies, selected I4R coverage, pre-period differences and the small number of disclosures prevent interpreting the combined quantity as the causal effect of publicizing a typical error. The primary two-audit synthesis and absolute I4R analysis remain separately reported.
+
+
+## Citation-source sensitivity
+
+The OpenCitations sensitivity substitutes its neuroscience estimate for the
+historical Web of Science estimate on the same original papers and 2010–2012
+window. It retains the two audit identities, equal weights, article-clustered
+component standard errors and Welch degrees of freedom. OpenCitations is not
+counted as another study. This retrospective check follows examination of the
+completed source comparison and does not harmonize all document types with Lal.
+The primary synthesis remains the historical estimate; source substitution
+quantifies sensitivity in these assembled cases, not a general database-bias effect.

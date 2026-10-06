@@ -13,7 +13,9 @@ Headline fractions include only targets with complete OpenCitations retrieval. T
 
 OpenCitations and OpenAlex can share upstream records. Agreement corroborates a recorded link but does not independently verify the citing bibliography, establish a common publication year, or show that the citation endorses the affected claim. A link not found in this index is not thereby false. These records do not replace either database's annual citation counts.
 
-The complete OpenCitations responses include 36 undated relationships across all years. They remain in the link data with empty dates. Every accepted response matches the separate count endpoint, has unique citation identifiers, and identifies the queried target DOI in every record. Completeness refers to the API response, not all citations that exist in the literature.
+The responses for these paired pilot papers include 36 undated relationships across all years. They remain in the link data with empty dates. Every accepted response matches the separate count endpoint, has unique citation identifiers, and identifies the queried target DOI in every record. Completeness refers to the API response, not all citations that exist in the literature.
+
+The separate [full-cohort source comparison](opencitations.md) collects both flagged and comparison papers from the historical frame.
 
 ## Reproduce
 

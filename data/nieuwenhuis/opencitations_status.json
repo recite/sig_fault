@@ -1,0 +1,14 @@
+{
+  "historical_papers": 153,
+  "complete_histories": 153,
+  "complete_flagged": 76,
+  "complete_comparison": 77,
+  "full_cohort_available": true,
+  "raw_relationships": 48597,
+  "distinct_citing_work_relationships": 48597,
+  "merged_relationships": 0,
+  "undated_works": 310,
+  "conflicting_year_works": 0,
+  "outcome": "Distinct dated citing works recorded by OpenCitations, all document types",
+  "limitation": "Undated works remain unassigned; API completeness is not completeness of real citations."
+}

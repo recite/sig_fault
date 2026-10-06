@@ -77,6 +77,40 @@ class InventoryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             inventory.statcheck_articles(raw.replace(b"FALSE", b"maybe"))
 
+    def test_screening_is_bound_to_exact_records_and_excerpts(self):
+        rows = [
+            dict(
+                record_id="a",
+                original_doi="10.1234/a",
+                report_doi="10.1234/b",
+                evidence_quote="A supplied passage",
+                material_error_status="not_adjudicated",
+            )
+        ]
+        screen = dict(
+            record_id="a",
+            original_doi="10.1234/a",
+            report_doi="10.1234/b",
+            screen_category="explicit_error_candidate",
+            reason="A lead",
+            error_mechanism_if_stated="coding",
+            consequence_if_stated="unknown",
+            review_scope="excerpt only",
+            source_excerpt_sha256=inventory.digest(b"A supplied passage"),
+        )
+        result = inventory.annotate_screens(rows, [screen])
+        self.assertEqual(result[0]["material_error_status"], "not_adjudicated")
+        with self.assertRaisesRegex(ValueError, "exactly once"):
+            inventory.annotate_screens(rows, [screen, screen])
+        with self.assertRaisesRegex(ValueError, "different source excerpt"):
+            inventory.annotate_screens(
+                rows, [screen | dict(source_excerpt_sha256="stale")]
+            )
+        with self.assertRaisesRegex(ValueError, "identity differs"):
+            inventory.annotate_screens(
+                rows, [screen | dict(original_doi="10.1234/other")]
+            )
+
     def test_cross_source_overlap_does_not_create_independent_papers(self):
         data = dict(
             flora=[dict(original_doi="10.1234/a")] * 2,

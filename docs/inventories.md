@@ -36,6 +36,18 @@ can receive an adverse label, while a reproducible computation can contain a
 consequential coding mistake. Record the actual mistake, affected claim, numerical
 consequence, source passage, author response and earliest public disclosure.
 
+The first pass has now read the supplied excerpts for all
+365 reproduction records. It identifies
+47 records as explicit error candidates,
+covering 45 valid original DOIs;
+36 of those DOIs are absent from the I4R registry.
+The [candidate queue](../data/inventories/error_review_queue.csv) gives the alleged
+mistake and consequence for each. These require the full report and any author
+response before verification. Other records remain in the
+[complete screen](../data/inventories/reproduction_screening.csv), including unclear
+reproduction failures, minor discrepancies and specification disputes. Excerpt
+screening does not establish material error or rule it out.
+
 ## Second priority: the large statistical-reporting audit
 
 The archived statcheck release supplies all 50,845
@@ -74,6 +86,8 @@ An umbrella report can contain separate attempts, and one repeated key has confl
 outcomes. No automatic deduplication or majority vote resolves those cases.
 
 The [dictionary and construction notes](inventory-methods.md) define fields, joins,
-missing values, attribution and the remaining eligibility checks. The newly imported
-records contribute **zero newly adjudicated material errors and zero new eligible
-citation comparisons** at this stage. The existing citation estimates are unchanged.
+missing values, attribution and the remaining eligibility checks. Source labels do
+not automatically establish material errors. Separate
+[primary-report reviews](inventory-primary-reviews.md) document the first adjudications
+and remaining questions. These inventories contribute **zero new eligible citation
+comparisons** so far. The existing citation estimates are unchanged.

@@ -80,6 +80,32 @@ for (sample in unique(contrasts$sample[contrasts$audit == "Nieuwenhuis"])) {
 }
 combined <- do.call(rbind, combined)
 write.csv(combined, "data/meta/synthesis.csv", row.names = FALSE)
+oc_models <- read.csv("data/nieuwenhuis/opencitations_models.csv", stringsAsFactors = FALSE)
+take_oc <- oc_models$sample == "Available histories" &
+  oc_models$source == "opencitations" & oc_models$post_window == "2012"
+oc_models <- oc_models[take_oc, ]
+source_sensitivity <- list()
+for (sample in unique(contrasts$sample[contrasts$audit == "Nieuwenhuis"])) {
+  fit <- oc_models[oc_models$cohort == sample, ]
+  stopifnot(nrow(fit) == 1L)
+  for (diagnostic in names(labels)) {
+    take <- (contrasts$audit == "Nieuwenhuis" & contrasts$sample == sample) |
+      (contrasts$audit == "Lal" & contrasts$diagnostic == labels[diagnostic])
+    selected <- contrasts[take, ]
+    replace <- selected$audit == "Nieuwenhuis"
+    selected$estimate[replace] <- fit$estimate
+    selected$se[replace] <- fit$se
+    selected$df[replace] <- fit$df
+    source_sensitivity[[length(source_sensitivity) + 1L]] <- cbind(
+      nw_sample = sample, lal_diagnostic = labels[diagnostic],
+      nw_source = "OpenCitations dated works, all types", nw_percent = fit$percent,
+      equal_audit_synthesis(selected)
+    )
+  }
+}
+source_sensitivity <- do.call(rbind, source_sensitivity)
+write.csv(source_sensitivity, "data/meta/opencitations_synthesis.csv", row.names = FALSE)
+
 body <- c(
   "\\begin{tabular}{lrrrl}", "\\toprule",
   "IV diagnostic & Neuroscience & IV audit & Combined & 95\\% interval \\\\", "\\midrule"
@@ -137,6 +163,11 @@ report <- c(
   "A [secondary three-component synthesis](secondary.md) adds the proportional contrast",
   "from the separately matched I4R annual-total analysis. It preserves the different",
   "measurement and exposure definitions and is an exploratory descriptive extension.", "",
+  "A [source sensitivity](../../data/meta/opencitations_synthesis.csv) replaces the",
+  "neuroscience component with OpenCitations on the same papers and years. It does",
+  "not add another independent audit; see the",
+  "[measurement comparison](../nieuwenhuis/opencitations.md).",
+  "",
   "See [methods](design.md), [component estimates](../../data/meta/audit_contrasts.csv),",
   "[synthesis data](../../data/meta/synthesis.csv), and [status](../../data/meta/status.json).",
   "Run `make synthesis` to reproduce these results and the manuscript table."

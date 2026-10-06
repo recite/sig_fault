@@ -81,3 +81,45 @@ All four third-source outputs reproduce byte for byte in a temporary directory c
 `date_metadata.csv` records publisher-deposited online, print and general publication dates from Crossref for shared citing DOIs with conflicting years. `date_disagreements.csv` joins those dates to each original–citing-paper relationship. A date-convention explanation requires agreement on both years; one missing date does not suffice. These are selected diagnostic records, not a representative validation sample. Fetch with `python3 scripts/nieuwenhuis_diagnostics.py fetch-dates`, then rebuild with `make nieuwenhuis`. The source manifest includes cached date responses and their hashes.
 
 The decomposition and DOI reconciliation received an independent review. Every paired paper-year reconstructed exactly, only evidenced transcription errors merged, and translations and book components remained distinct. All seven diagnostic data/report/macro outputs also reproduced byte for byte in a temporary offline directory without private caches. The full source manifest was checked against the downloaded bytes.
+
+## Full-cohort OpenCitations measurement
+
+`make nieuwenhuis-opencitations` reconstructs the fixed 153-paper historical panel
+using the completed OpenCitations responses. `creation` is the citing work's
+publication date under the provider's definition. The documented CSV format is a
+fallback for interrupted JSON responses, with the same identity and count checks.
+Raw list/count responses have URL, retrieval time, byte size and SHA-256 provenance.
+Collection respects its own host-level retry checkpoint and sends neither OpenAlex
+nor OSF credentials to OpenCitations.
+
+| Output | Row unit | Definition |
+| --- | --- | --- |
+| `opencitations_works.csv` | Target paper × merged citing work | Transitive OMID/DOI identity components; all identifiers and original OCIs retained. A unique supplied year is dated; absent or conflicting years remain unresolved. |
+| `opencitations_panel.csv` | Historical paper × calendar year | Fixed historical frame with original WoS count and dated-work OpenCitations count; incomplete acquisition is missing, never zero. Unresolved-year relationships are recorded separately. |
+| `opencitations_status.json` | Acquisition summary | Complete histories by original flag, raw relationships, merged records and unresolved dates; full-cohort availability is separate from estimator feasibility. |
+| `opencitations_contrasts.csv` | Sample × publication cohort × post window × estimand | Same-paper source estimates, their paired difference and a flag-stratified 9,999-draw bootstrap interval. `wos` is the historical estimate and `alternative` is the named replacement source. |
+| `opencitations_period_summary.csv` | Sample × cohort × window × source × flag | Means and medians of pre counts and each paper's post-period annual average. Post medians are not averages of yearly medians. |
+| `opencitations_annual_summary.csv` | Sample × source × year × flag | Annual paper counts, means and medians, including observed zero counts. |
+| `opencitations_models.csv` | Sample × cohort × window × source | Article/year fixed-effects Poisson estimates and article-clustered intervals, checked against the closed-form ratio used in the paired comparison. |
+
+Both source-contrast files use the generic `alternative` column (the OpenAlex
+comparison previously named it `openalex`). The `source` column identifies its
+measurement. The absolute difference is replacement-source DiD minus historical
+DiD. The log-ratio difference compares the two estimated growth ratios; exponentiating
+it does not produce a percentage-point difference between percentage effects.
+
+The selected sensitivity drops every history with any unresolved citing year,
+even if that missing year might lie outside the analysis window. It retains 60
+papers and is not representative of the full cohort. No missing date is inferred
+from `timespan` or a paper's total citations. Both databases use exactly the same
+papers within every contrast. All-type OpenCitations counts are not the pending
+OpenAlex article/review outcome.
+
+The meta-analysis source sensitivity, `data/meta/opencitations_synthesis.csv`,
+replaces the neuroscience component with this measurement at the common 2010–2012
+window. It preserves equal audit weights and the existing conditional inference.
+It does not add a third independent audit.
+
+Independent reconstruction reproduced all list/count matches, source hashes,
+annual means and medians, point estimates and paired bootstrap intervals. The
+main source-difference estimates and intervals agree to numerical precision.

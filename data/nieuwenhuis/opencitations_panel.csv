@@ -1,0 +1,1072 @@
+article_id,paper_id,year,flag,cohort,journal,wos,opencitations,status,undated_works,conflicting_year_works
+1,nw_1,2009,1,2010,Nature Neuroscience,0,0,complete,16,0
+1,nw_1,2010,1,2010,Nature Neuroscience,1,1,complete,16,0
+1,nw_1,2011,1,2010,Nature Neuroscience,17,20,complete,16,0
+1,nw_1,2012,1,2010,Nature Neuroscience,21,30,complete,16,0
+1,nw_1,2013,1,2010,Nature Neuroscience,44,44,complete,16,0
+1,nw_1,2014,1,2010,Nature Neuroscience,36,45,complete,16,0
+1,nw_1,2015,1,2010,Nature Neuroscience,39,58,complete,16,0
+2,nw_2,2009,1,2010,Nature Neuroscience,0,0,complete,1,0
+2,nw_2,2010,1,2010,Nature Neuroscience,1,2,complete,1,0
+2,nw_2,2011,1,2010,Nature Neuroscience,7,9,complete,1,0
+2,nw_2,2012,1,2010,Nature Neuroscience,14,18,complete,1,0
+2,nw_2,2013,1,2010,Nature Neuroscience,18,19,complete,1,0
+2,nw_2,2014,1,2010,Nature Neuroscience,24,31,complete,1,0
+2,nw_2,2015,1,2010,Nature Neuroscience,27,24,complete,1,0
+3,nw_3,2009,1,2010,Nature Neuroscience,0,0,complete,2,0
+3,nw_3,2010,1,2010,Nature Neuroscience,2,3,complete,2,0
+3,nw_3,2011,1,2010,Nature Neuroscience,36,46,complete,2,0
+3,nw_3,2012,1,2010,Nature Neuroscience,34,35,complete,2,0
+3,nw_3,2013,1,2010,Nature Neuroscience,41,46,complete,2,0
+3,nw_3,2014,1,2010,Nature Neuroscience,51,61,complete,2,0
+3,nw_3,2015,1,2010,Nature Neuroscience,39,49,complete,2,0
+4,nw_4,2009,0,2010,Nature Neuroscience,0,0,complete,2,0
+4,nw_4,2010,0,2010,Nature Neuroscience,0,3,complete,2,0
+4,nw_4,2011,0,2010,Nature Neuroscience,8,10,complete,2,0
+4,nw_4,2012,0,2010,Nature Neuroscience,11,11,complete,2,0
+4,nw_4,2013,0,2010,Nature Neuroscience,9,9,complete,2,0
+4,nw_4,2014,0,2010,Nature Neuroscience,18,21,complete,2,0
+4,nw_4,2015,0,2010,Nature Neuroscience,16,19,complete,2,0
+5,nw_5,2009,0,2010,Nature Neuroscience,0,0,complete,0,0
+5,nw_5,2010,0,2010,Nature Neuroscience,0,2,complete,0,0
+5,nw_5,2011,0,2010,Nature Neuroscience,13,15,complete,0,0
+5,nw_5,2012,0,2010,Nature Neuroscience,13,13,complete,0,0
+5,nw_5,2013,0,2010,Nature Neuroscience,9,10,complete,0,0
+5,nw_5,2014,0,2010,Nature Neuroscience,10,12,complete,0,0
+5,nw_5,2015,0,2010,Nature Neuroscience,11,14,complete,0,0
+6,nw_6,2009,1,2010,Nature Neuroscience,0,0,complete,14,0
+6,nw_6,2010,1,2010,Nature Neuroscience,2,3,complete,14,0
+6,nw_6,2011,1,2010,Nature Neuroscience,20,20,complete,14,0
+6,nw_6,2012,1,2010,Nature Neuroscience,19,21,complete,14,0
+6,nw_6,2013,1,2010,Nature Neuroscience,26,26,complete,14,0
+6,nw_6,2014,1,2010,Nature Neuroscience,18,23,complete,14,0
+6,nw_6,2015,1,2010,Nature Neuroscience,26,31,complete,14,0
+7,nw_7,2009,1,2010,Nature Neuroscience,0,0,complete,0,0
+7,nw_7,2010,1,2010,Nature Neuroscience,5,9,complete,0,0
+7,nw_7,2011,1,2010,Nature Neuroscience,15,13,complete,0,0
+7,nw_7,2012,1,2010,Nature Neuroscience,17,19,complete,0,0
+7,nw_7,2013,1,2010,Nature Neuroscience,11,14,complete,0,0
+7,nw_7,2014,1,2010,Nature Neuroscience,22,23,complete,0,0
+7,nw_7,2015,1,2010,Nature Neuroscience,9,12,complete,0,0
+8,nw_8,2009,0,2010,Nature Neuroscience,0,0,complete,11,0
+8,nw_8,2010,0,2010,Nature Neuroscience,0,3,complete,11,0
+8,nw_8,2011,0,2010,Nature Neuroscience,16,16,complete,11,0
+8,nw_8,2012,0,2010,Nature Neuroscience,16,17,complete,11,0
+8,nw_8,2013,0,2010,Nature Neuroscience,18,24,complete,11,0
+8,nw_8,2014,0,2010,Nature Neuroscience,26,29,complete,11,0
+8,nw_8,2015,0,2010,Nature Neuroscience,15,17,complete,11,0
+9,nw_9,2009,0,2010,Nature Neuroscience,0,0,complete,6,0
+9,nw_9,2010,0,2010,Nature Neuroscience,18,18,complete,6,0
+9,nw_9,2011,0,2010,Nature Neuroscience,63,83,complete,6,0
+9,nw_9,2012,0,2010,Nature Neuroscience,78,98,complete,6,0
+9,nw_9,2013,0,2010,Nature Neuroscience,73,83,complete,6,0
+9,nw_9,2014,0,2010,Nature Neuroscience,89,102,complete,6,0
+9,nw_9,2015,0,2010,Nature Neuroscience,82,104,complete,6,0
+10,nw_10,2009,0,2010,Nature Neuroscience,0,0,complete,0,0
+10,nw_10,2010,0,2010,Nature Neuroscience,0,0,complete,0,0
+10,nw_10,2011,0,2010,Nature Neuroscience,5,7,complete,0,0
+10,nw_10,2012,0,2010,Nature Neuroscience,8,10,complete,0,0
+10,nw_10,2013,0,2010,Nature Neuroscience,6,5,complete,0,0
+10,nw_10,2014,0,2010,Nature Neuroscience,7,7,complete,0,0
+10,nw_10,2015,0,2010,Nature Neuroscience,4,4,complete,0,0
+11,nw_11,2009,1,2010,Nature Neuroscience,0,0,complete,2,0
+11,nw_11,2010,1,2010,Nature Neuroscience,12,17,complete,2,0
+11,nw_11,2011,1,2010,Nature Neuroscience,20,21,complete,2,0
+11,nw_11,2012,1,2010,Nature Neuroscience,15,19,complete,2,0
+11,nw_11,2013,1,2010,Nature Neuroscience,20,27,complete,2,0
+11,nw_11,2014,1,2010,Nature Neuroscience,23,23,complete,2,0
+11,nw_11,2015,1,2010,Nature Neuroscience,23,26,complete,2,0
+12,nw_12,2009,1,2010,Nature Neuroscience,0,0,complete,0,0
+12,nw_12,2010,1,2010,Nature Neuroscience,3,4,complete,0,0
+12,nw_12,2011,1,2010,Nature Neuroscience,0,2,complete,0,0
+12,nw_12,2012,1,2010,Nature Neuroscience,7,8,complete,0,0
+12,nw_12,2013,1,2010,Nature Neuroscience,4,3,complete,0,0
+12,nw_12,2014,1,2010,Nature Neuroscience,3,2,complete,0,0
+12,nw_12,2015,1,2010,Nature Neuroscience,2,3,complete,0,0
+13,nw_13,2009,1,2009,Nature Neuroscience,1,1,complete,1,0
+13,nw_13,2010,1,2009,Nature Neuroscience,42,56,complete,1,0
+13,nw_13,2011,1,2009,Nature Neuroscience,77,90,complete,1,0
+13,nw_13,2012,1,2009,Nature Neuroscience,81,103,complete,1,0
+13,nw_13,2013,1,2009,Nature Neuroscience,90,104,complete,1,0
+13,nw_13,2014,1,2009,Nature Neuroscience,85,102,complete,1,0
+13,nw_13,2015,1,2009,Nature Neuroscience,79,92,complete,1,0
+14,nw_14,2009,0,2009,Nature Neuroscience,0,0,complete,12,0
+14,nw_14,2010,0,2009,Nature Neuroscience,14,17,complete,12,0
+14,nw_14,2011,0,2009,Nature Neuroscience,39,37,complete,12,0
+14,nw_14,2012,0,2009,Nature Neuroscience,45,51,complete,12,0
+14,nw_14,2013,0,2009,Nature Neuroscience,51,54,complete,12,0
+14,nw_14,2014,0,2009,Nature Neuroscience,44,48,complete,12,0
+14,nw_14,2015,0,2009,Nature Neuroscience,63,73,complete,12,0
+15,nw_15,2009,1,2009,Nature Neuroscience,0,0,complete,2,0
+15,nw_15,2010,1,2009,Nature Neuroscience,6,6,complete,2,0
+15,nw_15,2011,1,2009,Nature Neuroscience,20,22,complete,2,0
+15,nw_15,2012,1,2009,Nature Neuroscience,24,30,complete,2,0
+15,nw_15,2013,1,2009,Nature Neuroscience,26,27,complete,2,0
+15,nw_15,2014,1,2009,Nature Neuroscience,38,50,complete,2,0
+15,nw_15,2015,1,2009,Nature Neuroscience,33,34,complete,2,0
+16,nw_16,2009,0,2009,Nature Neuroscience,2,1,complete,0,0
+16,nw_16,2010,0,2009,Nature Neuroscience,5,8,complete,0,0
+16,nw_16,2011,0,2009,Nature Neuroscience,4,4,complete,0,0
+16,nw_16,2012,0,2009,Nature Neuroscience,5,10,complete,0,0
+16,nw_16,2013,0,2009,Nature Neuroscience,2,4,complete,0,0
+16,nw_16,2014,0,2009,Nature Neuroscience,5,7,complete,0,0
+16,nw_16,2015,0,2009,Nature Neuroscience,4,7,complete,0,0
+17,nw_17,2009,0,2009,Nature Neuroscience,0,0,complete,17,0
+17,nw_17,2010,0,2009,Nature Neuroscience,32,36,complete,17,0
+17,nw_17,2011,0,2009,Nature Neuroscience,58,70,complete,17,0
+17,nw_17,2012,0,2009,Nature Neuroscience,73,84,complete,17,0
+17,nw_17,2013,0,2009,Nature Neuroscience,70,87,complete,17,0
+17,nw_17,2014,0,2009,Nature Neuroscience,81,96,complete,17,0
+17,nw_17,2015,0,2009,Nature Neuroscience,74,84,complete,17,0
+18,nw_18,2009,1,2009,Nature Neuroscience,0,0,complete,1,0
+18,nw_18,2010,1,2009,Nature Neuroscience,2,4,complete,1,0
+18,nw_18,2011,1,2009,Nature Neuroscience,7,9,complete,1,0
+18,nw_18,2012,1,2009,Nature Neuroscience,3,4,complete,1,0
+18,nw_18,2013,1,2009,Nature Neuroscience,6,5,complete,1,0
+18,nw_18,2014,1,2009,Nature Neuroscience,4,3,complete,1,0
+18,nw_18,2015,1,2009,Nature Neuroscience,2,3,complete,1,0
+19,nw_19,2009,0,2009,Nature Neuroscience,0,0,complete,1,0
+19,nw_19,2010,0,2009,Nature Neuroscience,5,9,complete,1,0
+19,nw_19,2011,0,2009,Nature Neuroscience,11,11,complete,1,0
+19,nw_19,2012,0,2009,Nature Neuroscience,11,15,complete,1,0
+19,nw_19,2013,0,2009,Nature Neuroscience,14,18,complete,1,0
+19,nw_19,2014,0,2009,Nature Neuroscience,12,16,complete,1,0
+19,nw_19,2015,0,2009,Nature Neuroscience,15,17,complete,1,0
+20,nw_20,2009,0,2009,Nature Neuroscience,1,1,complete,0,0
+20,nw_20,2010,0,2009,Nature Neuroscience,10,12,complete,0,0
+20,nw_20,2011,0,2009,Nature Neuroscience,24,26,complete,0,0
+20,nw_20,2012,0,2009,Nature Neuroscience,24,28,complete,0,0
+20,nw_20,2013,0,2009,Nature Neuroscience,23,23,complete,0,0
+20,nw_20,2014,0,2009,Nature Neuroscience,20,24,complete,0,0
+20,nw_20,2015,0,2009,Nature Neuroscience,22,24,complete,0,0
+21,nw_21,2009,0,2009,Nature Neuroscience,0,2,complete,1,0
+21,nw_21,2010,0,2009,Nature Neuroscience,3,3,complete,1,0
+21,nw_21,2011,0,2009,Nature Neuroscience,15,16,complete,1,0
+21,nw_21,2012,0,2009,Nature Neuroscience,12,16,complete,1,0
+21,nw_21,2013,0,2009,Nature Neuroscience,12,20,complete,1,0
+21,nw_21,2014,0,2009,Nature Neuroscience,11,15,complete,1,0
+21,nw_21,2015,0,2009,Nature Neuroscience,18,24,complete,1,0
+22,nw_22,2009,1,2009,Nature Neuroscience,4,5,complete,3,0
+22,nw_22,2010,1,2009,Nature Neuroscience,10,11,complete,3,0
+22,nw_22,2011,1,2009,Nature Neuroscience,17,23,complete,3,0
+22,nw_22,2012,1,2009,Nature Neuroscience,22,21,complete,3,0
+22,nw_22,2013,1,2009,Nature Neuroscience,13,20,complete,3,0
+22,nw_22,2014,1,2009,Nature Neuroscience,12,14,complete,3,0
+22,nw_22,2015,1,2009,Nature Neuroscience,12,16,complete,3,0
+24,nw_24,2009,1,2009,Nature Neuroscience,2,4,complete,1,0
+24,nw_24,2010,1,2009,Nature Neuroscience,12,14,complete,1,0
+24,nw_24,2011,1,2009,Nature Neuroscience,17,18,complete,1,0
+24,nw_24,2012,1,2009,Nature Neuroscience,5,4,complete,1,0
+24,nw_24,2013,1,2009,Nature Neuroscience,16,17,complete,1,0
+24,nw_24,2014,1,2009,Nature Neuroscience,13,13,complete,1,0
+24,nw_24,2015,1,2009,Nature Neuroscience,6,8,complete,1,0
+26,nw_26,2009,0,2009,Nature Neuroscience,3,8,complete,5,0
+26,nw_26,2010,0,2009,Nature Neuroscience,13,14,complete,5,0
+26,nw_26,2011,0,2009,Nature Neuroscience,21,21,complete,5,0
+26,nw_26,2012,0,2009,Nature Neuroscience,19,22,complete,5,0
+26,nw_26,2013,0,2009,Nature Neuroscience,35,43,complete,5,0
+26,nw_26,2014,0,2009,Nature Neuroscience,25,30,complete,5,0
+26,nw_26,2015,0,2009,Nature Neuroscience,23,32,complete,5,0
+27,nw_27,2009,0,2009,Nature Neuroscience,5,12,complete,1,0
+27,nw_27,2010,0,2009,Nature Neuroscience,5,15,complete,1,0
+27,nw_27,2011,0,2009,Nature Neuroscience,16,20,complete,1,0
+27,nw_27,2012,0,2009,Nature Neuroscience,17,16,complete,1,0
+27,nw_27,2013,0,2009,Nature Neuroscience,14,18,complete,1,0
+27,nw_27,2014,0,2009,Nature Neuroscience,9,14,complete,1,0
+27,nw_27,2015,0,2009,Nature Neuroscience,9,14,complete,1,0
+28,nw_28,2009,1,2009,Nature Neuroscience,11,14,complete,9,0
+28,nw_28,2010,1,2009,Nature Neuroscience,20,25,complete,9,0
+28,nw_28,2011,1,2009,Nature Neuroscience,32,39,complete,9,0
+28,nw_28,2012,1,2009,Nature Neuroscience,32,34,complete,9,0
+28,nw_28,2013,1,2009,Nature Neuroscience,39,41,complete,9,0
+28,nw_28,2014,1,2009,Nature Neuroscience,36,39,complete,9,0
+28,nw_28,2015,1,2009,Nature Neuroscience,43,41,complete,9,0
+29,nw_29,2009,0,2009,Nature Neuroscience,6,14,complete,5,0
+29,nw_29,2010,0,2009,Nature Neuroscience,33,37,complete,5,0
+29,nw_29,2011,0,2009,Nature Neuroscience,40,42,complete,5,0
+29,nw_29,2012,0,2009,Nature Neuroscience,39,41,complete,5,0
+29,nw_29,2013,0,2009,Nature Neuroscience,52,54,complete,5,0
+29,nw_29,2014,0,2009,Nature Neuroscience,36,52,complete,5,0
+29,nw_29,2015,0,2009,Nature Neuroscience,53,63,complete,5,0
+30,nw_30,2009,0,2009,Nature Neuroscience,6,10,complete,1,0
+30,nw_30,2010,0,2009,Nature Neuroscience,6,9,complete,1,0
+30,nw_30,2011,0,2009,Nature Neuroscience,12,13,complete,1,0
+30,nw_30,2012,0,2009,Nature Neuroscience,13,13,complete,1,0
+30,nw_30,2013,0,2009,Nature Neuroscience,7,10,complete,1,0
+30,nw_30,2014,0,2009,Nature Neuroscience,9,6,complete,1,0
+30,nw_30,2015,0,2009,Nature Neuroscience,3,5,complete,1,0
+31,nw_31,2009,1,2009,Nature Neuroscience,2,3,complete,1,0
+31,nw_31,2010,1,2009,Nature Neuroscience,8,8,complete,1,0
+31,nw_31,2011,1,2009,Nature Neuroscience,10,12,complete,1,0
+31,nw_31,2012,1,2009,Nature Neuroscience,10,17,complete,1,0
+31,nw_31,2013,1,2009,Nature Neuroscience,14,16,complete,1,0
+31,nw_31,2014,1,2009,Nature Neuroscience,9,7,complete,1,0
+31,nw_31,2015,1,2009,Nature Neuroscience,5,5,complete,1,0
+32,nw_32,2009,0,2009,Nature Neuroscience,4,9,complete,2,0
+32,nw_32,2010,0,2009,Nature Neuroscience,5,5,complete,2,0
+32,nw_32,2011,0,2009,Nature Neuroscience,9,9,complete,2,0
+32,nw_32,2012,0,2009,Nature Neuroscience,4,3,complete,2,0
+32,nw_32,2013,0,2009,Nature Neuroscience,6,6,complete,2,0
+32,nw_32,2014,0,2009,Nature Neuroscience,8,11,complete,2,0
+32,nw_32,2015,0,2009,Nature Neuroscience,6,7,complete,2,0
+33,nw_33,2009,0,2009,Nature Neuroscience,8,8,complete,0,0
+33,nw_33,2010,0,2009,Nature Neuroscience,20,21,complete,0,0
+33,nw_33,2011,0,2009,Nature Neuroscience,21,27,complete,0,0
+33,nw_33,2012,0,2009,Nature Neuroscience,16,16,complete,0,0
+33,nw_33,2013,0,2009,Nature Neuroscience,12,20,complete,0,0
+33,nw_33,2014,0,2009,Nature Neuroscience,24,21,complete,0,0
+33,nw_33,2015,0,2009,Nature Neuroscience,16,22,complete,0,0
+34,nw_34,2009,0,2010,Nature,0,1,complete,7,0
+34,nw_34,2010,0,2010,Nature,18,30,complete,7,0
+34,nw_34,2011,0,2010,Nature,48,55,complete,7,0
+34,nw_34,2012,0,2010,Nature,42,63,complete,7,0
+34,nw_34,2013,0,2010,Nature,64,77,complete,7,0
+34,nw_34,2014,0,2010,Nature,66,93,complete,7,0
+34,nw_34,2015,0,2010,Nature,58,92,complete,7,0
+35,nw_35,2009,1,2010,Nature,0,0,complete,0,0
+35,nw_35,2010,1,2010,Nature,5,7,complete,0,0
+35,nw_35,2011,1,2010,Nature,21,22,complete,0,0
+35,nw_35,2012,1,2010,Nature,24,25,complete,0,0
+35,nw_35,2013,1,2010,Nature,24,26,complete,0,0
+35,nw_35,2014,1,2010,Nature,17,20,complete,0,0
+35,nw_35,2015,1,2010,Nature,13,13,complete,0,0
+36,nw_36,2009,1,2010,Nature,0,0,complete,1,0
+36,nw_36,2010,1,2010,Nature,6,8,complete,1,0
+36,nw_36,2011,1,2010,Nature,10,12,complete,1,0
+36,nw_36,2012,1,2010,Nature,17,15,complete,1,0
+36,nw_36,2013,1,2010,Nature,16,18,complete,1,0
+36,nw_36,2014,1,2010,Nature,11,17,complete,1,0
+36,nw_36,2015,1,2010,Nature,14,17,complete,1,0
+37,nw_37,2009,1,2010,Nature,0,0,complete,3,0
+37,nw_37,2010,1,2010,Nature,2,2,complete,3,0
+37,nw_37,2011,1,2010,Nature,22,24,complete,3,0
+37,nw_37,2012,1,2010,Nature,20,25,complete,3,0
+37,nw_37,2013,1,2010,Nature,35,31,complete,3,0
+37,nw_37,2014,1,2010,Nature,27,31,complete,3,0
+37,nw_37,2015,1,2010,Nature,30,38,complete,3,0
+38,nw_38,2009,0,2010,Science,0,0,complete,1,0
+38,nw_38,2010,0,2010,Science,0,2,complete,1,0
+38,nw_38,2011,0,2010,Science,11,11,complete,1,0
+38,nw_38,2012,0,2010,Science,10,11,complete,1,0
+38,nw_38,2013,0,2010,Science,3,5,complete,1,0
+38,nw_38,2014,0,2010,Science,15,20,complete,1,0
+38,nw_38,2015,0,2010,Science,11,14,complete,1,0
+39,nw_39,2009,0,2010,Science,0,0,complete,3,0
+39,nw_39,2010,0,2010,Science,6,9,complete,3,0
+39,nw_39,2011,0,2010,Science,30,39,complete,3,0
+39,nw_39,2012,0,2010,Science,64,63,complete,3,0
+39,nw_39,2013,0,2010,Science,64,77,complete,3,0
+39,nw_39,2014,0,2010,Science,70,82,complete,3,0
+39,nw_39,2015,0,2010,Science,61,69,complete,3,0
+40,nw_40,2009,1,2010,Science,0,0,complete,1,0
+40,nw_40,2010,1,2010,Science,0,1,complete,1,0
+40,nw_40,2011,1,2010,Science,6,9,complete,1,0
+40,nw_40,2012,1,2010,Science,19,22,complete,1,0
+40,nw_40,2013,1,2010,Science,29,28,complete,1,0
+40,nw_40,2014,1,2010,Science,12,12,complete,1,0
+40,nw_40,2015,1,2010,Science,12,14,complete,1,0
+41,nw_41,2009,0,2010,Science,0,0,complete,0,0
+41,nw_41,2010,0,2010,Science,1,1,complete,0,0
+41,nw_41,2011,0,2010,Science,9,11,complete,0,0
+41,nw_41,2012,0,2010,Science,20,19,complete,0,0
+41,nw_41,2013,0,2010,Science,10,10,complete,0,0
+41,nw_41,2014,0,2010,Science,11,11,complete,0,0
+41,nw_41,2015,0,2010,Science,11,14,complete,0,0
+42,nw_42,2009,1,2010,Science,0,0,complete,2,0
+42,nw_42,2010,1,2010,Science,17,20,complete,2,0
+42,nw_42,2011,1,2010,Science,32,37,complete,2,0
+42,nw_42,2012,1,2010,Science,49,52,complete,2,0
+42,nw_42,2013,1,2010,Science,42,54,complete,2,0
+42,nw_42,2014,1,2010,Science,49,64,complete,2,0
+42,nw_42,2015,1,2010,Science,44,50,complete,2,0
+43,nw_43,2009,1,2010,Neuron,0,0,complete,1,0
+43,nw_43,2010,1,2010,Neuron,6,6,complete,1,0
+43,nw_43,2011,1,2010,Neuron,10,11,complete,1,0
+43,nw_43,2012,1,2010,Neuron,17,19,complete,1,0
+43,nw_43,2013,1,2010,Neuron,12,12,complete,1,0
+43,nw_43,2014,1,2010,Neuron,17,20,complete,1,0
+43,nw_43,2015,1,2010,Neuron,13,15,complete,1,0
+44,nw_44,2009,1,2010,Neuron,0,0,complete,3,0
+44,nw_44,2010,1,2010,Neuron,12,16,complete,3,0
+44,nw_44,2011,1,2010,Neuron,29,35,complete,3,0
+44,nw_44,2012,1,2010,Neuron,25,24,complete,3,0
+44,nw_44,2013,1,2010,Neuron,17,21,complete,3,0
+44,nw_44,2014,1,2010,Neuron,16,18,complete,3,0
+44,nw_44,2015,1,2010,Neuron,18,26,complete,3,0
+45,nw_45,2009,0,2010,Neuron,0,0,complete,1,0
+45,nw_45,2010,0,2010,Neuron,5,6,complete,1,0
+45,nw_45,2011,0,2010,Neuron,5,7,complete,1,0
+45,nw_45,2012,0,2010,Neuron,8,6,complete,1,0
+45,nw_45,2013,0,2010,Neuron,7,9,complete,1,0
+45,nw_45,2014,0,2010,Neuron,4,6,complete,1,0
+45,nw_45,2015,0,2010,Neuron,5,9,complete,1,0
+46,nw_46,2009,0,2010,Neuron,0,0,complete,1,0
+46,nw_46,2010,0,2010,Neuron,1,2,complete,1,0
+46,nw_46,2011,0,2010,Neuron,11,14,complete,1,0
+46,nw_46,2012,0,2010,Neuron,15,23,complete,1,0
+46,nw_46,2013,0,2010,Neuron,15,16,complete,1,0
+46,nw_46,2014,0,2010,Neuron,14,19,complete,1,0
+46,nw_46,2015,0,2010,Neuron,15,20,complete,1,0
+47,nw_47,2009,0,2010,Neuron,0,0,complete,3,0
+47,nw_47,2010,0,2010,Neuron,8,8,complete,3,0
+47,nw_47,2011,0,2010,Neuron,26,27,complete,3,0
+47,nw_47,2012,0,2010,Neuron,24,23,complete,3,0
+47,nw_47,2013,0,2010,Neuron,23,23,complete,3,0
+47,nw_47,2014,0,2010,Neuron,22,28,complete,3,0
+47,nw_47,2015,0,2010,Neuron,19,19,complete,3,0
+48,nw_48,2009,1,2010,Neuron,0,0,complete,4,0
+48,nw_48,2010,1,2010,Neuron,3,4,complete,4,0
+48,nw_48,2011,1,2010,Neuron,22,23,complete,4,0
+48,nw_48,2012,1,2010,Neuron,27,28,complete,4,0
+48,nw_48,2013,1,2010,Neuron,39,45,complete,4,0
+48,nw_48,2014,1,2010,Neuron,35,39,complete,4,0
+48,nw_48,2015,1,2010,Neuron,37,44,complete,4,0
+49,nw_49,2009,1,2010,Neuron,0,0,complete,1,0
+49,nw_49,2010,1,2010,Neuron,0,1,complete,1,0
+49,nw_49,2011,1,2010,Neuron,3,2,complete,1,0
+49,nw_49,2012,1,2010,Neuron,3,3,complete,1,0
+49,nw_49,2013,1,2010,Neuron,4,4,complete,1,0
+49,nw_49,2014,1,2010,Neuron,2,3,complete,1,0
+49,nw_49,2015,1,2010,Neuron,7,8,complete,1,0
+50,nw_50,2009,0,2010,Neuron,0,0,complete,5,0
+50,nw_50,2010,0,2010,Neuron,4,6,complete,5,0
+50,nw_50,2011,0,2010,Neuron,33,33,complete,5,0
+50,nw_50,2012,0,2010,Neuron,27,29,complete,5,0
+50,nw_50,2013,0,2010,Neuron,48,55,complete,5,0
+50,nw_50,2014,0,2010,Neuron,35,45,complete,5,0
+50,nw_50,2015,0,2010,Neuron,58,62,complete,5,0
+51,nw_51,2009,1,2010,Neuron,0,0,complete,1,0
+51,nw_51,2010,1,2010,Neuron,3,3,complete,1,0
+51,nw_51,2011,1,2010,Neuron,11,12,complete,1,0
+51,nw_51,2012,1,2010,Neuron,6,6,complete,1,0
+51,nw_51,2013,1,2010,Neuron,26,32,complete,1,0
+51,nw_51,2014,1,2010,Neuron,21,19,complete,1,0
+51,nw_51,2015,1,2010,Neuron,13,14,complete,1,0
+52,nw_52,2009,1,2010,Neuron,0,0,complete,1,0
+52,nw_52,2010,1,2010,Neuron,5,5,complete,1,0
+52,nw_52,2011,1,2010,Neuron,5,7,complete,1,0
+52,nw_52,2012,1,2010,Neuron,15,18,complete,1,0
+52,nw_52,2013,1,2010,Neuron,13,15,complete,1,0
+52,nw_52,2014,1,2010,Neuron,12,15,complete,1,0
+52,nw_52,2015,1,2010,Neuron,10,13,complete,1,0
+53,nw_53,2009,1,2010,Neuron,0,0,complete,0,0
+53,nw_53,2010,1,2010,Neuron,1,2,complete,0,0
+53,nw_53,2011,1,2010,Neuron,5,7,complete,0,0
+53,nw_53,2012,1,2010,Neuron,9,10,complete,0,0
+53,nw_53,2013,1,2010,Neuron,14,14,complete,0,0
+53,nw_53,2014,1,2010,Neuron,12,14,complete,0,0
+53,nw_53,2015,1,2010,Neuron,8,13,complete,0,0
+54,nw_54,2009,0,2010,Neuron,0,0,complete,0,0
+54,nw_54,2010,0,2010,Neuron,0,2,complete,0,0
+54,nw_54,2011,0,2010,Neuron,4,4,complete,0,0
+54,nw_54,2012,0,2010,Neuron,10,11,complete,0,0
+54,nw_54,2013,0,2010,Neuron,8,9,complete,0,0
+54,nw_54,2014,0,2010,Neuron,7,5,complete,0,0
+54,nw_54,2015,0,2010,Neuron,4,3,complete,0,0
+55,nw_55,2009,1,2010,Neuron,0,0,complete,3,0
+55,nw_55,2010,1,2010,Neuron,2,5,complete,3,0
+55,nw_55,2011,1,2010,Neuron,15,15,complete,3,0
+55,nw_55,2012,1,2010,Neuron,15,18,complete,3,0
+55,nw_55,2013,1,2010,Neuron,16,18,complete,3,0
+55,nw_55,2014,1,2010,Neuron,26,28,complete,3,0
+55,nw_55,2015,1,2010,Neuron,15,20,complete,3,0
+56,nw_56,2009,1,2010,Neuron,0,0,complete,3,0
+56,nw_56,2010,1,2010,Neuron,2,4,complete,3,0
+56,nw_56,2011,1,2010,Neuron,15,18,complete,3,0
+56,nw_56,2012,1,2010,Neuron,19,19,complete,3,0
+56,nw_56,2013,1,2010,Neuron,22,25,complete,3,0
+56,nw_56,2014,1,2010,Neuron,30,29,complete,3,0
+56,nw_56,2015,1,2010,Neuron,13,21,complete,3,0
+57,nw_57,2009,1,2010,Neuron,0,0,complete,4,0
+57,nw_57,2010,1,2010,Neuron,2,1,complete,4,0
+57,nw_57,2011,1,2010,Neuron,14,14,complete,4,0
+57,nw_57,2012,1,2010,Neuron,21,23,complete,4,0
+57,nw_57,2013,1,2010,Neuron,20,22,complete,4,0
+57,nw_57,2014,1,2010,Neuron,22,23,complete,4,0
+57,nw_57,2015,1,2010,Neuron,12,17,complete,4,0
+58,nw_58,2009,0,2010,Neuron,0,0,complete,0,0
+58,nw_58,2010,0,2010,Neuron,0,0,complete,0,0
+58,nw_58,2011,0,2010,Neuron,3,3,complete,0,0
+58,nw_58,2012,0,2010,Neuron,9,10,complete,0,0
+58,nw_58,2013,0,2010,Neuron,5,6,complete,0,0
+58,nw_58,2014,0,2010,Neuron,4,5,complete,0,0
+58,nw_58,2015,0,2010,Neuron,3,2,complete,0,0
+59,nw_59,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+59,nw_59,2010,1,2010,Journal of Neuroscience,1,1,complete,0,0
+59,nw_59,2011,1,2010,Journal of Neuroscience,6,8,complete,0,0
+59,nw_59,2012,1,2010,Journal of Neuroscience,6,5,complete,0,0
+59,nw_59,2013,1,2010,Journal of Neuroscience,4,7,complete,0,0
+59,nw_59,2014,1,2010,Journal of Neuroscience,8,9,complete,0,0
+59,nw_59,2015,1,2010,Journal of Neuroscience,7,7,complete,0,0
+60,nw_60,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+60,nw_60,2010,0,2010,Journal of Neuroscience,11,14,complete,0,0
+60,nw_60,2011,0,2010,Journal of Neuroscience,17,20,complete,0,0
+60,nw_60,2012,0,2010,Journal of Neuroscience,17,21,complete,0,0
+60,nw_60,2013,0,2010,Journal of Neuroscience,12,13,complete,0,0
+60,nw_60,2014,0,2010,Journal of Neuroscience,11,14,complete,0,0
+60,nw_60,2015,0,2010,Journal of Neuroscience,7,8,complete,0,0
+61,nw_61,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+61,nw_61,2010,0,2010,Journal of Neuroscience,3,4,complete,0,0
+61,nw_61,2011,0,2010,Journal of Neuroscience,14,17,complete,0,0
+61,nw_61,2012,0,2010,Journal of Neuroscience,17,19,complete,0,0
+61,nw_61,2013,0,2010,Journal of Neuroscience,13,18,complete,0,0
+61,nw_61,2014,0,2010,Journal of Neuroscience,14,12,complete,0,0
+61,nw_61,2015,0,2010,Journal of Neuroscience,20,23,complete,0,0
+62,nw_62,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+62,nw_62,2010,0,2010,Journal of Neuroscience,0,2,complete,0,0
+62,nw_62,2011,0,2010,Journal of Neuroscience,7,8,complete,0,0
+62,nw_62,2012,0,2010,Journal of Neuroscience,6,8,complete,0,0
+62,nw_62,2013,0,2010,Journal of Neuroscience,19,22,complete,0,0
+62,nw_62,2014,0,2010,Journal of Neuroscience,14,16,complete,0,0
+62,nw_62,2015,0,2010,Journal of Neuroscience,11,12,complete,0,0
+63,nw_63,2009,0,2010,Journal of Neuroscience,0,0,complete,1,0
+63,nw_63,2010,0,2010,Journal of Neuroscience,3,3,complete,1,0
+63,nw_63,2011,0,2010,Journal of Neuroscience,11,11,complete,1,0
+63,nw_63,2012,0,2010,Journal of Neuroscience,12,13,complete,1,0
+63,nw_63,2013,0,2010,Journal of Neuroscience,13,12,complete,1,0
+63,nw_63,2014,0,2010,Journal of Neuroscience,15,14,complete,1,0
+63,nw_63,2015,0,2010,Journal of Neuroscience,5,6,complete,1,0
+64,nw_64,2009,1,2010,Journal of Neuroscience,0,0,complete,3,0
+64,nw_64,2010,1,2010,Journal of Neuroscience,3,3,complete,3,0
+64,nw_64,2011,1,2010,Journal of Neuroscience,16,18,complete,3,0
+64,nw_64,2012,1,2010,Journal of Neuroscience,18,22,complete,3,0
+64,nw_64,2013,1,2010,Journal of Neuroscience,27,23,complete,3,0
+64,nw_64,2014,1,2010,Journal of Neuroscience,24,28,complete,3,0
+64,nw_64,2015,1,2010,Journal of Neuroscience,20,21,complete,3,0
+65,nw_65,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+65,nw_65,2010,0,2010,Journal of Neuroscience,0,1,complete,0,0
+65,nw_65,2011,0,2010,Journal of Neuroscience,5,7,complete,0,0
+65,nw_65,2012,0,2010,Journal of Neuroscience,6,6,complete,0,0
+65,nw_65,2013,0,2010,Journal of Neuroscience,4,5,complete,0,0
+65,nw_65,2014,0,2010,Journal of Neuroscience,9,11,complete,0,0
+65,nw_65,2015,0,2010,Journal of Neuroscience,6,5,complete,0,0
+66,nw_66,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+66,nw_66,2010,0,2010,Journal of Neuroscience,1,3,complete,0,0
+66,nw_66,2011,0,2010,Journal of Neuroscience,4,4,complete,0,0
+66,nw_66,2012,0,2010,Journal of Neuroscience,7,7,complete,0,0
+66,nw_66,2013,0,2010,Journal of Neuroscience,10,12,complete,0,0
+66,nw_66,2014,0,2010,Journal of Neuroscience,9,10,complete,0,0
+66,nw_66,2015,0,2010,Journal of Neuroscience,6,7,complete,0,0
+67,nw_67,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+67,nw_67,2010,1,2010,Journal of Neuroscience,1,0,complete,0,0
+67,nw_67,2011,1,2010,Journal of Neuroscience,1,1,complete,0,0
+67,nw_67,2012,1,2010,Journal of Neuroscience,3,3,complete,0,0
+67,nw_67,2013,1,2010,Journal of Neuroscience,4,6,complete,0,0
+67,nw_67,2014,1,2010,Journal of Neuroscience,4,4,complete,0,0
+67,nw_67,2015,1,2010,Journal of Neuroscience,3,2,complete,0,0
+68,nw_68,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+68,nw_68,2010,0,2010,Journal of Neuroscience,0,0,complete,0,0
+68,nw_68,2011,0,2010,Journal of Neuroscience,1,2,complete,0,0
+68,nw_68,2012,0,2010,Journal of Neuroscience,3,3,complete,0,0
+68,nw_68,2013,0,2010,Journal of Neuroscience,3,4,complete,0,0
+68,nw_68,2014,0,2010,Journal of Neuroscience,4,4,complete,0,0
+68,nw_68,2015,0,2010,Journal of Neuroscience,2,3,complete,0,0
+69,nw_69,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+69,nw_69,2010,1,2010,Journal of Neuroscience,3,4,complete,0,0
+69,nw_69,2011,1,2010,Journal of Neuroscience,3,4,complete,0,0
+69,nw_69,2012,1,2010,Journal of Neuroscience,8,8,complete,0,0
+69,nw_69,2013,1,2010,Journal of Neuroscience,4,7,complete,0,0
+69,nw_69,2014,1,2010,Journal of Neuroscience,9,8,complete,0,0
+69,nw_69,2015,1,2010,Journal of Neuroscience,5,7,complete,0,0
+70,nw_70,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+70,nw_70,2010,0,2010,Journal of Neuroscience,0,1,complete,0,0
+70,nw_70,2011,0,2010,Journal of Neuroscience,8,7,complete,0,0
+70,nw_70,2012,0,2010,Journal of Neuroscience,3,6,complete,0,0
+70,nw_70,2013,0,2010,Journal of Neuroscience,5,6,complete,0,0
+70,nw_70,2014,0,2010,Journal of Neuroscience,5,3,complete,0,0
+70,nw_70,2015,0,2010,Journal of Neuroscience,7,7,complete,0,0
+71,nw_71,2009,0,2010,Journal of Neuroscience,0,0,complete,1,0
+71,nw_71,2010,0,2010,Journal of Neuroscience,2,2,complete,1,0
+71,nw_71,2011,0,2010,Journal of Neuroscience,14,12,complete,1,0
+71,nw_71,2012,0,2010,Journal of Neuroscience,13,12,complete,1,0
+71,nw_71,2013,0,2010,Journal of Neuroscience,6,8,complete,1,0
+71,nw_71,2014,0,2010,Journal of Neuroscience,10,10,complete,1,0
+71,nw_71,2015,0,2010,Journal of Neuroscience,20,24,complete,1,0
+72,nw_72,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+72,nw_72,2010,1,2010,Journal of Neuroscience,1,1,complete,0,0
+72,nw_72,2011,1,2010,Journal of Neuroscience,2,4,complete,0,0
+72,nw_72,2012,1,2010,Journal of Neuroscience,2,2,complete,0,0
+72,nw_72,2013,1,2010,Journal of Neuroscience,7,9,complete,0,0
+72,nw_72,2014,1,2010,Journal of Neuroscience,4,7,complete,0,0
+72,nw_72,2015,1,2010,Journal of Neuroscience,2,3,complete,0,0
+73,nw_73,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+73,nw_73,2010,1,2010,Journal of Neuroscience,0,0,complete,0,0
+73,nw_73,2011,1,2010,Journal of Neuroscience,2,2,complete,0,0
+73,nw_73,2012,1,2010,Journal of Neuroscience,4,4,complete,0,0
+73,nw_73,2013,1,2010,Journal of Neuroscience,5,7,complete,0,0
+73,nw_73,2014,1,2010,Journal of Neuroscience,4,4,complete,0,0
+73,nw_73,2015,1,2010,Journal of Neuroscience,3,2,complete,0,0
+74,nw_74,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+74,nw_74,2010,1,2010,Journal of Neuroscience,0,0,complete,0,0
+74,nw_74,2011,1,2010,Journal of Neuroscience,6,7,complete,0,0
+74,nw_74,2012,1,2010,Journal of Neuroscience,7,9,complete,0,0
+74,nw_74,2013,1,2010,Journal of Neuroscience,8,8,complete,0,0
+74,nw_74,2014,1,2010,Journal of Neuroscience,11,10,complete,0,0
+74,nw_74,2015,1,2010,Journal of Neuroscience,7,9,complete,0,0
+75,nw_75,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+75,nw_75,2010,0,2010,Journal of Neuroscience,0,0,complete,0,0
+75,nw_75,2011,0,2010,Journal of Neuroscience,3,3,complete,0,0
+75,nw_75,2012,0,2010,Journal of Neuroscience,6,8,complete,0,0
+75,nw_75,2013,0,2010,Journal of Neuroscience,4,5,complete,0,0
+75,nw_75,2014,0,2010,Journal of Neuroscience,1,2,complete,0,0
+75,nw_75,2015,0,2010,Journal of Neuroscience,1,2,complete,0,0
+76,nw_76,2009,1,2010,Journal of Neuroscience,0,0,complete,0,0
+76,nw_76,2010,1,2010,Journal of Neuroscience,1,2,complete,0,0
+76,nw_76,2011,1,2010,Journal of Neuroscience,12,15,complete,0,0
+76,nw_76,2012,1,2010,Journal of Neuroscience,11,12,complete,0,0
+76,nw_76,2013,1,2010,Journal of Neuroscience,17,15,complete,0,0
+76,nw_76,2014,1,2010,Journal of Neuroscience,13,16,complete,0,0
+76,nw_76,2015,1,2010,Journal of Neuroscience,10,10,complete,0,0
+77,nw_77,2009,1,2010,Journal of Neuroscience,0,0,complete,2,0
+77,nw_77,2010,1,2010,Journal of Neuroscience,0,0,complete,2,0
+77,nw_77,2011,1,2010,Journal of Neuroscience,5,6,complete,2,0
+77,nw_77,2012,1,2010,Journal of Neuroscience,13,14,complete,2,0
+77,nw_77,2013,1,2010,Journal of Neuroscience,19,19,complete,2,0
+77,nw_77,2014,1,2010,Journal of Neuroscience,22,21,complete,2,0
+77,nw_77,2015,1,2010,Journal of Neuroscience,18,17,complete,2,0
+78,nw_78,2009,0,2010,Journal of Neuroscience,0,0,complete,1,0
+78,nw_78,2010,0,2010,Journal of Neuroscience,0,1,complete,1,0
+78,nw_78,2011,0,2010,Journal of Neuroscience,3,6,complete,1,0
+78,nw_78,2012,0,2010,Journal of Neuroscience,5,5,complete,1,0
+78,nw_78,2013,0,2010,Journal of Neuroscience,10,13,complete,1,0
+78,nw_78,2014,0,2010,Journal of Neuroscience,10,11,complete,1,0
+78,nw_78,2015,0,2010,Journal of Neuroscience,9,9,complete,1,0
+79,nw_79,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+79,nw_79,2010,0,2010,Journal of Neuroscience,1,1,complete,0,0
+79,nw_79,2011,0,2010,Journal of Neuroscience,2,3,complete,0,0
+79,nw_79,2012,0,2010,Journal of Neuroscience,6,6,complete,0,0
+79,nw_79,2013,0,2010,Journal of Neuroscience,6,8,complete,0,0
+79,nw_79,2014,0,2010,Journal of Neuroscience,1,0,complete,0,0
+79,nw_79,2015,0,2010,Journal of Neuroscience,6,6,complete,0,0
+80,nw_80,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+80,nw_80,2010,0,2010,Journal of Neuroscience,0,0,complete,0,0
+80,nw_80,2011,0,2010,Journal of Neuroscience,1,2,complete,0,0
+80,nw_80,2012,0,2010,Journal of Neuroscience,4,4,complete,0,0
+80,nw_80,2013,0,2010,Journal of Neuroscience,6,6,complete,0,0
+80,nw_80,2014,0,2010,Journal of Neuroscience,4,4,complete,0,0
+80,nw_80,2015,0,2010,Journal of Neuroscience,4,6,complete,0,0
+81,nw_81,2009,0,2010,Journal of Neuroscience,0,0,complete,0,0
+81,nw_81,2010,0,2010,Journal of Neuroscience,0,0,complete,0,0
+81,nw_81,2011,0,2010,Journal of Neuroscience,4,4,complete,0,0
+81,nw_81,2012,0,2010,Journal of Neuroscience,1,2,complete,0,0
+81,nw_81,2013,0,2010,Journal of Neuroscience,5,3,complete,0,0
+81,nw_81,2014,0,2010,Journal of Neuroscience,2,3,complete,0,0
+81,nw_81,2015,0,2010,Journal of Neuroscience,2,5,complete,0,0
+82,nw_82,2009,1,2010,Journal of Neuroscience,0,0,complete,2,0
+82,nw_82,2010,1,2010,Journal of Neuroscience,0,0,complete,2,0
+82,nw_82,2011,1,2010,Journal of Neuroscience,8,16,complete,2,0
+82,nw_82,2012,1,2010,Journal of Neuroscience,15,22,complete,2,0
+82,nw_82,2013,1,2010,Journal of Neuroscience,19,16,complete,2,0
+82,nw_82,2014,1,2010,Journal of Neuroscience,24,25,complete,2,0
+82,nw_82,2015,1,2010,Journal of Neuroscience,14,15,complete,2,0
+83,nw_83,2009,0,2010,Journal of Neuroscience,0,0,complete,1,0
+83,nw_83,2010,0,2010,Journal of Neuroscience,0,0,complete,1,0
+83,nw_83,2011,0,2010,Journal of Neuroscience,7,7,complete,1,0
+83,nw_83,2012,0,2010,Journal of Neuroscience,18,20,complete,1,0
+83,nw_83,2013,0,2010,Journal of Neuroscience,19,18,complete,1,0
+83,nw_83,2014,0,2010,Journal of Neuroscience,17,18,complete,1,0
+83,nw_83,2015,0,2010,Journal of Neuroscience,20,22,complete,1,0
+84,nw_84,2009,1,2009,Nature,1,1,complete,10,0
+84,nw_84,2010,1,2009,Nature,21,28,complete,10,0
+84,nw_84,2011,1,2009,Nature,54,57,complete,10,0
+84,nw_84,2012,1,2009,Nature,47,50,complete,10,0
+84,nw_84,2013,1,2009,Nature,72,84,complete,10,0
+84,nw_84,2014,1,2009,Nature,61,63,complete,10,0
+84,nw_84,2015,1,2009,Nature,69,75,complete,10,0
+85,nw_85,2009,1,2009,Nature,1,1,complete,9,0
+85,nw_85,2010,1,2009,Nature,23,29,complete,9,0
+85,nw_85,2011,1,2009,Nature,57,65,complete,9,0
+85,nw_85,2012,1,2009,Nature,46,43,complete,9,0
+85,nw_85,2013,1,2009,Nature,70,80,complete,9,0
+85,nw_85,2014,1,2009,Nature,60,60,complete,9,0
+85,nw_85,2015,1,2009,Nature,59,70,complete,9,0
+86,nw_86,2009,1,2009,Nature,0,0,complete,0,0
+86,nw_86,2010,1,2009,Nature,11,15,complete,0,0
+86,nw_86,2011,1,2009,Nature,12,15,complete,0,0
+86,nw_86,2012,1,2009,Nature,20,18,complete,0,0
+86,nw_86,2013,1,2009,Nature,23,25,complete,0,0
+86,nw_86,2014,1,2009,Nature,13,16,complete,0,0
+86,nw_86,2015,1,2009,Nature,13,10,complete,0,0
+87,nw_87,2009,0,2009,Nature,0,1,complete,3,0
+87,nw_87,2010,0,2009,Nature,4,19,complete,3,0
+87,nw_87,2011,0,2009,Nature,8,25,complete,3,0
+87,nw_87,2012,0,2009,Nature,9,21,complete,3,0
+87,nw_87,2013,0,2009,Nature,8,25,complete,3,0
+87,nw_87,2014,0,2009,Nature,7,30,complete,3,0
+87,nw_87,2015,0,2009,Nature,16,23,complete,3,0
+88,nw_88,2009,0,2009,Nature,1,1,complete,0,0
+88,nw_88,2010,0,2009,Nature,9,12,complete,0,0
+88,nw_88,2011,0,2009,Nature,22,27,complete,0,0
+88,nw_88,2012,0,2009,Nature,21,24,complete,0,0
+88,nw_88,2013,0,2009,Nature,25,31,complete,0,0
+88,nw_88,2014,0,2009,Nature,16,15,complete,0,0
+88,nw_88,2015,0,2009,Nature,19,17,complete,0,0
+89,nw_89,2009,1,2009,Nature,4,9,complete,3,0
+89,nw_89,2010,1,2009,Nature,18,27,complete,3,0
+89,nw_89,2011,1,2009,Nature,35,38,complete,3,0
+89,nw_89,2012,1,2009,Nature,38,51,complete,3,0
+89,nw_89,2013,1,2009,Nature,39,57,complete,3,0
+89,nw_89,2014,1,2009,Nature,40,51,complete,3,0
+89,nw_89,2015,1,2009,Nature,32,44,complete,3,0
+90,nw_90,2009,0,2009,Science,0,0,complete,5,0
+90,nw_90,2010,0,2009,Science,5,6,complete,5,0
+90,nw_90,2011,0,2009,Science,9,13,complete,5,0
+90,nw_90,2012,0,2009,Science,17,19,complete,5,0
+90,nw_90,2013,0,2009,Science,28,32,complete,5,0
+90,nw_90,2014,0,2009,Science,24,35,complete,5,0
+90,nw_90,2015,0,2009,Science,26,25,complete,5,0
+91,nw_91,2009,1,2009,Science,0,2,complete,2,0
+91,nw_91,2010,1,2009,Science,19,18,complete,2,0
+91,nw_91,2011,1,2009,Science,26,32,complete,2,0
+91,nw_91,2012,1,2009,Science,25,31,complete,2,0
+91,nw_91,2013,1,2009,Science,37,40,complete,2,0
+91,nw_91,2014,1,2009,Science,19,20,complete,2,0
+91,nw_91,2015,1,2009,Science,28,31,complete,2,0
+92,nw_92,2009,0,2009,Science,2,3,complete,0,0
+92,nw_92,2010,0,2009,Science,3,3,complete,0,0
+92,nw_92,2011,0,2009,Science,9,9,complete,0,0
+92,nw_92,2012,0,2009,Science,11,16,complete,0,0
+92,nw_92,2013,0,2009,Science,9,16,complete,0,0
+92,nw_92,2014,0,2009,Science,13,16,complete,0,0
+92,nw_92,2015,0,2009,Science,10,12,complete,0,0
+93,nw_93,2009,1,2009,Science,1,3,complete,4,0
+93,nw_93,2010,1,2009,Science,26,34,complete,4,0
+93,nw_93,2011,1,2009,Science,36,45,complete,4,0
+93,nw_93,2012,1,2009,Science,38,36,complete,4,0
+93,nw_93,2013,1,2009,Science,48,52,complete,4,0
+93,nw_93,2014,1,2009,Science,41,46,complete,4,0
+93,nw_93,2015,1,2009,Science,42,48,complete,4,0
+94,nw_94,2009,0,2009,Science,0,0,complete,3,0
+94,nw_94,2010,0,2009,Science,13,15,complete,3,0
+94,nw_94,2011,0,2009,Science,20,21,complete,3,0
+94,nw_94,2012,0,2009,Science,16,17,complete,3,0
+94,nw_94,2013,0,2009,Science,15,13,complete,3,0
+94,nw_94,2014,0,2009,Science,20,22,complete,3,0
+94,nw_94,2015,0,2009,Science,21,22,complete,3,0
+96,nw_96,2009,1,2009,Science,3,9,complete,0,0
+96,nw_96,2010,1,2009,Science,8,9,complete,0,0
+96,nw_96,2011,1,2009,Science,26,25,complete,0,0
+96,nw_96,2012,1,2009,Science,20,23,complete,0,0
+96,nw_96,2013,1,2009,Science,23,25,complete,0,0
+96,nw_96,2014,1,2009,Science,32,38,complete,0,0
+96,nw_96,2015,1,2009,Science,20,22,complete,0,0
+97,nw_97,2009,1,2009,Science,10,17,complete,4,0
+97,nw_97,2010,1,2009,Science,50,55,complete,4,0
+97,nw_97,2011,1,2009,Science,57,69,complete,4,0
+97,nw_97,2012,1,2009,Science,70,74,complete,4,0
+97,nw_97,2013,1,2009,Science,63,71,complete,4,0
+97,nw_97,2014,1,2009,Science,84,94,complete,4,0
+97,nw_97,2015,1,2009,Science,68,87,complete,4,0
+98,nw_98,2009,0,2009,Science,6,9,complete,6,0
+98,nw_98,2010,0,2009,Science,24,25,complete,6,0
+98,nw_98,2011,0,2009,Science,29,33,complete,6,0
+98,nw_98,2012,0,2009,Science,45,53,complete,6,0
+98,nw_98,2013,0,2009,Science,65,69,complete,6,0
+98,nw_98,2014,0,2009,Science,65,81,complete,6,0
+98,nw_98,2015,0,2009,Science,57,69,complete,6,0
+99,nw_99,2009,1,2009,Science,4,4,complete,1,0
+99,nw_99,2010,1,2009,Science,9,9,complete,1,0
+99,nw_99,2011,1,2009,Science,20,18,complete,1,0
+99,nw_99,2012,1,2009,Science,14,18,complete,1,0
+99,nw_99,2013,1,2009,Science,17,20,complete,1,0
+99,nw_99,2014,1,2009,Science,16,20,complete,1,0
+99,nw_99,2015,1,2009,Science,10,14,complete,1,0
+100,nw_100,2009,1,2009,Science,10,11,complete,11,0
+100,nw_100,2010,1,2009,Science,44,64,complete,11,0
+100,nw_100,2011,1,2009,Science,68,78,complete,11,0
+100,nw_100,2012,1,2009,Science,87,95,complete,11,0
+100,nw_100,2013,1,2009,Science,95,106,complete,11,0
+100,nw_100,2014,1,2009,Science,88,113,complete,11,0
+100,nw_100,2015,1,2009,Science,107,120,complete,11,0
+101,nw_101,2009,1,2009,Science,14,31,complete,1,0
+101,nw_101,2010,1,2009,Science,75,86,complete,1,0
+101,nw_101,2011,1,2009,Science,101,124,complete,1,0
+101,nw_101,2012,1,2009,Science,94,100,complete,1,0
+101,nw_101,2013,1,2009,Science,95,116,complete,1,0
+101,nw_101,2014,1,2009,Science,74,94,complete,1,0
+101,nw_101,2015,1,2009,Science,82,106,complete,1,0
+102,nw_102,2009,1,2009,Science,3,5,complete,0,0
+102,nw_102,2010,1,2009,Science,12,11,complete,0,0
+102,nw_102,2011,1,2009,Science,9,7,complete,0,0
+102,nw_102,2012,1,2009,Science,18,19,complete,0,0
+102,nw_102,2013,1,2009,Science,10,9,complete,0,0
+102,nw_102,2014,1,2009,Science,9,14,complete,0,0
+102,nw_102,2015,1,2009,Science,9,11,complete,0,0
+103,nw_103,2009,0,2009,Science,8,8,complete,1,0
+103,nw_103,2010,0,2009,Science,14,19,complete,1,0
+103,nw_103,2011,0,2009,Science,23,27,complete,1,0
+103,nw_103,2012,0,2009,Science,22,24,complete,1,0
+103,nw_103,2013,0,2009,Science,25,29,complete,1,0
+103,nw_103,2014,0,2009,Science,26,31,complete,1,0
+103,nw_103,2015,0,2009,Science,22,29,complete,1,0
+104,nw_104,2009,0,2009,Science,4,6,complete,2,0
+104,nw_104,2010,0,2009,Science,7,7,complete,2,0
+104,nw_104,2011,0,2009,Science,6,8,complete,2,0
+104,nw_104,2012,0,2009,Science,11,9,complete,2,0
+104,nw_104,2013,0,2009,Science,10,11,complete,2,0
+104,nw_104,2014,0,2009,Science,8,12,complete,2,0
+104,nw_104,2015,0,2009,Science,6,6,complete,2,0
+105,nw_105,2009,1,2009,Neuron,0,0,complete,5,0
+105,nw_105,2010,1,2009,Neuron,3,4,complete,5,0
+105,nw_105,2011,1,2009,Neuron,11,12,complete,5,0
+105,nw_105,2012,1,2009,Neuron,10,10,complete,5,0
+105,nw_105,2013,1,2009,Neuron,14,12,complete,5,0
+105,nw_105,2014,1,2009,Neuron,6,12,complete,5,0
+105,nw_105,2015,1,2009,Neuron,16,14,complete,5,0
+106,nw_106,2009,0,2009,Neuron,0,0,complete,1,0
+106,nw_106,2010,0,2009,Neuron,2,2,complete,1,0
+106,nw_106,2011,0,2009,Neuron,9,12,complete,1,0
+106,nw_106,2012,0,2009,Neuron,11,13,complete,1,0
+106,nw_106,2013,0,2009,Neuron,9,13,complete,1,0
+106,nw_106,2014,0,2009,Neuron,5,8,complete,1,0
+106,nw_106,2015,0,2009,Neuron,18,23,complete,1,0
+107,nw_107,2009,0,2009,Neuron,0,0,complete,0,0
+107,nw_107,2010,0,2009,Neuron,2,3,complete,0,0
+107,nw_107,2011,0,2009,Neuron,9,9,complete,0,0
+107,nw_107,2012,0,2009,Neuron,9,9,complete,0,0
+107,nw_107,2013,0,2009,Neuron,5,5,complete,0,0
+107,nw_107,2014,0,2009,Neuron,3,2,complete,0,0
+107,nw_107,2015,0,2009,Neuron,2,4,complete,0,0
+108,nw_108,2009,1,2009,Neuron,1,1,complete,3,0
+108,nw_108,2010,1,2009,Neuron,12,17,complete,3,0
+108,nw_108,2011,1,2009,Neuron,25,27,complete,3,0
+108,nw_108,2012,1,2009,Neuron,30,31,complete,3,0
+108,nw_108,2013,1,2009,Neuron,23,21,complete,3,0
+108,nw_108,2014,1,2009,Neuron,17,19,complete,3,0
+108,nw_108,2015,1,2009,Neuron,31,37,complete,3,0
+109,nw_109,2009,1,2009,Neuron,6,8,complete,0,0
+109,nw_109,2010,1,2009,Neuron,12,12,complete,0,0
+109,nw_109,2011,1,2009,Neuron,17,20,complete,0,0
+109,nw_109,2012,1,2009,Neuron,17,21,complete,0,0
+109,nw_109,2013,1,2009,Neuron,20,28,complete,0,0
+109,nw_109,2014,1,2009,Neuron,31,29,complete,0,0
+109,nw_109,2015,1,2009,Neuron,19,24,complete,0,0
+110,nw_110,2009,1,2009,Neuron,2,3,complete,2,0
+110,nw_110,2010,1,2009,Neuron,2,7,complete,2,0
+110,nw_110,2011,1,2009,Neuron,16,17,complete,2,0
+110,nw_110,2012,1,2009,Neuron,13,13,complete,2,0
+110,nw_110,2013,1,2009,Neuron,16,19,complete,2,0
+110,nw_110,2014,1,2009,Neuron,16,19,complete,2,0
+110,nw_110,2015,1,2009,Neuron,12,20,complete,2,0
+111,nw_111,2009,0,2009,Neuron,1,1,complete,1,0
+111,nw_111,2010,0,2009,Neuron,3,8,complete,1,0
+111,nw_111,2011,0,2009,Neuron,12,15,complete,1,0
+111,nw_111,2012,0,2009,Neuron,11,11,complete,1,0
+111,nw_111,2013,0,2009,Neuron,9,11,complete,1,0
+111,nw_111,2014,0,2009,Neuron,13,15,complete,1,0
+111,nw_111,2015,0,2009,Neuron,13,18,complete,1,0
+112,nw_112,2009,0,2009,Neuron,5,8,complete,4,0
+112,nw_112,2010,0,2009,Neuron,17,16,complete,4,0
+112,nw_112,2011,0,2009,Neuron,32,35,complete,4,0
+112,nw_112,2012,0,2009,Neuron,42,45,complete,4,0
+112,nw_112,2013,0,2009,Neuron,30,32,complete,4,0
+112,nw_112,2014,0,2009,Neuron,48,53,complete,4,0
+112,nw_112,2015,0,2009,Neuron,36,44,complete,4,0
+113,nw_113,2009,0,2009,Neuron,4,6,complete,12,0
+113,nw_113,2010,0,2009,Neuron,15,15,complete,12,0
+113,nw_113,2011,0,2009,Neuron,29,28,complete,12,0
+113,nw_113,2012,0,2009,Neuron,12,15,complete,12,0
+113,nw_113,2013,0,2009,Neuron,18,21,complete,12,0
+113,nw_113,2014,0,2009,Neuron,21,19,complete,12,0
+113,nw_113,2015,0,2009,Neuron,14,21,complete,12,0
+114,nw_114,2009,0,2009,Neuron,1,2,complete,0,0
+114,nw_114,2010,0,2009,Neuron,1,1,complete,0,0
+114,nw_114,2011,0,2009,Neuron,3,3,complete,0,0
+114,nw_114,2012,0,2009,Neuron,6,6,complete,0,0
+114,nw_114,2013,0,2009,Neuron,4,5,complete,0,0
+114,nw_114,2014,0,2009,Neuron,2,2,complete,0,0
+114,nw_114,2015,0,2009,Neuron,0,0,complete,0,0
+115,nw_115,2009,1,2009,Neuron,3,4,complete,1,0
+115,nw_115,2010,1,2009,Neuron,22,21,complete,1,0
+115,nw_115,2011,1,2009,Neuron,25,34,complete,1,0
+115,nw_115,2012,1,2009,Neuron,41,39,complete,1,0
+115,nw_115,2013,1,2009,Neuron,30,34,complete,1,0
+115,nw_115,2014,1,2009,Neuron,34,41,complete,1,0
+115,nw_115,2015,1,2009,Neuron,37,45,complete,1,0
+116,nw_116,2009,0,2009,Neuron,2,2,complete,0,0
+116,nw_116,2010,0,2009,Neuron,6,7,complete,0,0
+116,nw_116,2011,0,2009,Neuron,17,19,complete,0,0
+116,nw_116,2012,0,2009,Neuron,27,29,complete,0,0
+116,nw_116,2013,0,2009,Neuron,31,33,complete,0,0
+116,nw_116,2014,0,2009,Neuron,22,26,complete,0,0
+116,nw_116,2015,0,2009,Neuron,34,41,complete,0,0
+117,nw_117,2009,0,2009,Journal of Neuroscience,0,0,complete,1,0
+117,nw_117,2010,0,2009,Journal of Neuroscience,4,6,complete,1,0
+117,nw_117,2011,0,2009,Journal of Neuroscience,9,9,complete,1,0
+117,nw_117,2012,0,2009,Journal of Neuroscience,10,11,complete,1,0
+117,nw_117,2013,0,2009,Journal of Neuroscience,7,13,complete,1,0
+117,nw_117,2014,0,2009,Journal of Neuroscience,9,8,complete,1,0
+117,nw_117,2015,0,2009,Journal of Neuroscience,9,12,complete,1,0
+118,nw_118,2009,0,2009,Journal of Neuroscience,0,0,complete,0,0
+118,nw_118,2010,0,2009,Journal of Neuroscience,0,0,complete,0,0
+118,nw_118,2011,0,2009,Journal of Neuroscience,3,4,complete,0,0
+118,nw_118,2012,0,2009,Journal of Neuroscience,7,6,complete,0,0
+118,nw_118,2013,0,2009,Journal of Neuroscience,2,3,complete,0,0
+118,nw_118,2014,0,2009,Journal of Neuroscience,3,3,complete,0,0
+118,nw_118,2015,0,2009,Journal of Neuroscience,4,6,complete,0,0
+119,nw_119,2009,0,2009,Journal of Neuroscience,0,0,complete,9,0
+119,nw_119,2010,0,2009,Journal of Neuroscience,15,16,complete,9,0
+119,nw_119,2011,0,2009,Journal of Neuroscience,25,28,complete,9,0
+119,nw_119,2012,0,2009,Journal of Neuroscience,20,18,complete,9,0
+119,nw_119,2013,0,2009,Journal of Neuroscience,29,34,complete,9,0
+119,nw_119,2014,0,2009,Journal of Neuroscience,24,26,complete,9,0
+119,nw_119,2015,0,2009,Journal of Neuroscience,25,29,complete,9,0
+120,nw_120,2009,0,2009,Journal of Neuroscience,0,0,complete,0,0
+120,nw_120,2010,0,2009,Journal of Neuroscience,4,5,complete,0,0
+120,nw_120,2011,0,2009,Journal of Neuroscience,5,4,complete,0,0
+120,nw_120,2012,0,2009,Journal of Neuroscience,4,4,complete,0,0
+120,nw_120,2013,0,2009,Journal of Neuroscience,3,4,complete,0,0
+120,nw_120,2014,0,2009,Journal of Neuroscience,5,4,complete,0,0
+120,nw_120,2015,0,2009,Journal of Neuroscience,4,4,complete,0,0
+121,nw_121,2009,0,2009,Journal of Neuroscience,0,0,complete,0,0
+121,nw_121,2010,0,2009,Journal of Neuroscience,4,4,complete,0,0
+121,nw_121,2011,0,2009,Journal of Neuroscience,16,18,complete,0,0
+121,nw_121,2012,0,2009,Journal of Neuroscience,19,20,complete,0,0
+121,nw_121,2013,0,2009,Journal of Neuroscience,12,10,complete,0,0
+121,nw_121,2014,0,2009,Journal of Neuroscience,18,21,complete,0,0
+121,nw_121,2015,0,2009,Journal of Neuroscience,5,6,complete,0,0
+122,nw_122,2009,1,2009,Journal of Neuroscience,0,0,complete,0,0
+122,nw_122,2010,1,2009,Journal of Neuroscience,0,0,complete,0,0
+122,nw_122,2011,1,2009,Journal of Neuroscience,1,1,complete,0,0
+122,nw_122,2012,1,2009,Journal of Neuroscience,3,3,complete,0,0
+122,nw_122,2013,1,2009,Journal of Neuroscience,0,1,complete,0,0
+122,nw_122,2014,1,2009,Journal of Neuroscience,4,4,complete,0,0
+122,nw_122,2015,1,2009,Journal of Neuroscience,3,3,complete,0,0
+123,nw_123,2009,1,2009,Journal of Neuroscience,1,1,complete,0,0
+123,nw_123,2010,1,2009,Journal of Neuroscience,3,2,complete,0,0
+123,nw_123,2011,1,2009,Journal of Neuroscience,3,3,complete,0,0
+123,nw_123,2012,1,2009,Journal of Neuroscience,2,2,complete,0,0
+123,nw_123,2013,1,2009,Journal of Neuroscience,6,7,complete,0,0
+123,nw_123,2014,1,2009,Journal of Neuroscience,9,10,complete,0,0
+123,nw_123,2015,1,2009,Journal of Neuroscience,5,4,complete,0,0
+125,nw_125,2009,1,2009,Journal of Neuroscience,0,0,complete,1,0
+125,nw_125,2010,1,2009,Journal of Neuroscience,17,18,complete,1,0
+125,nw_125,2011,1,2009,Journal of Neuroscience,20,22,complete,1,0
+125,nw_125,2012,1,2009,Journal of Neuroscience,20,24,complete,1,0
+125,nw_125,2013,1,2009,Journal of Neuroscience,23,23,complete,1,0
+125,nw_125,2014,1,2009,Journal of Neuroscience,21,26,complete,1,0
+125,nw_125,2015,1,2009,Journal of Neuroscience,12,12,complete,1,0
+126,nw_126,2009,1,2009,Journal of Neuroscience,0,0,complete,1,0
+126,nw_126,2010,1,2009,Journal of Neuroscience,9,15,complete,1,0
+126,nw_126,2011,1,2009,Journal of Neuroscience,22,27,complete,1,0
+126,nw_126,2012,1,2009,Journal of Neuroscience,26,27,complete,1,0
+126,nw_126,2013,1,2009,Journal of Neuroscience,34,45,complete,1,0
+126,nw_126,2014,1,2009,Journal of Neuroscience,36,34,complete,1,0
+126,nw_126,2015,1,2009,Journal of Neuroscience,17,24,complete,1,0
+127,nw_127,2009,1,2009,Journal of Neuroscience,0,0,complete,0,0
+127,nw_127,2010,1,2009,Journal of Neuroscience,0,2,complete,0,0
+127,nw_127,2011,1,2009,Journal of Neuroscience,3,2,complete,0,0
+127,nw_127,2012,1,2009,Journal of Neuroscience,1,4,complete,0,0
+127,nw_127,2013,1,2009,Journal of Neuroscience,3,4,complete,0,0
+127,nw_127,2014,1,2009,Journal of Neuroscience,2,1,complete,0,0
+127,nw_127,2015,1,2009,Journal of Neuroscience,2,5,complete,0,0
+128,nw_128,2009,1,2009,Journal of Neuroscience,0,0,complete,0,0
+128,nw_128,2010,1,2009,Journal of Neuroscience,1,2,complete,0,0
+128,nw_128,2011,1,2009,Journal of Neuroscience,2,3,complete,0,0
+128,nw_128,2012,1,2009,Journal of Neuroscience,4,6,complete,0,0
+128,nw_128,2013,1,2009,Journal of Neuroscience,3,2,complete,0,0
+128,nw_128,2014,1,2009,Journal of Neuroscience,0,4,complete,0,0
+128,nw_128,2015,1,2009,Journal of Neuroscience,4,1,complete,0,0
+129,nw_129,2009,0,2009,Journal of Neuroscience,0,0,complete,0,0
+129,nw_129,2010,0,2009,Journal of Neuroscience,1,1,complete,0,0
+129,nw_129,2011,0,2009,Journal of Neuroscience,4,6,complete,0,0
+129,nw_129,2012,0,2009,Journal of Neuroscience,4,5,complete,0,0
+129,nw_129,2013,0,2009,Journal of Neuroscience,4,3,complete,0,0
+129,nw_129,2014,0,2009,Journal of Neuroscience,4,3,complete,0,0
+129,nw_129,2015,0,2009,Journal of Neuroscience,1,1,complete,0,0
+130,nw_130,2009,0,2009,Journal of Neuroscience,0,0,complete,0,0
+130,nw_130,2010,0,2009,Journal of Neuroscience,7,8,complete,0,0
+130,nw_130,2011,0,2009,Journal of Neuroscience,6,4,complete,0,0
+130,nw_130,2012,0,2009,Journal of Neuroscience,2,3,complete,0,0
+130,nw_130,2013,0,2009,Journal of Neuroscience,2,3,complete,0,0
+130,nw_130,2014,0,2009,Journal of Neuroscience,3,2,complete,0,0
+130,nw_130,2015,0,2009,Journal of Neuroscience,2,2,complete,0,0
+131,nw_131,2009,0,2009,Journal of Neuroscience,0,0,complete,1,0
+131,nw_131,2010,0,2009,Journal of Neuroscience,11,13,complete,1,0
+131,nw_131,2011,0,2009,Journal of Neuroscience,13,13,complete,1,0
+131,nw_131,2012,0,2009,Journal of Neuroscience,13,15,complete,1,0
+131,nw_131,2013,0,2009,Journal of Neuroscience,11,12,complete,1,0
+131,nw_131,2014,0,2009,Journal of Neuroscience,11,16,complete,1,0
+131,nw_131,2015,0,2009,Journal of Neuroscience,17,17,complete,1,0
+132,nw_132,2009,0,2009,Journal of Neuroscience,0,0,complete,1,0
+132,nw_132,2010,0,2009,Journal of Neuroscience,4,4,complete,1,0
+132,nw_132,2011,0,2009,Journal of Neuroscience,3,6,complete,1,0
+132,nw_132,2012,0,2009,Journal of Neuroscience,6,7,complete,1,0
+132,nw_132,2013,0,2009,Journal of Neuroscience,7,6,complete,1,0
+132,nw_132,2014,0,2009,Journal of Neuroscience,4,4,complete,1,0
+132,nw_132,2015,0,2009,Journal of Neuroscience,2,2,complete,1,0
+133,nw_133,2009,1,2009,Journal of Neuroscience,0,0,complete,2,0
+133,nw_133,2010,1,2009,Journal of Neuroscience,5,6,complete,2,0
+133,nw_133,2011,1,2009,Journal of Neuroscience,9,13,complete,2,0
+133,nw_133,2012,1,2009,Journal of Neuroscience,11,11,complete,2,0
+133,nw_133,2013,1,2009,Journal of Neuroscience,8,9,complete,2,0
+133,nw_133,2014,1,2009,Journal of Neuroscience,6,8,complete,2,0
+133,nw_133,2015,1,2009,Journal of Neuroscience,4,5,complete,2,0
+134,nw_134,2009,1,2009,Journal of Neuroscience,0,0,complete,0,0
+134,nw_134,2010,1,2009,Journal of Neuroscience,2,2,complete,0,0
+134,nw_134,2011,1,2009,Journal of Neuroscience,3,3,complete,0,0
+134,nw_134,2012,1,2009,Journal of Neuroscience,3,5,complete,0,0
+134,nw_134,2013,1,2009,Journal of Neuroscience,3,3,complete,0,0
+134,nw_134,2014,1,2009,Journal of Neuroscience,1,1,complete,0,0
+134,nw_134,2015,1,2009,Journal of Neuroscience,3,4,complete,0,0
+135,nw_135,2009,0,2009,Journal of Neuroscience,0,2,complete,1,0
+135,nw_135,2010,0,2009,Journal of Neuroscience,4,6,complete,1,0
+135,nw_135,2011,0,2009,Journal of Neuroscience,12,13,complete,1,0
+135,nw_135,2012,0,2009,Journal of Neuroscience,16,17,complete,1,0
+135,nw_135,2013,0,2009,Journal of Neuroscience,7,8,complete,1,0
+135,nw_135,2014,0,2009,Journal of Neuroscience,10,9,complete,1,0
+135,nw_135,2015,0,2009,Journal of Neuroscience,9,11,complete,1,0
+136,nw_136,2009,0,2009,Journal of Neuroscience,0,0,complete,1,0
+136,nw_136,2010,0,2009,Journal of Neuroscience,1,3,complete,1,0
+136,nw_136,2011,0,2009,Journal of Neuroscience,7,7,complete,1,0
+136,nw_136,2012,0,2009,Journal of Neuroscience,11,10,complete,1,0
+136,nw_136,2013,0,2009,Journal of Neuroscience,10,12,complete,1,0
+136,nw_136,2014,0,2009,Journal of Neuroscience,6,6,complete,1,0
+136,nw_136,2015,0,2009,Journal of Neuroscience,6,5,complete,1,0
+137,nw_137,2009,0,2009,Journal of Neuroscience,2,3,complete,2,0
+137,nw_137,2010,0,2009,Journal of Neuroscience,14,15,complete,2,0
+137,nw_137,2011,0,2009,Journal of Neuroscience,18,20,complete,2,0
+137,nw_137,2012,0,2009,Journal of Neuroscience,22,21,complete,2,0
+137,nw_137,2013,0,2009,Journal of Neuroscience,25,30,complete,2,0
+137,nw_137,2014,0,2009,Journal of Neuroscience,11,18,complete,2,0
+137,nw_137,2015,0,2009,Journal of Neuroscience,11,10,complete,2,0
+138,nw_138,2009,0,2009,Journal of Neuroscience,1,0,complete,0,0
+138,nw_138,2010,0,2009,Journal of Neuroscience,6,7,complete,0,0
+138,nw_138,2011,0,2009,Journal of Neuroscience,9,9,complete,0,0
+138,nw_138,2012,0,2009,Journal of Neuroscience,5,4,complete,0,0
+138,nw_138,2013,0,2009,Journal of Neuroscience,7,11,complete,0,0
+138,nw_138,2014,0,2009,Journal of Neuroscience,5,6,complete,0,0
+138,nw_138,2015,0,2009,Journal of Neuroscience,2,3,complete,0,0
+139,nw_139,2009,1,2009,Journal of Neuroscience,1,0,complete,0,0
+139,nw_139,2010,1,2009,Journal of Neuroscience,3,3,complete,0,0
+139,nw_139,2011,1,2009,Journal of Neuroscience,12,4,complete,0,0
+139,nw_139,2012,1,2009,Journal of Neuroscience,18,12,complete,0,0
+139,nw_139,2013,1,2009,Journal of Neuroscience,6,5,complete,0,0
+139,nw_139,2014,1,2009,Journal of Neuroscience,11,9,complete,0,0
+139,nw_139,2015,1,2009,Journal of Neuroscience,15,2,complete,0,0
+140,nw_140,2009,0,2009,Journal of Neuroscience,1,3,complete,1,0
+140,nw_140,2010,0,2009,Journal of Neuroscience,6,8,complete,1,0
+140,nw_140,2011,0,2009,Journal of Neuroscience,21,20,complete,1,0
+140,nw_140,2012,0,2009,Journal of Neuroscience,17,19,complete,1,0
+140,nw_140,2013,0,2009,Journal of Neuroscience,24,23,complete,1,0
+140,nw_140,2014,0,2009,Journal of Neuroscience,14,17,complete,1,0
+140,nw_140,2015,0,2009,Journal of Neuroscience,21,23,complete,1,0
+141,nw_141,2009,0,2009,Journal of Neuroscience,0,1,complete,0,0
+141,nw_141,2010,0,2009,Journal of Neuroscience,4,4,complete,0,0
+141,nw_141,2011,0,2009,Journal of Neuroscience,5,5,complete,0,0
+141,nw_141,2012,0,2009,Journal of Neuroscience,5,5,complete,0,0
+141,nw_141,2013,0,2009,Journal of Neuroscience,2,2,complete,0,0
+141,nw_141,2014,0,2009,Journal of Neuroscience,3,5,complete,0,0
+141,nw_141,2015,0,2009,Journal of Neuroscience,7,9,complete,0,0
+142,nw_142,2009,0,2009,Journal of Neuroscience,1,1,complete,1,0
+142,nw_142,2010,0,2009,Journal of Neuroscience,15,18,complete,1,0
+142,nw_142,2011,0,2009,Journal of Neuroscience,16,14,complete,1,0
+142,nw_142,2012,0,2009,Journal of Neuroscience,8,11,complete,1,0
+142,nw_142,2013,0,2009,Journal of Neuroscience,22,21,complete,1,0
+142,nw_142,2014,0,2009,Journal of Neuroscience,8,9,complete,1,0
+142,nw_142,2015,0,2009,Journal of Neuroscience,9,10,complete,1,0
+143,nw_143,2009,1,2009,Journal of Neuroscience,1,1,complete,2,0
+143,nw_143,2010,1,2009,Journal of Neuroscience,6,8,complete,2,0
+143,nw_143,2011,1,2009,Journal of Neuroscience,12,11,complete,2,0
+143,nw_143,2012,1,2009,Journal of Neuroscience,6,8,complete,2,0
+143,nw_143,2013,1,2009,Journal of Neuroscience,3,4,complete,2,0
+143,nw_143,2014,1,2009,Journal of Neuroscience,6,9,complete,2,0
+143,nw_143,2015,1,2009,Journal of Neuroscience,5,7,complete,2,0
+144,nw_144,2009,1,2009,Journal of Neuroscience,0,3,complete,0,0
+144,nw_144,2010,1,2009,Journal of Neuroscience,3,2,complete,0,0
+144,nw_144,2011,1,2009,Journal of Neuroscience,3,5,complete,0,0
+144,nw_144,2012,1,2009,Journal of Neuroscience,6,7,complete,0,0
+144,nw_144,2013,1,2009,Journal of Neuroscience,5,5,complete,0,0
+144,nw_144,2014,1,2009,Journal of Neuroscience,8,7,complete,0,0
+144,nw_144,2015,1,2009,Journal of Neuroscience,6,8,complete,0,0
+145,nw_145,2009,1,2009,Journal of Neuroscience,2,2,complete,2,0
+145,nw_145,2010,1,2009,Journal of Neuroscience,4,4,complete,2,0
+145,nw_145,2011,1,2009,Journal of Neuroscience,3,4,complete,2,0
+145,nw_145,2012,1,2009,Journal of Neuroscience,9,8,complete,2,0
+145,nw_145,2013,1,2009,Journal of Neuroscience,6,8,complete,2,0
+145,nw_145,2014,1,2009,Journal of Neuroscience,3,2,complete,2,0
+145,nw_145,2015,1,2009,Journal of Neuroscience,6,6,complete,2,0
+146,nw_146,2009,1,2009,Journal of Neuroscience,4,7,complete,2,0
+146,nw_146,2010,1,2009,Journal of Neuroscience,8,10,complete,2,0
+146,nw_146,2011,1,2009,Journal of Neuroscience,10,8,complete,2,0
+146,nw_146,2012,1,2009,Journal of Neuroscience,11,11,complete,2,0
+146,nw_146,2013,1,2009,Journal of Neuroscience,4,7,complete,2,0
+146,nw_146,2014,1,2009,Journal of Neuroscience,9,11,complete,2,0
+146,nw_146,2015,1,2009,Journal of Neuroscience,10,11,complete,2,0
+147,nw_147,2009,1,2009,Journal of Neuroscience,3,6,complete,0,0
+147,nw_147,2010,1,2009,Journal of Neuroscience,11,10,complete,0,0
+147,nw_147,2011,1,2009,Journal of Neuroscience,4,15,complete,0,0
+147,nw_147,2012,1,2009,Journal of Neuroscience,8,17,complete,0,0
+147,nw_147,2013,1,2009,Journal of Neuroscience,8,10,complete,0,0
+147,nw_147,2014,1,2009,Journal of Neuroscience,7,9,complete,0,0
+147,nw_147,2015,1,2009,Journal of Neuroscience,9,12,complete,0,0
+148,nw_148,2009,0,2009,Journal of Neuroscience,2,4,complete,1,0
+148,nw_148,2010,0,2009,Journal of Neuroscience,12,10,complete,1,0
+148,nw_148,2011,0,2009,Journal of Neuroscience,9,9,complete,1,0
+148,nw_148,2012,0,2009,Journal of Neuroscience,8,11,complete,1,0
+148,nw_148,2013,0,2009,Journal of Neuroscience,8,7,complete,1,0
+148,nw_148,2014,0,2009,Journal of Neuroscience,6,8,complete,1,0
+148,nw_148,2015,0,2009,Journal of Neuroscience,7,7,complete,1,0
+149,nw_149,2009,0,2009,Journal of Neuroscience,1,2,complete,0,0
+149,nw_149,2010,0,2009,Journal of Neuroscience,11,10,complete,0,0
+149,nw_149,2011,0,2009,Journal of Neuroscience,5,7,complete,0,0
+149,nw_149,2012,0,2009,Journal of Neuroscience,8,10,complete,0,0
+149,nw_149,2013,0,2009,Journal of Neuroscience,13,14,complete,0,0
+149,nw_149,2014,0,2009,Journal of Neuroscience,6,5,complete,0,0
+149,nw_149,2015,0,2009,Journal of Neuroscience,3,4,complete,0,0
+150,nw_150,2009,1,2009,Journal of Neuroscience,2,3,complete,0,0
+150,nw_150,2010,1,2009,Journal of Neuroscience,11,12,complete,0,0
+150,nw_150,2011,1,2009,Journal of Neuroscience,9,10,complete,0,0
+150,nw_150,2012,1,2009,Journal of Neuroscience,12,17,complete,0,0
+150,nw_150,2013,1,2009,Journal of Neuroscience,9,7,complete,0,0
+150,nw_150,2014,1,2009,Journal of Neuroscience,15,17,complete,0,0
+150,nw_150,2015,1,2009,Journal of Neuroscience,5,6,complete,0,0
+151,nw_151,2009,1,2009,Journal of Neuroscience,1,2,complete,0,0
+151,nw_151,2010,1,2009,Journal of Neuroscience,9,10,complete,0,0
+151,nw_151,2011,1,2009,Journal of Neuroscience,3,3,complete,0,0
+151,nw_151,2012,1,2009,Journal of Neuroscience,9,8,complete,0,0
+151,nw_151,2013,1,2009,Journal of Neuroscience,6,7,complete,0,0
+151,nw_151,2014,1,2009,Journal of Neuroscience,5,7,complete,0,0
+151,nw_151,2015,1,2009,Journal of Neuroscience,4,3,complete,0,0
+152,nw_152,2009,1,2009,Journal of Neuroscience,3,3,complete,4,0
+152,nw_152,2010,1,2009,Journal of Neuroscience,21,26,complete,4,0
+152,nw_152,2011,1,2009,Journal of Neuroscience,48,54,complete,4,0
+152,nw_152,2012,1,2009,Journal of Neuroscience,48,52,complete,4,0
+152,nw_152,2013,1,2009,Journal of Neuroscience,34,41,complete,4,0
+152,nw_152,2014,1,2009,Journal of Neuroscience,58,66,complete,4,0
+152,nw_152,2015,1,2009,Journal of Neuroscience,34,41,complete,4,0
+153,nw_153,2009,0,2009,Journal of Neuroscience,1,1,complete,2,0
+153,nw_153,2010,0,2009,Journal of Neuroscience,1,1,complete,2,0
+153,nw_153,2011,0,2009,Journal of Neuroscience,4,6,complete,2,0
+153,nw_153,2012,0,2009,Journal of Neuroscience,7,8,complete,2,0
+153,nw_153,2013,0,2009,Journal of Neuroscience,4,4,complete,2,0
+153,nw_153,2014,0,2009,Journal of Neuroscience,9,8,complete,2,0
+153,nw_153,2015,0,2009,Journal of Neuroscience,4,6,complete,2,0
+154,nw_154,2009,0,2009,Journal of Neuroscience,9,10,complete,0,0
+154,nw_154,2010,0,2009,Journal of Neuroscience,19,24,complete,0,0
+154,nw_154,2011,0,2009,Journal of Neuroscience,21,27,complete,0,0
+154,nw_154,2012,0,2009,Journal of Neuroscience,31,34,complete,0,0
+154,nw_154,2013,0,2009,Journal of Neuroscience,30,40,complete,0,0
+154,nw_154,2014,0,2009,Journal of Neuroscience,37,35,complete,0,0
+154,nw_154,2015,0,2009,Journal of Neuroscience,21,30,complete,0,0
+155,nw_155,2009,1,2009,Journal of Neuroscience,4,4,complete,4,0
+155,nw_155,2010,1,2009,Journal of Neuroscience,21,24,complete,4,0
+155,nw_155,2011,1,2009,Journal of Neuroscience,31,32,complete,4,0
+155,nw_155,2012,1,2009,Journal of Neuroscience,25,23,complete,4,0
+155,nw_155,2013,1,2009,Journal of Neuroscience,36,38,complete,4,0
+155,nw_155,2014,1,2009,Journal of Neuroscience,46,50,complete,4,0
+155,nw_155,2015,1,2009,Journal of Neuroscience,35,37,complete,4,0
+156,nw_156,2009,1,2009,Journal of Neuroscience,7,6,complete,0,0
+156,nw_156,2010,1,2009,Journal of Neuroscience,10,16,complete,0,0
+156,nw_156,2011,1,2009,Journal of Neuroscience,18,19,complete,0,0
+156,nw_156,2012,1,2009,Journal of Neuroscience,7,11,complete,0,0
+156,nw_156,2013,1,2009,Journal of Neuroscience,8,19,complete,0,0
+156,nw_156,2014,1,2009,Journal of Neuroscience,7,5,complete,0,0
+156,nw_156,2015,1,2009,Journal of Neuroscience,6,10,complete,0,0
+157,nw_157,2009,1,2009,Journal of Neuroscience,1,1,complete,0,0
+157,nw_157,2010,1,2009,Journal of Neuroscience,4,4,complete,0,0
+157,nw_157,2011,1,2009,Journal of Neuroscience,3,3,complete,0,0
+157,nw_157,2012,1,2009,Journal of Neuroscience,2,4,complete,0,0
+157,nw_157,2013,1,2009,Journal of Neuroscience,6,6,complete,0,0
+157,nw_157,2014,1,2009,Journal of Neuroscience,5,6,complete,0,0
+157,nw_157,2015,1,2009,Journal of Neuroscience,4,4,complete,0,0

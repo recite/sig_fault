@@ -90,3 +90,17 @@ test_that("flagged-only real histories cannot identify a source contrast", {
   expect_equal(result$n_comparison, c(0L, 0L))
   expect_true(all(result$status == "missing_group"))
 })
+
+test_that("the source comparison accepts another index without relabeling it OpenAlex", {
+  panel <- bridge_fixture()
+  panel$opencitations <- panel$wos
+  panel$opencitations[panel$flag == 1L & panel$year > 2010L] <-
+    2L * panel$wos[panel$flag == 1L & panel$year > 2010L]
+  panel$openalex <- panel$openalex_broad <- NULL
+  changes <- bridge_changes(panel, sources = c("wos", "opencitations"))
+  result <- bridge_comparison(changes, "opencitations", draws = 199L)
+  expect_equal(result$difference[2], log(2))
+  expect_equal(result$source, rep("opencitations", 2))
+  expect_equal(result$alternative[2] - result$wos[2], log(2))
+  expect_false("openalex" %in% names(result))
+})

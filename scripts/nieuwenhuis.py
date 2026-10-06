@@ -865,6 +865,7 @@ def report():
         "See [design](design.md), [construction and dictionary](data.md), "
         "[source-discrepancy diagnostics](diagnostics.md), "
         "[OpenCitations link check](validation.md), "
+        "[full-cohort OpenCitations comparison](opencitations.md), "
         "[status JSON](../../data/nieuwenhuis/status.json), and "
         "[paired records](../../data/nieuwenhuis/paired_panel.csv).",
     ]

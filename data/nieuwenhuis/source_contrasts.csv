@@ -1,4 +1,4 @@
-"cohort","baseline","post","source","estimand","n_flagged","n_comparison","wos","openalex","difference","se","lower","upper","bootstrap_draws","undefined_draws","seed","status"
+"cohort","baseline","post","source","estimand","n_flagged","n_comparison","wos","alternative","difference","se","lower","upper","bootstrap_draws","undefined_draws","seed","status"
 "Historical cohort",2010,"2012","openalex","absolute",10,0,,,,,,,0,0,20261006,"missing_group"
 "Historical cohort",2010,"2012","openalex","log_ratio",10,0,,,,,,,0,0,20261006,"missing_group"
 "Historical cohort",2010,"2012","openalex_broad","absolute",10,0,,,,,,,0,0,20261006,"missing_group"

@@ -1,0 +1,267 @@
+{
+  "scope": "Primary-source audit of four selected FLoRA leads; findings are not automatic treatment eligibility decisions. No original analyses rerun.",
+  "reviewed_at": "2026-10-06T05:43:46.059316+00:00",
+  "cases": [
+    {
+      "record_id": "flora_01600",
+      "original_doi": "10.1257/aer.102.5.1927",
+      "report_doi": "10.1257/aer.20150988",
+      "response_doi": "10.1257/aer.20161329",
+      "adjudication": "Author-acknowledged coding error; material magnitude correction without reversal. First public disclosure unresolved.",
+      "mechanism": "An unrecognized TAXSIM v8-to-v9 change made variable v28 federal tax before rather than after credits; the original after-tax family-income measure omitted EITC payments.",
+      "consequence": "Author correction Table 3: combined math/reading income coefficient 0.0411 SD per $1,000 (SE 0.0131), versus about 0.06 originally. Reply says approximately 30% smaller IV estimates and almost 40% larger first stage; reduced form and statistical significance unchanged. Published comment abstract says 32% smaller.",
+      "correction_only": "The main income coding correction rescales first stage and IV. Corrected tables also incorporate minor state-credit and EITC-schedule corrections (footnote 3), so table values should not be represented as isolating exactly one change.",
+      "response_status": "Dahl and Lochner explicitly acknowledge the coding error and thank Lundstrom. They defend substantive income effects and address a separate sample-period robustness critique.",
+      "sources": [
+        {
+          "file": "dahl_reply.pdf",
+          "url": "https://econweb.ucsd.edu/~gdahl/papers/children-and-EITC-reply.pdf",
+          "locator": "PDF p.1, footnote 1; dated September 8, 2016",
+          "sha256": "03b4c4d0d8683abf584534822f89d25cb38119aff883f8dc59246e9d0666aa38",
+          "cache_path": "private-data/inventories/primary-review/dahl_reply.pdf",
+          "retrieved_at": "2026-10-06T05:35:30.210296+00:00"
+        },
+        {
+          "file": "dahl_correction_2016.pdf",
+          "url": "https://econweb.ucsd.edu/~gdahl/papers/children-and-EITC-correction-addendum.pdf",
+          "locator": "PDF/printed pp.1–2, section 1 and notes 2–3; Table 3 p.12; dated March 1, 2016",
+          "sha256": "a15b701ccf5c8aa4b5899e7a9e64f2ff5e0f1f39e2285135ed50bddec0e0264f",
+          "cache_path": "private-data/inventories/primary-review/dahl_correction_2016.pdf",
+          "retrieved_at": "2026-10-06T05:36:18.794704+00:00"
+        },
+        {
+          "file": "uci_2015_news.html",
+          "url": "https://www.socsci.uci.edu/newsevents/news/2015/2015-10-22-lundstrom-income-achievement.php",
+          "locator": "News date October 22, 2015; paragraphs describing sensitivity across periods and linked CEPP working paper",
+          "sha256": "02bc6d773deb00da113ba9f44725de0494df36a53729e8a29134feb4bed5b767",
+          "cache_path": "private-data/inventories/primary-review/uci_2015_news.html",
+          "retrieved_at": "2026-10-06T05:41:23.534155+00:00"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2015-10-22",
+          "precision": "day",
+          "kind": "institutional public news about broader critique",
+          "qualifier": "Article discusses sample-period sensitivity, not coding error. Its linked August-2015-named working paper is unavailable; cannot treat this news as verified coding-error exposure."
+        },
+        {
+          "date": "2016-03-01",
+          "precision": "day",
+          "kind": "date printed on full public author correction",
+          "qualifier": "Earliest full recovered document explicitly describing coding error. Printed date does not itself verify public posting date. Document references Lundstrom 2015."
+        },
+        {
+          "date": "2017",
+          "precision": "year",
+          "kind": "journal comment/reply",
+          "qualifier": "Not first disclosure: 2016 author correction and 2015 working-paper references precede it."
+        }
+      ],
+      "remaining_unknowns": [
+        "Recover Lundstrom 2015 working paper and dated public availability; inspect whether the exact coding-error claim was already present.",
+        "Need separate dates for public methodological critique and publicized coding error."
+      ],
+      "citation_analysis_eligible": "pending"
+    },
+    {
+      "record_id": "flora_01601",
+      "original_doi": "10.1177/000312240907400203",
+      "report_doi": "10.1177/0003122417714422",
+      "response_doi": "10.1177/0003122417716611",
+      "adjudication": "Substantive candidate, but mechanism not conclusively traced; keep missing-data discrepancy separate from functional-form dispute.",
+      "mechanism": "Report infers nonresponse codes may have been treated as values, e.g. unknown revenue 88,888,888,888. Even implementing that presumed mistake does not reproduce original sample sizes. Authors explicitly cannot determine exact discrepancy causes; reporting errors are another possibility.",
+      "consequence": "Reported original seven of eight positive p<.05 associations become three of eight in the replication using proper missing-value exclusions, all still positive. Additional logarithmic transformations leave one of eight. Full-model sample sizes 239/270/348/362 compared with original 506/506/469/484 for revenue/customers/market-share/profitability.",
+      "correction_only": "Three of eight is the missing-data-only replication result, but because original computation is not reconstructed it is not an isolated code-patch counterfactual. One of eight additionally changes outcome/control functional forms and must not be attributed wholly to established mistakes.",
+      "response_status": "Herring reply publisher abstract defends updated evidence linking diversity and business success. Full reply not recovered (publisher blocked); cannot classify whether missing-code hypothesis is conceded or how it is rebutted.",
+      "sources": [
+        {
+          "file": "diversity_comment.pdf",
+          "url": "https://gwern.net/doc/sociology/2017-stojmenovska.pdf",
+          "locator": "Authored primary comment mirror: pp.2–3 Missing Values and Sample Sizes; Table 1 p.3; p.5 and Table 3 p.8",
+          "sha256": "317731ef080eb8d0e016ae1ec85f38a3ccd4e970a9ac5bfdb392fc06e86aea1e",
+          "cache_path": "private-data/inventories/primary-review/diversity_comment.pdf",
+          "retrieved_at": "2026-10-06T05:35:30.515805+00:00"
+        },
+        {
+          "file": "web-primary-evidence.json",
+          "url": "https://journals.sagepub.com/doi/10.1177/0003122417714422",
+          "locator": "Publisher publication date",
+          "sha256": "cf56ababd9c283d71dfdcab5a0653656588a7dcf303c1dfb4941f32245d99e3a",
+          "cache_path": "private-data/inventories/primary-review/web-primary-evidence.json"
+        },
+        {
+          "file": "web-primary-evidence.json",
+          "url": "https://journals.sagepub.com/doi/10.1177/0003122417716611",
+          "locator": "Reply publisher abstract and publication date",
+          "sha256": "cf56ababd9c283d71dfdcab5a0653656588a7dcf303c1dfb4941f32245d99e3a",
+          "cache_path": "private-data/inventories/primary-review/web-primary-evidence.json"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2017-06-22",
+          "precision": "day",
+          "kind": "publisher online date of reply",
+          "qualifier": "Earlier than comment online date. Full content unavailable, so whether it already publicizes the alleged error is unresolved."
+        },
+        {
+          "date": "2017-07-07",
+          "precision": "day",
+          "kind": "publisher online date of explicit comment",
+          "qualifier": "Earliest verified explicit public error-report date identified in this search, but earlier reply/preprints require adjudication; not a proven first-ever date."
+        }
+      ],
+      "remaining_unknowns": [
+        "Read Herring full reply and obtain original code to separate wrong coding from wrong reported N.",
+        "Verify the earlier reply content and search archived author preprints for first public disclosure.",
+        "Do not treat skewness alone as an OLS assumption violation or changing to logs as an unambiguous correction."
+      ],
+      "citation_analysis_eligible": "pending"
+    },
+    {
+      "record_id": "flora_01722",
+      "original_doi": "10.1093/restud/rdv039",
+      "report_doi": "10.1093/restud/rdab037",
+      "response_doi": "10.1093/restud/rdab007",
+      "adjudication": "Author-acknowledged coding mistakes materially affect one negative-binomial patent robustness check. Broader conclusions disputed; earliest public date incompletely resolved.",
+      "mechanism": "Negative-binomial model used patents+1 instead of raw counts and separate country/year fixed effects instead of country-by-year effects. Comment also drops industry effects to match written equation; reply disputes dropping those effects.",
+      "consequence": "Reply Table 1 original 0.398 (SE 0.168), corrected counts and country-by-year FE 0.116 (0.490). Correcting dependent variable alone in comment gives -0.15 (0.47). Further dropping industry FE gives -0.73 (0.34), but that additional choice is disputed. All use 74,038 observations. Reply adding initial Chinese import exposure yields 1.089 (0.575), p<.10, with further variants significant at .05/.01.",
+      "correction_only": "Use 0.398 to 0.116 as agreed coding correction; do not use the negative estimate after disputed FE removal as agreed correction. Changes to log(1+patents) elsewhere concern modeling/estimand and trends. The coding result is a robustness-specification finding, not proof all original innovation, IT and productivity findings reverse.",
+      "response_status": "Reply acknowledges errors but defends industry FE and argues initial-condition controls restore positive results. This defense uses additional controls beyond the simple coding correction.",
+      "sources": [
+        {
+          "file": "trade_comment_final.pdf",
+          "url": "https://cris.maastrichtuniversity.nl/ws/files/77647591/Mau_2021_On_Trade_Induced_Technical_Change.pdf",
+          "locator": "Published pp.2555–2558; section 3 and Table 2 p.2558 (PDF p.5)",
+          "sha256": "311ac8eda45ac693ea563903c4ba8a691442a557a5db4070851a05801ff14399",
+          "cache_path": "private-data/inventories/primary-review/trade_comment_final.pdf",
+          "retrieved_at": "2026-10-06T05:41:24.137990+00:00"
+        },
+        {
+          "file": "trade_reply.pdf",
+          "url": "https://wrap.warwick.ac.uk/id/eprint/150603/1/WRAP-A-reply-Campbell-Mau-Draca-2021.pdf",
+          "locator": "PDF pp.1–2; Table 1 p.6",
+          "sha256": "56e90dcb5a5d2b685fccbc128865112a463ad0a6532d67d5b6059fd7ff1360ad",
+          "cache_path": "private-data/inventories/primary-review/trade_reply.pdf",
+          "retrieved_at": "2026-10-06T05:35:42.563495+00:00"
+        },
+        {
+          "file": "trade_comment_2020.pdf",
+          "url": "https://cris.maastrichtuniversity.nl/ws/files/49433016/RM20019.pdf",
+          "locator": "June-2020 working paper; section 3 and Table 2",
+          "sha256": "7d0d9f5550df761bb74863696cd19573fccb8a70eb0809c8bc9513c5450d6048",
+          "cache_path": "private-data/inventories/primary-review/trade_comment_2020.pdf",
+          "retrieved_at": "2026-10-06T05:35:31.629094+00:00"
+        },
+        {
+          "file": "trade_repository.html",
+          "url": "https://cris.maastrichtuniversity.nl/en/publications/on-trade-induced-technical-change-the-impact-of-chinese-imports-o/",
+          "locator": "Institutional record publication date July 9, 2020; DOI 10.26481/umagsb.2020019",
+          "sha256": "606a156294de05d3f7ee4b6263bad88efb2d7f7f7ed9a01806cd41aa917cda42",
+          "cache_path": "private-data/inventories/primary-review/trade_repository.html",
+          "retrieved_at": "2026-10-06T05:37:45.990140+00:00"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2020-03",
+          "precision": "month",
+          "kind": "search-indexed NES Working Paper 262 title/abstract",
+          "qualifier": "Coding-error abstract identified; linked full PDF returned 404. Needs preserved primary landing page/version before event-date use."
+        },
+        {
+          "date": "2020-07-09",
+          "precision": "day",
+          "kind": "institutional publication date of recovered coding-error working paper",
+          "qualifier": "Verified public-release candidate, but earlier March-2020 and 2019 versions must be resolved."
+        },
+        {
+          "date": "2021-07-25",
+          "precision": "day",
+          "kind": "advance publication date printed on final comment",
+          "qualifier": "Not first public disclosure; recovered 2020 working paper precedes it."
+        }
+      ],
+      "remaining_unknowns": [
+        "Recover March-2020 WP262 and 2019 WP0252 to establish whether/when precise coding allegations circulated.",
+        "Earlier CESifo conference presentations and journal received date are not evidence of public content.",
+        "Comment and reply cite different original Table 7 column numbers for their baseline; match numerical specification/code rather than uncritically propagating column number."
+      ],
+      "citation_analysis_eligible": "pending"
+    },
+    {
+      "record_id": "flora_01728",
+      "original_doi": "10.1007/s10683-011-9283-7",
+      "report_doi": "10.1007/s10683-013-9375-7",
+      "earlier_report_doi": "10.2139/ssrn.2171064",
+      "response_doi": null,
+      "adjudication": "Full report documents concrete SD/SE and data-entry issues and an important changed take-option result; correction bundle also changes censoring/definition. Material impact of hard mistakes alone not isolated.",
+      "mechanism": "For List aggregate data, SDs used instead of SEs, underweighting study. Some negative-mean treatments omitted; Bardsley participant counts mistaken across treatments; negative giving truncated to zero in aggregate and excluded from individual data. These issues have different epistemic status: SD/SE and transcription are computational/data errors; censoring and comparable-giving definitions require substantive assessment.",
+      "consequence": "2012 working-paper Table 6 take-option meta-regression coefficient -0.331 (p<.001), OLS -0.428 (p<.001), treatment FE -0.272 (p<.001), Tobit -0.362 (p<.001); original take-option estimates nonsignificant. Final 2014 comment reports a different meta coefficient (-0.603) after broader recoding; do not interchange versions. Most other findings described as robust.",
+      "correction_only": "The displayed consequence follows bundled recoding/reinstatement of negative giving and hard data errors. A hard-errors-only correction is not reported in the inspected full 2012 paper. Separate normalized-giving analyses alter the outcome reference point further.",
+      "response_status": "No formal Engel response located. Comment acknowledges Engel supplied data and answered questions; that does not establish agreement with all criticisms.",
+      "sources": [
+        {
+          "file": "dictator_2012_http.pdf",
+          "url": "http://research.economics.unsw.edu.au/RePEc/papers/2012-44.pdf",
+          "locator": "Section 5 printed pp.14–15 (PDF pp.15–16); Appendix Table 5 and Table 6, especially take-option row printed p.34 (PDF p.35); cover Last updated 6/11/12",
+          "sha256": "7dc70459a0c8f76657bc19bf24a5b65c7bd936a333a5045a5a341c364707d664",
+          "cache_path": "private-data/inventories/primary-review/dictator_2012_http.pdf",
+          "retrieved_at": "2026-10-06T05:36:29.895817+00:00"
+        },
+        {
+          "file": "dictator_publisher.html",
+          "url": "https://link.springer.com/article/10.1007/s10683-013-9375-7",
+          "locator": "Notes 3,5–8; author acknowledgment; publication history",
+          "sha256": "f36b4d36cded5a53c12405c7d244e30484bd0d107818b568a46afeec435c520a",
+          "cache_path": "private-data/inventories/primary-review/dictator_publisher.html",
+          "retrieved_at": "2026-10-06T05:36:20.680871+00:00"
+        },
+        {
+          "file": "ssrn-posting-evidence.json",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2171064",
+          "locator": "Primary SSRN indexed metadata: Posted November 6, 2012; Date Written November 4, 2012",
+          "sha256": "afa4ffde4b957f4f9af105caaaf58bdc698dad5d64d6648cad641adba27e3882",
+          "cache_path": "private-data/inventories/primary-review/ssrn-posting-evidence.json"
+        },
+        {
+          "file": "dictator-final-author-text.json",
+          "url": "https://www.researchgate.net/publication/258832155_The_effects_of_the_take-option_in_dictator-game_experiments_a_comment_on_Engel's_2011_meta-study",
+          "locator": "Author-uploaded final full text; section 4 Table 2; web extraction lines 316–379; section 5/Table 3 distinguishes normalization. Ignore platform March-2025 date.",
+          "sha256": "fd0c051368083ad3e2e4633a039dd3c32537dc3bc3e0dfbf154ced362e093b82",
+          "cache_path": "private-data/inventories/primary-review/dictator-final-author-text.json"
+        },
+        {
+          "file": "engel_original_2011.pdf",
+          "url": "https://homepage.coll.mpg.de/pdf_dat/2010_07online.pdf",
+          "locator": "Original author working paper revised January 2011; take-option conclusion and Table 1",
+          "sha256": "1664c8c0ea47b7b8979670f555dd2bb489b68362b7ba54dda1873aa306a53ba9",
+          "cache_path": "private-data/inventories/primary-review/engel_original_2011.pdf",
+          "retrieved_at": "2026-10-06T05:41:24.607691+00:00"
+        }
+      ],
+      "date_evidence": [
+        {
+          "date": "2012-11-06",
+          "precision": "day",
+          "kind": "SSRN posted date for recovered full working paper",
+          "qualifier": "Earliest identified public posting, corroborated by PDF last-updated date. Earlier seminar/draft circulation not established as public."
+        },
+        {
+          "date": "2013-09-28",
+          "precision": "day",
+          "kind": "final comment online publication",
+          "qualifier": "Predates 2014 issue but postdates 2012 public working paper."
+        }
+      ],
+      "remaining_unknowns": [
+        "Quantify SD/SE and hard-data-error correction holding censoring/definition constant before asserting material consequence from those mistakes alone.",
+        "Check original coding documentation and any author response before interpreting excluded negative giving as accidental rather than intentional scope.",
+        "Final full PDF not downloaded, but complete author-uploaded final text, including Table 2 (-0.603), is preserved in web extraction. Ignore ResearchGate March-2025 metadata: publisher establishes 2013 online publication."
+      ],
+      "citation_analysis_eligible": "pending"
+    }
+  ],
+  "verification_scope": "Primary report and author-response passages checked against downloaded documents; original empirical analyses were not rerun. Dates distinguish document dates, public posting evidence, and unresolved earlier versions."
+}
