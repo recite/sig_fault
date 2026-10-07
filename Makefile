@@ -69,7 +69,7 @@ pilot-test: pilot
 	python3 -m unittest discover -s tests -p 'test_pilot.py'
 	python3 scripts/pilot.py validate
 
-check: paper lint test inventories-test external-test lazic-test
+check: paper lint test inventories-test external-test lazic-test cohorts
 
 clean:
 	cd ms && latexmk -C main.tex
@@ -178,3 +178,13 @@ lazic-analysis: lazic
 
 synthesis: lazic-analysis synthesis-components
 	$(RSCRIPT) scripts/lazic_synthesis.R
+
+.PHONY: cohorts cohorts-import cohorts-fetch
+cohorts:
+	$(RSCRIPT) scripts/cohort_inventory.R --validate
+
+cohorts-import:
+	$(RSCRIPT) scripts/cohort_inventory.R
+
+cohorts-fetch:
+	$(RSCRIPT) scripts/cohort_inventory.R --fetch

@@ -16,7 +16,9 @@ The I4R extension currently supports matched comparisons for only **{{IfrCases}}
 
 The [animal-study audit](docs/lazic/results.md) adds complete citation histories for **200 papers**: 91 flagged for treating dependent observations as independent, 45 classified as correctly analyzed, and 64 unclear. After excluding one paper with an earlier warning, the comparison contains {{LazicFlagged}} flagged and {{LazicComparison}} comparison papers. From 2016 to 2019, mean annual citations changed from {{LazicFlaggedBefore}} to {{LazicFlaggedAfter}} in the flagged group and from {{LazicComparisonBefore}} to {{LazicComparisonAfter}} in the comparison group. The difference in changes is {{LazicAbsolute}} citations per paper (95% interval [{{LazicAbsoluteLower}}, {{LazicAbsoluteUpper}}]). **Citation levels changed little on average in both groups; this audit supplies no clear evidence of an additional decline among flagged papers.**
 
-The [expanded synthesis](docs/meta/README.md) gives each of the three audits equal weight and retains the small I4R pilot as a separate sensitivity. It summarizes these assembled cases; differing error definitions, disclosure dates and citation measures prevent interpreting it as a general causal effect.
+The [study-by-study inventory](data/cohorts/README.md) now preserves complete source cohorts for interaction and panel-method audits, mediation, psychology and cancer replication, and SCORE. Each study has its own roster, assessments, original-source provenance and next-step notes. These inventories expand the collection pipeline; they do not yet add citation-effect estimates.
+
+The [expanded synthesis](docs/meta/README.md) weights the three audit estimates by inverse sampling variance. The small I4R pilot is excluded from pooling. Audit weights, leave-one-audit-out estimates, and equal-audit and random-effects sensitivities are reported. A causal interpretation requires comparable untreated citation trajectories within each audit.
 
 ## Research design
 
@@ -53,7 +55,7 @@ The [Nieuwenhuis source comparison](docs/nieuwenhuis/README.md) now compares all
 
 `make synthesis` rebuilds the complete three-audit synthesis, its components, and the manuscript tables. Alternative diagnostic definitions from the same audit are dependent comparisons. The [two-audit reference synthesis](docs/meta/two-audit.md) combines the Nieuwenhuis and Lal contrasts and shows how the result changes with the IV diagnostic. It summarizes these cases, with differences in timing, citation measurement, and error definitions still present; it is not a general causal effect of publicizing errors. The [expanded synthesis](docs/meta/README.md) adds the complete animal-study audit; its [status](data/meta/status.json) records the estimand and limits.
 
-A [secondary synthesis including I4R](docs/meta/secondary.md) adds proportional growth in affected and matched-control mean citations from the annual-total analysis. The combined direction still depends on the IV diagnostic, and the I4R contrast depends on the inventor-clusters case. This retrospective sensitivity broadens the evidence while preserving the different exposure clocks and citation measures.
+The I4R [standalone proportional checks](docs/i4r/proportional.md) retain case-specific evidence without adding the small pilot to the meta-analysis.
 
 | Path | Contents |
 | --- | --- |

@@ -1,0 +1,14 @@
+{
+  "title": "Reproducibility Project: Psychology",
+  "authors": "Open Science Collaboration",
+  "assessment": "Direct replication of published psychology findings",
+  "publication": "2015-08-28",
+  "public_announcement": "2015-08-27",
+  "reference": "https://doi.org/10.1126/science.aac4716",
+  "archive": "https://github.com/CenterForOpenScience/rpp",
+  "priority": "High: mature cohort with both replication outcomes",
+  "construction": "Keep Completion.R == 1 in the primary 168-row file, yielding all 100 completed study records. These belong to 98 distinct original papers: two pairs share title, authors, journal, volume, issue and pages. paper_crosswalk.csv maps every study record to the original paper; both assessments survive. Do not require an observed p value: one completed study lacks it. Original titles and bibliographic fields identify papers; remaining DOI linkage must be completed.",
+  "outcomes": "Replicate.R is the source judgment: 39 yes, 59 no and 2 No, retained verbatim. T.pval.USE.R, T.sign.R.125, T.r.O and T.r.R remain in the source projection. These are source replication judgments, not original-error labels.",
+  "timing": "The COS announcement dates to 27 August 2015. Check earlier individual reports before treating this as every paper's first disclosure.",
+  "next": "Resolve original DOIs using titles, journal, volume and pages; link to existing FReD/FLoRA entries and verify first-publication dates before citation collection."
+}

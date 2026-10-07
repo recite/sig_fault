@@ -1,15 +1,17 @@
 {
-  "status": "three_audit_descriptive_synthesis",
-  "estimand": "Equal-audit mean log flagged-versus-comparison post/pre citation ratios, transformed as 100 * (exp(mean_log_ratio) - 1).",
+  "status": "three_audit_precision_weighted_synthesis",
+  "estimand": "Inverse-variance weighted mean log flagged-versus-comparison post/pre citation ratios, transformed as 100 * (exp(mean_log_ratio) - 1).",
   "components": ["Nieuwenhuis", "Lal", "Lazic"],
   "synthesis_results": "data/meta/lazic_synthesis.csv",
   "component_estimates": "data/meta/lazic_components.csv",
-  "i4r_sensitivity": "data/meta/lazic_with_i4r.csv",
+  "excluded_from_pooling": "I4R: three selected matched cases, retained separately",
+  "weights_file": "data/meta/weights.csv",
+  "weighting_sensitivity": "data/meta/weighting_sensitivity.csv",
   "openalex_source_comparison": "data/nieuwenhuis/status.json",
   "openalex_synthesis": "data/meta/openalex_synthesis.csv",
   "primary_lazic_contrast": "2016 to 2019, first-known-publicity cohort",
   "harmonized_lazic_contrast": "2016 to 2018; journal publication occurred in 2018",
-  "weights": "One third per audit on the log ratio-of-ratios scale",
+  "weights": "Inverse squared component standard error, normalized to sum to one",
   "population": "The three assembled audits, not a random sample of publicized errors",
-  "limitations": ["Different error definitions, databases and document types remain.", "Nieuwenhuis papers published in 2010 have partial publication-year baselines.", "Public availability is not verified reader exposure.", "Only three audits; intervals omit across-audit generalization uncertainty.", "The Lal formal-publication contrast follows earlier circulation.", "Lazic counts distinct indexed citing works of all types, including book chapters."]
+  "limitations": ["Different error definitions, databases and document types remain.", "Nieuwenhuis papers published in 2010 have partial publication-year baselines.", "Public availability is not verified reader exposure.", "Main intervals condition on included audits; REML/modified-KH is reported separately.", "The Lal formal-publication contrast follows earlier circulation.", "Lazic counts distinct indexed citing works of all types, including book chapters."]
 }

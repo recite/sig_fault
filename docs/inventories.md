@@ -19,8 +19,8 @@ match; aliases and publication versions still require review.
 
 A separate [complete pseudoreplication audit](lazic/README.md) now identifies all
 200 papers assessed by Lazic and colleagues: 91 flagged, 45 correctly analyzed
-and 64 unclear. Its identities and native comparison group are recovered; citation
-histories and prior-notice review remain pending. These 200 records are separate
+and 64 unclear. Its identities, full citation histories and prior-notice review are
+complete; the audit now enters the three-audit synthesis. These 200 records are separate
 from the cross-source DOI counts above.
 
 ## First priority: same-data reproduction reports

@@ -1,0 +1,14 @@
+{
+  "title": "SCORE: replicability of social and behavioural science",
+  "authors": "SCORE collaboration",
+  "assessment": "Replication outcomes under the project's stated success criterion",
+  "publication": "2026-04-01",
+  "public_announcement": "",
+  "reference": "https://doi.org/10.1038/s41586-025-10078-y",
+  "archive": "https://osf.io/bzfgy/",
+  "priority": "High inventory value; disclosure dates needed for citation design",
+  "construction": "Load the primary analysis RData. Join repli_binary to repli_outcomes on report_id, then paper_metadata on paper_id: 274 claims from 164 original papers, all with DOIs. Keep the published subset, not all 427 candidate outcome records. Project metadata also contain earlier individual project dates, which are not automatically public disclosure dates.",
+  "outcomes": "The primary native variable is repli_score_criteria_met: 151 met and 123 not met. repli_binary_analyst is a different definition and is retained separately; it cannot substitute for the primary criterion. Several claims can belong to one paper. Neither outcome proves an error in the original paper.",
+  "timing": "The summary article appeared on 1 April 2026, after the current citation cutoff of 31 December 2025. Earlier public replication reports may support earlier events; these require date verification.",
+  "next": "Recover first public report dates and aggregate claim outcomes to a justified paper-level assessment. Resolve overlap with computational reproduction, Multi100 and the existing FReD/FLoRA inventories before matching."
+}

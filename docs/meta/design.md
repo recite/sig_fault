@@ -2,7 +2,7 @@
 
 The scientific question is how publicizing a statistical problem changes citations
 to affected papers. The synthesis estimates a narrower descriptive quantity:
-the equally weighted average log relative citation-growth contrast in the three
+the inverse-variance weighted average log relative citation-growth contrast in the three
 assembled audits. Within each audit, the contrast compares flagged and comparison
 papers' post/pre citation ratios. Transforming that average as
 `100 * (exp(mean_log_ratio) - 1)` gives the percentage difference corresponding to
@@ -53,66 +53,54 @@ on its affected findings.
 
 ## Weighting and uncertainty
 
-Each synthesis includes one contrast per audit. Instrument strength and
-inferential sensitivity are alternative classifications of the same IV evidence;
-never count them as independent studies. The earlier two-audit summaries also
-report their union and the exploratory AR-only screen. Equal audit weights define
-the summary rather than allowing sample size or citation dispersion to choose
-which critique dominates. The synthesis choices are retrospective, with component
-estimates already known.
+The primary synthesis uses inverse sampling variance weights on each audit's log
+relative-growth contrast: `w[j] = (1/s[j]^2) / sum(1/s^2)`. The estimate is
+`sum(w*b)` and its standard error is `sqrt(1/sum(1/s^2))`. We use the standard
+normal fixed-effect method in `metafor::rma.uni(method="FE", test="z")` and
+transform the estimate and interval endpoints as `100 * (exp(b) - 1)`.
+This is a precision-weighted mean of the included audit effects, not an assertion
+that every audit has the same effect. Variances are estimated inputs; the usual
+normal approximation conditions on them. One-sided 95% lower bounds use the
+95th percentile of the standard normal distribution.
 
-For `K` components with log estimates `b[j]`, standard errors `s[j]`, and degrees
-of freedom `d[j]`, the estimate is `mean(b)`, with variance `sum(s^2)/K^2`.
-The Welch–Satterthwaite degrees of freedom are
-`sum(s^2)^2 / sum(s^4/d)`. Transform the estimate and both endpoints of the
-corresponding t interval to percentages. Component variances are clustered by
-article; the I4R sensitivity below instead uses disclosure-level uncertainty.
+Each analysis contains one contrast per audit. Alternative IV definitions, citation
+sources and follow-up years do not create additional independent studies. Weights
+are recalculated when a source changes its component variance. Choices are
+retrospective, after inspecting the component results. The I4R pilot is excluded
+from every pooled estimate; its three matched cases remain standalone evidence.
 
-This calculation assumes independent component estimates. Intervals condition on
-the included audits and classifications; they omit audit-selection and
-between-audit generalization uncertainty, unmeasured exposure, database error,
-and specification selection. They are not prediction intervals for a new critique.
-The identity ledger checks DOI overlap among included original and control papers.
-One included animal-study paper has no DOI. No detected DOI overlap prevents known
-direct double counting but does not establish independence of scientific processes,
-shared citing documents, or unobserved shocks across audits.
+The pipeline exports each component's normalized weight and leave-one-audit-out
+estimates. Equal-audit weighting remains a sensitivity, using the existing
+Welch--Satterthwaite interval. A random-effects sensitivity uses REML and modified
+Knapp--Hartung inference (`method="REML", test="adhoc"`), with two degrees of
+freedom for three audits. This prevents the adjustment from shrinking standard
+errors below the unadjusted values. Random-effects weights are proportional to
+`1/(s[j]^2 + tau^2)`. Its interval concerns the model's mean across audit effects;
+it is not a prediction interval for a future critique. With three audits,
+between-audit variation is estimated imprecisely.
 
-## I4R sensitivity
+The main output records Cochran's Q and its degrees of freedom. Its fixed-effect
+`tau2=0` is imposed by that model, not evidence of homogeneous effects. The
+random-effects output separately estimates tau-squared. Cross-audit independence
+is assumed. The identity ledger checks known DOI overlap among original and
+comparison papers, but distinct papers can share citing documents or shocks.
 
-I4R remains a small, selected matched-case pilot, not one methodological audit.
-The current eligible cases and exclusions are documented in the
-[I4R results](../i4r/aggregate-results.md). Its component compares proportional
-growth in affected and matched-control mean annual citations, counting all document
-types in the full calendar years before and after first documented disclosure.
+[Official metafor documentation](https://wviechtb.github.io/metafor/reference/rma.uni.html)
+describes the estimators and finite-sample adjustment.
 
-For disclosure `j`, let `T[j,t]` be the affected paper's count and `C[j,t]` its
-weighted control count. With `T[t] = mean(T[j,t])` and `C[t] = mean(C[j,t])`, the
-component is `log(T[post]/T[pre]) - log(C[post]/C[pre])`. This differs from averaging
-individual case log ratios: highly cited papers contribute more to growth in the
-group means. Both are reported separately.
+## I4R standalone checks
 
-With `Z[j] = (Tpre,Tpost,Cpre,Cpost)` and
-`g = (-1/Tpre,1/Tpost,1/Cpre,-1/Cpost)` evaluated at group means, the delta-method
-variance is `g' cov(Z) g / J`, with `J-1` degrees of freedom. This preserves
-within-disclosure covariance across periods and between affected and control
-counts. Inference conditions on the selected matches and is fragile with few
-cases. Recurring disclosures or reused articles require dependence to be handled
-explicitly. Nonpositive group-period means make the proportional contrast
-unavailable; no pseudocounts are added.
-
-The sensitivity adds I4R as a fourth equally weighted component. Call it an
-equal-component descriptive summary. Pre-period differences, leave-one-case-out
-results, and synthetic-control checks remain separate diagnostics. A weighted
-article-fixed-effects/common-relative-period Poisson fit reproduces the aggregate
-point estimate; event-specific period effects would estimate a different quantity.
-The differing outcome definitions and exposure clocks remain in the synthesis.
+I4R remains a small, selected matched-case pilot. Its case-level proportional
+contrasts, pre-period differences, leave-one-case-out results and synthetic
+controls remain available in the [I4R results](../i4r/aggregate-results.md).
+They do not enter the cross-audit synthesis.
 
 ## Reproduction and citation-source checks
 
 `make synthesis` rebuilds the component analyses, the two-audit sensitivity
-comparisons, the three-audit summary, and its I4R sensitivity. `R/meta.R` implements
+comparisons, the three-audit summary, and standalone I4R checks. `R/meta.R` implements
 the shared estimator. `scripts/synthesis.R` and `scripts/synthesis_secondary.R`
-build the neuroscience/IV comparisons and I4R addition; `scripts/lazic_synthesis.R`
+build the neuroscience/IV comparisons and standalone I4R checks; `scripts/lazic_synthesis.R`
 assembles the current three-audit results, manuscript table, and current status.
 Tests independently verify Welch inference, geometric transformation, and rejection
 of multiple rows with the same audit identity.
@@ -120,8 +108,8 @@ of multiple rows with the same audit identity.
 The two-audit OpenCitations sensitivity substitutes its neuroscience estimate for
 the historical estimate on identical papers and years. It does not add an
 independent audit or harmonize document types with Lal. The OpenAlex sensitivity likewise substitutes its source-specific neuroscience
-contrast into the three-audit synthesis, keeping the audit identities, weights,
-and time windows fixed. Articles/reviews and the broader document-type definition
+contrast into the three-audit synthesis, keeping the audit identities and time windows fixed,
+while recalculating precision weights. Articles/reviews and the broader document-type definition
 are reported separately. Source contrasts measure how recorded counts
 and estimates change when switching databases; neither index is assumed to be
 truth, so a discrepancy alone is not an estimate of database bias.

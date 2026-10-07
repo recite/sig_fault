@@ -31,7 +31,7 @@ The absolute discrepancy subtracts the two difference-in-changes estimates. The 
 
 The [full results](../../data/nieuwenhuis/opencitations_contrasts.csv) also restrict both sources to the same histories without unresolved publication years and separately to the 2009 publication cohort. The date-complete subset is selected; it is not another full-cohort estimate. No missing year is imputed or assumed to lie outside the analysis window.
 
-OpenCitations counts dated citing works across document types. This is different from the pending OpenAlex article/review comparison. Shared upstream records, coverage, vintage and dating differences prevent calling either index ground truth. Similar aggregate contrasts do not validate every citation link or establish that publicity had no effect. This is another measurement of the same audit, not another independent study for the meta-analysis.
+OpenCitations counts dated citing works across document types. This is different from the OpenAlex article/review comparison. Shared upstream records, coverage, vintage and dating differences prevent calling either index ground truth. Similar aggregate contrasts do not validate every citation link or establish that publicity had no effect. This is another measurement of the same audit, not another independent study for the meta-analysis.
 
 ## Reproduce
 

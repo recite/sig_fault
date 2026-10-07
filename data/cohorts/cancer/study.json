@@ -1,0 +1,14 @@
+{
+  "title": "Reproducibility Project: Cancer Biology",
+  "authors": "Reproducibility Project: Cancer Biology collaboration",
+  "assessment": "Experimental replication of cancer-biology findings",
+  "publication": "2021-12-07",
+  "public_announcement": "",
+  "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8651293/",
+  "archive": "https://osf.io/e5nvr/",
+  "priority": "High: mature independent-report cohort in another discipline",
+  "construction": "Preserve the complete 53-paper source roster and 188 result rows from 23 papers. Rows include internal replications; paper, experiment, effect and internal-replication identifiers form the assessment key. Preserve uncompleted projects in the roster. Original titles and replication-report links are present; original DOI linkage remains.",
+  "outcomes": "Expected and observed differences, effect sizes, standard errors and p values remain in the source projection. Native observed-difference labels distinguish direction and statistical evidence. Internal repeats are not independent papers. No automatic binary label converts an unsuccessful replication into an original statistical error.",
+  "timing": "Individual replication reports began before the 7 December 2021 aggregate article, including reports from 2017. Use the first public report for each original; submission and acceptance dates in the roster are not publication dates.",
+  "next": "Resolve original DOIs and report publication dates; account for multiple effects and internal replications before defining the paper-level comparison. Check earlier corrections or retractions separately."
+}

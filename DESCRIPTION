@@ -14,6 +14,7 @@ Imports:
     fixest,
     ggplot2,
     jsonlite,
+    metafor,
     readxl,
     sandwich
 Suggests:

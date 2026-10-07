@@ -1,0 +1,54 @@
+"Paper #","Original paper title","Year","Original paper journal","OSF project link","Replication study fully completed","Link to Replication study"
+1,"A coding-independent function of gene and pseudogene mRNAs regulates tumour biology.",2010,"Nature","https://osf.io/yyqas/","Partial","https://elifesciences.org/articles/51019"
+2,"A chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations",2010,"Cell","https://osf.io/xbign/","No",
+3,"Long non-coding RNA HOTAIR reprograms chromatin state to promote cancer metastasis",2010,"Nature","https://osf.io/4bokd/",,
+4,"Leukemic IDH1 and IDH2 mutations result in a hypermethylation phenotype, disrupt TET2 function, and impair hematopoietic differentiation",2010,"Cancer Cell","https://osf.io/xdojz/",,
+5,"Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells",2010,"Nature","https://osf.io/mpyvx/","Partial","https://elifesciences.org/articles/73430"
+6,"Diverse somatic mutation patterns and pathway alterations in human cancers.",2010,"Nature","https://osf.io/jpeqg/","Partial","https://elifesciences.org/articles/73430"
+7,"Kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF.",2010,"Cell","https://osf.io/b1aw6/","Partial","https://elifesciences.org/articles/73430"
+8,"RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth.",2010,"Nature","https://osf.io/0hezb/","Partial","https://www.biorxiv.org/content/10.1101/2021.11.30.470372"
+9,"Wnt activity defines colon cancer stem cells and is regulated by the microenvironment.",2010,"Nature Cell Biology","https://osf.io/pgjhx/","Yes","https://elifesciences.org/articles/45426"
+10,"The transcriptional network for mesenchymal transformation of brain tumours",2010,"Nature","https://osf.io/mfxpj/",,
+11,"Melanomas acquire resistance to B-RAF(V600E) inhibition by RTK or N-RAS upregulation",2010,"Nature","https://osf.io/679uw/",,
+12,"COT drives resistance to RAF inhibition through MAP kinase pathway reactivation",2010,"Nature","https://osf.io/lmhjg/","Partial","https://elifesciences.org/articles/73430"
+14,"RAF inhibitors transactivate RAF dimers and ERK signalling in cells with wild-type BRAF",2010,"Nature","https://osf.io/acpq7/",,
+15,"Coadministration of a Tumor-Penetrating Peptide Enhances the Efficacy of Cancer Drugs",2010,"Science","https://osf.io/xu1g2/","Yes","https://elifesciences.org/articles/17584"
+16,"The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate",2010,"Cancer Cell","https://osf.io/8l4ea/","Yes","https://elifesciences.org/articles/26030"
+17,"Impaired hydroxylation of 5-methylcytosine in myeloid cancers with mutant TET2",2010,"Nature","https://osf.io/udw78/",,
+18,"RNAi screen identifies Brd4 as a therapeutic target in acute myeloid leukaemia",2011,"Nature","https://osf.io/devog/",,
+19,"BET bromodomain inhibition as a therapeutic strategy to target c-Myc",2011,"Cell","https://osf.io/7zqxp/","Yes","https://elifesciences.org/articles/21253"
+20,"Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis.",2011,"Cell","https://osf.io/7yqmp/","Partial","https://elifesciences.org/articles/45120"
+21,"Discovery and Preclinical Validation of Drug Indications Using Compendia of Public Gene Expression Data",2011,"Science Translational Medicine","https://osf.io/hxrmm/","Yes","https://elifesciences.org/articles/17044"
+22,"Selective killing of cancer cells by a small molecule targeting the stress response to ROS",2011,"Nature","https://osf.io/uvapt/",,
+23,"Functional genomics reveal that the serine synthesis pathway is essential in breast cancer",2011,"Nature","https://osf.io/u1mfn/",,
+24,"Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs.",2011,"Cell","https://osf.io/oblj1/","Partial","https://elifesciences.org/articles/56651"
+25,"Oncometabolite 2-Hydroxyglutarate is a competitive inhibitor of α-ketoglutarate-dependent dioxygenases.",2011,"Cancer Cell","https://osf.io/kvshc/","No",
+26,"Oncogene-induced Nrf2 transcription promotes ROS detoxification and tumorigenesis",2011,"Nature","https://osf.io/i0yka/",,
+27,"BRCA1 tumour suppression occurs via heterochromatin-mediated silencing",2011,"Nature","https://osf.io/oi7jj/",,
+28,"The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44.",2011,"Nature Medicine","https://osf.io/gb7sr/","Yes","https://elifesciences.org/articles/43511"
+29,"Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia",2011,"Nature","https://osf.io/hcqqy/","Yes","https://elifesciences.org/articles/25306"
+30,"CCL2 recruits inflammatory monocytes to facilitate breast-tumour metastasis",2011,"Nature","https://osf.io/ckpsn/",,
+31,"An extensive microRNA-mediated network of RNA-RNA interactions regulates established oncogenic pathways in glioblastoma",2011,"Cell","https://osf.io/wcasz/",,
+32,"Normal and neoplastic nonstem cells can spontaneously convert to a stem-like state",2011,"PNAS","https://osf.io/u6m4z/",,
+33,"An endogenous tumour-promoting ligand of the human aryl hydrocarbon receptor",2011,"Nature","https://osf.io/o2xpf/",,
+34,"Senescence surveillance of pre-malignant hepatocytes limits liver cancer development.",2011,"Nature","https://osf.io/82nfe/","No",
+35,"A restricted cell population propagates glioblastoma growth after chemotherapy",2012,"Nature","https://osf.io/egoni/",,
+36,"Defining the mode of tumour growth by clonal analysis",2012,"Nature","https://osf.io/znixv/",,
+37,"Systematic identification of genomic markers of drug sensitivity in cancer cells",2012,"Nature","https://osf.io/nbryi/","Yes","https://elifesciences.org/articles/29747"
+38,"Lineage tracing reveals Lgr5+ stem cell activity in mouse intestinal adenomas",2012,"Science","https://osf.io/1ovqn/",,
+39,"The CD47-signal regulatory protein alpha (SIRPa) interaction is a therapeutic target for human solid tumors",2012,"PNAS","https://osf.io/9pbos/","Yes","https://elifesciences.org/articles/18173"
+40,"Tumour micro-environment elicits innate resistance to RAF inhibitors through HGF secretion.",2012,"Nature","https://osf.io/p4lzc/","No",
+41,"Intestinal inflammation targets cancer-inducing activity of the microbiota.",2012,"Science","https://osf.io/y4tvd/","Partial","https://elifesciences.org/articles/34364"
+42,"Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET.",2012,"Nature Medicine","https://osf.io/ewqzf/","Partial","https://elifesciences.org/articles/39944"
+43,"Interactions between cancer stem cells and their niche govern metastatic colonization.",2012,"Nature","https://osf.io/vseix/","No",
+44,"Melanoma genome sequencing reveals frequent PREX2 mutations",2012,"Nature","https://osf.io/jvpnw/","Yes","https://elifesciences.org/articles/21634"
+45,"Unresponsiveness of colon cancer to BRAF(V600E) inhibition through feedback activation of EGFR",2012,"Nature","https://osf.io/ecy85/",,
+46,"Widespread potential for growth-factor-driven resistance to anticancer kinase inhibitors.",2012,"Nature","https://osf.io/h0pnz/","No",
+47,"IDH mutation impairs histone demethylation and results in a block to cell differentiation.",2012,"Nature","https://osf.io/vfsbo/","Partial","https://elifesciences.org/articles/73430"
+48,"Transcriptional amplification in tumor cells with elevated c-Myc",2012,"Cell","https://osf.io/mokeb/","Yes","https://elifesciences.org/articles/30274"
+49,"Sequential application of anticancer drugs enhances cell death by rewiring apoptotic signaling networks",2012,"Cell","https://osf.io/i25y8/",,
+50,"Fusobacterium nucleatum infection is prevalent in human colorectal carcinoma",2012,"Genome Research","https://osf.io/v4se2/","Yes","https://elifesciences.org/articles/25801"
+51,"DNA breaks and chromosome pulverization from errors in mitosis",2012,"Nature","https://osf.io/47xy6/",,
+52,"A microRNA regulon that mediates endothelial recruitment and metastasis by cancer cells",2012,"Nature","https://osf.io/tkzme/",,
+53,"Reductive glutamine metabolism by IDH1 mediates lipogenesis under hypoxia",2012,"Nature","https://osf.io/isdbh/",,
+54,"Somatic mutations altering EZH2 (Tyr641) in follicular and diffuse large B-cell lymphomas of germinal-center origin",2010,"Nature Genetics","https://osf.io/6kuy8/",,

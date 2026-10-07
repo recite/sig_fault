@@ -1,0 +1,14 @@
+{
+  "title": "Causal panel analysis under parallel trends",
+  "authors": "Albert Chiu, Xingchen Lan, Ziyi Liu and Yiqing Xu",
+  "assessment": "Reanalysis of panel studies and parallel-trends diagnostics",
+  "publication": "",
+  "public_announcement": "2023-09-27",
+  "reference": "https://arxiv.org/abs/2309.15983",
+  "archive": "https://doi.org/10.7910/DVN/9RJFZF",
+  "priority": "High: 49 named reanalyzed papers with numerical diagnostics",
+  "construction": "Retain all 49 rows of Supplement A Table A1, PDF page 34, plus the 349-page Supplement B with paper-specific results. The larger search screened 102 papers and identified 64 TWFE studies; the 49 reanalyses are not the full screened population. Author-year-journal labels remain unresolved to DOI.",
+  "outcomes": "These are FEct reanalysis results and diagnostics. The source checkmark becomes true, a blank becomes false, and n.a. remains not_applicable. Each flag is named by its test: att_p_below_05, pretrend_p_above_05, placebo_p_above_05, carryover_p_above_05. A false diagnostic does not automatically prove a consequential error. breakdown_m is the reported sensitivity threshold; n.a. remains unavailable.",
+  "timing": "The first arXiv version appeared on 27 September 2023. Match the final 49-paper roster against that version and any earlier individual reports before assigning disclosure dates.",
+  "next": "Resolve original identities and recover machine-readable estimates from Dataverse or the detailed Supplement B. Freeze the assessment rule and same-audit comparisons before collecting citation outcomes."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "SCORE: computational reproducibility",
+  "authors": "SCORE collaboration",
+  "assessment": "Reproduction of published results using original data and code",
+  "publication": "2026-04-01",
+  "public_announcement": "",
+  "reference": "https://doi.org/10.1038/s41586-026-10203-5",
+  "archive": "https://osf.io/kmvst/",
+  "priority": "High inventory value; distinguish availability from failure",
+  "construction": "Preserve all 600 non-COVID sampled papers from pr_outcomes. For assessed outcomes keep !is_covid, repro_version_of_record and repro_outcome_overall != none: 551 claims from 143 papers. Unassessed papers remain in the roster with zero assessment rows; they are not failures.",
+  "outcomes": "Native categories are push button (253), precise (91), approximate (102), not (100), and not attemptable (5). The last category remains distinct. An inability to reproduce due to unavailable inputs does not establish a substantive error. All source DOI identities are retained.",
+  "timing": "The summary article appeared on 1 April 2026; individual reports may have earlier public dates. No citation-effect estimate is eligible at the 2025 cutoff solely on that summary date.",
+  "next": "Recover individual disclosure dates, distinguish discrepancies from unavailable materials, and specify how multiple claim outcomes become one paper assessment. Check overlap with other SCORE components."
+}

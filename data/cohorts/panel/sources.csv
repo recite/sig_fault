@@ -1,0 +1,3 @@
+"file","url","sha256","bytes","retrieved_at","cohort","local_path"
+"panel_a.pdf","https://yiqingxu.org/papers/english/2023_panel/SM_A.pdf","d02400a195adc4de04bb42c8e222529ba516ab7e881a67dd9a8012e0cb95609e",6498976,"2026-10-07T03:52:50.336818+00:00","panel","private-data/cohorts/panel/source/panel_a.pdf"
+"panel_b.pdf","https://yiqingxu.org/papers/english/2023_panel/SM_B.pdf","22ba3d625fc78a0208d0c657de330055484f397a16008b5fbc8685f45c9cba6c",10413278,"2026-10-07T03:52:51.635040+00:00","panel","private-data/cohorts/panel/source/panel_b.pdf"

@@ -47,7 +47,7 @@ for (sample in unique(contrasts$sample[contrasts$audit == "Nieuwenhuis"])) {
     take <- (contrasts$audit == "Nieuwenhuis" & contrasts$sample == sample) |
       (contrasts$audit == "Lal" & contrasts$diagnostic == labels[diagnostic])
     selected <- contrasts[take, ]
-    result <- equal_audit_synthesis(selected)
+    result <- precision_synthesis(selected)
     combined[[length(combined) + 1L]] <- cbind(
       nw_sample = sample, lal_diagnostic = labels[diagnostic],
       nw_percent = selected$percent[selected$audit == "Nieuwenhuis"],
@@ -76,7 +76,7 @@ for (sample in unique(contrasts$sample[contrasts$audit == "Nieuwenhuis"])) {
     source_sensitivity[[length(source_sensitivity) + 1L]] <- cbind(
       nw_sample = sample, lal_diagnostic = labels[diagnostic],
       nw_source = "OpenCitations dated works, all types", nw_percent = fit$percent,
-      equal_audit_synthesis(selected)
+      precision_synthesis(selected)
     )
   }
 }
@@ -117,7 +117,7 @@ report <- c(
   "The completed neuroscience and IV cohorts permit a common-window summary, while",
   "the primary I4R article/review panels remain incomplete. The current three-audit",
   "summary also reports substitution of OpenAlex neuroscience counts on the same papers.",
-  "Every row below includes one estimate from each audit, with equal audit weights.",
+  "Every row below includes one estimate from each audit, with inverse-variance weights.",
   "Alternative IV diagnostics are separate analyses of the same evidence.", "",
   paste0(
     "| Neuroscience sample | IV diagnostic | Neuroscience (%) | IV (%) | ",
@@ -138,9 +138,7 @@ report <- c(
   "The combined estimate changes with the IV diagnostic. It is not evidence for",
   "a uniform citation response, nor an estimate of the effect of the typical scientific error.",
   "The AR-only rows are exploratory: their IV component has only three flagged papers.", "",
-  "A [secondary three-component synthesis](secondary.md) adds the proportional contrast",
-  "from the separately matched I4R annual-total analysis. It preserves the different",
-  "measurement and exposure definitions and is an exploratory descriptive extension.", "",
+  "The small I4R pilot is excluded from pooling and remains a standalone case analysis.", "",
   "A [source sensitivity](../../data/meta/opencitations_synthesis.csv) replaces the",
   "neuroscience component with OpenCitations on the same papers and years. It does",
   "not add another independent audit; see the",

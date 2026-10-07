@@ -1,0 +1,14 @@
+{
+  "title": "Interaction-model audit",
+  "authors": "Jens Hainmueller, Jonathan Mummolo and Yiqing Xu",
+  "assessment": "Linearity, common support and conditional-effect diagnostics",
+  "publication": "2018-12-18",
+  "public_announcement": "2016-02-29",
+  "reference": "https://doi.org/10.1017/pan.2018.46",
+  "archive": "https://doi.org/10.7910/DVN/Q1V0OG",
+  "priority": "High: complete named methodological audit",
+  "construction": "Extract the published author PDF, Table A1, PDF page 27: 46 interactions in 22 papers. Author-year-journal labels are preserved as bibliographic references; they are not full titles. Earlier author drafts contain different classifications. All observed scores equal the sum of the three observed flags.",
+  "outcomes": "low_high_not_rejected: 1 means the low-versus-high difference is not rejected; severe_extrapolation: 1 is the authors' support flag; linearity_rejected: 1 means the linear model is rejected. Zero means unflagged on that diagnostic. Empty cells mean the test could not be conducted, not favorable evidence. Preserve these as distinct diagnostics; nonrejection alone is not proof of error. The published table has 44 low-high tests, 46 extrapolation assessments and 42 linearity tests.",
+  "timing": "The SSRN first-posted date is 29 February 2016, earlier than journal publication. Whether every final-roster paper appeared in that version remains unresolved. The 2019 corrigendum only completes a bibliographic reference.",
+  "next": "Resolve the 22 original DOIs and compare early draft rosters. Diagnose flags separately: an any-adverse rule flags 20 papers and leaves only two entirely unflagged comparisons. Review later methodological responses before assigning a verified-error label."
+}

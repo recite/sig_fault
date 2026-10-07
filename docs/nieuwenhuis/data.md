@@ -112,12 +112,12 @@ The selected sensitivity drops every history with any unresolved citing year,
 even if that missing year might lie outside the analysis window. It retains 60
 papers and is not representative of the full cohort. No missing date is inferred
 from `timespan` or a paper's total citations. Both databases use exactly the same
-papers within every contrast. All-type OpenCitations counts are not the pending
+papers within every contrast. All-type OpenCitations counts are not the
 OpenAlex article/review outcome.
 
 The meta-analysis source sensitivity, `data/meta/opencitations_synthesis.csv`,
 replaces the neuroscience component with this measurement at the common 2010–2012
-window. It preserves equal audit weights and the existing conditional inference.
+window. It recalculates inverse-variance weights and retains the same audit identities and windows.
 It does not add a third independent audit.
 
 Independent reconstruction reproduced all list/count matches, source hashes,

@@ -1,0 +1,54 @@
+"paper_id","title","doi","source_link","identity_status","source_reference","cohort","assessments"
+"1","A coding-independent function of gene and pseudogene mRNAs regulates tumour biology.","10.1038/nature09144","https://elifesciences.org/articles/51019","identified","","cancer",18
+"2","A chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations","",,"identified","","cancer",0
+"3","Long non-coding RNA HOTAIR reprograms chromatin state to promote cancer metastasis","",,"identified","","cancer",0
+"4","Leukemic IDH1 and IDH2 mutations result in a hypermethylation phenotype, disrupt TET2 function, and impair hematopoietic differentiation","",,"identified","","cancer",0
+"5","Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells","10.1038/nature09557","https://elifesciences.org/articles/73430","identified","","cancer",3
+"6","Diverse somatic mutation patterns and pathway alterations in human cancers.","10.1038/nature09208","https://elifesciences.org/articles/73430","identified","","cancer",1
+"7","Kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF.","10.1016/j.cell.2009.12.040","https://elifesciences.org/articles/73430","identified","","cancer",3
+"8","RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth.","10.1038/nature08833","https://www.biorxiv.org/content/10.1101/2021.11.30.470372","identified","","cancer",9
+"9","Wnt activity defines colon cancer stem cells and is regulated by the microenvironment.","10.1038/ncb2048","https://elifesciences.org/articles/45426","identified","","cancer",35
+"10","The transcriptional network for mesenchymal transformation of brain tumours","",,"identified","","cancer",0
+"11","Melanomas acquire resistance to B-RAF(V600E) inhibition by RTK or N-RAS upregulation","",,"identified","","cancer",0
+"12","COT drives resistance to RAF inhibition through MAP kinase pathway reactivation","10.1038/nature09627","https://elifesciences.org/articles/73430","identified","","cancer",4
+"14","RAF inhibitors transactivate RAF dimers and ERK signalling in cells with wild-type BRAF","",,"identified","","cancer",0
+"15","Coadministration of a Tumor-Penetrating Peptide Enhances the Efficacy of Cancer Drugs","10.1126/science.1183057","https://elifesciences.org/articles/17584","identified","","cancer",4
+"16","The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate","","https://elifesciences.org/articles/26030","identified","","cancer",8
+"17","Impaired hydroxylation of 5-methylcytosine in myeloid cancers with mutant TET2","",,"identified","","cancer",0
+"18","RNAi screen identifies Brd4 as a therapeutic target in acute myeloid leukaemia","",,"identified","","cancer",0
+"19","BET bromodomain inhibition as a therapeutic strategy to target c-Myc","10.1016/j.cell.2011.08.017","https://elifesciences.org/articles/21253","identified","","cancer",4
+"20","Biomechanical remodeling of the microenvironment by stromal caveolin-1 favors tumor invasion and metastasis.","10.1016/j.cell.2011.05.040","https://elifesciences.org/articles/45120","identified","","cancer",7
+"21","Discovery and Preclinical Validation of Drug Indications Using Compendia of Public Gene Expression Data","10.1126/scitranslmed.3001318","https://elifesciences.org/articles/17044","identified","","cancer",3
+"22","Selective killing of cancer cells by a small molecule targeting the stress response to ROS","",,"identified","","cancer",0
+"23","Functional genomics reveal that the serine synthesis pathway is essential in breast cancer","",,"identified","","cancer",0
+"24","Coding-independent regulation of the tumor suppressor PTEN by competing endogenous mRNAs.","10.1016/j.cell.2011.09.029","https://elifesciences.org/articles/56651","identified","","cancer",28
+"25","Oncometabolite 2-Hydroxyglutarate is a competitive inhibitor of α-ketoglutarate-dependent dioxygenases.","",,"identified","","cancer",0
+"26","Oncogene-induced Nrf2 transcription promotes ROS detoxification and tumorigenesis","",,"identified","","cancer",0
+"27","BRCA1 tumour suppression occurs via heterochromatin-mediated silencing","",,"identified","","cancer",0
+"28","The microRNA miR-34a inhibits prostate cancer stem cells and metastasis by directly repressing CD44.","10.1038/nm.2284","https://elifesciences.org/articles/43511","identified","","cancer",8
+"29","Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia","10.1038/nature10509","https://elifesciences.org/articles/25306","identified","","cancer",6
+"30","CCL2 recruits inflammatory monocytes to facilitate breast-tumour metastasis","",,"identified","","cancer",0
+"31","An extensive microRNA-mediated network of RNA-RNA interactions regulates established oncogenic pathways in glioblastoma","",,"identified","","cancer",0
+"32","Normal and neoplastic nonstem cells can spontaneously convert to a stem-like state","",,"identified","","cancer",0
+"33","An endogenous tumour-promoting ligand of the human aryl hydrocarbon receptor","",,"identified","","cancer",0
+"34","Senescence surveillance of pre-malignant hepatocytes limits liver cancer development.","",,"identified","","cancer",0
+"35","A restricted cell population propagates glioblastoma growth after chemotherapy","",,"identified","","cancer",0
+"36","Defining the mode of tumour growth by clonal analysis","",,"identified","","cancer",0
+"37","Systematic identification of genomic markers of drug sensitivity in cancer cells","10.1038/nature11005","https://elifesciences.org/articles/29747","identified","","cancer",5
+"38","Lineage tracing reveals Lgr5+ stem cell activity in mouse intestinal adenomas","",,"identified","","cancer",0
+"39","The CD47-signal regulatory protein alpha (SIRPa) interaction is a therapeutic target for human solid tumors","10.1073/pnas.1121623109","https://elifesciences.org/articles/18173","identified","","cancer",2
+"40","Tumour micro-environment elicits innate resistance to RAF inhibitors through HGF secretion.","",,"identified","","cancer",0
+"41","Intestinal inflammation targets cancer-inducing activity of the microbiota.","10.1126/science.1224820","https://elifesciences.org/articles/34364","identified","","cancer",2
+"42","Melanoma exosomes educate bone marrow progenitor cells toward a pro-metastatic phenotype through MET.","10.1038/nm.2753","https://elifesciences.org/articles/39944","identified","","cancer",5
+"43","Interactions between cancer stem cells and their niche govern metastatic colonization.","",,"identified","","cancer",0
+"44","Melanoma genome sequencing reveals frequent PREX2 mutations","10.1038/nature11071","https://elifesciences.org/articles/21634","identified","","cancer",4
+"45","Unresponsiveness of colon cancer to BRAF(V600E) inhibition through feedback activation of EGFR","",,"identified","","cancer",0
+"46","Widespread potential for growth-factor-driven resistance to anticancer kinase inhibitors.","",,"identified","","cancer",0
+"47","IDH mutation impairs histone demethylation and results in a block to cell differentiation.","10.1038/nature10860","https://elifesciences.org/articles/73430","identified","","cancer",14
+"48","Transcriptional amplification in tumor cells with elevated c-Myc","10.1016/j.cell.2012.08.026","https://elifesciences.org/articles/30274","identified","","cancer",14
+"49","Sequential application of anticancer drugs enhances cell death by rewiring apoptotic signaling networks","",,"identified","","cancer",0
+"50","Fusobacterium nucleatum infection is prevalent in human colorectal carcinoma","10.1101/gr.126516.111","https://elifesciences.org/articles/25801","identified","","cancer",1
+"51","DNA breaks and chromosome pulverization from errors in mitosis","",,"identified","","cancer",0
+"52","A microRNA regulon that mediates endothelial recruitment and metastasis by cancer cells","",,"identified","","cancer",0
+"53","Reductive glutamine metabolism by IDH1 mediates lipogenesis under hypoxia","",,"identified","","cancer",0
+"54","Somatic mutations altering EZH2 (Tyr641) in follicular and diffuse large B-cell lymphomas of germinal-center origin","",,"identified","","cancer",0

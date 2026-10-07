@@ -297,7 +297,7 @@ def report():
         "No missing year is imputed or assumed to lie outside the analysis window.",
         "",
         "OpenCitations counts dated citing works across document types. This is "
-        "different from the pending OpenAlex article/review comparison. Shared "
+        "different from the OpenAlex article/review comparison. Shared "
         "upstream records, coverage, vintage and dating differences prevent "
         "calling either index ground truth. Similar aggregate contrasts do not "
         "validate every citation link or establish that publicity had no effect. "
