@@ -29,13 +29,20 @@ def main():
             run.input(ROOT / "data/cohorts/hmx" / name)
         endpoints = {
             "audit": "https://api.crossref.org/works/10.1017/pan.2018.46",
-            "archive": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/Q1V0OG",
+            "earlier_critique": "https://api.crossref.org/works/10.1596/1813-9450-6602",
+            "archive": (
+                "https://dataverse.harvard.edu/api/datasets/:persistentId/"
+                "?persistentId=doi:10.7910/DVN/Q1V0OG"
+            ),
         }
         for name, url in endpoints.items():
             value = run.fetch(url, "metadata")
             path = run.data / (name + "_metadata.json")
             write_json(path, value)
             run.output(path)
+        run.fetch(
+            "https://yiqingxu.org/packages/interflex/SI_update.pdf", "followup", False
+        )
         archive = json.loads((run.data / "archive_metadata.json").read_text())["data"]
         files = archive["latestVersion"]["files"]
         members = []
@@ -68,7 +75,7 @@ def main():
         run.output(path)
         run.record["metrics"] = dict(original_papers=22, source_effects=46)
         run.record["unresolved"] = [
-            "Earliest SSRN version's roster and diagnostic classifications not verified",
+            "Earliest SSRN roster and diagnostic classifications not verified",
             "Formal-publication contrast must not be called first disclosure",
         ]
         print(json.dumps(run.record["metrics"]))

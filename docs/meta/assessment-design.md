@@ -1,7 +1,7 @@
 # Citation changes after adverse scientific assessments
 
-This extension combines the completed psychology replication study with the three
-existing methodological audits. The individual results have already been seen;
+This extension combines the psychology replication study with four
+methodological audits, including the interaction-model audit. The individual results have already been seen;
 this is a retrospective synthesis, not a preregistered test.
 
 ## Estimand
@@ -14,7 +14,7 @@ their stated follow-up windows. It is not the average effect across all scientif
 papers, all errors, or all possible audits.
 
 The broader question is whether adverse assessments are followed by lower relative
-citation growth. The three methodological audits and the psychology replication
+citation growth. The methodological audits and the psychology replication
 project remain separately identified: an unsuccessful replication is not evidence
 of a particular statistical error. The within-project replication contrast also
 includes any citation benefit from a successful replication. It cannot isolate
@@ -40,15 +40,22 @@ Use one contrast per independent study in each synthesis:
   judgments. Use the journal-standardized log growth ratio and its stratified
   article-bootstrap standard error.
 
+- Hainmueller–Mummolo–Xu: severe-extrapolation labels, 2017 versus 2019, OpenAlex
+  articles/reviews. Exclude Vernby (2013), already in the Lal cohort; retain all
+  other assessed papers in descriptions and omit all-zero histories from PPML.
+  Use the article-clustered log-ratio standard error, as in the other audits.
+  Its design was fixed before citation acquisition; integration is retrospective.
+
 The RPP multi-year window is its existing primary specification. Also compute its
 2014-versus-2016 contrast before pooling as a timing sensitivity, using identical
-journal weights and bootstrap rules. The other three studies retain their common
+journal weights and bootstrap rules. The other four studies retain their common
 one-year-before/one-year-after windows. No citation contrast is selected by its
 sign or significance.
 
-Keep the three-audit synthesis as a distinct stratum. The four-study synthesis is
+Keep the three-audit synthesis as a distinct stratum. The five-study synthesis is
 a broader summary, not an update that changes the replication result into an error
-classification. The three selected I4R cases remain outside all pooled estimates.
+classification. Omitting HMX in the leave-one-study-out analysis preserves the
+previous four-study summary. The three selected I4R cases remain outside all pooled estimates.
 Do not append inventories lacking an analyzed comparison or a usable follow-up
 period. Track their present status separately from completed analyses.
 

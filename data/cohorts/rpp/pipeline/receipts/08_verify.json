@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "08_verify",
-  "started_at": "2026-10-07T05:35:30.487818+00:00",
+  "started_at": "2026-10-07T05:58:49.667537+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/08_verify.py"
   ],
   "python": "3.14.7",
-  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/paper_periods.csv",
@@ -72,7 +72,7 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/citation_paths.pdf",
-      "sha256": "41a4fa29ad84632a685454236493bf4c21952ee3c1e6a9f875dae905ae458594",
+      "sha256": "904d39ae6e223c77ed580322b7082d55a1cd3f90b5831f15c5cdfb4d5f5d506f",
       "bytes": 6860
     },
     {
@@ -117,7 +117,7 @@
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/07_analyze.json",
-      "sha256": "9698498be29fe95c0ac2f37746b1cc02b5616fa55e5acfc15dc30a9ac0105885",
+      "sha256": "a8ac406f56beaa8b11a8e8c6ac90de2cd1da1a889c3f6dad4a8a187b1cf630a9",
       "bytes": 7657
     }
   ],
@@ -134,5 +134,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T05:35:30.856238+00:00"
+  "finished_at": "2026-10-07T05:58:50.325487+00:00"
 }

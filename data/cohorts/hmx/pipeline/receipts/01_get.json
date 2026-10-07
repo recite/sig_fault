@@ -2,14 +2,13 @@
   "schema_version": 1,
   "study": "hmx",
   "stage": "01_get",
-  "started_at": "2026-10-07T05:50:27.034374+00:00",
+  "started_at": "2026-10-07T06:03:12.085116+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-research/scripts/hmx/01_get.py",
-    "--offline"
+    "/private/tmp/sig-fault-research/scripts/hmx/01_get.py"
   ],
   "python": "3.14.7",
-  "git_commit": "ed5f6ee1f5f0114bc9787517e717323454d96761",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "data/cohorts/hmx/sources.csv",
@@ -42,8 +41,8 @@
     },
     {
       "path": "data/cohorts/hmx/study.json",
-      "sha256": "c4bbcbdf74c2ed0ac22bc9f3e9b4140f4267acb2cfae15b58cd4783a9750cef0",
-      "bytes": 1752
+      "sha256": "d1743f094916903c0f89a508bd01e777fac487bc035fff5fbc46eb2665e7a7ba",
+      "bytes": 1759
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/metadata/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json",
@@ -56,6 +55,16 @@
       "bytes": 217
     },
     {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/acbd7a6586711295aebc0f0306cfec92099e9b4400e0d06d95b886747ffdf379.json",
+      "sha256": "20faaf4155b42c2fdeedc9d62245b14b55f133a29e61636f6845ec05107a9790",
+      "bytes": 1409
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/acbd7a6586711295aebc0f0306cfec92099e9b4400e0d06d95b886747ffdf379.json.source.json",
+      "sha256": "daed1bf950248f18cbb13a934f79949cd4f9ad895a05c46dbb45018906c3263c",
+      "bytes": 220
+    },
+    {
       "path": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json",
       "sha256": "61a2ac3dfd5dd8d2c11fc57b911b737af667c5bc14e1641e55d22f5b795c480a",
       "bytes": 5527
@@ -64,6 +73,16 @@
       "path": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json.source.json",
       "sha256": "75889f496c895e75d773dc50ae2d70eb3800b5ea69e9fa5e9322786b5f177a5b",
       "bytes": 260
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/followup/1a01219fb0211ec1da8ef799ee3e2dfc48ba3764043b8cbf473d413333f5149a.pdf",
+      "sha256": "71c41311ec3095755d83bbbeb3effd377d414f3fdc4ea749e7e3e681e50b8b68",
+      "bytes": 23161499
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/followup/1a01219fb0211ec1da8ef799ee3e2dfc48ba3764043b8cbf473d413333f5149a.pdf.source.json",
+      "sha256": "b2a4ad66a82c246ea067c0515b65ee25ec7cb7e41959c65d83a8dcb5a1d1d67e",
+      "bytes": 224
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/archive/37bc526ec1f227f5e1e15c262ddc7fbddab2bd38975afb121dbd701309a32b85.html",
@@ -83,6 +102,11 @@
       "bytes": 12740
     },
     {
+      "path": "data/cohorts/hmx/pipeline/earlier_critique_metadata.json",
+      "sha256": "bb81671ee59d58f773b66c0e582606406ad30e43bddab695184b183b5bb9fc08",
+      "bytes": 2303
+    },
+    {
       "path": "data/cohorts/hmx/pipeline/archive_metadata.json",
       "sha256": "1ec88a4247465516a08da825233d118eb3759c853b7ab7b77bfe4d563bb45b08",
       "bytes": 9964
@@ -97,8 +121,8 @@
   "code": [
     {
       "path": "scripts/hmx/01_get.py",
-      "sha256": "75d1887e5023a456ce81dd9c89c3a158253fa27b231d10ad6a9c5dc4a3d5f392",
-      "bytes": 3077
+      "sha256": "9e4ed2f4f0d277236dc4b178cedf76ca372995330879afdd14f82398366e2036",
+      "bytes": 3323
     },
     {
       "path": "scripts/research_pipeline.py",
@@ -159,12 +183,28 @@
       "bytes": 8908
     },
     {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/acbd7a6586711295aebc0f0306cfec92099e9b4400e0d06d95b886747ffdf379.json",
+      "cache_hit": false,
+      "url": "https://api.crossref.org/works/10.1596/1813-9450-6602",
+      "retrieved_at": "2026-10-07T06:03:12.549502+00:00",
+      "sha256": "20faaf4155b42c2fdeedc9d62245b14b55f133a29e61636f6845ec05107a9790",
+      "bytes": 1409
+    },
+    {
       "path": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json",
       "cache_hit": true,
       "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/Q1V0OG",
       "retrieved_at": "2026-10-07T05:43:43.863532+00:00",
       "sha256": "61a2ac3dfd5dd8d2c11fc57b911b737af667c5bc14e1641e55d22f5b795c480a",
       "bytes": 5527
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/followup/1a01219fb0211ec1da8ef799ee3e2dfc48ba3764043b8cbf473d413333f5149a.pdf",
+      "cache_hit": false,
+      "url": "https://yiqingxu.org/packages/interflex/SI_update.pdf",
+      "retrieved_at": "2026-10-07T06:03:13.973074+00:00",
+      "sha256": "71c41311ec3095755d83bbbeb3effd377d414f3fdc4ea749e7e3e681e50b8b68",
+      "bytes": 23161499
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/archive/37bc526ec1f227f5e1e15c262ddc7fbddab2bd38975afb121dbd701309a32b85.html",
@@ -180,9 +220,9 @@
     "source_effects": 46
   },
   "unresolved": [
-    "Earliest SSRN version's roster and diagnostic classifications not verified",
+    "Earliest SSRN roster and diagnostic classifications not verified",
     "Formal-publication contrast must not be called first disclosure"
   ],
   "status": "complete",
-  "finished_at": "2026-10-07T05:50:27.124365+00:00"
+  "finished_at": "2026-10-07T06:03:14.264673+00:00"
 }

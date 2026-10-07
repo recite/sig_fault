@@ -63,7 +63,15 @@ def main():
         path = run.data / "original_metadata.json"
         write_json(path, metadata)
         run.output(path)
-        existing = read_csv(run.input(ROOT / "data/meta/assessment_identities.csv"))
+        existing = read_csv(
+            run.input(ROOT / "data/meta/lazic_component_identities.csv")
+        )
+        existing.extend(
+            dict(component="RPP", article_id=x["paper_id"], doi=x["doi"])
+            for x in read_csv(
+                run.input(ROOT / "data/cohorts/rpp/pipeline/identities.csv")
+            )
+        )
         overlap = [
             dict(
                 paper_id=x["paper_id"],

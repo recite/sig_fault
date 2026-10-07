@@ -1,0 +1,2174 @@
+{
+  "schema_version": 1,
+  "study": "hmx",
+  "stage": "04_citations",
+  "started_at": "2026-10-07T06:04:12.786662+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/hmx/04_citations.py",
+    "--offline"
+  ],
+  "python": "3.14.7",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
+  "inputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/paper_assessments.csv",
+      "sha256": "6fc2437d82bc0b699c2c61c44b359bf630108e7c9d8f2383ddfc39ad8e031484",
+      "bytes": 1781,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/citation_targets.csv",
+      "sha256": "fce0f4714ac0ef8d0b03871ec87a06993b1cb30e059c62b2f908e54ef48e81fa",
+      "bytes": 6294,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/timing.json",
+      "sha256": "63d78fad86823266aedfd97edb7ef4fcd43840ee6e712f5c1494fa45a4136369",
+      "bytes": 436
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/47855f0a3f4c8d287d09ca286ccdeaff79d03cc336de7f5828a4a0c32ca5b05d.json",
+      "sha256": "9d106b0de30bb9aaf1c00a292c8624a3e7be7b08e20abb3e8cecea66ecb70a9f",
+      "bytes": 17428
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/47855f0a3f4c8d287d09ca286ccdeaff79d03cc336de7f5828a4a0c32ca5b05d.json.source.json",
+      "sha256": "ab47735387e7acb23edf44d462b6845d8f793b664c6dcc641ae0551b74744ff3",
+      "bytes": 233
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/6ad21d596b227e4853daabd8630a26f296a0077418c9baf5d8f5192db298022c.json",
+      "sha256": "d8b53ff4d0d0ae32fe4aa90750145e475b1f2758dd107c82d2f311c8c18132f3",
+      "bytes": 22290
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/405842d4324362789c8c689a7bdd0ffa48e64b125c293b0a7ef9182625096d78.json",
+      "sha256": "fad440312d3393deb935b39f919cf10083bd3033dabcb90df724979ca87fc420",
+      "bytes": 16436
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/abded8b883b241cf548d2f04c6d53f4e0fc7d859d957da43ad9af200ea20cf2e.json",
+      "sha256": "0749add4da24e6fa151c552904c1eb54af93a1dd1c8a2aeae66c617ebfb51020",
+      "bytes": 15939
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/6ad21d596b227e4853daabd8630a26f296a0077418c9baf5d8f5192db298022c.json.source.json",
+      "sha256": "47ac13d451dd2e0fb5af5e72d05914a4cfee6a12da457f8a21202f883b3491a1",
+      "bytes": 247
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/abded8b883b241cf548d2f04c6d53f4e0fc7d859d957da43ad9af200ea20cf2e.json.source.json",
+      "sha256": "0e058bd839f1a75845dc5e5368007f73e279e4b297e3356b4668ac2bccb75a35",
+      "bytes": 247
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/405842d4324362789c8c689a7bdd0ffa48e64b125c293b0a7ef9182625096d78.json.source.json",
+      "sha256": "01a1e889f5f6e7abec91680286c5dd9deb8c5b1614bf70d8c492c69dfda73299",
+      "bytes": 229
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b649475536294c370ce1e984cdeae5469dfe64fbbe3cb80a62d5cfeecc26854a.json",
+      "sha256": "87a033c266d0eb1b7eb77a535a9f6f83ba618d1d67c65a91dbb68e377a75d766",
+      "bytes": 287412
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b649475536294c370ce1e984cdeae5469dfe64fbbe3cb80a62d5cfeecc26854a.json.source.json",
+      "sha256": "dd0056f80ec47edb15baf3a6b21f78a265b832df5193ab7f6a884afae1947e56",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f234244a47a2a396d39907e2213fecfd189cdc5fd8cd141fcc07905313addf90.json",
+      "sha256": "26e799e51720a1d9701523d724ebfcdd19982bf2f51be33f95b029eacf411ef7",
+      "bytes": 922840
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e232e372d43cdedfd354eecbcff3cb7f3dbf9b8a1437cd19a769014ce58243bb.json",
+      "sha256": "c8bf81e5e878fdfd803abf5ed0a48bbc2fe04c832a540019cbbe3601ccd370bb",
+      "bytes": 375145
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6b8a135590def70ecfd1bb21d9fa037cce09b270d515043f6e4a95052a8af423.json",
+      "sha256": "9c923527993022103f022b21adf5618393a9154f8965134727d2861d418c8cc7",
+      "bytes": 385844
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f234244a47a2a396d39907e2213fecfd189cdc5fd8cd141fcc07905313addf90.json.source.json",
+      "sha256": "42c47208be5bd2b2e195dce0409d24b2b63406401eba3433dd08b33227378d3b",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e232e372d43cdedfd354eecbcff3cb7f3dbf9b8a1437cd19a769014ce58243bb.json.source.json",
+      "sha256": "19c0dd625b3433a463cf207919d166206ca1bc24489c1200f6c5770600aaf47d",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6b8a135590def70ecfd1bb21d9fa037cce09b270d515043f6e4a95052a8af423.json.source.json",
+      "sha256": "228d1cbd1d58753a8ffbaf5f5fbc9805c26fac49a1aa3540c2856ba7728ae73d",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/a0265bf844abd44899e6c04664429f04881c5efac1bf1408a977fd35504c588c.json",
+      "sha256": "84a75a0ff1660d4dbee1588145d9840349375166197d1a11b6fd2e377c07199a",
+      "bytes": 262088
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/a0265bf844abd44899e6c04664429f04881c5efac1bf1408a977fd35504c588c.json.source.json",
+      "sha256": "1aaa25a2ea8e2a328332c9efdc1affd5d56583cb9e9ab953220756246a0fb04f",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e3d47b615ab0f5b78f839b34ca4248a8054578950e5d64826501ec2f322efa5a.json",
+      "sha256": "17b38d3348e299d12dcf352836c6d38779ac6b52b654a0a95b94a0e1c1fc4c9a",
+      "bytes": 164872
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e3d47b615ab0f5b78f839b34ca4248a8054578950e5d64826501ec2f322efa5a.json.source.json",
+      "sha256": "98bb9f9868f6330940da51399454c1f6b1bbe7f9874e6ce1cba60f7dcc555ef1",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/fe71d05edfa082be88acc63274852639e7d3143ce958371ede639313aa790ee9.json",
+      "sha256": "926cf651111d970f2764e24f0b134b280723853c31579f8a05e50b22f190abf2",
+      "bytes": 380040
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5a25b52a668af70e2f4cfa0531c9aed5fbe48ab4274df3499d7d5e5483c09ea2.json",
+      "sha256": "6a57dcb643b848221f519ee154ebf48b20afe358077bf177ff4b3662dbd4a204",
+      "bytes": 656905
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/fe71d05edfa082be88acc63274852639e7d3143ce958371ede639313aa790ee9.json.source.json",
+      "sha256": "8d22832202091f739c27c48deaa7efb774428de0f335b52e10673ccc00605593",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5a25b52a668af70e2f4cfa0531c9aed5fbe48ab4274df3499d7d5e5483c09ea2.json.source.json",
+      "sha256": "8356f568b1c2ea445972ecb41c737809d87f73658093fc05754c6f27927b5187",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/731496dbd25bc5cbcf52fac2d1f5bdc2741050ade9f5f922546f08c681bddbbc.json",
+      "sha256": "ccc54c3ec42ba1583a71f30cd945bcd519e1579c51e2b82cac9a5e896cef7dde",
+      "bytes": 260762
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/731496dbd25bc5cbcf52fac2d1f5bdc2741050ade9f5f922546f08c681bddbbc.json.source.json",
+      "sha256": "fe31e4ad2477b43c6c37efeeb26f289b652c69d23f7712a7f9132b3fabc91f04",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/fcd75e7fdc99be849471f4272bac5506f2506ab1202d437bdc8040210db1ab2c.json",
+      "sha256": "3e3bfb639fafe1b83a495497855d8e6b5f3c131a0f48dbaba424542c6a33ef19",
+      "bytes": 18436
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/fcd75e7fdc99be849471f4272bac5506f2506ab1202d437bdc8040210db1ab2c.json.source.json",
+      "sha256": "0a975f2464e57e0ff85a61a44b01804eebc590d7273442b45e0c9588cfd9dd53",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/b5fe0c7caa587e5befb8a552a9f2b522a1d478ca53d80fabf8462d0c883d354f.json",
+      "sha256": "dcec3d32e19281965b414ffbb7ff5a688dcf807bf13fd75cc79d7c630de116d2",
+      "bytes": 17339
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/b5fe0c7caa587e5befb8a552a9f2b522a1d478ca53d80fabf8462d0c883d354f.json.source.json",
+      "sha256": "9564dd26f2376871066281bdbee637c3da7aa4b36ccd26684bf6aa413b366013",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6e6c374d22bb28e39316eb727895837d4df013381cee66fa3234e4132ee8d83d.json",
+      "sha256": "ab6035d23a341e96eb85fc1e8b9effafada2c99b067e2a913fa2f8d551d00f25",
+      "bytes": 403209
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f80f68e87fbdf875562113fa508a733aca224d0b1979f77da57ffc89094d8efe.json",
+      "sha256": "4ae814a91e54530aac35ad10732d6c10f785ff760c4c55f90b84ada58a38772c",
+      "bytes": 347244
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6e6c374d22bb28e39316eb727895837d4df013381cee66fa3234e4132ee8d83d.json.source.json",
+      "sha256": "c363e87e0784c69cfed4e82120336b9452c5902387c6a4b6e6b949bae414cb7e",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/87c609cbfc6d2ca784d1e33c3babfd25263eca68bc26b81b2c48694c8e29dff5.json",
+      "sha256": "a3d4a25659631a2876d700f0d45d0e20220e97ed6f42661205090e2ba66c41b9",
+      "bytes": 496586
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/87c609cbfc6d2ca784d1e33c3babfd25263eca68bc26b81b2c48694c8e29dff5.json.source.json",
+      "sha256": "d448f981e1499038e73eb56875fd397d3093ace63a5b9bc2afc234522852dc9e",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f80f68e87fbdf875562113fa508a733aca224d0b1979f77da57ffc89094d8efe.json.source.json",
+      "sha256": "a169bef816c1a13c6c6caac95999c93ae2271ec616dce006a643db9c01539cb1",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/71a2eb67b7e391bfaac8ad2c1d125b7906c0c3644107ce6cb06fb3d7ce6b6e91.json",
+      "sha256": "54ee6af855617ee53c2bd471b0fc763317c448a8e7dc6cc42e5ead0ea5f42ddf",
+      "bytes": 568028
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/71a2eb67b7e391bfaac8ad2c1d125b7906c0c3644107ce6cb06fb3d7ce6b6e91.json.source.json",
+      "sha256": "b728a7721654ad1838b674e1bae06671ecdac3b0074c884bed5e78b60ffa5a01",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e4d36615e5cd5b3f014ec9568a0e14577ffab001202de3c49c919f3b3583a6a3.json",
+      "sha256": "1b95a7178ae9fc4d9900c79ed94f6abcecd44d7138f540bb51e03dd47a15523a",
+      "bytes": 8830
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e4d36615e5cd5b3f014ec9568a0e14577ffab001202de3c49c919f3b3583a6a3.json.source.json",
+      "sha256": "2490961d9f54cdb6827a0d178528d8e526ee87169a5097817c46ffad4a6fd077",
+      "bytes": 482
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/3789680c1b97c4c363e2f85d09b0248c75b878d7be480808197f060a7d421377.json",
+      "sha256": "991b387442192e86c4bd1a549a6eb24a2e287a133940a4eab5d5a48c490e1a1f",
+      "bytes": 11942
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/3789680c1b97c4c363e2f85d09b0248c75b878d7be480808197f060a7d421377.json.source.json",
+      "sha256": "56dc50accaee621dbc0be4ba345f30a7474f568287782a1c2f2e89f018c07d0d",
+      "bytes": 483
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/d40df46e76f87052b970dd1327c37fcad2560accb8c5a4953fc795d230949e66.json",
+      "sha256": "0e6c2e906ded6127950786449b19452094b78f85d7a103355c24db90a9e82988",
+      "bytes": 533780
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/canonical_citing_works/5051bcd84898b3e407ca80325c9aea89db8da90ae9144316a1d9b0c0c84548f4.json",
+      "sha256": "074f6deba96793b5597c531d5087877fa0215d47a585d9295a8099b69233e14a",
+      "bytes": 29734
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f8f4d3cc609d2b18a333477afc7978c8fd8218b20c57804e95cfda8d6eaf1134.json",
+      "sha256": "15da19dc2f84fe149c62dba9d896de2e40b0ac4dec8f0b50216cf45063ad0dba",
+      "bytes": 1613443
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/d40df46e76f87052b970dd1327c37fcad2560accb8c5a4953fc795d230949e66.json.source.json",
+      "sha256": "3ed1bc0e7142ef84e3fa57fbea5bd960356b265ef40b8f4f84713316b70030f2",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/canonical_citing_works/5051bcd84898b3e407ca80325c9aea89db8da90ae9144316a1d9b0c0c84548f4.json.source.json",
+      "sha256": "c8e932856cf47e172509a15f4fd7e9192b250a4281a8015a014cf09bbf6dc3b4",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f8f4d3cc609d2b18a333477afc7978c8fd8218b20c57804e95cfda8d6eaf1134.json.source.json",
+      "sha256": "f2ac4f01a00d83bdd8076a7c1f8dba6b6d787dcfa8c8f060b9be2efffbc01222",
+      "bytes": 479
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/4d4e0b94cdc117f51161698f81af60eef5debbaad3c76dfe00e09f7b24b37495.json",
+      "sha256": "e5b7029d06ce4ab288f106f695c83143bb23bc024a78792cf2035be2e26392b2",
+      "bytes": 17224
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/4d4e0b94cdc117f51161698f81af60eef5debbaad3c76dfe00e09f7b24b37495.json.source.json",
+      "sha256": "7e3af66e0973e637f70a21329e9fb87c1e86edf7710484ceec866c138dee02bc",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/56267d45cc84314257a76cde1d7060b065ac65d88d694cd309916dec30be08f2.json",
+      "sha256": "84e055adc0c80b28efc3d156b661b42e053a4e2486d73b016242d261cb664f02",
+      "bytes": 13156
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/56267d45cc84314257a76cde1d7060b065ac65d88d694cd309916dec30be08f2.json.source.json",
+      "sha256": "82078aab911d8b4a8014d831511080308b83ecf0ab10e53d16e9e7e954e28d79",
+      "bytes": 239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/986432919db742c52d00cca18532ad723493c4613aec2e70fcdec93c8a7d188b.json",
+      "sha256": "eb49712528425a67ec9348b1161c86b2817e45d3a5a7df9439bdb73cd5588751",
+      "bytes": 447129
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/95d389d225df8d23e1c8448dc7ba2f7488bcc7b9b6ebbc824abbd6a35801455f.json",
+      "sha256": "5396b18db129e96d787f095c58d00332323418cd93d9897e26c7a0d104b32ede",
+      "bytes": 423781
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/986432919db742c52d00cca18532ad723493c4613aec2e70fcdec93c8a7d188b.json.source.json",
+      "sha256": "20ce871a769355f1450b48803bc05b618a326aa38aa882f2f10e82fb99a7f43b",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/dc215e1fc8460fb01b9e81740b62ff42e4cb614f5a22efe6b3ced1fc8c47928c.json",
+      "sha256": "81790ed60f40d2b7a8a42334c86b24dd8f650c75dc62ff041ba4b16e9664ce6c",
+      "bytes": 261088
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ee023e7ec6e6e0aa443dfa6648ea306493472a0ac46b8e4f9f5c5579901f801b.json",
+      "sha256": "a19db95e9dc2eb41e53be97f6c961871492e2c44e483f728859bb8bdaf808666",
+      "bytes": 345452
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/95d389d225df8d23e1c8448dc7ba2f7488bcc7b9b6ebbc824abbd6a35801455f.json.source.json",
+      "sha256": "5f698b830d795d676b23e6364608c197732f705b180ab48d18dd4cc879eb1e9c",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ee023e7ec6e6e0aa443dfa6648ea306493472a0ac46b8e4f9f5c5579901f801b.json.source.json",
+      "sha256": "f47158cdc75872785c9f12864e9088e727571cb2ad8503da43bb8a27fe3c173a",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/dc215e1fc8460fb01b9e81740b62ff42e4cb614f5a22efe6b3ced1fc8c47928c.json.source.json",
+      "sha256": "19639c31b3079bf235e2543fe4d86e1dd3735d4c05f6f63066733cbcc3eca333",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b29007567c2dbd824c6ba276555681959fb2146b42a7e964e75cbac33bf0d7ad.json",
+      "sha256": "2e63c17109489dba35f43330bf9a6baef64c30d137299caccdc5f1aea4d97eef",
+      "bytes": 12335
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b29007567c2dbd824c6ba276555681959fb2146b42a7e964e75cbac33bf0d7ad.json.source.json",
+      "sha256": "37b28bf6f2bf5d3bd81d6a0f076496c0123db062788bd7315acca01a4b54f89b",
+      "bytes": 477
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ddfaaf76f5879c7483a56acff20308f8370c23417756589d2fad8839b7e7ea50.json",
+      "sha256": "44b78370bbaaf96ae529ccefd11765508b3f12c5e6db2c6d0c798de5f73e9fa6",
+      "bytes": 621
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/72e1dcde263199c863a798c1d0348ffb4f21f71e586877f38273d7f12e550ae8.json",
+      "sha256": "d2d0859a8e0601b264f44e5d4903b461a7e5d5263543bf84abcc0368c0c1a283",
+      "bytes": 332236
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/7b1dd6a524b367dfb5bc3e782e11b92a71b979bc2764754364117d03ead67b18.json",
+      "sha256": "3cd54bab4986ca6b69c72f60e1017b5a575ec703aa4b82fc3fafc910043f6e57",
+      "bytes": 15358
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/27f65e454633e9225b03199150e6f9ccfebe5e6d40c0438c043f7c458edebcdb.json",
+      "sha256": "80cd68aaa929b99db2debad4a0ed04dd00229035bac7ca2f0ebef3ec1b835ab3",
+      "bytes": 634727
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ddfaaf76f5879c7483a56acff20308f8370c23417756589d2fad8839b7e7ea50.json.source.json",
+      "sha256": "4a10f3e6f2f3ab33ba11e36f2b40ba77632bb638f2deac001acbd9347f34f037",
+      "bytes": 475
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/72e1dcde263199c863a798c1d0348ffb4f21f71e586877f38273d7f12e550ae8.json.source.json",
+      "sha256": "c10d386b9b9c1bab245d6dbf367295b66569360773a46fefc1f3ece0b3255fa4",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/7b1dd6a524b367dfb5bc3e782e11b92a71b979bc2764754364117d03ead67b18.json.source.json",
+      "sha256": "86a5c58acf237f528f5a08fac23a7919244fc196c1b251ab90ad44f041f518d6",
+      "bytes": 239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/27f65e454633e9225b03199150e6f9ccfebe5e6d40c0438c043f7c458edebcdb.json.source.json",
+      "sha256": "f19aea31d701e8afe1f66866654c2d4e153e47aa4a53663c6ed2752ddae00f97",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/8b15f3ca0c5516d3421e2ff36b328772dac22a9748765b07ecc25d24014a6da4.json",
+      "sha256": "0d7bc5fd17b3f0ed296d12d6a9d56c21f583de304c872a5572940abbe5200911",
+      "bytes": 14903
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/8b15f3ca0c5516d3421e2ff36b328772dac22a9748765b07ecc25d24014a6da4.json.source.json",
+      "sha256": "446b047f510928bba0f8151551502567b203928576f3d3942207424297ebd564",
+      "bytes": 239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/25dade8e488e57d2271a94c16534f928fe78c0f800ad9dc144931d5a1154794c.json",
+      "sha256": "baa58924acfd4c11e7dc9100bb2be740de893f2bdfea93585cb88286303d29b9",
+      "bytes": 432655
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/64b4a3e0eb6a42aeb338e32e7816bd4f38e9fdbfa5cc6a6d81a45f4fe37dd21b.json",
+      "sha256": "973cfca16e85915805550c3c6ded7edfc891954f55c998f9c4cb91a6301daeae",
+      "bytes": 302385
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/25dade8e488e57d2271a94c16534f928fe78c0f800ad9dc144931d5a1154794c.json.source.json",
+      "sha256": "00493aaf1efa3f34f6d765f7c102b1944716829f6fbe2cf6a97234c8b5623844",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/64b4a3e0eb6a42aeb338e32e7816bd4f38e9fdbfa5cc6a6d81a45f4fe37dd21b.json.source.json",
+      "sha256": "d6f6ac3a6d56c597f6183ff8313bb6993ec92394881493502f9b573aa3f00dfb",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/canonical_citing_works/4b622fe30ab23bce740e9f91bdf8101dab508468a63b2a8f5911b0999c738f67.json",
+      "sha256": "4fd4d3162ea6e0d07f299455b1fd05d0364850cce737eb1c4024595cb1fe35d3",
+      "bytes": 25214
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/canonical_citing_works/4b622fe30ab23bce740e9f91bdf8101dab508468a63b2a8f5911b0999c738f67.json.source.json",
+      "sha256": "85b165c9a9a1ef4c1cbf400bed5d3d982270ca4057160d6e0173087e74daa2f3",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/719e070e5de4251e8d02f3f5db6d32bc2dd68f5654ea1e6197b8de039a219599.json",
+      "sha256": "70a31fcedf6ef6e02870202f5afb13b6eb5ea38745366c9f8ac9a55384659f8d",
+      "bytes": 313826
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/719e070e5de4251e8d02f3f5db6d32bc2dd68f5654ea1e6197b8de039a219599.json.source.json",
+      "sha256": "ce4c7f96c7ac99af53a8bf56a18b767998dbb556dd7061e3152e4c22a4b73402",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/6b7e984bded590772d82277a838c02b6051ecb95e77d67af362b4e90228bd5b1.json",
+      "sha256": "1cee9fde2c79c9fc20b963b2ee738f77fb74a3bd91d5d62aa662b5a5e3911cb3",
+      "bytes": 13585
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/6b7e984bded590772d82277a838c02b6051ecb95e77d67af362b4e90228bd5b1.json.source.json",
+      "sha256": "b7de162b4c877e44577b52cbf268ee8a36f6af26e3bb8a754a1edf649c0b5289",
+      "bytes": 247
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5afc483bdf155c7dc4f1bf2fca47cb4b0ee5aae8b32b031081a345b19a6dee58.json",
+      "sha256": "7a65ee383eb847ecbba41878c4393fdbd195a17b323419ae100673eb1ab3620e",
+      "bytes": 309889
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5afc483bdf155c7dc4f1bf2fca47cb4b0ee5aae8b32b031081a345b19a6dee58.json.source.json",
+      "sha256": "d0aa1536646ef3c6c5774991f64d81ad786a8395d9b506d8e7c6cfc94d045d16",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ad61746bf33494d4c9f9749a0d0bfa1dcca93c5b652f5f63511e44b4f27e0700.json",
+      "sha256": "881ed86f36a1df93a77d8579cfff234cc91d7e884c290e8c671f4c075462c63e",
+      "bytes": 723486
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/53f652663243fc1c8ab1553e25aa01261ce770a943ee863b8ef65a367e2eb742.json",
+      "sha256": "9f49b24d3a88d918b35d04795906fbe5ea44e793407b0fcbe8ebe3d4bfdbc804",
+      "bytes": 18661
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/53f652663243fc1c8ab1553e25aa01261ce770a943ee863b8ef65a367e2eb742.json.source.json",
+      "sha256": "06c0d39a3749ccb90dffa89b0f22c9a0d480bd91f997fba1a54755bcf3a20a6b",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ad61746bf33494d4c9f9749a0d0bfa1dcca93c5b652f5f63511e44b4f27e0700.json.source.json",
+      "sha256": "7fca52eda4ddae3966c126b697aa470f15650c2f492ec7133de252d0a2d7848e",
+      "bytes": 482
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/095dab017a9b9637008d461722cae5fdf7c45e3c5e955aedd88faad44d7f5548.json",
+      "sha256": "f09219a45ad29f942bbb65c42e7b92caccfe503e2f1cbbcf938f16a38dea9b58",
+      "bytes": 312618
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/095dab017a9b9637008d461722cae5fdf7c45e3c5e955aedd88faad44d7f5548.json.source.json",
+      "sha256": "e504fd923e5cfe61565b39e5b10b97e4fdb2cd4f2979c203c43524573c5707ff",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/962dbe4e78d088e6865160a2fb45ceda86dddf4ab4e87cfe92898b5f088c11bf.json",
+      "sha256": "0c7123fc3bba3ac1846cc95d06c35d3cec9fd889c5c57c5b31a678e8d36c0a3e",
+      "bytes": 13892
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/962dbe4e78d088e6865160a2fb45ceda86dddf4ab4e87cfe92898b5f088c11bf.json.source.json",
+      "sha256": "0a870902983fab16bdf66f1404be6a6fe00b6c3ba642c9a8b1af66b1b4e3bbda",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4b7ea1b3320711ce7dd27825cea787a47dea63a20659a10bbdb1e1a7adb77ae1.json",
+      "sha256": "7e1fb1d3ee1b312f41462ed77d02f8ddb50111ea24a34debd3b0b6c8f02dcdf7",
+      "bytes": 83239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/226d6cac20e5cc9f5d664aa5754e0a6f3074e55b065e978222d5609e5cb7ff22.json",
+      "sha256": "42ada3d47cf49060085959737d151072da1739799370f32ef224616e585b9f2e",
+      "bytes": 282266
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5a2cd10e573b319882c598ef3cbd3fe0e8f9ac2ba4192a0c69f677f3cd0ea783.json",
+      "sha256": "90b0c00ffe490a383b877ad2f8fe2290f2d1dea0dec691eece61cabaaa4b8829",
+      "bytes": 196798
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4b7ea1b3320711ce7dd27825cea787a47dea63a20659a10bbdb1e1a7adb77ae1.json.source.json",
+      "sha256": "cd428092db0c4a7699050f1513e292b70f7544944cb4ce740e8628f8748c9585",
+      "bytes": 477
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/226d6cac20e5cc9f5d664aa5754e0a6f3074e55b065e978222d5609e5cb7ff22.json.source.json",
+      "sha256": "f8a94fb4175038fb3acb3fc9094487dc615b23359f4bbce353674fa0a14d2a17",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5a2cd10e573b319882c598ef3cbd3fe0e8f9ac2ba4192a0c69f677f3cd0ea783.json.source.json",
+      "sha256": "d8e3696ab433fd4da1e61291c4e341fb85bb17e39dea97b0d82672942a91eb2e",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b33c9f36de7fe65f803f02f480f4703358d18b98e8616690931c93cf44883c6c.json",
+      "sha256": "233564a44f83057fb09e5fd3dbf0e004f3ea0f22edfdf6661e131a831fb4ec33",
+      "bytes": 43155
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/9cb6fe9bc7ce2278ed4e4a435c8fb5721bf364c8ccdb2ce622d0a9570e88623a.json",
+      "sha256": "856638bf4a943253b8306c3d75b130433bfc167d4bd3d0da2ceac6d7a274ac0e",
+      "bytes": 17139
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/9cb6fe9bc7ce2278ed4e4a435c8fb5721bf364c8ccdb2ce622d0a9570e88623a.json.source.json",
+      "sha256": "413cfc7cc4fd45cbf553786f71fafec0b743ccbc7d3e5fe43c8dd32471071500",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b33c9f36de7fe65f803f02f480f4703358d18b98e8616690931c93cf44883c6c.json.source.json",
+      "sha256": "cf270d11395434989944e0b0c05da168bd72706ece954009a49a30566c0ef78b",
+      "bytes": 394
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/0a62954e7ca8f02caf249884a430880e1072b80d63a6ddea90ffe74fb75b5a0e.json",
+      "sha256": "c0f30fe34851e7794ffa495744c2c125cebc3f2a709f8e6002f84cf3a7502c68",
+      "bytes": 20155
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/0a62954e7ca8f02caf249884a430880e1072b80d63a6ddea90ffe74fb75b5a0e.json.source.json",
+      "sha256": "2ec98835108edb6c6b76e487cce3642c35e8be865b899edf4f7f5e48e355560a",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/1fbddd6ab6d3ec43a41f668aacd4eeebb1a07ce118c553a792a7996a95edf2c5.json",
+      "sha256": "fd043754b1d307f4fa53f5d5439354302133079b4e8768c5e038e38f8129fd97",
+      "bytes": 597232
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/1fbddd6ab6d3ec43a41f668aacd4eeebb1a07ce118c553a792a7996a95edf2c5.json.source.json",
+      "sha256": "e7dd60b13945a6005f2f8a48db781aed97e67b759e848679c7b1ef4fb09c1bdb",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/47ba19db24130d0580007ad45a8ec3f84bb8d19d5548a5331364e81c4e4bdca7.json",
+      "sha256": "7e0dca416fb427b9b86654266760e8821d46c3c491c70bc0aa0ceb33db051b5b",
+      "bytes": 17665
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/47ba19db24130d0580007ad45a8ec3f84bb8d19d5548a5331364e81c4e4bdca7.json.source.json",
+      "sha256": "48e82bed5630f4393e89b3b6aa7da1135d34177d1a4670fddcff6236f3f6d5b8",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/9353b73998b2daca4b5f718abe31bd865492ede43e3c7804309b362481d6ebbc.json",
+      "sha256": "58642ca76e2b0d5bbb2da6b844fee182db892a7662f1e3ee67382357003511c0",
+      "bytes": 263339
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7041042c891c58a8a9fae8350493ed69d27f8658a435f3981f4868a24f946537.json",
+      "sha256": "824f2c697e30bd5edc6404ad6cb4ef632b4c9340ff07bac93c13b2e949a67fb8",
+      "bytes": 480938
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/663cce889060fbe6c0bfb490467278a3e7f67c0f140ef149ddd80f9a54d8b9db.json",
+      "sha256": "a6378ddac76cb55e485ea0cdffe61dd5c1d4569195758fbd9f583898f3a3d08e",
+      "bytes": 267358
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/9353b73998b2daca4b5f718abe31bd865492ede43e3c7804309b362481d6ebbc.json.source.json",
+      "sha256": "6f6cc53633a10ae25b5be9bacf8d627cf8eaa9135846eb1f5ad9e368e239b869",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7041042c891c58a8a9fae8350493ed69d27f8658a435f3981f4868a24f946537.json.source.json",
+      "sha256": "241c511e685749936ac35915e5306954d3d686cea74452716737667d6af6e698",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/663cce889060fbe6c0bfb490467278a3e7f67c0f140ef149ddd80f9a54d8b9db.json.source.json",
+      "sha256": "aa78ea0536835daaf7a2be2f40ab479940fd0241944a8a8e01d8214ee26a2eea",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f55e97996c2413c050edddd12dd01c6f6c122c284d71851339166c6b2fe80c34.json",
+      "sha256": "13e079088a9196a35e1f9a10417adc8910cd37db0ef0e75bfd4f9c2ad5e669ae",
+      "bytes": 770465
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/427525606b2160dfe716c0bc41e918680e3f0c8ce647287a8e9480470b1a388e.json",
+      "sha256": "bd4b3249020d9e7b8cc0bd2871669d1943797d9aa23423b15af765f8bd53423e",
+      "bytes": 33122
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/427525606b2160dfe716c0bc41e918680e3f0c8ce647287a8e9480470b1a388e.json.source.json",
+      "sha256": "97a49ab4c22b3f43cd40fa5b19958f7f5eb1706800adbfd66716063c35f91771",
+      "bytes": 477
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f55e97996c2413c050edddd12dd01c6f6c122c284d71851339166c6b2fe80c34.json.source.json",
+      "sha256": "5c8639afcda8057fbc096480cd4f45615fe500a204c4a0217fae3556285d2bcb",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/d58e86f5d210b6533da1c2f4308334d200667c075ef7b9c57870f325af632c28.json",
+      "sha256": "519c4f218639b7f2a2131be6542701629cad625162c0d84b2595403d55d1405f",
+      "bytes": 370122
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/42c4448609f139736f15ab251b9d5de65a9618ed43cd1f55a3877ee64afd9838.json",
+      "sha256": "89945712878f0bd1d71ec25f6dadc0b3298ef5ca868daf44a63a11176cc27b14",
+      "bytes": 873791
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/d58e86f5d210b6533da1c2f4308334d200667c075ef7b9c57870f325af632c28.json.source.json",
+      "sha256": "a3f3f6b1154423fbd55ffe7f4f9aa9dcc94a8145e105ee428008555bd7ea4be0",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/bc3aac2c40db4908851d9b686488bc541bec6ea27108729984733d7a2c75a392.json",
+      "sha256": "6f27c78d10343156acda1bff21e87c1f341ec1f97477b94826826ec639051d8c",
+      "bytes": 13026
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/bc3aac2c40db4908851d9b686488bc541bec6ea27108729984733d7a2c75a392.json.source.json",
+      "sha256": "bbb06a58b103fb4140f21d29919bd228c95d4163935607f93e20c1bfa2d8da55",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/42c4448609f139736f15ab251b9d5de65a9618ed43cd1f55a3877ee64afd9838.json.source.json",
+      "sha256": "5c72025830f6cfdaf428051f52f65254ff5969feb78eb0601d04e937925f3bf3",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/89c8ba0aceb232ac678af5df77b9b898b6e247d62a5a863c4afdd68c6c91685b.json",
+      "sha256": "e6f2ff19f25bff00895c23a2a97335461da6da84e0d8a6920900df7e271cc78a",
+      "bytes": 20513
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/89c8ba0aceb232ac678af5df77b9b898b6e247d62a5a863c4afdd68c6c91685b.json.source.json",
+      "sha256": "508cbf6d7c75439cc1175e4d96936afdb73c64dfdc0b8ef2cb0db1ac0af4d145",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/58e20b11105748cdaf3e091cf441ec19723842f6687f25db569df385b5efbf75.json",
+      "sha256": "8db08742f7b64a7d713ec79f755a7c9eddb99e040b9af507efa471588a2213bf",
+      "bytes": 879112
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/aadc3a80ea9c9fe8bd00d75d661ee30714b86eb7eaf31c9fc030b2f0ec348d06.json",
+      "sha256": "f075d0239d44bee2aa6d74380f1fd5c162bb9d26ee35ed6bc93331c91a3c1f5b",
+      "bytes": 517595
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ddfc70d64c01775c97335ba320ec95654934e85b8e209f71c2a9af6a0c98c7f7.json",
+      "sha256": "f38951c7036ed3fd9e71fafb786baede6c286fc0b9f2730da1108db27655bb1c",
+      "bytes": 299397
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/3a786e7aadff4b2c7bfe332ecfd2ec88f23b3b6596bd0ed4be905782b394aa28.json",
+      "sha256": "170505820052c6b3fa70f3be8b595dac8851fb36c3c0c09c2b73cb26cdb81f1b",
+      "bytes": 369501
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/58e20b11105748cdaf3e091cf441ec19723842f6687f25db569df385b5efbf75.json.source.json",
+      "sha256": "a0cafda35bd5fb4fc9316f195aa925806579f2a184ca53290005ab92e3a4921f",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/aadc3a80ea9c9fe8bd00d75d661ee30714b86eb7eaf31c9fc030b2f0ec348d06.json.source.json",
+      "sha256": "57a6a63678415b07ab307051d9c118d6457eef107c18c4dec1ef1e35a0c31f74",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/3a786e7aadff4b2c7bfe332ecfd2ec88f23b3b6596bd0ed4be905782b394aa28.json.source.json",
+      "sha256": "0412ffd5bcc797ef53d5e788aeb2efff7cef41a7bb0d5061998dbe958276ffe4",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ddfc70d64c01775c97335ba320ec95654934e85b8e209f71c2a9af6a0c98c7f7.json.source.json",
+      "sha256": "9c9b3d523461ad62fabf5f3a3e70d31a685eab3e916ad83d849a416446516a8b",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/757411e05cc0f8896536d5e16d1ea7133b2322fcd7e5c67c85a556961aca33ee.json",
+      "sha256": "db1c74d17884dd99cc09ef0ad060a97abcddc15b26b13b216f2dc236de193943",
+      "bytes": 13105
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/757411e05cc0f8896536d5e16d1ea7133b2322fcd7e5c67c85a556961aca33ee.json.source.json",
+      "sha256": "088a3270da2bfcf940319439b7840acbf908c4aee7795302e65692ce27894c99",
+      "bytes": 239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e3d0fd78973ea18eda957cd8d68d512a2722f09cdccae4230e4fece95da56e6e.json",
+      "sha256": "24b84a265af2c1a1632f8bb872130f64b348b0a29f7f6257eef72d0a7ad1c5f7",
+      "bytes": 316245
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e3d0fd78973ea18eda957cd8d68d512a2722f09cdccae4230e4fece95da56e6e.json.source.json",
+      "sha256": "08cd180142653f9964a5e6f7c3a31b14c07ba04ebf04bc9e9bbf3c5fa23108d2",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7fe9542e08acd70c912bd1c0e5fb4d037fa8a4f90b67966db250b051d004fa1f.json",
+      "sha256": "da63c682d5334655186c1803868d620b79b1eebd40f972963ce73978647b766a",
+      "bytes": 383196
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7fe9542e08acd70c912bd1c0e5fb4d037fa8a4f90b67966db250b051d004fa1f.json.source.json",
+      "sha256": "93c7cab59e4c28d619cf4b3b6314f632732e3f955343b915f9e7e555f25ebd35",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/527ebe005205bd883b8173a96dad0e65290d66b76f4b8e7179e177b4789078b2.json",
+      "sha256": "7bf49ad7724a7bc619596a8f5f1af73db2dfd9376400b52f61d9f930bb86dde4",
+      "bytes": 352859
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/0730e09711cd368a22701b496ce05770280d6ba90be3edb22eadfec4d274c47e.json",
+      "sha256": "0f72a0d9dc5c422c22d1714feaf36d2f611528c82ef6456cb4acfb8cb4e398ce",
+      "bytes": 715547
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/58e0dbefa4be7c60ab7eaa1fed32bb0f2afdfabb567c504821efbecb7d7af228.json",
+      "sha256": "94268dd4b73478a64824e36e6d60026eb3b0fe18ec71d1013bf7a4bb7b1305d0",
+      "bytes": 709163
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/527ebe005205bd883b8173a96dad0e65290d66b76f4b8e7179e177b4789078b2.json.source.json",
+      "sha256": "9bdbb7fbfb68bb07260c69af8f7993f9fac034fd32c7f93dedeb1125a84eecc3",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/0730e09711cd368a22701b496ce05770280d6ba90be3edb22eadfec4d274c47e.json.source.json",
+      "sha256": "837fe5b4421571ccc0d00ed24a5088be279e3314e678fb5b70375e04c6ac55ee",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/58e0dbefa4be7c60ab7eaa1fed32bb0f2afdfabb567c504821efbecb7d7af228.json.source.json",
+      "sha256": "342f1721ebc3b95aa4514ee9d8af0c6ce239c72e1b8bad8c282ce118650e18e6",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/9834af220307e1bfd4dd891b95c7cd78460d57fed6f35cc66a685ddb0be1dce0.json",
+      "sha256": "ce0536d0502720de4a3a66ae97bc28ebc9b29044eb6a1ac749c2c45bec88a079",
+      "bytes": 13774
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/9834af220307e1bfd4dd891b95c7cd78460d57fed6f35cc66a685ddb0be1dce0.json.source.json",
+      "sha256": "082057b504274db2637938ab6637421f384800548bf3b591c5d45c38ddab36c2",
+      "bytes": 240
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/763879988c05460a4e7dfb90a6dbd692db4190ba81b10d31a5bffc3de16e419d.json",
+      "sha256": "0d9f9271545e04e0847f1d1f84717dfc5a1dd68bfa151804d22c2447fb5fe3e7",
+      "bytes": 13931
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/8487aeb8044ef8f7b75b3dbe7d04beb5d85b8ac28852833cd3bf98ab5b8a5f29.json",
+      "sha256": "92af7ba9cf3eb45180bf7f8bf816c05bb3985c0c7eeaf0c5739eca75f723c47e",
+      "bytes": 484055
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b1b6943dd0f7c721b1c75e6594ee34c04108b519a61fde146d9121051086d3ab.json",
+      "sha256": "c49f40f39c020254e51934433df572afcb376f94f5315fc64fb214c3343c8c91",
+      "bytes": 677595
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/763879988c05460a4e7dfb90a6dbd692db4190ba81b10d31a5bffc3de16e419d.json.source.json",
+      "sha256": "ffada17161a5b7952401135e145dbb645197438bf3a86a813861d456ead20905",
+      "bytes": 247
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/8487aeb8044ef8f7b75b3dbe7d04beb5d85b8ac28852833cd3bf98ab5b8a5f29.json.source.json",
+      "sha256": "228895f8328ec1b1d52994c194fecba8fc1595ebbcf4a8d3d2575cd6b94bd6c8",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b1b6943dd0f7c721b1c75e6594ee34c04108b519a61fde146d9121051086d3ab.json.source.json",
+      "sha256": "6c39dc3200ab65b53c7bc005522675de3d6d6dc5d06e140cb4e180e466c1ef62",
+      "bytes": 476
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4ede64c40436492e694e52b8a753dce58f400ee7dfa8151e9c3e3b5bbeb94fe1.json",
+      "sha256": "b7f6a153ded88acbad613667d5fc9b26ce34a59f16c23da5040e3fd712d6110b",
+      "bytes": 350770
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4ede64c40436492e694e52b8a753dce58f400ee7dfa8151e9c3e3b5bbeb94fe1.json.source.json",
+      "sha256": "64026f622c14a248981dd6305fc3e4f031c9f990d02649ae6c5e277b99643419",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/057cb8f52d98a8342beb3e9d4aa053d30f5c5b224bbe4664a84132ad2497e905.json",
+      "sha256": "2a247aeb96633f36c519d7c327dd20916a5200929d2a6f3d002e29430b79198c",
+      "bytes": 12721
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/057cb8f52d98a8342beb3e9d4aa053d30f5c5b224bbe4664a84132ad2497e905.json.source.json",
+      "sha256": "d192da7a5a2fd59cc72f2de3ae298fe9ccf5a27f9f2f23c5d4fb057148aca6a2",
+      "bytes": 239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/26d6b38be1d0b112872eafbfdc84c3ddbaa60c996a0166c0e19c7522ad3ca236.json",
+      "sha256": "76d22ae8333e0636dffe865578c0f769fa5a18c96e8fdc176c243aead9dd68b7",
+      "bytes": 218237
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/aa733b6b08c721b55a17f4a0f70016704ef6e47c9b0ab241165a8cfbdef67a43.json",
+      "sha256": "e65b6e8cff750a352a39c2c1c14b4d4460c1692da3fc905daa29c5f922447b80",
+      "bytes": 774266
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/26d6b38be1d0b112872eafbfdc84c3ddbaa60c996a0166c0e19c7522ad3ca236.json.source.json",
+      "sha256": "3cbe47d3b829e64c1027e1bda2433648412d226ed613dd49b8e6f45572989ded",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/68b180619edc7af79870714f80cc59788cfeaf88359ef7fac2bbfe41088e02e0.json",
+      "sha256": "74c339be88e20c7c484e895f061549f4c490b1fdd46ca1fce19dffc2fd4922c9",
+      "bytes": 115328
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/aa733b6b08c721b55a17f4a0f70016704ef6e47c9b0ab241165a8cfbdef67a43.json.source.json",
+      "sha256": "01449e575a599cd8195506acaf90744dbfc31f3953693000559b8e5e665fb67f",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b8301191b46e3ed78c2b603fcff7d2477fb8b9af9e4025d074b6106bf42196ca.json",
+      "sha256": "9e63bdf86184d65c20d47f9b5e06ccb7b8ccda3f0854201c20e3bb29e803d83d",
+      "bytes": 334666
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b8301191b46e3ed78c2b603fcff7d2477fb8b9af9e4025d074b6106bf42196ca.json.source.json",
+      "sha256": "cf8472bdaf509e418aea084571aa197025b1f38851320d272ea158ca1bf613f9",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/68b180619edc7af79870714f80cc59788cfeaf88359ef7fac2bbfe41088e02e0.json.source.json",
+      "sha256": "d9104a29df76cdec81b87a3f1d05ecdc93f5cb99fff8f24366c762c0cff7cb5b",
+      "bytes": 395
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b1e60d63d049a2e74d0578dfec630f5508004ce4dd345bb14bc186edb3e5148a.json",
+      "sha256": "294d77c9e5b323d45b96522ee7d3a53a5d5f51358265cf79d02f2ade6e0f0056",
+      "bytes": 288328
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b1e60d63d049a2e74d0578dfec630f5508004ce4dd345bb14bc186edb3e5148a.json.source.json",
+      "sha256": "fdb01c59204ad3d37adfeb0122a7da793332e4cae2c813970643999f89dc1589",
+      "bytes": 478
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7a047994687eb9f5cda8454021f1e176bf2dbaac2538794316a01b009e135e38.json",
+      "sha256": "ac07ef930d6b440fe0ff2a45b58edb5efa0076585452b26cc19198f827335c01",
+      "bytes": 343646
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7a047994687eb9f5cda8454021f1e176bf2dbaac2538794316a01b009e135e38.json.source.json",
+      "sha256": "8e71340a108a4c96c6ae437cd99da74c5089b60c357250755c67b75aa1835475",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6ff394456a97a0db4f455f071061a607816dc0bc5983335d794c9f743f74929f.json",
+      "sha256": "13a89cc721a36292d2e6701a5715ff8196e3cd9af7f2098eeeee44859617bef2",
+      "bytes": 426690
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6ff394456a97a0db4f455f071061a607816dc0bc5983335d794c9f743f74929f.json.source.json",
+      "sha256": "5f5b836c68b1de4d50fc6dd9ea88569ccd1a06c08d74427c9740f1d602c5bc47",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7c0706b3e0f15647d8fb2754abb8fb2981946c57f1ae4a2e2476e7b7caddb9fc.json",
+      "sha256": "d1ce5990dc53ff380e8c7250831b8003eba6c788ceb32ef9ae59decb2ce7e4a1",
+      "bytes": 375203
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7c0706b3e0f15647d8fb2754abb8fb2981946c57f1ae4a2e2476e7b7caddb9fc.json.source.json",
+      "sha256": "5d7559dbff50073b0b0d20bdd07b2b20543d8259ad21b16121d1c291bb070bae",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e43a1047b93e95980b86e227e8d29d89db65c40bac45f389e90ab5b56ce12f12.json",
+      "sha256": "ebe34ec05baca9ff59fab6e9477a1237edd3215637e92b551ccf4df762264c9d",
+      "bytes": 345532
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e43a1047b93e95980b86e227e8d29d89db65c40bac45f389e90ab5b56ce12f12.json.source.json",
+      "sha256": "f2adecb9a3c6fae07e2d27bfbfbf5746329d472fc813d62d1c5687d9933c2a01",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4f3643f59d29089febe96397724bbcf0d24af54c4d142d6c879d12ec1d559f4e.json",
+      "sha256": "b39183ea36c4c99f96ca7bc2fbae9aab1cddd6d5f5be76c5bb38140fad4c1d5b",
+      "bytes": 329953
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4f3643f59d29089febe96397724bbcf0d24af54c4d142d6c879d12ec1d559f4e.json.source.json",
+      "sha256": "b94df31f859c4a07ce09d67e484c5cd166d2e23a99cf6735a2e63cad92a48052",
+      "bytes": 484
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/13ae7600b7331cd1ce8d2eb867d45f575153c357e75d7f8ab59ae10ef973672c.json",
+      "sha256": "99971ef16e49b3cdd369cd0fec3d91fafd3371f0c6bf33d61232d1a58398fd2b",
+      "bytes": 107068
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/13ae7600b7331cd1ce8d2eb867d45f575153c357e75d7f8ab59ae10ef973672c.json.source.json",
+      "sha256": "44d33a0cf1346cfb78547c2b34ff80e7da2343410e92663c6842f10161e02bb5",
+      "bytes": 484
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/citation_edges.csv",
+      "sha256": "50cb43cd053a38840cffacb6f5f3150e5e2c45996d6afc6547f89f0d35622e1d",
+      "bytes": 1134297,
+      "rows": 5500
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/citation_coverage.csv",
+      "sha256": "08808f4edf2dc75add01061ce14a361f021aa8ffe92a7ae8cda70c607fb215ea",
+      "bytes": 2116,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/panel.csv",
+      "sha256": "396c085d12f7c835d97983342f3744f04eda40d8f00044dcb837d6138b0f617b",
+      "bytes": 17272,
+      "rows": 440
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/citation_identity_decisions.csv",
+      "sha256": "707c163e98d057a698e0ea6748ec470bb6228bea37752d8e587e14380f9e4d1e",
+      "bytes": 490,
+      "rows": 2
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/hmx/04_citations.py",
+      "sha256": "ea824f9b1ed1acfb31b90efefa597e90c60e1e62315e124adfcafc172d5cc0b7",
+      "bytes": 2796
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "scripts/citation_history.py",
+      "sha256": "0beda0dbdc11fb4a0b218830bc17c981b848e92c57a03b1622b8ea2676e8ef8b",
+      "bytes": 7063
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/hmx/pipeline/receipts/03_design.json",
+      "sha256": "1f31a1d7b2deed84ce49d5502c2ca1858855f8d97962292bdf02764012569501",
+      "bytes": 3228
+    }
+  ],
+  "checks": [
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/47855f0a3f4c8d287d09ca286ccdeaff79d03cc336de7f5828a4a0c32ca5b05d.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/6ad21d596b227e4853daabd8630a26f296a0077418c9baf5d8f5192db298022c.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/405842d4324362789c8c689a7bdd0ffa48e64b125c293b0a7ef9182625096d78.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/abded8b883b241cf548d2f04c6d53f4e0fc7d859d957da43ad9af200ea20cf2e.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/b649475536294c370ce1e984cdeae5469dfe64fbbe3cb80a62d5cfeecc26854a.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/e232e372d43cdedfd354eecbcff3cb7f3dbf9b8a1437cd19a769014ce58243bb.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/f234244a47a2a396d39907e2213fecfd189cdc5fd8cd141fcc07905313addf90.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/6b8a135590def70ecfd1bb21d9fa037cce09b270d515043f6e4a95052a8af423.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/a0265bf844abd44899e6c04664429f04881c5efac1bf1408a977fd35504c588c.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/e3d47b615ab0f5b78f839b34ca4248a8054578950e5d64826501ec2f322efa5a.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/fe71d05edfa082be88acc63274852639e7d3143ce958371ede639313aa790ee9.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/5a25b52a668af70e2f4cfa0531c9aed5fbe48ab4274df3499d7d5e5483c09ea2.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/731496dbd25bc5cbcf52fac2d1f5bdc2741050ade9f5f922546f08c681bddbbc.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/fcd75e7fdc99be849471f4272bac5506f2506ab1202d437bdc8040210db1ab2c.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/b5fe0c7caa587e5befb8a552a9f2b522a1d478ca53d80fabf8462d0c883d354f.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/6e6c374d22bb28e39316eb727895837d4df013381cee66fa3234e4132ee8d83d.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/f80f68e87fbdf875562113fa508a733aca224d0b1979f77da57ffc89094d8efe.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/87c609cbfc6d2ca784d1e33c3babfd25263eca68bc26b81b2c48694c8e29dff5.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/71a2eb67b7e391bfaac8ad2c1d125b7906c0c3644107ce6cb06fb3d7ce6b6e91.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/e4d36615e5cd5b3f014ec9568a0e14577ffab001202de3c49c919f3b3583a6a3.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/3789680c1b97c4c363e2f85d09b0248c75b878d7be480808197f060a7d421377.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/d40df46e76f87052b970dd1327c37fcad2560accb8c5a4953fc795d230949e66.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/f8f4d3cc609d2b18a333477afc7978c8fd8218b20c57804e95cfda8d6eaf1134.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/canonical_citing_works/5051bcd84898b3e407ca80325c9aea89db8da90ae9144316a1d9b0c0c84548f4.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/4d4e0b94cdc117f51161698f81af60eef5debbaad3c76dfe00e09f7b24b37495.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/56267d45cc84314257a76cde1d7060b065ac65d88d694cd309916dec30be08f2.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/95d389d225df8d23e1c8448dc7ba2f7488bcc7b9b6ebbc824abbd6a35801455f.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/986432919db742c52d00cca18532ad723493c4613aec2e70fcdec93c8a7d188b.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/dc215e1fc8460fb01b9e81740b62ff42e4cb614f5a22efe6b3ced1fc8c47928c.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/ee023e7ec6e6e0aa443dfa6648ea306493472a0ac46b8e4f9f5c5579901f801b.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/b29007567c2dbd824c6ba276555681959fb2146b42a7e964e75cbac33bf0d7ad.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/ddfaaf76f5879c7483a56acff20308f8370c23417756589d2fad8839b7e7ea50.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/72e1dcde263199c863a798c1d0348ffb4f21f71e586877f38273d7f12e550ae8.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/27f65e454633e9225b03199150e6f9ccfebe5e6d40c0438c043f7c458edebcdb.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/7b1dd6a524b367dfb5bc3e782e11b92a71b979bc2764754364117d03ead67b18.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/8b15f3ca0c5516d3421e2ff36b328772dac22a9748765b07ecc25d24014a6da4.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/25dade8e488e57d2271a94c16534f928fe78c0f800ad9dc144931d5a1154794c.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/64b4a3e0eb6a42aeb338e32e7816bd4f38e9fdbfa5cc6a6d81a45f4fe37dd21b.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/canonical_citing_works/4b622fe30ab23bce740e9f91bdf8101dab508468a63b2a8f5911b0999c738f67.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/719e070e5de4251e8d02f3f5db6d32bc2dd68f5654ea1e6197b8de039a219599.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/6b7e984bded590772d82277a838c02b6051ecb95e77d67af362b4e90228bd5b1.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/5afc483bdf155c7dc4f1bf2fca47cb4b0ee5aae8b32b031081a345b19a6dee58.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/ad61746bf33494d4c9f9749a0d0bfa1dcca93c5b652f5f63511e44b4f27e0700.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/53f652663243fc1c8ab1553e25aa01261ce770a943ee863b8ef65a367e2eb742.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/095dab017a9b9637008d461722cae5fdf7c45e3c5e955aedd88faad44d7f5548.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/962dbe4e78d088e6865160a2fb45ceda86dddf4ab4e87cfe92898b5f088c11bf.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/4b7ea1b3320711ce7dd27825cea787a47dea63a20659a10bbdb1e1a7adb77ae1.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/226d6cac20e5cc9f5d664aa5754e0a6f3074e55b065e978222d5609e5cb7ff22.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/5a2cd10e573b319882c598ef3cbd3fe0e8f9ac2ba4192a0c69f677f3cd0ea783.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/b33c9f36de7fe65f803f02f480f4703358d18b98e8616690931c93cf44883c6c.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/9cb6fe9bc7ce2278ed4e4a435c8fb5721bf364c8ccdb2ce622d0a9570e88623a.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/0a62954e7ca8f02caf249884a430880e1072b80d63a6ddea90ffe74fb75b5a0e.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/1fbddd6ab6d3ec43a41f668aacd4eeebb1a07ce118c553a792a7996a95edf2c5.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/47ba19db24130d0580007ad45a8ec3f84bb8d19d5548a5331364e81c4e4bdca7.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/9353b73998b2daca4b5f718abe31bd865492ede43e3c7804309b362481d6ebbc.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/7041042c891c58a8a9fae8350493ed69d27f8658a435f3981f4868a24f946537.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/663cce889060fbe6c0bfb490467278a3e7f67c0f140ef149ddd80f9a54d8b9db.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/f55e97996c2413c050edddd12dd01c6f6c122c284d71851339166c6b2fe80c34.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/427525606b2160dfe716c0bc41e918680e3f0c8ce647287a8e9480470b1a388e.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/d58e86f5d210b6533da1c2f4308334d200667c075ef7b9c57870f325af632c28.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/42c4448609f139736f15ab251b9d5de65a9618ed43cd1f55a3877ee64afd9838.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/bc3aac2c40db4908851d9b686488bc541bec6ea27108729984733d7a2c75a392.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/89c8ba0aceb232ac678af5df77b9b898b6e247d62a5a863c4afdd68c6c91685b.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/58e20b11105748cdaf3e091cf441ec19723842f6687f25db569df385b5efbf75.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/3a786e7aadff4b2c7bfe332ecfd2ec88f23b3b6596bd0ed4be905782b394aa28.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/ddfc70d64c01775c97335ba320ec95654934e85b8e209f71c2a9af6a0c98c7f7.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/aadc3a80ea9c9fe8bd00d75d661ee30714b86eb7eaf31c9fc030b2f0ec348d06.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/757411e05cc0f8896536d5e16d1ea7133b2322fcd7e5c67c85a556961aca33ee.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/e3d0fd78973ea18eda957cd8d68d512a2722f09cdccae4230e4fece95da56e6e.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/7fe9542e08acd70c912bd1c0e5fb4d037fa8a4f90b67966db250b051d004fa1f.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/527ebe005205bd883b8173a96dad0e65290d66b76f4b8e7179e177b4789078b2.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/58e0dbefa4be7c60ab7eaa1fed32bb0f2afdfabb567c504821efbecb7d7af228.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/0730e09711cd368a22701b496ce05770280d6ba90be3edb22eadfec4d274c47e.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/9834af220307e1bfd4dd891b95c7cd78460d57fed6f35cc66a685ddb0be1dce0.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/763879988c05460a4e7dfb90a6dbd692db4190ba81b10d31a5bffc3de16e419d.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/8487aeb8044ef8f7b75b3dbe7d04beb5d85b8ac28852833cd3bf98ab5b8a5f29.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/b1b6943dd0f7c721b1c75e6594ee34c04108b519a61fde146d9121051086d3ab.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/4ede64c40436492e694e52b8a753dce58f400ee7dfa8151e9c3e3b5bbeb94fe1.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/openalex_targets/057cb8f52d98a8342beb3e9d4aa053d30f5c5b224bbe4664a84132ad2497e905.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/26d6b38be1d0b112872eafbfdc84c3ddbaa60c996a0166c0e19c7522ad3ca236.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/aa733b6b08c721b55a17f4a0f70016704ef6e47c9b0ab241165a8cfbdef67a43.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/68b180619edc7af79870714f80cc59788cfeaf88359ef7fac2bbfe41088e02e0.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/b8301191b46e3ed78c2b603fcff7d2477fb8b9af9e4025d074b6106bf42196ca.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/b1e60d63d049a2e74d0578dfec630f5508004ce4dd345bb14bc186edb3e5148a.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/7a047994687eb9f5cda8454021f1e176bf2dbaac2538794316a01b009e135e38.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/6ff394456a97a0db4f455f071061a607816dc0bc5983335d794c9f743f74929f.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/7c0706b3e0f15647d8fb2754abb8fb2981946c57f1ae4a2e2476e7b7caddb9fc.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/e43a1047b93e95980b86e227e8d29d89db65c40bac45f389e90ab5b56ce12f12.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/4f3643f59d29089febe96397724bbcf0d24af54c4d142d6c879d12ec1d559f4e.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/citation_pages/13ae7600b7331cd1ce8d2eb867d45f575153c357e75d7f8ab59ae10ef973672c.json"
+    },
+    {
+      "name": "complete_cohort",
+      "passed": true,
+      "detail": 22
+    }
+  ],
+  "sources": [
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/47855f0a3f4c8d287d09ca286ccdeaff79d03cc336de7f5828a4a0c32ca5b05d.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/ajps.12002",
+      "retrieved_at": "2026-10-07T05:55:19.852491+00:00",
+      "sha256": "9d106b0de30bb9aaf1c00a292c8624a3e7be7b08e20abb3e8cecea66ecb70a9f",
+      "bytes": 17428
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/6ad21d596b227e4853daabd8630a26f296a0077418c9baf5d8f5192db298022c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1540-5907.2006.00199.x",
+      "retrieved_at": "2026-10-07T05:55:19.851344+00:00",
+      "sha256": "d8b53ff4d0d0ae32fe4aa90750145e475b1f2758dd107c82d2f311c8c18132f3",
+      "bytes": 22290
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/abded8b883b241cf548d2f04c6d53f4e0fc7d859d957da43ad9af200ea20cf2e.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1540-5907.2011.00561.x",
+      "retrieved_at": "2026-10-07T05:55:19.861003+00:00",
+      "sha256": "0749add4da24e6fa151c552904c1eb54af93a1dd1c8a2aeae66c617ebfb51020",
+      "bytes": 15939
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/405842d4324362789c8c689a7bdd0ffa48e64b125c293b0a7ef9182625096d78.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1086/678987",
+      "retrieved_at": "2026-10-07T05:55:19.851296+00:00",
+      "sha256": "fad440312d3393deb935b39f919cf10083bd3033dabcb90df724979ca87fc420",
+      "bytes": 16436
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b649475536294c370ce1e984cdeae5469dfe64fbbe3cb80a62d5cfeecc26854a.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.348230+00:00",
+      "sha256": "87a033c266d0eb1b7eb77a535a9f6f83ba618d1d67c65a91dbb68e377a75d766",
+      "bytes": 287412
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f234244a47a2a396d39907e2213fecfd189cdc5fd8cd141fcc07905313addf90.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1707221148%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.557955+00:00",
+      "sha256": "26e799e51720a1d9701523d724ebfcdd19982bf2f51be33f95b029eacf411ef7",
+      "bytes": 922840
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e232e372d43cdedfd354eecbcff3cb7f3dbf9b8a1437cd19a769014ce58243bb.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2138930611%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.362972+00:00",
+      "sha256": "c8bf81e5e878fdfd803abf5ed0a48bbc2fe04c832a540019cbbe3601ccd370bb",
+      "bytes": 375145
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6b8a135590def70ecfd1bb21d9fa037cce09b270d515043f6e4a95052a8af423.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2094898632%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.379245+00:00",
+      "sha256": "9c923527993022103f022b21adf5618393a9154f8965134727d2861d418c8cc7",
+      "bytes": 385844
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/a0265bf844abd44899e6c04664429f04881c5efac1bf1408a977fd35504c588c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxMzUwNTE4NDAwMDAwLCA5OS4wLCA1MiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyMTEzNjI3OTYwJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.839537+00:00",
+      "sha256": "84a75a0ff1660d4dbee1588145d9840349375166197d1a11b6fd2e377c07199a",
+      "bytes": 262088
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e3d47b615ab0f5b78f839b34ca4248a8054578950e5d64826501ec2f322efa5a.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2094898632%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjgxMDg0ODAwMDAwLCAxMDAuMCwgNDEsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDM2MzY0OTg2OCddIg%3D%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.669407+00:00",
+      "sha256": "17b38d3348e299d12dcf352836c6d38779ac6b52b654a0a95b94a0e1c1fc4c9a",
+      "bytes": 164872
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/fe71d05edfa082be88acc63274852639e7d3143ce958371ede639313aa790ee9.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2138930611%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTcyOTk4NDAwMDAwLCAxMDAuMCwgODYsICdodHRwczovL29wZW5hbGV4Lm9yZy9XMjk4NjA2MTI4MCddIg%3D%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:20.824286+00:00",
+      "sha256": "926cf651111d970f2764e24f0b134b280723853c31579f8a05e50b22f190abf2",
+      "bytes": 380040
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5a25b52a668af70e2f4cfa0531c9aed5fbe48ab4274df3499d7d5e5483c09ea2.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1707221148%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTY1MjIyNDAwMDAwLCAxMDAuMCwgNzcsICdodHRwczovL29wZW5hbGV4Lm9yZy9XMjk2Nzg3MTQ0NCddIg%3D%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:21.215255+00:00",
+      "sha256": "6a57dcb643b848221f519ee154ebf48b20afe358077bf177ff4b3662dbd4a204",
+      "bytes": 656905
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/731496dbd25bc5cbcf52fac2d1f5bdc2741050ade9f5f922546f08c681bddbbc.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNDM1NTM2MDAwMDAwLCA5OS4wLCA4OSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cxOTUzODIyMjYxJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:21.450507+00:00",
+      "sha256": "ccc54c3ec42ba1583a71f30cd945bcd519e1579c51e2b82cac9a5e896cef7dde",
+      "bytes": 260762
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/fcd75e7fdc99be849471f4272bac5506f2506ab1202d437bdc8040210db1ab2c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0020818314000277",
+      "retrieved_at": "2026-10-07T05:55:20.925443+00:00",
+      "sha256": "3e3bfb639fafe1b83a495497855d8e6b5f3c131a0f48dbaba424542c6a33ef19",
+      "bytes": 18436
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/b5fe0c7caa587e5befb8a552a9f2b522a1d478ca53d80fabf8462d0c883d354f.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s000305541400029x",
+      "retrieved_at": "2026-10-07T05:55:21.160191+00:00",
+      "sha256": "dcec3d32e19281965b414ffbb7ff5a688dcf807bf13fd75cc79d7c630de116d2",
+      "bytes": 17339
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6e6c374d22bb28e39316eb727895837d4df013381cee66fa3234e4132ee8d83d.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1707221148%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjU3NzU2ODAwMDAwLCA5OS4wLCAyMiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0Mjg1Mzg3MzgwJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:21.794162+00:00",
+      "sha256": "ab6035d23a341e96eb85fc1e8b9effafada2c99b067e2a913fa2f8d551d00f25",
+      "bytes": 403209
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/87c609cbfc6d2ca784d1e33c3babfd25263eca68bc26b81b2c48694c8e29dff5.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2107455791%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:21.492902+00:00",
+      "sha256": "a3d4a25659631a2876d700f0d45d0e20220e97ed6f42661205090e2ba66c41b9",
+      "bytes": 496586
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f80f68e87fbdf875562113fa508a733aca224d0b1979f77da57ffc89094d8efe.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTA5OTI2NDAwMDAwLCA5NC4wLCAyLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzI3NjU3MDQ1NjcnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:21.951106+00:00",
+      "sha256": "4ae814a91e54530aac35ad10732d6c10f785ff760c4c55f90b84ada58a38772c",
+      "bytes": 347244
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/71a2eb67b7e391bfaac8ad2c1d125b7906c0c3644107ce6cb06fb3d7ce6b6e91.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2165148328%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:21.750910+00:00",
+      "sha256": "54ee6af855617ee53c2bd471b0fc763317c448a8e7dc6cc42e5ead0ea5f42ddf",
+      "bytes": 568028
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e4d36615e5cd5b3f014ec9568a0e14577ffab001202de3c49c919f3b3583a6a3.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1707221148%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzYwNDg2NDAwMDAwLCAxMDAuMCwgMzcsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQxNTE5NzUyNyddIg%3D%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.012060+00:00",
+      "sha256": "1b95a7178ae9fc4d9900c79ed94f6abcecd44d7138f540bb51e03dd47a15523a",
+      "bytes": 8830
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/3789680c1b97c4c363e2f85d09b0248c75b878d7be480808197f060a7d421377.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2165148328%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzM1Njg5NjAwMDAwLCAnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0NDEwODkxMzI3J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.026292+00:00",
+      "sha256": "991b387442192e86c4bd1a549a6eb24a2e287a133940a4eab5d5a48c490e1a1f",
+      "bytes": 11942
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/canonical_citing_works/5051bcd84898b3e407ca80325c9aea89db8da90ae9144316a1d9b0c0c84548f4.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/9781108284646.009",
+      "retrieved_at": "2026-10-07T05:55:22.233038+00:00",
+      "sha256": "074f6deba96793b5597c531d5087877fa0215d47a585d9295a8099b69233e14a",
+      "bytes": 29734
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/d40df46e76f87052b970dd1327c37fcad2560accb8c5a4953fc795d230949e66.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTY0MzU4NDAwMDAwLCA5OC4wLCAxMiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyOTY1OTcyMTU0J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.514371+00:00",
+      "sha256": "0e6c2e906ded6127950786449b19452094b78f85d7a103355c24db90a9e82988",
+      "bytes": 533780
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f8f4d3cc609d2b18a333477afc7978c8fd8218b20c57804e95cfda8d6eaf1134.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2107455791%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTkwMDE5MjAwMDAwLCA5OC4wLCA2LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzMxNTA5NzM3ODknXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.184079+00:00",
+      "sha256": "15da19dc2f84fe149c62dba9d896de2e40b0ac4dec8f0b50216cf45063ad0dba",
+      "bytes": 1613443
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/4d4e0b94cdc117f51161698f81af60eef5debbaad3c76dfe00e09f7b24b37495.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0020818309990154",
+      "retrieved_at": "2026-10-07T05:55:22.277358+00:00",
+      "sha256": "e5b7029d06ce4ab288f106f695c83143bb23bc024a78792cf2035be2e26392b2",
+      "bytes": 17224
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/56267d45cc84314257a76cde1d7060b065ac65d88d694cd309916dec30be08f2.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1177/0010414005278420",
+      "retrieved_at": "2026-10-07T05:55:22.464969+00:00",
+      "sha256": "84e055adc0c80b28efc3d156b661b42e053a4e2486d73b016242d261cb664f02",
+      "bytes": 13156
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/986432919db742c52d00cca18532ad723493c4613aec2e70fcdec93c8a7d188b.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjIyNTA1NjAwMDAwLCA5Ni4wLCA3LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzMxODQxNzQyNTcnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.058546+00:00",
+      "sha256": "eb49712528425a67ec9348b1161c86b2817e45d3a5a7df9439bdb73cd5588751",
+      "bytes": 447129
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/95d389d225df8d23e1c8448dc7ba2f7488bcc7b9b6ebbc824abbd6a35801455f.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2123248761%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.801210+00:00",
+      "sha256": "5396b18db129e96d787f095c58d00332323418cd93d9897e26c7a0d104b32ede",
+      "bytes": 423781
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ee023e7ec6e6e0aa443dfa6648ea306493472a0ac46b8e4f9f5c5579901f801b.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2107455791%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjQ4NzcxMjAwMDAwLCA5NC4wLCA2LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQyODE2MTkxOTEnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.556924+00:00",
+      "sha256": "a19db95e9dc2eb41e53be97f6c961871492e2c44e483f728859bb8bdaf808666",
+      "bytes": 345452
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/dc215e1fc8460fb01b9e81740b62ff42e4cb614f5a22efe6b3ced1fc8c47928c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2114201972%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.928481+00:00",
+      "sha256": "81790ed60f40d2b7a8a42334c86b24dd8f650c75dc62ff041ba4b16e9664ce6c",
+      "bytes": 261088
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b29007567c2dbd824c6ba276555681959fb2146b42a7e964e75cbac33bf0d7ad.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2107455791%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzU2Njg0ODAwMDAwLCA5OC4wLCAzLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQ0MTM5MDk1MjYnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:22.744750+00:00",
+      "sha256": "2e63c17109489dba35f43330bf9a6baef64c30d137299caccdc5f1aea4d97eef",
+      "bytes": 12335
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/7b1dd6a524b367dfb5bc3e782e11b92a71b979bc2764754364117d03ead67b18.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1177/0010414013488537",
+      "retrieved_at": "2026-10-07T05:55:22.991801+00:00",
+      "sha256": "3cd54bab4986ca6b69c72f60e1017b5a575ec703aa4b82fc3fafc910043f6e57",
+      "bytes": 15358
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ddfaaf76f5879c7483a56acff20308f8370c23417756589d2fad8839b7e7ea50.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2123248761%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzYxMDkxMjAwMDAwLCA5Ny4wLCAyLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQ0MTU0MzI3MjAnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.008008+00:00",
+      "sha256": "44b78370bbaaf96ae529ccefd11765508b3f12c5e6db2c6d0c798de5f73e9fa6",
+      "bytes": 621
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/72e1dcde263199c863a798c1d0348ffb4f21f71e586877f38273d7f12e550ae8.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2114201972%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxMzYzNTY0ODAwMDAwLCA5OS4wLCAyNSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cxNTEwMDkwOTQ2J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.416856+00:00",
+      "sha256": "d2d0859a8e0601b264f44e5d4903b461a7e5d5263543bf84abcc0368c0c1a283",
+      "bytes": 332236
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/27f65e454633e9225b03199150e6f9ccfebe5e6d40c0438c043f7c458edebcdb.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2128096974%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzA3MTc3NjAwMDAwLCAnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MzkyMDU4OTk0J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.819229+00:00",
+      "sha256": "80cd68aaa929b99db2debad4a0ed04dd00229035bac7ca2f0ebef3ec1b835ab3",
+      "bytes": 634727
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/8b15f3ca0c5516d3421e2ff36b328772dac22a9748765b07ecc25d24014a6da4.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1177/0010414006288974",
+      "retrieved_at": "2026-10-07T05:55:23.285154+00:00",
+      "sha256": "0d7bc5fd17b3f0ed296d12d6a9d56c21f583de304c872a5572940abbe5200911",
+      "bytes": 14903
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/25dade8e488e57d2271a94c16534f928fe78c0f800ad9dc144931d5a1154794c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3122692943%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.433285+00:00",
+      "sha256": "baa58924acfd4c11e7dc9100bb2be740de893f2bdfea93585cb88286303d29b9",
+      "bytes": 432655
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/64b4a3e0eb6a42aeb338e32e7816bd4f38e9fdbfa5cc6a6d81a45f4fe37dd21b.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2114201972%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNDgzMjI4ODAwMDAwLCA5Ny4wLCA1LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzI4MDExMTA4MTknXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.901323+00:00",
+      "sha256": "973cfca16e85915805550c3c6ded7edfc891954f55c998f9c4cb91a6301daeae",
+      "bytes": 302385
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/canonical_citing_works/4b622fe30ab23bce740e9f91bdf8101dab508468a63b2a8f5911b0999c738f67.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0007123415000629",
+      "retrieved_at": "2026-10-07T05:55:24.065160+00:00",
+      "sha256": "4fd4d3162ea6e0d07f299455b1fd05d0364850cce737eb1c4024595cb1fe35d3",
+      "bytes": 25214
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/719e070e5de4251e8d02f3f5db6d32bc2dd68f5654ea1e6197b8de039a219599.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1976509432%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:23.830154+00:00",
+      "sha256": "70a31fcedf6ef6e02870202f5afb13b6eb5ea38745366c9f8ac9a55384659f8d",
+      "bytes": 313826
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/6b7e984bded590772d82277a838c02b6051ecb95e77d67af362b4e90228bd5b1.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1540-5907.2007.00302.x",
+      "retrieved_at": "2026-10-07T05:55:23.865416+00:00",
+      "sha256": "1cee9fde2c79c9fc20b963b2ee738f77fb74a3bd91d5d62aa662b5a5e3911cb3",
+      "bytes": 13585
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5afc483bdf155c7dc4f1bf2fca47cb4b0ee5aae8b32b031081a345b19a6dee58.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2114201972%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjMxMDU5MjAwMDAwLCA5Ni4wLCA2LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzMyMDAxNzIzOTAnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.303092+00:00",
+      "sha256": "7a65ee383eb847ecbba41878c4393fdbd195a17b323419ae100673eb1ab3620e",
+      "bytes": 309889
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/53f652663243fc1c8ab1553e25aa01261ce770a943ee863b8ef65a367e2eb742.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0003055414000604",
+      "retrieved_at": "2026-10-07T05:55:24.354065+00:00",
+      "sha256": "9f49b24d3a88d918b35d04795906fbe5ea44e793407b0fcbe8ebe3d4bfdbc804",
+      "bytes": 18661
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ad61746bf33494d4c9f9749a0d0bfa1dcca93c5b652f5f63511e44b4f27e0700.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1976509432%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNDg2MzM5MjAwMDAwLCAxMDAuMCwgMTE1LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzI1ODYxNzA0MDknXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.380820+00:00",
+      "sha256": "881ed86f36a1df93a77d8579cfff234cc91d7e884c290e8c671f4c075462c63e",
+      "bytes": 723486
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/095dab017a9b9637008d461722cae5fdf7c45e3c5e955aedd88faad44d7f5548.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2110865089%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.302886+00:00",
+      "sha256": "f09219a45ad29f942bbb65c42e7b92caccfe503e2f1cbbcf938f16a38dea9b58",
+      "bytes": 312618
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/962dbe4e78d088e6865160a2fb45ceda86dddf4ab4e87cfe92898b5f088c11bf.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0003055413000245",
+      "retrieved_at": "2026-10-07T05:55:24.489512+00:00",
+      "sha256": "0c7123fc3bba3ac1846cc95d06c35d3cec9fd889c5c57c5b31a678e8d36c0a3e",
+      "bytes": 13892
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4b7ea1b3320711ce7dd27825cea787a47dea63a20659a10bbdb1e1a7adb77ae1.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1976509432%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjQyNzIzMjAwMDAwLCA5Ni4wLCAzLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQyMDY5NzA5NDMnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.717700+00:00",
+      "sha256": "7e1fb1d3ee1b312f41462ed77d02f8ddb50111ea24a34debd3b0b6c8f02dcdf7",
+      "bytes": 83239
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/226d6cac20e5cc9f5d664aa5754e0a6f3074e55b065e978222d5609e5cb7ff22.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.660841+00:00",
+      "sha256": "42ada3d47cf49060085959737d151072da1739799370f32ef224616e585b9f2e",
+      "bytes": 282266
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/5a2cd10e573b319882c598ef3cbd3fe0e8f9ac2ba4192a0c69f677f3cd0ea783.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2110865089%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzAxMjE2MDAwMDAwLCA5Ni4wLCAyLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQzOTE1NjI4NTAnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.567024+00:00",
+      "sha256": "90b0c00ffe490a383b877ad2f8fe2290f2d1dea0dec691eece61cabaaa4b8829",
+      "bytes": 196798
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/9cb6fe9bc7ce2278ed4e4a435c8fb5721bf364c8ccdb2ce622d0a9570e88623a.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0003055412000408",
+      "retrieved_at": "2026-10-07T05:55:24.834603+00:00",
+      "sha256": "856638bf4a943253b8306c3d75b130433bfc167d4bd3d0da2ceac6d7a274ac0e",
+      "bytes": 17139
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b33c9f36de7fe65f803f02f480f4703358d18b98e8616690931c93cf44883c6c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2098856577%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:24.881815+00:00",
+      "sha256": "233564a44f83057fb09e5fd3dbf0e004f3ea0f22edfdf6661e131a831fb4ec33",
+      "bytes": 43155
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/0a62954e7ca8f02caf249884a430880e1072b80d63a6ddea90ffe74fb75b5a0e.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0003055410000298",
+      "retrieved_at": "2026-10-07T05:55:24.953100+00:00",
+      "sha256": "c0f30fe34851e7794ffa495744c2c125cebc3f2a709f8e6002f84cf3a7502c68",
+      "bytes": 20155
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/1fbddd6ab6d3ec43a41f668aacd4eeebb1a07ce118c553a792a7996a95edf2c5.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTIyNTQwODAwMDAwLCAxMDAuMCwgODMsICdodHRwczovL29wZW5hbGV4Lm9yZy9XMjgwNDkyODg4OSddIg%3D%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.264448+00:00",
+      "sha256": "fd043754b1d307f4fa53f5d5439354302133079b4e8768c5e038e38f8129fd97",
+      "bytes": 597232
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/47ba19db24130d0580007ad45a8ec3f84bb8d19d5548a5331364e81c4e4bdca7.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0020818311000257",
+      "retrieved_at": "2026-10-07T05:55:25.100936+00:00",
+      "sha256": "7e0dca416fb427b9b86654266760e8821d46c3c491c70bc0aa0ceb33db051b5b",
+      "bytes": 17665
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7041042c891c58a8a9fae8350493ed69d27f8658a435f3981f4868a24f946537.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTU3MzYwMDAwMDAwLCA5OS4wLCA1MSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyOTQ0Mzg3NjA5J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.826924+00:00",
+      "sha256": "824f2c697e30bd5edc6404ad6cb4ef632b4c9340ff07bac93c13b2e949a67fb8",
+      "bytes": 480938
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/663cce889060fbe6c0bfb490467278a3e7f67c0f140ef149ddd80f9a54d8b9db.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2116731043%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.259121+00:00",
+      "sha256": "a6378ddac76cb55e485ea0cdffe61dd5c1d4569195758fbd9f583898f3a3d08e",
+      "bytes": 267358
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/9353b73998b2daca4b5f718abe31bd865492ede43e3c7804309b362481d6ebbc.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3125212160%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.344799+00:00",
+      "sha256": "58642ca76e2b0d5bbb2da6b844fee182db892a7662f1e3ee67382357003511c0",
+      "bytes": 263339
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/427525606b2160dfe716c0bc41e918680e3f0c8ce647287a8e9480470b1a388e.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3125212160%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjc5NjE2MDAwMDAwLCA5Ny4wLCA1LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQzNjEyNjY4NDAnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.731325+00:00",
+      "sha256": "bd4b3249020d9e7b8cc0bd2871669d1943797d9aa23423b15af765f8bd53423e",
+      "bytes": 33122
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/f55e97996c2413c050edddd12dd01c6f6c122c284d71851339166c6b2fe80c34.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2026236001%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.671908+00:00",
+      "sha256": "13e079088a9196a35e1f9a10417adc8910cd37db0ef0e75bfd4f9c2ad5e669ae",
+      "bytes": 770465
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/d58e86f5d210b6533da1c2f4308334d200667c075ef7b9c57870f325af632c28.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2116731043%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNDU0ODAzMjAwMDAwLCA5OS4wLCAzNCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyMzM5NzA3ODkxJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:25.738504+00:00",
+      "sha256": "519c4f218639b7f2a2131be6542701629cad625162c0d84b2595403d55d1405f",
+      "bytes": 370122
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/bc3aac2c40db4908851d9b686488bc541bec6ea27108729984733d7a2c75a392.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0022381608090154",
+      "retrieved_at": "2026-10-07T05:55:26.002510+00:00",
+      "sha256": "6f27c78d10343156acda1bff21e87c1f341ec1f97477b94826826ec639051d8c",
+      "bytes": 13026
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/42c4448609f139736f15ab251b9d5de65a9618ed43cd1f55a3877ee64afd9838.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTc3ODM2ODAwMDAwLCA5OS4wLCAzMywgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1czMDg3Njk3OTMyJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:26.425940+00:00",
+      "sha256": "89945712878f0bd1d71ec25f6dadc0b3298ef5ca868daf44a63a11176cc27b14",
+      "bytes": 873791
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/89c8ba0aceb232ac678af5df77b9b898b6e247d62a5a863c4afdd68c6c91685b.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0003055413000026",
+      "retrieved_at": "2026-10-07T05:55:25.943331+00:00",
+      "sha256": "e6f2ff19f25bff00895c23a2a97335461da6da84e0d8a6920900df7e271cc78a",
+      "bytes": 20513
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/aadc3a80ea9c9fe8bd00d75d661ee30714b86eb7eaf31c9fc030b2f0ec348d06.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2169046781%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:26.491619+00:00",
+      "sha256": "f075d0239d44bee2aa6d74380f1fd5c162bb9d26ee35ed6bc93331c91a3c1f5b",
+      "bytes": 517595
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/58e20b11105748cdaf3e091cf441ec19723842f6687f25db569df385b5efbf75.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2116731043%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTYxNTkzNjAwMDAwLCA5OS4wLCAzNiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyOTU1MjAwMzIyJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:26.292326+00:00",
+      "sha256": "8db08742f7b64a7d713ec79f755a7c9eddb99e040b9af507efa471588a2213bf",
+      "bytes": 879112
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/3a786e7aadff4b2c7bfe332ecfd2ec88f23b3b6596bd0ed4be905782b394aa28.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTk3Nzk1MjAwMDAwLCAnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MjEwOTY1NjMxJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:26.932318+00:00",
+      "sha256": "170505820052c6b3fa70f3be8b595dac8851fb36c3c0c09c2b73cb26cdb81f1b",
+      "bytes": 369501
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/ddfc70d64c01775c97335ba320ec95654934e85b8e209f71c2a9af6a0c98c7f7.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2136767046%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:26.512138+00:00",
+      "sha256": "f38951c7036ed3fd9e71fafb786baede6c286fc0b9f2730da1108db27655bb1c",
+      "bytes": 299397
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/757411e05cc0f8896536d5e16d1ea7133b2322fcd7e5c67c85a556961aca33ee.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1177/0010414006293857",
+      "retrieved_at": "2026-10-07T05:55:26.839372+00:00",
+      "sha256": "db1c74d17884dd99cc09ef0ad060a97abcddc15b26b13b216f2dc236de193943",
+      "bytes": 13105
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e3d0fd78973ea18eda957cd8d68d512a2722f09cdccae4230e4fece95da56e6e.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2136767046%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTE4MzA3MjAwMDAwLCA5Ni4wLCAyLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzI3ODMyMjIyNTQnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.052753+00:00",
+      "sha256": "24b84a265af2c1a1632f8bb872130f64b348b0a29f7f6257eef72d0a7ad1c5f7",
+      "bytes": 316245
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7fe9542e08acd70c912bd1c0e5fb4d037fa8a4f90b67966db250b051d004fa1f.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjE0OTAyNDAwMDAwLCA5Ni4wLCAzLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzMxMzUyMTk5OTknXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.253036+00:00",
+      "sha256": "da63c682d5334655186c1803868d620b79b1eebd40f972963ce73978647b766a",
+      "bytes": 383196
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/527ebe005205bd883b8173a96dad0e65290d66b76f4b8e7179e177b4789078b2.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2116731043%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjA1NTcxMjAwMDAwLCA5OS4wLCAyNiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1czMTA2MjI2NTY1J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:26.793198+00:00",
+      "sha256": "7bf49ad7724a7bc619596a8f5f1af73db2dfd9376400b52f61d9f930bb86dde4",
+      "bytes": 352859
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/0730e09711cd368a22701b496ce05770280d6ba90be3edb22eadfec4d274c47e.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2119533471%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.189013+00:00",
+      "sha256": "0f72a0d9dc5c422c22d1714feaf36d2f611528c82ef6456cb4acfb8cb4e398ce",
+      "bytes": 715547
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/58e0dbefa4be7c60ab7eaa1fed32bb0f2afdfabb567c504821efbecb7d7af228.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2136767046%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjk3NjczNjAwMDAwLCAnLUluZmluaXR5JywgMSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0Mzg4OTM5OTc0J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.796093+00:00",
+      "sha256": "94268dd4b73478a64824e36e6d60026eb3b0fe18ec71d1013bf7a4bb7b1305d0",
+      "bytes": 709163
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/9834af220307e1bfd4dd891b95c7cd78460d57fed6f35cc66a685ddb0be1dce0.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1017/s0003055414000112",
+      "retrieved_at": "2026-10-07T05:55:27.441200+00:00",
+      "sha256": "ce0536d0502720de4a3a66ae97bc28ebc9b29044eb6a1ac749c2c45bec88a079",
+      "bytes": 13774
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/763879988c05460a4e7dfb90a6dbd692db4190ba81b10d31a5bffc3de16e419d.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1540-5907.2012.00612.x",
+      "retrieved_at": "2026-10-07T05:55:27.648066+00:00",
+      "sha256": "0d9f9271545e04e0847f1d1f84717dfc5a1dd68bfa151804d22c2447fb5fe3e7",
+      "bytes": 13931
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/8487aeb8044ef8f7b75b3dbe7d04beb5d85b8ac28852833cd3bf98ab5b8a5f29.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2116731043%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjg2Nzg3MjAwMDAwLCA5OS4wLCAxMiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MzgwODUzMjM0J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.380067+00:00",
+      "sha256": "92af7ba9cf3eb45180bf7f8bf816c05bb3985c0c7eeaf0c5739eca75f723c47e",
+      "bytes": 484055
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b1b6943dd0f7c721b1c75e6594ee34c04108b519a61fde146d9121051086d3ab.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjM3MTA3MjAwMDAwLCA5OS4wLCAyMSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1czMjExNzg5NDcwJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.851669+00:00",
+      "sha256": "c49f40f39c020254e51934433df572afcb376f94f5315fc64fb214c3343c8c91",
+      "bytes": 677595
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4ede64c40436492e694e52b8a753dce58f400ee7dfa8151e9c3e3b5bbeb94fe1.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3125041412%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:27.917634+00:00",
+      "sha256": "b7f6a153ded88acbad613667d5fc9b26ce34a59f16c23da5040e3fd712d6110b",
+      "bytes": 350770
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/openalex_targets/057cb8f52d98a8342beb3e9d4aa053d30f5c5b224bbe4664a84132ad2497e905.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works/https://doi.org/10.1177/0010414011407470",
+      "retrieved_at": "2026-10-07T05:55:28.043833+00:00",
+      "sha256": "2a247aeb96633f36c519d7c327dd20916a5200929d2a6f3d002e29430b79198c",
+      "bytes": 12721
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/26d6b38be1d0b112872eafbfdc84c3ddbaa60c996a0166c0e19c7522ad3ca236.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW1722905744%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:28.095324+00:00",
+      "sha256": "76d22ae8333e0636dffe865578c0f769fa5a18c96e8fdc176c243aead9dd68b7",
+      "bytes": 218237
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/aa733b6b08c721b55a17f4a0f70016704ef6e47c9b0ab241165a8cfbdef67a43.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjQ4NTk4NDAwMDAwLCAnLUluZmluaXR5JywgMSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MjIxMTAwMDIyJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:28.363144+00:00",
+      "sha256": "e65b6e8cff750a352a39c2c1c14b4d4460c1692da3fc905daa29c5f922447b80",
+      "bytes": 774266
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b8301191b46e3ed78c2b603fcff7d2477fb8b9af9e4025d074b6106bf42196ca.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3125041412%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNTc4NDQxNjAwMDAwLCA5Ny4wLCAyLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzI5ODI4NTc1MzEnXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:28.459772+00:00",
+      "sha256": "9e63bdf86184d65c20d47f9b5e06ccb7b8ccda3f0854201c20e3bb29e803d83d",
+      "bytes": 334666
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/68b180619edc7af79870714f80cc59788cfeaf88359ef7fac2bbfe41088e02e0.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2063560144%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=%2A&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:28.603094+00:00",
+      "sha256": "74c339be88e20c7c484e895f061549f4c490b1fdd46ca1fce19dffc2fd4922c9",
+      "bytes": 115328
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/b1e60d63d049a2e74d0578dfec630f5508004ce4dd345bb14bc186edb3e5148a.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3125041412%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzA3NzgyNDAwMDAwLCA5OC4wLCA3LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQzOTI3ODQxNzknXSI%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:28.998182+00:00",
+      "sha256": "294d77c9e5b323d45b96522ee7d3a53a5d5f51358265cf79d02f2ade6e0f0056",
+      "bytes": 288328
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7a047994687eb9f5cda8454021f1e176bf2dbaac2538794316a01b009e135e38.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjY1NDQ2NDAwMDAwLCAnLUluZmluaXR5JywgMSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MzA0ODEzNDU3J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:28.843399+00:00",
+      "sha256": "ac07ef930d6b440fe0ff2a45b58edb5efa0076585452b26cc19198f827335c01",
+      "bytes": 343646
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/6ff394456a97a0db4f455f071061a607816dc0bc5983335d794c9f743f74929f.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNjg0MzY4MDAwMDAwLCAnLUluZmluaXR5JywgMSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0Mzc3MDk4Njg2J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:29.389538+00:00",
+      "sha256": "13a89cc721a36292d2e6701a5715ff8196e3cd9af7f2098eeeee44859617bef2",
+      "bytes": 426690
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/7c0706b3e0f15647d8fb2754abb8fb2981946c57f1ae4a2e2476e7b7caddb9fc.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzA1NDQ5NjAwMDAwLCAnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MzkwOTY3NDYyJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:29.727859+00:00",
+      "sha256": "d1ce5990dc53ff380e8c7250831b8003eba6c788ceb32ef9ae59decb2ce7e4a1",
+      "bytes": 375203
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/e43a1047b93e95980b86e227e8d29d89db65c40bac45f389e90ab5b56ce12f12.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzI1OTI2NDAwMDAwLCAxMDAuMCwgMjAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQwMjQyMDYzMCddIg%3D%3D&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:30.260784+00:00",
+      "sha256": "ebe34ec05baca9ff59fab6e9477a1237edd3215637e92b551ccf4df762264c9d",
+      "bytes": 345532
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/4f3643f59d29089febe96397724bbcf0d24af54c4d142d6c879d12ec1d559f4e.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzQzNTUyMDAwMDAwLCAnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0NDA5MDgyODMxJ10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:30.746704+00:00",
+      "sha256": "b39183ea36c4c99f96ca7bc2fbae9aab1cddd6d5f5be76c5bb38140fad4c1d5b",
+      "bytes": 329953
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/citation_pages/13ae7600b7331cd1ce8d2eb867d45f575153c357e75d7f8ab59ae10ef973672c.json",
+      "cache_hit": true,
+      "url": "https://api.openalex.org/works?filter=cites%3AW2139076143%2Cto_publication_date%3A2025-12-31&per_page=100&cursor=IlsxNzY1NDExMjAwMDAwLCAnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0NDE3MjMyODU5J10i&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cpublication_year%2Ctype%2Creferenced_works&sort=publication_date",
+      "retrieved_at": "2026-10-07T05:55:31.145910+00:00",
+      "sha256": "99971ef16e49b3cdd369cd0fec3d91fafd3371f0c6bf33d61232d1a58398fd2b",
+      "bytes": 107068
+    }
+  ],
+  "metrics": {
+    "papers": 22,
+    "links": 5500,
+    "paper_years": 440
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T06:04:13.345119+00:00"
+}

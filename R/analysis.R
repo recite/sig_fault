@@ -52,9 +52,10 @@ wilson_interval <- function(successes, n, level = .95) {
   c(lower = center - half, upper = center + half)
 }
 
-panel_model <- function(panel, label, post = 2012:2015, effects = "basic", poisson = TRUE) {
-  stopifnot(!2010L %in% post, all(c(2010L, post) %in% panel$year))
-  x <- panel[panel$year %in% c(2010L, post), ]
+panel_model <- function(panel, label, post = 2012:2015, effects = "basic", poisson = TRUE,
+                        pre = 2010L) {
+  stopifnot(length(pre) == 1L, !pre %in% post, all(c(pre, post) %in% panel$year))
+  x <- panel[panel$year %in% c(pre, post), ]
   stopifnot(!anyDuplicated(x[c("article_id", "year")]))
   stopifnot(all(table(x$article_id) == length(post) + 1L))
   requested_n <- nrow(x)

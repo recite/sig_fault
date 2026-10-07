@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "02_identify",
-  "started_at": "2026-10-07T05:35:15.761846+00:00",
+  "started_at": "2026-10-07T05:58:21.596245+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/02_identify.py"
   ],
   "python": "3.14.7",
-  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/publisher_records.json",
@@ -89,7 +89,7 @@
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/01_get.json",
-      "sha256": "64f1be3cc826f9a515aae0fc5328f4cb6155e6b9ec8ad3a122cb5849a1d1d1e2",
+      "sha256": "8cbbb4ec184ec430fdcf033c2302f0aa3c6af0f49f02f1835b0068d33cdb6adc",
       "bytes": 10264
     }
   ],
@@ -656,5 +656,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T05:35:16.522661+00:00"
+  "finished_at": "2026-10-07T05:58:22.897525+00:00"
 }

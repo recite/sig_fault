@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "06_match",
-  "started_at": "2026-10-07T05:35:19.972361+00:00",
+  "started_at": "2026-10-07T05:58:29.495596+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/06_match.py"
   ],
   "python": "3.14.7",
-  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/citation_identity_decisions.csv",
@@ -92,8 +92,8 @@
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/05_citations.json",
-      "sha256": "7c4bbce39792cdbdc867f10d9ffab9f1f7e825e0c30285c10412fb00d9ca172a",
-      "bytes": 2217198
+      "sha256": "5874cc5699de851f495afdd081b673dd85ec9bb4392585b03e17a4272dfe03cf",
+      "bytes": 2217359
     }
   ],
   "checks": [
@@ -140,5 +140,5 @@
     }
   ],
   "status": "complete",
-  "finished_at": "2026-10-07T05:35:27.740092+00:00"
+  "finished_at": "2026-10-07T05:58:43.751940+00:00"
 }

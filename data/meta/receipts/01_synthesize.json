@@ -2,23 +2,23 @@
   "schema_version": 1,
   "study": "meta",
   "stage": "01_synthesize",
-  "started_at": "2026-10-07T05:38:57.780523+00:00",
+  "started_at": "2026-10-07T06:10:46.074410+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/meta/01_synthesize.py"
   ],
   "python": "3.14.7",
-  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "docs/meta/assessment-design.md",
-      "sha256": "18c6b1739d1ab3cf53394c349457182a90b3f6bb048429c72306709f2e3a57d2",
-      "bytes": 4546
+      "sha256": "69afdf9d99c002165d69ed6efd053b3dcf9a065e6b39ce3548a2449f61376f4e",
+      "bytes": 5053
     },
     {
       "path": "docs/meta/assessments.in.md",
-      "sha256": "f5e0d37a868f5fbdbe78f726487fcc79af7352713ae1fe2b51cbf1571b806b77",
-      "bytes": 4619
+      "sha256": "5de1f110abfce8b074966007c553a5625c88963fbc763ad68ecf05aede41c0f2",
+      "bytes": 5117
     },
     {
       "path": "data/meta/lazic_components.csv",
@@ -80,6 +80,24 @@
       "rows": 4
     },
     {
+      "path": "data/cohorts/hmx/pipeline/panel.csv",
+      "sha256": "396c085d12f7c835d97983342f3744f04eda40d8f00044dcb837d6138b0f617b",
+      "bytes": 17272,
+      "rows": 440
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/paper_assessments.csv",
+      "sha256": "6fc2437d82bc0b699c2c61c44b359bf630108e7c9d8f2383ddfc39ad8e031484",
+      "bytes": 1781,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/estimates.csv",
+      "sha256": "1852cac2f973e4921fd10eb8042b031bd2d31caff37226bbbfb8ff4f5798dd41",
+      "bytes": 3155,
+      "rows": 9
+    },
+    {
       "path": "renv.lock",
       "sha256": "88cfc81e990816e9b466244b82e9541a0a6f04a940a876477d3dda98e53f895a",
       "bytes": 165630
@@ -88,33 +106,33 @@
   "outputs": [
     {
       "path": "data/meta/assessment_components.csv",
-      "sha256": "57b00d3c1b6d7c523c380eadeb41a547372eb966f7feb3e3589c4b594c589c4d",
-      "bytes": 3718,
-      "rows": 32
+      "sha256": "4a86c5abc03c06a761c4decf4b16809d1904dab54fb3abfbe72eabfe51dd0d9e",
+      "bytes": 4606,
+      "rows": 40
     },
     {
       "path": "data/meta/assessment_synthesis.csv",
-      "sha256": "dafdbfa72ed1b20b9b2e3555fe239ca0b00d2b7b80dbd14877ec4a11d91cffb3",
-      "bytes": 1869,
+      "sha256": "a048a3d25a610d23219b3f5888ccecd2d9a6027ead37e7bc446d26f0318dfb77",
+      "bytes": 1873,
       "rows": 8
     },
     {
       "path": "data/meta/assessment_sensitivity.csv",
-      "sha256": "53d3c9520d09c0a2aa012b9105ec2c8f7e61759256249c3dcbad08a3ef9e9ace",
-      "bytes": 1918,
+      "sha256": "f7bbb2183e2711f0754678fbbd53d208a5afe845b5299601e59595bb14955e86",
+      "bytes": 1927,
       "rows": 8
     },
     {
       "path": "data/meta/assessment_leave_one_out.csv",
-      "sha256": "8afa6ca153c02c1fafae332ba5fa6905215854745642c707289059d1a2e2ece3",
-      "bytes": 7236,
-      "rows": 32
+      "sha256": "e16379846907e461258b4ee7b8601fa5c4d0bb7b9057a51aadd3780890394d78",
+      "bytes": 9001,
+      "rows": 40
     },
     {
       "path": "data/meta/assessment_identities.csv",
-      "sha256": "4ea6b2ac8c5564864b23443583917a66e2131b0863bf1c02053229aef220ab24",
-      "bytes": 22626,
-      "rows": 453
+      "sha256": "972bed8988326d53c128b0c8f81615379e1942d6151415f5c2342db50ec22ab8",
+      "bytes": 23527,
+      "rows": 474
     },
     {
       "path": "data/meta/rpp_timing.csv",
@@ -124,33 +142,33 @@
     },
     {
       "path": "data/meta/assessment_status.json",
-      "sha256": "0daa5ac30f3d3c6fdcc8b4784ac8a127a29b71f7956e9714641ad4fb3123e028",
-      "bytes": 790
+      "sha256": "ae443b7d5ac71675471e9e53b32bd1d18655a1c5d5231bd90c078f9e21da91af",
+      "bytes": 879
     },
     {
       "path": "data/meta/assessment_session.txt",
-      "sha256": "414b0191affcf16a9d8b13ade991457bc7ed625cb22a4c92804930cbb279b339",
-      "bytes": 791
+      "sha256": "037da064235c1c1e81780a8f994783cc4e7591f4aa8571feaa5f9a34600b8353",
+      "bytes": 1064
     },
     {
       "path": "tabs/assessment_macros.tex",
-      "sha256": "749cbee16bcd21da3b73a288c62f1b825f4d51a63a8617272729cbc85f28947b",
-      "bytes": 1244
+      "sha256": "04877672bfa3eb26e995bd59d28d50cf1986d92667534e2b1a9b14edbb65ea9a",
+      "bytes": 1247
     },
     {
       "path": "tabs/assessment_macros.json",
-      "sha256": "841cd9d276240891bc68f5fc75210b4384b98ccb6f3b7e337afc69b7a0633565",
-      "bytes": 1023
+      "sha256": "3a0faec9eb6dee95c7c1cf38cdbf6affb94954f27c6c4b631ff6ba4d1d11ec2e",
+      "bytes": 1026
     },
     {
       "path": "tabs/assessment_summary.tex",
-      "sha256": "00b95a4f2cfd170e6c1ee40ba636a4a5f2a5d149d1836bbf58b5ec08b02fad20",
-      "bytes": 313
+      "sha256": "18cc1f6065db7410cd8641976e467887aeda84b3949ff5d44d3f093c8d255564",
+      "bytes": 316
     },
     {
       "path": "tabs/assessment_components.tex",
-      "sha256": "2b14613d476bec6e2683ad019d72d3730ec82a0960a0ed370184746df7a17dbb",
-      "bytes": 382
+      "sha256": "91e777da68447dfa507b16d1e68ee6d104ba1b0e141ff5c5734ddbcedaa0f6f9",
+      "bytes": 441
     },
     {
       "path": "tabs/rpp_summary.tex",
@@ -159,15 +177,15 @@
     },
     {
       "path": "docs/meta/assessments.md",
-      "sha256": "562f0140340d3c397aa615fc9d4775eb6dfa372f5af30c03c1951448f57acb72",
-      "bytes": 5448
+      "sha256": "977cb700271f2abbd5039b89d4eb0fd26095fb897dbc6b42cc379add92ab9100",
+      "bytes": 6011
     }
   ],
   "code": [
     {
       "path": "scripts/meta/01_synthesize.py",
-      "sha256": "307b962e84010a2e5b28148378134066b1fc5aa2509549d501fe0172f5be54ba",
-      "bytes": 2498
+      "sha256": "91c81c1be3641df31b3ae2c74c3490382be5a20757676d80d7e8cf09cc18ab04",
+      "bytes": 2795
     },
     {
       "path": "scripts/research_pipeline.py",
@@ -181,8 +199,8 @@
     },
     {
       "path": "scripts/meta/synthesize.R",
-      "sha256": "f69ff30c26c9c534ce7fb6e89dcc7a9bf268c018ede94c955a6f0ce3fd185544",
-      "bytes": 10544
+      "sha256": "291b89dc907f08bfe6cc9eacccacb5c736d1e74ca7c65a10c342599401b45c4c",
+      "bytes": 11516
     },
     {
       "path": "R/meta.R",
@@ -193,12 +211,27 @@
       "path": "R/rpp.R",
       "sha256": "74abbb6efba2d116b7189e1b150e1475df3c6bc582137df2613398c272ab1b64",
       "bytes": 11920
+    },
+    {
+      "path": "R/hmx.R",
+      "sha256": "759ebdd2eaffa64e5a41a0516bd51c5f5f9608c1f3300e6905f5ed4483023798",
+      "bytes": 6558
+    },
+    {
+      "path": "R/analysis.R",
+      "sha256": "ffc5837cc9043acd498e12c48e7d8a71acc6a60674fcc6e0494ad0afba9ce833",
+      "bytes": 5200
     }
   ],
   "parents": [],
   "checks": [
     {
-      "name": "four_distinct_studies",
+      "name": "five_distinct_studies",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "hmx_reproduced",
       "passed": true,
       "detail": true
     },
@@ -216,19 +249,22 @@
   "sources": [],
   "metrics": {
     "estimand": "Precision-weighted mean study-specific log adverse-versus-comparison post/pre citation ratios",
-    "population": "Included assessed papers in four assembled studies, not all scientific papers or errors",
+    "population": "Included assessed papers in five assembled studies, not all scientific papers or errors",
     "studies": [
       "Nieuwenhuis",
       "Lal",
       "Lazic",
-      "RPP"
+      "RPP",
+      "HMX"
     ],
-    "four_distinct_studies": true,
+    "five_distinct_studies": true,
     "no_known_original_overlap": true,
     "unidentified_doi_note": "One Lazic paper lacks DOI: 2012 Folia morphologica, outside RPP 2008 three-journal roster",
+    "hmx_reproduced": true,
+    "hmx_overlap_excluded": "Vernby (2013), also in Lal",
     "rpp_reproduced": true,
     "rpp_role": "Replication judgment; not a statistical-error classification",
-    "primary_contributing_papers": 445,
+    "primary_contributing_papers": 465,
     "acquisition_cache_required": false,
     "excluded": "I4R selected three-case pilot; inventories without completed citation comparisons",
     "design": "docs/meta/assessment-design.md"
@@ -240,5 +276,5 @@
     "--vanilla",
     "scripts/meta/synthesize.R"
   ],
-  "finished_at": "2026-10-07T05:38:58.441426+00:00"
+  "finished_at": "2026-10-07T06:10:49.385581+00:00"
 }

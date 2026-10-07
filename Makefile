@@ -24,9 +24,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/research_pipeline.py scripts/rpp scripts/meta tests/test_research_pipeline.py
-	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/rpp scripts/meta tests/test_research_pipeline.py
-	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/rpp scripts/meta tests/test_research_pipeline.py
+	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/rpp scripts/meta tests/test_research_pipeline.py
+	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/rpp scripts/meta tests/test_research_pipeline.py
+	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/rpp scripts/meta tests/test_research_pipeline.py
 	python3 -m black --check scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m isort --check-only --profile black scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m flake8 --max-line-length=88 scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
@@ -180,7 +180,7 @@ lazic-analysis: lazic
 	$(RSCRIPT) scripts/lazic_analysis.R
 	python3 scripts/lazic_report.py
 
-synthesis: lazic-analysis synthesis-components
+synthesis: lazic-analysis synthesis-components hmx
 	$(RSCRIPT) scripts/lazic_synthesis.R
 	META_RSCRIPT='$(RSCRIPT)' python3 -m scripts.meta.01_synthesize
 
@@ -218,3 +218,21 @@ rpp-verify:
 rpp-test:
 	python3 -m unittest discover -s tests -p 'test_research_pipeline.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "rpp", stop_on_failure = TRUE)'
+
+.PHONY: hmx hmx-fetch hmx-verify hmx-test
+hmx-fetch:
+	python3 -m scripts.hmx.01_get
+	python3 -m scripts.hmx.02_identify
+	python3 -m scripts.hmx.03_design
+	python3 -m scripts.hmx.04_citations
+
+hmx:
+	HMX_RSCRIPT='$(RSCRIPT)' python3 -m scripts.hmx.05_analyze
+	python3 -m scripts.hmx.06_report
+
+hmx-verify:
+	python3 -c 'from scripts.research_pipeline import ROOT, verify_receipt; verify_receipt(ROOT / "data/cohorts/hmx/pipeline/receipts/04_citations.json"); verify_receipt(ROOT / "data/cohorts/hmx/pipeline/receipts/06_report.json")'
+
+hmx-test:
+	python3 -m unittest discover -s tests -p 'test_research_pipeline.py'
+	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "hmx", stop_on_failure = TRUE)'

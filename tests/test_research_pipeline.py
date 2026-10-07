@@ -236,5 +236,15 @@ class MatchTests(unittest.TestCase):
         self.assertAlmostEqual(sum(x["weight"] for x in first[1]), 1)
 
 
+class InteractionLabelsTests(unittest.TestCase):
+    def test_unknown_diagnostics_cannot_become_comparison_papers(self):
+        classify = importlib.import_module("scripts.hmx.03_design").paper_status
+        self.assertEqual(classify(["0", "0"]), "comparison")
+        self.assertEqual(classify(["0", ""]), "unknown")
+        self.assertEqual(classify(["1", ""]), "flagged")
+        with self.assertRaises(ValueError):
+            classify([])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,33 +1,41 @@
 "lal_diagnostic","rpp_window","nieuwenhuis_source","audit","estimate","se","weight"
-"Effective F below 10","primary","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.181509414042912
-"Effective F below 10","primary","historical","Lal",-0.156828391051407,0.144872834611521,0.132563767767042
-"Effective F below 10","primary","historical","Lazic",-0.0749914133337363,0.138078599137584,0.145930479682123
-"Effective F below 10","primary","historical","RPP",-0.173068663969115,0.0717800852491003,0.539996338507923
-"Effective F below 10","primary","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.212857514341377
-"Effective F below 10","primary","openalex","Lal",-0.156828391051407,0.144872834611521,0.127486589899389
-"Effective F below 10","primary","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.140341358203922
-"Effective F below 10","primary","openalex","RPP",-0.173068663969115,0.0717800852491003,0.519314537555312
-"Effective F below 10","adjacent_years","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.235989204509706
-"Effective F below 10","adjacent_years","historical","Lal",-0.156828391051407,0.144872834611521,0.172352592658129
-"Effective F below 10","adjacent_years","historical","Lazic",-0.0749914133337363,0.138078599137584,0.189731303995958
-"Effective F below 10","adjacent_years","historical","RPP",-0.119422028513313,0.0948685651272377,0.401926898836208
-"Effective F below 10","adjacent_years","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.273601166898499
-"Effective F below 10","adjacent_years","openalex","Lal",-0.156828391051407,0.144872834611521,0.163867739733363
-"Effective F below 10","adjacent_years","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.180390903687487
-"Effective F below 10","adjacent_years","openalex","RPP",-0.119422028513313,0.0948685651272377,0.382140189680652
-"Inferential sensitivity","primary","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.181149808940001
-"Inferential sensitivity","primary","historical","Lal",0.21430361717338,0.143800141178238,0.13428232598732
-"Inferential sensitivity","primary","historical","Lazic",-0.0749914133337363,0.138078599137584,0.145641363299699
-"Inferential sensitivity","primary","historical","RPP",-0.173068663969115,0.0717800852491003,0.538926501772981
-"Inferential sensitivity","primary","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.212451923352163
-"Inferential sensitivity","primary","openalex","Lal",0.21430361717338,0.143800141178238,0.129149127293008
-"Inferential sensitivity","primary","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.140073943682627
-"Inferential sensitivity","primary","openalex","RPP",-0.173068663969115,0.0717800852491003,0.518325005672203
-"Inferential sensitivity","adjacent_years","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.23538169422923
-"Inferential sensitivity","adjacent_years","historical","Lal",0.21430361717338,0.143800141178238,0.174483216851782
-"Inferential sensitivity","adjacent_years","historical","Lazic",-0.0749914133337363,0.138078599137584,0.189242876070006
-"Inferential sensitivity","adjacent_years","historical","RPP",-0.119422028513313,0.0948685651272377,0.400892212848982
-"Inferential sensitivity","adjacent_years","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.272931420902456
-"Inferential sensitivity","adjacent_years","openalex","Lal",0.21430361717338,0.143800141178238,0.165914500863162
-"Inferential sensitivity","adjacent_years","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.179949326311057
-"Inferential sensitivity","adjacent_years","openalex","RPP",-0.119422028513313,0.0948685651272377,0.381204751923325
+"Effective F below 10","primary","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.167937266039481
+"Effective F below 10","primary","historical","Lal",-0.156828391051407,0.144872834611521,0.122651471561836
+"Effective F below 10","primary","historical","Lazic",-0.0749914133337363,0.138078599137584,0.135018703679203
+"Effective F below 10","primary","historical","RPP",-0.173068663969115,0.0717800852491003,0.499618762137103
+"Effective F below 10","primary","historical","HMX",-0.189759272881173,0.18554472980913,0.074773796582377
+"Effective F below 10","primary","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.197506975923231
+"Effective F below 10","primary","openalex","Lal",-0.156828391051407,0.144872834611521,0.118292703547271
+"Effective F below 10","primary","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.130220430984462
+"Effective F below 10","primary","openalex","RPP",-0.173068663969115,0.0717800852491003,0.481863391963809
+"Effective F below 10","primary","openalex","HMX",-0.189759272881173,0.18554472980913,0.0721164975812271
+"Effective F below 10","adjacent_years","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.213550626101539
+"Effective F below 10","adjacent_years","historical","Lal",-0.156828391051407,0.144872834611521,0.155964778765349
+"Effective F below 10","adjacent_years","historical","Lazic",-0.0749914133337363,0.138078599137584,0.171691068850278
+"Effective F below 10","adjacent_years","historical","RPP",-0.119422028513313,0.0948685651272377,0.363710454772061
+"Effective F below 10","adjacent_years","historical","HMX",-0.189759272881173,0.18554472980913,0.0950830715107732
+"Effective F below 10","adjacent_years","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.248750705663102
+"Effective F below 10","adjacent_years","openalex","Lal",-0.156828391051407,0.144872834611521,0.148984071801177
+"Effective F below 10","adjacent_years","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.164006481025404
+"Effective F below 10","adjacent_years","openalex","RPP",-0.119422028513313,0.0948685651272377,0.347431419693318
+"Effective F below 10","adjacent_years","openalex","HMX",-0.189759272881173,0.18554472980913,0.0908273218169994
+"Inferential sensitivity","primary","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.167629382808462
+"Inferential sensitivity","primary","historical","Lal",0.21430361717338,0.143800141178238,0.124259934686404
+"Inferential sensitivity","primary","historical","Lazic",-0.0749914133337363,0.138078599137584,0.134771170801497
+"Inferential sensitivity","primary","historical","RPP",-0.173068663969115,0.0717800852491003,0.498702799632817
+"Inferential sensitivity","primary","historical","HMX",-0.189759272881173,0.18554472980913,0.0746367120708194
+"Inferential sensitivity","primary","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.197157727151959
+"Inferential sensitivity","primary","openalex","Lal",0.21430361717338,0.143800141178238,0.119851813996248
+"Inferential sensitivity","primary","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.129990164051848
+"Inferential sensitivity","primary","openalex","RPP",-0.173068663969115,0.0717800852491003,0.481011319793812
+"Inferential sensitivity","primary","openalex","HMX",-0.189759272881173,0.18554472980913,0.0719889750061335
+"Inferential sensitivity","adjacent_years","historical","Nieuwenhuis",-0.152431656103478,0.12380831127347,0.213053029536245
+"Inferential sensitivity","adjacent_years","historical","Lal",0.21430361717338,0.143800141178238,0.157931474132815
+"Inferential sensitivity","adjacent_years","historical","Lazic",-0.0749914133337363,0.138078599137584,0.171291009680651
+"Inferential sensitivity","adjacent_years","historical","RPP",-0.119422028513313,0.0948685651272377,0.362862969206882
+"Inferential sensitivity","adjacent_years","historical","HMX",-0.189759272881173,0.18554472980913,0.0948615174434072
+"Inferential sensitivity","adjacent_years","openalex","Nieuwenhuis",-0.166478559480567,0.112117838571621,0.24819697388493
+"Inferential sensitivity","adjacent_years","openalex","Lal",0.21430361717338,0.143800141178238,0.150878476731277
+"Inferential sensitivity","adjacent_years","openalex","Lazic",-0.0749914133337363,0.138078599137584,0.163641394220413
+"Inferential sensitivity","adjacent_years","openalex","RPP",-0.119422028513313,0.0948685651272377,0.346658019604636
+"Inferential sensitivity","adjacent_years","openalex","HMX",-0.189759272881173,0.18554472980913,0.0906251355587444

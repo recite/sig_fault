@@ -2,19 +2,24 @@
   "schema_version": 1,
   "study": "hmx",
   "stage": "02_identify",
-  "started_at": "2026-10-07T05:50:27.182632+00:00",
+  "started_at": "2026-10-07T06:04:11.754743+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/hmx/02_identify.py",
     "--offline"
   ],
   "python": "3.14.7",
-  "git_commit": "ed5f6ee1f5f0114bc9787517e717323454d96761",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "data/cohorts/hmx/pipeline/audit_metadata.json",
       "sha256": "cf571e0f03f8cf40ef33aecbbb11bc06186553e9b2fac0e8d40aafc5644ef760",
       "bytes": 12740
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/earlier_critique_metadata.json",
+      "sha256": "bb81671ee59d58f773b66c0e582606406ad30e43bddab695184b183b5bb9fc08",
+      "bytes": 2303
     },
     {
       "path": "data/cohorts/hmx/pipeline/archive_metadata.json",
@@ -40,14 +45,14 @@
       "rows": 22
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json",
-      "sha256": "4aa6de78481bcb8de2ddb9f4a5d827c20e32a5e4a3b17fe76e3a9564d49c96b5",
-      "bytes": 7085
+      "path": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json",
+      "sha256": "3dfb874113c47607a2ef79115b16ac21b8fd5caa11421174aaa756b90fa54d2a",
+      "bytes": 13223
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json.source.json",
-      "sha256": "8f6947f247c2ba279552c13b92c40c4bf8cfa4b50f28a10e99f08094d763e795",
-      "bytes": 212
+      "path": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json.source.json",
+      "sha256": "52adcd024d32059019c6a6f3567ea8790b3ab2b53f319ecf2bfbacbacd9bbb6e",
+      "bytes": 231
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/369f39528fb4b7d33d0b979c880c1fc578d75e19fb93077e9373afe8bbea7087.json",
@@ -60,43 +65,13 @@
       "bytes": 216
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json",
-      "sha256": "37583e7f95df3def9f3f539aa77600754cb03ad4a383154a0f8ff2cf2be64266",
-      "bytes": 9202
+      "path": "private-data/cohorts/hmx/pipeline/originals/b9f8f0f65584b80321bd12dc4db66a5a5259e8022825ebc0aad143c6668ddb7b.json",
+      "sha256": "36282611c3b38e0dd2cbebb9b400a1efbfec6d8cca61a7716a8cee718ec29ff8",
+      "bytes": 14146
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json.source.json",
-      "sha256": "23524c3a3f51c145b5910d99037ecca7ad2597129e2ef0b5ff987431cf7f1c35",
-      "bytes": 230
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json",
-      "sha256": "3dfb874113c47607a2ef79115b16ac21b8fd5caa11421174aaa756b90fa54d2a",
-      "bytes": 13223
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json.source.json",
-      "sha256": "52adcd024d32059019c6a6f3567ea8790b3ab2b53f319ecf2bfbacbacd9bbb6e",
-      "bytes": 231
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json",
-      "sha256": "bac5eb47dc3c5a5f44fa46fa340ae7c831219049b38a1f7d2bc560cc73acfb59",
-      "bytes": 5921
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json.source.json",
-      "sha256": "8ec8b96a8bc94d432fbc85a7691972414840fcabf50a5b8c755ce0386a587b91",
-      "bytes": 222
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json",
-      "sha256": "5f7ff9b0de399017f24ba474007693da6ef0afde0459df569bbfc7e99e4176e5",
-      "bytes": 11768
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json.source.json",
-      "sha256": "ea6e91062acdb55b1f0b24a18c545e5b73b4b069235065c59567df1c286eeab9",
+      "path": "private-data/cohorts/hmx/pipeline/originals/b9f8f0f65584b80321bd12dc4db66a5a5259e8022825ebc0aad143c6668ddb7b.json.source.json",
+      "sha256": "693eea2f4697b78dc4ec528d905126e5b830b71413025a4ccd176ff7a23a2f23",
       "bytes": 224
     },
     {
@@ -110,14 +85,39 @@
       "bytes": 224
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/b9f8f0f65584b80321bd12dc4db66a5a5259e8022825ebc0aad143c6668ddb7b.json",
-      "sha256": "36282611c3b38e0dd2cbebb9b400a1efbfec6d8cca61a7716a8cee718ec29ff8",
-      "bytes": 14146
+      "path": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json",
+      "sha256": "4aa6de78481bcb8de2ddb9f4a5d827c20e32a5e4a3b17fe76e3a9564d49c96b5",
+      "bytes": 7085
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/b9f8f0f65584b80321bd12dc4db66a5a5259e8022825ebc0aad143c6668ddb7b.json.source.json",
-      "sha256": "693eea2f4697b78dc4ec528d905126e5b830b71413025a4ccd176ff7a23a2f23",
-      "bytes": 224
+      "path": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json.source.json",
+      "sha256": "8f6947f247c2ba279552c13b92c40c4bf8cfa4b50f28a10e99f08094d763e795",
+      "bytes": 212
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json",
+      "sha256": "bac5eb47dc3c5a5f44fa46fa340ae7c831219049b38a1f7d2bc560cc73acfb59",
+      "bytes": 5921
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json",
+      "sha256": "37583e7f95df3def9f3f539aa77600754cb03ad4a383154a0f8ff2cf2be64266",
+      "bytes": 9202
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json.source.json",
+      "sha256": "23524c3a3f51c145b5910d99037ecca7ad2597129e2ef0b5ff987431cf7f1c35",
+      "bytes": 230
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json.source.json",
+      "sha256": "8ec8b96a8bc94d432fbc85a7691972414840fcabf50a5b8c755ce0386a587b91",
+      "bytes": 222
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json",
+      "sha256": "5f7ff9b0de399017f24ba474007693da6ef0afde0459df569bbfc7e99e4176e5",
+      "bytes": 11768
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/cba68759077d72b6854017e6fcb6e7fe436a860fd669cba7c68e5380ba9caf80.json",
@@ -130,23 +130,8 @@
       "bytes": 223
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json",
-      "sha256": "cfb201e07ec19aab8cde6c515c1c2d45145ab296cd7a6c901ee0608999449893",
-      "bytes": 8687
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json.source.json",
-      "sha256": "39cbbe711a1e1e07d03db4cf97ac9508ebcf5e82f41baf6ae66625743e3d1dfa",
-      "bytes": 222
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/3dd54375ad107224dbbbc9bedb3b2f1baf0dab8db83a60e1f3539230f7543ea9.json",
-      "sha256": "a7d3477a37dd039f9b3281c7ffc7dad27c03c6bf46b251a4f11b61e54d2a646c",
-      "bytes": 11366
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/3dd54375ad107224dbbbc9bedb3b2f1baf0dab8db83a60e1f3539230f7543ea9.json.source.json",
-      "sha256": "5e461ae985b5a1bce564454fa184f7f86b69be166286044bb9800a31d0625dd7",
+      "path": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json.source.json",
+      "sha256": "ea6e91062acdb55b1f0b24a18c545e5b73b4b069235065c59567df1c286eeab9",
       "bytes": 224
     },
     {
@@ -160,6 +145,21 @@
       "bytes": 231
     },
     {
+      "path": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json",
+      "sha256": "cfb201e07ec19aab8cde6c515c1c2d45145ab296cd7a6c901ee0608999449893",
+      "bytes": 8687
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/3dd54375ad107224dbbbc9bedb3b2f1baf0dab8db83a60e1f3539230f7543ea9.json",
+      "sha256": "a7d3477a37dd039f9b3281c7ffc7dad27c03c6bf46b251a4f11b61e54d2a646c",
+      "bytes": 11366
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/3dd54375ad107224dbbbc9bedb3b2f1baf0dab8db83a60e1f3539230f7543ea9.json.source.json",
+      "sha256": "5e461ae985b5a1bce564454fa184f7f86b69be166286044bb9800a31d0625dd7",
+      "bytes": 224
+    },
+    {
       "path": "private-data/cohorts/hmx/pipeline/originals/5e3e5d55c3299fc986bf7fad18a91d5b406c99c0d681011d6838cea62784e6ff.json",
       "sha256": "d1a3e5a3f8aa3bb211e34c64b1198637b5daa3a57c7c4db0269b71f18b01d495",
       "bytes": 8775
@@ -170,14 +170,9 @@
       "bytes": 223
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json",
-      "sha256": "06185af111a0ca79ed29a4426992df88d988e983e95eec5892349d5ee6fa9dd3",
-      "bytes": 15355
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json.source.json",
-      "sha256": "659db15f18ac9d8fc8c55c8adc4c3a28e939d6acca355b1cc73b74d03d4460a8",
-      "bytes": 224
+      "path": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json.source.json",
+      "sha256": "39cbbe711a1e1e07d03db4cf97ac9508ebcf5e82f41baf6ae66625743e3d1dfa",
+      "bytes": 222
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/77d07f2ec669139bd59986c5230b9c5c90acffbc934f68b2395c31ad081fdb70.json",
@@ -200,16 +195,6 @@
       "bytes": 224
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json",
-      "sha256": "e045589695f5933c7f36bce8329b235672f42e06924b1061b36d804eb14e5145",
-      "bytes": 9435
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json.source.json",
-      "sha256": "1fb8dcbf709ff092404a489cba002b6c970acadefd5e5ebc7f9341590886de12",
-      "bytes": 222
-    },
-    {
       "path": "private-data/cohorts/hmx/pipeline/originals/c484417dcc53ceb2b5b4ca88e7997db957ad4f79f92c30c54fa335e834fac592.json",
       "sha256": "12ab5a12875467a5caf22810c6291ac69e4209efc3ebfa96e7cac5c41633968c",
       "bytes": 12772
@@ -217,6 +202,16 @@
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/c484417dcc53ceb2b5b4ca88e7997db957ad4f79f92c30c54fa335e834fac592.json.source.json",
       "sha256": "8430f4d6bd0fac98f137a4e2490b81b2bacb0f82901340470cda34851c220df8",
+      "bytes": 224
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json",
+      "sha256": "06185af111a0ca79ed29a4426992df88d988e983e95eec5892349d5ee6fa9dd3",
+      "bytes": 15355
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json.source.json",
+      "sha256": "659db15f18ac9d8fc8c55c8adc4c3a28e939d6acca355b1cc73b74d03d4460a8",
       "bytes": 224
     },
     {
@@ -228,6 +223,16 @@
       "path": "private-data/cohorts/hmx/pipeline/originals/18b9ac318ebb9fb2b6b10b94b98869b517f0f85e9e9fa41245817f5b22d225d3.json.source.json",
       "sha256": "049299afdcb690869c67337916ea60a095005c4a541533aac5c636c37a44ee6e",
       "bytes": 223
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json",
+      "sha256": "e045589695f5933c7f36bce8329b235672f42e06924b1061b36d804eb14e5145",
+      "bytes": 9435
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json.source.json",
+      "sha256": "1fb8dcbf709ff092404a489cba002b6c970acadefd5e5ebc7f9341590886de12",
+      "bytes": 222
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/88eefa8702153c3cc45e680875b627222f9a5c927237d01489e869193ed00d3b.json",
@@ -260,10 +265,16 @@
       "bytes": 222
     },
     {
-      "path": "data/meta/assessment_identities.csv",
-      "sha256": "4ea6b2ac8c5564864b23443583917a66e2131b0863bf1c02053229aef220ab24",
-      "bytes": 22626,
-      "rows": 453
+      "path": "data/meta/lazic_component_identities.csv",
+      "sha256": "10da564b00c64ba87c62f0e6aa38bd5fbad537a57955e6d2e1fdc527978b0084",
+      "bytes": 18054,
+      "rows": 355
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/identities.csv",
+      "sha256": "e8fdc351024fb20fb799437179f704744374131259c216f671680fb7677ab8f3",
+      "bytes": 25447,
+      "rows": 98
     }
   ],
   "outputs": [
@@ -288,8 +299,8 @@
   "code": [
     {
       "path": "scripts/hmx/02_identify.py",
-      "sha256": "15a02fcbc32030d513debe25c90fb83c25b406aa195a9f78c72f4688d698f260",
-      "bytes": 3362
+      "sha256": "39fa007ba1c630236ea798e786910f33f504dd3c860a41944969667c7ba87a6b",
+      "bytes": 3620
     },
     {
       "path": "scripts/research_pipeline.py",
@@ -305,8 +316,8 @@
   "parents": [
     {
       "path": "data/cohorts/hmx/pipeline/receipts/01_get.json",
-      "sha256": "4cdb4e92936009f1ff4171d48ebf8268d2acc93bca1b72d372f7c1a87bcf6797",
-      "bytes": 6688
+      "sha256": "6f3eab43b666fea6ffc79f753113891db147ba05461ec672fa24a64554d4dd45",
+      "bytes": 8669
     }
   ],
   "checks": [
@@ -321,36 +332,6 @@
       "detail": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json"
     },
     {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/369f39528fb4b7d33d0b979c880c1fc578d75e19fb93077e9373afe8bbea7087.json"
-    },
-    {
-      "name": "reference_identity",
-      "passed": true,
-      "detail": "hmx_04"
-    },
-    {
-      "name": "reference_identity",
-      "passed": true,
-      "detail": "hmx_02"
-    },
-    {
-      "name": "reference_identity",
-      "passed": true,
-      "detail": "hmx_03"
-    },
-    {
       "name": "reference_identity",
       "passed": true,
       "detail": "hmx_01"
@@ -358,17 +339,17 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json"
+      "detail": "private-data/cohorts/hmx/pipeline/originals/369f39528fb4b7d33d0b979c880c1fc578d75e19fb93077e9373afe8bbea7087.json"
     },
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json"
+      "detail": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json"
     },
     {
-      "name": "cached_source_integrity",
+      "name": "reference_identity",
       "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/f29a04bc3a5e4eaeb7411b3d8b38430b2511c9eea96b485c7f3a9970a56dc61a.json"
+      "detail": "hmx_02"
     },
     {
       "name": "cached_source_integrity",
@@ -378,17 +359,32 @@
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_08"
+      "detail": "hmx_06"
     },
     {
-      "name": "reference_identity",
+      "name": "cached_source_integrity",
       "passed": true,
-      "detail": "hmx_05"
+      "detail": "private-data/cohorts/hmx/pipeline/originals/f29a04bc3a5e4eaeb7411b3d8b38430b2511c9eea96b485c7f3a9970a56dc61a.json"
     },
     {
       "name": "reference_identity",
       "passed": true,
       "detail": "hmx_07"
+    },
+    {
+      "name": "reference_identity",
+      "passed": true,
+      "detail": "hmx_04"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json"
     },
     {
       "name": "cached_source_integrity",
@@ -398,17 +394,27 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json"
+      "detail": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json"
     },
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_06"
+      "detail": "hmx_03"
+    },
+    {
+      "name": "reference_identity",
+      "passed": true,
+      "detail": "hmx_08"
     },
     {
       "name": "reference_identity",
       "passed": true,
       "detail": "hmx_09"
+    },
+    {
+      "name": "reference_identity",
+      "passed": true,
+      "detail": "hmx_05"
     },
     {
       "name": "cached_source_integrity",
@@ -421,9 +427,9 @@
       "detail": "private-data/cohorts/hmx/pipeline/originals/ee73e2a631c36c528f1087a4017addf6ac5c66f64e0b07f65fa0b3bcc5263416.json"
     },
     {
-      "name": "reference_identity",
+      "name": "cached_source_integrity",
       "passed": true,
-      "detail": "hmx_10"
+      "detail": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json"
     },
     {
       "name": "cached_source_integrity",
@@ -433,27 +439,12 @@
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_12"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json"
+      "detail": "hmx_11"
     },
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_11"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/3a9b4425d09b031467c1fc3414176bc1fc6f1c91e716b886a7423eb70da13aad.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/77d07f2ec669139bd59986c5230b9c5c90acffbc934f68b2395c31ad081fdb70.json"
+      "detail": "hmx_12"
     },
     {
       "name": "reference_identity",
@@ -463,7 +454,17 @@
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_14"
+      "detail": "hmx_10"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/77d07f2ec669139bd59986c5230b9c5c90acffbc934f68b2395c31ad081fdb70.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/3a9b4425d09b031467c1fc3414176bc1fc6f1c91e716b886a7423eb70da13aad.json"
     },
     {
       "name": "reference_identity",
@@ -473,17 +474,12 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
       "detail": "private-data/cohorts/hmx/pipeline/originals/c484417dcc53ceb2b5b4ca88e7997db957ad4f79f92c30c54fa335e834fac592.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/18b9ac318ebb9fb2b6b10b94b98869b517f0f85e9e9fa41245817f5b22d225d3.json"
     },
     {
       "name": "reference_identity",
@@ -493,12 +489,22 @@
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_19"
+      "detail": "hmx_17"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/18b9ac318ebb9fb2b6b10b94b98869b517f0f85e9e9fa41245817f5b22d225d3.json"
     },
     {
       "name": "reference_identity",
       "passed": true,
-      "detail": "hmx_17"
+      "detail": "hmx_14"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json"
     },
     {
       "name": "reference_identity",
@@ -508,12 +514,12 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/ad6478a43bb2442b2ea65dba6a2a4c071694efecba7bd17c5f6d3908ed6d1929.json"
+      "detail": "private-data/cohorts/hmx/pipeline/originals/88eefa8702153c3cc45e680875b627222f9a5c927237d01489e869193ed00d3b.json"
     },
     {
-      "name": "cached_source_integrity",
+      "name": "reference_identity",
       "passed": true,
-      "detail": "private-data/cohorts/hmx/pipeline/originals/88eefa8702153c3cc45e680875b627222f9a5c927237d01489e869193ed00d3b.json"
+      "detail": "hmx_19"
     },
     {
       "name": "cached_source_integrity",
@@ -531,6 +537,11 @@
       "detail": "hmx_21"
     },
     {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/originals/ad6478a43bb2442b2ea65dba6a2a4c071694efecba7bd17c5f6d3908ed6d1929.json"
+    },
+    {
       "name": "reference_identity",
       "passed": true,
       "detail": "hmx_22"
@@ -538,12 +549,12 @@
   ],
   "sources": [
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json",
+      "path": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1086/678987",
-      "retrieved_at": "2026-10-07T05:45:42.726149+00:00",
-      "sha256": "4aa6de78481bcb8de2ddb9f4a5d827c20e32a5e4a3b17fe76e3a9564d49c96b5",
-      "bytes": 7085
+      "url": "https://api.crossref.org/works/10.1111/j.1540-5907.2006.00199.x",
+      "retrieved_at": "2026-10-07T05:45:40.484214+00:00",
+      "sha256": "3dfb874113c47607a2ef79115b16ac21b8fd5caa11421174aaa756b90fa54d2a",
+      "bytes": 13223
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/369f39528fb4b7d33d0b979c880c1fc578d75e19fb93077e9373afe8bbea7087.json",
@@ -554,36 +565,12 @@
       "bytes": 9511
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json",
+      "path": "private-data/cohorts/hmx/pipeline/originals/b9f8f0f65584b80321bd12dc4db66a5a5259e8022825ebc0aad143c6668ddb7b.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1111/j.1540-5907.2011.00561.x",
-      "retrieved_at": "2026-10-07T05:45:40.484255+00:00",
-      "sha256": "37583e7f95df3def9f3f539aa77600754cb03ad4a383154a0f8ff2cf2be64266",
-      "bytes": 9202
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/6207c229a335351bdbdf42b87a2ca803ef6342d859c6e6dbe3a02a8e4451d4f5.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1111/j.1540-5907.2006.00199.x",
-      "retrieved_at": "2026-10-07T05:45:40.484214+00:00",
-      "sha256": "3dfb874113c47607a2ef79115b16ac21b8fd5caa11421174aaa756b90fa54d2a",
-      "bytes": 13223
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1177/0010414005278420",
-      "retrieved_at": "2026-10-07T05:45:41.016060+00:00",
-      "sha256": "bac5eb47dc3c5a5f44fa46fa340ae7c831219049b38a1f7d2bc560cc73acfb59",
-      "bytes": 5921
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1017/s0020818314000277",
-      "retrieved_at": "2026-10-07T05:45:40.746270+00:00",
-      "sha256": "5f7ff9b0de399017f24ba474007693da6ef0afde0459df569bbfc7e99e4176e5",
-      "bytes": 11768
+      "url": "https://api.crossref.org/works/10.1017/s000305541400029x",
+      "retrieved_at": "2026-10-07T05:45:40.817847+00:00",
+      "sha256": "36282611c3b38e0dd2cbebb9b400a1efbfec6d8cca61a7716a8cee718ec29ff8",
+      "bytes": 14146
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/f29a04bc3a5e4eaeb7411b3d8b38430b2511c9eea96b485c7f3a9970a56dc61a.json",
@@ -594,12 +581,28 @@
       "bytes": 14794
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/b9f8f0f65584b80321bd12dc4db66a5a5259e8022825ebc0aad143c6668ddb7b.json",
+      "path": "private-data/cohorts/hmx/pipeline/originals/cf3ecadaf51d4f583f869fe45cdad9cf1a6a4f8dfc2cc67bb5aac3fe9ed9d47f.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1017/s000305541400029x",
-      "retrieved_at": "2026-10-07T05:45:40.817847+00:00",
-      "sha256": "36282611c3b38e0dd2cbebb9b400a1efbfec6d8cca61a7716a8cee718ec29ff8",
-      "bytes": 14146
+      "url": "https://api.crossref.org/works/10.1086/678987",
+      "retrieved_at": "2026-10-07T05:45:42.726149+00:00",
+      "sha256": "4aa6de78481bcb8de2ddb9f4a5d827c20e32a5e4a3b17fe76e3a9564d49c96b5",
+      "bytes": 7085
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/404f2d9d66cc19c3f996032238ef6cebb988d97b727059941a96d7f30f188e5f.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1111/j.1540-5907.2011.00561.x",
+      "retrieved_at": "2026-10-07T05:45:40.484255+00:00",
+      "sha256": "37583e7f95df3def9f3f539aa77600754cb03ad4a383154a0f8ff2cf2be64266",
+      "bytes": 9202
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/323431f8a422c4982c00b47f5837ea3e7b8d559ba805ae0db4655596c173575f.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1177/0010414005278420",
+      "retrieved_at": "2026-10-07T05:45:41.016060+00:00",
+      "sha256": "bac5eb47dc3c5a5f44fa46fa340ae7c831219049b38a1f7d2bc560cc73acfb59",
+      "bytes": 5921
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/cba68759077d72b6854017e6fcb6e7fe436a860fd669cba7c68e5380ba9caf80.json",
@@ -610,20 +613,12 @@
       "bytes": 12253
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json",
+      "path": "private-data/cohorts/hmx/pipeline/originals/ec6eb0a5d9d1438874c30d5f440f60a592381cb35ace31602a50efa31f85c1b7.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1177/0010414006288974",
-      "retrieved_at": "2026-10-07T05:45:41.265317+00:00",
-      "sha256": "cfb201e07ec19aab8cde6c515c1c2d45145ab296cd7a6c901ee0608999449893",
-      "bytes": 8687
-    },
-    {
-      "path": "private-data/cohorts/hmx/pipeline/originals/3dd54375ad107224dbbbc9bedb3b2f1baf0dab8db83a60e1f3539230f7543ea9.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1017/s0003055414000604",
-      "retrieved_at": "2026-10-07T05:45:41.528455+00:00",
-      "sha256": "a7d3477a37dd039f9b3281c7ffc7dad27c03c6bf46b251a4f11b61e54d2a646c",
-      "bytes": 11366
+      "url": "https://api.crossref.org/works/10.1017/s0020818314000277",
+      "retrieved_at": "2026-10-07T05:45:40.746270+00:00",
+      "sha256": "5f7ff9b0de399017f24ba474007693da6ef0afde0459df569bbfc7e99e4176e5",
+      "bytes": 11768
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/ee73e2a631c36c528f1087a4017addf6ac5c66f64e0b07f65fa0b3bcc5263416.json",
@@ -634,6 +629,14 @@
       "bytes": 10206
     },
     {
+      "path": "private-data/cohorts/hmx/pipeline/originals/3dd54375ad107224dbbbc9bedb3b2f1baf0dab8db83a60e1f3539230f7543ea9.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1017/s0003055414000604",
+      "retrieved_at": "2026-10-07T05:45:41.528455+00:00",
+      "sha256": "a7d3477a37dd039f9b3281c7ffc7dad27c03c6bf46b251a4f11b61e54d2a646c",
+      "bytes": 11366
+    },
+    {
       "path": "private-data/cohorts/hmx/pipeline/originals/5e3e5d55c3299fc986bf7fad18a91d5b406c99c0d681011d6838cea62784e6ff.json",
       "cache_hit": true,
       "url": "https://api.crossref.org/works/10.1017/s0003055413000245",
@@ -642,12 +645,12 @@
       "bytes": 8775
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json",
+      "path": "private-data/cohorts/hmx/pipeline/originals/fc1e8b66f3397d47c7dd69fa8135c6ee6a49f84405f43f2330d0c41cdd616550.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1017/s0003055412000408",
-      "retrieved_at": "2026-10-07T05:45:44.098382+00:00",
-      "sha256": "06185af111a0ca79ed29a4426992df88d988e983e95eec5892349d5ee6fa9dd3",
-      "bytes": 15355
+      "url": "https://api.crossref.org/works/10.1177/0010414006288974",
+      "retrieved_at": "2026-10-07T05:45:41.265317+00:00",
+      "sha256": "cfb201e07ec19aab8cde6c515c1c2d45145ab296cd7a6c901ee0608999449893",
+      "bytes": 8687
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/77d07f2ec669139bd59986c5230b9c5c90acffbc934f68b2395c31ad081fdb70.json",
@@ -666,14 +669,6 @@
       "bytes": 10302
     },
     {
-      "path": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1177/0010414006293857",
-      "retrieved_at": "2026-10-07T05:45:43.590923+00:00",
-      "sha256": "e045589695f5933c7f36bce8329b235672f42e06924b1061b36d804eb14e5145",
-      "bytes": 9435
-    },
-    {
       "path": "private-data/cohorts/hmx/pipeline/originals/c484417dcc53ceb2b5b4ca88e7997db957ad4f79f92c30c54fa335e834fac592.json",
       "cache_hit": true,
       "url": "https://api.crossref.org/works/10.1017/s0003055413000026",
@@ -682,12 +677,28 @@
       "bytes": 12772
     },
     {
+      "path": "private-data/cohorts/hmx/pipeline/originals/1054c07bbab500b228af7ba43b965eb824c4e2c909bf58095c49a2fb11a486d4.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1017/s0003055412000408",
+      "retrieved_at": "2026-10-07T05:45:44.098382+00:00",
+      "sha256": "06185af111a0ca79ed29a4426992df88d988e983e95eec5892349d5ee6fa9dd3",
+      "bytes": 15355
+    },
+    {
       "path": "private-data/cohorts/hmx/pipeline/originals/18b9ac318ebb9fb2b6b10b94b98869b517f0f85e9e9fa41245817f5b22d225d3.json",
       "cache_hit": true,
       "url": "https://api.crossref.org/works/10.1017/s0022381608090154",
       "retrieved_at": "2026-10-07T05:45:43.512637+00:00",
       "sha256": "c34977293647229125198fb69ac66da8aa69284db7489be158a197f4172e64a4",
       "bytes": 5731
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/originals/b694cca8a3c5acf77c4f663c737c5c2ea8a9aa7c81b807cb43807c0c9e5b1757.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1177/0010414006293857",
+      "retrieved_at": "2026-10-07T05:45:43.590923+00:00",
+      "sha256": "e045589695f5933c7f36bce8329b235672f42e06924b1061b36d804eb14e5145",
+      "bytes": 9435
     },
     {
       "path": "private-data/cohorts/hmx/pipeline/originals/88eefa8702153c3cc45e680875b627222f9a5c927237d01489e869193ed00d3b.json",
@@ -720,5 +731,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T05:50:27.220169+00:00"
+  "finished_at": "2026-10-07T06:04:12.243546+00:00"
 }

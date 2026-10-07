@@ -2,14 +2,14 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "01_get",
-  "started_at": "2026-10-07T05:35:15.674526+00:00",
+  "started_at": "2026-10-07T05:58:21.422550+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/01_get.py",
     "--offline"
   ],
   "python": "3.14.7",
-  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
   "inputs": [
     {
       "path": "private-data/cohorts/manifest.json",
@@ -266,5 +266,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T05:35:15.710563+00:00"
+  "finished_at": "2026-10-07T05:58:21.489411+00:00"
 }

@@ -31,7 +31,7 @@ The SSRN first-posted date is 29 February 2016, earlier than journal publication
 
 [Study](https://doi.org/10.1017/pan.2018.46); [archive](https://doi.org/10.7910/DVN/Q1V0OG).
 
-Resolve the 22 original DOIs and compare early draft rosters. Diagnose flags separately: an any-adverse rule flags 20 papers and leaves only two entirely unflagged comparisons. Review later methodological responses before assigning a verified-error label.
+The numbered pipeline resolves all 22 DOIs and estimates the formal-publication contrast. Verify the earliest SSRN roster before making a first-disclosure claim. See pipeline/README.md for citation results, diagnostic-specific comparisons and overlap exclusions.
 
 ## Rebuild
 

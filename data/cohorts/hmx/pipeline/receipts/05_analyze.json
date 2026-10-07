@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "study": "hmx",
+  "stage": "05_analyze",
+  "started_at": "2026-10-07T06:08:29.973092+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/hmx/05_analyze.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
+  "inputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/design.md",
+      "sha256": "5ff0eb167604851d5cd00e805caa335193d23778bb41013a9a07000621c2c33a",
+      "bytes": 4911
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/panel.csv",
+      "sha256": "396c085d12f7c835d97983342f3744f04eda40d8f00044dcb837d6138b0f617b",
+      "bytes": 17272,
+      "rows": 440
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/paper_assessments.csv",
+      "sha256": "6fc2437d82bc0b699c2c61c44b359bf630108e7c9d8f2383ddfc39ad8e031484",
+      "bytes": 1781,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/citation_coverage.csv",
+      "sha256": "08808f4edf2dc75add01061ce14a361f021aa8ffe92a7ae8cda70c607fb215ea",
+      "bytes": 2116,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/timing.json",
+      "sha256": "63d78fad86823266aedfd97edb7ef4fcd43840ee6e712f5c1494fa45a4136369",
+      "bytes": 436
+    },
+    {
+      "path": "renv.lock",
+      "sha256": "88cfc81e990816e9b466244b82e9541a0a6f04a940a876477d3dda98e53f895a",
+      "bytes": 165630
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/specifications.csv",
+      "sha256": "22255d052918395b542f8cfc276e87fbfcea6cc149a4a9b91caa710676e9a532",
+      "bytes": 697,
+      "rows": 9
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/estimates.csv",
+      "sha256": "1852cac2f973e4921fd10eb8042b031bd2d31caff37226bbbfb8ff4f5798dd41",
+      "bytes": 3155,
+      "rows": 9
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/absolute_estimates.csv",
+      "sha256": "8601469ae02bd301ce3b0abd19261a594a4ec3810916fd4df77bd2e503ba58bc",
+      "bytes": 1104,
+      "rows": 9
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/paper_periods.csv",
+      "sha256": "b4212db7c573e6043c593c49f8cf7e505f50561d5106ca87fd835233f478b0b6",
+      "bytes": 10105,
+      "rows": 190
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/bootstrap.csv",
+      "sha256": "778a81c3e4e913a43f590803c87fb98611b83d30dda8255d358c839b1b06275c",
+      "bytes": 1004,
+      "rows": 8
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/period_summary.csv",
+      "sha256": "ce1d75f3834483e40a0cc82f405d09f06d780990717e5425526058d02136f371",
+      "bytes": 243,
+      "rows": 2
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/annual_summary.csv",
+      "sha256": "8dd148285a856efbc84ee3c6629b0dd1cf7e34cea41c0c170723f5444f9dfae3",
+      "bytes": 1327,
+      "rows": 40
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/journal_support.csv",
+      "sha256": "c052f46fc8870847e0539c822451fddd5cccbf6916b77d0cfccb8c40162f3ff8",
+      "bytes": 146,
+      "rows": 10
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/leave_one_out.csv",
+      "sha256": "3978393db0ea8bf95bd8d4f4ac0a8ffddc5a42c116dc2826d7eabb78c6bd6248",
+      "bytes": 1430,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/analysis_checks.json",
+      "sha256": "1c84c3c040e0c5d833ece0424c9183f93a6df9035c2f79b5a66f7bde37ef12df",
+      "bytes": 203
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/R-session.txt",
+      "sha256": "ba44fc398b89d796c93cf91b0a44fe1c59375b7989db07063f33fa606b0571c0",
+      "bytes": 970
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/hmx/05_analyze.py",
+      "sha256": "1f58c6604253260fd2d472743ab30b832db7a7c4758ee5f5193392f832fb19a5",
+      "bytes": 2075
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "R/analysis.R",
+      "sha256": "ffc5837cc9043acd498e12c48e7d8a71acc6a60674fcc6e0494ad0afba9ce833",
+      "bytes": 5200
+    },
+    {
+      "path": "R/hmx.R",
+      "sha256": "759ebdd2eaffa64e5a41a0516bd51c5f5f9608c1f3300e6905f5ed4483023798",
+      "bytes": 6558
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "cohort_and_labels",
+      "passed": true,
+      "detail": {
+        "papers": 22,
+        "flagged": 14,
+        "comparison": 8,
+        "complete": true,
+        "raw_fe_identity_error": 6.9389e-16,
+        "bootstrap_undefined": 0,
+        "nonoverlap_papers": 21,
+        "journal_supported_papers": 19
+      }
+    },
+    {
+      "name": "nonoverlap",
+      "passed": true,
+      "detail": {
+        "papers": 22,
+        "flagged": 14,
+        "comparison": 8,
+        "complete": true,
+        "raw_fe_identity_error": 6.9389e-16,
+        "bootstrap_undefined": 0,
+        "nonoverlap_papers": 21,
+        "journal_supported_papers": 19
+      }
+    },
+    {
+      "name": "journal_support",
+      "passed": true,
+      "detail": {
+        "papers": 22,
+        "flagged": 14,
+        "comparison": 8,
+        "complete": true,
+        "raw_fe_identity_error": 6.9389e-16,
+        "bootstrap_undefined": 0,
+        "nonoverlap_papers": 21,
+        "journal_supported_papers": 19
+      }
+    },
+    {
+      "name": "defined_bootstrap",
+      "passed": true,
+      "detail": {
+        "papers": 22,
+        "flagged": 14,
+        "comparison": 8,
+        "complete": true,
+        "raw_fe_identity_error": 6.9389e-16,
+        "bootstrap_undefined": 0,
+        "nonoverlap_papers": 21,
+        "journal_supported_papers": 19
+      }
+    },
+    {
+      "name": "independent_ratio",
+      "passed": true,
+      "detail": {
+        "papers": 22,
+        "flagged": 14,
+        "comparison": 8,
+        "complete": true,
+        "raw_fe_identity_error": 6.9389e-16,
+        "bootstrap_undefined": 0,
+        "nonoverlap_papers": 21,
+        "journal_supported_papers": 19
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "papers": 22,
+    "flagged": 14,
+    "comparison": 8,
+    "complete": true,
+    "raw_fe_identity_error": 6.9389e-16,
+    "bootstrap_undefined": 0,
+    "nonoverlap_papers": 21,
+    "journal_supported_papers": 19
+  },
+  "unresolved": [],
+  "status": "complete",
+  "estimation_command": [
+    "Rscript",
+    "--vanilla",
+    "R/hmx.R",
+    "/private/tmp/sig-fault-research/data/cohorts/hmx/pipeline"
+  ],
+  "finished_at": "2026-10-07T06:10:43.735306+00:00"
+}

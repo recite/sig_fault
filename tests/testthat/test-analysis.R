@@ -135,3 +135,12 @@ test_that("proportional variants preserve support and uncertainty definitions", 
   expect_equal(metrics$descriptive$flagged_median_post_range, c(13, 17))
   expect_equal(metrics$descriptive$flagged_increased, 69L)
 })
+
+test_that("explicit baseline years preserve estimates after a calendar shift", {
+  panel <- read_derived("panel")
+  expected <- panel_model(panel, "Calendar check")
+  panel$year <- panel$year + 7L
+  shifted <- panel_model(panel, "Calendar check", pre = 2017L, post = 2019:2022)
+  expect_equal(shifted, expected, tolerance = 1e-8)
+  expect_error(panel_model(panel, "Overlapping baseline", pre = 2019L, post = 2019:2022))
+})

@@ -25,11 +25,20 @@ def main():
             "data/cohorts/rpp/pipeline/identities.csv",
             "data/cohorts/rpp/pipeline/estimates.csv",
             "data/cohorts/rpp/pipeline/external_estimates.csv",
+            "data/cohorts/hmx/pipeline/panel.csv",
+            "data/cohorts/hmx/pipeline/paper_assessments.csv",
+            "data/cohorts/hmx/pipeline/estimates.csv",
             "renv.lock",
         ]
         for path in inputs:
             run.input(ROOT / path)
-        for path in ["scripts/meta/synthesize.R", "R/meta.R", "R/rpp.R"]:
+        for path in [
+            "scripts/meta/synthesize.R",
+            "R/meta.R",
+            "R/rpp.R",
+            "R/hmx.R",
+            "R/analysis.R",
+        ]:
             run.record["code"].append(fingerprint(ROOT / path))
         command = shlex.split(os.environ.get("META_RSCRIPT", "Rscript")) + [
             "scripts/meta/synthesize.R"
@@ -38,7 +47,8 @@ def main():
         subprocess.run(command, cwd=ROOT, check=True)
         status = json.loads((run.data / "assessment_status.json").read_text())
         for name in [
-            "four_distinct_studies",
+            "five_distinct_studies",
+            "hmx_reproduced",
             "no_known_original_overlap",
             "rpp_reproduced",
         ]:

@@ -1,13 +1,30 @@
 source("R/meta.R")
 source("R/rpp.R")
+source("R/analysis.R")
+source("R/hmx.R")
 read <- function(path) read.csv(path, stringsAsFactors = FALSE)
 write <- function(x, name) write.csv(x, file.path("data/meta", name), row.names = FALSE, na = "")
 base <- read("data/meta/lazic_components.csv")
 ids <- read("data/meta/lazic_component_identities.csv")
 rpp_ids <- read("data/cohorts/rpp/pipeline/identities.csv")
+hmx_directory <- "data/cohorts/hmx/pipeline"
+hmx_panel_data <- hmx_panel(hmx_directory)
+hmx_data <- hmx_sample(hmx_panel_data, selection = "nonoverlap")
+hmx <- panel_model(hmx_data, "nonoverlap", pre = 2017L, post = 2019L)
+hmx_published <- read(file.path(hmx_directory, "estimates.csv"))
+hmx_published <- hmx_published[hmx_published$specification == "nonoverlap", ]
+stopifnot(
+  nrow(hmx_published) == 1L,
+  abs(hmx$estimate - hmx_published$estimate) < 1e-10,
+  abs(hmx$se - hmx_published$se) < 1e-10
+)
+hmx$audit <- "HMX"
+hmx$lower <- hmx$percent_lower
+hmx$upper <- hmx$percent_upper
+hmx_ids <- unique(hmx_data[c("article_id", "doi")])
 all_ids <- rbind(ids, data.frame(
   component = "RPP", article_id = rpp_ids$paper_id, doi = rpp_ids$doi
-))
+), data.frame(component = "HMX", hmx_ids))
 known <- tolower(trimws(all_ids$doi))
 stopifnot(
   !anyDuplicated(known[nzchar(known)]),
@@ -62,7 +79,10 @@ for (diagnostic in unique(base$lal_diagnostic)) {
         stopifnot(nrow(x) == 1L, x$paired_papers == 153L)
         selected[selected$audit == "Nieuwenhuis", c("estimate", "se")] <- x[c("estimate", "se")]
       }
-      selected <- rbind(selected, rpp[rpp$window == window, c("audit", "estimate", "se")])
+      selected <- rbind(
+        selected, rpp[rpp$window == window, c("audit", "estimate", "se")],
+        hmx[c("audit", "estimate", "se")]
+      )
       selected$weight <- (1 / selected$se^2) / sum(1 / selected$se^2)
       tags <- data.frame(
         lal_diagnostic = diagnostic, rpp_window = window, nieuwenhuis_source = source
@@ -144,7 +164,7 @@ summary_rows <- cbind(
   interval(primary), interval(primary_re)
 )
 table(
-  c("IV definition", "Three audits", "Four studies", "Four, random effects"),
+  c("IV definition", "Three audits", "Five studies", "Five, random effects"),
   summary_rows, "lrrr", "tabs/assessment_summary.tex"
 )
 base_est <- read("data/meta/audit_contrasts.csv")
@@ -162,7 +182,8 @@ chosen <- rbind(
     lazic_est$specification == "first_followup_year",
     c("n_flagged", "n_comparison", "percent", "lower", "upper")
   ]),
-  rpp[1, c("audit", "n_flagged", "n_comparison", "percent", "lower", "upper")]
+  rpp[1, c("audit", "n_flagged", "n_comparison", "percent", "lower", "upper")],
+  hmx[c("audit", "n_flagged", "n_comparison", "percent", "lower", "upper")]
 )
 macros["AssessmentPapers"] <- sum(chosen$n_flagged + chosen$n_comparison)
 writeLines(
@@ -174,7 +195,10 @@ jsonlite::write_json(
   pretty = TRUE, auto_unbox = TRUE
 )
 component_rows <- cbind(
-  c("Neuroscience", "Instrumental variables", "Animal studies", "Psychology replications"),
+  c(
+    "Neuroscience", "Instrumental variables", "Animal studies",
+    "Psychology replications", "Interaction models"
+  ),
   paste(chosen$n_flagged, chosen$n_comparison, sep = " / "), interval(chosen),
   fmt(100 * primary_weights$weight[match(chosen$audit, primary_weights$audit)])
 )
@@ -217,16 +241,17 @@ status <- list(
     "adverse-versus-comparison post/pre citation ratios"
   ),
   population = paste(
-    "Included assessed papers in four assembled studies,",
+    "Included assessed papers in five assembled studies,",
     "not all scientific papers or errors"
   ),
-  studies = c("Nieuwenhuis", "Lal", "Lazic", "RPP"),
-  four_distinct_studies = length(unique(primary_weights$audit)) == 4L,
+  studies = c("Nieuwenhuis", "Lal", "Lazic", "RPP", "HMX"),
+  five_distinct_studies = length(unique(primary_weights$audit)) == 5L,
   no_known_original_overlap = !anyDuplicated(known[nzchar(known)]),
   unidentified_doi_note = paste(
     "One Lazic paper lacks DOI: 2012 Folia morphologica,",
     "outside RPP 2008 three-journal roster"
   ),
+  hmx_reproduced = TRUE, hmx_overlap_excluded = "Vernby (2013), also in Lal",
   rpp_reproduced = TRUE, rpp_role = "Replication judgment; not a statistical-error classification",
   primary_contributing_papers = sum(chosen$n_flagged + chosen$n_comparison),
   acquisition_cache_required = FALSE,

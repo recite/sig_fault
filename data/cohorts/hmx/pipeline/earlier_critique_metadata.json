@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          11
+        ]
+      ],
+      "date-time": "2025-04-11T04:09:28Z",
+      "timestamp": 1744344568243,
+      "version": "3.40.4"
+    },
+    "reference-count": 0,
+    "publisher": "World Bank, Washington, Dc",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1596/1813-9450-6602",
+    "type": "book",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2013-10-01T07:28:27Z",
+      "timestamp": 1380612507000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Sunshine Works—Comment on “the Adverse Effects of Sunshine: A Field Experiment on Legislative Transparency in an Authoritarian Assembly”"
+    ],
+    "prefix": "10.1596",
+    "author": [
+      {
+        "given": "James H.",
+        "family": "Anderson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "558",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          25
+        ]
+      ]
+    },
+    "container-title": [],
+    "original-title": [],
+    "language": "en",
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          10
+        ]
+      ],
+      "date-time": "2025-04-10T11:57:35Z",
+      "timestamp": 1744286255000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://hdl.handle.net/10986/15831"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          9
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1596/1813-9450-6602",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          9
+        ]
+      ]
+    }
+  }
+}
