@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "study": "panel",
+  "stage": "01_get",
+  "started_at": "2026-10-07T06:20:59.780795+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/panel/01_get.py",
+    "--offline"
+  ],
+  "python": "3.14.7",
+  "git_commit": "43e9d41f3dbfab9e3288dd22efc0902a0fcc3c67",
+  "inputs": [
+    {
+      "path": "data/cohorts/panel/sources.csv",
+      "sha256": "4e8017de79ef6f6349f4710fa565079a59f2fb00c5ed2a9e5043d86b4d477dc1",
+      "bytes": 544,
+      "rows": 2
+    },
+    {
+      "path": "private-data/cohorts/panel/source/panel_a.pdf",
+      "sha256": "d02400a195adc4de04bb42c8e222529ba516ab7e881a67dd9a8012e0cb95609e",
+      "bytes": 6498976
+    },
+    {
+      "path": "private-data/cohorts/panel/source/panel_b.pdf",
+      "sha256": "22ba3d625fc78a0208d0c657de330055484f397a16008b5fbc8685f45c9cba6c",
+      "bytes": 10413278
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/historical/655eeb6412148e59b7649cb125d5744ac5d47f61b9f7a84d70477c33cc460d1c.html",
+      "sha256": "60d0453c01f78b434460cd41af28f6fbe23e068b27d7e2704dd85080a65d8d54",
+      "bytes": 7351903
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/historical/655eeb6412148e59b7649cb125d5744ac5d47f61b9f7a84d70477c33cc460d1c.html.source.json",
+      "sha256": "f51623300db51564e3f0689439103b303a02b74fdd9bb7a521fc53ac1188e92a",
+      "bytes": 204
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/historical/ec2556b426f24ad483366b8d11a582382b223dd43fe1e1342c90ba2689c011eb.html",
+      "sha256": "137b6c064e6d6a9369a228a375ad00ceb3b190ed65f157866840f6291dd0f1ac",
+      "bytes": 3069868
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/historical/ec2556b426f24ad483366b8d11a582382b223dd43fe1e1342c90ba2689c011eb.html.source.json",
+      "sha256": "aa53dcf56ba110aaf5b097e5ff62f0485b729017ef27d4007f203d5eda9684da",
+      "bytes": 204
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/metadata/4c93b7d062e532e1851376d1193e612c68fbd3ae9f24491ff472c2ba73f9f79a.json",
+      "sha256": "65a121eb407e494b6e36547ddc0142e3b83eec309fee1e1aff540e88c545122c",
+      "bytes": 14036
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/metadata/4c93b7d062e532e1851376d1193e612c68fbd3ae9f24491ff472c2ba73f9f79a.json.source.json",
+      "sha256": "347e2f08aedc3da3c3b9001daaca0bd6eb67c971df0ce89e66095fe1048351d2",
+      "bytes": 224
+    }
+  ],
+  "outputs": [
+    {
+      "path": "private-data/cohorts/panel/pipeline/extracted/main.tex",
+      "sha256": "4760ec4ac90e92dd319406d156bccf7302c5b80fb1f118ca39b939854dd4df10",
+      "bytes": 95767
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/extracted/sm.tex",
+      "sha256": "1d6d1105202ef66d6be86e3b6647d3fd30e9fc1322793448248d0f5b82ebfa89",
+      "bytes": 70154
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/extracted/tscs.bib",
+      "sha256": "26d1f28d0d0cee8f13b99b75431619f92cefa1b0e388681dc166a71dd3a65255",
+      "bytes": 165516
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/journal_metadata.json",
+      "sha256": "2b0c0df55466df10e45802ad6a30f3dad95448f1e777532fe79fbb0202b6c7c9",
+      "bytes": 20361
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/historical_source_members.json",
+      "sha256": "af55c5d7155e37c805888e191b8146b810306f4c9301eb137e7eebf1b38a0d9b",
+      "bytes": 410
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/panel/01_get.py",
+      "sha256": "85eed1943f011f9e11acaaa286461361da255265b3c942e2b6a8e91eca77321f",
+      "bytes": 2827
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "final_source_hash",
+      "passed": true,
+      "detail": "panel_a.pdf"
+    },
+    {
+      "name": "final_source_hash",
+      "passed": true,
+      "detail": "panel_b.pdf"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/panel/pipeline/historical/655eeb6412148e59b7649cb125d5744ac5d47f61b9f7a84d70477c33cc460d1c.html"
+    },
+    {
+      "name": "dated_source_hash",
+      "passed": true,
+      "detail": "arxiv_v1_source"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/panel/pipeline/historical/ec2556b426f24ad483366b8d11a582382b223dd43fe1e1342c90ba2689c011eb.html"
+    },
+    {
+      "name": "dated_source_hash",
+      "passed": true,
+      "detail": "arxiv_v1_pdf"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/panel/pipeline/metadata/4c93b7d062e532e1851376d1193e612c68fbd3ae9f24491ff472c2ba73f9f79a.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "private-data/cohorts/panel/pipeline/historical/655eeb6412148e59b7649cb125d5744ac5d47f61b9f7a84d70477c33cc460d1c.html",
+      "cache_hit": true,
+      "url": "https://arxiv.org/src/2309.15983v1",
+      "retrieved_at": "2026-10-07T06:15:27.171440+00:00",
+      "sha256": "60d0453c01f78b434460cd41af28f6fbe23e068b27d7e2704dd85080a65d8d54",
+      "bytes": 7351903
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/historical/ec2556b426f24ad483366b8d11a582382b223dd43fe1e1342c90ba2689c011eb.html",
+      "cache_hit": true,
+      "url": "https://arxiv.org/pdf/2309.15983v1",
+      "retrieved_at": "2026-10-07T06:15:27.460133+00:00",
+      "sha256": "137b6c064e6d6a9369a228a375ad00ceb3b190ed65f157866840f6291dd0f1ac",
+      "bytes": 3069868
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/metadata/4c93b7d062e532e1851376d1193e612c68fbd3ae9f24491ff472c2ba73f9f79a.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1017/S0003055425000243",
+      "retrieved_at": "2026-10-07T06:15:27.808104+00:00",
+      "sha256": "65a121eb407e494b6e36547ddc0142e3b83eec309fee1e1aff540e88c545122c",
+      "bytes": 14036
+    }
+  ],
+  "metrics": {
+    "historical_version": "arxiv_v1",
+    "extracted_members": 3
+  },
+  "unresolved": [
+    "Historical original identities and overlap require verification",
+    "Public availability before 2023 has not been established",
+    "Final 49-paper diagnoses cannot be backdated to the 37-paper version"
+  ],
+  "status": "complete",
+  "finished_at": "2026-10-07T06:21:00.110918+00:00"
+}

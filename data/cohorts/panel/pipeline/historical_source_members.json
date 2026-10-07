@@ -1,0 +1,17 @@
+[
+  {
+    "member": "main.tex",
+    "bytes": 95767,
+    "sha256": "4760ec4ac90e92dd319406d156bccf7302c5b80fb1f118ca39b939854dd4df10"
+  },
+  {
+    "member": "sm.tex",
+    "bytes": 70154,
+    "sha256": "1d6d1105202ef66d6be86e3b6647d3fd30e9fc1322793448248d0f5b82ebfa89"
+  },
+  {
+    "member": "tscs.bib",
+    "bytes": 165516,
+    "sha256": "26d1f28d0d0cee8f13b99b75431619f92cefa1b0e388681dc166a71dd3a65255"
+  }
+]

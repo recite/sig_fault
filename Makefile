@@ -24,9 +24,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/rpp scripts/meta tests/test_research_pipeline.py
-	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/rpp scripts/meta tests/test_research_pipeline.py
-	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/rpp scripts/meta tests/test_research_pipeline.py
+	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta tests/test_research_pipeline.py tests/test_panel_pipeline.py
 	python3 -m black --check scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m isort --check-only --profile black scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m flake8 --max-line-length=88 scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
@@ -73,7 +73,7 @@ pilot-test: pilot
 	python3 -m unittest discover -s tests -p 'test_pilot.py'
 	python3 scripts/pilot.py validate
 
-check: paper lint test inventories-test external-test lazic-test cohorts
+check: paper lint test inventories-test external-test lazic-test cohorts panel-test
 
 clean:
 	cd ms && latexmk -C main.tex
@@ -236,3 +236,15 @@ hmx-verify:
 hmx-test:
 	python3 -m unittest discover -s tests -p 'test_research_pipeline.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "hmx", stop_on_failure = TRUE)'
+
+.PHONY: panel-sources panel-sources-fetch panel-test
+panel-sources-fetch:
+	python3 -m scripts.panel.01_get
+	python3 -m scripts.panel.02_assessments
+
+panel-sources:
+	python3 -m scripts.panel.01_get --offline
+	python3 -m scripts.panel.02_assessments
+
+panel-test:
+	python3 -m unittest discover -s tests -p 'test_panel_pipeline.py'

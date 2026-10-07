@@ -1,0 +1,730 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2026-09-30T17:21:10Z",
+      "timestamp": 1790788870632,
+      "version": "4.1.0"
+    },
+    "reference-count": 93,
+    "publisher": "Cambridge University Press (CUP)",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              9
+            ]
+          ],
+          "date-time": "2025-06-09T00:00:00Z",
+          "timestamp": 1749427200000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Am Polit Sci Rev"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Two-way fixed effects (TWFE) models are widely used in political science to establish causality, but recent methodological discussions highlight their limitations under heterogeneous treatment effects (HTE) and violations of the parallel trends (PT) assumption. This growing literature has introduced numerous new estimators and procedures, causing confusion among researchers about the reliability of existing results and best practices. To address these concerns, we replicated and reanalyzed 49 studies from leading journals that employ TWFE models for causal inference using observational panel data with binary treatments. Using six HTE-robust estimators, diagnostic tests, and sensitivity analyses, we find: (i) HTE-robust estimators yield qualitatively similar but highly variable results; (ii) while a few studies show clear signs of PT violations, many lack evidence to support this assumption; and (iii) many studies are underpowered when accounting for HTE and potential PT violations. We emphasize the importance of strong research designs and rigorous validation of key identifying assumptions.</jats:p>",
+    "DOI": "10.1017/s0003055425000243",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2025-06-09T01:33:51Z",
+      "timestamp": 1749432831000
+    },
+    "page": "245-266",
+    "source": "Crossref",
+    "is-referenced-by-count": 27,
+    "title": [
+      "Causal Panel Analysis under Parallel Trends: Lessons from a Large Reanalysis Study"
+    ],
+    "prefix": "10.1017",
+    "volume": "120",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8283-0208",
+        "authenticated-orcid": false,
+        "given": "ALBERT",
+        "family": "CHIU",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00f54p054",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "Stanford University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0002-3879-4160",
+        "authenticated-orcid": false,
+        "given": "XINGCHEN",
+        "family": "LAN",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "New York University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-5978-5163",
+        "authenticated-orcid": false,
+        "given": "ZIYI",
+        "family": "LIU",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/01an7q238",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of California, Berkeley"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2041-6671",
+        "authenticated-orcid": false,
+        "given": "YIQING",
+        "family": "XU",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00f54p054",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "Stanford University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "56",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          9
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "S0003055425000243_r52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12394"
+      },
+      {
+        "key": "S0003055425000243_r900",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/qje/qjz014"
+      },
+      {
+        "key": "S0003055425000243_r82",
+        "unstructured": "Strezhnev, Anton . 2018. “Semiparametric Weighting Estimators for Multi-Period Difference-in-Differences Designs.” Working Paper, New York University."
+      },
+      {
+        "key": "S0003055425000243_r72",
+        "first-page": "305",
+        "article-title": "Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends",
+        "volume": "4",
+        "author": "Roth",
+        "year": "2022",
+        "journal-title": "American Economic Review: Insights"
+      },
+      {
+        "key": "S0003055425000243_r16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/restud/rdae007"
+      },
+      {
+        "key": "S0003055425000243_r44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/714776"
+      },
+      {
+        "key": "S0003055425000243_r27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1257/aer.20181169"
+      },
+      {
+        "key": "S0003055425000243_r5",
+        "unstructured": "Baker, Andrew , Callaway, Brantly , Cunningham, Scott , Goodman-Bacon, Andrew , and Sant’Anna, Pedro H.C. . 2025. “Difference-in-Differences Designs: A Practitioner’s Guide.” arXiv. arXiv:2503.13323."
+      },
+      {
+        "key": "S0003055425000243_r9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/00208180151140658"
+      },
+      {
+        "key": "S0003055425000243_r36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055421001064"
+      },
+      {
+        "key": "S0003055425000243_r31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12661"
+      },
+      {
+        "key": "S0003055425000243_r55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/00208180151140667"
+      },
+      {
+        "key": "S0003055425000243_r22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12504"
+      },
+      {
+        "key": "S0003055425000243_r35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12323"
+      },
+      {
+        "key": "S0003055425000243_r40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jeconom.2021.03.014"
+      },
+      {
+        "key": "S0003055425000243_r8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2082979"
+      },
+      {
+        "key": "S0003055425000243_r54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12625"
+      },
+      {
+        "key": "S0003055425000243_r11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12449"
+      },
+      {
+        "key": "S0003055425000243_r64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055419000856"
+      },
+      {
+        "key": "S0003055425000243_r81",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12654"
+      },
+      {
+        "key": "S0003055425000243_r50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12417"
+      },
+      {
+        "key": "S0003055425000243_r34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12316"
+      },
+      {
+        "key": "S0003055425000243_r28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/rest_a_01414"
+      },
+      {
+        "key": "S0003055425000243_r56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/708914"
+      },
+      {
+        "key": "S0003055425000243_r67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055420000118"
+      },
+      {
+        "key": "S0003055425000243_r71",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/715257"
+      },
+      {
+        "key": "S0003055425000243_r69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/694547"
+      },
+      {
+        "key": "S0003055425000243_r53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/07350015.2018.1546591"
+      },
+      {
+        "key": "S0003055425000243_r30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12372"
+      },
+      {
+        "key": "S0003055425000243_r73",
+        "unstructured": "Roth, Jonathan . 2024. “Interpreting Event-Studies from Recent Difference-in-Differences Methods.” Working Paper."
+      },
+      {
+        "key": "S0003055425000243_r87",
+        "volume-title": "Econometric Analysis of Cross Section and Panel Data",
+        "author": "Wooldridge",
+        "year": "2010"
+      },
+      {
+        "key": "S0003055425000243_r60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/pan/mpw020"
+      },
+      {
+        "key": "S0003055425000243_r4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2021.1967163"
+      },
+      {
+        "key": "S0003055425000243_r24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/711130"
+      },
+      {
+        "key": "S0003055425000243_r63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12723"
+      },
+      {
+        "key": "S0003055425000243_r61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12709"
+      },
+      {
+        "key": "S0003055425000243_r65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055422001010"
+      },
+      {
+        "key": "S0003055425000243_r10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/003355304772839588"
+      },
+      {
+        "key": "S0003055425000243_r83",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jeconom.2020.09.006"
+      },
+      {
+        "key": "S0003055425000243_r38",
+        "unstructured": "Fu, Jiawei , Samii, Cyrus , and Wang, Ye . 2024. “Inference for Group Interaction Experiments.” Paper presented at the Annual Meeting of the American Political Science Association."
+      },
+      {
+        "key": "S0003055425000243_r20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7910/DVN/9RJFZF"
+      },
+      {
+        "key": "S0003055425000243_r85",
+        "unstructured": "Wang, Ye . 2021. “Causal Inference under Temporal and Spatial Interference.” Working Paper, New York University."
+      },
+      {
+        "key": "S0003055425000243_r902",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3386/w32054"
+      },
+      {
+        "key": "S0003055425000243_r13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055418000357"
+      },
+      {
+        "key": "S0003055425000243_r14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/715255"
+      },
+      {
+        "key": "S0003055425000243_r39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/700105"
+      },
+      {
+        "key": "S0003055425000243_r19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/692669"
+      },
+      {
+        "key": "S0003055425000243_r32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12127"
+      },
+      {
+        "key": "S0003055425000243_r47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/714932"
+      },
+      {
+        "key": "S0003055425000243_r3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jeconom.2020.10.012"
+      },
+      {
+        "key": "S0003055425000243_r70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/restud/rdad018"
+      },
+      {
+        "key": "S0003055425000243_r90",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/711131"
+      },
+      {
+        "key": "S0003055425000243_r79",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/711720"
+      },
+      {
+        "key": "S0003055425000243_r75",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jeconom.2023.03.008"
+      },
+      {
+        "key": "S0003055425000243_r88",
+        "volume-title": "The Oxford Handbook of Engaged Methodological Pluralism in Political Science",
+        "author": "Xu",
+        "year": "2023"
+      },
+      {
+        "key": "S0003055425000243_r76",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12662"
+      },
+      {
+        "key": "S0003055425000243_r74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3982/ECTA19402"
+      },
+      {
+        "key": "S0003055425000243_r49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/719008"
+      },
+      {
+        "key": "S0003055425000243_r33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055422001290"
+      },
+      {
+        "key": "S0003055425000243_r29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/722346"
+      },
+      {
+        "key": "S0003055425000243_r1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/ectj/utae014"
+      },
+      {
+        "key": "S0003055425000243_r41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/00208180151140630"
+      },
+      {
+        "key": "S0003055425000243_r6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jfineco.2022.01.004"
+      },
+      {
+        "key": "S0003055425000243_r15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/716952"
+      },
+      {
+        "key": "S0003055425000243_r57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/723998"
+      },
+      {
+        "key": "S0003055425000243_r59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/pan.2024.2"
+      },
+      {
+        "key": "S0003055425000243_r77",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jeconom.2020.06.003"
+      },
+      {
+        "key": "S0003055425000243_r84",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055419000844"
+      },
+      {
+        "key": "S0003055425000243_r21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/711902"
+      },
+      {
+        "key": "S0003055425000243_r7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/714775"
+      },
+      {
+        "key": "S0003055425000243_r45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12433"
+      },
+      {
+        "key": "S0003055425000243_r18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/rest.90.3.414"
+      },
+      {
+        "key": "S0003055425000243_r25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/717756"
+      },
+      {
+        "key": "S0003055425000243_r37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/697592"
+      },
+      {
+        "key": "S0003055425000243_r48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/723818"
+      },
+      {
+        "key": "S0003055425000243_r86",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/710087"
+      },
+      {
+        "key": "S0003055425000243_r80",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12284"
+      },
+      {
+        "key": "S0003055425000243_r26",
+        "unstructured": "de Chaisemartin, Clement , and D’Haultfœuille, Xavier . 2023. “Credible Answers to Hard Questions: Differences-in-Differences for Natural Experiments.” Working Paper, SSRN."
+      },
+      {
+        "key": "S0003055425000243_r51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12685"
+      },
+      {
+        "key": "S0003055425000243_r42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055422000934"
+      },
+      {
+        "key": "S0003055425000243_r58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055422000521"
+      },
+      {
+        "key": "S0003055425000243_r43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055419000637"
+      },
+      {
+        "key": "S0003055425000243_r89",
+        "unstructured": "Xu, Yiqing , Zhao, Anqi , and Ding, Peng . 2024. “Factorial Difference-in-Differences.” arXiv, arXiv:2407.11937."
+      },
+      {
+        "key": "S0003055425000243_r66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055422000247"
+      },
+      {
+        "key": "S0003055425000243_r23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/697251"
+      },
+      {
+        "key": "S0003055425000243_r46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/pan.2018.46"
+      },
+      {
+        "key": "S0003055425000243_r78",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12605"
+      },
+      {
+        "key": "S0003055425000243_r901",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18637/jss.v107.i07"
+      },
+      {
+        "key": "S0003055425000243_r951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/24-AOAS1986"
+      },
+      {
+        "key": "S0003055425000243_r68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/706767"
+      },
+      {
+        "key": "S0003055425000243_r12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12349"
+      },
+      {
+        "key": "S0003055425000243_r17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jeconom.2020.12.001"
+      },
+      {
+        "key": "S0003055425000243_r62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/723984"
+      }
+    ],
+    "container-title": [
+      "American Political Science Review"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0003055425000243",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          29
+        ]
+      ],
+      "date-time": "2026-01-29T10:16:39Z",
+      "timestamp": 1769681799000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.cambridge.org/core/product/identifier/S0003055425000243/type/journal_article"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          9
+        ]
+      ]
+    },
+    "references-count": 93,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0003055425000243"
+    ],
+    "URL": "https://doi.org/10.1017/s0003055425000243",
+    "relation": {},
+    "ISSN": [
+      "0003-0554",
+      "1537-5943"
+    ],
+    "issn-type": [
+      {
+        "value": "0003-0554",
+        "type": "print"
+      },
+      {
+        "value": "1537-5943",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          9
+        ]
+      ]
+    }
+  }
+}

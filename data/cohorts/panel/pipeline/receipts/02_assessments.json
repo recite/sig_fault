@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "study": "panel",
+  "stage": "02_assessments",
+  "started_at": "2026-10-07T06:21:00.286976+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/panel/02_assessments.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "43e9d41f3dbfab9e3288dd22efc0902a0fcc3c67",
+  "inputs": [
+    {
+      "path": "private-data/cohorts/panel/pipeline/extracted/main.tex",
+      "sha256": "4760ec4ac90e92dd319406d156bccf7302c5b80fb1f118ca39b939854dd4df10",
+      "bytes": 95767
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/extracted/sm.tex",
+      "sha256": "1d6d1105202ef66d6be86e3b6647d3fd30e9fc1322793448248d0f5b82ebfa89",
+      "bytes": 70154
+    },
+    {
+      "path": "private-data/cohorts/panel/pipeline/extracted/tscs.bib",
+      "sha256": "26d1f28d0d0cee8f13b99b75431619f92cefa1b0e388681dc166a71dd3a65255",
+      "bytes": 165516
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/journal_metadata.json",
+      "sha256": "2b0c0df55466df10e45802ad6a30f3dad95448f1e777532fe79fbb0202b6c7c9",
+      "bytes": 20361
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/historical_source_members.json",
+      "sha256": "af55c5d7155e37c805888e191b8146b810306f4c9301eb137e7eebf1b38a0d9b",
+      "bytes": 410
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/README.in.md",
+      "sha256": "6ce133fd07127899ca2786ca330eea71ae7059c4de05d30081e35f26c07d7722",
+      "bytes": 2362
+    },
+    {
+      "path": "data/cohorts/panel/papers.csv",
+      "sha256": "3faba13721124e61add5fee6e23e65a38ac32dd6acf8d5086c587909dc8dd0ce",
+      "bytes": 5969,
+      "rows": 49
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/panel/pipeline/historical_assessments.csv",
+      "sha256": "d90fbab0bdad71adf7cc53b074cb72082a54af1c0fb00a4a0b10aa118c1484a9",
+      "bytes": 2397,
+      "rows": 37
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/historical_diagnostic_counts.csv",
+      "sha256": "77e7614c727a279c60d52f87b5807478b8882137dcfd1a7eaf68eba1ad9357b6",
+      "bytes": 463,
+      "rows": 14
+    },
+    {
+      "path": "data/cohorts/panel/pipeline/README.md",
+      "sha256": "cfd9f855d4c0df441fcf35bd5e2240121b00da6b40b7dc1e012c7c6dff0bd5d6",
+      "bytes": 2317
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/panel/02_assessments.py",
+      "sha256": "a0ac78248f37f2d0ca4e4993354b1f769a500a52e8fc977c2e4da929cef209ad",
+      "bytes": 3319
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/panel/pipeline/receipts/01_get.json",
+      "sha256": "9400f8e7b4a5ba6fcaf214294fbe4edd74090c156a050ea5ee36c4fb9294b334",
+      "bytes": 6581
+    }
+  ],
+  "checks": [
+    {
+      "name": "historical_roster",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "historical_pretrend_groups",
+      "passed": true,
+      "detail": {
+        "comparison": 25,
+        "unknown": 4,
+        "flagged": 8
+      }
+    },
+    {
+      "name": "roundtrip",
+      "passed": true,
+      "detail": 37
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "historical_papers": 37,
+    "primary_counts": {
+      "comparison": 25,
+      "unknown": 4,
+      "flagged": 8
+    }
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T06:21:00.366315+00:00"
+}

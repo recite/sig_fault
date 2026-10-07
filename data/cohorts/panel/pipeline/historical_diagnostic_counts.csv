@@ -1,0 +1,15 @@
+diagnostic,source_outcome,papers
+att_p_below_05,false,10
+att_p_below_05,true,27
+pretrend_p_above_05,false,8
+pretrend_p_above_05,not_applicable,4
+pretrend_p_above_05,true,25
+equivalence_p_below_05,false,15
+equivalence_p_below_05,not_applicable,4
+equivalence_p_below_05,true,18
+placebo_p_above_05,false,5
+placebo_p_above_05,not_applicable,3
+placebo_p_above_05,true,29
+carryover_p_above_05,false,5
+carryover_p_above_05,not_applicable,15
+carryover_p_above_05,true,17
