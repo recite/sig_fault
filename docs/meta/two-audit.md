@@ -1,4 +1,4 @@
-# Provisional synthesis across two methodological audits
+# Citation changes across two methodological audits
 
 The completed neuroscience and IV cohorts permit a common-window summary, while
 the primary I4R article/review panels remain incomplete. The current three-audit

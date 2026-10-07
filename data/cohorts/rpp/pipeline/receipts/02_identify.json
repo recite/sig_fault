@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "study": "rpp",
+  "stage": "02_identify",
+  "started_at": "2026-10-07T04:50:54.781966+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/rpp/02_identify.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "inputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/publisher_records.json",
+      "sha256": "c166d9cf97c641df7ad9e642543d7f44ed1ea4ad7e3727a01f36f22499e82af4",
+      "bytes": 2471906
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/publication_types.csv",
+      "sha256": "39804e859ba8469904dbf58deb24807cf94bfc016e2ad4a8137fa570cbedc633",
+      "bytes": 1123,
+      "rows": 6
+    },
+    {
+      "path": "data/cohorts/rpp/papers.csv",
+      "sha256": "8236f144fbf86722f057c6e05e740aaf6e47571df27e9c716aa3a60f0bc85fd0",
+      "bytes": 17122,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/source_records/rpp.csv",
+      "sha256": "947fbc8b090a2ad45fca987cc510618d39b514df0317c0be5eeefb55d21a647d",
+      "bytes": 22333,
+      "rows": 100
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/identity_decisions.json",
+      "sha256": "7d9339d250e162923c008bf1578e12794b45a92dd969e36a3ab71a29d59a7e12",
+      "bytes": 2348
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/probe/r5gpv.json",
+      "sha256": "626e14587acef3a736fae3e1bff610ba7f1611153743ed8c3345907f834e642b",
+      "bytes": 4864
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/probe/r5gpv_files.json",
+      "sha256": "5a98abfe0d77b60734a3423303c6e43915a78776f5b624dc88cc9eadfe969ec4",
+      "bytes": 8701
+    },
+    {
+      "path": "data/cohorts/rpp/assessments.csv",
+      "sha256": "7a9a4dbd2bb12cc7b3c59edc2b421e57c476e6fa8e034036611fe64bcb402139",
+      "bytes": 7702,
+      "rows": 100
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/identities.csv",
+      "sha256": "e8fdc351024fb20fb799437179f704744374131259c216f671680fb7677ab8f3",
+      "bytes": 25447,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/identity_candidates.csv",
+      "sha256": "1c8c89ca4867cf8d3b66415d9f2e661a77cf4a2c221603005fc21fa46f1f47c5",
+      "bytes": 16082,
+      "rows": 98
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/rpp/02_identify.py",
+      "sha256": "2e0424a57f32747f7f8bc2b025074c45018b5639b35e8fa584208f5bce3e4a11",
+      "bytes": 6964
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
+      "bytes": 6907
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/rpp/pipeline/receipts/01_get.json",
+      "sha256": "052ee1dd557854b6f87a14a4e6769afa03f690c2550f636e1a57b3a7d273b1ae",
+      "bytes": 10264
+    }
+  ],
+  "checks": [
+    {
+      "name": "sourced_identity_decision",
+      "passed": true,
+      "detail": "Row.65"
+    },
+    {
+      "name": "expected_original_value",
+      "passed": true,
+      "detail": "Study.Title.O"
+    },
+    {
+      "name": "sourced_identity_decision",
+      "passed": true,
+      "detail": "Row.82"
+    },
+    {
+      "name": "expected_original_value",
+      "passed": true,
+      "detail": "Journal.O"
+    },
+    {
+      "name": "expected_original_value",
+      "passed": true,
+      "detail": "Volume.O"
+    },
+    {
+      "name": "expected_original_value",
+      "passed": true,
+      "detail": "Issue.O"
+    },
+    {
+      "name": "expected_original_value",
+      "passed": true,
+      "detail": "Pages.O"
+    },
+    {
+      "name": "sourced_identity_decision",
+      "passed": true,
+      "detail": "Row.145"
+    },
+    {
+      "name": "expected_original_value",
+      "passed": true,
+      "detail": "Study.Title.O"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.1"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.2"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.3"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.4"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.5"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.6"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.7"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.8"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.10"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.11"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.12"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.13"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.15"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.17"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.19"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.20"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.22"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.24"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.25"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.26"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.27"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.28"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.29"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.32"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.33"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.36"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.37"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.39"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.43"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.44"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.46"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.48"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.49"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.50"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.52"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.53"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.55"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.56"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.58"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.59"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.61"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.63"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.64"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.65"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.68"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.69"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.71"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.72"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.73"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.77"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.80"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.81"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.82"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.84"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.86"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.87"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.89"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.93"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.94"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.97"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.104"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.106"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.107"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.110"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.111"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.112"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.113"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.114"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.115"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.116"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.117"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.118"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.120"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.121"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.122"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.124"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.127"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.129"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.132"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.133"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.134"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.135"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.136"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.139"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.140"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.142"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.143"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.145"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.146"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.148"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.149"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.150"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.151"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.153"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.154"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.155"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.158"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.161"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.165"
+    },
+    {
+      "name": "known_replication_judgment",
+      "passed": true,
+      "detail": "Row.167"
+    },
+    {
+      "name": "paper_conservation",
+      "passed": true,
+      "detail": "98 original papers, 100 completed source assessments"
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "papers": 98,
+    "verified": 98,
+    "classifications": {
+      "unsuccessful": 59,
+      "successful": 39
+    }
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T04:50:55.933987+00:00"
+}

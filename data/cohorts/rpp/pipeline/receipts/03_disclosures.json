@@ -1,0 +1,4535 @@
+{
+  "schema_version": 1,
+  "study": "rpp",
+  "stage": "03_disclosures",
+  "started_at": "2026-10-07T04:50:56.026488+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/rpp/03_disclosures.py",
+    "--offline"
+  ],
+  "python": "3.14.7",
+  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "inputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/identities.csv",
+      "sha256": "e8fdc351024fb20fb799437179f704744374131259c216f671680fb7677ab8f3",
+      "bytes": 25447,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/identity_candidates.csv",
+      "sha256": "1c8c89ca4867cf8d3b66415d9f2e661a77cf4a2c221603005fc21fa46f1f47c5",
+      "bytes": 16082,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/design.md",
+      "sha256": "71e8dafffa9b4cb822158aa27e4cf281a3cced017644b30e2726faceb09ff23d",
+      "bytes": 8017
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/announcement/d792745e2ea561649a591f1667f4e25cf198ecc147e1d51b3c518831f01744b7.html",
+      "sha256": "0d6608fc85bae83f040003d126a04fa2d133e4ec45fdd8e8e5324264f021116c",
+      "bytes": 68843
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/announcement/d792745e2ea561649a591f1667f4e25cf198ecc147e1d51b3c518831f01744b7.html.source.json",
+      "sha256": "c6020740d460fbe7399b0d344b544b0975dc320b2071bb77cd27c99a74c3c5bb",
+      "bytes": 281
+    },
+    {
+      "path": "data/cohorts/rpp/source_records/rpp.csv",
+      "sha256": "947fbc8b090a2ad45fca987cc510618d39b514df0317c0be5eeefb55d21a647d",
+      "bytes": 22333,
+      "rows": 100
+    },
+    {
+      "path": "data/cohorts/rpp/paper_crosswalk.csv",
+      "sha256": "6d59b9ca0ad6b8a8ddd890d5cdedccf9ca0d376a74d11c12635146958b3cb6ab",
+      "bytes": 1893,
+      "rows": 100
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/bc1549fa5fab54cad21b508d2c2c4e8aa1239459abf605c7cd1e02cbdb3a3182.json",
+      "sha256": "848a7556cefeeece010efac83fd83eeceba8a2cd699149d1b5121bcfbe96ad65",
+      "bytes": 18772
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/bc1549fa5fab54cad21b508d2c2c4e8aa1239459abf605c7cd1e02cbdb3a3182.json.source.json",
+      "sha256": "4e962065e5b9a7a2f67f67895b8acf461bde16043b323ef03bb5dfca13c4a9b6",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/aefd2d1bcbb83692be93db9b5a822a1b5f6ee542dc35d13876f0dae174984bf8.json",
+      "sha256": "f986b432e330e5d24b84e0e96b1f2bd3b5f8668380ac854d0a9fda3586961f04",
+      "bytes": 36525
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/aefd2d1bcbb83692be93db9b5a822a1b5f6ee542dc35d13876f0dae174984bf8.json.source.json",
+      "sha256": "824bc11bb18274e2cd9c7e330e5ac67515695cc7bc9de0771a3f0114d58835b6",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4753a60f3d39be877ffa7b1eb49c45c0e318573decd07c348545a4bf398d7621.json",
+      "sha256": "8c5e74f80dbbe524332690834def43c0b5109d7033b60a73c8f02c3528056f66",
+      "bytes": 47510
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4753a60f3d39be877ffa7b1eb49c45c0e318573decd07c348545a4bf398d7621.json.source.json",
+      "sha256": "eb7d8ab4d9196ec8d1a3bcd4c65ae1ef6a438560e9eaee297ef2e63a545024ae",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/9b5932c5efb1937b725eac6bdfa1eeca813316ca04d187556921daf0b349f789.json",
+      "sha256": "6d3ae93148fd7fbbe10a2d7d4c28c649323dcd1e0ca49b8a82c9a888b07c9dec",
+      "bytes": 28150
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/9b5932c5efb1937b725eac6bdfa1eeca813316ca04d187556921daf0b349f789.json.source.json",
+      "sha256": "9c618a3c683be663c19cdc40d82ce64645606cad90cc9eaf59c47bc7888a262a",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2f911361c18d3eb71927d6a2cbb0b144acdc30c52a738667e76f5e80aaf4a629.json",
+      "sha256": "f3fc5deda9ffdfc418a4b264a7b85e29fd799720670ae4de0653572b4ddc0e05",
+      "bytes": 18529
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2f911361c18d3eb71927d6a2cbb0b144acdc30c52a738667e76f5e80aaf4a629.json.source.json",
+      "sha256": "39abf7e0f5d80c11afd7b9dbb48ab28bef5971f59fa76fa0543485543dda60bc",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7f941b0dd4bdd6f38df5a4cd4b8390013019e9a0079c56219016a730242d5587.json",
+      "sha256": "153ded9e14fce60a1c81dbd0e372ae7e87381681bfbb86284329c7573adecb1a",
+      "bytes": 24893
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7f941b0dd4bdd6f38df5a4cd4b8390013019e9a0079c56219016a730242d5587.json.source.json",
+      "sha256": "ddfd07839c58d05810529b6323a93a4d32b48adf52ce860e9a006c81cd7bd6ef",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/73c2ca0c97cc5b33271311c35ecf82f031829a97c540accda09fc455192373ce.json",
+      "sha256": "fad6336a0b87246fc2d09aab3f5e319d67fa48cbc87a5d5a8ba16ad23a0bd11e",
+      "bytes": 9803
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/73c2ca0c97cc5b33271311c35ecf82f031829a97c540accda09fc455192373ce.json.source.json",
+      "sha256": "5fd368371aca0c816900bfa3031ca4a8ba6a6f4d73ba1bedd317a5d5de56e0c1",
+      "bytes": 225
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f0d14651c7fc642dc21054671947a1fef0acbc63a5941f42e5339c4b8008f4e4.json",
+      "sha256": "ba4b9a4926745a3fd9f048c1e75b1548bc946e10309c7e16e3b530695b03409b",
+      "bytes": 15759
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f0d14651c7fc642dc21054671947a1fef0acbc63a5941f42e5339c4b8008f4e4.json.source.json",
+      "sha256": "7e2020fae52ff2d8f662736ab51b0ca3d5e2e7ce9810124b3b45484d0bb21889",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/eb41bdcf0cf96b580d486216a7a19de8999665ea52e02740e5405eb6bffdfd93.json",
+      "sha256": "6bba64839f6a8a8537b5ff97ce97443e216b1ce18bc1e6a66d15ea223aad5155",
+      "bytes": 20707
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/eb41bdcf0cf96b580d486216a7a19de8999665ea52e02740e5405eb6bffdfd93.json.source.json",
+      "sha256": "19278a8264ab22dc03d002a469e40e96c500b39f6fccd2c43cc2c75b20e80429",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1eecb45f82d2173487602de15dc825d0d42f443119e65803e0e873630fee814d.json",
+      "sha256": "9b94877f6b2b43a1bf093f3a85dbb0788a93db7429c16f218c6a16458a1311e0",
+      "bytes": 30973
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1eecb45f82d2173487602de15dc825d0d42f443119e65803e0e873630fee814d.json.source.json",
+      "sha256": "de8438a365698a4f50563361bb6d5bcc5e29cb79688c09f391a1a422d6048d6d",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a977181b8bb8087e9c73473e2c9bb204b558ecc3e671ac1fc8968150fa264073.json",
+      "sha256": "34a9a2d457085922f4742223da24491b7b6caf775c652027b576e29b97fded95",
+      "bytes": 24686
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a977181b8bb8087e9c73473e2c9bb204b558ecc3e671ac1fc8968150fa264073.json.source.json",
+      "sha256": "101dab193b2436e0b86d83cf49f9b1f5175263fca2a9cbd31d3de30c8c257945",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/474cd3785e6b7c33b6d10bf8ba9fcdcbdc32f9470f6bf0547f7884ebce1e88ad.json",
+      "sha256": "6440fe13688f2e6fd91a035ba98161074ee2bce0faf498910dbf45a625608392",
+      "bytes": 28441
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/474cd3785e6b7c33b6d10bf8ba9fcdcbdc32f9470f6bf0547f7884ebce1e88ad.json.source.json",
+      "sha256": "c6a0fd241bb56b03a6cc347a64c568bc1eb6d2eebcbde98616f37280d406370a",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5c4032dab6d1d54cde2e3c9cf89da99f5976a533962f1f4c46a36fd8663ea177.json",
+      "sha256": "f89af4fcb94b9299dd9b4c090acd858006a89617a62907a17d2d99c960af0d96",
+      "bytes": 19178
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5c4032dab6d1d54cde2e3c9cf89da99f5976a533962f1f4c46a36fd8663ea177.json.source.json",
+      "sha256": "a0e59fa2636a0f986f41b5d6cbbffd7825f1e7646152199af29b3212aa24d7ba",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/552ddf31199efeb84654ae846630ee0aed64dc54dea5ade8cb732c90286e4eac.json",
+      "sha256": "8ec4e7cf6ec9834358cdad5fa73c58e67fc18d2717ed5357292a6e0cf1f61a92",
+      "bytes": 29536
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/552ddf31199efeb84654ae846630ee0aed64dc54dea5ade8cb732c90286e4eac.json.source.json",
+      "sha256": "8da5df0f0a1de1cbe9e6902c3cdf8b014844429e25e31a066489e462c9515696",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7e6a48286e0aa6d3ef41c0406c8e253ab9c9df7c47b7ede9758ca2d6b84bd7dc.json",
+      "sha256": "af568447dfa720003843e5ac2c53799cfcc7f4a1e9dfee15bec2108a400ea301",
+      "bytes": 18061
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7e6a48286e0aa6d3ef41c0406c8e253ab9c9df7c47b7ede9758ca2d6b84bd7dc.json.source.json",
+      "sha256": "209275a85e108856f9a12c8bc50e958f7606a8516b97c473b34926a08f660313",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/923f5d92f9881d895451c8a787f639999f9e4f7747a118c6a3421d54ddf100a5.json",
+      "sha256": "f9a85c335b621c4bc9961f35257723e4ab546757fa7c63d2759e046fd0c2ca2e",
+      "bytes": 32297
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/923f5d92f9881d895451c8a787f639999f9e4f7747a118c6a3421d54ddf100a5.json.source.json",
+      "sha256": "0be5b6f318b286c12535f629251eec1948f903c4d4d2e20447b02bb9e0c200a8",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3b47540dd7f64b6e974d25efb424640465b89fea39f9fcb7c89e0aa41672989d.json",
+      "sha256": "51f5956d6e648f50e8b4a1561a66aad6952f126862c54072a2b2c4b63310dec1",
+      "bytes": 30963
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3b47540dd7f64b6e974d25efb424640465b89fea39f9fcb7c89e0aa41672989d.json.source.json",
+      "sha256": "3b308327722456700d325f2387eac1526dc9fc4e31aa5fbe52981cb3605f730e",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a0caf48a6c55ccdb9613fc3654a01d0ef360c05e21345a2e15fa51c03192b6af.json",
+      "sha256": "36cb2873d5a3bbba715e4a7ae8a1362d7d61729782ce08d04405dc8206252fc6",
+      "bytes": 23843
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a0caf48a6c55ccdb9613fc3654a01d0ef360c05e21345a2e15fa51c03192b6af.json.source.json",
+      "sha256": "b2183a9a823997e24830b2f36c7423ac37c5091056f94ee19f8f3563c1baf338",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1346c1e2101a5b4bfd8fcc58e4b50ac3620249faa7181e1de62983da6d833190.json",
+      "sha256": "42b7d3d10d7df93af551d9dd6b7b45ba60d3b0b622e29140817c8724fdd043ab",
+      "bytes": 27459
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1346c1e2101a5b4bfd8fcc58e4b50ac3620249faa7181e1de62983da6d833190.json.source.json",
+      "sha256": "6a6f2ac17817292ef854236f1cf2827e43e9b9d95bfc248bf94b17d8c0998acf",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/eff39b21228f8b52ee9e35b96f0d5da28d379ffd88c25e759655a1a9865c66ce.json",
+      "sha256": "055177c870abea4857104d23cd96f8b9761289ae08c56d195a64185799a197e9",
+      "bytes": 18553
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/eff39b21228f8b52ee9e35b96f0d5da28d379ffd88c25e759655a1a9865c66ce.json.source.json",
+      "sha256": "c08cb73a50b1d3d4c526c4832523b4235bc42492d125d87b9892371b7b06ea54",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6d3cf2ed648a4fd2dc3cabb484cfa05a0ea80f81e298e1eb493f989bf4cf4998.json",
+      "sha256": "c02bc3694feafdbc63b9010f7d460cb145f0904c3b9ea072a069903428f86da5",
+      "bytes": 20437
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6d3cf2ed648a4fd2dc3cabb484cfa05a0ea80f81e298e1eb493f989bf4cf4998.json.source.json",
+      "sha256": "75232c62de49332cb72dcf8b4445656d988a8bb43ef59ed9ff250336fa3cbed9",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/dda924f1f13df76b4ea48fe06690e14e4b527afc30c24a55989446555c196197.json",
+      "sha256": "2dc35e655cf980b43f81fee139ff5014ea5c68dde3d1b2eb0abceda94cef8f40",
+      "bytes": 23679
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/dda924f1f13df76b4ea48fe06690e14e4b527afc30c24a55989446555c196197.json.source.json",
+      "sha256": "efcaf1503d2c498507cc5cb7047aafaec47ccbfa42d5092ce10fc9bcb8030693",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e6c613ff1bf76fdc4764bd4b4c1d1d44f3eb2e49536abb748bd9bae558ad7f94.json",
+      "sha256": "69382388236faec518cd82d45b9d631cff3aa4bc3de678f2156a8dae2f5cc881",
+      "bytes": 11331
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e6c613ff1bf76fdc4764bd4b4c1d1d44f3eb2e49536abb748bd9bae558ad7f94.json.source.json",
+      "sha256": "949f5ec720dcba3e971a59c9ce77bfa739412e73216e33444ba365547d55ae3d",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/9ea5c238877f3857c101b1e15debca3f18b4e1af7f9220cfc5cc305b01d367de.json",
+      "sha256": "20698670c05b295035a32d7b884bc03ade78ebc70d0e114c3d30c3c5cf884290",
+      "bytes": 11315
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/9ea5c238877f3857c101b1e15debca3f18b4e1af7f9220cfc5cc305b01d367de.json.source.json",
+      "sha256": "93d20f4b2cb16714400470eb16345110e998cc0a31e4322a062ece1acf85553c",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/fbd491fdf542afe818299f0b7acc6ff14075ea7a559b56cc1d4b972c59d7e864.json",
+      "sha256": "48fac814f1ba5f46ae703d6065fcc8dba89727016f1fa23b2291696f294579aa",
+      "bytes": 91732
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/fbd491fdf542afe818299f0b7acc6ff14075ea7a559b56cc1d4b972c59d7e864.json.source.json",
+      "sha256": "2714d837807257e8082b869adf91defaa2a63829f32d921c4014fdeae0d18553",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/557657add19759b3c79010e4262a5e50ffa9607a33c9278c273cf409dc9c8542.json",
+      "sha256": "c16ab21e54a3532463a7c2eb9eb1620b68b21c0b6846c8ee2c10efd913e76e8c",
+      "bytes": 98954
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/557657add19759b3c79010e4262a5e50ffa9607a33c9278c273cf409dc9c8542.json.source.json",
+      "sha256": "9e7245087d4b2c25d294c3761a26c33fd2a92ff2b0e5fb895de40ac0f8cb7710",
+      "bytes": 233
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c77ab45eff09eb61aa9f5814776f2f47fbf78d82c83c7c8a3cf712a925c91d01.json",
+      "sha256": "f816b0b881e4de73dd07684531c636ea6c853c0f1e19f99577c902155787e9f5",
+      "bytes": 8220
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c77ab45eff09eb61aa9f5814776f2f47fbf78d82c83c7c8a3cf712a925c91d01.json.source.json",
+      "sha256": "3125d3d62db6016d0dc7a7c7b79ff1f0dfb2fbda7a12acc01170ccd8f3253ba9",
+      "bytes": 232
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2862fede24a904d6ce433b376e5dbd994c435dccb97cb584cd729a8463b60b19.json",
+      "sha256": "c2f030137311e678c19e54845913ba3cb61169f83935d7f48a9a0968918ce67e",
+      "bytes": 13077
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2862fede24a904d6ce433b376e5dbd994c435dccb97cb584cd729a8463b60b19.json.source.json",
+      "sha256": "390416d9ec102b550ada625e7d8139d71f942edfd4ad3e4f7e519a0f6ed5131b",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/fddc823af50305aa5549ffeeaaaef5d875edbffc5386bd72b32d0668f26a6e23.json",
+      "sha256": "9bf7f9cf64f4d000521ac3a85757f2206ce656cf97f8d6b79e57e57e02c23067",
+      "bytes": 24034
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/fddc823af50305aa5549ffeeaaaef5d875edbffc5386bd72b32d0668f26a6e23.json.source.json",
+      "sha256": "2b2e87ad91d3a4d1391e24df4ba3ed9eb58ac4fa595c25b437d42ee8bf49e42f",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/cf814a8458e56569f3fdf8e7d31c534ddc6f23fea010f87ecd1f0d9befc2e2ed.json",
+      "sha256": "0a2c0ab0f59027c41ee58d2edc94d9fbe339b274f9b1ae4bf4f36795f26c945e",
+      "bytes": 64023
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/cf814a8458e56569f3fdf8e7d31c534ddc6f23fea010f87ecd1f0d9befc2e2ed.json.source.json",
+      "sha256": "e60c20977769095a560c284a51ace2a596a68e85ef7bb1b42f2ffb0fb6650bf0",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5c985c2b1f1bb0280988149a399f70bc36d5b9865bcf3099e0030f323214a18f.json",
+      "sha256": "92cdd251e5ae152e0f66017f5553ca68ac2501e1afc9ea10a1bb63001b4f5f11",
+      "bytes": 16949
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5c985c2b1f1bb0280988149a399f70bc36d5b9865bcf3099e0030f323214a18f.json.source.json",
+      "sha256": "3dff0b635c0b91109652e32b6b2de89a8a5503c0738e7b41f729cbae0b24a29e",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3f61dea5cf0680d5a42d5b666359b046d519d3db6bdac4b3aec8a4a6783604f6.json",
+      "sha256": "df44c54dfddf75f9d00a4e2a5be89f819738fc77ebdf39979a9688551c7179ed",
+      "bytes": 65561
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3f61dea5cf0680d5a42d5b666359b046d519d3db6bdac4b3aec8a4a6783604f6.json.source.json",
+      "sha256": "a764b78afaa4975efbf6bb5f14f830432d45ba8414b54335c3d5e0d3fde982bf",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2ee43b2a5647cc9481b5fe1b88c7fd78f47e098b109ddd34df890cf616720a72.json",
+      "sha256": "b29b97bd5edd359dbce8cedc0ae34bc9d49aa86a8f275af11c673497c11da63f",
+      "bytes": 20703
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2ee43b2a5647cc9481b5fe1b88c7fd78f47e098b109ddd34df890cf616720a72.json.source.json",
+      "sha256": "5627e3cdcaa4b730798123ef2984c316835949ccb187de99cb9c2bb27adda708",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/cfc752021c80bff23609d7d04588c4c2ae12e96f02001648726506d47383fc16.json",
+      "sha256": "ddc3ce4ecc9092de1f8e19c1cee0dd41215a11b2e5938be5c529538c7b229d55",
+      "bytes": 22558
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/cfc752021c80bff23609d7d04588c4c2ae12e96f02001648726506d47383fc16.json.source.json",
+      "sha256": "f2c66d47ef1cd5058d881bd723872782688fde2c3f9f6b08223b7953f654bedc",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/75380b360408ee3bbc7806800ed61b64164a6fc6d5f84e68cee1520795cd6dc3.json",
+      "sha256": "485ce8e14fadcccf915d2046da61c8ecf6418b7d6023e4ff3ff1fd7c970ad5c0",
+      "bytes": 56362
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/75380b360408ee3bbc7806800ed61b64164a6fc6d5f84e68cee1520795cd6dc3.json.source.json",
+      "sha256": "830511700a161b4e7e900e51c8c1e066c1f9be729af96ec753943b856b027567",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/12b348d17632bd701511c548d530364bbd191eee25d5f0b109bebd32f0a0652d.json",
+      "sha256": "50bb23bced5374b0fc954379a5b1b70cb3c42fc459be5f2121d96c38c0cb4102",
+      "bytes": 18543
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/12b348d17632bd701511c548d530364bbd191eee25d5f0b109bebd32f0a0652d.json.source.json",
+      "sha256": "e89df552870cd5ecea9b0c699ccda15396371891f9849fdb7241bd229746d9be",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0aacf83fe023f7b5bc50b69615930ea891b0ae4959ccd7faf85762f26d5b755c.json",
+      "sha256": "8e3a675d9ad43a752ece03eb757362a48e05696dbc7f41c2ece70e5feb4290c8",
+      "bytes": 21760
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0aacf83fe023f7b5bc50b69615930ea891b0ae4959ccd7faf85762f26d5b755c.json.source.json",
+      "sha256": "c88845fa03683661d0fa54fc7e17fc6156c04967ef73741b94647c88ccd63cf1",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6c158b2d9de8a9168c604508ef45a626d73c2eb191e2d511b7d9621e5b4e6c36.json",
+      "sha256": "60c7e2ebd59dd7286f01ba5a24a0d25d6486dba09a0d08e255e805df76716157",
+      "bytes": 18428
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6c158b2d9de8a9168c604508ef45a626d73c2eb191e2d511b7d9621e5b4e6c36.json.source.json",
+      "sha256": "11f51d0dc46fbc25fb5d06e0b54ffe1e0f6676916f66a902c7bf5b230bf94b2a",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/72ed9ad6a0870597c60df1dffe4431ac2d84b5e0af69ad255aed460ccd3de574.json",
+      "sha256": "388f3c4643a927027da76076d145a9b311e8f60855de169872fce0f86c9e7bbe",
+      "bytes": 22098
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/72ed9ad6a0870597c60df1dffe4431ac2d84b5e0af69ad255aed460ccd3de574.json.source.json",
+      "sha256": "9610c9b68369cea3bc72ea6b908a911edcdf8b8eea4adf4ca9273919d63d0aba",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/621bf0e386d2de6068db242474762f12d365b9f402473c43aff5fc81cb4995d6.json",
+      "sha256": "81937b5a601be2db97c2dcd771d1884099044d731152e518881d36a519ef83bc",
+      "bytes": 32942
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/621bf0e386d2de6068db242474762f12d365b9f402473c43aff5fc81cb4995d6.json.source.json",
+      "sha256": "7dedffbc2fd531731eb284928c22dd3aa9b68b5103f77123f7c0fd149b4d6264",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ec9c816624ea501cd2dcd1e77492bb93031d8725080403b370476aeb43bb569b.json",
+      "sha256": "bb606778d97057262cd59b420810f921201baed116d5e7684317183a33314998",
+      "bytes": 23974
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ec9c816624ea501cd2dcd1e77492bb93031d8725080403b370476aeb43bb569b.json.source.json",
+      "sha256": "21b9d3d5b95dcb053fa3a96260ecd1fe572da2fa01525bcb15213c2f72355957",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/613c48e7b4832b39709a08fa8f4e7b8ba0e5555f4f91c46e7725fb8cd701e18e.json",
+      "sha256": "0a98441679cbab99d314055defeab775b9e465bbe02a962410e765c53bc69b2d",
+      "bytes": 30669
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/613c48e7b4832b39709a08fa8f4e7b8ba0e5555f4f91c46e7725fb8cd701e18e.json.source.json",
+      "sha256": "7f1279dff23b0f3bc77fe135a9192d19e38ca966a367f68329ee2df9df4082bf",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4b4f1fb9cbd1c0819a08cd2c3afc4af22de6e8d49c19985e5b0d3e78c366d926.json",
+      "sha256": "7d820da661aa21a997e1780a96207ef5f0a5146700e08721abe2bcad83c8714d",
+      "bytes": 35419
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4b4f1fb9cbd1c0819a08cd2c3afc4af22de6e8d49c19985e5b0d3e78c366d926.json.source.json",
+      "sha256": "0912afa2423786db0a71bc8acd96097dba8a161267d91092c5b4a0e1c4c21e8a",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b053382e5e7fbff0ae1078624463754e06b3f54b1887b3f61cd836d4b0250e89.json",
+      "sha256": "fef84d72856f69f5b7371ab986b256c719642d9212e9405a645e0da599ed0d40",
+      "bytes": 34031
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b053382e5e7fbff0ae1078624463754e06b3f54b1887b3f61cd836d4b0250e89.json.source.json",
+      "sha256": "8095f1024295d51b6ff46f00978cd7121aa4373a8cda62e21276a0dccbc4f7ea",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/aae64b12ea9770e23f47558f51551cca547442a57c1012df70a43aecb905152d.json",
+      "sha256": "c55c32430778eb0ce2a0d92184052c8bdabb9a50b36471dbac8d33dcadce092f",
+      "bytes": 38790
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/aae64b12ea9770e23f47558f51551cca547442a57c1012df70a43aecb905152d.json.source.json",
+      "sha256": "12a241c59fd299f31822cc7ca61403931c54a29a3ff890ee6b756742ac7fb6fa",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/55a76f7fc6245a6ca2b111cac96ef6ad8ff27439aad1ec71dcecccfea45257cd.json",
+      "sha256": "f86b7640bdbcf85a1abc6fdedcf63885dd81fc03a7b8378f32bc08d1c9daabd1",
+      "bytes": 22721
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/55a76f7fc6245a6ca2b111cac96ef6ad8ff27439aad1ec71dcecccfea45257cd.json.source.json",
+      "sha256": "900047057beceeb38c39d42f6bdc71b38f64961382caa1596274b904a2df976e",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c14b10b1d79529675885495e43ebe204d8ae70daef88eada8df60a136c20bbc3.json",
+      "sha256": "55e0d838b5b3a96d87aead31bb51b8bcfcb97cd2d9c8bb1ac2de6fd809b4bc16",
+      "bytes": 24572
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c14b10b1d79529675885495e43ebe204d8ae70daef88eada8df60a136c20bbc3.json.source.json",
+      "sha256": "684621bb751a3cf970e5bf52616c05fdfdf4a1a72e0dc9d1a2cce01d9c0fd36b",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/227cb8e12dae2ee116cd3e401f3c3aa28ab6ff05be2ce9c37d95913ea4e4e593.json",
+      "sha256": "aa6430f1376b0e8bdb6b5fd3585b9c37b69c3c4e99b4910dc2ab67e122694169",
+      "bytes": 33780
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/227cb8e12dae2ee116cd3e401f3c3aa28ab6ff05be2ce9c37d95913ea4e4e593.json.source.json",
+      "sha256": "cb0733ffd2abc2ea7e63b0cbbd63bbc8d90bb06276035811c3ee9695d225c6a6",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ac1cc82c0f7ba9828196119ad5253486a3b4363577efc2e872c551fe0430906f.json",
+      "sha256": "fd53e5792c1f064c4523b08efec0a7dea398e6a3958613b116f41969958dac6d",
+      "bytes": 18671
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ac1cc82c0f7ba9828196119ad5253486a3b4363577efc2e872c551fe0430906f.json.source.json",
+      "sha256": "53547cf32efdf3ae2ca9e5d8fdbba884989b80b984d3f0c3063c74c1237ad156",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/37ef55b1db80ef1eb48d809fd5bd43fb9491be9a135187e33d9db2de0bfbd525.json",
+      "sha256": "186cab06696af06187af3f4be10da215dc6bd8b38458ec35dd1e1fd32b26e619",
+      "bytes": 16007
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/37ef55b1db80ef1eb48d809fd5bd43fb9491be9a135187e33d9db2de0bfbd525.json.source.json",
+      "sha256": "679d221aa5be502596ef8840e194afd70358a5b9f616b5cdfad3d9e2e4dc9843",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/42d22e322b5e5ee8e2a4830a9fd92ef4351da56704967aaf00f7f496bfc760e6.json",
+      "sha256": "7e62179bea6f12c9c65a3adf214ec0f56c298f517e3250123b1e4f2487c1f859",
+      "bytes": 26946
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/42d22e322b5e5ee8e2a4830a9fd92ef4351da56704967aaf00f7f496bfc760e6.json.source.json",
+      "sha256": "797b29aa1a78892b258353eb4316aafd289c2997973499d8bf9ff057fdb093df",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e7158886b9e5c0d808e03429d136321342092b4757bb1014d2d896433f13a779.json",
+      "sha256": "1164a9889ef0650e89b9ed5d7872313108fefd1adf10161804caa07e9eeda3f2",
+      "bytes": 17201
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e7158886b9e5c0d808e03429d136321342092b4757bb1014d2d896433f13a779.json.source.json",
+      "sha256": "0b0281a36f98571d5c5110b35134651bfadeb2de58b1d80ec7e432f6309a14db",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b8afca5a83f04096e2432cca33a0ad647097498d38a679dc056573889c48e1ae.json",
+      "sha256": "b85bd07c09816c059830ebac3195dc609d2aa3b2dbaf16d61a80c110946d5ac0",
+      "bytes": 21379
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b8afca5a83f04096e2432cca33a0ad647097498d38a679dc056573889c48e1ae.json.source.json",
+      "sha256": "3a62094c2c57fd0236d99ed20d16b3101e1789d1333e6a0c393900904aead687",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/85254d133b4c7b0e86d04ecb0b683c113b4f6321474ba47d745293765471f6be.json",
+      "sha256": "04343a877489c92fcadfd6651ecf238887d311768d7b8e8fdd6ecbca3f1363c8",
+      "bytes": 15698
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/85254d133b4c7b0e86d04ecb0b683c113b4f6321474ba47d745293765471f6be.json.source.json",
+      "sha256": "3dbcc96ce6c179ac758073fdc202ce2adb9d24a1079d1eacb2a2533f40f7e2da",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/d259ad339304edd2e49fb11c7f1d5508e80f4452940f27630dc5b8c7cea6e8cd.json",
+      "sha256": "fcb267e89e6d42c7c23c383acf445cb5538f8f082a42dc23aa36e7df13b2f5bb",
+      "bytes": 43922
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/d259ad339304edd2e49fb11c7f1d5508e80f4452940f27630dc5b8c7cea6e8cd.json.source.json",
+      "sha256": "5abe698c160f0e5696d453ea27ff69cfe81ec4394801754ebffe11601129d5bf",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a18557b6a21eb162cca5bf25731063e09df9bac7a9a15a036d4a41676206bacf.json",
+      "sha256": "69093be4e2b610e2cab484fb0597d9c6bfb4af95811d72633c8a1d2d00b78948",
+      "bytes": 8988
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a18557b6a21eb162cca5bf25731063e09df9bac7a9a15a036d4a41676206bacf.json.source.json",
+      "sha256": "438cba3291d0837ff86965e46bd75699a35936814c182d6107289afcaaf8f2e2",
+      "bytes": 225
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8d6e3d09ffc0e1b87af9041fadc6de8142b4cf5e5a8bb34bf1cc7f9d1d952ce0.json",
+      "sha256": "df374eb6790b71c04df1304cca77b7cde7f6787d3afb14d2e1f114b254635a4b",
+      "bytes": 25642
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8d6e3d09ffc0e1b87af9041fadc6de8142b4cf5e5a8bb34bf1cc7f9d1d952ce0.json.source.json",
+      "sha256": "ee90ae660abf5402bc9d5e433da9ec50877a4f1e7ece7f443688c5d88d0f19d2",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3f77b6b64fffb8b0bcd887d98843475459dd47dcd875f2b540582a69fb53c320.json",
+      "sha256": "65e090bde4a5848ceba572f24ea19fd2a96b8c33c4070a256720a03cefaa24dc",
+      "bytes": 20680
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3f77b6b64fffb8b0bcd887d98843475459dd47dcd875f2b540582a69fb53c320.json.source.json",
+      "sha256": "05a1bf91e5ce2328f7f37408947702db69f1535893eafed774bbe4463b970580",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0fa82ee943d57c4f77eb03544e528c7ae23a625d21e80a8690c4c9c8202b01c8.json",
+      "sha256": "de011ccc313c4b94c26e0f8dbadc6ea6885c245aa0565839dc2125d707a22016",
+      "bytes": 27589
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0fa82ee943d57c4f77eb03544e528c7ae23a625d21e80a8690c4c9c8202b01c8.json.source.json",
+      "sha256": "3b2bd00cf57e88ae2ab430e76e8b23ca65f1f1d26f523185306064f7314dd014",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b79d9ebdfae2032fdb0b72e2ccddadbd10d9ccf1dd3a9201c7511e16a79f7bac.json",
+      "sha256": "0ad5c9823fd095130914fbdeb9da6cbf2f37c58de3bcafbc97efe663950ded91",
+      "bytes": 17966
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b79d9ebdfae2032fdb0b72e2ccddadbd10d9ccf1dd3a9201c7511e16a79f7bac.json.source.json",
+      "sha256": "99cf54fcef1b2bb46869547c6d531f496ce28a742da89a5b31eef584b1224cb6",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/02278764a57f66f1b790d88015f0974827c09967d20d51015c1cbf61a5cac727.json",
+      "sha256": "cd760435fffbb1ec3147932c97fa9309403289587dc93ad453aa81fe5171dd33",
+      "bytes": 20635
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/02278764a57f66f1b790d88015f0974827c09967d20d51015c1cbf61a5cac727.json.source.json",
+      "sha256": "632fb89136ec05d474a534f1b35467986e22ac2f25fb98424829d98b78e02b29",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8ba69adb52ab3fdd6c423b489fc7662bb63a6aa84d66340cc5331bbe1dfcd177.json",
+      "sha256": "ec88d16197b291ba697fa10f170bd22b8d444c8c0f4f1944ddabfe4747ceff7b",
+      "bytes": 20253
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8ba69adb52ab3fdd6c423b489fc7662bb63a6aa84d66340cc5331bbe1dfcd177.json.source.json",
+      "sha256": "dd9b3baba5fb2c6edb47d4fa960f5d4b7e1de5dd33b14a1e277f1732cd4988b7",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f6209e76b43b9ef1471b636b7f06249e8f2f4da4bb1ca88ff4ee6970b8e3f4cc.json",
+      "sha256": "177ec889d003c3cada70d4d7ce18100857c9149f1429f9c27954017df70c12fe",
+      "bytes": 23093
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f6209e76b43b9ef1471b636b7f06249e8f2f4da4bb1ca88ff4ee6970b8e3f4cc.json.source.json",
+      "sha256": "e9842edab85e4b8fef18e53ba4b601bd97bd84fe2d35c3a1f07cdea552bf0c82",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/278f5e441d8cd2f8af6d1c32bb106bb23fac4ebdd81de4a748efd30cc1485672.json",
+      "sha256": "c584bb435355ad18cf770d4d812e3a63c172d4bd6dc7b3990291954000af7287",
+      "bytes": 9144
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/278f5e441d8cd2f8af6d1c32bb106bb23fac4ebdd81de4a748efd30cc1485672.json.source.json",
+      "sha256": "2bf464d1495f0464c47f1dae9578a3923af6ea76a566517ba639d052273fe16c",
+      "bytes": 225
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c7ffd218630d1a5b04a2ed3f1b1fe55668356cca76277b22fc763dbff94e840a.json",
+      "sha256": "ae0987f1c17c83b2006a4cda6cb27b852e06a32b0203ccb8309443b2aa2a811b",
+      "bytes": 14240
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c7ffd218630d1a5b04a2ed3f1b1fe55668356cca76277b22fc763dbff94e840a.json.source.json",
+      "sha256": "089f90650f407d0e37c4c1a6bf32275ea21d1074cbe4f5dc716b87dc7b78d7d7",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/77195102f2d07c6b82775822b0be74cc310797ecfa43f950b29824f07b9476fa.json",
+      "sha256": "302c7134a5e825f3edd35f5fd4fba9e5127039a8720b69244f8f00ee5955dbfc",
+      "bytes": 30272
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/77195102f2d07c6b82775822b0be74cc310797ecfa43f950b29824f07b9476fa.json.source.json",
+      "sha256": "c84f222d7d99909b238a20f8c65294459b55e2c973c48855655afc54736bdcdf",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c1bc198ae6211229d98627822b27155236a4add507d54e5597758b26fc49a096.json",
+      "sha256": "eaa3ba8e2e57d14403f3666a44b42659296fe4e7a2b257b49ff2f3d274ae4ea5",
+      "bytes": 9958
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c1bc198ae6211229d98627822b27155236a4add507d54e5597758b26fc49a096.json.source.json",
+      "sha256": "e4d39d15c71f8460a25485fafedcee54b1cabb6c8fd98ca1bc9f9b93f16b343f",
+      "bytes": 225
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4fa71ba06862c5614bde73e73accf2700bc82ce023c46867810050b7bca2ea8c.json",
+      "sha256": "23c0cd06813f09034413d6b67df42d5e621bd62291d9172ae05f1595e6f2fbbc",
+      "bytes": 17293
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4fa71ba06862c5614bde73e73accf2700bc82ce023c46867810050b7bca2ea8c.json.source.json",
+      "sha256": "11b1fdc58b020630a0a43fe1585e5b4b04ab87e5e0a3ba8ba011c15e95053100",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c652eb39e98f9a114734a28238520e27c5972d5ca430b8599fcf02a047026ac6.json",
+      "sha256": "5baa904f547da857c76b607feb556929423f7c78eab5d3099b0539a45437a27e",
+      "bytes": 24230
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c652eb39e98f9a114734a28238520e27c5972d5ca430b8599fcf02a047026ac6.json.source.json",
+      "sha256": "ae8a9f5d7e0695a7be2b93a870b7eaf7db7d92ce86de4bcb953d86017c82d2e2",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/847c95fd68485db8d1207e7db14b318bd8b2454228ba7973e18c3b9e475f6be1.json",
+      "sha256": "4578fcbe939da35ce37698eb997a9f5d15db0113d8dc6489f617e6634d4571f1",
+      "bytes": 17434
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/847c95fd68485db8d1207e7db14b318bd8b2454228ba7973e18c3b9e475f6be1.json.source.json",
+      "sha256": "437828edafa5ccd77855a466214947a70ab718b519293a459badf0b3a695c423",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/548ad2604bd2e29ae121c88b067b2ee98f07d50f41711153da68b4b7e1c08e0c.json",
+      "sha256": "2343a41c098fd69b9a5e5fe2d3017ef72a8880bcd4b0102df5509d84000d8190",
+      "bytes": 16722
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/548ad2604bd2e29ae121c88b067b2ee98f07d50f41711153da68b4b7e1c08e0c.json.source.json",
+      "sha256": "c0230aceb92aed5de71158f91b4c0d49b70d22ae7b08abc53c554bb63ef06242",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7b1e299a7fb763769372ec5b5dba972c1907e0fd2599c3f58df4c1ddb075a3f6.json",
+      "sha256": "7164953a10e7370f7c5c415521c5f2b24c60a7ba697baf625c3f051d850574a4",
+      "bytes": 55754
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7b1e299a7fb763769372ec5b5dba972c1907e0fd2599c3f58df4c1ddb075a3f6.json.source.json",
+      "sha256": "3807e120bc187316ab5cfc5f98253fc7e22410fb11a7386994f194e81310bc65",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a83a08304fc93f7c540d2dedb5310091ec38415efd08f693dfe5ce88619af567.json",
+      "sha256": "3d744470903baddf26124d187a9f57efc89201969e463f1b9b902601717a55b1",
+      "bytes": 19693
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a83a08304fc93f7c540d2dedb5310091ec38415efd08f693dfe5ce88619af567.json.source.json",
+      "sha256": "5771f9b306f136ba346fb4f7e754fbf01848630aa42ac731f1cac07d6a655efe",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ed6ab2b0012be3fd14ebb88c8b4e239fd3117701e3990249b7313b470886e734.json",
+      "sha256": "a24431bcadccf5ee8068472a968aea75c23f39d634d11b72c10dad137838e6c6",
+      "bytes": 15889
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ed6ab2b0012be3fd14ebb88c8b4e239fd3117701e3990249b7313b470886e734.json.source.json",
+      "sha256": "d6faff7fcd0d42ff43123b1bb2c5d68f85603a42d8322b9babf050e381b31912",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7a10a4e2712d024cfacd38e070d3d29cfd52ab02e1c4539383730f5db808adaa.json",
+      "sha256": "afe98be85e6a4031ffc9548f7fd5eaadee78829e210a795dc9ad13900dcda549",
+      "bytes": 72101
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7a10a4e2712d024cfacd38e070d3d29cfd52ab02e1c4539383730f5db808adaa.json.source.json",
+      "sha256": "135d72b790c624080fd40486c3ab8fa88aa503e4de654e2ddf9a633960cd2eab",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8b3c99ee72c645fdf93268261748ae41c437aee32578c849ac5d8c6e586bb5f5.json",
+      "sha256": "146db374e1f6bd6de0fe9f7585193328f19c5423a8659e05c19972862ed1f721",
+      "bytes": 33872
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8b3c99ee72c645fdf93268261748ae41c437aee32578c849ac5d8c6e586bb5f5.json.source.json",
+      "sha256": "85e5b60ad70380efd6a68f33e078958e184e89a5b876a0ee149026d42ed5e93f",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/521129dcc5d1fbaab2ef2dcb2cb09bd288dd9c65a417fe9cb93a5b4d68879490.json",
+      "sha256": "59d1f9d579794ab17901ceaec0a337509e856e29d10e1cc474432ccb5c26c7b4",
+      "bytes": 22424
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/521129dcc5d1fbaab2ef2dcb2cb09bd288dd9c65a417fe9cb93a5b4d68879490.json.source.json",
+      "sha256": "b391b218d046877bb4507345e82787c9de2626f1230b8c4760b08c5d11415639",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/423f46a66415743b166fa7a9f4a8f72c518ed03fa72313f015fed1b1824b106e.json",
+      "sha256": "9ea0db415543781a1755b0bbff23d6d9a8ac43219f7b8d095465089888a2da0f",
+      "bytes": 25358
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/423f46a66415743b166fa7a9f4a8f72c518ed03fa72313f015fed1b1824b106e.json.source.json",
+      "sha256": "157d801a894a4c0447b89ad26d1ad27b2d82ac8547db9f661fe503fa57b4ca43",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/09916206e6782641a8843edf30dca1cf1cc420d279b97b9c840a37ff5171bb31.json",
+      "sha256": "d80ad778fa245882e9f261a1153f74d39b849e0d5e17e752a926c5cb71d4c6f4",
+      "bytes": 16057
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/09916206e6782641a8843edf30dca1cf1cc420d279b97b9c840a37ff5171bb31.json.source.json",
+      "sha256": "266d3ca425459eb32d8c8652ce77c7c1cb5df8cbd04e1707a3aca592a47505bc",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5901451234138d8a13a65efb26e269695f7853a600c616a6a61d7d62bd936981.json",
+      "sha256": "328c2abbb3202f8dc7009a2eadafd6f71468bfb1eb8acb77e8433917c865466c",
+      "bytes": 13434
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5901451234138d8a13a65efb26e269695f7853a600c616a6a61d7d62bd936981.json.source.json",
+      "sha256": "8b84e335d12eae61d4825a79603bac1294755860493ef03e93d0ee09c4848795",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/36526b493159a8c3086957be0f1810dfd19c7a8e1408f5385d4c94778ea8cd65.json",
+      "sha256": "74ed01392a66d36d5db401ed3f42a1b208b2f9a5c5bf8fc508116fe9f7c4c6dd",
+      "bytes": 28305
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/36526b493159a8c3086957be0f1810dfd19c7a8e1408f5385d4c94778ea8cd65.json.source.json",
+      "sha256": "90f849ba8591ed1e1b00676ef66be59d9dee027e320c0bc7813dbb3e15599990",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/96772ab15ec3ea28ba86e988e355223dcd98b06a823c83f1300353a40586a25c.json",
+      "sha256": "1cd2bea9dd56c8f2edb9565a59f6483defe81e4e26d413a34125aadd699bf465",
+      "bytes": 35914
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/96772ab15ec3ea28ba86e988e355223dcd98b06a823c83f1300353a40586a25c.json.source.json",
+      "sha256": "011b8865d2281af8ef8d9bfae6dda11d1fd2cc55c63681934254f3062c5053dc",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1f1a3edc9517bfb5b626936a4099a746ebd9f681bd4cc04070c6a5b8f6dde089.json",
+      "sha256": "1bafa82996115080d0b4ad64054d33d196e23e6c264fcedd1404350717817f55",
+      "bytes": 14793
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1f1a3edc9517bfb5b626936a4099a746ebd9f681bd4cc04070c6a5b8f6dde089.json.source.json",
+      "sha256": "546bebb9088f0ed052094ed332eaf9b0456a95b9ec1d250a08a53286224276f2",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4b2625df223d117f89272e4469893247f70e7834b362535e0e58373abcd5cb0e.json",
+      "sha256": "05d9b391ec3b90c811dd0fbad9e4d514a296a1a8df3d662fb2f53b5fd1319dbe",
+      "bytes": 67322
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4b2625df223d117f89272e4469893247f70e7834b362535e0e58373abcd5cb0e.json.source.json",
+      "sha256": "b5878adc1eb2716289acd1fb728b5b50dcbd0bd4dc36c75b3cd9153acd89506f",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f7ecb07adb1089bd512a0a0336f6c3998a497aefb0fcad0bc65050b7de016fa0.json",
+      "sha256": "cb9769092e394be1ebc2247e21865cbd124d219d20b24f75acba9c4fcb32871e",
+      "bytes": 29083
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f7ecb07adb1089bd512a0a0336f6c3998a497aefb0fcad0bc65050b7de016fa0.json.source.json",
+      "sha256": "f760560055dc71b7fc10796b8180644b35c3c8e2ec6e742f67aad85f92b6a352",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ae73b8bfac2f15f3bad1fef8e299eabf42790242abb95077f2a938d5c81ef51f.json",
+      "sha256": "408d04013ff84e2c6c9042952d9d40f964d6fd8b33e8ae3f9f404f1170ecdd82",
+      "bytes": 16260
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ae73b8bfac2f15f3bad1fef8e299eabf42790242abb95077f2a938d5c81ef51f.json.source.json",
+      "sha256": "b8f3c151b538fe4d2778c7c0a1a45be9fff2e1c755a309bdfc60a7b03e472bb5",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2a0585f285a8543a9e0902d25d19230cc1ee24219046ae0962bb3d1a7908e39d.json",
+      "sha256": "823b4522812b86b40bb75c89c730b3f10ad3977261e38b0f091161d8b5bf049a",
+      "bytes": 26941
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2a0585f285a8543a9e0902d25d19230cc1ee24219046ae0962bb3d1a7908e39d.json.source.json",
+      "sha256": "41362a8fc231152d051e0bcb4274a566370f0bf634977e404cc88d2ac652be02",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0080fb8e0511064712cd5531af2a73bd77e079eafcb84e4284b71181621b826d.json",
+      "sha256": "e42be747c0dd8983bbb2ccc71c904d926ed8eab79e9b2f5a0b317658e098a30b",
+      "bytes": 12879
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0080fb8e0511064712cd5531af2a73bd77e079eafcb84e4284b71181621b826d.json.source.json",
+      "sha256": "13a4732f4812c2cce20b0d3f919b9de4b2564021b74ddf1d06f5f0dfb0797ed9",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6a1ef635ef7e19520f2840eedf171627bb5f9845ceee85fb23b15371d376a473.json",
+      "sha256": "6f31070d10667519cb6f0b5d56e4449bde94f6f24da222a8094f553476b3c7a0",
+      "bytes": 19793
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6a1ef635ef7e19520f2840eedf171627bb5f9845ceee85fb23b15371d376a473.json.source.json",
+      "sha256": "e84f96be599559c51c1a4d18127e7037fa835e7e6abdd54bc19836b54958cbb5",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/da08e7da965f578cd71eecff801c8c1c2218e695ba4defa82236ce07559e6428.json",
+      "sha256": "5f4587fa51684ef98a99419be735b7827a00c69a0baf7a62f3b53a4277fde1cd",
+      "bytes": 26780
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/da08e7da965f578cd71eecff801c8c1c2218e695ba4defa82236ce07559e6428.json.source.json",
+      "sha256": "d7a38cb44ea8d1ed7ca8b621df408a4021e58f8abd198194d9a2b0f69041094f",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e25f3853566415311d58040c806cc58af5cea1dd8e6d7004a961df06bf92ef33.json",
+      "sha256": "a6047c3f1743c910ac17a39c641b4584ea49555a2caf4166b2b574747189897c",
+      "bytes": 23793
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e25f3853566415311d58040c806cc58af5cea1dd8e6d7004a961df06bf92ef33.json.source.json",
+      "sha256": "1be8d4c13151afd75fb321f7cd14fe116d953d7df53322080448369880cd5565",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2f882f58c6be53867625563ca0344829bb983795ce6c23728b4d7633aa09e107.json",
+      "sha256": "b3b0fa993f8e32c69b98b247a0e2b35d045f519651c635212e4e75742ff4081e",
+      "bytes": 28297
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2f882f58c6be53867625563ca0344829bb983795ce6c23728b4d7633aa09e107.json.source.json",
+      "sha256": "280f6f6671c8ecd47603e74620ed878165e2780769096a411bcccfc4845aab0d",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b4ead343a9e73f766f687c58c95ff5863c228ee04336fa5f0bf0de42262388e6.json",
+      "sha256": "88d6934726abb96da478edb0f95411b009331d924590738f28eb755461598b8b",
+      "bytes": 21613
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b4ead343a9e73f766f687c58c95ff5863c228ee04336fa5f0bf0de42262388e6.json.source.json",
+      "sha256": "b1430d64f6a89dffcb652fea69f937dc67ee21c029f135e724af7415c582b9bc",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/dc532394aee7488c6f4d74a0131405f8e417bed5e52fac692dcf4c9bee977fd1.json",
+      "sha256": "a15224391911be0d8f13cc0588165ee156b7a6a77794ce592606a8baf8f74e3c",
+      "bytes": 26856
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/dc532394aee7488c6f4d74a0131405f8e417bed5e52fac692dcf4c9bee977fd1.json.source.json",
+      "sha256": "e63b634ee5dd5b951106d1190bdaca604bfe0c1998d37700658ce591174ef536",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/507132e3110201da55620591ca5a96b5c4d0ecb9f50329b079fb58c231dd3e3c.json",
+      "sha256": "9fe3a8866dfa56a21ac6ac2be30b130fc42f2445c612e0397fe6027fee7e1fcd",
+      "bytes": 20470
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/507132e3110201da55620591ca5a96b5c4d0ecb9f50329b079fb58c231dd3e3c.json.source.json",
+      "sha256": "0e67da18a582cffeb54f850bb44478a82675c27e813ee8499ab66dc07becb403",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/44c6ca10c2b90d3dc6bde46e32657895ab9460f405a784a90d3b203f1b40256d.json",
+      "sha256": "114b374d0100281f0927c0558d501bb875ccac9024c993981986feff335fba11",
+      "bytes": 32978
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/44c6ca10c2b90d3dc6bde46e32657895ab9460f405a784a90d3b203f1b40256d.json.source.json",
+      "sha256": "45b2db0641356ab1b861083deae5ef16f540432d5dcaeac475e73b7604e1a7bd",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/faa218a211ebdc997bc50fc7ae42970c55071bce70f0ee73665f324c6283ffe5.json",
+      "sha256": "48d518500edc374c536c61fff6b299bb890b7c8f80f7ab1712af1cbe804a1320",
+      "bytes": 27077
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/faa218a211ebdc997bc50fc7ae42970c55071bce70f0ee73665f324c6283ffe5.json.source.json",
+      "sha256": "c43bd831a5a29829dc0e894bb93ce2d167cff238753e2e98cdcc3972bc948eb2",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2e620a3663d45c1145156c4dffc1bbcda5dcde0c6b7bdc9125d8a0d44c74dc31.json",
+      "sha256": "e51a96d7d3e607d57d58a441935e3c10e802418b454c877f36b8613720a8672b",
+      "bytes": 12113
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2e620a3663d45c1145156c4dffc1bbcda5dcde0c6b7bdc9125d8a0d44c74dc31.json.source.json",
+      "sha256": "aff01c4045d1cb039a3f247c1d17939417003a2c4c0c63d9b205eceaf06eeb2c",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ffdccfbf8769bee86c59c0d90416f2c968a57ea610acd84ffda304e9d82ba161.json",
+      "sha256": "20d6575472bc669edefb5b444fcfcf51cad42a26515f6fe83cb979bcf922a92c",
+      "bytes": 15450
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ffdccfbf8769bee86c59c0d90416f2c968a57ea610acd84ffda304e9d82ba161.json.source.json",
+      "sha256": "e694a777f3eceab1e784b29958778b9cac8ddc5737f4e976e1adcc12a43d1558",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/386ab2332bba9bf1c4731941a2051bdf4d38bee7e6ffbc932c3d4427dc191b41.json",
+      "sha256": "359b9228ee768407c5006d99cb7180f40e608bcde594b869abd6f1fcd3802939",
+      "bytes": 15673
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/386ab2332bba9bf1c4731941a2051bdf4d38bee7e6ffbc932c3d4427dc191b41.json.source.json",
+      "sha256": "ece2b27e4a00d4acd8d6de84424c5bb6834872972a02fc22454c1fe2c0124fb9",
+      "bytes": 226
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/69ee8ae809f5fd1b579f38585b66fe9d517a483a75a9009934e00c654c3b4492.json",
+      "sha256": "5fbb81615508943c549b23d3159432d8f155cc1cb85bd57d78925e84ec730972",
+      "bytes": 28019
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/69ee8ae809f5fd1b579f38585b66fe9d517a483a75a9009934e00c654c3b4492.json.source.json",
+      "sha256": "ff68efa17beaa28d485f8de3c026064a11efcd33be161655d42cc5a91e151625",
+      "bytes": 226
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/disclosures.csv",
+      "sha256": "028e0605db52a2a95980336d38e851d222ed18bb031b73470ca86bee90913113",
+      "bytes": 21439,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/disclosure_evidence.csv",
+      "sha256": "9858b1d12385703eab8ed2db19695d5740b12a1e7961071f31190b19940d916f",
+      "bytes": 102077,
+      "rows": 596
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/rpp/03_disclosures.py",
+      "sha256": "acaa72d3b82e1ed92a1affd06f114ecd56030a50d707a1b96f08af6b4ae1afc8",
+      "bytes": 7047
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
+      "bytes": 6907
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/rpp/pipeline/receipts/02_identify.json",
+      "sha256": "4da10867d3adae5eb98f6766a60e18316d76de80d55dd7d42dcdc962c353bff4",
+      "bytes": 14755
+    }
+  ],
+  "checks": [
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/announcement/d792745e2ea561649a591f1667f4e25cf198ecc147e1d51b3c518831f01744b7.html"
+    },
+    {
+      "name": "announcement_date_present",
+      "passed": true,
+      "detail": "https://www.cos.io/about/news/massive-collaboration-testing-reproducibility-psychology-studies-publishes-findings"
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "qwkum"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/bc1549fa5fab54cad21b508d2c2c4e8aa1239459abf605c7cd1e02cbdb3a3182.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "qwkum",
+        "records": 20,
+        "expected": [
+          20
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "rmvk5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/aefd2d1bcbb83692be93db9b5a822a1b5f6ee542dc35d13876f0dae174984bf8.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "rmvk5",
+        "records": 38,
+        "expected": [
+          38
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "4dvzb"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/4753a60f3d39be877ffa7b1eb49c45c0e318573decd07c348545a4bf398d7621.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "4dvzb",
+        "records": 46,
+        "expected": [
+          46
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "8j9cg"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/9b5932c5efb1937b725eac6bdfa1eeca813316ca04d187556921daf0b349f789.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "8j9cg",
+        "records": 29,
+        "expected": [
+          29
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "4xdkk"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/2f911361c18d3eb71927d6a2cbb0b144acdc30c52a738667e76f5e80aaf4a629.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "4xdkk",
+        "records": 19,
+        "expected": [
+          19
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "atgp5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/7f941b0dd4bdd6f38df5a4cd4b8390013019e9a0079c56219016a730242d5587.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "atgp5",
+        "records": 26,
+        "expected": [
+          26
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "6n3bm"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/73c2ca0c97cc5b33271311c35ecf82f031829a97c540accda09fc455192373ce.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "6n3bm",
+        "records": 10,
+        "expected": [
+          10
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "c5pbg"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/f0d14651c7fc642dc21054671947a1fef0acbc63a5941f42e5339c4b8008f4e4.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "c5pbg",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "vmipw"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/eb41bdcf0cf96b580d486216a7a19de8999665ea52e02740e5405eb6bffdfd93.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "vmipw",
+        "records": 22,
+        "expected": [
+          22
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "rvkc5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/1eecb45f82d2173487602de15dc825d0d42f443119e65803e0e873630fee814d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "rvkc5",
+        "records": 34,
+        "expected": [
+          34
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "7rtcz"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/a977181b8bb8087e9c73473e2c9bb204b558ecc3e671ac1fc8968150fa264073.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "7rtcz",
+        "records": 27,
+        "expected": [
+          27
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "gxvd3"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/474cd3785e6b7c33b6d10bf8ba9fcdcbdc32f9470f6bf0547f7884ebce1e88ad.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "gxvd3",
+        "records": 30,
+        "expected": [
+          30
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "bscfe"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/5c4032dab6d1d54cde2e3c9cf89da99f5976a533962f1f4c46a36fd8663ea177.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "bscfe",
+        "records": 21,
+        "expected": [
+          21
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "hp27x"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/552ddf31199efeb84654ae846630ee0aed64dc54dea5ade8cb732c90286e4eac.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "hp27x",
+        "records": 31,
+        "expected": [
+          31
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "gcj7x"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/7e6a48286e0aa6d3ef41c0406c8e253ab9c9df7c47b7ede9758ca2d6b84bd7dc.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "gcj7x",
+        "records": 18,
+        "expected": [
+          18
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "bzdr2"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/923f5d92f9881d895451c8a787f639999f9e4f7747a118c6a3421d54ddf100a5.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "bzdr2",
+        "records": 36,
+        "expected": [
+          36
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "p9thw"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/3b47540dd7f64b6e974d25efb424640465b89fea39f9fcb7c89e0aa41672989d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "p9thw",
+        "records": 30,
+        "expected": [
+          30
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "sqim7"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/a0caf48a6c55ccdb9613fc3654a01d0ef360c05e21345a2e15fa51c03192b6af.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "sqim7",
+        "records": 24,
+        "expected": [
+          24
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "k9gp6"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/1346c1e2101a5b4bfd8fcc58e4b50ac3620249faa7181e1de62983da6d833190.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "k9gp6",
+        "records": 29,
+        "expected": [
+          29
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "hasfu"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/eff39b21228f8b52ee9e35b96f0d5da28d379ffd88c25e759655a1a9865c66ce.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "hasfu",
+        "records": 19,
+        "expected": [
+          19
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "ahpik"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/6d3cf2ed648a4fd2dc3cabb484cfa05a0ea80f81e298e1eb493f989bf4cf4998.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "ahpik",
+        "records": 22,
+        "expected": [
+          22
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "uhpyr"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/dda924f1f13df76b4ea48fe06690e14e4b527afc30c24a55989446555c196197.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "uhpyr",
+        "records": 24,
+        "expected": [
+          24
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "ujhlw"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/e6c613ff1bf76fdc4764bd4b4c1d1d44f3eb2e49536abb748bd9bae558ad7f94.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "ujhlw",
+        "records": 12,
+        "expected": [
+          12
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "rhbqj"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/9ea5c238877f3857c101b1e15debca3f18b4e1af7f9220cfc5cc305b01d367de.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "rhbqj",
+        "records": 12,
+        "expected": [
+          12
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "swrhy"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/fbd491fdf542afe818299f0b7acc6ff14075ea7a559b56cc1d4b972c59d7e864.json"
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "swrhy"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/557657add19759b3c79010e4262a5e50ffa9607a33c9278c273cf409dc9c8542.json"
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "swrhy"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/c77ab45eff09eb61aa9f5814776f2f47fbf78d82c83c7c8a3cf712a925c91d01.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "swrhy",
+        "records": 208,
+        "expected": [
+          208
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "vmz2e"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/2862fede24a904d6ce433b376e5dbd994c435dccb97cb584cd729a8463b60b19.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "vmz2e",
+        "records": 14,
+        "expected": [
+          14
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "0pxro"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/fddc823af50305aa5549ffeeaaaef5d875edbffc5386bd72b32d0668f26a6e23.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "0pxro",
+        "records": 24,
+        "expected": [
+          24
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "38ges"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/cf814a8458e56569f3fdf8e7d31c534ddc6f23fea010f87ecd1f0d9befc2e2ed.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "38ges",
+        "records": 64,
+        "expected": [
+          64
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "pz0my"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/5c985c2b1f1bb0280988149a399f70bc36d5b9865bcf3099e0030f323214a18f.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "pz0my",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "rc6mv"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/3f61dea5cf0680d5a42d5b666359b046d519d3db6bdac4b3aec8a4a6783604f6.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "rc6mv",
+        "records": 70,
+        "expected": [
+          70
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "kez47"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/2ee43b2a5647cc9481b5fe1b88c7fd78f47e098b109ddd34df890cf616720a72.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "kez47",
+        "records": 23,
+        "expected": [
+          23
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "5tbxf"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/cfc752021c80bff23609d7d04588c4c2ae12e96f02001648726506d47383fc16.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "5tbxf",
+        "records": 20,
+        "expected": [
+          20
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "rgm6p"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/75380b360408ee3bbc7806800ed61b64164a6fc6d5f84e68cee1520795cd6dc3.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "rgm6p",
+        "records": 52,
+        "expected": [
+          52
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "vy1bc"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/12b348d17632bd701511c548d530364bbd191eee25d5f0b109bebd32f0a0652d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "vy1bc",
+        "records": 18,
+        "expected": [
+          18
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "l8srm"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/0aacf83fe023f7b5bc50b69615930ea891b0ae4959ccd7faf85762f26d5b755c.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "l8srm",
+        "records": 23,
+        "expected": [
+          23
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "wkgpq"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/6c158b2d9de8a9168c604508ef45a626d73c2eb191e2d511b7d9621e5b4e6c36.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "wkgpq",
+        "records": 19,
+        "expected": [
+          19
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "su6bm"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/72ed9ad6a0870597c60df1dffe4431ac2d84b5e0af69ad255aed460ccd3de574.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "su6bm",
+        "records": 22,
+        "expected": [
+          22
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "xtsq6"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/621bf0e386d2de6068db242474762f12d365b9f402473c43aff5fc81cb4995d6.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "xtsq6",
+        "records": 33,
+        "expected": [
+          33
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "ke43j"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/ec9c816624ea501cd2dcd1e77492bb93031d8725080403b370476aeb43bb569b.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "ke43j",
+        "records": 26,
+        "expected": [
+          26
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "h84qd"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/613c48e7b4832b39709a08fa8f4e7b8ba0e5555f4f91c46e7725fb8cd701e18e.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "h84qd",
+        "records": 33,
+        "expected": [
+          33
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "sq8k9"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/4b4f1fb9cbd1c0819a08cd2c3afc4af22de6e8d49c19985e5b0d3e78c366d926.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "sq8k9",
+        "records": 40,
+        "expected": [
+          40
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "fejxb"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/b053382e5e7fbff0ae1078624463754e06b3f54b1887b3f61cd836d4b0250e89.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "fejxb",
+        "records": 37,
+        "expected": [
+          37
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "mxryb"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/aae64b12ea9770e23f47558f51551cca547442a57c1012df70a43aecb905152d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "mxryb",
+        "records": 42,
+        "expected": [
+          42
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "imrx2"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/55a76f7fc6245a6ca2b111cac96ef6ad8ff27439aad1ec71dcecccfea45257cd.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "imrx2",
+        "records": 24,
+        "expected": [
+          24
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "sg3su"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/c14b10b1d79529675885495e43ebe204d8ae70daef88eada8df60a136c20bbc3.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "sg3su",
+        "records": 25,
+        "expected": [
+          25
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "qthf2"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/227cb8e12dae2ee116cd3e401f3c3aa28ab6ff05be2ce9c37d95913ea4e4e593.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "qthf2",
+        "records": 38,
+        "expected": [
+          38
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "7ux8p"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/ac1cc82c0f7ba9828196119ad5253486a3b4363577efc2e872c551fe0430906f.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "7ux8p",
+        "records": 20,
+        "expected": [
+          20
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "2gx4k"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/37ef55b1db80ef1eb48d809fd5bd43fb9491be9a135187e33d9db2de0bfbd525.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "2gx4k",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "nhwv5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/42d22e322b5e5ee8e2a4830a9fd92ef4351da56704967aaf00f7f496bfc760e6.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "nhwv5",
+        "records": 29,
+        "expected": [
+          29
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "nr7d9"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/e7158886b9e5c0d808e03429d136321342092b4757bb1014d2d896433f13a779.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "nr7d9",
+        "records": 19,
+        "expected": [
+          19
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "79dey"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/b8afca5a83f04096e2432cca33a0ad647097498d38a679dc056573889c48e1ae.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "79dey",
+        "records": 22,
+        "expected": [
+          22
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "xse7q"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/85254d133b4c7b0e86d04ecb0b683c113b4f6321474ba47d745293765471f6be.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "xse7q",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "r5gpv"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/d259ad339304edd2e49fb11c7f1d5508e80f4452940f27630dc5b8c7cea6e8cd.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "r5gpv",
+        "records": 50,
+        "expected": [
+          50
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "v8vft"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/a18557b6a21eb162cca5bf25731063e09df9bac7a9a15a036d4a41676206bacf.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "v8vft",
+        "records": 10,
+        "expected": [
+          10
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "j8bpa"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/8d6e3d09ffc0e1b87af9041fadc6de8142b4cf5e5a8bb34bf1cc7f9d1d952ce0.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "j8bpa",
+        "records": 27,
+        "expected": [
+          27
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "abxcj"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/3f77b6b64fffb8b0bcd887d98843475459dd47dcd875f2b540582a69fb53c320.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "abxcj",
+        "records": 21,
+        "expected": [
+          21
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "ng6cc"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/0fa82ee943d57c4f77eb03544e528c7ae23a625d21e80a8690c4c9c8202b01c8.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "ng6cc",
+        "records": 30,
+        "expected": [
+          30
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "cxmf6"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/b79d9ebdfae2032fdb0b72e2ccddadbd10d9ccf1dd3a9201c7511e16a79f7bac.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "cxmf6",
+        "records": 19,
+        "expected": [
+          19
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "mua6d"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/02278764a57f66f1b790d88015f0974827c09967d20d51015c1cbf61a5cac727.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "mua6d",
+        "records": 22,
+        "expected": [
+          22
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "etg7c"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/8ba69adb52ab3fdd6c423b489fc7662bb63a6aa84d66340cc5331bbe1dfcd177.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "etg7c",
+        "records": 20,
+        "expected": [
+          20
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "kegmc"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/f6209e76b43b9ef1471b636b7f06249e8f2f4da4bb1ca88ff4ee6970b8e3f4cc.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "kegmc",
+        "records": 26,
+        "expected": [
+          26
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "iajp5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/278f5e441d8cd2f8af6d1c32bb106bb23fac4ebdd81de4a748efd30cc1485672.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "iajp5",
+        "records": 10,
+        "expected": [
+          10
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "edcr7"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/c7ffd218630d1a5b04a2ed3f1b1fe55668356cca76277b22fc763dbff94e840a.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "edcr7",
+        "records": 15,
+        "expected": [
+          15
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "7dyp5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/77195102f2d07c6b82775822b0be74cc310797ecfa43f950b29824f07b9476fa.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "7dyp5",
+        "records": 30,
+        "expected": [
+          30
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "aaudl"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/c1bc198ae6211229d98627822b27155236a4add507d54e5597758b26fc49a096.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "aaudl",
+        "records": 11,
+        "expected": [
+          11
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "d0n81"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/4fa71ba06862c5614bde73e73accf2700bc82ce023c46867810050b7bca2ea8c.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "d0n81",
+        "records": 18,
+        "expected": [
+          18
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "qlzap"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/c652eb39e98f9a114734a28238520e27c5972d5ca430b8599fcf02a047026ac6.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "qlzap",
+        "records": 25,
+        "expected": [
+          25
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "yaeu7"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/847c95fd68485db8d1207e7db14b318bd8b2454228ba7973e18c3b9e475f6be1.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "yaeu7",
+        "records": 19,
+        "expected": [
+          19
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "aczvt"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/548ad2604bd2e29ae121c88b067b2ee98f07d50f41711153da68b4b7e1c08e0c.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "aczvt",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "ivfu6"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/7b1e299a7fb763769372ec5b5dba972c1907e0fd2599c3f58df4c1ddb075a3f6.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "ivfu6",
+        "records": 66,
+        "expected": [
+          66
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "rzjvn"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/a83a08304fc93f7c540d2dedb5310091ec38415efd08f693dfe5ce88619af567.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "rzjvn",
+        "records": 21,
+        "expected": [
+          21
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "3h29d"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/ed6ab2b0012be3fd14ebb88c8b4e239fd3117701e3990249b7313b470886e734.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "3h29d",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "73pnd"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/7a10a4e2712d024cfacd38e070d3d29cfd52ab02e1c4539383730f5db808adaa.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "73pnd",
+        "records": 80,
+        "expected": [
+          80
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "94j6h"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/8b3c99ee72c645fdf93268261748ae41c437aee32578c849ac5d8c6e586bb5f5.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "94j6h",
+        "records": 35,
+        "expected": [
+          35
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "dnaxe"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/521129dcc5d1fbaab2ef2dcb2cb09bd288dd9c65a417fe9cb93a5b4d68879490.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "dnaxe",
+        "records": 24,
+        "expected": [
+          24
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "fxqsk"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/423f46a66415743b166fa7a9f4a8f72c518ed03fa72313f015fed1b1824b106e.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "fxqsk",
+        "records": 27,
+        "expected": [
+          27
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "mjasz"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/09916206e6782641a8843edf30dca1cf1cc420d279b97b9c840a37ff5171bb31.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "mjasz",
+        "records": 16,
+        "expected": [
+          16
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "c5fza"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/5901451234138d8a13a65efb26e269695f7853a600c616a6a61d7d62bd936981.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "c5fza",
+        "records": 14,
+        "expected": [
+          14
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "b98zw"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/36526b493159a8c3086957be0f1810dfd19c7a8e1408f5385d4c94778ea8cd65.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "b98zw",
+        "records": 29,
+        "expected": [
+          29
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "jhkpe"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/96772ab15ec3ea28ba86e988e355223dcd98b06a823c83f1300353a40586a25c.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "jhkpe",
+        "records": 39,
+        "expected": [
+          39
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "5dx4v"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/1f1a3edc9517bfb5b626936a4099a746ebd9f681bd4cc04070c6a5b8f6dde089.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "5dx4v",
+        "records": 15,
+        "expected": [
+          15
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "2gkjt"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/4b2625df223d117f89272e4469893247f70e7834b362535e0e58373abcd5cb0e.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "2gkjt",
+        "records": 71,
+        "expected": [
+          71
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "i29mh"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/f7ecb07adb1089bd512a0a0336f6c3998a497aefb0fcad0bc65050b7de016fa0.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "i29mh",
+        "records": 30,
+        "expected": [
+          30
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "ta3j8"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/ae73b8bfac2f15f3bad1fef8e299eabf42790242abb95077f2a938d5c81ef51f.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "ta3j8",
+        "records": 17,
+        "expected": [
+          17
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "vnsqg"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/2a0585f285a8543a9e0902d25d19230cc1ee24219046ae0962bb3d1a7908e39d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "vnsqg",
+        "records": 29,
+        "expected": [
+          29
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "k4y9i"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/0080fb8e0511064712cd5531af2a73bd77e079eafcb84e4284b71181621b826d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "k4y9i",
+        "records": 14,
+        "expected": [
+          14
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "yuybh"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/6a1ef635ef7e19520f2840eedf171627bb5f9845ceee85fb23b15371d376a473.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "yuybh",
+        "records": 21,
+        "expected": [
+          21
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "76qc5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/da08e7da965f578cd71eecff801c8c1c2218e695ba4defa82236ce07559e6428.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "76qc5",
+        "records": 29,
+        "expected": [
+          29
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "dncxa"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/e25f3853566415311d58040c806cc58af5cea1dd8e6d7004a961df06bf92ef33.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "dncxa",
+        "records": 25,
+        "expected": [
+          25
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "blcj6"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/2f882f58c6be53867625563ca0344829bb983795ce6c23728b4d7633aa09e107.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "blcj6",
+        "records": 31,
+        "expected": [
+          31
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "tf8ky"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/b4ead343a9e73f766f687c58c95ff5863c228ee04336fa5f0bf0de42262388e6.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "tf8ky",
+        "records": 23,
+        "expected": [
+          23
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "apidb"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/dc532394aee7488c6f4d74a0131405f8e417bed5e52fac692dcf4c9bee977fd1.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "apidb",
+        "records": 28,
+        "expected": [
+          28
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "0aifq"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/507132e3110201da55620591ca5a96b5c4d0ecb9f50329b079fb58c231dd3e3c.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "0aifq",
+        "records": 21,
+        "expected": [
+          21
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "siaqe"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/44c6ca10c2b90d3dc6bde46e32657895ab9460f405a784a90d3b203f1b40256d.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "siaqe",
+        "records": 36,
+        "expected": [
+          36
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "tg2wd"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/faa218a211ebdc997bc50fc7ae42970c55071bce70f0ee73665f324c6283ffe5.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "tg2wd",
+        "records": 27,
+        "expected": [
+          27
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "bk53t"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/2e620a3663d45c1145156c4dffc1bbcda5dcde0c6b7bdc9125d8a0d44c74dc31.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "bk53t",
+        "records": 14,
+        "expected": [
+          14
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "sd7kg"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/ffdccfbf8769bee86c59c0d90416f2c968a57ea610acd84ffda304e9d82ba161.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "sd7kg",
+        "records": 16,
+        "expected": [
+          16
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "q7f6w"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/386ab2332bba9bf1c4731941a2051bdf4d38bee7e6ffbc932c3d4427dc191b41.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "q7f6w",
+        "records": 16,
+        "expected": [
+          16
+        ]
+      }
+    },
+    {
+      "name": "distinct_log_page",
+      "passed": true,
+      "detail": "vwnit"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/osf_logs/69ee8ae809f5fd1b579f38585b66fe9d517a483a75a9009934e00c654c3b4492.json"
+    },
+    {
+      "name": "complete_project_logs",
+      "passed": true,
+      "detail": {
+        "node": "vwnit",
+        "records": 30,
+        "expected": [
+          30
+        ]
+      }
+    },
+    {
+      "name": "paper_conservation",
+      "passed": true,
+      "detail": 98
+    }
+  ],
+  "sources": [
+    {
+      "path": "private-data/cohorts/rpp/pipeline/announcement/d792745e2ea561649a591f1667f4e25cf198ecc147e1d51b3c518831f01744b7.html",
+      "cache_hit": true,
+      "url": "https://www.cos.io/about/news/massive-collaboration-testing-reproducibility-psychology-studies-publishes-findings",
+      "retrieved_at": "2026-10-07T04:23:47.757367+00:00",
+      "sha256": "0d6608fc85bae83f040003d126a04fa2d133e4ec45fdd8e8e5324264f021116c",
+      "bytes": 68843
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/bc1549fa5fab54cad21b508d2c2c4e8aa1239459abf605c7cd1e02cbdb3a3182.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/qwkum/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:36.325861+00:00",
+      "sha256": "848a7556cefeeece010efac83fd83eeceba8a2cd699149d1b5121bcfbe96ad65",
+      "bytes": 18772
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/aefd2d1bcbb83692be93db9b5a822a1b5f6ee542dc35d13876f0dae174984bf8.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/rmvk5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:37.433648+00:00",
+      "sha256": "f986b432e330e5d24b84e0e96b1f2bd3b5f8668380ac854d0a9fda3586961f04",
+      "bytes": 36525
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4753a60f3d39be877ffa7b1eb49c45c0e318573decd07c348545a4bf398d7621.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/4dvzb/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:38.334474+00:00",
+      "sha256": "8c5e74f80dbbe524332690834def43c0b5109d7033b60a73c8f02c3528056f66",
+      "bytes": 47510
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/9b5932c5efb1937b725eac6bdfa1eeca813316ca04d187556921daf0b349f789.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/8j9cg/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:39.028291+00:00",
+      "sha256": "6d3ae93148fd7fbbe10a2d7d4c28c649323dcd1e0ca49b8a82c9a888b07c9dec",
+      "bytes": 28150
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2f911361c18d3eb71927d6a2cbb0b144acdc30c52a738667e76f5e80aaf4a629.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/4xdkk/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:39.521046+00:00",
+      "sha256": "f3fc5deda9ffdfc418a4b264a7b85e29fd799720670ae4de0653572b4ddc0e05",
+      "bytes": 18529
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7f941b0dd4bdd6f38df5a4cd4b8390013019e9a0079c56219016a730242d5587.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/atgp5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:40.164429+00:00",
+      "sha256": "153ded9e14fce60a1c81dbd0e372ae7e87381681bfbb86284329c7573adecb1a",
+      "bytes": 24893
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/73c2ca0c97cc5b33271311c35ecf82f031829a97c540accda09fc455192373ce.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/6n3bm/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:40.573076+00:00",
+      "sha256": "fad6336a0b87246fc2d09aab3f5e319d67fa48cbc87a5d5a8ba16ad23a0bd11e",
+      "bytes": 9803
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f0d14651c7fc642dc21054671947a1fef0acbc63a5941f42e5339c4b8008f4e4.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/c5pbg/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:41.023093+00:00",
+      "sha256": "ba4b9a4926745a3fd9f048c1e75b1548bc946e10309c7e16e3b530695b03409b",
+      "bytes": 15759
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/eb41bdcf0cf96b580d486216a7a19de8999665ea52e02740e5405eb6bffdfd93.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/vmipw/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:41.534120+00:00",
+      "sha256": "6bba64839f6a8a8537b5ff97ce97443e216b1ce18bc1e6a66d15ea223aad5155",
+      "bytes": 20707
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1eecb45f82d2173487602de15dc825d0d42f443119e65803e0e873630fee814d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/rvkc5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:42.415288+00:00",
+      "sha256": "9b94877f6b2b43a1bf093f3a85dbb0788a93db7429c16f218c6a16458a1311e0",
+      "bytes": 30973
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a977181b8bb8087e9c73473e2c9bb204b558ecc3e671ac1fc8968150fa264073.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/7rtcz/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:42.964166+00:00",
+      "sha256": "34a9a2d457085922f4742223da24491b7b6caf775c652027b576e29b97fded95",
+      "bytes": 24686
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/474cd3785e6b7c33b6d10bf8ba9fcdcbdc32f9470f6bf0547f7884ebce1e88ad.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/gxvd3/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:43.892598+00:00",
+      "sha256": "6440fe13688f2e6fd91a035ba98161074ee2bce0faf498910dbf45a625608392",
+      "bytes": 28441
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5c4032dab6d1d54cde2e3c9cf89da99f5976a533962f1f4c46a36fd8663ea177.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/bscfe/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:44.420613+00:00",
+      "sha256": "f89af4fcb94b9299dd9b4c090acd858006a89617a62907a17d2d99c960af0d96",
+      "bytes": 19178
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/552ddf31199efeb84654ae846630ee0aed64dc54dea5ade8cb732c90286e4eac.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/hp27x/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:45.041227+00:00",
+      "sha256": "8ec4e7cf6ec9834358cdad5fa73c58e67fc18d2717ed5357292a6e0cf1f61a92",
+      "bytes": 29536
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7e6a48286e0aa6d3ef41c0406c8e253ab9c9df7c47b7ede9758ca2d6b84bd7dc.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/gcj7x/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:45.551845+00:00",
+      "sha256": "af568447dfa720003843e5ac2c53799cfcc7f4a1e9dfee15bec2108a400ea301",
+      "bytes": 18061
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/923f5d92f9881d895451c8a787f639999f9e4f7747a118c6a3421d54ddf100a5.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/bzdr2/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:46.616576+00:00",
+      "sha256": "f9a85c335b621c4bc9961f35257723e4ab546757fa7c63d2759e046fd0c2ca2e",
+      "bytes": 32297
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3b47540dd7f64b6e974d25efb424640465b89fea39f9fcb7c89e0aa41672989d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/p9thw/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:47.332798+00:00",
+      "sha256": "51f5956d6e648f50e8b4a1561a66aad6952f126862c54072a2b2c4b63310dec1",
+      "bytes": 30963
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a0caf48a6c55ccdb9613fc3654a01d0ef360c05e21345a2e15fa51c03192b6af.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/sqim7/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:47.890586+00:00",
+      "sha256": "36cb2873d5a3bbba715e4a7ae8a1362d7d61729782ce08d04405dc8206252fc6",
+      "bytes": 23843
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1346c1e2101a5b4bfd8fcc58e4b50ac3620249faa7181e1de62983da6d833190.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/k9gp6/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:48.516684+00:00",
+      "sha256": "42b7d3d10d7df93af551d9dd6b7b45ba60d3b0b622e29140817c8724fdd043ab",
+      "bytes": 27459
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/eff39b21228f8b52ee9e35b96f0d5da28d379ffd88c25e759655a1a9865c66ce.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/hasfu/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:49.071126+00:00",
+      "sha256": "055177c870abea4857104d23cd96f8b9761289ae08c56d195a64185799a197e9",
+      "bytes": 18553
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6d3cf2ed648a4fd2dc3cabb484cfa05a0ea80f81e298e1eb493f989bf4cf4998.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/ahpik/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:49.624234+00:00",
+      "sha256": "c02bc3694feafdbc63b9010f7d460cb145f0904c3b9ea072a069903428f86da5",
+      "bytes": 20437
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/dda924f1f13df76b4ea48fe06690e14e4b527afc30c24a55989446555c196197.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/uhpyr/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:50.196187+00:00",
+      "sha256": "2dc35e655cf980b43f81fee139ff5014ea5c68dde3d1b2eb0abceda94cef8f40",
+      "bytes": 23679
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e6c613ff1bf76fdc4764bd4b4c1d1d44f3eb2e49536abb748bd9bae558ad7f94.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/ujhlw/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:50.582528+00:00",
+      "sha256": "69382388236faec518cd82d45b9d631cff3aa4bc3de678f2156a8dae2f5cc881",
+      "bytes": 11331
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/9ea5c238877f3857c101b1e15debca3f18b4e1af7f9220cfc5cc305b01d367de.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/rhbqj/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:50.994826+00:00",
+      "sha256": "20698670c05b295035a32d7b884bc03ade78ebc70d0e114c3d30c3c5cf884290",
+      "bytes": 11315
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/fbd491fdf542afe818299f0b7acc6ff14075ea7a559b56cc1d4b972c59d7e864.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/swrhy/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:52.549984+00:00",
+      "sha256": "48fac814f1ba5f46ae703d6065fcc8dba89727016f1fa23b2291696f294579aa",
+      "bytes": 91732
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/557657add19759b3c79010e4262a5e50ffa9607a33c9278c273cf409dc9c8542.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/swrhy/logs/?page=2&page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:54.131483+00:00",
+      "sha256": "c16ab21e54a3532463a7c2eb9eb1620b68b21c0b6846c8ee2c10efd913e76e8c",
+      "bytes": 98954
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c77ab45eff09eb61aa9f5814776f2f47fbf78d82c83c7c8a3cf712a925c91d01.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/swrhy/logs/?page=3&page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:54.499551+00:00",
+      "sha256": "f816b0b881e4de73dd07684531c636ea6c853c0f1e19f99577c902155787e9f5",
+      "bytes": 8220
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2862fede24a904d6ce433b376e5dbd994c435dccb97cb584cd729a8463b60b19.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/vmz2e/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:55.071175+00:00",
+      "sha256": "c2f030137311e678c19e54845913ba3cb61169f83935d7f48a9a0968918ce67e",
+      "bytes": 13077
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/fddc823af50305aa5549ffeeaaaef5d875edbffc5386bd72b32d0668f26a6e23.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/0pxro/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:56.030606+00:00",
+      "sha256": "9bf7f9cf64f4d000521ac3a85757f2206ce656cf97f8d6b79e57e57e02c23067",
+      "bytes": 24034
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/cf814a8458e56569f3fdf8e7d31c534ddc6f23fea010f87ecd1f0d9befc2e2ed.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/38ges/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:57.734794+00:00",
+      "sha256": "0a2c0ab0f59027c41ee58d2edc94d9fbe339b274f9b1ae4bf4f36795f26c945e",
+      "bytes": 64023
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5c985c2b1f1bb0280988149a399f70bc36d5b9865bcf3099e0030f323214a18f.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/pz0my/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:58.224295+00:00",
+      "sha256": "92cdd251e5ae152e0f66017f5553ca68ac2501e1afc9ea10a1bb63001b4f5f11",
+      "bytes": 16949
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3f61dea5cf0680d5a42d5b666359b046d519d3db6bdac4b3aec8a4a6783604f6.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/rc6mv/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:25:59.727254+00:00",
+      "sha256": "df44c54dfddf75f9d00a4e2a5be89f819738fc77ebdf39979a9688551c7179ed",
+      "bytes": 65561
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2ee43b2a5647cc9481b5fe1b88c7fd78f47e098b109ddd34df890cf616720a72.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/kez47/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:00.232025+00:00",
+      "sha256": "b29b97bd5edd359dbce8cedc0ae34bc9d49aa86a8f275af11c673497c11da63f",
+      "bytes": 20703
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/cfc752021c80bff23609d7d04588c4c2ae12e96f02001648726506d47383fc16.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/5tbxf/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:00.778611+00:00",
+      "sha256": "ddc3ce4ecc9092de1f8e19c1cee0dd41215a11b2e5938be5c529538c7b229d55",
+      "bytes": 22558
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/75380b360408ee3bbc7806800ed61b64164a6fc6d5f84e68cee1520795cd6dc3.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/rgm6p/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:01.726361+00:00",
+      "sha256": "485ce8e14fadcccf915d2046da61c8ecf6418b7d6023e4ff3ff1fd7c970ad5c0",
+      "bytes": 56362
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/12b348d17632bd701511c548d530364bbd191eee25d5f0b109bebd32f0a0652d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/vy1bc/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:02.320169+00:00",
+      "sha256": "50bb23bced5374b0fc954379a5b1b70cb3c42fc459be5f2121d96c38c0cb4102",
+      "bytes": 18543
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0aacf83fe023f7b5bc50b69615930ea891b0ae4959ccd7faf85762f26d5b755c.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/l8srm/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:02.841379+00:00",
+      "sha256": "8e3a675d9ad43a752ece03eb757362a48e05696dbc7f41c2ece70e5feb4290c8",
+      "bytes": 21760
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6c158b2d9de8a9168c604508ef45a626d73c2eb191e2d511b7d9621e5b4e6c36.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/wkgpq/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:03.390363+00:00",
+      "sha256": "60c7e2ebd59dd7286f01ba5a24a0d25d6486dba09a0d08e255e805df76716157",
+      "bytes": 18428
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/72ed9ad6a0870597c60df1dffe4431ac2d84b5e0af69ad255aed460ccd3de574.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/su6bm/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:04.056346+00:00",
+      "sha256": "388f3c4643a927027da76076d145a9b311e8f60855de169872fce0f86c9e7bbe",
+      "bytes": 22098
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/621bf0e386d2de6068db242474762f12d365b9f402473c43aff5fc81cb4995d6.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/xtsq6/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:04.695213+00:00",
+      "sha256": "81937b5a601be2db97c2dcd771d1884099044d731152e518881d36a519ef83bc",
+      "bytes": 32942
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ec9c816624ea501cd2dcd1e77492bb93031d8725080403b370476aeb43bb569b.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/ke43j/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:05.291000+00:00",
+      "sha256": "bb606778d97057262cd59b420810f921201baed116d5e7684317183a33314998",
+      "bytes": 23974
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/613c48e7b4832b39709a08fa8f4e7b8ba0e5555f4f91c46e7725fb8cd701e18e.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/h84qd/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:05.915056+00:00",
+      "sha256": "0a98441679cbab99d314055defeab775b9e465bbe02a962410e765c53bc69b2d",
+      "bytes": 30669
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4b4f1fb9cbd1c0819a08cd2c3afc4af22de6e8d49c19985e5b0d3e78c366d926.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/sq8k9/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:06.601375+00:00",
+      "sha256": "7d820da661aa21a997e1780a96207ef5f0a5146700e08721abe2bcad83c8714d",
+      "bytes": 35419
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b053382e5e7fbff0ae1078624463754e06b3f54b1887b3f61cd836d4b0250e89.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/fejxb/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:07.955582+00:00",
+      "sha256": "fef84d72856f69f5b7371ab986b256c719642d9212e9405a645e0da599ed0d40",
+      "bytes": 34031
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/aae64b12ea9770e23f47558f51551cca547442a57c1012df70a43aecb905152d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/mxryb/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:09.451206+00:00",
+      "sha256": "c55c32430778eb0ce2a0d92184052c8bdabb9a50b36471dbac8d33dcadce092f",
+      "bytes": 38790
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/55a76f7fc6245a6ca2b111cac96ef6ad8ff27439aad1ec71dcecccfea45257cd.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/imrx2/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:10.141414+00:00",
+      "sha256": "f86b7640bdbcf85a1abc6fdedcf63885dd81fc03a7b8378f32bc08d1c9daabd1",
+      "bytes": 22721
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c14b10b1d79529675885495e43ebe204d8ae70daef88eada8df60a136c20bbc3.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/sg3su/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:10.743667+00:00",
+      "sha256": "55e0d838b5b3a96d87aead31bb51b8bcfcb97cd2d9c8bb1ac2de6fd809b4bc16",
+      "bytes": 24572
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/227cb8e12dae2ee116cd3e401f3c3aa28ab6ff05be2ce9c37d95913ea4e4e593.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/qthf2/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:11.548356+00:00",
+      "sha256": "aa6430f1376b0e8bdb6b5fd3585b9c37b69c3c4e99b4910dc2ab67e122694169",
+      "bytes": 33780
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ac1cc82c0f7ba9828196119ad5253486a3b4363577efc2e872c551fe0430906f.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/7ux8p/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:12.491576+00:00",
+      "sha256": "fd53e5792c1f064c4523b08efec0a7dea398e6a3958613b116f41969958dac6d",
+      "bytes": 18671
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/37ef55b1db80ef1eb48d809fd5bd43fb9491be9a135187e33d9db2de0bfbd525.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/2gx4k/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:13.015311+00:00",
+      "sha256": "186cab06696af06187af3f4be10da215dc6bd8b38458ec35dd1e1fd32b26e619",
+      "bytes": 16007
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/42d22e322b5e5ee8e2a4830a9fd92ef4351da56704967aaf00f7f496bfc760e6.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/nhwv5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:13.867026+00:00",
+      "sha256": "7e62179bea6f12c9c65a3adf214ec0f56c298f517e3250123b1e4f2487c1f859",
+      "bytes": 26946
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e7158886b9e5c0d808e03429d136321342092b4757bb1014d2d896433f13a779.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/nr7d9/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:14.385930+00:00",
+      "sha256": "1164a9889ef0650e89b9ed5d7872313108fefd1adf10161804caa07e9eeda3f2",
+      "bytes": 17201
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b8afca5a83f04096e2432cca33a0ad647097498d38a679dc056573889c48e1ae.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/79dey/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:15.181222+00:00",
+      "sha256": "b85bd07c09816c059830ebac3195dc609d2aa3b2dbaf16d61a80c110946d5ac0",
+      "bytes": 21379
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/85254d133b4c7b0e86d04ecb0b683c113b4f6321474ba47d745293765471f6be.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/xse7q/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:15.579528+00:00",
+      "sha256": "04343a877489c92fcadfd6651ecf238887d311768d7b8e8fdd6ecbca3f1363c8",
+      "bytes": 15698
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/d259ad339304edd2e49fb11c7f1d5508e80f4452940f27630dc5b8c7cea6e8cd.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/r5gpv/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:16.324310+00:00",
+      "sha256": "fcb267e89e6d42c7c23c383acf445cb5538f8f082a42dc23aa36e7df13b2f5bb",
+      "bytes": 43922
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a18557b6a21eb162cca5bf25731063e09df9bac7a9a15a036d4a41676206bacf.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/v8vft/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:16.676456+00:00",
+      "sha256": "69093be4e2b610e2cab484fb0597d9c6bfb4af95811d72633c8a1d2d00b78948",
+      "bytes": 8988
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8d6e3d09ffc0e1b87af9041fadc6de8142b4cf5e5a8bb34bf1cc7f9d1d952ce0.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/j8bpa/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:18.049973+00:00",
+      "sha256": "df374eb6790b71c04df1304cca77b7cde7f6787d3afb14d2e1f114b254635a4b",
+      "bytes": 25642
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/3f77b6b64fffb8b0bcd887d98843475459dd47dcd875f2b540582a69fb53c320.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/abxcj/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:18.759310+00:00",
+      "sha256": "65e090bde4a5848ceba572f24ea19fd2a96b8c33c4070a256720a03cefaa24dc",
+      "bytes": 20680
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0fa82ee943d57c4f77eb03544e528c7ae23a625d21e80a8690c4c9c8202b01c8.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/ng6cc/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:19.497471+00:00",
+      "sha256": "de011ccc313c4b94c26e0f8dbadc6ea6885c245aa0565839dc2125d707a22016",
+      "bytes": 27589
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b79d9ebdfae2032fdb0b72e2ccddadbd10d9ccf1dd3a9201c7511e16a79f7bac.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/cxmf6/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:19.988150+00:00",
+      "sha256": "0ad5c9823fd095130914fbdeb9da6cbf2f37c58de3bcafbc97efe663950ded91",
+      "bytes": 17966
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/02278764a57f66f1b790d88015f0974827c09967d20d51015c1cbf61a5cac727.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/mua6d/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:20.574078+00:00",
+      "sha256": "cd760435fffbb1ec3147932c97fa9309403289587dc93ad453aa81fe5171dd33",
+      "bytes": 20635
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8ba69adb52ab3fdd6c423b489fc7662bb63a6aa84d66340cc5331bbe1dfcd177.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/etg7c/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:21.773486+00:00",
+      "sha256": "ec88d16197b291ba697fa10f170bd22b8d444c8c0f4f1944ddabfe4747ceff7b",
+      "bytes": 20253
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f6209e76b43b9ef1471b636b7f06249e8f2f4da4bb1ca88ff4ee6970b8e3f4cc.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/kegmc/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:22.556416+00:00",
+      "sha256": "177ec889d003c3cada70d4d7ce18100857c9149f1429f9c27954017df70c12fe",
+      "bytes": 23093
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/278f5e441d8cd2f8af6d1c32bb106bb23fac4ebdd81de4a748efd30cc1485672.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/iajp5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:22.962687+00:00",
+      "sha256": "c584bb435355ad18cf770d4d812e3a63c172d4bd6dc7b3990291954000af7287",
+      "bytes": 9144
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c7ffd218630d1a5b04a2ed3f1b1fe55668356cca76277b22fc763dbff94e840a.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/edcr7/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:23.430106+00:00",
+      "sha256": "ae0987f1c17c83b2006a4cda6cb27b852e06a32b0203ccb8309443b2aa2a811b",
+      "bytes": 14240
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/77195102f2d07c6b82775822b0be74cc310797ecfa43f950b29824f07b9476fa.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/7dyp5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:24.200016+00:00",
+      "sha256": "302c7134a5e825f3edd35f5fd4fba9e5127039a8720b69244f8f00ee5955dbfc",
+      "bytes": 30272
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c1bc198ae6211229d98627822b27155236a4add507d54e5597758b26fc49a096.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/aaudl/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:24.604023+00:00",
+      "sha256": "eaa3ba8e2e57d14403f3666a44b42659296fe4e7a2b257b49ff2f3d274ae4ea5",
+      "bytes": 9958
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4fa71ba06862c5614bde73e73accf2700bc82ce023c46867810050b7bca2ea8c.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/d0n81/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:25.154365+00:00",
+      "sha256": "23c0cd06813f09034413d6b67df42d5e621bd62291d9172ae05f1595e6f2fbbc",
+      "bytes": 17293
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/c652eb39e98f9a114734a28238520e27c5972d5ca430b8599fcf02a047026ac6.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/qlzap/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:27.085042+00:00",
+      "sha256": "5baa904f547da857c76b607feb556929423f7c78eab5d3099b0539a45437a27e",
+      "bytes": 24230
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/847c95fd68485db8d1207e7db14b318bd8b2454228ba7973e18c3b9e475f6be1.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/yaeu7/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:27.588719+00:00",
+      "sha256": "4578fcbe939da35ce37698eb997a9f5d15db0113d8dc6489f617e6634d4571f1",
+      "bytes": 17434
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/548ad2604bd2e29ae121c88b067b2ee98f07d50f41711153da68b4b7e1c08e0c.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/aczvt/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:28.050803+00:00",
+      "sha256": "2343a41c098fd69b9a5e5fe2d3017ef72a8880bcd4b0102df5509d84000d8190",
+      "bytes": 16722
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7b1e299a7fb763769372ec5b5dba972c1907e0fd2599c3f58df4c1ddb075a3f6.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/ivfu6/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:28.992758+00:00",
+      "sha256": "7164953a10e7370f7c5c415521c5f2b24c60a7ba697baf625c3f051d850574a4",
+      "bytes": 55754
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/a83a08304fc93f7c540d2dedb5310091ec38415efd08f693dfe5ce88619af567.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/rzjvn/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:29.559442+00:00",
+      "sha256": "3d744470903baddf26124d187a9f57efc89201969e463f1b9b902601717a55b1",
+      "bytes": 19693
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ed6ab2b0012be3fd14ebb88c8b4e239fd3117701e3990249b7313b470886e734.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/3h29d/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:30.031915+00:00",
+      "sha256": "a24431bcadccf5ee8068472a968aea75c23f39d634d11b72c10dad137838e6c6",
+      "bytes": 15889
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/7a10a4e2712d024cfacd38e070d3d29cfd52ab02e1c4539383730f5db808adaa.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/73pnd/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:32.140308+00:00",
+      "sha256": "afe98be85e6a4031ffc9548f7fd5eaadee78829e210a795dc9ad13900dcda549",
+      "bytes": 72101
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/8b3c99ee72c645fdf93268261748ae41c437aee32578c849ac5d8c6e586bb5f5.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/94j6h/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:32.925482+00:00",
+      "sha256": "146db374e1f6bd6de0fe9f7585193328f19c5423a8659e05c19972862ed1f721",
+      "bytes": 33872
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/521129dcc5d1fbaab2ef2dcb2cb09bd288dd9c65a417fe9cb93a5b4d68879490.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/dnaxe/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:33.612765+00:00",
+      "sha256": "59d1f9d579794ab17901ceaec0a337509e856e29d10e1cc474432ccb5c26c7b4",
+      "bytes": 22424
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/423f46a66415743b166fa7a9f4a8f72c518ed03fa72313f015fed1b1824b106e.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/fxqsk/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:34.349978+00:00",
+      "sha256": "9ea0db415543781a1755b0bbff23d6d9a8ac43219f7b8d095465089888a2da0f",
+      "bytes": 25358
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/09916206e6782641a8843edf30dca1cf1cc420d279b97b9c840a37ff5171bb31.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/mjasz/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:34.788031+00:00",
+      "sha256": "d80ad778fa245882e9f261a1153f74d39b849e0d5e17e752a926c5cb71d4c6f4",
+      "bytes": 16057
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/5901451234138d8a13a65efb26e269695f7853a600c616a6a61d7d62bd936981.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/c5fza/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:35.665826+00:00",
+      "sha256": "328c2abbb3202f8dc7009a2eadafd6f71468bfb1eb8acb77e8433917c865466c",
+      "bytes": 13434
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/36526b493159a8c3086957be0f1810dfd19c7a8e1408f5385d4c94778ea8cd65.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/b98zw/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:36.401395+00:00",
+      "sha256": "74ed01392a66d36d5db401ed3f42a1b208b2f9a5c5bf8fc508116fe9f7c4c6dd",
+      "bytes": 28305
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/96772ab15ec3ea28ba86e988e355223dcd98b06a823c83f1300353a40586a25c.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/jhkpe/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:39.260096+00:00",
+      "sha256": "1cd2bea9dd56c8f2edb9565a59f6483defe81e4e26d413a34125aadd699bf465",
+      "bytes": 35914
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/1f1a3edc9517bfb5b626936a4099a746ebd9f681bd4cc04070c6a5b8f6dde089.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/5dx4v/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:39.905050+00:00",
+      "sha256": "1bafa82996115080d0b4ad64054d33d196e23e6c264fcedd1404350717817f55",
+      "bytes": 14793
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/4b2625df223d117f89272e4469893247f70e7834b362535e0e58373abcd5cb0e.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/2gkjt/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:41.586135+00:00",
+      "sha256": "05d9b391ec3b90c811dd0fbad9e4d514a296a1a8df3d662fb2f53b5fd1319dbe",
+      "bytes": 67322
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/f7ecb07adb1089bd512a0a0336f6c3998a497aefb0fcad0bc65050b7de016fa0.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/i29mh/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:42.420875+00:00",
+      "sha256": "cb9769092e394be1ebc2247e21865cbd124d219d20b24f75acba9c4fcb32871e",
+      "bytes": 29083
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ae73b8bfac2f15f3bad1fef8e299eabf42790242abb95077f2a938d5c81ef51f.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/ta3j8/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:43.039530+00:00",
+      "sha256": "408d04013ff84e2c6c9042952d9d40f964d6fd8b33e8ae3f9f404f1170ecdd82",
+      "bytes": 16260
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2a0585f285a8543a9e0902d25d19230cc1ee24219046ae0962bb3d1a7908e39d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/vnsqg/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:44.428399+00:00",
+      "sha256": "823b4522812b86b40bb75c89c730b3f10ad3977261e38b0f091161d8b5bf049a",
+      "bytes": 26941
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/0080fb8e0511064712cd5531af2a73bd77e079eafcb84e4284b71181621b826d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/k4y9i/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:44.806617+00:00",
+      "sha256": "e42be747c0dd8983bbb2ccc71c904d926ed8eab79e9b2f5a0b317658e098a30b",
+      "bytes": 12879
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/6a1ef635ef7e19520f2840eedf171627bb5f9845ceee85fb23b15371d376a473.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/yuybh/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:45.393490+00:00",
+      "sha256": "6f31070d10667519cb6f0b5d56e4449bde94f6f24da222a8094f553476b3c7a0",
+      "bytes": 19793
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/da08e7da965f578cd71eecff801c8c1c2218e695ba4defa82236ce07559e6428.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/76qc5/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:46.083534+00:00",
+      "sha256": "5f4587fa51684ef98a99419be735b7827a00c69a0baf7a62f3b53a4277fde1cd",
+      "bytes": 26780
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/e25f3853566415311d58040c806cc58af5cea1dd8e6d7004a961df06bf92ef33.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/dncxa/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:46.696611+00:00",
+      "sha256": "a6047c3f1743c910ac17a39c641b4584ea49555a2caf4166b2b574747189897c",
+      "bytes": 23793
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2f882f58c6be53867625563ca0344829bb983795ce6c23728b4d7633aa09e107.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/blcj6/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:47.480393+00:00",
+      "sha256": "b3b0fa993f8e32c69b98b247a0e2b35d045f519651c635212e4e75742ff4081e",
+      "bytes": 28297
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/b4ead343a9e73f766f687c58c95ff5863c228ee04336fa5f0bf0de42262388e6.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/tf8ky/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:48.256429+00:00",
+      "sha256": "88d6934726abb96da478edb0f95411b009331d924590738f28eb755461598b8b",
+      "bytes": 21613
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/dc532394aee7488c6f4d74a0131405f8e417bed5e52fac692dcf4c9bee977fd1.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/apidb/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:49.050096+00:00",
+      "sha256": "a15224391911be0d8f13cc0588165ee156b7a6a77794ce592606a8baf8f74e3c",
+      "bytes": 26856
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/507132e3110201da55620591ca5a96b5c4d0ecb9f50329b079fb58c231dd3e3c.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/0aifq/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:49.649795+00:00",
+      "sha256": "9fe3a8866dfa56a21ac6ac2be30b130fc42f2445c612e0397fe6027fee7e1fcd",
+      "bytes": 20470
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/44c6ca10c2b90d3dc6bde46e32657895ab9460f405a784a90d3b203f1b40256d.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/siaqe/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:50.828605+00:00",
+      "sha256": "114b374d0100281f0927c0558d501bb875ccac9024c993981986feff335fba11",
+      "bytes": 32978
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/faa218a211ebdc997bc50fc7ae42970c55071bce70f0ee73665f324c6283ffe5.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/tg2wd/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:51.740738+00:00",
+      "sha256": "48d518500edc374c536c61fff6b299bb890b7c8f80f7ab1712af1cbe804a1320",
+      "bytes": 27077
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/2e620a3663d45c1145156c4dffc1bbcda5dcde0c6b7bdc9125d8a0d44c74dc31.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/bk53t/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:52.149581+00:00",
+      "sha256": "e51a96d7d3e607d57d58a441935e3c10e802418b454c877f36b8613720a8672b",
+      "bytes": 12113
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/ffdccfbf8769bee86c59c0d90416f2c968a57ea610acd84ffda304e9d82ba161.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/sd7kg/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:52.735332+00:00",
+      "sha256": "20d6575472bc669edefb5b444fcfcf51cad42a26515f6fe83cb979bcf922a92c",
+      "bytes": 15450
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/386ab2332bba9bf1c4731941a2051bdf4d38bee7e6ffbc932c3d4427dc191b41.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/q7f6w/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:53.255874+00:00",
+      "sha256": "359b9228ee768407c5006d99cb7180f40e608bcde594b869abd6f1fcd3802939",
+      "bytes": 15673
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/osf_logs/69ee8ae809f5fd1b579f38585b66fe9d517a483a75a9009934e00c654c3b4492.json",
+      "cache_hit": true,
+      "url": "https://api.osf.io/v2/nodes/vwnit/logs/?page%5Bsize%5D=100",
+      "retrieved_at": "2026-10-07T04:26:53.984160+00:00",
+      "sha256": "5fbb81615508943c549b23d3159432d8f155cc1cb85bd57d78925e84ec730972",
+      "bytes": 28019
+    }
+  ],
+  "metrics": {
+    "papers": 98,
+    "complete_project_logs": 98,
+    "papers_with_earlier_report_candidates": 86
+  },
+  "unresolved": [
+    {
+      "paper_id": "Row.1",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.2",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.3",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.4",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.5",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.6",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.7",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.8",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.10",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.11",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.12",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.13",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.15",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.17",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.19",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.20",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.22",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.24",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.25",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.26",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.27",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.28",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.29",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.32",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.33",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.36",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.37",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.39",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.43",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.44",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.46",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.48",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.49",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.52",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.53",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.55",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.56",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.58",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.59",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.61",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.63",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.64",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.65",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.68",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.69",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.71",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.72",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.73",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.77",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.80",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.81",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.82",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.84",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.86",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.87",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.89",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.93",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.94",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.97",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.104",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.106",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.107",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.110",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.111",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.112",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.113",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.114",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.115",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.116",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.117",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.118",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.120",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.121",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.122",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.124",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.127",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.129",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.132",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.133",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.134",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.135",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.136",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.139",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.140",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.142",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.143",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.145",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.146",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.148",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.150",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.151",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.153",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.154",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.155",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.158",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.161",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.165",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    },
+    {
+      "paper_id": "Row.167",
+      "reason": "requires_content_and_visibility_review",
+      "retrieval_errors": ""
+    }
+  ],
+  "status": "complete",
+  "finished_at": "2026-10-07T04:50:56.143543+00:00"
+}

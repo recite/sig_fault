@@ -1,0 +1,5 @@
+"role","method","targets","estimate","se","lower","upper"
+"unsuccessful","nearest",59,-0.555555555555556,0.474159632955037,-1.50468918311754,0.39357807200643
+"unsuccessful","synthetic",59,-1.87987567394158,,,
+"successful","nearest",39,0.236467236467237,0.567672299375157,-0.912725253402319,1.38565972633679
+"successful","synthetic",39,-0.872788763487548,,,

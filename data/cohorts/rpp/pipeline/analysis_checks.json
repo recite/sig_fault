@@ -1,0 +1,13 @@
+{
+  "papers": 98,
+  "journal_weights": {
+    "JEPLMC": 0.2857,
+    "JPSP": 0.3061,
+    "PS": 0.4082
+  },
+  "citation_history_complete": true,
+  "bootstrap_undefined": 0,
+  "raw_fe_identity_error": 2.2204e-16,
+  "currently_retracted_targets": 0,
+  "pooled_with_statistical_error_audits": false
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "study": "rpp",
+  "stage": "06_match",
+  "started_at": "2026-10-07T04:51:00.735630+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/rpp/06_match.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "inputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/citation_identity_decisions.csv",
+      "sha256": "9c89f05d4ebff72a518a00d1313809fc6df36f19aab269f9ff764074099fb1da",
+      "bytes": 4711,
+      "rows": 20
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/citation_edges.csv",
+      "sha256": "53b5528138e3c6341423d614c39a00b33657e2cef968062b59c51017d168eafc",
+      "bytes": 22843665,
+      "rows": 95223
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/citation_coverage.csv",
+      "sha256": "22cef9a8c6eecd6333a66673db5020cf4711274c2a9062d81c80a6ea6a0877bc",
+      "bytes": 54658,
+      "rows": 472
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/panel.csv",
+      "sha256": "1934395a23f9487d93aefb4356732a5f2c4f647070180261a39cca43129334e0",
+      "bytes": 583577,
+      "rows": 8496
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/design.md",
+      "sha256": "71e8dafffa9b4cb822158aa27e4cf281a3cced017644b30e2726faceb09ff23d",
+      "bytes": 8017
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/matches.csv",
+      "sha256": "1b8be624fa0bc25e8d5ba4408316c70837665a2ad6e12ac97e4f18350211c3c5",
+      "bytes": 25716,
+      "rows": 294
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/synthetic_weights.csv",
+      "sha256": "679a4368fc38806a8534a54745136b524a934df08a192c256baf62f8dadbcded",
+      "bytes": 791053,
+      "rows": 12456
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/match_fit.csv",
+      "sha256": "5eeca903c909151c6610a82a072e9334bde726b5dcc733ebd7a93844343e2145",
+      "bytes": 12340,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/match_candidates.csv",
+      "sha256": "600368b74270cbaa0d3ea6b9006b0cb5ffe38438d7025a08c633e99616c02e84",
+      "bytes": 868956,
+      "rows": 12456
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/match_exclusions.csv",
+      "sha256": "2b8859999411cf090a8cfee7e8b066aa5fc5c09ee0cf4ffb234bd8bdb9779b1e",
+      "bytes": 330,
+      "rows": 4
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/rpp/06_match.py",
+      "sha256": "de87d7e0f789a21e2b6cbdd6c1a639af7394396239b74e57ff9e9437df0dc0e9",
+      "bytes": 6912
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
+      "bytes": 6907
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/rpp/pipeline/receipts/05_citations.json",
+      "sha256": "ad7ca25688c45cb994daac5f09ec14a722567a9c90115ff0eecf8cb3b2c510e0",
+      "bytes": 2217198
+    }
+  ],
+  "checks": [
+    {
+      "name": "matched_weight_sums",
+      "passed": true,
+      "detail": 98
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "matched_targets": 98,
+    "donor_exclusions": 4,
+    "matching_years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014
+    ],
+    "nearest_neighbors": 3,
+    "synthetic_ridge": 1e-06
+  },
+  "unresolved": [
+    {
+      "paper_id": "control_10.1111/j.1467-9280.2008.02128.x",
+      "role": "external_control",
+      "reason": "currently_retracted_donor"
+    },
+    {
+      "paper_id": "control_10.1037/0022-3514.94.5.777",
+      "role": "external_control",
+      "reason": "currently_retracted_donor"
+    },
+    {
+      "paper_id": "control_10.1037/0022-3514.94.6.1018",
+      "role": "external_control",
+      "reason": "currently_retracted_donor"
+    },
+    {
+      "paper_id": "control_10.1037/a0012560",
+      "role": "external_control",
+      "reason": "currently_retracted_donor"
+    }
+  ],
+  "status": "complete",
+  "finished_at": "2026-10-07T04:51:12.383662+00:00"
+}

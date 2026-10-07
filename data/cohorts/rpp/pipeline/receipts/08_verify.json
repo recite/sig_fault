@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "study": "rpp",
+  "stage": "08_verify",
+  "started_at": "2026-10-07T04:56:11.054904+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/rpp/08_verify.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "inputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/paper_periods.csv",
+      "sha256": "df2eb78385a18d109cd8995463be4279a6ac3d137741bb375318d32bf78a24e5",
+      "bytes": 5430,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/period_summary.csv",
+      "sha256": "19117cc8299cae52d88b013066321137084479d852c8261d27467899dab52e00",
+      "bytes": 220,
+      "rows": 2
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/journal_contrasts.csv",
+      "sha256": "cebd15ea32d6cb653531c0f838b6880ad0645606dc73190376db50c4583e0186",
+      "bytes": 374,
+      "rows": 3
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/estimates.csv",
+      "sha256": "e0f2693b16445460f0418240d1b844a8fba7745d4674b502a0fbc73c7c5bb43e",
+      "bytes": 1072,
+      "rows": 4
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/leave_one_out.csv",
+      "sha256": "39ff9ca85716a3ab3ff87cab01e0e5e050901f3cce55ad131e24d4c82e712cae",
+      "bytes": 4465,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/fixed_effects.csv",
+      "sha256": "179bc71b33ac933c3acff0bc789b0752e08ac57b7b9ea1c188476802c50e22fa",
+      "bytes": 289,
+      "rows": 2
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/event_study.csv",
+      "sha256": "164c6a18f056150ff361e23ebae9d27cce7b9493b8854e45ee84c60f1a7c7268",
+      "bytes": 1799,
+      "rows": 14
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/annual_summary.csv",
+      "sha256": "2dc87691534a2806c32d31e9dec515977b5284eda46e8289faf01fd81e52cde5",
+      "bytes": 2147,
+      "rows": 36
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/external_estimates.csv",
+      "sha256": "8f767679ab739c4f08ea50dbdbb9b7aad2c2fb8e7674a5e1fcdf3e84c353fe72",
+      "bytes": 357,
+      "rows": 4
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/external_paths.csv",
+      "sha256": "4f64d9cd65cd6e5b3cfb82ba2e69afd197d94e3865c2af0006ad6681739443b7",
+      "bytes": 176904,
+      "rows": 3136
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/citation_paths.pdf",
+      "sha256": "1aa25c5a7cf460436f05ae55163e4da454dc0a76d5ac0138abddb77af998a173",
+      "bytes": 6860
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/citation_paths.png",
+      "sha256": "0e6e2a7350a527ba84ecec6711d7fa7365c973eaf38085a3124ccbbcda98036d",
+      "bytes": 61247
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/R-session.txt",
+      "sha256": "6833b458c01dd7e26b4b3962781615224c7197b9292ff81083018b11753b0004",
+      "bytes": 1378
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/analysis_checks.json",
+      "sha256": "4604796201a3aecb1cf6228485d58f2087c012e11eb9f864bc0c128da2fb0fad",
+      "bytes": 295
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/README.md",
+      "sha256": "c5cef8ecc60b6296869221f059172f464ac5e526637985f2532005e797a18519",
+      "bytes": 3868
+    }
+  ],
+  "outputs": [],
+  "code": [
+    {
+      "path": "scripts/rpp/08_verify.py",
+      "sha256": "f5a24d3e484a48f370330250dc4a31a181b79890b7b4146d76ca6837f62a7981",
+      "bytes": 567
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
+      "bytes": 6907
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/rpp/pipeline/receipts/07_analyze.json",
+      "sha256": "6882111cf78d5768b393397a80dba3c7f9b598a812d6d42c4a57eb618232d1de",
+      "bytes": 7537
+    }
+  ],
+  "checks": [
+    {
+      "name": "complete_provenance_chain",
+      "passed": true,
+      "detail": "All seven stages and transitive ancestors verified"
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "verified_stages": 7
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T04:56:11.569132+00:00"
+}

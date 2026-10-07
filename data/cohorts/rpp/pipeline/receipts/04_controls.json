@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "study": "rpp",
+  "stage": "04_controls",
+  "started_at": "2026-10-07T04:50:56.225937+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/rpp/04_controls.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "inputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/identities.csv",
+      "sha256": "e8fdc351024fb20fb799437179f704744374131259c216f671680fb7677ab8f3",
+      "bytes": 25447,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/identity_candidates.csv",
+      "sha256": "1c8c89ca4867cf8d3b66415d9f2e661a77cf4a2c221603005fc21fa46f1f47c5",
+      "bytes": 16082,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/design.md",
+      "sha256": "71e8dafffa9b4cb822158aa27e4cf281a3cced017644b30e2726faceb09ff23d",
+      "bytes": 8017
+    },
+    {
+      "path": "scripts/rpp/02_identify.py",
+      "sha256": "2e0424a57f32747f7f8bc2b025074c45018b5639b35e8fa584208f5bce3e4a11",
+      "bytes": 6964
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/control_decisions.json",
+      "sha256": "a11522b63a821b4a69658fc3d2a68460715df4f568e53ee742ec0f50354b82df",
+      "bytes": 2515
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/publication_types.csv",
+      "sha256": "39804e859ba8469904dbf58deb24807cf94bfc016e2ad4a8137fa570cbedc633",
+      "bytes": 1123,
+      "rows": 6
+    },
+    {
+      "path": "data/cohorts/papers.csv",
+      "sha256": "2f92af0f7be43510d326f1b526443f031e1425cd622244cd1c461b0447297783",
+      "bytes": 187547,
+      "rows": 1260
+    },
+    {
+      "path": "data/inventories/flora_inventory.csv",
+      "sha256": "bfde0550bc2c054d38fa3d2aeca30d27092fadf73c8b7515891c1a36f9288ff0",
+      "bytes": 1832425,
+      "rows": 3056
+    },
+    {
+      "path": "data/inventories/fred_inventory.csv",
+      "sha256": "d403365b0c5d5ea22b171a88dbb836cacfa5edba540278229df5488cbf26162b",
+      "bytes": 3149006,
+      "rows": 2164
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/control_candidates.csv",
+      "sha256": "39b560545656b34aa54a61f0ab465e89f794026ceca45dce802b564053d365ff",
+      "bytes": 87291,
+      "rows": 499
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/citation_targets.csv",
+      "sha256": "aca8a6cf803c3c4f6321ecb8184ab9f9dc1fc66ce8f8d4b99ad5235a21e294ef",
+      "bytes": 75334,
+      "rows": 472
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/rpp/04_controls.py",
+      "sha256": "7f49171f169064c93995bc74a1b770f2802afc050d28cc4de2ebeb9244d89802",
+      "bytes": 5368
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
+      "bytes": 6907
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/rpp/pipeline/receipts/02_identify.json",
+      "sha256": "4da10867d3adae5eb98f6766a60e18316d76de80d55dd7d42dcdc962c353bff4",
+      "bytes": 14755
+    }
+  ],
+  "checks": [
+    {
+      "name": "sourced_control_decisions",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "all_targets_identified",
+      "passed": true,
+      "detail": 98
+    },
+    {
+      "name": "disjoint_donor_pool",
+      "passed": true,
+      "detail": {
+        "targets": 98,
+        "controls": 374
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "screened": 499,
+    "eligible_controls": 374,
+    "citation_targets": 472
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T04:50:56.375716+00:00"
+}

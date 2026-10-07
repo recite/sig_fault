@@ -1,0 +1,482 @@
+paper_id,doi,title,journal,publication_year,role
+Row.1,10.1037/0278-7393.34.2.353,Tracing attention and the activation flow in spoken word planning using eye movements.,JEPLMC,2008,unsuccessful
+Row.2,10.1037/0278-7393.34.1.146,"Now you see it, now you don't: Repetition blindness for nonwords.",JEPLMC,2008,unsuccessful
+Row.3,10.1037/0278-7393.34.3.478,Working memory costs of task switching.,JEPLMC,2008,unsuccessful
+Row.4,10.1037/0278-7393.34.1.230,Accelerated relearning after retrieval-induced forgetting: The benefit of being forgotten.,JEPLMC,2008,unsuccessful
+Row.5,10.1037/0278-7393.34.1.237,The intermixed-blocked effect in human perceptual learning is not the consequence of trial spacing.,JEPLMC,2008,unsuccessful
+Row.6,10.1037/0278-7393.34.1.97,"A single-system account of the relationship between priming, recognition, and fluency.",JEPLMC,2008,successful
+Row.7,10.1037/0278-7393.34.1.219,Modeling distributions of immediate memory effects: No strategies needed?,JEPLMC,2008,unsuccessful
+Row.8,10.1037/0278-7393.34.3.460,Stereotypes and retrieval-provoked illusory source recollections.,JEPLMC,2008,unsuccessful
+Row.10,10.1037/0278-7393.34.2.430,Across-notation automatic numerical processing.,JEPLMC,2008,successful
+Row.11,10.1037/0278-7393.34.1.65,Attractor dynamics and semantic neighborhood density: Processing is slowed by near neighbors and speeded by distant neighbors.,JEPLMC,2008,successful
+Row.12,10.1037/0278-7393.34.1.243,When does between-sequence phonological similarity promote irrelevant sound disruption?,JEPLMC,2008,unsuccessful
+Row.13,10.1037/0278-7393.34.3.546,Bidirectional associations in multiplication memory: Conditions of negative and positive transfer.,JEPLMC,2008,successful
+Row.15,10.1037/0278-7393.34.3.514,The Stroop effect: Why proportion congruent has nothing to do with congruency and everything to do with contingency.,JEPLMC,2008,successful
+Row.17,10.1037/0278-7393.34.1.186,The ultimate sampling dilemma in experience-based decision making.,JEPLMC,2008,successful
+Row.19,10.1037/0278-7393.34.3.439,How to say no: Single- and dual-process theories of short-term recognition tested on negative probes.,JEPLMC,2008,unsuccessful
+Row.20,10.1037/0278-7393.34.2.408,"Intentional forgetting is easier after two ""shots"" than one.",JEPLMC,2008,unsuccessful
+Row.22,10.1037/0278-7393.34.2.302,How does bilingualism improve executive control? A comparison of active and reactive inhibition mechanisms.,JEPLMC,2008,unsuccessful
+Row.24,10.1037/0278-7393.34.2.343,Priming addition facts with semantic relations.,JEPLMC,2008,successful
+Row.25,10.1037/0278-7393.34.3.524,Learning correct responses and errors in the Hebb repetition effect: Two faces of the same coin.,JEPLMC,2008,successful
+Row.26,10.1037/0278-7393.34.1.50,Contextual effects on reading aloud: Evidence for pathway control.,JEPLMC,2008,successful
+Row.27,10.1037/0278-7393.34.3.495,On the additive effects of stimulus quality and word frequency in lexical decision: Evidence for opposing interactive influences revealed by RT distributional analyses.,JEPLMC,2008,successful
+Row.28,10.1037/0278-7393.34.1.249,Semantic interference in a delayed naming task: Evidence for the response exclusion hypothesis.,JEPLMC,2008,unsuccessful
+Row.29,10.1037/0278-7393.34.2.399,Multidimensional visual statistical learning.,JEPLMC,2008,successful
+Row.32,10.1037/0278-7393.34.1.204,Accounting for occurrences: A new view of the use of contingency information in causal judgment.,JEPLMC,2008,successful
+Row.33,10.1037/0278-7393.34.1.128,Multiple roles for time in short-term memory: Evidence from serial recall of order and timing.,JEPLMC,2008,successful
+Row.36,10.1037/0278-7393.34.1.80,An attention-based associative account of adjacent and nonadjacent dependency learning.,JEPLMC,2008,successful
+Row.37,10.1037/0278-7393.34.2.369,Orienting attention in visual working memory reduces interference from memory probes.,JEPLMC,2008,successful
+Row.39,10.1037/0278-7393.34.1.167,Decision making and learning while taking sequential risks.,JEPLMC,2008,unsuccessful
+Row.43,10.1037/0022-3514.95.1.76,The rejection of moral rebels: Resenting those who do the right thing.,JPSP,2008,unsuccessful
+Row.44,10.1037/0022-3514.94.1.16,Why do implicit and explicit attitude tests diverge? The role of structural fit.,JPSP,2008,successful
+Row.46,10.1037/0022-3514.94.4.718,"The developmental psychometrics of big five self-reports: Acquiescence, factor structure, coherence, and differentiation from ages 10 to 20.",JPSP,2008,successful
+Row.48,10.1037/0022-3514.94.4.696,Terror management and adults' attachment to their parents: The safe haven remains.,JPSP,2008,unsuccessful
+Row.49,10.1037/a0012833,Increasing and decreasing motor and cognitive output: A model of general action and inaction goals.,JPSP,2008,unsuccessful
+Row.52,10.1037/0022-3514.94.4.560,Affective incoherence: When affective concepts and embodied reactions clash.,JPSP,2008,unsuccessful
+Row.53,10.1037/0022-3514.94.1.60,Individual differences in the regulation of intergroup bias: The role of conflict monitoring and neural signals for control.,JPSP,2008,unsuccessful
+Row.55,10.1037/0022-3514.94.1.1,Left frontal cortical activation and spreading of alternatives: Tests of the action-based model of dissonance.,JPSP,2008,unsuccessful
+Row.56,10.1037/0022-3514.94.4.600,A social functional approach to emotions in bargaining: When communicating anger pays and when it backfires.,JPSP,2008,unsuccessful
+Row.58,10.1037/0022-3514.95.2.420,"""Walking on eggshells"": How expressing relationship insecurities perpetuates them.",JPSP,2008,unsuccessful
+Row.59,10.1037/0022-3514.94.4.647,How the head liberates the heart: Projection of communal responsiveness guides relationship promotion.,JPSP,2008,successful
+Row.61,10.1037/0022-3514.94.1.158,Poignancy: Mixed emotional experience in the face of meaningful endings.,JPSP,2008,unsuccessful
+Row.63,10.1037/0022-3514.94.1.48,1/f noise and effort on implicit measures of bias.,JPSP,2008,unsuccessful
+Row.64,10.1037/0022-3514.94.4.579,The effect of global versus local processing styles on assimilation versus contrast in social judgment.,JPSP,2008,unsuccessful
+Row.65,10.1037/0022-3514.94.3.495,Not so innocent: Does seeing one's own capability for wrongdoing predict forgiveness?,JPSP,2008,unsuccessful
+Row.68,10.1037/0022-3514.95.2.293,Why people are reluctant to tempt fate.,JPSP,2008,unsuccessful
+Row.69,10.1037/0022-3514.94.3.516,The nonverbal expression of pride: Evidence for cross-cultural recognition.,JPSP,2008,successful
+Row.71,10.1037/0022-3514.94.4.672,On the relative independence of thinking biases and cognitive ability.,JPSP,2008,unsuccessful
+Row.72,10.1037/0022-3514.94.2.94.2.196,Opening the mind to close it: Considering a message in light of important values increases message processing and later resistance to change.,JPSP,2008,unsuccessful
+Row.73,10.1037/0022-3514.94.5.871,Distinguishing between silent and vocal minorities: Not all deviants feel marginal.,JPSP,2008,successful
+Row.77,10.1037/0022-3514.94.2.183,Dynamics of self-regulation: How (un)accomplished goal actions affect motivation.,JPSP,2008,unsuccessful
+Row.80,10.1037/0022-3514.94.3.396,The effects of an implemental mind-set on attitude strength.,JPSP,2008,unsuccessful
+Row.81,10.1037/0022-3514.94.1.116,A needs-based model of reconciliation: Satisfying the differential emotional needs of victim and perpetrator as a key to promoting reconciliation.,JPSP,2008,unsuccessful
+Row.82,10.1111/j.1467-9280.2008.02054.x,The Face of Success,PS,2008,unsuccessful
+Row.84,10.1037/0022-3514.94.2.94.2.231,Selective exposure and information quantity: How different information quantities moderate decision makers' preference for consistent and inconsistent information.,JPSP,2008,successful
+Row.86,10.1037/0022-3514.94.3.382,Self-regulation and selective exposure: The impact of depleted self-regulation resources on confirmatory information processing.,JPSP,2008,unsuccessful
+Row.87,10.1037/0022-3514.94.1.91,The space between us: Stereotype threat and distance in interracial contexts.,JPSP,2008,unsuccessful
+Row.89,10.1037/0022-3514.94.2.245,Sex differences in mate preferences revisited: Do people know what they initially desire in a romantic partner?,JPSP,2008,successful
+Row.93,10.1037/0022-3514.94.3.429,Balancing connectedness and self-protection goals in close relationships: A levels-of-processing perspective on risk regulation.,JPSP,2008,unsuccessful
+Row.94,10.1037/0022-3514.95.2.274,"Self-handicapping, excuse making, and counterfactual thinking: Consequences for self-esteem and future motivation.",JPSP,2008,successful
+Row.97,10.1037/0022-3514.94.4.615,Social identity contingencies: How diversity cues signal threat or safety for African Americans in mainstream institutions.,JPSP,2008,unsuccessful
+Row.104,10.1111/j.1467-9280.2008.02062.x,"Effects of Fluency on Psychological Distance and Mental Construal (or Why New York Is a Large City, but
+                    <i>New York</i>
+                    Is a Civilized Jungle)",PS,2008,unsuccessful
+Row.106,10.1111/j.1467-9280.2008.02066.x,More Than Meets the Eye,PS,2008,unsuccessful
+Row.107,10.1111/j.1467-9280.2008.02078.x,Nonconscious Goal Pursuit in Novel Environments,PS,2008,unsuccessful
+Row.110,10.1111/j.1467-9280.2008.02092.x,Perceptual Mechanisms That Characterize Gender Differences in Decoding Women's Sexual Intent,PS,2008,unsuccessful
+Row.111,10.1111/j.1467-9280.2008.02057.x,Precision of the Anchor Influences the Amount of Adjustment,PS,2008,successful
+Row.112,10.1111/j.1467-9280.2008.02041.x,Action Dynamics Reveal Parallel Competition in Decision Making,PS,2008,successful
+Row.113,10.1111/j.1467-9280.2008.02089.x,Prescribed Optimism: Is It Right to Be Wrong About the Future?,PS,2008,successful
+Row.114,10.1111/j.1467-9280.2008.02043.x,Age-Related Changes in the Episodic Simulation of Future Events,PS,2008,successful
+Row.115,10.1111/j.1467-9280.2008.02069.x,Preschoolers' Perspective Taking in Word Learning,PS,2008,unsuccessful
+Row.116,10.1111/j.1467-9280.2008.02136.x,Measuring the Crowd Within,PS,2008,successful
+Row.117,10.1111/j.1467-9280.2008.02046.x,"Temporal Selection is Suppressed, Delayed, and Diffused During the Attentional Blink",PS,2008,successful
+Row.118,10.1111/j.1467-9280.2008.02077.x,"Toward a Physiology of Dual-Process Reasoning and Judgment: Lemonade, Willpower, and Expensive Rule-Based Analysis",PS,2008,unsuccessful
+Row.120,10.1111/j.1467-9280.2008.02053.x,Errors Are Aversive,PS,2008,unsuccessful
+Row.121,10.1111/j.1467-9280.2008.02091.x,The Sunny Side of Fairness,PS,2008,successful
+Row.122,10.1111/j.1467-9280.2008.02098.x,The Representation of Simple Ensemble Visual Features Outside the Focus of Attention,PS,2008,successful
+Row.124,10.1111/j.1467-9280.2008.02040.x,Loving Those Who Justify Inequality,PS,2008,unsuccessful
+Row.127,10.1111/j.1467-9280.2008.02080.x,A Motion Aftereffect From Still Photographs Depicting Motion,PS,2008,successful
+Row.129,10.1111/j.1467-9280.2008.02052.x,The Threat of Appearing Prejudiced and Race-Based Attentional Biases,PS,2008,unsuccessful
+Row.132,10.1111/j.1467-9280.2008.02072.x,Where Do We Look During Potentially Offensive Behavior?,PS,2008,unsuccessful
+Row.133,10.1111/j.1467-9280.2008.02064.x,Adaptive Memory,PS,2008,successful
+Row.134,10.1111/j.1467-9280.2008.02095.x,"Is Happiness Having What You Want, Wanting What You Have, or Both?",PS,2008,successful
+Row.135,10.1111/j.1467-9280.2008.02076.x,Implicit Attitude Generalization Occurs Immediately; Explicit Attitude Generalization Takes Time,PS,2008,unsuccessful
+Row.136,10.1111/j.1467-9280.2008.02045.x,The Value of Believing in Free Will,PS,2008,unsuccessful
+Row.139,10.1111/j.1467-9280.2008.02050.x,Auditory Change Detection: Simple Sounds Are Not Memorized Better Than Complex Sounds,PS,2008,successful
+Row.140,10.1111/j.1467-9280.2008.02084.x,Keeping One's Distance,PS,2008,unsuccessful
+Row.142,10.1111/j.1467-9280.2008.02088.x,Hedonic and Instrumental Motives in Anger Regulation,PS,2008,successful
+Row.143,10.1111/j.1467-9280.2008.02056.x,Creating Social Connection Through Inferential Reproduction,PS,2008,unsuccessful
+Row.145,10.1111/j.1467-9280.2008.02100.x,“In-Group Love” and “Out-Group Hate” as Motives for Individual Participation in Intergroup Conflict,PS,2008,successful
+Row.146,10.1111/j.1467-9280.2008.02070.x,A Word-Order Constraint on Phonological Activation,PS,2008,unsuccessful
+Row.148,10.1111/j.1467-9280.2008.02060.x,The Best Men Are (Not Always) Already Taken,PS,2008,unsuccessful
+Row.150,10.1111/j.1467-9280.2008.02044.x,Sensitivity to Object Viewpoint and Action Instructions During Search for Targets in the Lower Visual Field,PS,2008,unsuccessful
+Row.151,10.1111/j.1467-9280.2008.02227.x,With a Clean Conscience,PS,2008,unsuccessful
+Row.153,10.1111/j.1467-9280.2008.02049.x,Extremal Edge,PS,2008,unsuccessful
+Row.154,10.1111/j.1467-9280.2008.02085.x,What Do Cross-National Comparisons of Personality Traits Tell Us?,PS,2008,successful
+Row.155,10.1111/j.1467-9280.2008.02093.x,Personality Dominance and Preferential Use of the Vertical Dimension of Space,PS,2008,unsuccessful
+Row.158,10.1111/j.1467-9280.2008.02042.x,Conflict-Triggered Goal Shielding,PS,2008,successful
+Row.161,10.1111/j.1467-9280.2008.02081.x,Detecting the Snake in the Grass,PS,2008,unsuccessful
+Row.165,10.1111/j.1467-9280.2008.02039.x,The Value Heuristic in Judgments of Relative Frequency,PS,2008,unsuccessful
+Row.167,10.1111/j.1467-9280.2008.02051.x,"Head Up, Foot Down",PS,2008,unsuccessful
+control_10.1111/j.1467-9280.2008.02055.x,10.1111/j.1467-9280.2008.02055.x,Genes and Popularity,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02058.x,10.1111/j.1467-9280.2008.02058.x,The Effect of Visual Search Efficiency on Response Preparation,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02059.x,10.1111/j.1467-9280.2008.02059.x,Finding Words and Rules in a Speech Stream,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02063.x,10.1111/j.1467-9280.2008.02063.x,The Negative Consequences of Threat,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02065.x,10.1111/j.1467-9280.2008.02065.x,Do Today's Young People Really Think They Are So Extraordinary?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02067.x,10.1111/j.1467-9280.2008.02067.x,Conjoint Measurement of Gloss and Surface Texture,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02036.x,10.1111/j.1467-9280.2008.02036.x,Bright Children Become Enlightened Adults,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02037.x,10.1111/j.1467-9280.2008.02037.x,Implicit Prejudice Toward Injecting Drug Users Predicts Intentions to Change Jobs Among Drug and Alcohol Nurses,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02038.x,10.1111/j.1467-9280.2008.02038.x,Cultural Influences on Neural Substrates of Attentional Control,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02047.x,10.1111/j.1467-9280.2008.02047.x,Association Between Polymorphisms in the Dopamine Transporter Gene and Depression,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02048.x,10.1111/j.1467-9280.2008.02048.x,Mr. Grimace or Ms. Smile,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02068.x,10.1111/j.1467-9280.2008.02068.x,Happiness Is a Personal(ity) Thing,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02071.x,10.1111/j.1467-9280.2008.02071.x,A Double Dissociation Between Action and Perception in the Context of Visual Illusions,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02073.x,10.1111/j.1467-9280.2008.02073.x,Enhancing the Pace of Recovery,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02074.x,10.1111/j.1467-9280.2008.02074.x,Talking About Walking,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02075.x,10.1111/j.1467-9280.2008.02075.x,Stored Word Sequences in Language Learning,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02079.x,10.1111/j.1467-9280.2008.02079.x,Can an Angry Woman Get Ahead?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02083.x,10.1111/j.1467-9280.2008.02083.x,"Night and Day, You Are the One",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02086.x,10.1111/j.1467-9280.2008.02086.x,Naming Practices and the Acquisition of Key Biological Concepts,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02087.x,10.1111/j.1467-9280.2008.02087.x,Individual Differences in Insular Sensitivity During Loss Anticipation Predict Avoidance Learning,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02094.x,10.1111/j.1467-9280.2008.02094.x,Beyond Fear,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02096.x,10.1111/j.1467-9280.2008.02096.x,Why It Pays to Get Inside the Head of Your Opponent,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02099.x,10.1111/j.1467-9280.2008.02099.x,It Takes Two,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02102.x,10.1111/j.1467-9280.2008.02102.x,Making Message Recipients “Feel Right”,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02103.x,10.1111/j.1467-9280.2008.02103.x,Is the Sky 2? Contextual Priming in Grapheme-Color Synaesthesia,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02104.x,10.1111/j.1467-9280.2008.02104.x,Explaining Contradictory Relations Between Risk Perception and Risk Taking,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02105.x,10.1111/j.1467-9280.2008.02105.x,Viewing a Face (Especially One's Own Face) Being Touched Enhances Tactile Perception on the Face,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02106.x,10.1111/j.1467-9280.2008.02106.x,Becoming Friends by Chance,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02107.x,10.1111/j.1467-9280.2008.02107.x,Lacking Power Impairs Executive Functions,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02108.x,10.1111/j.1467-9280.2008.02108.x,Interpersonal Politics,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02109.x,10.1111/j.1467-9280.2008.02109.x,"Implicit Proactive Interference, Age, and Automatic Versus Controlled Retrieval Strategies",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02110.x,10.1111/j.1467-9280.2008.02110.x,Forgetting and Recovering the Unforgettable,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02111.x,10.1111/j.1467-9280.2008.02111.x,In the Footsteps of Biological Motion and Multisensory Perception,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02112.x,10.1111/j.1467-9280.2008.02112.x,Approach-Motivated Positive Affect Reduces Breadth of Attention,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02113.x,10.1111/j.1467-9280.2008.02113.x,Smarter Than We Think,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02114.x,10.1111/j.1467-9280.2008.02114.x,Dissociable Interference-Control Processes in Perception and Memory,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02115.x,10.1111/j.1467-9280.2008.02115.x,Fighting Death With Death,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02116.x,10.1111/j.1467-9280.2008.02116.x,Reading Between the Lies,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02117.x,10.1111/j.1467-9280.2008.02117.x,Social Feedback to Infants' Babbling Facilitates Rapid Phonological Learning,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02118.x,10.1111/j.1467-9280.2008.02118.x,Misery Is Not Miserly,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02119.x,10.1111/j.1467-9280.2008.02119.x,The Face of Bimodal Bilingualism,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02120.x,10.1111/j.1467-9280.2008.02120.x,Health-Engagement Control Strategies and 2-Year Changes in Older Adults' Physical Health,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02121.x,10.1111/j.1467-9280.2008.02121.x,Knowing Too Much,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02122.x,10.1111/j.1467-9280.2008.02122.x,"Who Shalt Not Kill? Individual Differences in Working Memory Capacity, Executive Control, and Moral Judgment",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02123.x,10.1111/j.1467-9280.2008.02123.x,Illegitimacy Moderates the Effects of Power on Approach,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02125.x,10.1111/j.1467-9280.2008.02125.x,Peak of Desire,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02126.x,10.1111/j.1467-9280.2008.02126.x,Preferences Versus Strategies as Explanations for Culture-Specific Behavior,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02127.x,10.1111/j.1467-9280.2008.02127.x,Learning Concepts and Categories,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02128.x,10.1111/j.1467-9280.2008.02128.x,Emotion Elicitor or Emotion Messenger?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02129.x,10.1111/j.1467-9280.2008.02129.x,Overconfidence in an Objective Anticipatory Motor Task,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02130.x,10.1111/j.1467-9280.2008.02130.x,Does Subitizing Reflect Numerical Estimation?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02131.x,10.1111/j.1467-9280.2008.02131.x,Modality-Specific Attention Under Imminent But Not Remote Threat of Shock,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02132.x,10.1111/j.1467-9280.2008.02132.x,Sensory-Specific Satiety Is Intact in Amnesics Who Eat Multiple Meals,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02133.x,10.1111/j.1467-9280.2008.02133.x,Recalibrating Color Categories Using World Knowledge,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02134.x,10.1111/j.1467-9280.2008.02134.x,Vision Merges With Touch in a Purely Tactile Discrimination,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02135.x,10.1111/j.1467-9280.2008.02135.x,Taking Another Person's Perspective Increases Self-Referential Neural Processing,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02137.x,10.1111/j.1467-9280.2008.02137.x,The Hidden-Zero Effect,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02138.x,10.1111/j.1467-9280.2008.02138.x,Are Older Adults Less Subject to the Sunk-Cost Fallacy Than Younger Adults?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02139.x,10.1111/j.1467-9280.2008.02139.x,“Perceptual Scotomas”,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02140.x,10.1111/j.1467-9280.2008.02140.x,Figure-Ground Segmentation Can Occur Without Attention,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02141.x,10.1111/j.1467-9280.2008.02141.x,"If I'm Not Hot, Are You Hot or Not?",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02142.x,10.1111/j.1467-9280.2008.02142.x,Statistical Learning Using Real-World Scenes,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02143.x,10.1111/j.1467-9280.2008.02143.x,Objects on a Collision Path With the Observer Demand Attention,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02144.x,10.1111/j.1467-9280.2008.02144.x,Induced Perceptual Grouping,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02145.x,10.1111/j.1467-9280.2008.02145.x,Error-Monitoring Ability Predicts Daily Stress Regulation,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02146.x,10.1111/j.1467-9280.2008.02146.x,Sweet Silent Thought,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02147.x,10.1111/j.1467-9280.2008.02147.x,Interracial Roommate Relationships,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02148.x,10.1111/j.1467-9280.2008.02148.x,"Angry, Disgusted, or Afraid?",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02149.x,10.1111/j.1467-9280.2008.02149.x,Effects of Salience Are Short-Lived,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02150.x,10.1111/j.1467-9280.2008.02150.x,Why Does Writing About Important Values Reduce Defensiveness?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02151.x,10.1111/j.1467-9280.2008.02151.x,Lasting False Beliefs and Their Behavioral Consequences,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02152.x,10.1111/j.1467-9280.2008.02152.x,Death Without God,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02153.x,10.1111/j.1467-9280.2008.02153.x,Chinese Children Excel on Novel Mathematics Problems Even Before Elementary School,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02154.x,10.1111/j.1467-9280.2008.02154.x,Submitting to Defeat,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02155.x,10.1111/j.1467-9280.2008.02155.x,When the Referee Sees Red …,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02156.x,10.1111/j.1467-9280.2008.02156.x,How to Accurately Detect Autobiographical Events,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02158.x,10.1111/j.1467-9280.2008.02158.x,When Hurt Will Not Heal,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02160.x,10.1111/j.1467-9280.2008.02160.x,Search in External and Internal Spaces,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02161.x,10.1111/j.1467-9280.2008.02161.x,From Sucker to Saint,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02162.x,10.1111/j.1467-9280.2008.02162.x,I Am Too Just Like You,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02163.x,10.1111/j.1467-9280.2008.02163.x,"Motion, Not Masking, Provides the Medium for Feature Attribution",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02164.x,10.1111/j.1467-9280.2008.02164.x,Temperament and Migration Patterns in Finland,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02165.x,10.1111/j.1467-9280.2008.02165.x,Cold and Lonely,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02166.x,10.1111/j.1467-9280.2008.02166.x,Intelligence Correlations Between Brothers Decrease With Increasing Age Difference,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02167.x,10.1111/j.1467-9280.2008.02167.x,Looking While Unhappy,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02168.x,10.1111/j.1467-9280.2008.02168.x,Sex Differences in the Emergence of Leadership During Competitions Within and Between Groups,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02169.x,10.1111/j.1467-9280.2008.02169.x,The Comparative Mind-Set,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02170.x,10.1111/j.1467-9280.2008.02170.x,Both Predator and Prey,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02171.x,10.1111/j.1467-9280.2008.02171.x,"More Intelligent, More Dependable Children Live Longer",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02173.x,10.1111/j.1467-9280.2008.02173.x,Realism and Illusion in Americans' Temporal Views of Their Life Satisfaction,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02174.x,10.1111/j.1467-9280.2008.02174.x,Constructing Emotion,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02175.x,10.1111/j.1467-9280.2008.02175.x,Individual Differences in Delay Discounting,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02176.x,10.1111/j.1467-9280.2008.02176.x,The Merits of Unconscious Thought in Creativity,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02177.x,10.1111/j.1467-9280.2008.02177.x,How Does Negative Emotion Cause False Memories?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02178.x,10.1111/j.1467-9280.2008.02178.x,Exploring the Cold-to-Hot Empathy Gap in Smokers,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02179.x,10.1111/j.1467-9280.2008.02179.x,Can Cross-Group Friendships Influence Minority Students' Well-Being at Historically White Universities?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02180.x,10.1111/j.1467-9280.2008.02180.x,Memory for Syntax Despite Amnesia,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02182.x,10.1111/j.1467-9280.2008.02182.x,Ability Differences Among People Who Have Commensurate Degrees Matter for Scientific Creativity,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02183.x,10.1111/j.1467-9280.2008.02183.x,The Devil You Know,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02184.x,10.1111/j.1467-9280.2008.02184.x,Preschoolers' Responses to Social Comparisons Involving Relative Failure,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02185.x,10.1111/j.1467-9280.2008.02185.x,Black + White = Black,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02186.x,10.1111/j.1467-9280.2008.02186.x,Ethnic Out-Group Faces Are Biased in the Prejudiced Mind,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02188.x,10.1111/j.1467-9280.2008.02188.x,The Role of Facial Mimicry in the Recognition of Affect,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02189.x,10.1111/j.1467-9280.2008.02189.x,"If It's Hard to Read, It's Hard to Do",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02190.x,10.1111/j.1467-9280.2008.02190.x,Multisensory Integration,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02191.x,10.1111/j.1467-9280.2008.02191.x,Two Fixations Suffice in Face Recognition,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02192.x,10.1111/j.1467-9280.2008.02192.x,False Memory 1/20th of a Second Later,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02193.x,10.1111/j.1467-9280.2008.02193.x,Feedback Produces Divergence From Prospect Theory in Descriptive Choice,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02194.x,10.1111/j.1467-9280.2008.02194.x,Counteracting Loneliness,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02195.x,10.1111/j.1467-9280.2008.02195.x,Which Thoughts Count? Algorithms for Evaluating Satisfaction in Relationships,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02196.x,10.1111/j.1467-9280.2008.02196.x,Is It Important to Prevent Early Exposure to Drugs and Alcohol Among Adolescents?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02197.x,10.1111/j.1467-9280.2008.02197.x,Perceptual-Load-Induced Selection as a Result of Local Competitive Interactions in Visual Cortex,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02198.x,10.1111/j.1467-9280.2008.02198.x,On Feelings as a Heuristic for Making Offers in Ultimatum Negotiations,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02200.x,10.1111/j.1467-9280.2008.02200.x,Mental Rotation in Human Infants,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02201.x,10.1111/j.1467-9280.2008.02201.x,A Sex Difference in Mental Rotation in Young Infants,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02202.x,10.1111/j.1467-9280.2008.02202.x,What's So Special About Working Memory?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02203.x,10.1111/j.1467-9280.2008.02203.x,The Importance of Temporal Distinctiveness for Forgetting Over the Short Term,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02204.x,10.1111/j.1467-9280.2008.02204.x,Increases in Positive Self-Views Among High School Students,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02205.x,10.1111/j.1467-9280.2008.02205.x,Motion Extrapolation Into the Blind Spot,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02206.x,10.1111/j.1467-9280.2008.02206.x,Oxytocin Selectively Facilitates Recognition of Positive Sex and Relationship Words,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02209.x,10.1111/j.1467-9280.2008.02209.x,Spacing Effects in Learning,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02210.x,10.1111/j.1467-9280.2008.02210.x,"Categorical Scaling of Duration Bisection in Pigeons (
+                    <i>Columba livia</i>
+                    ), Mice (
+                    <i>Mus musculus</i>
+                    ), and Humans (
+                    <i>Homo sapiens</i>
+                    )",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02211.x,10.1111/j.1467-9280.2008.02211.x,Limits on Introspection,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02212.x,10.1111/j.1467-9280.2008.02212.x,Boundary Conditions on Unconscious Thought in Complex Decision Making,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02213.x,10.1111/j.1467-9280.2008.02213.x,Parental Education Moderates Genetic Influences on Reading Disability,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02214.x,10.1111/j.1467-9280.2008.02214.x,The Neural Substrates of In-Group Bias,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02215.x,10.1111/j.1467-9280.2008.02215.x,"Within-Person Relationships Among Daily Self-Esteem, Need Satisfaction, and Authenticity",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02216.x,10.1111/j.1467-9280.2008.02216.x,Stop the Presses,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02217.x,10.1111/j.1467-9280.2008.02217.x,Mistaken Identity,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02218.x,10.1111/j.1467-9280.2008.02218.x,Features for Identification of Uppercase and Lowercase Letters,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02219.x,10.1111/j.1467-9280.2008.02219.x,"Initial Training With Difficult Items Facilitates Information Integration, but Not Rule-Based Category Learning",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02220.x,10.1111/j.1467-9280.2008.02220.x,Connecting the Dots Within,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02221.x,10.1111/j.1467-9280.2008.02221.x,"A Cross-Species Investigation of Acetylcholine, Attention, and Feature Binding",PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02222.x,10.1111/j.1467-9280.2008.02222.x,Contextualizing Change in Marital Satisfaction During Middle Age,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02207.x,10.1111/j.1467-9280.2008.02207.x,Powerful People Make Good Decisions Even When They Consciously Think,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02208.x,10.1111/j.1467-9280.2008.02208.x,The Sting of Intentional Pain,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02223.x,10.1111/j.1467-9280.2008.02223.x,Reciprocity Is Not Give and Take,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02224.x,10.1111/j.1467-9280.2008.02224.x,The Source of Enhanced Cognitive Control in Bilinguals,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02225.x,10.1111/j.1467-9280.2008.02225.x,The Cognitive Benefits of Interacting With Nature,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02226.x,10.1111/j.1467-9280.2008.02226.x,When the Truth Is Not Too Hard to Handle,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02228.x,10.1111/j.1467-9280.2008.02228.x,Differential Processing of Consonants and Vowels in Lexical Access Through Reading,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02229.x,10.1111/j.1467-9280.2008.02229.x,Preference Invites Categorization,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02230.x,10.1111/j.1467-9280.2008.02230.x,An In-Group Advantage in Detecting Intergroup Anxiety,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02231.x,10.1111/j.1467-9280.2008.02231.x,Looking to the Future to Appreciate the Present,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02232.x,10.1111/j.1467-9280.2008.02232.x,Gender Recognition of Human Faces Using Color,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02233.x,10.1111/j.1467-9280.2008.02233.x,Twelve-Month-Old Infants Benefit From Prior Experience in Statistical Learning,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02234.x,10.1111/j.1467-9280.2008.02234.x,An Attentional Mechanism for Selecting Appropriate Actions Afforded by Graspable Objects,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02235.x,10.1111/j.1467-9280.2008.02235.x,Is Relative Pitch Specific to Pitch?,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02236.x,10.1111/j.1467-9280.2008.02236.x,The Fragility of Intergroup Relations,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02237.x,10.1111/j.1467-9280.2008.02237.x,Category Markers or Attributes,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02238.x,10.1111/j.1467-9280.2008.02238.x,The Case of the Transmogrifying Experimenter,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02239.x,10.1111/j.1467-9280.2008.02239.x,Reorienting When Cues Conflict,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02240.x,10.1111/j.1467-9280.2008.02240.x,Construal Level and Procrastination,PS,2008,external_control
+control_10.1111/j.1467-9280.2008.02241.x,10.1111/j.1467-9280.2008.02241.x,"Power, Distress, and Compassion",PS,2008,external_control
+control_10.1037/0022-3514.94.1.133,10.1037/0022-3514.94.1.133,All in the mind's eye? Anger rumination and reappraisal.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.1.168,10.1037/0022-3514.94.1.168,Why can't a man be more like a woman? Sex differences in Big Five personality traits across 55 cultures.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.1.32,10.1037/0022-3514.94.1.32,Culture and the cognitive and neuroendocrine responses to speech.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.1.75,10.1037/0022-3514.94.1.75,Nuestra culpa: Collective guilt and shame as predictors of reparation for historical wrongdoing.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.1.108,10.1037/0022-3514.94.1.108,Neurocognitive underpinnings of face perception: Further evidence of distinct person and group perception processes.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.1.146,10.1037/0022-3514.94.1.146,Does depression interfere with effort mobilization? Effects of dysphoria and task difficulty on cardiovascular response.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.320,10.1037/0022-3514.94.2.320,Are individuals' reputations related to their history of behavior?,JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.94.2.214,10.1037/0022-3514.94.2.94.2.214,I want to be creative: Exploring the role of hedonic contingency theory in the positive mood-cognitive flexibility link.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.278,10.1037/0022-3514.94.2.278,How attributional ambiguity shapes physiological and emotional responses to social rejection and acceptance.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.292,10.1037/0022-3514.94.2.292,"Not yet human: Implicit knowledge, historical dehumanization, and contemporary consequences.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.307,10.1037/0022-3514.94.2.307,Unraveling the role of forgiveness in family relationships.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.334,10.1037/0022-3514.94.2.334,"Personality as manifest in word use: Correlations with self-report, acquaintance report, and behavior.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.347,10.1037/0022-3514.94.2.347,A new taxonomy of Dutch personality traits based on a comprehensive and unrestricted list of descriptors.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.2.94.2.265,10.1037/0022-3514.94.2.94.2.265,Expect the unexpected: Failure to anticipate similarities leads to an intergroup forecasting error.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.3.531,10.1037/0022-3514.94.3.531,"Integrating dispositions, signatures, and the interpersonal domain.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.3.365,10.1037/0022-3514.94.3.365,Placing the face in context: Cultural differences in the perception of facial emotion.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.3.412,10.1037/0022-3514.94.3.412,The cost of lower self-esteem: Testing a self- and social-bonds model of health.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.3.460,10.1037/0022-3514.94.3.460,Modeling support provision in intimate relationships.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.3.479,10.1037/0022-3514.94.3.479,"Interindividual-intergroup discontinuity in the domain of correspondent outcomes: The roles of relativistic concern, perceived categorization, and the doctrine of mutual assured destruction.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.4.547,10.1037/0022-3514.94.4.547,Together or apart: When goals and temptations complement versus compete.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.4.631,10.1037/0022-3514.94.4.631,"Benevolent cognitions as a strategy of relationship maintenance: ""Don't sweat the small stuff""....But it is not all small stuff.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.739,10.1037/0022-3514.94.5.739,Hedonic tone and activation level in the mood-creativity link: Toward a dual pathway to creativity model.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.777,10.1037/0022-3514.94.5.777,How to heat up from the cold: Examining the preconditions for (unconscious) mood effects.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.824,10.1037/0022-3514.94.5.824,Receiving support as a mixed blessing: Evidence for dual effects of support on psychological outcomes.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.839,10.1037/0022-3514.94.5.839,Nomina sunt omina: On the inductive potential of nouns and adjectives in person perception.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.883,10.1037/0022-3514.94.5.883,"Making choices impairs subsequent self-control: A limited-resource account of decision making, self-regulation, and active initiative.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.899,10.1037/0022-3514.94.5.899,Adolescent personality moderates genetic and environmental influences on relationships with parents.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.757,10.1037/0022-3514.94.5.757,Judgments of the lucky across development and culture.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.792,10.1037/0022-3514.94.5.792,Forming implicit and explicit attitudes toward individuals: Social group association cues.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.808,10.1037/0022-3514.94.5.808,Maintaining sexual desire in intimate relationships: The importance of approach goals.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.860,10.1037/0022-3514.94.5.860,"Taking the easy way out: Preference diversity, decision strategies, and decision refusal in groups.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.5.913,10.1037/0022-3514.94.5.913,"Societal threat, authoritarianism, conservatism, and U.S. state death penalty sentencing (1977-2004).",JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.1007,10.1037/0022-3514.94.6.1007,Pride and perseverance: The motivational role of pride.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.1018,10.1037/0022-3514.94.6.1018,Unconscious and spontaneous and...Complex: The three selves model of social comparison assimilation and contrast.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.1033,10.1037/0022-3514.94.6.1033,Biological conceptions of race and the motivation to cross racial boundaries.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.1048,10.1037/0022-3514.94.6.1048,The association of neighborhood poverty with personality change in childhood.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.1062,10.1037/0022-3514.94.6.1062,Conceptualizing and assessing self-enhancement bias: A componential approach.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.925,10.1037/0022-3514.94.6.925,"Culture, emotion regulation, and adjustment.",JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.938,10.1037/0022-3514.94.6.938,Affective and cognitive meta-bases of attitudes: Unique effects on information interest and persuasion.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.956,10.1037/0022-3514.94.6.956,When subjective experiences matter: Power increases reliance on the ease of retrieval.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.971,10.1037/0022-3514.94.6.971,A two-dimensional model that employs explicit and implicit attitudes to characterize prejudice.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.988,10.1037/0022-3514.94.6.988,Remembering historical victimization: Collective guilt for current ingroup transgressions.,JPSP,2008,external_control
+control_10.1037/0022-3514.94.6.1078,10.1037/0022-3514.94.6.1078,The social endocrinology of dominance: Basal testosterone predicts cortisol changes and behavior following victory and defeat.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.111,10.1037/0022-3514.95.1.111,Power and the objectification of social targets.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.144,10.1037/0022-3514.95.1.144,Group-level self-definition and self-investment: A hierarchical (multicomponent) model of in-group identification.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.181,10.1037/0022-3514.95.1.181,"Self-esteem reactions to social interactions: Evidence for sociometer mechanisms across days, people, and nations.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.1,10.1037/0022-3514.95.1.1,Impressions of Milgram's obedient teachers: Situational cues inform inferences about motives and traits.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.128,10.1037/0022-3514.95.1.128,"If you need help, just ask: Underestimating compliance with direct requests for help.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.166,10.1037/0022-3514.95.1.166,"Neuroticism, marital violence, and the moderating role of stress and behavioral skills.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.197,10.1037/0022-3514.95.1.197,Neural bases of moderation of cortisol stress responses by psychosocial resources.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.212,10.1037/0022-3514.95.1.212,"Pathogens, personality, and culture: Disease prevalence predicts worldwide variability in sociosexuality, extraversion, and openness to experience.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.222,10.1037/0022-3514.95.1.222,Stability and change in temperament during adolescence.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.36,10.1037/0022-3514.95.1.36,Why positive information is processed faster: The density hypothesis.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.50,10.1037/0022-3514.95.1.50,If-then contingencies and the differential effects of the availability of an attractive alternative on relationship maintenance for men and women.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.66,10.1037/0022-3514.95.1.66,The role of positive and negative emotions in life satisfaction judgment across nations.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.1.94,10.1037/0022-3514.95.1.94,Navigating personal and relational concerns: The quest for equilibrium.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.319,10.1037/0022-3514.95.2.319,How goal instrumentality shapes relationship evaluations.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.404,10.1037/0022-3514.95.2.404,Perspective-takers behave more stereotypically.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.253,10.1037/0022-3514.95.2.253,Are people excessive or judicious in their egocentrism? A modeling approach to understanding bias and accuracy in people's optimism.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.308,10.1037/0022-3514.95.2.308,A nation challenged: The impact of foreign threat on America's tolerance for diversity.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.338,10.1037/0022-3514.95.2.338,Distinguishing institutional identification from academic goal pursuit: Interactive effects of ethnic identification and race-based rejection sensitivity.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.352,10.1037/0022-3514.95.2.352,The cultural grounding of personal relationship: The importance of attractiveness in everyday life.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.369,10.1037/0022-3514.95.2.369,"The mediation of mothers' self-fulfilling effects on their children's alcohol use: Self-verification, informational conformity, and modeling processes.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.385,10.1037/0022-3514.95.2.385,"Every time you go away: Changes in affect, behavior, and physiology associated with travel-related separations from romantic partners.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.442,10.1037/0022-3514.95.2.442,Substance and artifact in the higher-order factors of the Big Five.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.2.456,10.1037/0022-3514.95.2.456,"Motivation, affect, and hemispheric asymmetry: Power versus affiliation.",JPSP,2008,external_control
+control_10.1037/a0012518,10.1037/a0012518,Power and affordances: When the situation has more power over powerful than powerless individuals.,JPSP,2008,external_control
+control_10.1037/a0012543,10.1037/a0012543,Inclusion-exclusion of positive and negative past selves: Mood congruence as information.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.555,10.1037/0022-3514.95.3.555,Creating and undermining social support in communal relationships: The role of compassionate and self-image goals.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.593,10.1037/0022-3514.95.3.593,"Who drives divergence? Identity signaling, outgroup dissimilarity, and the abandonment of cultural tastes.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.608,10.1037/0022-3514.95.3.608,Relationship-contingent self-esteem and the ups and downs of romantic relationships.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.628,10.1037/0022-3514.95.3.628,The attachment system in fledgling relationships: An activating role for attachment anxiety.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.648,10.1037/0022-3514.95.3.648,Mental set and creative thought in social conflict: Threat rigidity versus motivated focus.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.662,10.1037/0022-3514.95.3.662,Innovation credit: When can leaders oppose their group's norms?,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.679,10.1037/0022-3514.95.3.679,Self-expansion and flow in couples' momentary experiences: An experience sampling study.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.709,10.1037/0022-3514.95.3.709,Searching for and finding meaning in collective trauma: Results from a national longitudinal study of the 9/11 terrorist attacks.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.739,10.1037/0022-3514.95.3.739,"Culture, cross-role consistency, and adjustment: Testing trait and cultural psychology perspectives.",JPSP,2008,external_control
+control_10.1037/a0012559,10.1037/a0012559,The mere perception of elaboration creates attitude certainty: Exploring the thoughtfulness heuristic.,JPSP,2008,external_control
+control_10.1037/a0012560,10.1037/a0012560,Moods as spotlights: The influence of mood on accessibility effects.,JPSP,2008,external_control
+control_10.1037/a0012612,10.1037/a0012612,"Negotiators who give too much: Unmitigated communion, relational anxieties, and economic costs in distributive and integrative bargaining.",JPSP,2008,external_control
+control_10.1037/a0012666,10.1037/a0012666,The role of control motivation in mortality salience effects on ingroup support and defense.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.3.576,10.1037/0022-3514.95.3.576,Coordination success and interpersonal perceptions: Matching versus mismatching.,JPSP,2008,external_control
+control_10.1037/a0011619,10.1037/a0011619,"""How long will I suffer?"" versus ""How long will you suffer?"" A self-other effect in affective forecasting.",JPSP,2008,external_control
+control_10.1037/a0012939,10.1037/a0012939,Representations of the self in the near and distant future.,JPSP,2008,external_control
+control_10.1037/a0013192,10.1037/a0013192,A new look at the consequences of attitude certainty: The amplification hypothesis.,JPSP,2008,external_control
+control_10.1037/a0011381,10.1037/a0011381,Cooperation in social dilemmas: Free riding may be thwarted by second-order reward rather than by punishment.,JPSP,2008,external_control
+control_10.1037/a0011434,10.1037/a0011434,"A test of the extended intergroup contact hypothesis: The mediating role of intergroup anxiety, perceived ingroup and outgroup norms, and inclusion of the outgroup in the self.",JPSP,2008,external_control
+control_10.1037/a0011617,10.1037/a0011617,When do the stigmatized stigmatize? The ironic effects of being accountable to (perceived) majority group prejudice-expression norms.,JPSP,2008,external_control
+control_10.1037/a0011618,10.1037/a0011618,Let your preference be your guide? Preferences and choices are more tightly linked for North Americans than for Indians.,JPSP,2008,external_control
+control_10.1037/a0011990,10.1037/a0011990,Seeing race and seeming racist? Evaluating strategic colorblindness in social interaction.,JPSP,2008,external_control
+control_10.1037/a0011991,10.1037/a0011991,Not so ugly after all: When shame acts as a commitment device.,JPSP,2008,external_control
+control_10.1037/a0012069,10.1037/a0012069,"Me, myself, and us: Salient self-threats and relational connections.",JPSP,2008,external_control
+control_10.1037/a0012650,10.1037/a0012650,Family metaphors and moral intuitions: How conservatives and liberals narrate their lives.,JPSP,2008,external_control
+control_10.1037/a0012705,10.1037/a0012705,Working memory capacity and self-regulatory behavior: Toward an individual differences perspective on behavior determination by automatic versus controlled processes.,JPSP,2008,external_control
+control_10.1037/a0012709,10.1037/a0012709,The moderator effect that wasn't there: Statistical problems in ambivalence research.,JPSP,2008,external_control
+control_10.1037/a0012710,10.1037/a0012710,Value revelations: Disclosure is in the eye of the beholder.,JPSP,2008,external_control
+control_10.1037/a0012978,10.1037/a0012978,Lay theory of race affects and moderates Asian Americans' responses toward American culture.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.5.1080,10.1037/0022-3514.95.5.1080,With a little help from my cross-group friend: Reducing anxiety in intergroup contexts through cross-group friendship.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.5.1113,10.1037/0022-3514.95.5.1113,Beyond global sociosexual orientations: A more differentiated look at sociosexuality and its effects on courtship and romantic relationships.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.5.1136,10.1037/0022-3514.95.5.1136,Less power or powerless? Egocentric empathy gaps and the irony of having little versus no power in social decision making.,JPSP,2008,external_control
+control_10.1037/a0011993,10.1037/a0011993,Affective divergence: Automatic responses to others' emotions depend on group membership.,JPSP,2008,external_control
+control_10.1037/a0013193,10.1037/a0013193,What happens if we compare chopsticks with forks? The impact of making inappropriate comparisons in cross-cultural research.,JPSP,2008,external_control
+control_10.1037/a0013262,10.1037/a0013262,"Open hearts build lives: Positive emotions, induced through loving-kindness meditation, build consequential personal resources.",JPSP,2008,external_control
+control_10.1037/a0013316,10.1037/a0013316,"It's a wonderful life: Mentally subtracting positive events improves people's affective states, contrary to their affective forecasts.",JPSP,2008,external_control
+control_10.1037/0022-3514.95.5.1095,10.1037/0022-3514.95.5.1095,Predictors of change in postmerger identification during a merger process: A longitudinal study.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.5.1150,10.1037/0022-3514.95.5.1150,Romantic red: Red enhances men's attraction to women.,JPSP,2008,external_control
+control_10.1037/0022-3514.95.5.1180,10.1037/0022-3514.95.5.1180,For better and for worse: Everyday social comparisons between romantic partners.,JPSP,2008,external_control
+control_10.1037/a0013067,10.1037/a0013067,"Man, I feel like a woman: When and how gender-role motivation helps mind-reading.",JPSP,2008,external_control
+control_10.1037/a0013194,10.1037/a0013194,Accuracy and awareness in the perception and categorization of male sexual orientation.,JPSP,2008,external_control
+control_10.1037/a0013314,10.1037/a0013314,"Knowing me, knowing you: The accuracy and unique predictive validity of self-ratings and other-ratings of daily behavior.",JPSP,2008,external_control
+control_10.1037/a0013315,10.1037/a0013315,Testing the limits of optimistic bias: Event and person moderators in a multilevel framework.,JPSP,2008,external_control
+control_10.1037/a0013336,10.1037/a0013336,Two ways to be complex and why they matter: Implications for attitude strength and lying.,JPSP,2008,external_control
+control_10.1037/a0012629,10.1037/a0012629,"""A vengefulness of the impotent"": The pain of in-group inferiority and schadenfreude toward successful out-groups.",JPSP,2008,external_control
+control_10.1037/a0012630,10.1037/a0012630,Identity and politicization among Turkish migrants in Germany: The role of dual identification.,JPSP,2008,external_control
+control_10.1037/a0012633,10.1037/a0012633,"Power reduces the press of the situation: Implications for creativity, conformity, and dissonance.",JPSP,2008,external_control
+control_10.1037/a0012636,10.1037/a0012636,Ethnocentrism and the value of a human life.,JPSP,2008,external_control
+control_10.1037/a0013334,10.1037/a0013334,Assertiveness expectancies: How hard people push depends on the consequences they predict.,JPSP,2008,external_control
+control_10.1037/a0013345,10.1037/a0013345,Working memory capacity and the self-regulation of emotional expression and experience.,JPSP,2008,external_control
+control_10.1037/a0013593,10.1037/a0013593,Focus theory of normative conduct and terror-management theory: The interactive impact of mortality salience and norm salience on social judgment.,JPSP,2008,external_control
+control_10.1037/a0012165,10.1037/a0012165,The paradoxical consequences of revenge.,JPSP,2008,external_control
+control_10.1037/a0012453,10.1037/a0012453,Precarious manhood.,JPSP,2008,external_control
+control_10.1037/a0012454,10.1037/a0012454,Suckers or saviors? Consistent contributors in social dilemmas.,JPSP,2008,external_control
+control_10.1037/a0012627,10.1037/a0012627,My friend is embarrassing me: Exploring the guilty by association effect.,JPSP,2008,external_control
+control_10.1037/a0012628,10.1037/a0012628,Is it better to be moral than smart? The effects of morality and competence norms on the decision to work at group status improvement.,JPSP,2008,external_control
+control_10.1037/a0012631,10.1037/a0012631,Who cares what the outgroup thinks? Testing an information search model of the importance individuals accord to an outgroup member's view of them during intergroup interaction.,JPSP,2008,external_control
+control_10.1037/a0012632,10.1037/a0012632,"Satiated with belongingness? Effects of acceptance, rejection, and task framing on self-regulatory performance.",JPSP,2008,external_control
+control_10.1037/a0012634,10.1037/a0012634,The responsive bystander: How social group membership and group size can encourage as well as inhibit bystander intervention.,JPSP,2008,external_control
+control_10.1037/a0012635,10.1037/a0012635,The generalization of attachment representations to new social situations: Predicting behavior during initial interactions with strangers.,JPSP,2008,external_control
+control_10.1037/a0012821,10.1037/a0012821,Retaliation as a response to procedural unfairness: A self-regulatory approach.,JPSP,2008,external_control
+control_10.1037/a0012822,10.1037/a0012822,Racing to help: Racial bias in high emergency helping situations.,JPSP,2008,external_control
+control_10.1037/a0013195,10.1037/a0013195,Do collectivists know themselves better than individualists? Cross-cultural studies of the holier than thou phenomenon.,JPSP,2008,external_control
+control_10.1037/a0013261,10.1037/a0013261,Going back to Donald: How comparisons shape judgmental priming effects.,JPSP,2008,external_control
+control_10.1037/a0013263,10.1037/a0013263,On becoming ready to pursue a goal you don't know you have: Effects of nonconscious goals on evaluative readiness.,JPSP,2008,external_control
+control_10.1037/0278-7393.34.1.12,10.1037/0278-7393.34.1.12,Native language influences on word recognition in a second language: A megastudy.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.1.1,10.1037/0278-7393.34.1.1,Complement coercion is not modulated by competition: Evidence from eye movements.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.1.112,10.1037/0278-7393.34.1.112,Context retrieval and context change in free recall: Recalling from long-term memory drives list isolation.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.1.32,10.1037/0278-7393.34.1.32,Binding of multidimensional context information as a distinctive characteristic of remember judgments.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.257,10.1037/0278-7393.34.2.257,"Prime diagnosticity in short-term repetition priming: Is primed evidence discounted, even when it reliably indicates the correct answer?",JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.282,10.1037/0278-7393.34.2.282,Age of acquisition and word frequency effects in picture naming: A dual-task investigation.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.313,10.1037/0278-7393.34.2.313,Processing idiomatic expressions: Effects of semantic compositionality.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.328,10.1037/0278-7393.34.2.328,Holistic processing of faces: Perceptual and decisional components.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.381,10.1037/0278-7393.34.2.381,Semantic effects in naming perceptual identification but not in delayed naming: Implications for models and tasks.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.415,10.1037/0278-7393.34.2.415,Body- and environmental-stabilized processing of spatial knowledge.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.2.422,10.1037/0278-7393.34.2.422,Reading aloud: Spelling-sound translation uses central attention.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.688,10.1037/0278-7393.34.3.688,The time course of object-feature retrieval in recognition.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.712,10.1037/0278-7393.34.3.712,Context-sensitive adjustments of cognitive control: Conflict-adaptation effects are modulated by processing demands of the ongoing task.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.533,10.1037/0278-7393.34.3.533,The impact of stimulus and response variability on S-R correspondence effects.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.556,10.1037/0278-7393.34.3.556,Revisiting evidence for modularity and functional equivalence across verbal and spatial domains in memory.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.570,10.1037/0278-7393.34.3.570,A simplified conjoint recognition paradigm for the measurement of gist and verbatim memory.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.587,10.1037/0278-7393.34.3.587,Conceptual coherence affects phonological activation of context objects during object naming.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.602,10.1037/0278-7393.34.3.602,Spatial memory during progressive disorientation.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.616,10.1037/0278-7393.34.3.616,Speed and accuracy of accessing information in working memory: An individual differences investigation of focus switching.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.631,10.1037/0278-7393.34.3.631,Supramodality effects in visual and haptic spatial processes.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.643,10.1037/0278-7393.34.3.643,Feedback consistency effects in visual and auditory word recognition: Where do we stand after more than a decade?,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.662,10.1037/0278-7393.34.3.662,Attention and implicit memory in the category-verification and lexical decision tasks.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.680,10.1037/0278-7393.34.3.680,List context fosters semantic processing: Parallels between semantic and morphological facilitation when primes are forward masked.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.696,10.1037/0278-7393.34.3.696,Attention orienting effects of hesitations in speech: Evidence from ERPs.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.3.703,10.1037/0278-7393.34.3.703,"Response bias in ""remembering"" emotional stimuli: A new perspective on age differences.",JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.730,10.1037/0278-7393.34.4.730,The effects of unitization on familiarity-based source memory: Testing a behavioral prediction derived from neuroimaging data.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.741,10.1037/0278-7393.34.4.741,Event-related potential (ERP) evidence for varied recollection during source monitoring.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.769,10.1037/0278-7393.34.4.769,Content-specific source encoding in the human medial temporal lobe.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.859,10.1037/0278-7393.34.4.859,Cognitive control and lexical access in younger and older bilinguals.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.874,10.1037/0278-7393.34.4.874,Phonological phrase boundaries constrain the online syntactic analysis of spoken sentences.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.945,10.1037/0278-7393.34.4.945,Subjective confidence in one's answers: The consensuality principle.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.1001,10.1037/0278-7393.34.4.1001,Effects of context on eye movements when reading about possible and impossible events.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.752,10.1037/0278-7393.34.4.752,"Testing a neurocomputational model of recollection, familiarity, and source recognition.",JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.780,10.1037/0278-7393.34.4.780,Neuroimaging evidence for agenda-dependent monitoring of different features during short-term source memory tests.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.791,10.1037/0278-7393.34.4.791,Effects of aging on the neural correlates of successful item and source memory encoding.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.809,10.1037/0278-7393.34.4.809,Do young and older adults rely on different processes in source memory tasks? A neuropsychological study.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.823,10.1037/0278-7393.34.4.823,A mental practice superiority effect: Less retroactive interference and more transfer than physical practice.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.834,10.1037/0278-7393.34.4.834,Sleep does not enhance motor sequence learning.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.843,10.1037/0278-7393.34.4.843,Investigating linguistic relativity through bilingualism: The case of grammatical gender.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.886,10.1037/0278-7393.34.4.886,Capacity demands of phoneme selection in word production: New evidence from dual-task experiments.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.900,10.1037/0278-7393.34.4.900,The relationship between semantic short-term memory and immediate serial recall of known and unknown words and nonwords: Data from two Chinese individuals with aphasia.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.918,10.1037/0278-7393.34.4.918,Correcting a metacognitive error: Feedback increases retention of low-confidence correct responses.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.929,10.1037/0278-7393.34.4.929,Sample size and correlational inference.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.960,10.1037/0278-7393.34.4.960,Grammatical and nongrammatical contributions to closed-class word selection.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.982,10.1037/0278-7393.34.4.982,Parallel processing of objects in a naming task.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.988,10.1037/0278-7393.34.4.988,Semantic processing of previews within compound words.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.4.994,10.1037/0278-7393.34.4.994,Specificity of practice: Interaction between concurrent sensory information and terminal feedback.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.5.1055,10.1037/0278-7393.34.5.1055,Multiple-reason decision making based on automatic processing.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.5.1123,10.1037/0278-7393.34.5.1123,Variation in the anthropomorphization of supernatural beings and its implications for cognitive theories of religion.,JEPLMC,2008,external_control
+control_10.1037/a0012796,10.1037/a0012796,Context and spoken word recognition in a novel lexicon.,JEPLMC,2008,external_control
+control_10.1037/a0013000,10.1037/a0013000,Processing segmental and prosodic information in Cantonese word production.,JEPLMC,2008,external_control
+control_10.1037/a0013034,10.1037/a0013034,Process demands of rejection mechanisms of recognition memory.,JEPLMC,2008,external_control
+control_10.1037/0278-7393.34.5.1043,10.1037/0278-7393.34.5.1043,"Hindsight bias doesn't always come easy: Causal models, cognitive effort, and creeping determinism.",JEPLMC,2008,external_control
+control_10.1037/a0012580,10.1037/a0012580,Familiarity and retrieval processes in delayed judgments of learning.,JEPLMC,2008,external_control
+control_10.1037/a0012581,10.1037/a0012581,The role of causal models in analogical inference.,JEPLMC,2008,external_control
+control_10.1037/a0012638,10.1037/a0012638,The role of short-term memory capacity and task experience for overconfidence in judgment under uncertainty.,JEPLMC,2008,external_control
+control_10.1037/a0012794,10.1037/a0012794,A principal components analysis of dynamic spatial memory biases.,JEPLMC,2008,external_control
+control_10.1037/a0012795,10.1037/a0012795,Syntactic priming in comprehension: The role of argument order and animacy.,JEPLMC,2008,external_control
+control_10.1037/a0012797,10.1037/a0012797,Implicit learning of predictive relationships in three-element visual sequences by young and old adults.,JEPLMC,2008,external_control
+control_10.1037/a0012857,10.1037/a0012857,Resting on laurels: The effects of discrete progress markers as subgoals on task performance and preferences.,JEPLMC,2008,external_control
+control_10.1037/a0012937,10.1037/a0012937,Event-related potentials indicate different processes to mediate categorical and associative priming in person recognition.,JEPLMC,2008,external_control
+control_10.1037/a0012938,10.1037/a0012938,Control over grain size in memory reporting--With and without satisficing knowledge.,JEPLMC,2008,external_control
+control_10.1037/a0012942,10.1037/a0012942,How incidental sequence learning creates reportable knowledge: The role of unexpected events.,JEPLMC,2008,external_control
+control_10.1037/a0012943,10.1037/a0012943,"The conscious, the unconscious, and familiarity.",JEPLMC,2008,external_control
+control_10.1037/a0013025,10.1037/a0013025,Fluency heuristic: A model of how the mind exploits a by-product of information retrieval.,JEPLMC,2008,external_control
+control_10.1037/a0013033,10.1037/a0013033,Limits on learning phonotactic constraints from recent production experience.,JEPLMC,2008,external_control
+control_10.1037/a0013016,10.1037/a0013016,The effects of environmental context on recognition memory and claims of remembering.,JEPLMC,2008,external_control
+control_10.1037/a0013078,10.1037/a0013078,Two dissociable updating processes in working memory.,JEPLMC,2008,external_control
+control_10.1037/a0013081,10.1037/a0013081,Process dissociation and mixture signal detection theory.,JEPLMC,2008,external_control
+control_10.1037/a0013356,10.1037/a0013356,Time-related decay or interference-based forgetting in working memory?,JEPLMC,2008,external_control
+control_10.1037/a0013370,10.1037/a0013370,Effects of repetition priming on recognition memory: Testing a perceptual fluency-disfluency model.,JEPLMC,2008,external_control
+control_10.1037/a0013646,10.1037/a0013646,The probabilistic nature of preferential choice.,JEPLMC,2008,external_control
+control_10.1037/a0013011,10.1037/a0013011,Blocking of spatial learning between enclosure geometry and a local landmark.,JEPLMC,2008,external_control
+control_10.1037/a0013012,10.1037/a0013012,"Making sense of word senses: The comprehension of polysemy depends
+                        on sense overlap.",JEPLMC,2008,external_control
+control_10.1037/a0013013,10.1037/a0013013,Autobiographical elaboration reduces memory distortion: Cognitive operations and the distinctiveness heuristic.,JEPLMC,2008,external_control
+control_10.1037/a0013017,10.1037/a0013017,The word grouping hypothesis and eye movements during reading.,JEPLMC,2008,external_control
+control_10.1037/a0013080,10.1037/a0013080,Why does selective attention to parts fail in face processing?,JEPLMC,2008,external_control
+control_10.1037/a0013082,10.1037/a0013082,Testing during study insulates against the buildup of proactive interference.,JEPLMC,2008,external_control
+control_10.1037/a0013084,10.1037/a0013084,Reading aloud: Qualitative differences in the relation between stimulus quality and word frequency as a function of context.,JEPLMC,2008,external_control
+control_10.1037/a0013217,10.1037/a0013217,A shift in task routines during the learning of a motor skill: Group-averaged data may mask critical phases in the individuals' acquisition of skilled performance.,JEPLMC,2008,external_control
+control_10.1037/a0013258,10.1037/a0013258,"Equivalent effects of grouping by time, voice, and location on response timing in verbal serial memory.",JEPLMC,2008,external_control
+control_10.1037/a0013353,10.1037/a0013353,Speaker-external versus speaker-internal forces on utterance form: Do cognitive demands override threats to referential success?,JEPLMC,2008,external_control
+control_10.1037/a0013355,10.1037/a0013355,Learning rule-described and non-rule-described categories: A comparison of children and adults.,JEPLMC,2008,external_control
+control_10.1037/a0013357,10.1037/a0013357,Semantic involvement in reading aloud: Evidence from a nonword training study.,JEPLMC,2008,external_control
+control_10.1037/a0013413,10.1037/a0013413,Are Arabic and verbal numbers processed in different ways?,JEPLMC,2008,external_control
+control_10.1037/a0013509,10.1037/a0013509,Driven by power? Probe question and presentation format effects on causal judgment.,JEPLMC,2008,external_control
+control_10.1037/a0013650,10.1037/a0013650,Guidance of attention to objects and locations by long-term memory of natural scenes.,JEPLMC,2008,external_control

@@ -103,3 +103,23 @@ JPSP locator belonging to another article. Its OSF project and publisher identif
 The Face of Success in Psychological Science. The sourced identity ledger corrects
 the locator, changing journal counts to JEPLMC 28, JPSP 30, PS 40; the rule still
 uses verified journal shares.
+
+Implementation before estimation: matching distances standardize each pre-year
+log(1 + citations) by its donor-pool standard deviation within journal. Synthetic
+weights minimize mean squared error on these features plus a fixed 1e-6 squared-
+weight penalty, subject to nonnegativity and sum one. Current OpenAlex retraction
+flags and nonarticle types exclude donors, with the exclusions recorded.
+
+After the first within-project estimates, but before reviewing external estimates:
+independent donor-content review identified six comments/reviews/editorial records
+that article-type metadata had admitted. Exclude them using primary-source evidence
+in control_decisions.json and verify PubMed publication types; retain original
+methodological analyses. This implements the stated original-research criterion.
+
+After examining the initial external estimates: independent review found that
+fitting synthetic weights to log counts while predicting arithmetic weighted counts
+creates a scale mismatch. The final synthetic sensitivity fits raw counts,
+standardized by donor-year standard deviations, on 2010–2014 only. The ridge
+penalty and simplex constraints are unchanged. Pre-fit RMSE is reported in raw
+citation units; this correction does not affect nearest-neighbor or within-project
+estimates. The final public table contains the corrected specification.

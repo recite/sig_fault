@@ -1,0 +1,597 @@
+paper_id,node_id,log_id,date,action,path,visibility_at_event,report_candidate,evidence_url
+Row.1,qwkum,53ac2731b5e9d777b1d23cf7,2014-06-26T13:59:13.761000,made_public,,public,False,https://api.osf.io/v2/logs/53ac2731b5e9d777b1d23cf7/
+Row.1,qwkum,541b26cdb5e9d730d4c014ce,2014-09-18T18:39:09.645000,file_added,/ARoelofsReplicationReport.docx,public,True,https://api.osf.io/v2/logs/541b26cdb5e9d730d4c014ce/
+Row.1,qwkum,54f76cd98c5e4a7078c28138,2015-03-04T20:36:41.015000,osf_storage_file_added,/ARoelofsReplicationReport - Final.docx,public,True,https://api.osf.io/v2/logs/54f76cd98c5e4a7078c28138/
+Row.1,qwkum,55a41ab38c5e4a59af919e60,2015-07-13T20:08:05.625000,project_registered,,public,False,https://api.osf.io/v2/logs/55a41ab38c5e4a59af919e60/
+Row.2,rmvk5,5409c897b5e9d77c384b79b1,2014-09-05T14:28:39.913000,file_added,/precollection_ReplicationReport_Goodbourn_MorrisStill2008_Draft.docx,unknown,True,https://api.osf.io/v2/logs/5409c897b5e9d77c384b79b1/
+Row.2,rmvk5,5409cdcdb5e9d77c2e4b79b3,2014-09-05T14:50:53.061000,made_public,,public,False,https://api.osf.io/v2/logs/5409cdcdb5e9d77c2e4b79b3/
+Row.2,rmvk5,540d173bb5e9d77c2e4b9c43,2014-09-08T02:40:59.339000,file_added,/precollection_ReplicationReport_Goodbourn_MorrisStill2008_Draft.pdf,public,True,https://api.osf.io/v2/logs/540d173bb5e9d77c2e4b9c43/
+Row.2,rmvk5,541b616db5e9d7091a70bb8c,2014-09-18T22:49:17.431000,file_added,/precollection_ReplicationReport_Goodbourn_MorrisStill2008_Final.docx,public,True,https://api.osf.io/v2/logs/541b616db5e9d7091a70bb8c/
+Row.2,rmvk5,541b616fb5e9d7091470b76f,2014-09-18T22:49:19.907000,file_added,/precollection_ReplicationReport_Goodbourn_MorrisStill2008_Final.pdf,public,True,https://api.osf.io/v2/logs/541b616fb5e9d7091470b76f/
+Row.2,rmvk5,548a5da32c057a5c15b73bbf,2014-12-12T03:14:43.748000,osf_storage_file_added,/postcollection_ReplicationReport_Goodbourn_MorrisStill2008_Final_PDF.pdf,public,True,https://api.osf.io/v2/logs/548a5da32c057a5c15b73bbf/
+Row.2,rmvk5,548a5db62c057a5c15b73bc1,2014-12-12T03:15:02.957000,osf_storage_file_added,/postcollection_ReplicationReport_Goodbourn_MorrisStill2008_Final.docx,public,True,https://api.osf.io/v2/logs/548a5db62c057a5c15b73bc1/
+Row.2,rmvk5,548a5e112c057a5c17b73c43,2014-12-12T03:16:33.894000,osf_storage_file_added,/postcollection_ReplicationReport_Goodbourn_MorrisStill2008_Final.pdf,public,True,https://api.osf.io/v2/logs/548a5e112c057a5c17b73c43/
+Row.2,rmvk5,548a6fc02c057a5c13b73dce,2014-12-12T04:32:00.154000,osf_storage_file_added,/ReplicationReport_Goodbourn_MorrisStill2008_Figure2.pdf,public,True,https://api.osf.io/v2/logs/548a6fc02c057a5c13b73dce/
+Row.2,rmvk5,548a6fc12c057a5c15b73c3f,2014-12-12T04:32:01.962000,osf_storage_file_added,/ReplicationReport_Goodbourn_MorrisStill2008_Figure1.pdf,public,True,https://api.osf.io/v2/logs/548a6fc12c057a5c15b73c3f/
+Row.2,rmvk5,55a439cd8c5e4a59af91b60a,2015-07-13T22:20:48.567000,project_registered,,public,False,https://api.osf.io/v2/logs/55a439cd8c5e4a59af91b60a/
+Row.3,4dvzb,53dd20b9b5e9d74d90f914fa,2014-08-02T17:32:41.096000,made_public,,public,False,https://api.osf.io/v2/logs/53dd20b9b5e9d74d90f914fa/
+Row.3,4dvzb,54e79d258c5e4a0583623ffb,2015-02-20T20:46:29.650000,osf_storage_file_added,/Liefoogheetal2008_ReplicationReport_FP140930.pdf,public,True,https://api.osf.io/v2/logs/54e79d258c5e4a0583623ffb/
+Row.3,4dvzb,550ce7ee8c5e4a73c0e8ff29,2015-03-21T03:39:26.300000,osf_storage_file_added,/Liefoogheetal2008_Replication report_FP150320.pdf,public,True,https://api.osf.io/v2/logs/550ce7ee8c5e4a73c0e8ff29/
+Row.3,4dvzb,550ce80a8c5e4a73bce903aa,2015-03-21T03:39:54.037000,osf_storage_file_added,/Liefoogheetal2008_ReplicationReport_FP150320.pdf,public,True,https://api.osf.io/v2/logs/550ce80a8c5e4a73bce903aa/
+Row.3,4dvzb,550e56b48c5e4a3bd7b10af9,2015-03-22T05:44:20.574000,osf_storage_file_added,/Liefoogheetal2008_ReplicationReport_FP150321.pdf,public,True,https://api.osf.io/v2/logs/550e56b48c5e4a3bd7b10af9/
+Row.3,4dvzb,550e5a2d8c5e4a3bd7b10b6d,2015-03-22T05:59:09.486000,osf_storage_file_updated,/Liefoogheetal2008_ReplicationReport_FP150321.pdf,public,True,https://api.osf.io/v2/logs/550e5a2d8c5e4a3bd7b10b6d/
+Row.3,4dvzb,550e5d048c5e4a3bcbb10766,2015-03-22T06:11:16.560000,osf_storage_file_updated,/Liefoogheetal2008_ReplicationReport_FP150321.pdf,public,True,https://api.osf.io/v2/logs/550e5d048c5e4a3bcbb10766/
+Row.3,4dvzb,55100e3a8c5e4a3bd3b13b5e,2015-03-23T12:59:38.464000,osf_storage_file_updated,/Liefoogheetal2008_ReplicationReport_FP150321.pdf,public,True,https://api.osf.io/v2/logs/55100e3a8c5e4a3bd3b13b5e/
+Row.3,4dvzb,552dd2ab8c5e4a04ab5aedfb,2015-04-15T02:53:31.536000,osf_storage_file_added,/Liefoogheetal2008_ReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/552dd2ab8c5e4a04ab5aedfb/
+Row.3,4dvzb,555ba9eb8c5e4a04133c68e9,2015-05-19T21:23:55.087000,osf_storage_file_updated,/Liefoogheetal2008_ReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/555ba9eb8c5e4a04133c68e9/
+Row.3,4dvzb,555bad288c5e4a040e3c4b05,2015-05-19T21:37:44.375000,osf_storage_file_added,/Liefoogheetal2008_ReplicationReport_Final.pdf,public,True,https://api.osf.io/v2/logs/555bad288c5e4a040e3c4b05/
+Row.3,4dvzb,55a421818c5e4a59ab919fcf,2015-07-13T20:37:05.772000,project_registered,,public,False,https://api.osf.io/v2/logs/55a421818c5e4a59ab919fcf/
+Row.3,4dvzb,55a421818c5e4a59af91a3ec,2015-07-13T20:37:05.772000,project_registered,,public,False,https://api.osf.io/v2/logs/55a421818c5e4a59af91a3ec/
+Row.3,4dvzb,55b159548c5e4a746fc8f826,2015-07-23T21:14:46.506000,project_registered,,public,False,https://api.osf.io/v2/logs/55b159548c5e4a746fc8f826/
+Row.4,8j9cg,53a09625b5e9d777b1cc9b75,2014-06-17T19:25:25.569000,made_public,,public,False,https://api.osf.io/v2/logs/53a09625b5e9d777b1cc9b75/
+Row.4,8j9cg,544804692c057a1d72bdbb8b,2014-10-22T19:24:25.451000,file_added,BCStormELBjorkRABjorkReplicationReport_4.docx,public,True,https://api.osf.io/v2/logs/544804692c057a1d72bdbb8b/
+Row.4,8j9cg,544804ea2c057a1d70bdb3a3,2014-10-22T19:26:34.109000,file_added,/BCStormELBjorkRABjorkReplicationReport.docx,public,True,https://api.osf.io/v2/logs/544804ea2c057a1d70bdb3a3/
+Row.4,8j9cg,54d503de8c5e4a296de8b79a,2015-02-06T18:11:42.601000,osf_storage_file_updated,/BCStormELBjorkRABjorkReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54d503de8c5e4a296de8b79a/
+Row.4,8j9cg,550be8a68c5e4a3eab1dc7c0,2015-03-20T09:30:14.802000,osf_storage_file_added,/Storm Bjork Bjork Replication Report.pdf,public,True,https://api.osf.io/v2/logs/550be8a68c5e4a3eab1dc7c0/
+Row.4,8j9cg,550e5e5f8c5e4a3bcbb1079c,2015-03-22T06:17:03.690000,osf_storage_file_added,/Storm Bjork Bjork Final Replication Report.pdf,public,True,https://api.osf.io/v2/logs/550e5e5f8c5e4a3bcbb1079c/
+Row.4,8j9cg,550e5e6e8c5e4a3bcfb0fc0d,2015-03-22T06:17:18.612000,osf_storage_file_added,/Storm Bjork Bjork Final Replication Report.docx,public,True,https://api.osf.io/v2/logs/550e5e6e8c5e4a3bcfb0fc0d/
+Row.4,8j9cg,55a334948c5e4a311f9e27f3,2015-07-13T03:46:28.085000,osf_storage_file_added,/Final Replication Report.pdf,public,True,https://api.osf.io/v2/logs/55a334948c5e4a311f9e27f3/
+Row.4,8j9cg,55a524458c5e4a2b0652c09c,2015-07-14T15:01:12.676000,project_registered,,public,False,https://api.osf.io/v2/logs/55a524458c5e4a2b0652c09c/
+Row.4,8j9cg,55b158858c5e4a5226be2468,2015-07-23T21:11:20.220000,project_registered,,public,False,https://api.osf.io/v2/logs/55b158858c5e4a5226be2468/
+Row.5,4xdkk,5273e318b5e9d70adb27cfc7,2013-11-01T17:21:28.388000,made_public,,public,False,https://api.osf.io/v2/logs/5273e318b5e9d70adb27cfc7/
+Row.5,4xdkk,548e986f2c057a5c19b7a0e2,2014-12-15T08:14:38.912000,project_registered,,public,False,https://api.osf.io/v2/logs/548e986f2c057a5c19b7a0e2/
+Row.5,4xdkk,54dcd5f68c5e4a2eb1d64809,2015-02-12T16:33:58.396000,osf_storage_file_added,/Mitchell Final Report.pdf,public,True,https://api.osf.io/v2/logs/54dcd5f68c5e4a2eb1d64809/
+Row.5,4xdkk,55a406288c5e4a311f9e813a,2015-07-13T18:40:26.836000,project_registered,,public,False,https://api.osf.io/v2/logs/55a406288c5e4a311f9e813a/
+Row.6,atgp5,53a32233b5e9d777b1cd03c5,2014-06-19T17:47:31.692000,made_public,,public,False,https://api.osf.io/v2/logs/53a32233b5e9d777b1cd03c5/
+Row.6,atgp5,55a40e2e8c5e4a311f9e88e7,2015-07-13T19:14:33.200000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40e2e8c5e4a311f9e88e7/
+Row.6,atgp5,55a91bec8c5e4a0d5f780527,2015-07-17T15:14:32.952000,project_registered,,public,False,https://api.osf.io/v2/logs/55a91bec8c5e4a0d5f780527/
+Row.6,atgp5,55b157538c5e4a746fc8f586,2015-07-23T21:06:05.455000,project_registered,,public,False,https://api.osf.io/v2/logs/55b157538c5e4a746fc8f586/
+Row.7,6n3bm,531e311eb5e9d7254301b452,2014-03-10T21:39:42.567000,made_public,,public,False,https://api.osf.io/v2/logs/531e311eb5e9d7254301b452/
+Row.7,6n3bm,53b19ea7b5e9d7735b601b15,2014-06-30T17:30:15.107000,file_added,/ReplicationofBeamanetal.2008_KleinbergKunkels.pdf,public,True,https://api.osf.io/v2/logs/53b19ea7b5e9d7735b601b15/
+Row.7,6n3bm,55a40a9f8c5e4a311f9e8513,2015-07-13T18:59:30.665000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40a9f8c5e4a311f9e8513/
+Row.8,c5pbg,53d7e1d4b5e9d74e918c3c01,2014-07-29T18:03:00.900000,made_public,,public,False,https://api.osf.io/v2/logs/53d7e1d4b5e9d74e918c3c01/
+Row.8,c5pbg,5418618ab5e9d734b8578765,2014-09-16T16:12:58.431000,file_added,/CSDodsonetal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5418618ab5e9d734b8578765/
+Row.8,c5pbg,55196e668c5e4a23191e2eb0,2015-03-30T15:40:22.458000,osf_storage_file_updated,/CSDodsonetal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/55196e668c5e4a23191e2eb0/
+Row.8,c5pbg,55a7c0848c5e4a66f46dcd35,2015-07-16T14:32:22.350000,project_registered,,public,False,https://api.osf.io/v2/logs/55a7c0848c5e4a66f46dcd35/
+Row.8,c5pbg,55b155a08c5e4a746dc8ef22,2015-07-23T20:58:59.283000,project_registered,,public,False,https://api.osf.io/v2/logs/55b155a08c5e4a746dc8ef22/
+Row.10,vmipw,53c69b62b5e9d72c4a73fb0d,2014-07-16T15:33:54.310000,made_public,,public,False,https://api.osf.io/v2/logs/53c69b62b5e9d72c4a73fb0d/
+Row.10,vmipw,54257cd62c057a6a36515d42,2014-09-26T14:48:54.418000,file_added,/Ganor-SternReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54257cd62c057a6a36515d42/
+Row.10,vmipw,54ad47612c057a23997317ea,2015-01-07T14:49:05.106000,osf_storage_file_added,/Ganor-SternReplicationReport_Final.docx,public,True,https://api.osf.io/v2/logs/54ad47612c057a23997317ea/
+Row.10,vmipw,54d4dac68c5e4a2977e8ae17,2015-02-06T15:16:22.739000,osf_storage_file_updated,/Ganor-SternReplicationReport_Final.docx,public,True,https://api.osf.io/v2/logs/54d4dac68c5e4a2977e8ae17/
+Row.10,vmipw,54d8cabe8c5e4a4d52fc56dd,2015-02-09T14:57:02.494000,osf_storage_file_updated,/Ganor-SternReplicationReport_Final.docx,public,True,https://api.osf.io/v2/logs/54d8cabe8c5e4a4d52fc56dd/
+Row.10,vmipw,55a41b378c5e4a59ad919ea4,2015-07-13T20:10:18.339000,project_registered,,public,False,https://api.osf.io/v2/logs/55a41b378c5e4a59ad919ea4/
+Row.10,vmipw,55b154f68c5e4a746dc8ef00,2015-07-23T20:56:08.337000,project_registered,,public,False,https://api.osf.io/v2/logs/55b154f68c5e4a746dc8ef00/
+Row.11,rvkc5,51fbfc442eecad0b36cbb4dc,2013-08-02T18:36:52.377000,file_added,/Mirman_and_Magnuson_2008.JEP-LMC.final.report.pdf,unknown,True,https://api.osf.io/v2/logs/51fbfc442eecad0b36cbb4dc/
+Row.11,rvkc5,51fc14082eecad0b36ceba6a,2013-08-02T20:18:16.492000,made_public,,public,False,https://api.osf.io/v2/logs/51fc14082eecad0b36ceba6a/
+Row.11,rvkc5,55a434af8c5e4a7f1b20ca69,2015-07-13T21:58:58.759000,project_registered,,public,False,https://api.osf.io/v2/logs/55a434af8c5e4a7f1b20ca69/
+Row.12,7rtcz,5408d7dbb5e9d743a157613b,2014-09-04T21:21:31.759000,made_public,,public,False,https://api.osf.io/v2/logs/5408d7dbb5e9d743a157613b/
+Row.12,7rtcz,54325d162c057a424464a208,2014-10-06T09:12:54.051000,file_added,/Marshetal.ReplicationReport-3.pdf,public,True,https://api.osf.io/v2/logs/54325d162c057a424464a208/
+Row.12,7rtcz,546d00262c057a4a5a8ad3a6,2014-11-19T20:40:06.820000,file_updated,/Marshetal.ReplicationReport-3.pdf,public,True,https://api.osf.io/v2/logs/546d00262c057a4a5a8ad3a6/
+Row.12,7rtcz,54818a0a2c057a6c8ab68d45,2014-12-05T10:33:46.389000,osf_storage_file_added,/FinalReport.pdf,public,True,https://api.osf.io/v2/logs/54818a0a2c057a6c8ab68d45/
+Row.12,7rtcz,54a662ea2c057a617bf28629,2015-01-02T09:20:42.606000,osf_storage_file_added,/FinalReportv3.pdf,public,True,https://api.osf.io/v2/logs/54a662ea2c057a617bf28629/
+Row.12,7rtcz,55a4282d8c5e4a59ad91a39a,2015-07-13T21:05:35.889000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4282d8c5e4a59ad91a39a/
+Row.12,7rtcz,55b151298c5e4a746dc8ee7f,2015-07-23T20:39:54.324000,project_registered,,public,False,https://api.osf.io/v2/logs/55b151298c5e4a746dc8ee7f/
+Row.13,gxvd3,53a47fc8b5e9d777b1cd3d95,2014-06-20T18:39:04.127000,made_public,,public,False,https://api.osf.io/v2/logs/53a47fc8b5e9d777b1cd3d95/
+Row.13,gxvd3,5419906cb5e9d7675fd86a72,2014-09-17T13:45:16.189000,file_added,/JICampbellNRobertReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5419906cb5e9d7675fd86a72/
+Row.13,gxvd3,542582b72c057a6a36515e22,2014-09-26T15:13:59.905000,file_added,/JICampbellNRobertReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/542582b72c057a6a36515e22/
+Row.13,gxvd3,550c4cc18c5e4a27f6390902,2015-03-20T16:37:21.462000,osf_storage_file_added,/JICampbellNRobertReplicationReport.docx,public,True,https://api.osf.io/v2/logs/550c4cc18c5e4a27f6390902/
+Row.13,gxvd3,550c4d1b8c5e4a27fd390909,2015-03-20T16:38:51.682000,osf_storage_file_updated,/JICampbellNRobertReplicationReport.docx,public,True,https://api.osf.io/v2/logs/550c4d1b8c5e4a27fd390909/
+Row.13,gxvd3,5535189c8c5e4a1ba66e6d82,2015-04-20T15:17:48.128000,osf_storage_file_added,/OriginalAuthorCommentOnJICampbellNRobertReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/5535189c8c5e4a1ba66e6d82/
+Row.13,gxvd3,553e50d18c5e4a20335d4297,2015-04-27T15:08:01.392000,osf_storage_file_updated,/OriginalAuthorCommentOnJICampbellNRobertReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/553e50d18c5e4a20335d4297/
+Row.13,gxvd3,55a418288c5e4a311f9e8dae,2015-07-13T19:57:12.933000,project_registered,,public,False,https://api.osf.io/v2/logs/55a418288c5e4a311f9e8dae/
+Row.13,gxvd3,55a418288c5e4a311f9e8db2,2015-07-13T19:57:12.933000,project_registered,,public,False,https://api.osf.io/v2/logs/55a418288c5e4a311f9e8db2/
+Row.13,gxvd3,55b150ce8c5e4a746fc8f1b2,2015-07-23T20:38:23.140000,project_registered,,public,False,https://api.osf.io/v2/logs/55b150ce8c5e4a746fc8f1b2/
+Row.13,gxvd3,55b150cf8c5e4a746bc8ece5,2015-07-23T20:38:23.140000,project_registered,,public,False,https://api.osf.io/v2/logs/55b150cf8c5e4a746bc8ece5/
+Row.13,gxvd3,55b150cf8c5e4a746fc8f1dd,2015-07-23T20:38:23.140000,project_registered,,public,False,https://api.osf.io/v2/logs/55b150cf8c5e4a746fc8f1dd/
+Row.15,bscfe,53ad7f4eb5e9d77aa8474aa4,2014-06-27T14:27:26.312000,made_public,,public,False,https://api.osf.io/v2/logs/53ad7f4eb5e9d77aa8474aa4/
+Row.15,bscfe,53ad7f75b5e9d77ab04747ec,2014-06-27T14:28:05.874000,made_private,,private,False,https://api.osf.io/v2/logs/53ad7f75b5e9d77ab04747ec/
+Row.15,bscfe,53ad7f7cb5e9d77aa8474ac9,2014-06-27T14:28:12.114000,made_public,,public,False,https://api.osf.io/v2/logs/53ad7f7cb5e9d77aa8474ac9/
+Row.15,bscfe,54259b132c057a430bcd3efa,2014-09-26T16:57:55.606000,file_added,/Schmidt__Besner_Replication_report_v4.docx,public,True,https://api.osf.io/v2/logs/54259b132c057a430bcd3efa/
+Row.15,bscfe,54b404212c057a5d3386e2eb,2015-01-12T17:28:01.994000,osf_storage_file_added,/Schmidt__Besner_Replication_report_vFINAL.docx,public,True,https://api.osf.io/v2/logs/54b404212c057a5d3386e2eb/
+Row.15,bscfe,5538fafa8c5e4a4766dcff12,2015-04-23T14:00:26.564000,osf_storage_file_updated,/Schmidt__Besner_Replication_report_vFINAL.docx,public,True,https://api.osf.io/v2/logs/5538fafa8c5e4a4766dcff12/
+Row.15,bscfe,55a91dc88c5e4a0d5b7800cd,2015-07-17T15:22:35.160000,project_registered,,public,False,https://api.osf.io/v2/logs/55a91dc88c5e4a0d5b7800cd/
+Row.17,hp27x,5363bdd3b5e9d77e5618d963,2014-05-02T15:46:27.435000,made_public,,public,False,https://api.osf.io/v2/logs/5363bdd3b5e9d77e5618d963/
+Row.17,hp27x,542581b92c057a6a305155f2,2014-09-26T15:09:45.031000,file_added,/FiedlerReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/542581b92c057a6a305155f2/
+Row.17,hp27x,54afb9362c057a209cd1d6fd,2015-01-09T11:19:18.126000,osf_storage_file_added,/Final Replication Report Gloeckner_Jekel_Report_of_replication_Fiedler2008.pdf,public,True,https://api.osf.io/v2/logs/54afb9362c057a209cd1d6fd/
+Row.17,hp27x,54c127e62c057a093ad0ac4f,2015-01-22T16:40:06.933000,osf_storage_file_added,/Gloeckner_Jekel_Report_of_replication_Fiedler2008_final.pdf,public,True,https://api.osf.io/v2/logs/54c127e62c057a093ad0ac4f/
+Row.17,hp27x,55a4309e8c5e4a59af91aeba,2015-07-13T21:41:36.124000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4309e8c5e4a59af91aeba/
+Row.19,gcj7x,53a094feb5e9d777b7cbd25b,2014-06-17T19:20:30.553000,made_public,,public,False,https://api.osf.io/v2/logs/53a094feb5e9d777b7cbd25b/
+Row.19,gcj7x,550c30708c5e4a3eab1dd797,2015-03-20T14:36:32.707000,osf_storage_file_added,/RPP K Oberauer Post-data collection report.docx,public,True,https://api.osf.io/v2/logs/550c30708c5e4a3eab1dd797/
+Row.19,gcj7x,55426c398c5e4a33dd2da2c3,2015-04-30T17:54:01.177000,osf_storage_file_updated,/RPP K Oberauer Post-data collection report.docx,public,True,https://api.osf.io/v2/logs/55426c398c5e4a33dd2da2c3/
+Row.19,gcj7x,55a40dc28c5e4a311f9e8813,2015-07-13T19:12:48.880000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40dc28c5e4a311f9e8813/
+Row.19,gcj7x,55a40dc38c5e4a311f9e881d,2015-07-13T19:12:48.880000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40dc38c5e4a311f9e881d/
+Row.20,bzdr2,50b937f00b6e91562c38e462,2012-11-30T22:49:20.523000,file_updated,Report_Sahakyan_et_al2009i.docx,unknown,True,https://api.osf.io/v2/logs/50b937f00b6e91562c38e462/
+Row.20,bzdr2,50b939300b6e91562c38f0d7,2012-11-30T22:54:40.495000,made_public,,public,False,https://api.osf.io/v2/logs/50b939300b6e91562c38f0d7/
+Row.20,bzdr2,52827e1db5e9d765f5624f3c,2013-11-12T19:14:36.906000,file_added,/Report_Sahakyan_et_al2009.pdf,public,True,https://api.osf.io/v2/logs/52827e1db5e9d765f5624f3c/
+Row.20,bzdr2,55a3fcf58c5e4a311f9e7afd,2015-07-13T18:01:12.960000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fcf58c5e4a311f9e7afd/
+Row.22,p9thw,53ff25c1b5e9d74d46f12999,2014-08-28T12:51:13.964000,made_public,,public,False,https://api.osf.io/v2/logs/53ff25c1b5e9d74d46f12999/
+Row.22,p9thw,541c3192b5e9d7091270c457,2014-09-19T13:37:22.864000,file_added,/Colzatoetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/541c3192b5e9d7091270c457/
+Row.22,p9thw,543272c52c057a424264a1d2,2014-10-06T10:45:25.755000,file_added,/Colzatoetal.ReplicationReport_2.docx,public,True,https://api.osf.io/v2/logs/543272c52c057a424264a1d2/
+Row.22,p9thw,54aaff072c057a6179f26ac0,2015-01-05T21:15:51.541000,osf_storage_file_added,/Colzatoetal.ReplicationReport_3.docx,public,True,https://api.osf.io/v2/logs/54aaff072c057a6179f26ac0/
+Row.22,p9thw,54aaff132c057a617bf2f9c6,2015-01-05T21:16:03.148000,osf_storage_file_added,/Colzatoetal.ReplicationReport_4.docx,public,True,https://api.osf.io/v2/logs/54aaff132c057a617bf2f9c6/
+Row.22,p9thw,54ba69702c057a74fc018769,2015-01-17T13:53:52.778000,osf_storage_file_added,/Colzatoetal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54ba69702c057a74fc018769/
+Row.22,p9thw,54c7a6502c057a5890f38343,2015-01-27T14:53:04.993000,osf_storage_file_added,/Colzatoetal.ReplicationReport_final.docx,public,True,https://api.osf.io/v2/logs/54c7a6502c057a5890f38343/
+Row.22,p9thw,54d0b1128c5e4a77e0435d85,2015-02-03T11:29:22.413000,osf_storage_file_updated,/Colzatoetal.ReplicationReport_final.docx,public,True,https://api.osf.io/v2/logs/54d0b1128c5e4a77e0435d85/
+Row.22,p9thw,55b14b618c5e4a746fc8ed25,2015-07-23T20:15:16.339000,project_registered,,public,False,https://api.osf.io/v2/logs/55b14b618c5e4a746fc8ed25/
+Row.24,sqim7,5409ecd1b5e9d77c2a4b7c22,2014-09-05T17:03:13.616000,made_public,,public,False,https://api.osf.io/v2/logs/5409ecd1b5e9d77c2a4b7c22/
+Row.24,sqim7,54e658998c5e4a7cee9d8a47,2015-02-19T21:41:45.096000,osf_storage_file_added,/Final Report Bassok et al 2008 Priming Addition Facts With Semantic Relations (Feb 2015).docx,public,True,https://api.osf.io/v2/logs/54e658998c5e4a7cee9d8a47/
+Row.24,sqim7,54eb4a208c5e4a7cf35643f8,2015-02-23T15:41:20.800000,osf_storage_file_updated,/Final Report Bassok et al 2008 Priming Addition Facts With Semantic Relations (Feb 2015).docx,public,True,https://api.osf.io/v2/logs/54eb4a208c5e4a7cf35643f8/
+Row.24,sqim7,55a4385f8c5e4a59af91b4ac,2015-07-13T22:14:41.185000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4385f8c5e4a59af91b4ac/
+Row.25,k9gp6,5368ea6fb5e9d7102127c5cf,2014-05-06T13:58:07.155000,made_public,,public,False,https://api.osf.io/v2/logs/5368ea6fb5e9d7102127c5cf/
+Row.25,k9gp6,54257bbf2c057a6a36515d13,2014-09-26T14:44:15.724000,file_added,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54257bbf2c057a6a36515d13/
+Row.25,k9gp6,552d1f438c5e4a664a8b74f5,2015-04-14T14:08:03.814000,osf_storage_file_updated,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/552d1f438c5e4a664a8b74f5/
+Row.25,k9gp6,553660638c5e4a27eae6fb4b,2015-04-21T14:36:19.512000,osf_storage_file_updated,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/553660638c5e4a27eae6fb4b/
+Row.25,k9gp6,553675288c5e4a27efe70408,2015-04-21T16:04:56.567000,osf_storage_file_updated,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/553675288c5e4a27efe70408/
+Row.25,k9gp6,55379fa38c5e4a25747d7085,2015-04-22T13:18:27.999000,osf_storage_file_updated,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/55379fa38c5e4a25747d7085/
+Row.25,k9gp6,55521d408c5e4a39cee14330,2015-05-12T15:33:20.656000,osf_storage_file_updated,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/55521d408c5e4a39cee14330/
+Row.25,k9gp6,55a5792e8c5e4a29ce38893d,2015-07-14T21:03:42.820000,osf_storage_file_updated,/MCoutureDLafondSTremblayReplicationReport.docx,public,True,https://api.osf.io/v2/logs/55a5792e8c5e4a29ce38893d/
+Row.25,k9gp6,55b15ac38c5e4a746dc8f2c3,2015-07-23T21:20:51.249000,project_registered,,public,False,https://api.osf.io/v2/logs/55b15ac38c5e4a746dc8f2c3/
+Row.25,k9gp6,55b15ac48c5e4a7468c8ef7a,2015-07-23T21:20:51.249000,project_registered,,public,False,https://api.osf.io/v2/logs/55b15ac48c5e4a7468c8ef7a/
+Row.25,k9gp6,55b15ac48c5e4a746dc8f2c9,2015-07-23T21:20:51.249000,project_registered,,public,False,https://api.osf.io/v2/logs/55b15ac48c5e4a746dc8f2c9/
+Row.26,hasfu,50a1734c0b6e9122c409a488,2012-11-12T22:08:12.323000,made_public,,public,False,https://api.osf.io/v2/logs/50a1734c0b6e9122c409a488/
+Row.26,hasfu,5308ec84b5e9d72f7286a209,2014-02-22T18:29:24.503000,file_added,/Reynolds__Besner_2008_-_Post-Data_Collection_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/5308ec84b5e9d72f7286a209/
+Row.26,hasfu,5308ecb3b5e9d72f7286a210,2014-02-22T18:30:11.513000,file_updated,/Reynolds__Besner_2008_-_Post-Data_Collection_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/5308ecb3b5e9d72f7286a210/
+Row.26,hasfu,5308ee39b5e9d72f7b868bb2,2014-02-22T18:36:41.285000,file_updated,/Reynolds__Besner_2008_-_Post-Data_Collection_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/5308ee39b5e9d72f7b868bb2/
+Row.26,hasfu,54d006b38c5e4a77e5434bdf,2015-02-02T23:22:27.344000,osf_storage_file_updated,/Reynolds__Besner_2008_-_Post-Data_Collection_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/54d006b38c5e4a77e5434bdf/
+Row.26,hasfu,55a3f4528c5e4a311b9db635,2015-07-13T17:24:21.109000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f4528c5e4a311b9db635/
+Row.27,ahpik,53a985aeb5e9d777b1d09b5b,2014-06-24T14:05:34.180000,made_public,,public,False,https://api.osf.io/v2/logs/53a985aeb5e9d777b1d09b5b/
+Row.27,ahpik,54e496ae8c5e4a64e7b5f94a,2015-02-18T13:42:06.625000,osf_storage_file_added,/MJYapDABalotaCSTseDBesner2008ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54e496ae8c5e4a64e7b5f94a/
+Row.27,ahpik,54ff2d0f8c5e4a1d0914d70d,2015-03-10T17:42:39.805000,osf_storage_file_added,/MJYapDABalotaCSTseDBesner2008ReplicationReport_final.docx,public,True,https://api.osf.io/v2/logs/54ff2d0f8c5e4a1d0914d70d/
+Row.27,ahpik,55a527c08c5e4a2b0652c111,2015-07-14T15:16:04.340000,project_registered,,public,False,https://api.osf.io/v2/logs/55a527c08c5e4a2b0652c111/
+Row.27,ahpik,55b1494b8c5e4a746dc8eb19,2015-07-23T20:06:21.824000,project_registered,,public,False,https://api.osf.io/v2/logs/55b1494b8c5e4a746dc8eb19/
+Row.28,uhpyr,502bac2a0b6e914eae01f5c4,2012-08-15T14:03:22.946000,made_public,,public,False,https://api.osf.io/v2/logs/502bac2a0b6e914eae01f5c4/
+Row.28,uhpyr,502bac650b6e914eae01f600,2012-08-15T14:04:21.885000,file_updated,/janssen_et_al_JEP_report_v3.doc,public,True,https://api.osf.io/v2/logs/502bac650b6e914eae01f600/
+Row.28,uhpyr,50b3888c0b6e91562c26d841,2012-11-26T15:19:40.883000,file_updated,/janssen_et_al_JEP_report__FINAL.doc,public,True,https://api.osf.io/v2/logs/50b3888c0b6e91562c26d841/
+Row.28,uhpyr,51e440fc2eecad0b3653ff1c,2013-07-15T18:35:40.742000,file_added,/janssen_et_al_JEP_report__FINAL_v2.doc,public,True,https://api.osf.io/v2/logs/51e440fc2eecad0b3653ff1c/
+Row.28,uhpyr,55a3f8ec8c5e4a311f9e76e1,2015-07-13T17:43:57.328000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f8ec8c5e4a311f9e76e1/
+Row.28,uhpyr,55b248f08c5e4a746fc8ff8c,2015-07-24T14:17:07.744000,project_registered,,public,False,https://api.osf.io/v2/logs/55b248f08c5e4a746fc8ff8c/
+Row.29,ujhlw,5252e659b5e9d706133dea03,2013-10-07T16:50:33.044000,made_public,,public,False,https://api.osf.io/v2/logs/5252e659b5e9d706133dea03/
+Row.29,ujhlw,55a404a38c5e4a7f2120ca6d,2015-07-13T18:33:54.853000,project_registered,,public,False,https://api.osf.io/v2/logs/55a404a38c5e4a7f2120ca6d/
+Row.32,rhbqj,523098b2b5e9d70bac19d8cc,2013-09-11T16:22:10.658000,file_added,/Replication_White_JEP2008_20130313175504.pdf,unknown,True,https://api.osf.io/v2/logs/523098b2b5e9d70bac19d8cc/
+Row.32,rhbqj,52309b9eb5e9d70bac19d8db,2013-09-11T16:34:38.392000,made_public,,public,False,https://api.osf.io/v2/logs/52309b9eb5e9d70bac19d8db/
+Row.32,rhbqj,55a404668c5e4a311f9e7fc4,2015-07-13T18:32:59.273000,project_registered,,public,False,https://api.osf.io/v2/logs/55a404668c5e4a311f9e7fc4/
+Row.33,swrhy,521a8338b5e9d71e2414d9da,2013-08-25T22:20:40.072000,file_added,OSF-Farrell-report.pdf,unknown,True,https://api.osf.io/v2/logs/521a8338b5e9d71e2414d9da/
+Row.33,swrhy,521a85fbb5e9d71e24150d7d,2013-08-25T22:32:27.970000,made_public,,public,False,https://api.osf.io/v2/logs/521a85fbb5e9d71e24150d7d/
+Row.33,swrhy,521ab72db5e9d71e24175625,2013-08-26T02:02:21.288000,file_added,/OSF-Farrell-report-updated.pdf,public,True,https://api.osf.io/v2/logs/521ab72db5e9d71e24175625/
+Row.33,swrhy,55a40ac18c5e4a31199dc3dc,2015-07-13T19:00:03.186000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40ac18c5e4a31199dc3dc/
+Row.33,swrhy,55a40ac28c5e4a311d9e0745,2015-07-13T19:00:03.186000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40ac28c5e4a311d9e0745/
+Row.33,swrhy,55a40ac28c5e4a311f9e8557,2015-07-13T19:00:03.186000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40ac28c5e4a311f9e8557/
+Row.33,swrhy,55a40ac38c5e4a311d9e074b,2015-07-13T19:00:03.186000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40ac38c5e4a311d9e074b/
+Row.36,vmz2e,50bc99f90b6e913db801b5ce,2012-12-03T12:24:25.466000,file_updated,/FinalReport_Replication_Study4b_PactonPerruchet_2008_JEPLMC.pdf,unknown,True,https://api.osf.io/v2/logs/50bc99f90b6e913db801b5ce/
+Row.36,vmz2e,50bc9ac30b6e913db801bc9a,2012-12-03T12:27:47.403000,made_public,,public,False,https://api.osf.io/v2/logs/50bc9ac30b6e913db801bc9a/
+Row.36,vmz2e,55a3fc258c5e4a311b9db8df,2015-07-13T17:57:46.261000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fc258c5e4a311b9db8df/
+Row.36,vmz2e,55b249b08c5e4a746dc8f687,2015-07-24T14:20:22.914000,project_registered,,public,False,https://api.osf.io/v2/logs/55b249b08c5e4a746dc8f687/
+Row.37,0pxro,5273b6c4b5e9d70adb27ceec,2013-11-01T14:12:20.960000,made_public,,public,False,https://api.osf.io/v2/logs/5273b6c4b5e9d70adb27ceec/
+Row.37,0pxro,550c38a68c5e4a3ea31dd805,2015-03-20T15:11:34.198000,osf_storage_file_added,/makovski_replication.docx,public,True,https://api.osf.io/v2/logs/550c38a68c5e4a3ea31dd805/
+Row.37,0pxro,55a37f2a8c5e4a311d9ddbe0,2015-07-13T09:04:42.112000,osf_storage_file_updated,/makovski_replication.docx,public,True,https://api.osf.io/v2/logs/55a37f2a8c5e4a311d9ddbe0/
+Row.37,0pxro,55a3822c8c5e4a31199da8f0,2015-07-13T09:17:32.125000,osf_storage_file_updated,/makovski_replication.docx,public,True,https://api.osf.io/v2/logs/55a3822c8c5e4a31199da8f0/
+Row.37,0pxro,55a405938c5e4a311d9e0457,2015-07-13T18:37:57.621000,project_registered,,public,False,https://api.osf.io/v2/logs/55a405938c5e4a311d9e0457/
+Row.39,38ges,53f4ac15b5e9d7620bf6e77e,2014-08-20T14:09:25.858000,made_public,,public,False,https://api.osf.io/v2/logs/53f4ac15b5e9d7620bf6e77e/
+Row.39,38ges,54198addb5e9d74fa91685aa,2014-09-17T13:21:33.810000,file_added,/TJPleskacReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54198addb5e9d74fa91685aa/
+Row.39,38ges,5481c85c2c057a2959ce6716,2014-12-05T14:59:40.594000,osf_storage_file_added,/TJPleskacReplicationReportResults.docx,public,True,https://api.osf.io/v2/logs/5481c85c2c057a2959ce6716/
+Row.39,38ges,5486db3f2c057a17f9255853,2014-12-09T11:21:35.086000,osf_storage_file_added,/TJPleskacReplicationReportResults_final.docx,public,True,https://api.osf.io/v2/logs/5486db3f2c057a17f9255853/
+Row.39,38ges,55a423118c5e4a59af91a4e2,2015-07-13T20:43:43.843000,project_registered,,public,False,https://api.osf.io/v2/logs/55a423118c5e4a59af91a4e2/
+Row.39,38ges,55a423128c5e4a59ad91a20c,2015-07-13T20:43:43.843000,project_registered,,public,False,https://api.osf.io/v2/logs/55a423128c5e4a59ad91a20c/
+Row.39,38ges,55b144448c5e4a746fc8eb93,2015-07-23T19:44:49.436000,project_registered,,public,False,https://api.osf.io/v2/logs/55b144448c5e4a746fc8eb93/
+Row.43,pz0my,5277bce4b5e9d72351d07c67,2013-11-04T15:27:32.348000,made_public,,public,False,https://api.osf.io/v2/logs/5277bce4b5e9d72351d07c67/
+Row.43,pz0my,54dbd21f8c5e4a2eb8d6302e,2015-02-11T22:05:19.634000,osf_storage_file_added,/Monin et al. 2008 replication report.pdf,public,True,https://api.osf.io/v2/logs/54dbd21f8c5e4a2eb8d6302e/
+Row.43,pz0my,55a407308c5e4a7f1f20ca65,2015-07-13T18:44:50.139000,project_registered,,public,False,https://api.osf.io/v2/logs/55a407308c5e4a7f1f20ca65/
+Row.43,pz0my,5673291d8c5e4a51f7577669,2015-12-17T21:29:01.027000,osf_storage_file_added,/Monin Commentary on Replication.pdf,public,True,https://api.osf.io/v2/logs/5673291d8c5e4a51f7577669/
+Row.44,rc6mv,50474cc80b6e912278031efc,2012-09-05T12:59:52.547000,made_public,,public,False,https://api.osf.io/v2/logs/50474cc80b6e912278031efc/
+Row.44,rc6mv,50598c5e0b6e9120ba0d6e34,2012-09-19T09:11:58.202000,file_updated,/Payne_et_al._2008.JPSP.final.report.pdf,public,True,https://api.osf.io/v2/logs/50598c5e0b6e9120ba0d6e34/
+Row.44,rc6mv,50619f6b0b6e91652c0f333c,2012-09-25T12:11:23.524000,file_added,/Payne_et_al._2008.JPSP.final.report.pdf,public,True,https://api.osf.io/v2/logs/50619f6b0b6e91652c0f333c/
+Row.44,rc6mv,55a3f4ed8c5e4a311d9dfbf1,2015-07-13T17:26:58.056000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f4ed8c5e4a311d9dfbf1/
+Row.46,kez47,53a0997cb5e9d777b1cc9c2e,2014-06-17T19:39:40.436000,made_public,,public,False,https://api.osf.io/v2/logs/53a0997cb5e9d777b1cc9c2e/
+Row.46,kez47,54d43a3b8c5e4a296de8943f,2015-02-06T03:51:23.160000,osf_storage_file_added,/Soto_Replication_Report.docx,public,True,https://api.osf.io/v2/logs/54d43a3b8c5e4a296de8943f/
+Row.46,kez47,55a40dec8c5e4a311d9e08e7,2015-07-13T19:13:35.885000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40dec8c5e4a311d9e08e7/
+Row.46,kez47,55b156b38c5e4a746fc8f49c,2015-07-23T21:03:34.100000,project_registered,,public,False,https://api.osf.io/v2/logs/55b156b38c5e4a746fc8f49c/
+Row.46,kez47,55b156b48c5e4a746dc8efcf,2015-07-23T21:03:34.100000,project_registered,,public,False,https://api.osf.io/v2/logs/55b156b48c5e4a746dc8efcf/
+Row.48,5tbxf,544e9f1b2c057a38c5db9798,2014-10-27T19:38:03.764000,made_public,,public,False,https://api.osf.io/v2/logs/544e9f1b2c057a38c5db9798/
+Row.48,5tbxf,5489f0a72c057a20d8df82b6,2014-12-11T19:29:43.361000,osf_storage_file_added,/CRCoxetal.ReplicationReport (1).docx,public,True,https://api.osf.io/v2/logs/5489f0a72c057a20d8df82b6/
+Row.48,5tbxf,550c43498c5e4a10d4890b73,2015-03-20T15:56:57.810000,osf_storage_file_added,/Final Replication Report - Cox et al.pdf,public,True,https://api.osf.io/v2/logs/550c43498c5e4a10d4890b73/
+Row.48,5tbxf,55244a108c5e4a081449a7e6,2015-04-07T21:20:16.666000,osf_storage_file_updated,/Final Replication Report - Cox et al.pdf,public,True,https://api.osf.io/v2/logs/55244a108c5e4a081449a7e6/
+Row.48,5tbxf,55a436c88c5e4a59af91b260,2015-07-13T22:07:50.455000,project_registered,,public,False,https://api.osf.io/v2/logs/55a436c88c5e4a59af91b260/
+Row.49,rgm6p,5446c13f2c057a1d70bda983,2014-10-21T20:25:35.823000,made_public,,public,False,https://api.osf.io/v2/logs/5446c13f2c057a1d70bda983/
+Row.49,rgm6p,54e21f2d8c5e4a681cac34d2,2015-02-16T16:47:41.316000,osf_storage_file_added,/D Albarracín Replication Report.docx,public,True,https://api.osf.io/v2/logs/54e21f2d8c5e4a681cac34d2/
+Row.49,rgm6p,54e4c4cd8c5e4a7cf49d4946,2015-02-18T16:58:53.925000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/54e4c4cd8c5e4a7cf49d4946/
+Row.49,rgm6p,54e4d1368c5e4a7cf69d541c,2015-02-18T17:51:50.937000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/54e4d1368c5e4a7cf69d541c/
+Row.49,rgm6p,54eded638c5e4a56240d9bf6,2015-02-25T15:42:27.559000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report (1).docx,public,True,https://api.osf.io/v2/logs/54eded638c5e4a56240d9bf6/
+Row.49,rgm6p,54eded868c5e4a56240d9c07,2015-02-25T15:43:02.823000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/54eded868c5e4a56240d9c07/
+Row.49,rgm6p,54ededd18c5e4a56240d9c25,2015-02-25T15:44:17.608000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/54ededd18c5e4a56240d9c25/
+Row.49,rgm6p,54edf01d8c5e4a56240d9cd9,2015-02-25T15:54:05.785000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/54edf01d8c5e4a56240d9cd9/
+Row.49,rgm6p,54edf0768c5e4a561e0d6c72,2015-02-25T15:55:34.411000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/54edf0768c5e4a561e0d6c72/
+Row.49,rgm6p,54edf09c8c5e4a561e0d6c7b,2015-02-25T15:56:12.244000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/54edf09c8c5e4a561e0d6c7b/
+Row.49,rgm6p,54edf13a8c5e4a56240d9d95,2015-02-25T15:58:50.713000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/54edf13a8c5e4a56240d9d95/
+Row.49,rgm6p,550c3d468c5e4a3ea71dbd8a,2015-03-20T15:31:18.161000,osf_storage_file_added,/Update_Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/550c3d468c5e4a3ea71dbd8a/
+Row.49,rgm6p,55198fca8c5e4a6316849e9d,2015-03-30T18:02:50.408000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/55198fca8c5e4a6316849e9d/
+Row.49,rgm6p,55198fd88c5e4a6316849ea6,2015-03-30T18:03:04.608000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/55198fd88c5e4a6316849ea6/
+Row.49,rgm6p,551e6f428c5e4a4396ea9291,2015-04-03T10:45:22.738000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/551e6f428c5e4a4396ea9291/
+Row.49,rgm6p,551e6f4d8c5e4a439cea9a85,2015-04-03T10:45:33.042000,osf_storage_file_updated,/Replication_of_Albarracín_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/551e6f4d8c5e4a439cea9a85/
+Row.49,rgm6p,551e70c88c5e4a4398ea8b76,2015-04-03T10:51:52.892000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.docx,public,True,https://api.osf.io/v2/logs/551e70c88c5e4a4398ea8b76/
+Row.49,rgm6p,551e70cb8c5e4a4398ea8b79,2015-04-03T10:51:55.341000,osf_storage_file_added,/Replication_of_Albarracín_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/551e70cb8c5e4a4398ea8b79/
+Row.49,rgm6p,55a4363c8c5e4a59a891a458,2015-07-13T22:05:36.957000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4363c8c5e4a59a891a458/
+Row.49,vy1bc,5277b989b5e9d7235bd04d9e,2013-11-04T15:13:13.726000,made_public,,public,False,https://api.osf.io/v2/logs/5277b989b5e9d7235bd04d9e/
+Row.49,vy1bc,54dbd0498c5e4a2eb8d62f75,2015-02-11T21:57:29.387000,osf_storage_file_added,/Albarracin et al. 2008 replication report.pdf,public,True,https://api.osf.io/v2/logs/54dbd0498c5e4a2eb8d62f75/
+Row.49,vy1bc,55a407148c5e4a311f9e8255,2015-07-13T18:44:24.118000,project_registered,,public,False,https://api.osf.io/v2/logs/55a407148c5e4a311f9e8255/
+Row.52,l8srm,521e2c9bb5e9d71e244cafe4,2013-08-28T17:00:11.602000,made_public,,public,False,https://api.osf.io/v2/logs/521e2c9bb5e9d71e244cafe4/
+Row.52,l8srm,525d5a7cb5e9d706133eebf8,2013-10-15T15:08:44.474000,file_added,/RPReport.pdf,public,True,https://api.osf.io/v2/logs/525d5a7cb5e9d706133eebf8/
+Row.52,l8srm,55a4016b8c5e4a311f9e7d5a,2015-07-13T18:20:13.964000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4016b8c5e4a311f9e7d5a/
+Row.52,l8srm,55a4016c8c5e4a311d9e022f,2015-07-13T18:20:13.964000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4016c8c5e4a311d9e022f/
+Row.52,l8srm,55a4016c8c5e4a311f9e7d5e,2015-07-13T18:20:13.964000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4016c8c5e4a311f9e7d5e/
+Row.53,wkgpq,5089a4310b6e9127ca1283ea,2012-10-25T20:42:25.052000,made_public,,public,False,https://api.osf.io/v2/logs/5089a4310b6e9127ca1283ea/
+Row.53,wkgpq,54d918198c5e4a4d56fcd1a3,2015-02-09T20:27:05.972000,osf_storage_file_added,/JohnsonHayesGraham_Replication_Writeup.2014.04.02.docx,public,True,https://api.osf.io/v2/logs/54d918198c5e4a4d56fcd1a3/
+Row.53,wkgpq,55a4019c8c5e4a311d9e026b,2015-07-13T18:21:05.272000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4019c8c5e4a311d9e026b/
+Row.53,wkgpq,55b244a78c5e4a746bc8f1da,2015-07-24T13:58:47.950000,project_registered,,public,False,https://api.osf.io/v2/logs/55b244a78c5e4a746bc8f1da/
+Row.53,wkgpq,560d50668c5e4a1c34f745c7,2015-10-01T15:25:26.674000,osf_storage_file_added,"/Comment on replication of Amodio et al. (2008, Study 2).docx",public,True,https://api.osf.io/v2/logs/560d50668c5e4a1c34f745c7/
+Row.55,su6bm,53d295d5b5e9d7173dda0314,2014-07-25T17:37:25.251000,made_public,,public,False,https://api.osf.io/v2/logs/53d295d5b5e9d7173dda0314/
+Row.55,su6bm,5419ca79b5e9d7675dd86ce1,2014-09-17T17:52:57.450000,file_added,/EHarmon-Jonesetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/5419ca79b5e9d7675dd86ce1/
+Row.55,su6bm,54d3adee8c5e4a64e0e0d269,2015-02-05T17:52:46.362000,osf_storage_file_updated,/EHarmon-Jonesetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/54d3adee8c5e4a64e0e0d269/
+Row.55,su6bm,54ee14f28c5e4a561e0d737b,2015-02-25T18:31:14.516000,osf_storage_file_added,/Final Report Harmon-Jones et al 2008 Study 2 Replication - Mechin&Gable.docx,public,True,https://api.osf.io/v2/logs/54ee14f28c5e4a561e0d737b/
+Row.55,su6bm,5515acbc8c5e4a6641f64adb,2015-03-27T19:17:16.368000,osf_storage_file_updated,/Final Report Harmon-Jones et al 2008 Study 2 Replication - Mechin&Gable.docx,public,True,https://api.osf.io/v2/logs/5515acbc8c5e4a6641f64adb/
+Row.55,su6bm,55a432968c5e4a59af91af9e,2015-07-13T21:49:59.988000,project_registered,,public,False,https://api.osf.io/v2/logs/55a432968c5e4a59af91af9e/
+Row.56,xtsq6,53daa917b5e9d77c84ae619d,2014-07-31T20:37:43.553000,made_public,,public,False,https://api.osf.io/v2/logs/53daa917b5e9d77c84ae619d/
+Row.56,xtsq6,54e230708c5e4a681eac38a1,2015-02-16T18:01:20.437000,osf_storage_file_added,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54e230708c5e4a681eac38a1/
+Row.56,xtsq6,54ec608a8c5e4a56240d3fe0,2015-02-24T11:29:14.383000,osf_storage_file_added,/EvanDijketal.ReplicationReport_final.docx,public,True,https://api.osf.io/v2/logs/54ec608a8c5e4a56240d3fe0/
+Row.56,xtsq6,550c01ff8c5e4a3ea71db55a,2015-03-20T11:18:23.576000,osf_storage_file_added,/EvanDijketal.ReplicationReport_final_v2.docx,public,True,https://api.osf.io/v2/logs/550c01ff8c5e4a3ea71db55a/
+Row.56,xtsq6,550c02388c5e4a3eab1dcc5c,2015-03-20T11:19:20.446000,osf_storage_file_added,/EvanDijketal.ReplicationReport_final_v2.docx,public,True,https://api.osf.io/v2/logs/550c02388c5e4a3eab1dcc5c/
+Row.56,xtsq6,554b1c3f8c5e4a7d9a13f2aa,2015-05-07T08:03:11.984000,osf_storage_file_added,/EvanDijketal.ReplicationReport_v3.docx,public,True,https://api.osf.io/v2/logs/554b1c3f8c5e4a7d9a13f2aa/
+Row.56,xtsq6,555dc0a68c5e4a6c085244d9,2015-05-21T11:25:26.982000,osf_storage_file_updated,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/555dc0a68c5e4a6c085244d9/
+Row.56,xtsq6,5563507e8c5e4a225d1535b3,2015-05-25T16:40:30.239000,osf_storage_file_updated,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5563507e8c5e4a225d1535b3/
+Row.56,xtsq6,556609368c5e4a516b0f0836,2015-05-27T18:13:10.374000,osf_storage_file_updated,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/556609368c5e4a516b0f0836/
+Row.56,xtsq6,556625288c5e4a516b0f0f22,2015-05-27T20:12:24.093000,osf_storage_file_updated,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/556625288c5e4a516b0f0f22/
+Row.56,xtsq6,556759978c5e4a516b0f602c,2015-05-28T18:08:23.068000,osf_storage_file_updated,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/556759978c5e4a516b0f602c/
+Row.56,xtsq6,556869788c5e4a516b0fad39,2015-05-29T13:28:24.370000,osf_storage_file_updated,/EvanDijketal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/556869788c5e4a516b0fad39/
+Row.56,xtsq6,55a512ab8c5e4a0b92136110,2015-07-14T13:46:10.391000,project_registered,,public,False,https://api.osf.io/v2/logs/55a512ab8c5e4a0b92136110/
+Row.58,ke43j,53bd9304b5e9d767c53b02c8,2014-07-09T19:07:48.963000,made_public,,public,False,https://api.osf.io/v2/logs/53bd9304b5e9d767c53b02c8/
+Row.58,ke43j,542582f72c057a6a36515e2a,2014-09-26T15:15:03.561000,file_added,/EPLemayMSClarkReplicationReporteggshells.docx,public,True,https://api.osf.io/v2/logs/542582f72c057a6a36515e2a/
+Row.58,ke43j,55a415bb8c5e4a311b9dbf68,2015-07-13T19:46:54.314000,project_registered,,public,False,https://api.osf.io/v2/logs/55a415bb8c5e4a311b9dbf68/
+Row.58,ke43j,55a415bc8c5e4a311d9e0b0b,2015-07-13T19:46:54.314000,project_registered,,public,False,https://api.osf.io/v2/logs/55a415bc8c5e4a311d9e0b0b/
+Row.58,ke43j,55b152fe8c5e4a7468c8ed22,2015-07-23T20:47:45.529000,project_registered,,public,False,https://api.osf.io/v2/logs/55b152fe8c5e4a7468c8ed22/
+Row.59,h84qd,5363c2c7b5e9d77e541855f3,2014-05-02T16:07:35.924000,made_public,,public,False,https://api.osf.io/v2/logs/5363c2c7b5e9d77e541855f3/
+Row.59,h84qd,53a4a855b5e9d777b1cd583f,2014-06-20T21:32:01.475000,project_registered,,public,False,https://api.osf.io/v2/logs/53a4a855b5e9d777b1cd583f/
+Row.59,h84qd,542d50972c057a4042583ed0,2014-10-02T13:18:15.949000,file_added,EPLemayMSClarkReplicationReportliberating_6.docx,public,True,https://api.osf.io/v2/logs/542d50972c057a4042583ed0/
+Row.59,h84qd,542d50e12c057a403d582276,2014-10-02T13:19:29.959000,file_added,/EPLemayMSClarkReplicationReportliberating.docx,public,True,https://api.osf.io/v2/logs/542d50e12c057a403d582276/
+Row.59,h84qd,550045678c5e4a1d07150278,2015-03-11T13:38:47.204000,osf_storage_file_added,/EPLemayMSClarkReplication Final Report.docx,public,True,https://api.osf.io/v2/logs/550045678c5e4a1d07150278/
+Row.59,h84qd,55b1529e8c5e4a746fc8f2aa,2015-07-23T20:46:06.418000,project_registered,,public,False,https://api.osf.io/v2/logs/55b1529e8c5e4a746fc8f2aa/
+Row.59,h84qd,55e45a7e8c5e4a6d5cadc601,2015-08-31T13:45:34.307000,osf_storage_file_updated,/EPLemayMSClarkReplication Final Report.docx,public,True,https://api.osf.io/v2/logs/55e45a7e8c5e4a6d5cadc601/
+Row.61,sq8k9,5077b1470b6e912ea608c2c7,2012-10-12T05:57:27.084000,made_public,,public,False,https://api.osf.io/v2/logs/5077b1470b6e912ea608c2c7/
+Row.61,sq8k9,540f9870b5e9d77c2a4baf96,2014-09-10T00:16:48.336000,file_added,Results_-_Graduation_Study_9-9-2014.docx,public,True,https://api.osf.io/v2/logs/540f9870b5e9d77c2a4baf96/
+Row.61,sq8k9,54147f31b5e9d73b2c89d320,2014-09-13T17:30:25.180000,file_added,Results_-_Graduation_Study_9-13-2014.docx,public,True,https://api.osf.io/v2/logs/54147f31b5e9d73b2c89d320/
+Row.61,sq8k9,54174ae1b5e9d73b24899cef,2014-09-15T20:24:01.576000,file_added,/Results_-_Graduation_Study_9-15-2014.docx,public,True,https://api.osf.io/v2/logs/54174ae1b5e9d73b24899cef/
+Row.61,sq8k9,54175611b5e9d73b2c8a3891,2014-09-15T21:11:45.763000,file_added,/Results_-_Graduation_Study_9-15-2014.docx,public,True,https://api.osf.io/v2/logs/54175611b5e9d73b2c8a3891/
+Row.61,sq8k9,5541184e8c5e4a45f3d51474,2015-04-29T17:43:42.096000,osf_storage_file_added,/Results - Graduation Study 4-29-2015.docx,public,True,https://api.osf.io/v2/logs/5541184e8c5e4a45f3d51474/
+Row.61,sq8k9,55a40add8c5e4a311f9e8570,2015-07-13T19:00:31.078000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40add8c5e4a311f9e8570/
+Row.63,fejxb,502bd1740b6e914eae023b46,2012-08-15T16:42:28.115000,file_updated,/ReplicationReport_incl_Methods_Correll2008_byLeBel_final.doc,unknown,True,https://api.osf.io/v2/logs/502bd1740b6e914eae023b46/
+Row.63,fejxb,502bd1a30b6e914eae023f38,2012-08-15T16:43:15.636000,made_public,,public,False,https://api.osf.io/v2/logs/502bd1a30b6e914eae023f38/
+Row.63,fejxb,505371ea0b6e9120ba015a00,2012-09-14T18:05:30.038000,file_updated,/ReplicationReport_Correll2008_byLeBel_final.doc,public,True,https://api.osf.io/v2/logs/505371ea0b6e9120ba015a00/
+Row.63,fejxb,505955470b6e9120ba0cbfe7,2012-09-19T05:16:55.741000,project_registered,,public,False,https://api.osf.io/v2/logs/505955470b6e9120ba0cbfe7/
+Row.63,fejxb,51bf792a2eecad5dacac1217,2013-06-17T21:01:30.422000,file_updated,/ReplicationReport_Correll2008_byLeBel_final_fullReport_FINAL.pdf,public,True,https://api.osf.io/v2/logs/51bf792a2eecad5dacac1217/
+Row.63,fejxb,55a3fb1a8c5e4a311d9dff1f,2015-07-13T17:53:18.008000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fb1a8c5e4a311d9dff1f/
+Row.64,mxryb,53df89f6b5e9d74d96f93f20,2014-08-04T13:26:14.348000,made_public,,public,False,https://api.osf.io/v2/logs/53df89f6b5e9d74d96f93f20/
+Row.64,mxryb,546123402c057a6ff4086f55,2014-11-10T20:42:40.142000,file_added,/J_Forster_N_Liberman_S_Kuschel_Replication_Report_1.docx,public,True,https://api.osf.io/v2/logs/546123402c057a6ff4086f55/
+Row.64,mxryb,54d5021b8c5e4a2971e89bc7,2015-02-06T18:04:11.730000,osf_storage_file_added,"/J Förster, N Liberman, S Kuschel Replication Report.pdf",public,True,https://api.osf.io/v2/logs/54d5021b8c5e4a2971e89bc7/
+Row.64,mxryb,55a2c8408c5e4a311f9e06dd,2015-07-12T20:04:16.498000,osf_storage_file_added,/Replication Project Response 2015 - Jens Förster & Nira Liberman.pdf,public,True,https://api.osf.io/v2/logs/55a2c8408c5e4a311f9e06dd/
+Row.64,mxryb,55a2c9d98c5e4a31199d92bb,2015-07-12T20:11:05.757000,osf_storage_file_updated,"/J Förster, N Liberman, S Kuschel Replication Report.pdf",public,True,https://api.osf.io/v2/logs/55a2c9d98c5e4a31199d92bb/
+Row.64,mxryb,55a2ce648c5e4a311d9dbc5a,2015-07-12T20:30:28.733000,osf_storage_file_updated,"/J Förster, N Liberman, S Kuschel Replication Report.pdf",public,True,https://api.osf.io/v2/logs/55a2ce648c5e4a311d9dbc5a/
+Row.64,mxryb,55a42afc8c5e4a59ad91a506,2015-07-13T21:17:35.681000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42afc8c5e4a59ad91a506/
+Row.64,mxryb,55b151878c5e4a7468c8ed00,2015-07-23T20:41:31.003000,project_registered,,public,False,https://api.osf.io/v2/logs/55b151878c5e4a7468c8ed00/
+Row.65,imrx2,5273ead8b5e9d70ad427ebde,2013-11-01T17:54:32.440000,made_public,,public,False,https://api.osf.io/v2/logs/5273ead8b5e9d70ad427ebde/
+Row.65,imrx2,52b0bca1b5e9d722bb79a3d1,2013-12-17T21:05:37.492000,file_added,/Exline.etal.2008.Lin.final.report.pdf,public,True,https://api.osf.io/v2/logs/52b0bca1b5e9d722bb79a3d1/
+Row.65,imrx2,55a406f58c5e4a311f9e8238,2015-07-13T18:43:52.635000,project_registered,,public,False,https://api.osf.io/v2/logs/55a406f58c5e4a311f9e8238/
+Row.65,imrx2,55b247ee8c5e4a746dc8f62d,2015-07-24T14:12:49.619000,project_registered,,public,False,https://api.osf.io/v2/logs/55b247ee8c5e4a746dc8f62d/
+Row.68,sg3su,5277bf8ab5e9d72351d07cb8,2013-11-04T15:38:50.338000,made_public,,public,False,https://api.osf.io/v2/logs/5277bf8ab5e9d72351d07cb8/
+Row.68,sg3su,54dcf1758c5e4a531649eabe,2015-02-12T18:31:17.879000,osf_storage_file_added,/Risen & Gilovich replication.docx,public,True,https://api.osf.io/v2/logs/54dcf1758c5e4a531649eabe/
+Row.68,sg3su,54e206998c5e4a5837398bf6,2015-02-16T15:02:49.631000,osf_storage_file_added,/report.pdf,public,True,https://api.osf.io/v2/logs/54e206998c5e4a5837398bf6/
+Row.68,sg3su,54e207188c5e4a583c399676,2015-02-16T15:04:56.647000,osf_storage_file_added,/final_report_risen & gilovich.pdf,public,True,https://api.osf.io/v2/logs/54e207188c5e4a583c399676/
+Row.68,sg3su,55a407428c5e4a311b9dbba5,2015-07-13T18:45:12.783000,project_registered,,public,False,https://api.osf.io/v2/logs/55a407428c5e4a311b9dbba5/
+Row.68,sg3su,55b248498c5e4a746fc8ff2b,2015-07-24T14:14:21.504000,project_registered,,public,False,https://api.osf.io/v2/logs/55b248498c5e4a746fc8ff2b/
+Row.68,sg3su,57fc01496c613b01cdab362e,2016-10-10T20:59:53.752000,osf_storage_file_added,/Risen & Gilovich replication writeup.pdf,public,True,https://api.osf.io/v2/logs/57fc01496c613b01cdab362e/
+Row.68,sg3su,57fc058a6c613b01ceab36f0,2016-10-10T21:18:02.005000,osf_storage_file_added,/Risen & Gilovich replication writeup.pdf,public,True,https://api.osf.io/v2/logs/57fc058a6c613b01ceab36f0/
+Row.69,qthf2,538de0e8b5e9d76edb9cfc7c,2014-06-03T14:51:13.673000,project_registered,,unknown,False,https://api.osf.io/v2/logs/538de0e8b5e9d76edb9cfc7c/
+Row.69,qthf2,538de26ab5e9d76ed99cf21f,2014-06-03T14:57:46.455000,made_public,,public,False,https://api.osf.io/v2/logs/538de26ab5e9d76ed99cf21f/
+Row.69,qthf2,54257e812c057a6a36515d92,2014-09-26T14:56:01.133000,file_added,/TracyandRobinsReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54257e812c057a6a36515d92/
+Row.69,qthf2,54edde738c5e4a56220d61c4,2015-02-25T14:38:43.079000,osf_storage_file_added,/Final_Replication Report Tracy and Robins.docx,public,True,https://api.osf.io/v2/logs/54edde738c5e4a56220d61c4/
+Row.69,qthf2,54ef49a98c5e4a4c41c09072,2015-02-26T16:28:25.867000,osf_storage_file_updated,/Final_Replication Report Tracy and Robins.docx,public,True,https://api.osf.io/v2/logs/54ef49a98c5e4a4c41c09072/
+Row.69,qthf2,550c7c538c5e4a31d49711ab,2015-03-20T20:00:19.658000,osf_storage_file_updated,/Final_Replication Report Tracy and Robins.docx,public,True,https://api.osf.io/v2/logs/550c7c538c5e4a31d49711ab/
+Row.69,qthf2,55a417448c5e4a7f1420ca65,2015-07-13T19:53:26.941000,project_registered,,public,False,https://api.osf.io/v2/logs/55a417448c5e4a7f1420ca65/
+Row.69,qthf2,55a417448c5e4a7f1520ca65,2015-07-13T19:53:26.941000,project_registered,,public,False,https://api.osf.io/v2/logs/55a417448c5e4a7f1520ca65/
+Row.69,qthf2,55a417448c5e4a7f1920ca65,2015-07-13T19:53:26.941000,project_registered,,public,False,https://api.osf.io/v2/logs/55a417448c5e4a7f1920ca65/
+Row.69,qthf2,55b14f618c5e4a5227be2468,2015-07-23T20:32:20.241000,project_registered,,public,False,https://api.osf.io/v2/logs/55b14f618c5e4a5227be2468/
+Row.69,qthf2,55b14f618c5e4a5231be2468,2015-07-23T20:32:20.241000,project_registered,,public,False,https://api.osf.io/v2/logs/55b14f618c5e4a5231be2468/
+Row.71,7ux8p,54aead602c057a7f4cd1a0d5,2015-01-08T16:16:32.029000,made_public,,public,False,https://api.osf.io/v2/logs/54aead602c057a7f4cd1a0d5/
+Row.71,7ux8p,54eced588c5e4a56240d6eb0,2015-02-24T21:30:00.775000,osf_storage_file_added,/Stanovich.West.Replication.Report.FINAL.docx,public,True,https://api.osf.io/v2/logs/54eced588c5e4a56240d6eb0/
+Row.71,7ux8p,55a42ed28c5e4a59ad91a711,2015-07-13T21:33:57.414000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42ed28c5e4a59ad91a711/
+Row.71,7ux8p,55b14d3d8c5e4a746bc8ebca,2015-07-23T20:23:12.366000,project_registered,,public,False,https://api.osf.io/v2/logs/55b14d3d8c5e4a746bc8ebca/
+Row.72,2gx4k,51c489402eecad3ebf828384,2013-06-21T17:11:28.200000,made_public,,public,False,https://api.osf.io/v2/logs/51c489402eecad3ebf828384/
+Row.72,2gx4k,55a401828c5e4a31199dc0a7,2015-07-13T18:20:38.810000,project_registered,,public,False,https://api.osf.io/v2/logs/55a401828c5e4a31199dc0a7/
+Row.72,2gx4k,55b14c478c5e4a746fc8edd7,2015-07-23T20:19:05.537000,project_registered,,public,False,https://api.osf.io/v2/logs/55b14c478c5e4a746fc8edd7/
+Row.73,nhwv5,518ee0180b6e913db8c68be0,2013-05-12T00:19:36.419000,file_updated,/ReplicationReport_MorrisonMiller2008S3.docx,unknown,True,https://api.osf.io/v2/logs/518ee0180b6e913db8c68be0/
+Row.73,nhwv5,518ee02b0b6e913db8c6926f,2013-05-12T00:19:55.043000,made_public,,public,False,https://api.osf.io/v2/logs/518ee02b0b6e913db8c6926f/
+Row.73,nhwv5,518ee10c0b6e913db8c692ea,2013-05-12T00:23:39.965000,project_registered,,public,False,https://api.osf.io/v2/logs/518ee10c0b6e913db8c692ea/
+Row.73,nhwv5,54c29cd52c057a2aff606672,2015-01-23T19:11:17.746000,osf_storage_file_updated,/ReplicationReport_MorrisonMiller2008S3.docx,public,True,https://api.osf.io/v2/logs/54c29cd52c057a2aff606672/
+Row.73,nhwv5,55a3fc038c5e4a31199dbf6e,2015-07-13T17:57:12.893000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fc038c5e4a31199dbf6e/
+Row.77,nr7d9,53bd5a91b5e9d767c53afcb5,2014-07-09T15:06:57.117000,made_public,,public,False,https://api.osf.io/v2/logs/53bd5a91b5e9d767c53afcb5/
+Row.77,nr7d9,54e235128c5e4a6818ac3738,2015-02-16T18:21:06.166000,osf_storage_file_added,/MKooAFishbachReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54e235128c5e4a6818ac3738/
+Row.77,nr7d9,552bfa5d8c5e4a2b313ca522,2015-04-13T17:18:21.602000,osf_storage_file_updated,/MKooAFishbachReplicationReport.docx,public,True,https://api.osf.io/v2/logs/552bfa5d8c5e4a2b313ca522/
+Row.77,nr7d9,553675708c5e4a27efe70422,2015-04-21T16:06:08.965000,osf_storage_file_updated,/MKooAFishbachReplicationReport.docx,public,True,https://api.osf.io/v2/logs/553675708c5e4a27efe70422/
+Row.77,nr7d9,55a42e168c5e4a59a891a23c,2015-07-13T21:30:50.063000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42e168c5e4a59a891a23c/
+Row.77,nr7d9,55a42e168c5e4a59af91ac09,2015-07-13T21:30:50.063000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42e168c5e4a59af91ac09/
+Row.77,nr7d9,55a42e168c5e4a59af91ac13,2015-07-13T21:30:50.063000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42e168c5e4a59af91ac13/
+Row.80,79dey,5273e69eb5e9d70ad427ebaa,2013-11-01T17:36:30.859000,made_public,,public,False,https://api.osf.io/v2/logs/5273e69eb5e9d70ad427ebaa/
+Row.80,79dey,55a406a08c5e4a311b9dbb1f,2015-07-13T18:42:25.732000,project_registered,,public,False,https://api.osf.io/v2/logs/55a406a08c5e4a311b9dbb1f/
+Row.80,79dey,55a406a08c5e4a311b9dbb25,2015-07-13T18:42:25.732000,project_registered,,public,False,https://api.osf.io/v2/logs/55a406a08c5e4a311b9dbb25/
+Row.80,79dey,55a406a18c5e4a31199dc24f,2015-07-13T18:42:25.732000,project_registered,,public,False,https://api.osf.io/v2/logs/55a406a18c5e4a31199dc24f/
+Row.80,79dey,55a406a18c5e4a311d9e04d5,2015-07-13T18:42:25.732000,project_registered,,public,False,https://api.osf.io/v2/logs/55a406a18c5e4a311d9e04d5/
+Row.81,xse7q,528da212b5e9d75602c9aae7,2013-11-21T06:02:58.229000,made_public,,public,False,https://api.osf.io/v2/logs/528da212b5e9d75602c9aae7/
+Row.81,xse7q,55a409848c5e4a31199dc36e,2015-07-13T18:54:46.075000,project_registered,,public,False,https://api.osf.io/v2/logs/55a409848c5e4a31199dc36e/
+Row.81,xse7q,55a409848c5e4a31199dc373,2015-07-13T18:54:46.075000,project_registered,,public,False,https://api.osf.io/v2/logs/55a409848c5e4a31199dc373/
+Row.81,xse7q,55a409848c5e4a311b9dbc49,2015-07-13T18:54:46.075000,project_registered,,public,False,https://api.osf.io/v2/logs/55a409848c5e4a311b9dbc49/
+Row.81,xse7q,55b2492d8c5e4a746dc8f64d,2015-07-24T14:18:05.993000,project_registered,,public,False,https://api.osf.io/v2/logs/55b2492d8c5e4a746dc8f64d/
+Row.81,xse7q,55b2492d8c5e4a746fc8ffb2,2015-07-24T14:18:05.993000,project_registered,,public,False,https://api.osf.io/v2/logs/55b2492d8c5e4a746fc8ffb2/
+Row.81,xse7q,55b2492e8c5e4a746dc8f657,2015-07-24T14:18:05.993000,project_registered,,public,False,https://api.osf.io/v2/logs/55b2492e8c5e4a746dc8f657/
+Row.82,r5gpv,5098e7cf0b6e9127ca3ab6df,2012-11-06T10:34:55.428000,made_public,,public,False,https://api.osf.io/v2/logs/5098e7cf0b6e9127ca3ab6df/
+Row.82,r5gpv,5331c0dcb5e9d710aef33b7a,2014-03-25T17:46:04.653000,file_added,Replication_Report_-_Face_of_Success_3-20-14.docx,public,True,https://api.osf.io/v2/logs/5331c0dcb5e9d710aef33b7a/
+Row.82,r5gpv,53fd0980b5e9d74dd32dd268,2014-08-26T22:26:08.549000,file_added,Replication_Report_-_Face_of_Success_8-26-14.docx,public,True,https://api.osf.io/v2/logs/53fd0980b5e9d74dd32dd268/
+Row.82,r5gpv,53fd09beb5e9d74dd92e3272,2014-08-26T22:27:10.019000,file_added,Replication_Report_-_Face_of_Success_8-26-14.docx,public,True,https://api.osf.io/v2/logs/53fd09beb5e9d74dd92e3272/
+Row.82,r5gpv,54147f6eb5e9d73b24897935,2014-09-13T17:31:26.832000,file_added,/Replication_Report_-_Face_of_Success_9-13-14.docx,public,True,https://api.osf.io/v2/logs/54147f6eb5e9d73b24897935/
+Row.82,r5gpv,55a438878c5e4a59ad91ac87,2015-07-13T22:15:21.607000,project_registered,,public,False,https://api.osf.io/v2/logs/55a438878c5e4a59ad91ac87/
+Row.82,r5gpv,55b2495f8c5e4a7468c8f223,2015-07-24T14:18:57.765000,project_registered,,public,False,https://api.osf.io/v2/logs/55b2495f8c5e4a7468c8f223/
+Row.84,v8vft,5149eadd0b6e913db845d744,2013-03-20T16:59:09.145000,made_public,,public,False,https://api.osf.io/v2/logs/5149eadd0b6e913db845d744/
+Row.84,v8vft,55a3f9e08c5e4a311f9e77a3,2015-07-13T17:48:04.524000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f9e08c5e4a311f9e77a3/
+Row.84,v8vft,55a3f9e18c5e4a311d9dfe6c,2015-07-13T17:48:04.524000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f9e18c5e4a311d9dfe6c/
+Row.84,v8vft,55a3f9e18c5e4a311f9e77a8,2015-07-13T17:48:04.524000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f9e18c5e4a311f9e77a8/
+Row.86,j8bpa,509b741e0b6e9127ca3f4990,2012-11-08T08:58:06.923000,made_public,,public,False,https://api.osf.io/v2/logs/509b741e0b6e9127ca3f4990/
+Row.86,j8bpa,50f69d910b6e913db8a402df,2013-01-16T12:31:13.088000,file_updated,/final_report_EMG.pdf,public,True,https://api.osf.io/v2/logs/50f69d910b6e913db8a402df/
+Row.86,j8bpa,55a3fd108c5e4a311f9e7b46,2015-07-13T18:01:40.445000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fd108c5e4a311f9e7b46/
+Row.86,j8bpa,561bb5ba8c5e4a24ff33b698,2015-10-12T13:29:30.076000,osf_storage_file_updated,/final_report_EMG.pdf,public,True,https://api.osf.io/v2/logs/561bb5ba8c5e4a24ff33b698/
+Row.86,j8bpa,561e551f8c5e4a4150cba55b,2015-10-14T13:14:07.566000,osf_storage_file_updated,/final_report_EMG.pdf,public,True,https://api.osf.io/v2/logs/561e551f8c5e4a4150cba55b/
+Row.86,j8bpa,562120388c5e4a10eafa18d7,2015-10-16T16:05:12.942000,osf_storage_file_updated,/final_report_EMG.pdf,public,True,https://api.osf.io/v2/logs/562120388c5e4a10eafa18d7/
+Row.87,abxcj,542ab4202c057a6bd884939b,2014-09-30T13:46:08.481000,file_added,/GoffSteeleDaviesReplicationReport.docx,unknown,True,https://api.osf.io/v2/logs/542ab4202c057a6bd884939b/
+Row.87,abxcj,542c0ada2c057a403a581e90,2014-10-01T14:08:26.263000,made_public,,public,False,https://api.osf.io/v2/logs/542c0ada2c057a403a581e90/
+Row.87,abxcj,542c0ff92c057a403a581ed7,2014-10-01T14:30:17.862000,file_updated,/GoffSteeleDaviesReplicationReport.docx,public,True,https://api.osf.io/v2/logs/542c0ff92c057a403a581ed7/
+Row.87,abxcj,545a611a2c057a6a26aecc47,2014-11-05T17:40:41.987000,file_updated,/GoffSteeleDaviesReplicationReport.docx,public,True,https://api.osf.io/v2/logs/545a611a2c057a6a26aecc47/
+Row.87,abxcj,5512fe858c5e4a56eb44e8f8,2015-03-25T18:29:25.008000,osf_storage_file_added,/GoffSteeleDaviesReplicationReport.doc,public,True,https://api.osf.io/v2/logs/5512fe858c5e4a56eb44e8f8/
+Row.87,abxcj,5512ff1a8c5e4a56ef44e997,2015-03-25T18:31:54.856000,osf_storage_file_updated,/GoffSteeleDaviesReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5512ff1a8c5e4a56ef44e997/
+Row.87,abxcj,55a4389e8c5e4a59ad91acb7,2015-07-13T22:15:46.194000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4389e8c5e4a59ad91acb7/
+Row.89,ng6cc,515aed330b6e913db8980aef,2013-04-02T14:37:39.534000,made_public,,public,False,https://api.osf.io/v2/logs/515aed330b6e913db8980aef/
+Row.89,ng6cc,53e8c608b5e9d70f6627cba9,2014-08-11T13:32:56.843000,file_added,Speed-Dating_Replication_Final_Report_8-11-14_revision.docx.docx,public,True,https://api.osf.io/v2/logs/53e8c608b5e9d70f6627cba9/
+Row.89,ng6cc,55a40a878c5e4a311b9dbca9,2015-07-13T18:59:03.570000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40a878c5e4a311b9dbca9/
+Row.89,ng6cc,55a40a878c5e4a311f9e84db,2015-07-13T18:59:03.570000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40a878c5e4a311f9e84db/
+Row.89,ng6cc,55a40a888c5e4a311b9dbcae,2015-07-13T18:59:03.570000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40a888c5e4a311b9dbcae/
+Row.89,ng6cc,55a40a888c5e4a311f9e84e1,2015-07-13T18:59:03.570000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40a888c5e4a311f9e84e1/
+Row.93,cxmf6,53ea39a8b5e9d707aa4714ba,2014-08-12T15:58:32.633000,made_public,,public,False,https://api.osf.io/v2/logs/53ea39a8b5e9d707aa4714ba/
+Row.93,cxmf6,542582042c057a6a36515e0c,2014-09-26T15:11:00.978000,file_added,/SLMurrayetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/542582042c057a6a36515e0c/
+Row.93,cxmf6,551029dd8c5e4a38630a7f9c,2015-03-23T14:57:33.854000,osf_storage_file_added,/Final murray_replication_report.docx,public,True,https://api.osf.io/v2/logs/551029dd8c5e4a38630a7f9c/
+Row.93,cxmf6,551038ae8c5e4a38630a868e,2015-03-23T16:00:46.598000,osf_storage_file_updated,/Final murray_replication_report.docx,public,True,https://api.osf.io/v2/logs/551038ae8c5e4a38630a868e/
+Row.93,cxmf6,55a42a528c5e4a59af91a94f,2015-07-13T21:14:45.726000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42a528c5e4a59af91a94f/
+Row.93,cxmf6,55a42c7b8c5e4a59ad91a5c6,2015-07-13T21:24:01.385000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42c7b8c5e4a59ad91a5c6/
+Row.94,mua6d,54185e95b5e9d71c3cce1bf2,2014-09-16T16:00:21.221000,file_added,/SMMcCreaReplicationReport.docx,unknown,True,https://api.osf.io/v2/logs/54185e95b5e9d71c3cce1bf2/
+Row.94,mua6d,541b3a80b5e9d730d2c019fd,2014-09-18T20:03:12.076000,made_public,,public,False,https://api.osf.io/v2/logs/541b3a80b5e9d730d2c019fd/
+Row.94,mua6d,54d0d66c8c5e4a73fbf4ab2d,2015-02-03T14:08:44.322000,osf_storage_file_added,/SMMcCrea2008ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54d0d66c8c5e4a73fbf4ab2d/
+Row.94,mua6d,54e7771f8c5e4a0583623a20,2015-02-20T18:04:15.748000,osf_storage_file_added,/SMMcCrea2008ReplicationReport_final.docx,public,True,https://api.osf.io/v2/logs/54e7771f8c5e4a0583623a20/
+Row.94,mua6d,54ff2a8d8c5e4a1d0314ce6f,2015-03-10T17:31:57.097000,osf_storage_file_updated,/SMMcCrea2008ReplicationReport_final.docx,public,True,https://api.osf.io/v2/logs/54ff2a8d8c5e4a1d0314ce6f/
+Row.94,mua6d,55a42a208c5e4a59af91a90d,2015-07-13T21:13:57.814000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42a208c5e4a59af91a90d/
+Row.97,etg7c,54353f672c057a170f6254b3,2014-10-08T13:43:03.071000,made_public,,public,False,https://api.osf.io/v2/logs/54353f672c057a170f6254b3/
+Row.97,etg7c,545129922c057a584b0a42b0,2014-10-29T17:53:22.330000,file_added,/VPurdie-Vaughnsetal.ReplicationReport_2.docx,public,True,https://api.osf.io/v2/logs/545129922c057a584b0a42b0/
+Row.97,etg7c,55083e378c5e4a2a1f13e74e,2015-03-17T14:46:15.268000,osf_storage_file_added,/VPurdie-Vaughnsetal.ReplicationReportfinaldraft.docx,public,True,https://api.osf.io/v2/logs/55083e378c5e4a2a1f13e74e/
+Row.97,etg7c,5508f81d8c5e4a3ffece0ab7,2015-03-18T03:59:25.794000,osf_storage_file_added,/VPurdie-Vaughnsetal.ReplicationReportfinal.docx,public,True,https://api.osf.io/v2/logs/5508f81d8c5e4a3ffece0ab7/
+Row.97,etg7c,550ad7b98c5e4a1d9c320a24,2015-03-19T14:05:45.019000,osf_storage_file_added,/VPurdie-Vaughnsetal.ReplicationReport.FinalVersion.docx,public,True,https://api.osf.io/v2/logs/550ad7b98c5e4a1d9c320a24/
+Row.97,etg7c,55a439b48c5e4a59ab91a71a,2015-07-13T22:20:22.725000,project_registered,,public,False,https://api.osf.io/v2/logs/55a439b48c5e4a59ab91a71a/
+Row.97,etg7c,55b24a908c5e4a746bc8f24c,2015-07-24T14:24:03.929000,project_registered,,public,False,https://api.osf.io/v2/logs/55b24a908c5e4a746bc8f24c/
+Row.104,kegmc,508996ab0b6e9127ca1211d5,2012-10-25T19:44:43.038000,made_public,,public,False,https://api.osf.io/v2/logs/508996ab0b6e9127ca1211d5/
+Row.104,kegmc,55a402628c5e4a7f1720ca69,2015-07-13T18:24:24.084000,project_registered,,public,False,https://api.osf.io/v2/logs/55a402628c5e4a7f1720ca69/
+Row.104,kegmc,55a402628c5e4a7f1b20ca65,2015-07-13T18:24:24.084000,project_registered,,public,False,https://api.osf.io/v2/logs/55a402628c5e4a7f1b20ca65/
+Row.104,kegmc,55a402628c5e4a7f2120ca69,2015-07-13T18:24:24.084000,project_registered,,public,False,https://api.osf.io/v2/logs/55a402628c5e4a7f2120ca69/
+Row.106,iajp5,542f4c4d2c057a4ecc31bd24,2014-10-04T01:24:29.302000,made_public,,public,False,https://api.osf.io/v2/logs/542f4c4d2c057a4ecc31bd24/
+Row.106,iajp5,55a425ea8c5e4a59af91a6b0,2015-07-13T20:55:56.708000,project_registered,,public,False,https://api.osf.io/v2/logs/55a425ea8c5e4a59af91a6b0/
+Row.106,iajp5,55b243e38c5e4a746fc8fe41,2015-07-24T13:55:36.428000,project_registered,,public,False,https://api.osf.io/v2/logs/55b243e38c5e4a746fc8fe41/
+Row.107,edcr7,52584513b5e9d706133e7d31,2013-10-11T18:36:03.542000,made_public,,public,False,https://api.osf.io/v2/logs/52584513b5e9d706133e7d31/
+Row.107,edcr7,54ba82dc2c057a750001862d,2015-01-17T15:42:20.029000,osf_storage_file_added,/Replication of Study 2 by Eitam Hassin and Schul 2008 Psychological Science Final Report.pdf,public,True,https://api.osf.io/v2/logs/54ba82dc2c057a750001862d/
+Row.107,edcr7,5547adb28c5e4a22fa305d0f,2015-05-04T17:34:42.843000,osf_storage_file_added,/reaction to replication final.docx,public,True,https://api.osf.io/v2/logs/5547adb28c5e4a22fa305d0f/
+Row.107,edcr7,55a404458c5e4a311f9e7fa3,2015-07-13T18:32:23.334000,project_registered,,public,False,https://api.osf.io/v2/logs/55a404458c5e4a311f9e7fa3/
+Row.110,7dyp5,54199785b5e9d76761d86c23,2014-09-17T14:15:33.984000,made_public,,public,False,https://api.osf.io/v2/logs/54199785b5e9d76761d86c23/
+Row.110,7dyp5,541b2c86b5e9d730d8c01cac,2014-09-18T19:03:34.186000,file_added,/Farris_2008_ReplicationReport_PreDataCollection.pdf,public,True,https://api.osf.io/v2/logs/541b2c86b5e9d730d8c01cac/
+Row.110,7dyp5,54d537528c5e4a4d54fc1339,2015-02-06T21:51:14.220000,osf_storage_file_added,/Attwood Farris Replication Report.docx,public,True,https://api.osf.io/v2/logs/54d537528c5e4a4d54fc1339/
+Row.110,7dyp5,54e77c758c5e4a05886243ad,2015-02-20T18:27:01.078000,osf_storage_file_added,/Final_Attwood Farris Replication Report.pdf,public,True,https://api.osf.io/v2/logs/54e77c758c5e4a05886243ad/
+Row.110,7dyp5,54eb648e8c5e4a7cf0564f3d,2015-02-23T17:34:06.727000,osf_storage_file_updated,/Final_Attwood Farris Replication Report.pdf,public,True,https://api.osf.io/v2/logs/54eb648e8c5e4a7cf0564f3d/
+Row.110,7dyp5,55a528b28c5e4a2b0252c0c8,2015-07-14T15:20:03.019000,project_registered,,public,False,https://api.osf.io/v2/logs/55a528b28c5e4a2b0252c0c8/
+Row.110,7dyp5,55b157ea8c5e4a7468c8ee3d,2015-07-23T21:08:38.315000,project_registered,,public,False,https://api.osf.io/v2/logs/55b157ea8c5e4a7468c8ee3d/
+Row.110,7dyp5,55b157ea8c5e4a746fc8f66e,2015-07-23T21:08:38.315000,project_registered,,public,False,https://api.osf.io/v2/logs/55b157ea8c5e4a746fc8f66e/
+Row.110,7dyp5,55b157ea8c5e4a746fc8f672,2015-07-23T21:08:38.315000,project_registered,,public,False,https://api.osf.io/v2/logs/55b157ea8c5e4a746fc8f672/
+Row.110,7dyp5,562f571d8c5e4a154f1c5813,2015-10-27T10:51:09.232000,made_private,,private,False,https://api.osf.io/v2/logs/562f571d8c5e4a154f1c5813/
+Row.110,7dyp5,568fe2918c5e4a7f6b635bef,2016-01-08T16:23:45.507000,made_public,,public,False,https://api.osf.io/v2/logs/568fe2918c5e4a7f6b635bef/
+Row.111,aaudl,502688f40b6e91385b028ed2,2012-08-11T16:31:48.387000,made_public,,public,False,https://api.osf.io/v2/logs/502688f40b6e91385b028ed2/
+Row.111,aaudl,55a3f27b8c5e4a311d9dfb5f,2015-07-13T17:16:32.341000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f27b8c5e4a311d9dfb5f/
+Row.111,aaudl,55ad07b38c5e4a7c22b2a46b,2015-07-20T14:37:27.162000,project_registered,,public,False,https://api.osf.io/v2/logs/55ad07b38c5e4a7c22b2a46b/
+Row.111,aaudl,55afe6a68c5e4a5d88589241,2015-07-22T18:53:11.890000,project_registered,,public,False,https://api.osf.io/v2/logs/55afe6a68c5e4a5d88589241/
+Row.112,d0n81,5277cbe0b5e9d72351d07dab,2013-11-04T16:31:28.980000,made_public,,public,False,https://api.osf.io/v2/logs/5277cbe0b5e9d72351d07dab/
+Row.112,d0n81,53f4bb8fb5e9d7620bf6e8be,2014-08-20T15:15:27.625000,file_added,McKinstry_report.docx,public,True,https://api.osf.io/v2/logs/53f4bb8fb5e9d7620bf6e8be/
+Row.112,d0n81,543ebc8a2c057a02d5a9fef8,2014-10-15T18:27:22.208000,file_added,/McKinstry_report.pdf,public,True,https://api.osf.io/v2/logs/543ebc8a2c057a02d5a9fef8/
+Row.112,d0n81,55a408d78c5e4a311b9dbc0f,2015-07-13T18:51:55.906000,project_registered,,public,False,https://api.osf.io/v2/logs/55a408d78c5e4a311b9dbc0f/
+Row.113,qlzap,528142c3b5e9d710a5b754fa,2013-11-11T20:49:07.027000,made_public,,public,False,https://api.osf.io/v2/logs/528142c3b5e9d710a5b754fa/
+Row.113,qlzap,5281448cb5e9d72a54b78189,2013-11-11T20:56:30.768000,project_registered,,public,False,https://api.osf.io/v2/logs/5281448cb5e9d72a54b78189/
+Row.113,qlzap,533c5c7fb5e9d705745e69fa,2014-04-02T18:52:47.851000,file_added,/Armor_et_al_2008_Replication_Report_to_OSF.pdf,public,True,https://api.osf.io/v2/logs/533c5c7fb5e9d705745e69fa/
+Row.113,qlzap,54e236f48c5e4a681cac382d,2015-02-16T18:29:08.532000,osf_storage_file_updated,/Armor_et_al_2008_Replication_Report_to_OSF.pdf,public,True,https://api.osf.io/v2/logs/54e236f48c5e4a681cac382d/
+Row.113,qlzap,55a405708c5e4a311f9e8064,2015-07-13T18:37:17.834000,project_registered,,public,False,https://api.osf.io/v2/logs/55a405708c5e4a311f9e8064/
+Row.114,yaeu7,541c7182b5e9d7091270c94c,2014-09-19T18:10:10.194000,made_public,,public,False,https://api.osf.io/v2/logs/541c7182b5e9d7091270c94c/
+Row.114,yaeu7,541c7216b5e9d7091270c95c,2014-09-19T18:12:38.174000,file_added,/DRAddisetal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/541c7216b5e9d7091270c95c/
+Row.114,yaeu7,5509ff018c5e4a5ace37258a,2015-03-18T22:41:05.195000,osf_storage_file_added,/Addisetal(2008) Rep Report REV.pdf,public,True,https://api.osf.io/v2/logs/5509ff018c5e4a5ace37258a/
+Row.114,yaeu7,55a3f1bc8c5e4a31199dbca5,2015-07-13T17:13:32.671000,osf_storage_file_updated,/Addisetal(2008) Rep Report REV.pdf,public,True,https://api.osf.io/v2/logs/55a3f1bc8c5e4a31199dbca5/
+Row.114,yaeu7,55a436078c5e4a59ad91aa04,2015-07-13T22:04:44.988000,project_registered,,public,False,https://api.osf.io/v2/logs/55a436078c5e4a59ad91aa04/
+Row.114,yaeu7,55a436078c5e4a59af91b165,2015-07-13T22:04:44.988000,project_registered,,public,False,https://api.osf.io/v2/logs/55a436078c5e4a59af91b165/
+Row.115,aczvt,54d90f438c5e4a4d50fcabe9,2015-02-09T19:49:23.549000,made_public,,public,False,https://api.osf.io/v2/logs/54d90f438c5e4a4d50fcabe9/
+Row.115,aczvt,550c3a2e8c5e4a3ea31dd8e1,2015-03-20T15:18:06.364000,osf_storage_file_added,/Nurmsoo and Bloom Final Report.docx,public,True,https://api.osf.io/v2/logs/550c3a2e8c5e4a3ea31dd8e1/
+Row.115,aczvt,55a439e48c5e4a59af91b629,2015-07-13T22:21:09.746000,project_registered,,public,False,https://api.osf.io/v2/logs/55a439e48c5e4a59af91b629/
+Row.116,ivfu6,5289e4bdb5e9d74d9c4318ed,2013-11-18T09:58:17.154000,project_registered,,unknown,False,https://api.osf.io/v2/logs/5289e4bdb5e9d74d9c4318ed/
+Row.116,ivfu6,53be79c7b5e9d767cc3ad9a9,2014-07-10T11:32:23.562000,made_public,,public,False,https://api.osf.io/v2/logs/53be79c7b5e9d767cc3ad9a9/
+Row.116,ivfu6,54d0fb098c5e4a73fdf4df29,2015-02-03T16:44:57.673000,osf_storage_file_added,/steegenetal2014_report.pdf,public,True,https://api.osf.io/v2/logs/54d0fb098c5e4a73fdf4df29/
+Row.116,ivfu6,55a41bf28c5e4a59ab919e44,2015-07-13T20:13:21.741000,project_registered,,public,False,https://api.osf.io/v2/logs/55a41bf28c5e4a59ab919e44/
+Row.116,ivfu6,55b246af8c5e4a7468c8f1f0,2015-07-24T14:07:19.901000,project_registered,,public,False,https://api.osf.io/v2/logs/55b246af8c5e4a7468c8f1f0/
+Row.117,rzjvn,51d6fcb82eecad65c8758fc3,2013-07-05T17:04:56.185000,made_public,,public,False,https://api.osf.io/v2/logs/51d6fcb82eecad65c8758fc3/
+Row.117,rzjvn,55a3fe6f8c5e4a311b9db952,2015-07-13T18:07:30.503000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fe6f8c5e4a311b9db952/
+Row.118,3h29d,53fce160b5e9d74dd92e2edd,2014-08-26T19:34:56.631000,made_public,,public,False,https://api.osf.io/v2/logs/53fce160b5e9d74dd92e2edd/
+Row.118,3h29d,5537b5378c5e4a25747d7664,2015-04-22T14:50:31.568000,osf_storage_file_added,/masicampo report.docx,public,True,https://api.osf.io/v2/logs/5537b5378c5e4a25747d7664/
+Row.118,3h29d,55a423488c5e4a59af91a4ff,2015-07-13T20:44:40.254000,project_registered,,public,False,https://api.osf.io/v2/logs/55a423488c5e4a59af91a4ff/
+Row.118,3h29d,55b153698c5e4a746dc8eebf,2015-07-23T20:49:29.659000,project_registered,,public,False,https://api.osf.io/v2/logs/55b153698c5e4a746dc8eebf/
+Row.120,73pnd,51c313da2eecad5dacc9108c,2013-06-20T14:38:18.781000,made_public,,public,False,https://api.osf.io/v2/logs/51c313da2eecad5dacc9108c/
+Row.120,73pnd,55a3fba08c5e4a311f9e79c1,2015-07-13T17:55:44.223000,osf_storage_file_added,/lewis_pitts_report.pdf,public,True,https://api.osf.io/v2/logs/55a3fba08c5e4a311f9e79c1/
+Row.120,73pnd,55a40d9a8c5e4a311f9e87d5,2015-07-13T19:12:05.006000,project_registered,,public,False,https://api.osf.io/v2/logs/55a40d9a8c5e4a311f9e87d5/
+Row.120,73pnd,55a538288c5e4a40a10e6a3c,2015-07-14T16:26:16.441000,osf_storage_file_added,/lewis_pitts_report.pdf,public,True,https://api.osf.io/v2/logs/55a538288c5e4a40a10e6a3c/
+Row.120,73pnd,55a54e6e8c5e4a409f0e6af4,2015-07-14T18:01:00.115000,project_registered,,public,False,https://api.osf.io/v2/logs/55a54e6e8c5e4a409f0e6af4/
+Row.120,73pnd,55a54e6f8c5e4a409b0e6a63,2015-07-14T18:01:00.115000,project_registered,,public,False,https://api.osf.io/v2/logs/55a54e6f8c5e4a409b0e6a63/
+Row.121,94j6h,541848beb5e9d71413c427ee,2014-09-16T14:27:10.688000,file_added,GTabibniaetal.ReplicationReport.docx,unknown,True,https://api.osf.io/v2/logs/541848beb5e9d71413c427ee/
+Row.121,94j6h,541848ccb5e9d71413c427ef,2014-09-16T14:27:24.577000,made_public,,public,False,https://api.osf.io/v2/logs/541848ccb5e9d71413c427ef/
+Row.121,94j6h,54232d452c057a4bb87966b6,2014-09-24T20:44:53.637000,file_added,/GTabibniaetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/54232d452c057a4bb87966b6/
+Row.121,94j6h,54aecb052c057a209ad1b66e,2015-01-08T18:23:01.873000,osf_storage_file_added,/GTabibniaetal.ReplicationReport.Final.SubmittedJan8.doc,public,True,https://api.osf.io/v2/logs/54aecb052c057a209ad1b66e/
+Row.121,94j6h,54bebd5a2c057a74fe01a49a,2015-01-20T20:40:58.167000,osf_storage_file_added,/GTabibniaetal.ReplicationReport.Final.SubmittedJan20withOSFrequestedchanges.doc,public,True,https://api.osf.io/v2/logs/54bebd5a2c057a74fe01a49a/
+Row.121,94j6h,54e77f908c5e4a0583623b43,2015-02-20T18:40:16.730000,osf_storage_file_updated,/GTabibniaetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/54e77f908c5e4a0583623b43/
+Row.121,94j6h,559d583d8c5e4a3cebaa465e,2015-07-08T17:05:01.501000,osf_storage_file_updated,/GTabibniaetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/559d583d8c5e4a3cebaa465e/
+Row.121,94j6h,55a00a3f8c5e4a6870c2dcea,2015-07-10T18:09:03.281000,osf_storage_file_added,/GTabibniaetal.ReplicationReport.Final.pdf,public,True,https://api.osf.io/v2/logs/55a00a3f8c5e4a6870c2dcea/
+Row.121,94j6h,55a6c9fd8c5e4a66f46dc799,2015-07-15T21:00:28.505000,project_registered,,public,False,https://api.osf.io/v2/logs/55a6c9fd8c5e4a66f46dc799/
+Row.121,94j6h,55a6c9fd8c5e4a66f66dc8e5,2015-07-15T21:00:28.505000,project_registered,,public,False,https://api.osf.io/v2/logs/55a6c9fd8c5e4a66f66dc8e5/
+Row.121,94j6h,55b664168c5e4a024db5ceb4,2015-07-27T17:01:51.659000,project_registered,,public,False,https://api.osf.io/v2/logs/55b664168c5e4a024db5ceb4/
+Row.121,94j6h,55b664168c5e4a024db5cf2f,2015-07-27T17:01:51.659000,project_registered,,public,False,https://api.osf.io/v2/logs/55b664168c5e4a024db5cf2f/
+Row.121,94j6h,55b664178c5e4a024bb5ce8b,2015-07-27T17:01:51.659000,project_registered,,public,False,https://api.osf.io/v2/logs/55b664178c5e4a024bb5ce8b/
+Row.122,dnaxe,53c82f88b5e9d72c4c741298,2014-07-17T20:18:16.404000,made_public,,public,False,https://api.osf.io/v2/logs/53c82f88b5e9d72c4c741298/
+Row.122,dnaxe,547cda2b2c057a6a9bb5a36a,2014-12-01T21:14:19.477000,osf_storage_file_added,/Replication of Alvarez&Oliva2008.docx,public,True,https://api.osf.io/v2/logs/547cda2b2c057a6a9bb5a36a/
+Row.122,dnaxe,54a14baa2c057a6179f1ee14,2014-12-29T12:40:10.376000,osf_storage_file_added,/Final_Replication_Report Alvarez&Oliva2008.docx,public,True,https://api.osf.io/v2/logs/54a14baa2c057a6179f1ee14/
+Row.122,dnaxe,54b7dfc32c057a032f3f2f61,2015-01-15T15:41:55.908000,osf_storage_file_added,/Final_Replication_Report AlvarezOliva2008 final reviewed.docx,public,True,https://api.osf.io/v2/logs/54b7dfc32c057a032f3f2f61/
+Row.122,dnaxe,54e77fc88c5e4a0580623e32,2015-02-20T18:41:12.426000,osf_storage_file_updated,/Replication of Alvarez&Oliva2008.docx,public,True,https://api.osf.io/v2/logs/54e77fc88c5e4a0580623e32/
+Row.122,dnaxe,55a431fa8c5e4a59af91af4b,2015-07-13T21:47:26.089000,project_registered,,public,False,https://api.osf.io/v2/logs/55a431fa8c5e4a59af91af4b/
+Row.124,fxqsk,53f38cccb5e9d7434d227b9f,2014-08-19T17:43:40.648000,made_public,,public,False,https://api.osf.io/v2/logs/53f38cccb5e9d7434d227b9f/
+Row.124,fxqsk,54198c53b5e9d7675bd86a4d,2014-09-17T13:27:47.829000,file_added,/GPLauetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/54198c53b5e9d7675bd86a4d/
+Row.124,fxqsk,54acfcb12c057a2397730bbe,2015-01-07T09:30:25.804000,osf_storage_file_added,/GPLauetal.ReplicationReport_plus_Results.docx,public,True,https://api.osf.io/v2/logs/54acfcb12c057a2397730bbe/
+Row.124,fxqsk,54b53e732c057a3c9233ec34,2015-01-13T15:49:07.042000,osf_storage_file_updated,/GPLauetal.ReplicationReport_plus_Results.docx,public,True,https://api.osf.io/v2/logs/54b53e732c057a3c9233ec34/
+Row.124,fxqsk,55a428cc8c5e4a59ab91a15e,2015-07-13T21:08:12.203000,project_registered,,public,False,https://api.osf.io/v2/logs/55a428cc8c5e4a59ab91a15e/
+Row.124,fxqsk,55a428cc8c5e4a59ad91a3ef,2015-07-13T21:08:12.203000,project_registered,,public,False,https://api.osf.io/v2/logs/55a428cc8c5e4a59ad91a3ef/
+Row.124,fxqsk,55b151f38c5e4a746fc8f273,2015-07-23T20:43:16.517000,project_registered,,public,False,https://api.osf.io/v2/logs/55b151f38c5e4a746fc8f273/
+Row.124,fxqsk,55b247518c5e4a746bc8f1f6,2015-07-24T14:10:09.496000,project_registered,,public,False,https://api.osf.io/v2/logs/55b247518c5e4a746bc8f1f6/
+Row.127,mjasz,5421c50e2c057a57d6d3e76b,2014-09-23T19:07:58.936000,file_added,/Winaweretal.ReplicationReport.docx,unknown,True,https://api.osf.io/v2/logs/5421c50e2c057a57d6d3e76b/
+Row.127,mjasz,5421c5172c057a57d8d3e741,2014-09-23T19:08:07.076000,made_public,,public,False,https://api.osf.io/v2/logs/5421c5172c057a57d8d3e741/
+Row.127,mjasz,5421c8eb2c057a57dcd3e7db,2014-09-23T19:24:27.742000,file_updated,/Winaweretal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5421c8eb2c057a57dcd3e7db/
+Row.127,mjasz,552d21698c5e4a66458b73eb,2015-04-14T14:17:13.304000,osf_storage_file_updated,/Winaweretal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/552d21698c5e4a66458b73eb/
+Row.127,mjasz,55a437658c5e4a59ad91ab55,2015-07-13T22:10:33.919000,project_registered,,public,False,https://api.osf.io/v2/logs/55a437658c5e4a59ad91ab55/
+Row.129,c5fza,5090448b0b6e9127ca22d54e,2012-10-30T21:20:11.568000,made_public,,public,False,https://api.osf.io/v2/logs/5090448b0b6e9127ca22d54e/
+Row.129,c5fza,522fc97ab5e9d70bac19d71b,2013-09-11T01:38:02.502000,file_added,/Replication_Report_-_Richeson__Trawalter_2008_-_Post-Data_Collection_Final_Report.pdf,public,True,https://api.osf.io/v2/logs/522fc97ab5e9d70bac19d71b/
+Row.129,c5fza,55a3f6b88c5e4a311f9e754f,2015-07-13T17:34:35.523000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f6b88c5e4a311f9e754f/
+Row.132,b98zw,53bbf174b5e9d767ca3a66b3,2014-07-08T13:26:12.342000,made_public,,public,False,https://api.osf.io/v2/logs/53bbf174b5e9d767ca3a66b3/
+Row.132,b98zw,54d92dfa8c5e4a4d54fc8ec5,2015-02-09T22:00:26.527000,osf_storage_file_added,/JRCrosbyBMoninDRichardsonReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54d92dfa8c5e4a4d54fc8ec5/
+Row.132,b98zw,550c60ed8c5e4a31d097087f,2015-03-20T18:03:25.276000,osf_storage_file_added,/JRCrosbyBMoninDRichardsonReplicationReport_JLMS_KJ.docx,public,True,https://api.osf.io/v2/logs/550c60ed8c5e4a31d097087f/
+Row.132,b98zw,551bf7998c5e4a588b24e7c8,2015-04-01T13:50:17.537000,osf_storage_file_updated,/JRCrosbyBMoninDRichardsonReplicationReport_JLMS_KJ.docx,public,True,https://api.osf.io/v2/logs/551bf7998c5e4a588b24e7c8/
+Row.132,b98zw,5523da998c5e4a2c63b525a9,2015-04-07T13:24:41.639000,osf_storage_file_updated,/JRCrosbyBMoninDRichardsonReplicationReport_JLMS_KJ.docx,public,True,https://api.osf.io/v2/logs/5523da998c5e4a2c63b525a9/
+Row.132,b98zw,559fc8e78c5e4a686ec2b4c2,2015-07-10T13:30:15.511000,osf_storage_file_updated,/JRCrosbyBMoninDRichardsonReplicationReport_JLMS_KJ.docx,public,True,https://api.osf.io/v2/logs/559fc8e78c5e4a686ec2b4c2/
+Row.132,b98zw,55a41b028c5e4a59a8919dad,2015-07-13T20:09:25.055000,project_registered,,public,False,https://api.osf.io/v2/logs/55a41b028c5e4a59a8919dad/
+Row.132,b98zw,55b14eb68c5e4a746dc8ed3d,2015-07-23T20:29:28.174000,project_registered,,public,False,https://api.osf.io/v2/logs/55b14eb68c5e4a746dc8ed3d/
+Row.133,jhkpe,51408c820b6e913db81b11f1,2013-03-13T14:26:10.144000,file_updated,Replication_NairneEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/51408c820b6e913db81b11f1/
+Row.133,jhkpe,51408c8e0b6e913db81b120f,2013-03-13T14:26:22.667000,file_added,Replication_NairneEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/51408c8e0b6e913db81b120f/
+Row.133,jhkpe,51408c990b6e913db81b122d,2013-03-13T14:26:32.969000,file_added,Replication_NairneEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/51408c990b6e913db81b122d/
+Row.133,jhkpe,51408ced0b6e913db81b1779,2013-03-13T14:27:57.282000,file_added,Replication_NairneEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/51408ced0b6e913db81b1779/
+Row.133,jhkpe,514090830b6e913db81b4176,2013-03-13T14:43:15.456000,file_added,Replication_NairneEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/514090830b6e913db81b4176/
+Row.133,jhkpe,514091270b6e913db81b54ae,2013-03-13T14:45:59.295000,file_added,Replication_NairneEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/514091270b6e913db81b54ae/
+Row.133,jhkpe,5140bb650b6e913db81c8437,2013-03-13T17:46:13.006000,made_public,,public,False,https://api.osf.io/v2/logs/5140bb650b6e913db81c8437/
+Row.133,jhkpe,52343a68b5e9d70bac19d9ee,2013-09-14T10:28:56.890000,file_added,/Replication_NairneEtAl_PS2008_20130313144559.pdf,public,True,https://api.osf.io/v2/logs/52343a68b5e9d70bac19d9ee/
+Row.133,jhkpe,55a3f7028c5e4a31199dbde4,2015-07-13T17:35:46.619000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f7028c5e4a31199dbde4/
+Row.133,jhkpe,55a3f7038c5e4a311f9e758c,2015-07-13T17:35:46.619000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f7038c5e4a311f9e758c/
+Row.134,5dx4v,542d5ccd2c057a4042583fb2,2014-10-02T14:10:21.900000,made_public,,public,False,https://api.osf.io/v2/logs/542d5ccd2c057a4042583fb2/
+Row.134,5dx4v,5444d6012c057a4122e14a74,2014-10-20T09:29:37.591000,file_added,/JTLarsenARMcKibbanReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/5444d6012c057a4122e14a74/
+Row.134,5dx4v,54c26d052c057a2afb605ea4,2015-01-23T15:47:17.753000,osf_storage_file_added,/JTLarsenARMcKibbanReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54c26d052c057a2afb605ea4/
+Row.134,5dx4v,54c26d422c057a2af8605dc4,2015-01-23T15:48:18.149000,osf_storage_file_updated,/JTLarsenARMcKibbanReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/54c26d422c057a2af8605dc4/
+Row.134,5dx4v,55a437cc8c5e4a59a891a556,2015-07-13T22:12:17.442000,project_registered,,public,False,https://api.osf.io/v2/logs/55a437cc8c5e4a59a891a556/
+Row.134,5dx4v,55a437cd8c5e4a59ad91ac18,2015-07-13T22:12:17.442000,project_registered,,public,False,https://api.osf.io/v2/logs/55a437cd8c5e4a59ad91ac18/
+Row.135,2gkjt,53aee927b5e9d71b912624d2,2014-06-28T16:11:19.098000,made_public,,public,False,https://api.osf.io/v2/logs/53aee927b5e9d71b912624d2/
+Row.135,2gkjt,54101049b5e9d77c2c4b9fee,2014-09-10T08:48:08.109000,project_registered,,public,False,https://api.osf.io/v2/logs/54101049b5e9d77c2c4b9fee/
+Row.135,2gkjt,54b116592c057a1661ba89a1,2015-01-10T12:08:57.303000,project_registered,,public,False,https://api.osf.io/v2/logs/54b116592c057a1661ba89a1/
+Row.135,2gkjt,54eb9ec38c5e4a7cf5565ec0,2015-02-23T21:42:27.913000,osf_storage_file_added,/final_replication_report.docx,public,True,https://api.osf.io/v2/logs/54eb9ec38c5e4a7cf5565ec0/
+Row.135,2gkjt,54eb9ece8c5e4a7cf356535c,2015-02-23T21:42:38.437000,osf_storage_file_updated,/final_replication_report.docx,public,True,https://api.osf.io/v2/logs/54eb9ece8c5e4a7cf356535c/
+Row.135,2gkjt,5509fe708c5e4a5ac8372249,2015-03-18T22:38:40.590000,osf_storage_file_updated,/final_replication_report.docx,public,True,https://api.osf.io/v2/logs/5509fe708c5e4a5ac8372249/
+Row.135,2gkjt,55a438398c5e4a59af91b474,2015-07-13T22:14:05.847000,project_registered,,public,False,https://api.osf.io/v2/logs/55a438398c5e4a59af91b474/
+Row.136,i29mh,5277c4c5b5e9d72355d04344,2013-11-04T16:01:09.959000,made_public,,public,False,https://api.osf.io/v2/logs/5277c4c5b5e9d72355d04344/
+Row.136,i29mh,52e12c23b5e9d750f265482b,2014-01-23T14:50:11.164000,file_added,/Giner-Sorolla_replication_report_final.docx,public,True,https://api.osf.io/v2/logs/52e12c23b5e9d750f265482b/
+Row.136,i29mh,5371e5afb5e9d70f1bbaa6bc,2014-05-13T09:28:14.794000,file_updated,/Giner-Sorolla_replication_report_final.docx,public,True,https://api.osf.io/v2/logs/5371e5afb5e9d70f1bbaa6bc/
+Row.136,i29mh,5543a70b8c5e4a3c6e2e7905,2015-05-01T16:17:15.671000,osf_storage_file_added,/Giner-Sorolla replication report revised May 1 2015.docx,public,True,https://api.osf.io/v2/logs/5543a70b8c5e4a3c6e2e7905/
+Row.136,i29mh,5547a4c58c5e4a22f12fbb4a,2015-05-04T16:56:37.975000,osf_storage_file_added,/Giner-Sorolla replication report revised May 4 2015.docx,public,True,https://api.osf.io/v2/logs/5547a4c58c5e4a22f12fbb4a/
+Row.136,i29mh,55a4085c8c5e4a311f9e8336,2015-07-13T18:49:52.863000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4085c8c5e4a311f9e8336/
+Row.136,i29mh,55b248658c5e4a746dc8f63d,2015-07-24T14:14:49.276000,project_registered,,public,False,https://api.osf.io/v2/logs/55b248658c5e4a746dc8f63d/
+Row.136,i29mh,5873190554be8101d7e30b3b,2017-01-09T05:00:53.390000,project_registered,,public,False,https://api.osf.io/v2/logs/5873190554be8101d7e30b3b/
+Row.136,i29mh,5de7d7f0e1e62f000b34fb87,2019-12-04T15:59:44.506312,osf_storage_file_added,/Giner-Sorolla replication report revised Dec 4 2019.docx,public,True,https://api.osf.io/v2/logs/5de7d7f0e1e62f000b34fb87/
+Row.139,ta3j8,53ceb956b5e9d7500ccd41db,2014-07-22T19:19:50.463000,made_public,,public,False,https://api.osf.io/v2/logs/53ceb956b5e9d7500ccd41db/
+Row.139,ta3j8,54184e3eb5e9d71c40ce1b1f,2014-09-16T14:50:38.252000,file_added,/LDemanyetal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/54184e3eb5e9d71c40ce1b1f/
+Row.139,ta3j8,54ede4448c5e4a56220d6266,2015-02-25T15:03:32.557000,osf_storage_file_added,/LDemanyetal.ReplicationReport_Final_Feb24.docx,public,True,https://api.osf.io/v2/logs/54ede4448c5e4a56220d6266/
+Row.139,ta3j8,55a42e928c5e4a59af91ac9a,2015-07-13T21:32:54.765000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42e928c5e4a59af91ac9a/
+Row.140,vnsqg,50b4ee100b6e91562c2bc6d7,2012-11-27T16:45:04.448000,made_public,,public,False,https://api.osf.io/v2/logs/50b4ee100b6e91562c2bc6d7/
+Row.140,vnsqg,5400da25b5e9d71c25f5cb3d,2014-08-29T19:53:09.121000,file_added,/ReplicationProject.8.18.14.docx,public,True,https://api.osf.io/v2/logs/5400da25b5e9d71c25f5cb3d/
+Row.140,vnsqg,55a3fedc8c5e4a311d9e017f,2015-07-13T18:09:21.498000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fedc8c5e4a311d9e017f/
+Row.140,vnsqg,55b248aa8c5e4a746fc8ff64,2015-07-24T14:15:54.220000,project_registered,,public,False,https://api.osf.io/v2/logs/55b248aa8c5e4a746fc8ff64/
+Row.142,k4y9i,53c825e8b5e9d72c4e744506,2014-07-17T19:37:12.189000,made_public,,public,False,https://api.osf.io/v2/logs/53c825e8b5e9d72c4e744506/
+Row.142,k4y9i,5425827d2c057a6a32514b47,2014-09-26T15:13:01.282000,file_added,/MTamiretal.ReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5425827d2c057a6a32514b47/
+Row.142,k4y9i,5509aa648c5e4a5acc371335,2015-03-18T16:40:04.471000,osf_storage_file_added,/MTamir et al. Final Replication Report.docx,public,True,https://api.osf.io/v2/logs/5509aa648c5e4a5acc371335/
+Row.142,k4y9i,5509aacc8c5e4a5ac83713bc,2015-03-18T16:41:48.196000,osf_storage_file_updated,/MTamir et al. Final Replication Report.docx,public,True,https://api.osf.io/v2/logs/5509aacc8c5e4a5ac83713bc/
+Row.142,k4y9i,55a42de38c5e4a59af91abd2,2015-07-13T21:30:01.078000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42de38c5e4a59af91abd2/
+Row.143,yuybh,5031569b0b6e914eae09fab6,2012-08-19T21:11:55.759000,made_public,,public,False,https://api.osf.io/v2/logs/5031569b0b6e914eae09fab6/
+Row.143,yuybh,507ddbfd0b6e912ea6150803,2012-10-16T22:13:17.152000,file_updated,/ReplicationReport_preStudy.pdf,public,True,https://api.osf.io/v2/logs/507ddbfd0b6e912ea6150803/
+Row.143,yuybh,50f374e10b6e913db8993278,2013-01-14T03:00:48.993000,file_updated,/Epley_et_al_2008.PS.final.report.pdf,public,True,https://api.osf.io/v2/logs/50f374e10b6e913db8993278/
+Row.143,yuybh,55a3f9918c5e4a7f1720ca65,2015-07-13T17:46:45.707000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f9918c5e4a7f1720ca65/
+Row.143,yuybh,55a3f9918c5e4a7f2120ca65,2015-07-13T17:46:45.707000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3f9918c5e4a7f2120ca65/
+Row.145,76qc5,53a2e501b5e9d777b7cbf172,2014-06-19T13:26:25.064000,made_public,,public,False,https://api.osf.io/v2/logs/53a2e501b5e9d777b7cbf172/
+Row.145,76qc5,5417a90eb5e9d73b2c8a451a,2014-09-16T03:05:50.066000,file_added,/NHalevyGBornsteinLSagivReplicationReport.docx,public,True,https://api.osf.io/v2/logs/5417a90eb5e9d73b2c8a451a/
+Row.145,76qc5,5489dc952c057a20d1df738f,2014-12-11T18:04:05.959000,made_private,,private,False,https://api.osf.io/v2/logs/5489dc952c057a20d1df738f/
+Row.145,76qc5,54aaefd82c057a6175f27082,2015-01-05T20:11:04.624000,osf_storage_file_added,"/FINAL REPORT of Halevy, Bornstein & Sagiv Replication - 05 January 2015.pdf",private,True,https://api.osf.io/v2/logs/54aaefd82c057a6175f27082/
+Row.145,76qc5,54aaf17d2c057a617bf2f87c,2015-01-05T20:18:05.424000,made_public,,public,False,https://api.osf.io/v2/logs/54aaf17d2c057a617bf2f87c/
+Row.145,76qc5,55a42d2d8c5e4a59af91ab68,2015-07-13T21:26:55.075000,project_registered,,public,False,https://api.osf.io/v2/logs/55a42d2d8c5e4a59af91ab68/
+Row.146,dncxa,53d7d847b5e9d70bf59f83ab,2014-07-29T17:22:15.925000,made_public,,public,False,https://api.osf.io/v2/logs/53d7d847b5e9d70bf59f83ab/
+Row.146,dncxa,543e7c172c057a02cda9f285,2014-10-15T13:52:23.038000,file_added,/NJanssenetal.ReplicationReport_1.docx,public,True,https://api.osf.io/v2/logs/543e7c172c057a02cda9f285/
+Row.146,dncxa,5480cac72c057a667f5ac5e4,2014-12-04T20:57:43.001000,osf_storage_file_added,/draft post-collection report.doc,public,True,https://api.osf.io/v2/logs/5480cac72c057a667f5ac5e4/
+Row.146,dncxa,54ad208e2c057a2399731286,2015-01-07T12:03:26.961000,osf_storage_file_added,/post-collection report.pdf,public,True,https://api.osf.io/v2/logs/54ad208e2c057a2399731286/
+Row.146,dncxa,54ad240e2c057a2395730b2c,2015-01-07T12:18:22.922000,osf_storage_file_added,/Final NJanssenetal.ReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/54ad240e2c057a2395730b2c/
+Row.146,dncxa,54ad276d2c057a2397730e2f,2015-01-07T12:32:45.879000,osf_storage_file_updated,/Final NJanssenetal.ReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/54ad276d2c057a2397730e2f/
+Row.146,dncxa,54d4d5918c5e4a2977e8ad56,2015-02-06T14:54:09.938000,osf_storage_file_updated,/Final NJanssenetal.ReplicationReport.pdf,public,True,https://api.osf.io/v2/logs/54d4d5918c5e4a2977e8ad56/
+Row.146,dncxa,55a41e888c5e4a59ab919f0b,2015-07-13T20:24:27.438000,project_registered,,public,False,https://api.osf.io/v2/logs/55a41e888c5e4a59ab919f0b/
+Row.146,dncxa,55b1489f8c5e4a746fc8ecba,2015-07-23T20:03:30.182000,project_registered,,public,False,https://api.osf.io/v2/logs/55b1489f8c5e4a746fc8ecba/
+Row.148,blcj6,5086ebda0b6e9127ca0bc687,2012-10-23T19:11:22.614000,made_public,,public,False,https://api.osf.io/v2/logs/5086ebda0b6e9127ca0bc687/
+Row.148,blcj6,55a3fe888c5e4a311f9e7c2c,2015-07-13T18:07:53.474000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fe888c5e4a311f9e7c2c/
+Row.150,tf8ky,53baa531b5e9d767cc3a8d29,2014-07-07T13:48:33.710000,made_public,,public,False,https://api.osf.io/v2/logs/53baa531b5e9d767cc3a8d29/
+Row.150,tf8ky,54d3bc128c5e4a64e2e0f96c,2015-02-05T18:53:06.496000,osf_storage_file_added,/S Forti GW Humphreys ReplicationReport-final.pdf,public,True,https://api.osf.io/v2/logs/54d3bc128c5e4a64e2e0f96c/
+Row.150,tf8ky,54ff2a518c5e4a1d0714cca0,2015-03-10T17:30:57.042000,osf_storage_file_updated,/S Forti GW Humphreys ReplicationReport-final.pdf,public,True,https://api.osf.io/v2/logs/54ff2a518c5e4a1d0714cca0/
+Row.150,tf8ky,55a380d18c5e4a31199da8c8,2015-07-13T09:11:45.635000,osf_storage_file_updated,/S Forti GW Humphreys ReplicationReport-final.pdf,public,True,https://api.osf.io/v2/logs/55a380d18c5e4a31199da8c8/
+Row.150,tf8ky,55a384738c5e4a311f9e40f8,2015-07-13T09:27:15.161000,osf_storage_file_updated,/S Forti GW Humphreys ReplicationReport-final.pdf,public,True,https://api.osf.io/v2/logs/55a384738c5e4a311f9e40f8/
+Row.150,tf8ky,55a41adb8c5e4a59af919ea6,2015-07-13T20:08:45.073000,project_registered,,public,False,https://api.osf.io/v2/logs/55a41adb8c5e4a59af919ea6/
+Row.150,tf8ky,55b146ff8c5e4a746bc8ea6a,2015-07-23T19:56:32.963000,project_registered,,public,False,https://api.osf.io/v2/logs/55b146ff8c5e4a746bc8ea6a/
+Row.151,apidb,5273e377b5e9d70ad627c79c,2013-11-01T17:23:03.376000,made_public,,public,False,https://api.osf.io/v2/logs/5273e377b5e9d70ad627c79c/
+Row.151,apidb,527ac22cb5e9d74b50b0e054,2013-11-06T22:26:51.631000,file_added,/Schnall_Replication_6.docx,public,True,https://api.osf.io/v2/logs/527ac22cb5e9d74b50b0e054/
+Row.151,apidb,54ecc0ef8c5e4a56220d3f64,2015-02-24T18:20:31.478000,osf_storage_file_updated,/Schnall_Replication_6.docx,public,True,https://api.osf.io/v2/logs/54ecc0ef8c5e4a56220d3f64/
+Row.151,apidb,5552217c8c5e4a39c7e13988,2015-05-12T15:51:24.324000,osf_storage_file_updated,/Schnall_Replication_6.docx,public,True,https://api.osf.io/v2/logs/5552217c8c5e4a39c7e13988/
+Row.151,apidb,55a4060e8c5e4a311d9e048d,2015-07-13T18:39:58.098000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4060e8c5e4a311d9e048d/
+Row.151,apidb,55b24a4f8c5e4a746bc8f234,2015-07-24T14:22:54.885000,project_registered,,public,False,https://api.osf.io/v2/logs/55b24a4f8c5e4a746bc8f234/
+Row.151,apidb,55b24a4f8c5e4a746dc8f6a4,2015-07-24T14:22:54.885000,project_registered,,public,False,https://api.osf.io/v2/logs/55b24a4f8c5e4a746dc8f6a4/
+Row.153,0aifq,5277cb06b5e9d72355d0434f,2013-11-04T16:27:50.868000,made_public,,public,False,https://api.osf.io/v2/logs/5277cb06b5e9d72355d0434f/
+Row.153,0aifq,554ac38c8c5e4a7d9813db61,2015-05-07T01:44:44.272000,osf_storage_file_added,/extremalEdges_report.pdf,public,True,https://api.osf.io/v2/logs/554ac38c8c5e4a7d9813db61/
+Row.153,0aifq,559ebe0e8c5e4a0647bfcb60,2015-07-09T18:31:42.764000,osf_storage_file_added,/extremalEdges_report.pdf,public,True,https://api.osf.io/v2/logs/559ebe0e8c5e4a0647bfcb60/
+Row.153,0aifq,55a408788c5e4a311d9e0608,2015-07-13T18:50:20.830000,project_registered,,public,False,https://api.osf.io/v2/logs/55a408788c5e4a311d9e0608/
+Row.154,siaqe,53a3382bb5e9d777b3cbafce,2014-06-19T19:21:15.247000,made_public,,public,False,https://api.osf.io/v2/logs/53a3382bb5e9d777b3cbafce/
+Row.154,siaqe,5453ab8e2c057a644c2b1f96,2014-10-31T15:32:26.147000,project_registered,,public,False,https://api.osf.io/v2/logs/5453ab8e2c057a644c2b1f96/
+Row.154,siaqe,54c654c12c057a53dfc21767,2015-01-26T14:52:49.303000,osf_storage_file_added,"/SJHeineEEBuchtelANorenzayanReplicationReport, after review.docx",public,True,https://api.osf.io/v2/logs/54c654c12c057a53dfc21767/
+Row.154,siaqe,54c7a6b02c057a588cf36e26,2015-01-27T14:54:40.886000,osf_storage_file_updated,"/SJHeineEEBuchtelANorenzayanReplicationReport, after review.docx",public,True,https://api.osf.io/v2/logs/54c7a6b02c057a588cf36e26/
+Row.154,siaqe,55a423ce8c5e4a59af91a54b,2015-07-13T20:46:55.857000,project_registered,,public,False,https://api.osf.io/v2/logs/55a423ce8c5e4a59af91a54b/
+Row.154,siaqe,55b145ff8c5e4a746fc8ebd3,2015-07-23T19:52:15.873000,project_registered,,public,False,https://api.osf.io/v2/logs/55b145ff8c5e4a746fc8ebd3/
+Row.154,siaqe,55db6aed8c5e4a67aadaf4cd,2015-08-24T19:04:59.792000,project_registered,,public,False,https://api.osf.io/v2/logs/55db6aed8c5e4a67aadaf4cd/
+Row.155,tg2wd,544023872c057a1eae15b557,2014-10-16T19:59:03.255000,made_public,,public,False,https://api.osf.io/v2/logs/544023872c057a1eae15b557/
+Row.155,tg2wd,544025572c057a1eac15b0d0,2014-10-16T20:06:47.617000,file_added,/SKMoelleretalReplicationreport.docx,public,True,https://api.osf.io/v2/logs/544025572c057a1eac15b0d0/
+Row.155,tg2wd,54b94e4b2c057a73bb5edd61,2015-01-16T17:45:47.025000,osf_storage_file_updated,/SKMoelleretalReplicationreport.docx,public,True,https://api.osf.io/v2/logs/54b94e4b2c057a73bb5edd61/
+Row.155,tg2wd,55a439828c5e4a7f1520ca6a,2015-07-13T22:19:33.648000,project_registered,,public,False,https://api.osf.io/v2/logs/55a439828c5e4a7f1520ca6a/
+Row.158,bk53t,506480950b6e91652c17063f,2012-09-27T16:36:37.682000,made_public,,public,False,https://api.osf.io/v2/logs/506480950b6e91652c17063f/
+Row.158,bk53t,55a4399f8c5e4a59af91b59f,2015-07-13T22:19:59.265000,project_registered,,public,False,https://api.osf.io/v2/logs/55a4399f8c5e4a59af91b59f/
+Row.161,sd7kg,521b6cb3b5e9d71e242051f6,2013-08-26T14:56:51.933000,made_public,,public,False,https://api.osf.io/v2/logs/521b6cb3b5e9d71e242051f6/
+Row.161,sd7kg,54b2c5de2c057a1667baaffa,2015-01-11T18:50:06.320000,osf_storage_file_added,/LoBue & DeLoach replication FINAL REPORT 2015.docx,public,True,https://api.osf.io/v2/logs/54b2c5de2c057a1667baaffa/
+Row.161,sd7kg,54b2c6112c057a1667bab006,2015-01-11T18:50:57.291000,osf_storage_file_added,/LoBue Commentary on Replication.docx,public,True,https://api.osf.io/v2/logs/54b2c6112c057a1667bab006/
+Row.161,sd7kg,55a404158c5e4a311f9e7f76,2015-07-13T18:31:37.789000,project_registered,,public,False,https://api.osf.io/v2/logs/55a404158c5e4a311f9e7f76/
+Row.165,q7f6w,5088308e0b6e9127ca0f3225,2012-10-24T18:16:46.790000,file_updated,/Full_Report.pdf,unknown,True,https://api.osf.io/v2/logs/5088308e0b6e9127ca0f3225/
+Row.165,q7f6w,51bf70ce2eecad5dacabc31f,2013-06-17T20:25:50.398000,made_public,,public,False,https://api.osf.io/v2/logs/51bf70ce2eecad5dacabc31f/
+Row.165,q7f6w,55a428e58c5e4a59ad91a41c,2015-07-13T21:08:38.760000,project_registered,,public,False,https://api.osf.io/v2/logs/55a428e58c5e4a59ad91a41c/
+Row.167,vwnit,51c5bcce2eecad3ebf90f9ca,2013-06-22T15:03:42.579000,file_added,Replication_EstesEtAl_PS2008.pdf,unknown,True,https://api.osf.io/v2/logs/51c5bcce2eecad3ebf90f9ca/
+Row.167,vwnit,51c5bec22eecad3ebf90fcf0,2013-06-22T15:12:02.084000,made_public,,public,False,https://api.osf.io/v2/logs/51c5bec22eecad3ebf90fcf0/
+Row.167,vwnit,522ddedbb5e9d70bac19d64a,2013-09-09T14:44:43.940000,made_private,,private,False,https://api.osf.io/v2/logs/522ddedbb5e9d70bac19d64a/
+Row.167,vwnit,522de508b5e9d70bac19d657,2013-09-09T15:11:04.349000,made_public,,public,False,https://api.osf.io/v2/logs/522de508b5e9d70bac19d657/
+Row.167,vwnit,52343a20b5e9d70bac19d9ec,2013-09-14T10:27:44.952000,file_added,/Replication_EstesEtAl_PS2008_20130622150342.pdf,public,True,https://api.osf.io/v2/logs/52343a20b5e9d70bac19d9ec/
+Row.167,vwnit,554b7bbf8c5e4a7d9413f4e7,2015-05-07T14:50:39.201000,osf_storage_file_added,/Response to Replication (1) (1).pdf,public,True,https://api.osf.io/v2/logs/554b7bbf8c5e4a7d9413f4e7/
+Row.167,vwnit,554b7bdd8c5e4a7d9a14138f,2015-05-07T14:51:09.336000,osf_storage_file_added,/Estes Response to Replication.pdf,public,True,https://api.osf.io/v2/logs/554b7bdd8c5e4a7d9a14138f/
+Row.167,vwnit,55a3fa7e8c5e4a311f9e7824,2015-07-13T17:50:42.270000,project_registered,,public,False,https://api.osf.io/v2/logs/55a3fa7e8c5e4a311f9e7824/

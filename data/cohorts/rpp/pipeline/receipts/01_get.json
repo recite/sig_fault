@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "study": "rpp",
+  "stage": "01_get",
+  "started_at": "2026-10-07T04:50:54.636601+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/rpp/01_get.py",
+    "--offline"
+  ],
+  "python": "3.14.7",
+  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "inputs": [
+    {
+      "path": "private-data/cohorts/manifest.json",
+      "sha256": "d1ba443e27d25b0e92966a256c34047d624e7ca0fa72dfa30f015e30531b7c5d",
+      "bytes": 4523
+    },
+    {
+      "path": "private-data/cohorts/rpp/source/rpp.csv",
+      "sha256": "e753eae64a65015069217aa68effc85cd797fa2f9fc0958cbbf463dc3d505ddb",
+      "bytes": 288855
+    },
+    {
+      "path": "data/cohorts/rpp/papers.csv",
+      "sha256": "8236f144fbf86722f057c6e05e740aaf6e47571df27e9c716aa3a60f0bc85fd0",
+      "bytes": 17122,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/assessments.csv",
+      "sha256": "7a9a4dbd2bb12cc7b3c59edc2b421e57c476e6fa8e034036611fe64bcb402139",
+      "bytes": 7702,
+      "rows": 100
+    },
+    {
+      "path": "data/cohorts/rpp/paper_crosswalk.csv",
+      "sha256": "6d59b9ca0ad6b8a8ddd890d5cdedccf9ca0d376a74d11c12635146958b3cb6ab",
+      "bytes": 1893,
+      "rows": 100
+    },
+    {
+      "path": "data/cohorts/rpp/source_records/rpp.csv",
+      "sha256": "947fbc8b090a2ad45fca987cc510618d39b514df0317c0be5eeefb55d21a647d",
+      "bytes": 22333,
+      "rows": 100
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/e546041197a5e952d461620dec78cc1a0a71e5ef2ea2c1a5518d80e0ad91a13d.json",
+      "sha256": "e2906c8de315147b8af57a960559e06636e54598a583e4188720b39b221eb44b",
+      "bytes": 638177
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/e546041197a5e952d461620dec78cc1a0a71e5ef2ea2c1a5518d80e0ad91a13d.json.source.json",
+      "sha256": "fe637a9fabfe5160182df7693d7d157ffc9ca48ebb9ea8d1008d3acabe0766fe",
+      "bytes": 453
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/5def896de7d0efe0b1191c7333ea2637f6509f36a899826a2446445f908a8162.json",
+      "sha256": "691453e5634215f39a92e6c77a843072dce4c585ad453dfd5b298dd873d7adf2",
+      "bytes": 391890
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/5def896de7d0efe0b1191c7333ea2637f6509f36a899826a2446445f908a8162.json.source.json",
+      "sha256": "253d1f0088608e60a7e70d8d505c76614a914c0b2a5fcb2fa071a8a9e85ce7ce",
+      "bytes": 453
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/e119c0689b30125ae073f547919175f526f12eb066f82e6e3fb564aa260bdabf.json",
+      "sha256": "83f787cf854e28cc5e733113184ef907474f32bf04336697e5fa70477eb04a49",
+      "bytes": 251109
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/e119c0689b30125ae073f547919175f526f12eb066f82e6e3fb564aa260bdabf.json.source.json",
+      "sha256": "85b4b05edf8b08fceb75fcb399e8ecee22550fad344398e687dd45c6dacb6248",
+      "bytes": 453
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/pubmed/8243aa53b8b162eab40aa84fd4d5909004f5c64565383175bb3556fcc5659f76.json",
+      "sha256": "5a17b2699c81a01b49db8f820cf99587578a8cd58eb422babe8637749e3418d4",
+      "bytes": 743
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/pubmed/8243aa53b8b162eab40aa84fd4d5909004f5c64565383175bb3556fcc5659f76.json.source.json",
+      "sha256": "d8dffc21e74cf503c78ccbdcc2c09baa42f16bdcc8dfa4b8bf7a2749704346ca",
+      "bytes": 417
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/pubmed/856fcb3200c103feb3ab1df3cf1072b75b345de9c5e9385ec7134b00d693544e.xml",
+      "sha256": "053c376bd244e3f15955037176e84efb2fc0eb7f90d4f54f25902dfc5a6d033d",
+      "bytes": 26223
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/pubmed/856fcb3200c103feb3ab1df3cf1072b75b345de9c5e9385ec7134b00d693544e.xml.source.json",
+      "sha256": "99930d0ef7f392a9a009f34d6f411cef5227b2cb0fb9bfe1f3ebe4a115224d05",
+      "bytes": 314
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/rpp/pipeline/publisher_records.json",
+      "sha256": "c166d9cf97c641df7ad9e642543d7f44ed1ea4ad7e3727a01f36f22499e82af4",
+      "bytes": 2471906
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/publication_types.csv",
+      "sha256": "39804e859ba8469904dbf58deb24807cf94bfc016e2ad4a8137fa570cbedc633",
+      "bytes": 1123,
+      "rows": 6
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/rpp/01_get.py",
+      "sha256": "d15963398d90a4724145b8400f0121455bad8aca6bda94ac7fb31f7906c0cbdc",
+      "bytes": 4699
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
+      "bytes": 6907
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "original_checksum",
+      "passed": true,
+      "detail": "rpp.csv"
+    },
+    {
+      "name": "distinct_cursor",
+      "passed": true,
+      "detail": "PS"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/crossref/e546041197a5e952d461620dec78cc1a0a71e5ef2ea2c1a5518d80e0ad91a13d.json"
+    },
+    {
+      "name": "complete_journal",
+      "passed": true,
+      "detail": {
+        "journal": "PS",
+        "records": 675,
+        "reported": [
+          675
+        ]
+      }
+    },
+    {
+      "name": "distinct_cursor",
+      "passed": true,
+      "detail": "JPSP"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/crossref/5def896de7d0efe0b1191c7333ea2637f6509f36a899826a2446445f908a8162.json"
+    },
+    {
+      "name": "complete_journal",
+      "passed": true,
+      "detail": {
+        "journal": "JPSP",
+        "records": 476,
+        "reported": [
+          476
+        ]
+      }
+    },
+    {
+      "name": "distinct_cursor",
+      "passed": true,
+      "detail": "JEPLMC"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/crossref/e119c0689b30125ae073f547919175f526f12eb066f82e6e3fb564aa260bdabf.json"
+    },
+    {
+      "name": "complete_journal",
+      "passed": true,
+      "detail": {
+        "journal": "JEPLMC",
+        "records": 342,
+        "reported": [
+          342
+        ]
+      }
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/pubmed/8243aa53b8b162eab40aa84fd4d5909004f5c64565383175bb3556fcc5659f76.json"
+    },
+    {
+      "name": "complete_publication_type_search",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/rpp/pipeline/pubmed/856fcb3200c103feb3ab1df3cf1072b75b345de9c5e9385ec7134b00d693544e.xml"
+    },
+    {
+      "name": "complete_publication_type_records",
+      "passed": true,
+      "detail": 6
+    }
+  ],
+  "sources": [
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/e546041197a5e952d461620dec78cc1a0a71e5ef2ea2c1a5518d80e0ad91a13d.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/journals/0956-7976/works?filter=from-pub-date%3A2007-01-01%2Cuntil-pub-date%3A2009-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished-print%2Cpublished%2CISSN%2Cauthor%2Ctype%2Crelation",
+      "retrieved_at": "2026-10-07T04:21:43.327665+00:00",
+      "sha256": "e2906c8de315147b8af57a960559e06636e54598a583e4188720b39b221eb44b",
+      "bytes": 638177
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/5def896de7d0efe0b1191c7333ea2637f6509f36a899826a2446445f908a8162.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/journals/0022-3514/works?filter=from-pub-date%3A2007-01-01%2Cuntil-pub-date%3A2009-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished-print%2Cpublished%2CISSN%2Cauthor%2Ctype%2Crelation",
+      "retrieved_at": "2026-10-07T04:21:44.218774+00:00",
+      "sha256": "691453e5634215f39a92e6c77a843072dce4c585ad453dfd5b298dd873d7adf2",
+      "bytes": 391890
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/crossref/e119c0689b30125ae073f547919175f526f12eb066f82e6e3fb564aa260bdabf.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/journals/0278-7393/works?filter=from-pub-date%3A2007-01-01%2Cuntil-pub-date%3A2009-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished-print%2Cpublished%2CISSN%2Cauthor%2Ctype%2Crelation",
+      "retrieved_at": "2026-10-07T04:21:44.918398+00:00",
+      "sha256": "83f787cf854e28cc5e733113184ef907474f32bf04336697e5fa70477eb04a49",
+      "bytes": 251109
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/pubmed/8243aa53b8b162eab40aa84fd4d5909004f5c64565383175bb3556fcc5659f76.json",
+      "cache_hit": true,
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%280956-7976%5BISSN%5D+OR+0022-3514%5BISSN%5D+OR+0278-7393%5BISSN%5D%29+AND+2008%5Bdp%5D+AND+%28Review%5Bpt%5D+OR+Comment%5Bpt%5D+OR+Editorial%5Bpt%5D%29&retmode=json&retmax=200",
+      "retrieved_at": "2026-10-07T04:45:46.411555+00:00",
+      "sha256": "5a17b2699c81a01b49db8f820cf99587578a8cd58eb422babe8637749e3418d4",
+      "bytes": 743
+    },
+    {
+      "path": "private-data/cohorts/rpp/pipeline/pubmed/856fcb3200c103feb3ab1df3cf1072b75b345de9c5e9385ec7134b00d693544e.xml",
+      "cache_hit": true,
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=18399896%2C18444769%2C18605863%2C18980417%2C19000200%2C19000218&retmode=xml",
+      "retrieved_at": "2026-10-07T04:45:46.721317+00:00",
+      "sha256": "053c376bd244e3f15955037176e84efb2fc0eb7f90d4f54f25902dfc5a6d033d",
+      "bytes": 26223
+    }
+  ],
+  "metrics": {
+    "PS": 675,
+    "JPSP": 476,
+    "JEPLMC": 342
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T04:50:54.692758+00:00"
+}

@@ -19,7 +19,7 @@ The [shared dictionary](../dictionary.md) defines the normalized columns.
 
 ## Construction and outcomes
 
-Keep Completion.R == 1 in the primary 168-row file, yielding all 100 completed study records. These belong to 98 distinct original papers: two pairs share title, authors, journal, volume, issue and pages. paper_crosswalk.csv maps every study record to the original paper; both assessments survive. Do not require an observed p value: one completed study lacks it. Original titles and bibliographic fields identify papers; remaining DOI linkage must be completed.
+Keep Completion.R == 1 in the primary 168-row file, yielding all 100 completed study records. These belong to 98 distinct original papers: two pairs share title, authors, journal, volume, issue and pages. paper_crosswalk.csv maps every study record to the original paper; both assessments survive. Do not require an observed p value: one completed study lacks it. The initial inventory preserves discovery DOI links. All 98 analysis identities are verified in pipeline/identities.csv; pipeline/identity_decisions.json documents source corrections, including one wrong journal/page locator.
 
 Replicate.R is the source judgment: 39 yes, 59 no and 2 No, retained verbatim. T.pval.USE.R, T.sign.R.125, T.r.O and T.r.R remain in the source projection. These are source replication judgments, not original-error labels.
 
@@ -31,7 +31,7 @@ The COS announcement dates to 27 August 2015. Check earlier individual reports b
 
 [Study](https://doi.org/10.1126/science.aac4716); [archive](https://github.com/CenterForOpenScience/rpp).
 
-Resolve original DOIs using titles, journal, volume and pages; link to existing FReD/FLoRA entries and verify first-publication dates before citation collection.
+See pipeline/README.md for the citation analysis and scripts/rpp/README.md for the numbered workflow. Earlier individual report candidates require content and historical-visibility review before assigning first-disclosure dates; the current estimate concerns the 2015 project announcement.
 
 ## Rebuild
 

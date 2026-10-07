@@ -1,0 +1,56 @@
+[
+  {
+    "doi": "10.1037/0278-7393.34.3.719",
+    "decision": "exclude",
+    "reason": "Published comment on Cree, McNorgan and McRae, identified in the publisher title.",
+    "evidence_url": "https://doi.org/10.1037/0278-7393.34.3.719",
+    "source": "publisher_records.json, title",
+    "reviewed_by": "Codex independent source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "doi": "10.1037/a0013120",
+    "decision": "exclude",
+    "reason": "Published comment on Maguire et al., identified in the publisher title.",
+    "evidence_url": "https://doi.org/10.1037/a0013120",
+    "source": "publisher_records.json, title",
+    "reviewed_by": "Codex independent source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "doi": "10.1037/0278-7393.34.4.727",
+    "decision": "exclude",
+    "reason": "Editorial introduction to a special section, not an original research article.",
+    "evidence_url": "https://www.bu.edu/mdrc/files/2012/04/2008_Johnson_JEP_LMC.pdf",
+    "source": "Author-hosted article, first-page heading",
+    "reviewed_by": "Codex independent source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "doi": "10.1111/j.1467-9280.2008.02101.x",
+    "decision": "exclude",
+    "reason": "Comment on Beeli et al.; PubMed classifies the article as Comment, and the author manuscript identifies its discussion of their earlier finding.",
+    "evidence_url": "https://www.pure.ed.ac.uk/ws/files/12435533/Synaesthesia_Color_Terms_and_Color_Space.pdf",
+    "source": "Author manuscript; PubMed 18399896 publication type",
+    "reviewed_by": "Codex independent source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "doi": "10.1111/j.1467-9280.2008.02181.x",
+    "decision": "exclude",
+    "reason": "Narrative critical review, explicitly described as a review in the publisher abstract; it is not original participant research.",
+    "evidence_url": "https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2008.02181.x",
+    "source": "Publisher abstract",
+    "reviewed_by": "Codex independent source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "doi": "10.1111/j.1467-9280.2008.02199.x",
+    "decision": "exclude",
+    "reason": "PubMed indexes this item as Comment; exclude under the original-research donor rule even though its title does not identify it as a comment.",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19000218/",
+    "source": "PubMed publication type",
+    "reviewed_by": "Codex independent source review",
+    "reviewed_on": "2026-10-07"
+  }
+]
