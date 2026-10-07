@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "study": "hmx",
+  "stage": "01_get",
+  "started_at": "2026-10-07T05:50:27.034374+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/hmx/01_get.py",
+    "--offline"
+  ],
+  "python": "3.14.7",
+  "git_commit": "ed5f6ee1f5f0114bc9787517e717323454d96761",
+  "inputs": [
+    {
+      "path": "data/cohorts/hmx/sources.csv",
+      "sha256": "08150ce0056e29af6466f35da155e6d264cfc52f4812f72753a0ebc9e194c99c",
+      "bytes": 314,
+      "rows": 1
+    },
+    {
+      "path": "private-data/cohorts/hmx/source/hmx_published.pdf",
+      "sha256": "8a92fe1a49011d66e35a92d23db49eaefb8a444844f6379dfb03a5cbfd633d55",
+      "bytes": 2225211
+    },
+    {
+      "path": "data/cohorts/hmx/papers.csv",
+      "sha256": "d43f73202ac0251ecbe8d889c4954a47cb819db26d2a9d54db4df147a9292602",
+      "bytes": 2647,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/assessments.csv",
+      "sha256": "d521818642bee8ddebd8cdcb326c814629a6c35e5a1f67f7346bedb693b9c60e",
+      "bytes": 15012,
+      "rows": 138
+    },
+    {
+      "path": "data/cohorts/hmx/source_records/hmx.csv",
+      "sha256": "001a16f8d8e842043086490a1afe9df7bf37513546c48c49501467c156ee14b0",
+      "bytes": 2266,
+      "rows": 46
+    },
+    {
+      "path": "data/cohorts/hmx/study.json",
+      "sha256": "c4bbcbdf74c2ed0ac22bc9f3e9b4140f4267acb2cfae15b58cd4783a9750cef0",
+      "bytes": 1752
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json",
+      "sha256": "3a0facb4e151eaea51d5f53abaf346857b4e03de01c3177ea747dc230652369c",
+      "bytes": 8908
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json.source.json",
+      "sha256": "2914d78c8cd83187cf3ed45f8c1a4e11fdbbca4a4b8dcf57dd4eedc7f2bc90ae",
+      "bytes": 217
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json",
+      "sha256": "61a2ac3dfd5dd8d2c11fc57b911b737af667c5bc14e1641e55d22f5b795c480a",
+      "bytes": 5527
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json.source.json",
+      "sha256": "75889f496c895e75d773dc50ae2d70eb3800b5ea69e9fa5e9322786b5f177a5b",
+      "bytes": 260
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/archive/37bc526ec1f227f5e1e15c262ddc7fbddab2bd38975afb121dbd701309a32b85.html",
+      "sha256": "7c20f7de923410d67fa135e0a350f69f5593d648e9768588bb8dfad056faccfd",
+      "bytes": 38635987
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/archive/37bc526ec1f227f5e1e15c262ddc7fbddab2bd38975afb121dbd701309a32b85.html.source.json",
+      "sha256": "1d73e9a691dbc6c3b30f7163cb4a3c83a5161762cb579931a2565d362cc8066e",
+      "bytes": 228
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/audit_metadata.json",
+      "sha256": "cf571e0f03f8cf40ef33aecbbb11bc06186553e9b2fac0e8d40aafc5644ef760",
+      "bytes": 12740
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/archive_metadata.json",
+      "sha256": "1ec88a4247465516a08da825233d118eb3759c853b7ab7b77bfe4d563bb45b08",
+      "bytes": 9964
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/archive_members.csv",
+      "sha256": "757aa0e6d5d8f1b97dd38588001b843b01c3c782ba6ab18036778176a5f878b4",
+      "bytes": 54762,
+      "rows": 811
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/hmx/01_get.py",
+      "sha256": "75d1887e5023a456ce81dd9c89c3a158253fa27b231d10ad6a9c5dc4a3d5f392",
+      "bytes": 3077
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "original_checksum",
+      "passed": true,
+      "detail": "hmx_published.pdf"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/metadata/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/hmx/pipeline/archive/37bc526ec1f227f5e1e15c262ddc7fbddab2bd38975afb121dbd701309a32b85.html"
+    },
+    {
+      "name": "archive_size",
+      "passed": true,
+      "detail": "Replication.zip"
+    },
+    {
+      "name": "archive_version_checksum",
+      "passed": true,
+      "detail": 3196356
+    },
+    {
+      "name": "version_one_release",
+      "passed": true,
+      "detail": "2018-07-28"
+    }
+  ],
+  "sources": [
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1017/pan.2018.46",
+      "retrieved_at": "2026-10-07T05:43:43.450057+00:00",
+      "sha256": "3a0facb4e151eaea51d5f53abaf346857b4e03de01c3177ea747dc230652369c",
+      "bytes": 8908
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/metadata/d567faf14154754c9043d4dcd445385b1b2d1e0cc0382668314c9770d330351d.json",
+      "cache_hit": true,
+      "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/Q1V0OG",
+      "retrieved_at": "2026-10-07T05:43:43.863532+00:00",
+      "sha256": "61a2ac3dfd5dd8d2c11fc57b911b737af667c5bc14e1641e55d22f5b795c480a",
+      "bytes": 5527
+    },
+    {
+      "path": "private-data/cohorts/hmx/pipeline/archive/37bc526ec1f227f5e1e15c262ddc7fbddab2bd38975afb121dbd701309a32b85.html",
+      "cache_hit": true,
+      "url": "https://dataverse.harvard.edu/api/access/datafile/3196356",
+      "retrieved_at": "2026-10-07T05:44:33.218132+00:00",
+      "sha256": "7c20f7de923410d67fa135e0a350f69f5593d648e9768588bb8dfad056faccfd",
+      "bytes": 38635987
+    }
+  ],
+  "metrics": {
+    "original_papers": 22,
+    "source_effects": 46
+  },
+  "unresolved": [
+    "Earliest SSRN version's roster and diagnostic classifications not verified",
+    "Formal-publication contrast must not be called first disclosure"
+  ],
+  "status": "complete",
+  "finished_at": "2026-10-07T05:50:27.124365+00:00"
+}

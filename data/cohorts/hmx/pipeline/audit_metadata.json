@@ -1,0 +1,458 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T00:27:11Z",
+      "timestamp": 1790814431093,
+      "version": "4.1.0"
+    },
+    "reference-count": 49,
+    "publisher": "Cambridge University Press (CUP)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              12,
+              18
+            ]
+          ],
+          "date-time": "2018-12-18T00:00:00Z",
+          "timestamp": 1545091200000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Polit. Anal."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          4
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    Multiplicative interaction models are widely used in social science to examine whether the relationship between an outcome and an independent variable changes with a moderating variable. Current empirical practice tends to overlook two important problems. First, these models assume a linear interaction effect that changes at a constant rate with the moderator. Second, estimates of the conditional effects of the independent variable can be misleading if there is a lack of common support of the moderator. Replicating 46 interaction effects from 22 recent publications in five top political science journals, we find that these core assumptions often fail in practice, suggesting that a large portion of findings across all political science subfields based on interaction models are fragile and model dependent. We propose a checklist of simple diagnostics to assess the validity of these assumptions and offer flexible estimation strategies that allow for nonlinear interaction effects and safeguard against excessive extrapolation. These statistical routines are available in both\n                    <jats:monospace>R</jats:monospace>\n                    and\n                    <jats:monospace>STATA</jats:monospace>\n                    .\n                  </jats:p>",
+    "DOI": "10.1017/pan.2018.46",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          18
+        ]
+      ],
+      "date-time": "2018-12-18T08:30:23Z",
+      "timestamp": 1545121823000
+    },
+    "page": "163-192",
+    "source": "Crossref",
+    "is-referenced-by-count": 827,
+    "title": [
+      "How Much Should We Trust Estimates from Multiplicative Interaction Models? Simple Tools to Improve Empirical Practice"
+    ],
+    "prefix": "10.1017",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Jens",
+        "family": "Hainmueller",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jonathan",
+        "family": "Mummolo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yiqing",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "56",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "S1047198718000463_r14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S000305541400029X"
+      },
+      {
+        "key": "S1047198718000463_r27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.2517-6161.1990.tb01775.x"
+      },
+      {
+        "key": "S1047198718000463_r7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055400220078"
+      },
+      {
+        "key": "S1047198718000463_r47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1540-5907.2012.00612.x"
+      },
+      {
+        "key": "S1047198718000463_r24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/ss/1177013604"
+      },
+      {
+        "key": "S1047198718000463_r44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0022381608090154"
+      },
+      {
+        "key": "S1047198718000463_r42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0020818311000257"
+      },
+      {
+        "key": "S1047198718000463_r32",
+        "volume-title": "Modeling and interpreting interactive hypotheses in regression analysis",
+        "author": "Kam",
+        "year": "2007"
+      },
+      {
+        "key": "S1047198718000463_r10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0020818314000277"
+      },
+      {
+        "key": "S1047198718000463_r16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0010414013488537"
+      },
+      {
+        "key": "S1047198718000463_r21",
+        "unstructured": "Grimmer, Justin , Solomon Messing , and Sean J. Westwood . 2014 Estimating heterogeneous treatment effects and the effects of heterogeneous treatments with ensemble methods."
+      },
+      {
+        "key": "S1047198718000463_r28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055414000604"
+      },
+      {
+        "key": "S1047198718000463_r19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1995.10476496"
+      },
+      {
+        "key": "S1047198718000463_r35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0266466609990739"
+      },
+      {
+        "key": "S1047198718000463_r36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/12-AOAS583"
+      },
+      {
+        "key": "S1047198718000463_r6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1540-5907.2011.00561.x"
+      },
+      {
+        "key": "S1047198718000463_r20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2110973"
+      },
+      {
+        "key": "S1047198718000463_r37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055412000408"
+      },
+      {
+        "key": "S1047198718000463_r46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055414000112"
+      },
+      {
+        "key": "S1047198718000463_r1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1540-5907.2006.00199.x"
+      },
+      {
+        "key": "S1047198718000463_r3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ajps.12002"
+      },
+      {
+        "key": "S1047198718000463_r12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0020818304040251"
+      },
+      {
+        "key": "S1047198718000463_r4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1596/1813-9450-6602"
+      },
+      {
+        "key": "S1047198718000463_r5",
+        "article-title": "Estimation and inference of heterogeneous treatment effects using random forests",
+        "author": "Athey",
+        "year": "2018",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "S1047198718000463_r8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0022381612000199"
+      },
+      {
+        "key": "S1047198718000463_r9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/678987"
+      },
+      {
+        "key": "S1047198718000463_r11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/pan/mpi014"
+      },
+      {
+        "key": "S1047198718000463_r13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3368/jhr.50.2.317"
+      },
+      {
+        "key": "S1047198718000463_r15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0020818309990154"
+      },
+      {
+        "key": "S1047198718000463_r17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0010414005278420"
+      },
+      {
+        "key": "S1047198718000463_r22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/pan/mpt019"
+      },
+      {
+        "key": "S1047198718000463_r23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7910/DVN/Q1V0OG"
+      },
+      {
+        "key": "S1047198718000463_r25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0010414006288974"
+      },
+      {
+        "key": "S1047198718000463_r26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1540-5907.2007.00302.x"
+      },
+      {
+        "key": "S1047198718000463_r29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/10-STS321"
+      },
+      {
+        "key": "S1047198718000463_r30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/12-AOAS593"
+      },
+      {
+        "key": "S1047198718000463_r48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0010414011407470"
+      },
+      {
+        "key": "S1047198718000463_r31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781412984522"
+      },
+      {
+        "key": "S1047198718000463_r34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/pan/mpj004"
+      },
+      {
+        "key": "S1047198718000463_r38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-9868.2012.01048.x"
+      },
+      {
+        "key": "S1047198718000463_r40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055410000298"
+      },
+      {
+        "key": "S1047198718000463_r41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aac4716"
+      },
+      {
+        "key": "S1047198718000463_r45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0010414006293857"
+      },
+      {
+        "key": "S1047198718000463_r2",
+        "volume-title": "Multiple regression: Testing and interpreting interactions",
+        "author": "Aiken",
+        "year": "1991"
+      },
+      {
+        "key": "S1047198718000463_r49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1467-9868.00374"
+      },
+      {
+        "key": "S1047198718000463_r43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055413000026"
+      },
+      {
+        "key": "S1047198718000463_r33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0003055413000245"
+      },
+      {
+        "key": "S1047198718000463_r39",
+        "volume-title": "Data analysis and regression: a second course in statistics",
+        "author": "Mosteller",
+        "year": "1977"
+      },
+      {
+        "key": "S1047198718000463_r18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1988.10478639"
+      }
+    ],
+    "container-title": [
+      "Political Analysis"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1047198718000463",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2019-09-24T08:14:20Z",
+      "timestamp": 1569312860000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.cambridge.org/core/product/identifier/S1047198718000463/type/journal_article"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          18
+        ]
+      ]
+    },
+    "references-count": 49,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S1047198718000463"
+    ],
+    "URL": "https://doi.org/10.1017/pan.2018.46",
+    "relation": {},
+    "ISSN": [
+      "1047-1987",
+      "1476-4989"
+    ],
+    "issn-type": [
+      {
+        "value": "1047-1987",
+        "type": "print"
+      },
+      {
+        "value": "1476-4989",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          18
+        ]
+      ]
+    }
+  }
+}

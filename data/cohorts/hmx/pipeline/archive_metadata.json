@@ -1,0 +1,284 @@
+{
+  "status": "OK",
+  "data": {
+    "id": 3127457,
+    "identifier": "DVN/Q1V0OG",
+    "persistentUrl": "https://doi.org/10.7910/DVN/Q1V0OG",
+    "protocol": "doi",
+    "authority": "10.7910",
+    "separator": "/",
+    "publisher": "Harvard Dataverse",
+    "publicationDate": "2018-07-28",
+    "storageIdentifier": "s3://10.7910/DVN/Q1V0OG",
+    "effectiveDatasetFileCountLimit": 1000,
+    "datasetFileUploadsAvailable": 999,
+    "datasetType": "dataset",
+    "locks": [],
+    "latestVersion": {
+      "id": 133750,
+      "datasetId": 3127457,
+      "datasetPersistentId": "doi:10.7910/DVN/Q1V0OG",
+      "datasetType": "dataset",
+      "storageIdentifier": "s3://10.7910/DVN/Q1V0OG",
+      "versionNumber": 1,
+      "internalVersionNumber": 60,
+      "versionMinorNumber": 0,
+      "versionState": "RELEASED",
+      "latestVersionPublishingState": "RELEASED",
+      "deaccessionLink": "",
+      "lastUpdateTime": "2018-07-28T04:08:32Z",
+      "releaseTime": "2018-07-28T04:08:32Z",
+      "createTime": "2018-02-22T06:51:34Z",
+      "publicationDate": "2018-07-28",
+      "citationDate": "2018-07-28",
+      "effectiveDatasetFileCountLimit": 1000,
+      "datasetFileUploadsAvailable": 999,
+      "license": {
+        "name": "CC0 1.0",
+        "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+        "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+        "rightsIdentifier": "CC0-1.0",
+        "rightsIdentifierScheme": "SPDX",
+        "schemeUri": "https://spdx.org/licenses/",
+        "languageCode": "en"
+      },
+      "fileAccessRequest": false,
+      "metadataBlocks": {
+        "citation": {
+          "displayName": "Citation Metadata",
+          "name": "citation",
+          "fields": [
+            {
+              "typeName": "title",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": "Replication Data for: How Much Should We Trust Estimates from Multiplicative Interaction Models? Simple Tools to Improve Empirical Practice"
+            },
+            {
+              "typeName": "author",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Hainmueller, Jens"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Stanford University"
+                  }
+                },
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Mummolo, Jonathan"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Princeton University"
+                  }
+                },
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Xu, Yiqing"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "UCSD"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "datasetContact",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "datasetContactName": {
+                    "typeName": "datasetContactName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Hainmueller, Jens"
+                  },
+                  "datasetContactAffiliation": {
+                    "typeName": "datasetContactAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Stanford University"
+                  },
+                  "datasetContactEmail": {
+                    "typeName": "datasetContactEmail",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "jhain@stanford.edu"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "dsDescription",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "dsDescriptionValue": {
+                    "typeName": "dsDescriptionValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "We propose simple diagnostics to assess the validity of modeling assumptions in multiplicative interaction models and offer flexible estimation strategies that allow for nonlinear interaction effects and safeguard against excessive extrapolation."
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "subject",
+              "multiple": true,
+              "typeClass": "controlledVocabulary",
+              "value": [
+                "Social Sciences"
+              ]
+            },
+            {
+              "typeName": "keyword",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "keywordValue": {
+                    "typeName": "keywordValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Interaction Models, Marginal Effects"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "publication",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "publicationCitation": {
+                    "typeName": "publicationCitation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Forthcoming, Political Analysis "
+                  },
+                  "publicationIDType": {
+                    "typeName": "publicationIDType",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "doi"
+                  },
+                  "publicationIDNumber": {
+                    "typeName": "publicationIDNumber",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "add DOI# here when available. If not available, please delete all text in this field before saving"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "producer",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "producerName": {
+                    "typeName": "producerName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Political Analysis"
+                  },
+                  "producerURL": {
+                    "typeName": "producerURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "http://pan.oxfordjournals.org/"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "depositor",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": "Xu, Yiqing"
+            },
+            {
+              "typeName": "dateOfDeposit",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": "2018-02-22"
+            },
+            {
+              "typeName": "series",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "seriesName": {
+                    "typeName": "seriesName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Volume #, Issue #"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "files": [
+        {
+          "description": "Replication files. ",
+          "label": "Replication.zip",
+          "restricted": false,
+          "directoryLabel": "Upload",
+          "version": 1,
+          "datasetVersionId": 133750,
+          "dataFile": {
+            "id": 3196356,
+            "persistentId": "doi:10.7910/DVN/Q1V0OG/ITVY7V",
+            "pidURL": "https://doi.org/10.7910/DVN/Q1V0OG/ITVY7V",
+            "filename": "Replication.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 38635987,
+            "description": "Replication files. ",
+            "storageIdentifier": "s3://dvn-cloud:164ded7e8d2-55f440f4fba1",
+            "rootDataFileId": -1,
+            "md5": "90194c41778dc5bda8ac1dcd62d5eba9",
+            "checksum": {
+              "type": "MD5",
+              "value": "90194c41778dc5bda8ac1dcd62d5eba9"
+            },
+            "tabularData": false,
+            "creationDate": "2018-07-27",
+            "publicationDate": "2018-07-28",
+            "directoryLabel": "Upload",
+            "lastUpdateTime": "2018-07-28T04:08:32Z",
+            "fileAccessRequest": false
+          }
+        }
+      ]
+    }
+  }
+}

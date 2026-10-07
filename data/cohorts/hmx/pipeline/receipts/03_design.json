@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "study": "hmx",
+  "stage": "03_design",
+  "started_at": "2026-10-07T05:51:17.839746+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/hmx/03_design.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "ed5f6ee1f5f0114bc9787517e717323454d96761",
+  "inputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/identities.csv",
+      "sha256": "118f55383c842f76adb0e6efb0a312900c0d5ff57bd2867da32c3189106a60d9",
+      "bytes": 5634,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/original_metadata.json",
+      "sha256": "d1b3ef839095ac4536381931d469018802859141d9e5132a716c5b16a4429935",
+      "bytes": 319479
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/overlap.csv",
+      "sha256": "64d02d435d044ff264dc41e5aa298c34407d7afa78b2bd14c0f1f82810e5cc0a",
+      "bytes": 98,
+      "rows": 1
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/design.md",
+      "sha256": "5ff0eb167604851d5cd00e805caa335193d23778bb41013a9a07000621c2c33a",
+      "bytes": 4911
+    },
+    {
+      "path": "data/cohorts/hmx/assessments.csv",
+      "sha256": "d521818642bee8ddebd8cdcb326c814629a6c35e5a1f67f7346bedb693b9c60e",
+      "bytes": 15012,
+      "rows": 138
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/cohorts/hmx/pipeline/paper_assessments.csv",
+      "sha256": "6fc2437d82bc0b699c2c61c44b359bf630108e7c9d8f2383ddfc39ad8e031484",
+      "bytes": 1781,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/citation_targets.csv",
+      "sha256": "fce0f4714ac0ef8d0b03871ec87a06993b1cb30e059c62b2f908e54ef48e81fa",
+      "bytes": 6294,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/timing.json",
+      "sha256": "63d78fad86823266aedfd97edb7ef4fcd43840ee6e712f5c1494fa45a4136369",
+      "bytes": 436
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/hmx/03_design.py",
+      "sha256": "fc53b35a0af931e58fb427609f3425854f5fb4668f5150580c033f394498a7b5",
+      "bytes": 3689
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/cohorts/hmx/pipeline/receipts/02_identify.json",
+      "sha256": "183197deb2f4e4043c42dbf6ee4e7009a229f20fecd624c8de3f517f061cb442",
+      "bytes": 29836
+    }
+  ],
+  "checks": [
+    {
+      "name": "complete_primary_diagnostic",
+      "passed": true,
+      "detail": {
+        "flagged": 14,
+        "comparison": 8
+      }
+    },
+    {
+      "name": "single_meta_overlap",
+      "passed": true,
+      "detail": [
+        "hmx_21"
+      ]
+    },
+    {
+      "name": "publication_date",
+      "passed": true,
+      "detail": [
+        2018,
+        12,
+        18
+      ]
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "papers": 22,
+    "primary_counts": {
+      "flagged": 14,
+      "comparison": 8
+    },
+    "meta_papers": 21
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T05:51:17.886932+00:00"
+}

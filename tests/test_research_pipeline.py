@@ -9,7 +9,7 @@ from scripts import research_pipeline as pipeline
 
 identities = importlib.import_module("scripts.rpp.02_identify")
 disclosures = importlib.import_module("scripts.rpp.03_disclosures")
-citations = importlib.import_module("scripts.rpp.05_citations")
+citations = importlib.import_module("scripts.citation_history")
 
 
 class ReceiptTests(unittest.TestCase):
