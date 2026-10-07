@@ -8,6 +8,7 @@ import urllib.parse
 
 import nieuwenhuis as nw
 import pilot
+from reporting import format_count
 
 COMPONENTS = [
     "shared_year_shift",
@@ -251,7 +252,8 @@ def build():
     )
     (pilot.ROOT / "tabs/nieuwenhuis_macros.tex").write_text(
         "".join(
-            "\\newcommand{\\" + k + "}{" + str(v) + "}\n" for k, v in macros.items()
+            "\\newcommand{\\" + k + "}{" + format_count(v) + "}\n"
+            for k, v in macros.items()
         )
     )
     lines = [
@@ -291,7 +293,11 @@ def build():
         ]
         for key, label in labels.items():
             lines.append(
-                "| " + label + " | " + " | ".join(str(r[key]) for r in group) + " |"
+                "| "
+                + label
+                + " | "
+                + " | ".join(format_count(r[key]) for r in group)
+                + " |"
             )
         lines.append("")
     lines += [
@@ -313,8 +319,10 @@ def build():
         "",
         "## Publisher-date check",
         "",
-        f"Among {status['shared_year_disagreements']} shared links with different "
-        f"years, OpenAlex assigns {status['openalex_earlier']} an earlier year. "
+        f"Among {format_count(status['shared_year_disagreements'])} shared links "
+        "with different "
+        f"years, OpenAlex assigns {format_count(status['openalex_earlier'])} "
+        "an earlier year. "
         "Publisher-deposited Crossref metadata supplies a separate check of "
         "online and print dates.",
         "",
@@ -333,7 +341,7 @@ def build():
         "metadata_unavailable": "Publisher metadata unavailable",
     }
     for key, count in sorted(status["date_explanations"].items()):
-        lines.append(f"| {labels[key]} | {count} |")
+        lines.append(f"| {labels[key]} | {format_count(count)} |")
     lines += [
         "",
         "Date agreement supports a dating-convention explanation for those "
@@ -375,7 +383,7 @@ def build():
         "| --- | ---: |",
     ]
     for key, count in sorted(status["link_reviews"].items()):
-        lines.append(f"| {key.replace('_', ' ')} | {count} |")
+        lines.append(f"| {key.replace('_', ' ')} | {format_count(count)} |")
     lines += [
         "",
         "After verified identifier corrections, matched-DOI relationships number "

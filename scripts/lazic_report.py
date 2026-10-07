@@ -4,6 +4,7 @@ import json
 
 import lazic
 import pilot
+from reporting import format_count
 
 
 def main():
@@ -74,12 +75,13 @@ def main():
         if (
             key in {"LazicFlagged", "LazicComparison", "LazicLinks", "LazicUndated"}
             or key in counts
-            or "Median" in key
         ):
-            formatted_values[key] = str(int(float(value)))
+            formatted_values[key] = format_count(value)
+        elif "Median" in key:
+            formatted_values[key] = f"{float(value):,.1f}".removesuffix(".0")
         else:
             precision = 1 if key in {"LazicPercent", "LazicLower", "LazicUpper"} else 2
-            formatted_values[key] = f"{float(value):.{precision}f}"
+            formatted_values[key] = f"{float(value):,.{precision}f}"
     (pilot.ROOT / "tabs/lazic_macros.tex").write_text(
         "".join(f"\\newcommand{{\\{k}}}{{{v}}}\n" for k, v in formatted_values.items())
     )
@@ -112,7 +114,8 @@ def main():
     for flag, label in [("1", "Flagged"), ("0", "Comparison")]:
         g = groups[flag]
         table.append(
-            f"| {label} | {g['papers']} | {float(g['mean_before']):.2f} | "
+            f"| {label} | {format_count(g['papers'])} | "
+            f"{float(g['mean_before']):.2f} | "
             f"{float(g['mean_after']):.2f} | {float(g['median_before']):g} | "
             f"{float(g['median_after']):g} |"
         )
@@ -120,7 +123,8 @@ def main():
     for name, fit in absolute.items():
         ratio = ratios[name]
         variations.append(
-            f"| {name} | {fit['n_flagged']} / {fit['n_comparison']} |"
+            f"| {name} | {format_count(fit['n_flagged'])} / "
+            f"{format_count(fit['n_comparison'])} |"
             f" {float(fit['estimate']):.2f} [{float(fit['lower']):.2f},"
             f" {float(fit['upper']):.2f}] | {float(ratio['percent']):.1f}"
             f" [{float(ratio['lower']):.1f}, {float(ratio['upper']):.1f}] |"
@@ -131,8 +135,10 @@ def main():
             "",
             (
                 f"Citation histories are complete for {status['complete_histories']} of"
-                f" 200 audited papers. The primary comparison includes {f['papers']}"
-                f" flagged and {c['papers']} correctly analyzed papers. The 64 unclear"
+                " 200 audited papers. The primary comparison includes "
+                f"{format_count(f['papers'])}"
+                f" flagged and {format_count(c['papers'])} correctly analyzed papers. "
+                "The 64 unclear"
                 " assessments remain outside the comparison; one flagged paper had"
                 " already received a public warning about the same statistical problem"
                 " in 2013."
@@ -201,7 +207,8 @@ def main():
         ]
     )
     text += (
-        f"The primary Poisson fit uses {r['n_flagged']} flagged and {r['n_comparison']}"
+        f"The primary Poisson fit uses {format_count(r['n_flagged'])} flagged and "
+        f"{format_count(r['n_comparison'])}"
         " comparison papers. Ten papers have zero citations in both selected years and"
         " contribute no information to its proportional coefficient; they remain in"
         " the absolute contrast and descriptive summaries. The exported estimates list"

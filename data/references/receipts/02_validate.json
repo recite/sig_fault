@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "references",
   "stage": "02_validate",
-  "started_at": "2026-10-07T20:55:32.714077+00:00",
+  "started_at": "2026-10-07T21:01:47.120306+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-appendix-numbering/scripts/references/02_validate.py"
+    "/private/tmp/sig-fault-number-format/scripts/references/02_validate.py"
   ],
   "python": "3.14.7",
-  "git_commit": "2a4cdaf64efe7733ac456be50803e7586f4b3bc6",
+  "git_commit": "47309ce33f929b24e5ba2f76574a893bb7b0ee11",
   "inputs": [
     {
       "path": "ms/references.bib",
@@ -99,5 +99,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T20:55:32.756199+00:00"
+  "finished_at": "2026-10-07T21:01:47.210848+00:00"
 }

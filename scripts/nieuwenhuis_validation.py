@@ -12,6 +12,7 @@ import time
 import i4r_sources as acquisition
 import nieuwenhuis as nw
 import pilot
+from reporting import format_count
 
 DATA = nw.DATA
 CACHE = nw.CACHE / "validation"
@@ -233,6 +234,7 @@ def report(checked, coverage):
             r["validation_status"] == "present" for r in all_extra
         ),
     }
+    macros = {key: format_count(value) for key, value in macros.items()}
     (pilot.ROOT / "tabs/nieuwenhuis_validation_macros.tex").write_text(
         "".join(f"\\newcommand{{\\{k}}}{{{v}}}\n" for k, v in macros.items())
     )
@@ -267,8 +269,10 @@ def report(checked, coverage):
         subset = [r for r in checked if r["presence"] == group]
         counts = collections.Counter(r["validation_status"] for r in subset)
         lines.append(
-            f"| {label} | {len(subset)} | {counts['present']} | "
-            f"{counts['not_found']} | {counts['not_collected']} |"
+            f"| {label} | {format_count(len(subset))} | "
+            f"{format_count(counts['present'])} | "
+            f"{format_count(counts['not_found'])} | "
+            f"{format_count(counts['not_collected'])} |"
         )
     observed_papers = {r["paper_id"] for r in observed}
     undated = sum(
@@ -285,7 +289,8 @@ def report(checked, coverage):
         "in this index is not thereby false. These records do not replace "
         "either database's annual citation counts.",
         "",
-        f"The responses for these paired papers include {undated} undated "
+        "The responses for these paired papers include "
+        f"{format_count(undated)} undated "
         "relationships across all years. They remain in the link data with "
         "empty dates. Every accepted response matches the separate count "
         "endpoint, has unique citation identifiers, and identifies the "

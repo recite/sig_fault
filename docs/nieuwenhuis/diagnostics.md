@@ -10,8 +10,8 @@ Comparison papers
 
 | Component | 2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Web of Science counts | 87 | 501 | 1104 | 1250 | 1315 | 1297 | 1268 |
-| OpenAlex article/review counts | 168 | 697 | 1278 | 1362 | 1437 | 1417 | 1406 |
+| Web of Science counts | 87 | 501 | 1,104 | 1,250 | 1,315 | 1,297 | 1,268 |
+| OpenAlex article/review counts | 168 | 697 | 1,278 | 1,362 | 1,437 | 1,417 | 1,406 |
 | Difference (OpenAlex minus WoS) | 81 | 196 | 174 | 112 | 122 | 120 | 138 |
 | Shared-link publication years | 56 | 109 | 100 | 19 | 28 | -37 | -133 |
 | Shared-link type exclusions | -7 | -15 | -38 | -31 | -74 | -31 | -37 |
@@ -25,8 +25,8 @@ Flagged papers
 
 | Component | 2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Web of Science counts | 113 | 717 | 1390 | 1536 | 1717 | 1706 | 1536 |
-| OpenAlex article/review counts | 198 | 952 | 1582 | 1575 | 1879 | 1752 | 1639 |
+| Web of Science counts | 113 | 717 | 1,390 | 1,536 | 1,717 | 1,706 | 1,536 |
+| OpenAlex article/review counts | 198 | 952 | 1,582 | 1,575 | 1,879 | 1,752 | 1,639 |
 | Difference (OpenAlex minus WoS) | 85 | 235 | 192 | 39 | 162 | 46 | 103 |
 | Shared-link publication years | 60 | 133 | 136 | -27 | 51 | -37 | -134 |
 | Shared-link type exclusions | -2 | -21 | -55 | -66 | -62 | -74 | -46 |
@@ -43,13 +43,13 @@ DOI-only terms are unmatched identifiers, not verified missing or erroneous refe
 
 ## Publisher-date check
 
-Among 3223 shared links with different years, OpenAlex assigns 3219 an earlier year. Publisher-deposited Crossref metadata supplies a separate check of online and print dates.
+Among 3,223 shared links with different years, OpenAlex assigns 3,219 an earlier year. Publisher-deposited Crossref metadata supplies a separate check of online and print dates.
 
 | Date evidence | Citation relationships |
 | --- | ---: |
 | Both dates available but do not explain the difference | 18 |
 | Online or print date is missing | 168 |
-| Publisher metadata unavailable | 2886 |
+| Publisher metadata unavailable | 2,886 |
 | OpenAlex matches online year; WoS matches print year | 151 |
 
 Date agreement supports a dating-convention explanation for those specific records. It does not prove that every date is correct, establish when authors became aware of the critique, or determine which date best measures that response. Records counted here are original–citing DOI relationships; the same citing paper may link to more than one original.

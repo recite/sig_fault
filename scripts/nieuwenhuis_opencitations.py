@@ -8,6 +8,7 @@ import math
 import nieuwenhuis as nw
 import nieuwenhuis_validation as validation
 import pilot
+from reporting import format_count
 
 WORK_FIELDS = [
     "paper_id",
@@ -202,8 +203,8 @@ def report():
         return 100 * math.expm1(float(value))
 
     macros = dict(
-        NwOcPapers=status["complete_histories"],
-        NwOcUndated=status["undated_works"],
+        NwOcPapers=format_count(status["complete_histories"]),
+        NwOcUndated=format_count(status["undated_works"]),
         NwOcPercent=f"{pct(full['alternative']):.1f}",
         NwOcWosPercent=f"{pct(full['wos']):.1f}",
         NwOcDifference=f"{pct(full['difference']):.1f}",
