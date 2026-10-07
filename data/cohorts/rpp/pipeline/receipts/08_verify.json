@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "08_verify",
-  "started_at": "2026-10-07T04:56:11.054904+00:00",
+  "started_at": "2026-10-07T05:35:30.487818+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/08_verify.py"
   ],
   "python": "3.14.7",
-  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/paper_periods.csv",
@@ -72,7 +72,7 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/citation_paths.pdf",
-      "sha256": "1aa25c5a7cf460436f05ae55163e4da454dc0a76d5ac0138abddb77af998a173",
+      "sha256": "41a4fa29ad84632a685454236493bf4c21952ee3c1e6a9f875dae905ae458594",
       "bytes": 6860
     },
     {
@@ -87,13 +87,13 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/analysis_checks.json",
-      "sha256": "4604796201a3aecb1cf6228485d58f2087c012e11eb9f864bc0c128da2fb0fad",
-      "bytes": 295
+      "sha256": "5c2d2ccde5c10f4c61e348d09ddf3b893cbe243aae18d3fd565533eaab15e62b",
+      "bytes": 351
     },
     {
       "path": "data/cohorts/rpp/pipeline/README.md",
-      "sha256": "c5cef8ecc60b6296869221f059172f464ac5e526637985f2532005e797a18519",
-      "bytes": 3868
+      "sha256": "e35e0889853b904194e66986001b6c51d5b2fcb167053e0446abbf83aa8d7630",
+      "bytes": 4047
     }
   ],
   "outputs": [],
@@ -105,8 +105,8 @@
     },
     {
       "path": "scripts/research_pipeline.py",
-      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
-      "bytes": 6907
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
     },
     {
       "path": "scripts/pilot.py",
@@ -117,8 +117,8 @@
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/07_analyze.json",
-      "sha256": "6882111cf78d5768b393397a80dba3c7f9b598a812d6d42c4a57eb618232d1de",
-      "bytes": 7537
+      "sha256": "9698498be29fe95c0ac2f37746b1cc02b5616fa55e5acfc15dc30a9ac0105885",
+      "bytes": 7657
     }
   ],
   "checks": [
@@ -134,5 +134,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T04:56:11.569132+00:00"
+  "finished_at": "2026-10-07T05:35:30.856238+00:00"
 }

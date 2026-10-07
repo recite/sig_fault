@@ -48,7 +48,9 @@ reused donors retain their identities. Inference conditions on selected matches.
 The [annual event-study estimates](event_study.csv),
 [fixed-effects checks](fixed_effects.csv) and
 [leave-one-paper-out results](leave_one_out.csv) expose trend and influence
-sensitivity. This cohort remains separate from the statistical-error meta-analysis.
+sensitivity. This cohort enters the [four-study assessment synthesis](../../../../docs/meta/assessments.md)
+as replication evidence. The three-methodological-audit result remains separately
+reported; replication judgments are not relabeled as statistical errors.
 
 ## Reproduction and receipts
 

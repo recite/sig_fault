@@ -1,0 +1,14 @@
+{
+  "estimand": "Precision-weighted mean study-specific log adverse-versus-comparison post/pre citation ratios",
+  "population": "Included assessed papers in four assembled studies, not all scientific papers or errors",
+  "studies": ["Nieuwenhuis", "Lal", "Lazic", "RPP"],
+  "four_distinct_studies": true,
+  "no_known_original_overlap": true,
+  "unidentified_doi_note": "One Lazic paper lacks DOI: 2012 Folia morphologica, outside RPP 2008 three-journal roster",
+  "rpp_reproduced": true,
+  "rpp_role": "Replication judgment; not a statistical-error classification",
+  "primary_contributing_papers": 445,
+  "acquisition_cache_required": false,
+  "excluded": "I4R selected three-case pilot; inventories without completed citation comparisons",
+  "design": "docs/meta/assessment-design.md"
+}

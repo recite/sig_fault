@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "07_analyze",
-  "started_at": "2026-10-07T04:56:06.542182+00:00",
+  "started_at": "2026-10-07T05:35:27.812275+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/07_analyze.py"
   ],
   "python": "3.14.7",
-  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/matches.csv",
@@ -75,8 +75,8 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/README.in.md",
-      "sha256": "c8b7d67a0a400be2741e44623fab5d50ea81f0b3585295ad942afb432057a281",
-      "bytes": 3258
+      "sha256": "172e1e5bccdcbce2a9a522f160b1fec3e3565ffd9e86ad4c3e19c4f9d7338af7",
+      "bytes": 3437
     }
   ],
   "outputs": [
@@ -142,7 +142,7 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/citation_paths.pdf",
-      "sha256": "1aa25c5a7cf460436f05ae55163e4da454dc0a76d5ac0138abddb77af998a173",
+      "sha256": "41a4fa29ad84632a685454236493bf4c21952ee3c1e6a9f875dae905ae458594",
       "bytes": 6860
     },
     {
@@ -157,13 +157,13 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/analysis_checks.json",
-      "sha256": "4604796201a3aecb1cf6228485d58f2087c012e11eb9f864bc0c128da2fb0fad",
-      "bytes": 295
+      "sha256": "5c2d2ccde5c10f4c61e348d09ddf3b893cbe243aae18d3fd565533eaab15e62b",
+      "bytes": 351
     },
     {
       "path": "data/cohorts/rpp/pipeline/README.md",
-      "sha256": "c5cef8ecc60b6296869221f059172f464ac5e526637985f2532005e797a18519",
-      "bytes": 3868
+      "sha256": "e35e0889853b904194e66986001b6c51d5b2fcb167053e0446abbf83aa8d7630",
+      "bytes": 4047
     }
   ],
   "code": [
@@ -174,8 +174,8 @@
     },
     {
       "path": "scripts/research_pipeline.py",
-      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
-      "bytes": 6907
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
     },
     {
       "path": "scripts/pilot.py",
@@ -184,14 +184,14 @@
     },
     {
       "path": "R/rpp.R",
-      "sha256": "f2aae42188766aea4c938a199d07897100f81a7949bc1723c0ad5baed8099bba",
-      "bytes": 11863
+      "sha256": "74abbb6efba2d116b7189e1b150e1475df3c6bc582137df2613398c272ab1b64",
+      "bytes": 11920
     }
   ],
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/06_match.json",
-      "sha256": "cae501852f34973baeebc02b79c9736c13cba7eef52c3b84af68ade560c274a1",
+      "sha256": "391bef2b05f057b10ca20e9d6643843b2cf2b3d0cf5e779b8c6e56c4951318fb",
       "bytes": 4070
     }
   ],
@@ -210,7 +210,8 @@
         "bootstrap_undefined": 0,
         "raw_fe_identity_error": 2.2204e-16,
         "currently_retracted_targets": 0,
-        "pooled_with_statistical_error_audits": false
+        "classified_as_statistical_error": false,
+        "broader_synthesis": "data/meta/assessment_synthesis.csv"
       }
     },
     {
@@ -236,7 +237,8 @@
     "bootstrap_undefined": 0,
     "raw_fe_identity_error": 2.2204e-16,
     "currently_retracted_targets": 0,
-    "pooled_with_statistical_error_audits": false
+    "classified_as_statistical_error": false,
+    "broader_synthesis": "data/meta/assessment_synthesis.csv"
   },
   "unresolved": [],
   "status": "complete",
@@ -246,5 +248,5 @@
     "R/rpp.R",
     "/private/tmp/sig-fault-research/data/cohorts/rpp/pipeline"
   ],
-  "finished_at": "2026-10-07T04:56:10.976465+00:00"
+  "finished_at": "2026-10-07T05:35:30.419229+00:00"
 }

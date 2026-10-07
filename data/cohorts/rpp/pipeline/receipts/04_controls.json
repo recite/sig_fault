@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "04_controls",
-  "started_at": "2026-10-07T04:50:56.225937+00:00",
+  "started_at": "2026-10-07T05:35:16.766286+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/04_controls.py"
   ],
   "python": "3.14.7",
-  "git_commit": "4cd243d36e2a008b122d32077f1d8ea10cf7777c",
+  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/identities.csv",
@@ -84,8 +84,8 @@
     },
     {
       "path": "scripts/research_pipeline.py",
-      "sha256": "df6653f4887a241d819539134403406bb8a64f0489d83f484c12eac2c93c0928",
-      "bytes": 6907
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
     },
     {
       "path": "scripts/pilot.py",
@@ -96,7 +96,7 @@
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/02_identify.json",
-      "sha256": "4da10867d3adae5eb98f6766a60e18316d76de80d55dd7d42dcdc962c353bff4",
+      "sha256": "4b055e6bd75f912373bd4fc88a8bac5f164d977b1ecc8c27bb69e569398c3b2f",
       "bytes": 14755
     }
   ],
@@ -128,5 +128,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T04:50:56.375716+00:00"
+  "finished_at": "2026-10-07T05:35:16.890238+00:00"
 }

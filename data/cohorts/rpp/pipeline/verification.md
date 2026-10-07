@@ -24,7 +24,7 @@ changed the primary contrast from −1.18659 to −1.18375 annual citations and 
 it does not independently verify publisher dates.
 
 Local validation passed the repository's `make check`, final `make lint`, the
-12 Python pipeline tests and five R assertions, followed by the full offline
+13 Python pipeline tests and five R assertions, followed by the full offline
 `make rpp` build. Tests include upstream receipt invalidation, failed-stage
 rejection, independence of matching from post-period counts, and a regression
 check that synthetic fitting and prediction use the same raw-count scale.

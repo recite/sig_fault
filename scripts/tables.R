@@ -101,7 +101,8 @@ readme <- paste(readLines("docs/README.in.md"), collapse = "\n")
 readme_macros <- c(
   macros, jsonlite::read_json("tabs/i4r_aggregate_macros.json"),
   jsonlite::read_json("tabs/lazic_macros.json"),
-  jsonlite::read_json("tabs/nieuwenhuis_source_macros.json")
+  jsonlite::read_json("tabs/nieuwenhuis_source_macros.json"),
+  jsonlite::read_json("tabs/assessment_macros.json")
 )
 for (name in names(readme_macros)) {
   readme <- gsub(paste0("{{", name, "}}"), readme_macros[[name]], readme, fixed = TRUE)

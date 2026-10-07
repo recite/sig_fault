@@ -146,6 +146,10 @@ writeLines(macros, "tabs/lazic_meta_macros.tex")
 lines <- c(
   "# Precision-weighted synthesis across three audits", "",
   paste(
+    "The [four-study synthesis](assessments.md) adds psychology replication evidence",
+    "and retains these three-audit estimates as a separately reported comparison."
+  ), "",
+  paste(
     "The synthesis combines the Nieuwenhuis, Lal and Lazic contrasts on the log",
     "relative-growth scale, weighting each by the inverse of its estimated sampling",
     "variance. The I4R pilot is excluded from pooling; its three matched cases",

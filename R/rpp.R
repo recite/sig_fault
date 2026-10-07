@@ -253,7 +253,8 @@ rpp_main <- function(path) {
     currently_retracted_targets = sum(coverage$is_retracted[
       coverage$paper_id %in% identities$paper_id
     ] == "True", na.rm = TRUE),
-    pooled_with_statistical_error_audits = FALSE
+    classified_as_statistical_error = FALSE,
+    broader_synthesis = "data/meta/assessment_synthesis.csv"
   ), file.path(path, "analysis_checks.json"), pretty = TRUE, auto_unbox = TRUE)
 }
 

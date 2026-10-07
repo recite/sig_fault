@@ -2,8 +2,10 @@
 
 Each study has its own folder with paper identities, source assessments,
 provenance and notes.
-These are inventories for building additional citation comparisons; none enters
-the current meta-analysis.
+These inventories preserve complete source records. The [psychology replication
+analysis](rpp/pipeline/README.md) now enters the
+[four-study synthesis](../../docs/meta/assessments.md);
+other new cohorts await citation comparisons.
 Paper counts include unassessed roster entries where the source supplies them.
 Assessment rows
 can represent claims, diagnostics or repeated analysts, not independent papers.
@@ -21,8 +23,9 @@ are recorded in `overlap.csv`; counts across cohorts must not simply be added.
 | [hmx](hmx/README.md) | 22 | 22 | 138 | 0 |
 | [panel](panel/README.md) | 49 | 49 | 245 | 0 |
 
-Start with the interaction and panel-method audits and the older psychology and
-cancer replication cohorts.
+Next priorities are the interaction and panel-method audits and the cancer
+replication cohort. The RPP pipeline verifies all 98 DOIs; the table above
+retains the initial discovery inventory, which had 76 DOI links.
 SCORE's large rosters are preserved now, but its 2026 summary publications are
 after the current 2025 citation cutoff;
 earlier report dates require verification. The mediation identity crosswalk

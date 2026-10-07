@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "study": "meta",
+  "stage": "01_synthesize",
+  "started_at": "2026-10-07T05:38:57.780523+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/meta/01_synthesize.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "88bc29ab59c8dcc85b8b5af36f3655a8d00bd576",
+  "inputs": [
+    {
+      "path": "docs/meta/assessment-design.md",
+      "sha256": "18c6b1739d1ab3cf53394c349457182a90b3f6bb048429c72306709f2e3a57d2",
+      "bytes": 4546
+    },
+    {
+      "path": "docs/meta/assessments.in.md",
+      "sha256": "f5e0d37a868f5fbdbe78f726487fcc79af7352713ae1fe2b51cbf1571b806b77",
+      "bytes": 4619
+    },
+    {
+      "path": "data/meta/lazic_components.csv",
+      "sha256": "9af97c95636d5956c987eeb297fd07a6a33a56c2d4c5e621572a579e5ff76de6",
+      "bytes": 1365,
+      "rows": 12
+    },
+    {
+      "path": "data/meta/lazic_component_identities.csv",
+      "sha256": "10da564b00c64ba87c62f0e6aa38bd5fbad537a57955e6d2e1fdc527978b0084",
+      "bytes": 18054,
+      "rows": 355
+    },
+    {
+      "path": "data/meta/audit_contrasts.csv",
+      "sha256": "92d1a48dab2c2892891aa77e59264ffd1b5cbc138991a4696cca8caa70fe20cc",
+      "bytes": 1309,
+      "rows": 6
+    },
+    {
+      "path": "data/lazic/estimates.csv",
+      "sha256": "763ef5c755f1f36ecf3684db32d7fa9548de4089eb666955094edc3498a7f93f",
+      "bytes": 1838,
+      "rows": 7
+    },
+    {
+      "path": "data/nieuwenhuis/source_models.csv",
+      "sha256": "54834df0945639e778fb059618af54aa74a260033d0996f26cf14cafcb846bee",
+      "bytes": 4871,
+      "rows": 12
+    },
+    {
+      "path": "data/nieuwenhuis/status.json",
+      "sha256": "85c41418b10a023808e3f696a7322353e634faaaf092429f21276d1b9f067b2b",
+      "bytes": 281
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/panel.csv",
+      "sha256": "1934395a23f9487d93aefb4356732a5f2c4f647070180261a39cca43129334e0",
+      "bytes": 583577,
+      "rows": 8496
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/identities.csv",
+      "sha256": "e8fdc351024fb20fb799437179f704744374131259c216f671680fb7677ab8f3",
+      "bytes": 25447,
+      "rows": 98
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/estimates.csv",
+      "sha256": "e0f2693b16445460f0418240d1b844a8fba7745d4674b502a0fbc73c7c5bb43e",
+      "bytes": 1072,
+      "rows": 4
+    },
+    {
+      "path": "data/cohorts/rpp/pipeline/external_estimates.csv",
+      "sha256": "8f767679ab739c4f08ea50dbdbb9b7aad2c2fb8e7674a5e1fcdf3e84c353fe72",
+      "bytes": 357,
+      "rows": 4
+    },
+    {
+      "path": "renv.lock",
+      "sha256": "88cfc81e990816e9b466244b82e9541a0a6f04a940a876477d3dda98e53f895a",
+      "bytes": 165630
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/meta/assessment_components.csv",
+      "sha256": "57b00d3c1b6d7c523c380eadeb41a547372eb966f7feb3e3589c4b594c589c4d",
+      "bytes": 3718,
+      "rows": 32
+    },
+    {
+      "path": "data/meta/assessment_synthesis.csv",
+      "sha256": "dafdbfa72ed1b20b9b2e3555fe239ca0b00d2b7b80dbd14877ec4a11d91cffb3",
+      "bytes": 1869,
+      "rows": 8
+    },
+    {
+      "path": "data/meta/assessment_sensitivity.csv",
+      "sha256": "53d3c9520d09c0a2aa012b9105ec2c8f7e61759256249c3dcbad08a3ef9e9ace",
+      "bytes": 1918,
+      "rows": 8
+    },
+    {
+      "path": "data/meta/assessment_leave_one_out.csv",
+      "sha256": "8afa6ca153c02c1fafae332ba5fa6905215854745642c707289059d1a2e2ece3",
+      "bytes": 7236,
+      "rows": 32
+    },
+    {
+      "path": "data/meta/assessment_identities.csv",
+      "sha256": "4ea6b2ac8c5564864b23443583917a66e2131b0863bf1c02053229aef220ab24",
+      "bytes": 22626,
+      "rows": 453
+    },
+    {
+      "path": "data/meta/rpp_timing.csv",
+      "sha256": "e68bf5c9d90aadc91f76aa3b0655ecba75b7e37dee0d28c7af9873337895d047",
+      "bytes": 319,
+      "rows": 2
+    },
+    {
+      "path": "data/meta/assessment_status.json",
+      "sha256": "0daa5ac30f3d3c6fdcc8b4784ac8a127a29b71f7956e9714641ad4fb3123e028",
+      "bytes": 790
+    },
+    {
+      "path": "data/meta/assessment_session.txt",
+      "sha256": "414b0191affcf16a9d8b13ade991457bc7ed625cb22a4c92804930cbb279b339",
+      "bytes": 791
+    },
+    {
+      "path": "tabs/assessment_macros.tex",
+      "sha256": "749cbee16bcd21da3b73a288c62f1b825f4d51a63a8617272729cbc85f28947b",
+      "bytes": 1244
+    },
+    {
+      "path": "tabs/assessment_macros.json",
+      "sha256": "841cd9d276240891bc68f5fc75210b4384b98ccb6f3b7e337afc69b7a0633565",
+      "bytes": 1023
+    },
+    {
+      "path": "tabs/assessment_summary.tex",
+      "sha256": "00b95a4f2cfd170e6c1ee40ba636a4a5f2a5d149d1836bbf58b5ec08b02fad20",
+      "bytes": 313
+    },
+    {
+      "path": "tabs/assessment_components.tex",
+      "sha256": "2b14613d476bec6e2683ad019d72d3730ec82a0960a0ed370184746df7a17dbb",
+      "bytes": 382
+    },
+    {
+      "path": "tabs/rpp_summary.tex",
+      "sha256": "4e1970dc042961e46340abffeaff703272ca9972fc1583d6faa03e2cb46fa78e",
+      "bytes": 335
+    },
+    {
+      "path": "docs/meta/assessments.md",
+      "sha256": "562f0140340d3c397aa615fc9d4775eb6dfa372f5af30c03c1951448f57acb72",
+      "bytes": 5448
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/meta/01_synthesize.py",
+      "sha256": "307b962e84010a2e5b28148378134066b1fc5aa2509549d501fe0172f5be54ba",
+      "bytes": 2498
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "scripts/meta/synthesize.R",
+      "sha256": "f69ff30c26c9c534ce7fb6e89dcc7a9bf268c018ede94c955a6f0ce3fd185544",
+      "bytes": 10544
+    },
+    {
+      "path": "R/meta.R",
+      "sha256": "53c7b18f0b24e7a87e366e00c89d74b2d108e305a058566a4502d20abc1490bf",
+      "bytes": 1536
+    },
+    {
+      "path": "R/rpp.R",
+      "sha256": "74abbb6efba2d116b7189e1b150e1475df3c6bc582137df2613398c272ab1b64",
+      "bytes": 11920
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "four_distinct_studies",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no_known_original_overlap",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "rpp_reproduced",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "estimand": "Precision-weighted mean study-specific log adverse-versus-comparison post/pre citation ratios",
+    "population": "Included assessed papers in four assembled studies, not all scientific papers or errors",
+    "studies": [
+      "Nieuwenhuis",
+      "Lal",
+      "Lazic",
+      "RPP"
+    ],
+    "four_distinct_studies": true,
+    "no_known_original_overlap": true,
+    "unidentified_doi_note": "One Lazic paper lacks DOI: 2012 Folia morphologica, outside RPP 2008 three-journal roster",
+    "rpp_reproduced": true,
+    "rpp_role": "Replication judgment; not a statistical-error classification",
+    "primary_contributing_papers": 445,
+    "acquisition_cache_required": false,
+    "excluded": "I4R selected three-case pilot; inventories without completed citation comparisons",
+    "design": "docs/meta/assessment-design.md"
+  },
+  "unresolved": [],
+  "status": "complete",
+  "estimation_command": [
+    "Rscript",
+    "--vanilla",
+    "scripts/meta/synthesize.R"
+  ],
+  "finished_at": "2026-10-07T05:38:58.441426+00:00"
+}

@@ -13,6 +13,22 @@ citations = importlib.import_module("scripts.rpp.05_citations")
 
 
 class ReceiptTests(unittest.TestCase):
+    def test_receipts_can_use_a_shared_analysis_directory(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            pipeline, "ROOT", Path(tmp)
+        ), patch.object(pipeline, "fingerprint", return_value={}):
+            with patch.object(pipeline.subprocess, "check_output", return_value="abc"):
+                run = pipeline.Run(
+                    "meta",
+                    "01_synthesize",
+                    __file__,
+                    True,
+                    data_dir=Path(tmp) / "data/meta",
+                )
+            self.assertEqual(
+                run.receipt_path, Path(tmp) / "data/meta/receipts/01_synthesize.json"
+            )
+
     def test_transitive_staleness_even_with_unchanged_outputs(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(
             pipeline, "ROOT", Path(tmp)

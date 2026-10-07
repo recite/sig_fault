@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the research note when using these materials."
 type: dataset
-title: "Significant Error: Citations to Research With Publicized Statistical Errors"
+title: "Significant Error: Citations After Statistical Criticism and Replication"
 authors:
   - family-names: Cor
     given-names: Ken
@@ -13,7 +13,7 @@ version: 0.2.0
 date-released: "2026-10-04"
 preferred-citation:
   type: report
-  title: "Significant Error: Citations to Research With Publicized Statistical Errors"
+  title: "Significant Error: Citations After Statistical Criticism and Replication"
   authors:
     - family-names: Cor
       given-names: Ken

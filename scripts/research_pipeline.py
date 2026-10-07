@@ -61,12 +61,14 @@ def fingerprint(path):
 class Run:
     """A receipt records actual inputs, checks and outputs, including failed runs."""
 
-    def __init__(self, study, stage, script, offline=False):
+    def __init__(self, study, stage, script, offline=False, *, data_dir=None):
         self.study, self.stage, self.offline = study, stage, offline
         self._input_paths = set()
         self._lock = threading.Lock()
         self._source_locks = {}
-        self.data = ROOT / "data/cohorts" / study / "pipeline"
+        self.data = (
+            Path(data_dir) if data_dir else ROOT / "data/cohorts" / study / "pipeline"
+        )
         self.cache = ROOT / "private-data/cohorts" / study / "pipeline"
         self.receipt_path = self.data / "receipts" / (stage + ".json")
         self.record = dict(

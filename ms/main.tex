@@ -12,6 +12,7 @@
 \input{../tabs/lal_macros.tex}
 \input{../tabs/lazic_macros.tex}
 \input{../tabs/lazic_meta_macros.tex}
+\input{../tabs/assessment_macros.tex}
 \input{../tabs/nieuwenhuis_macros.tex}
 \input{../tabs/nieuwenhuis_source_macros.tex}
 \input{../tabs/nieuwenhuis_validation_macros.tex}
@@ -20,29 +21,31 @@
 \input{../tabs/meta_secondary_macros.tex}
 \input{../tabs/i4r_aggregate_macros.tex}
 \input{../tabs/i4r_synthetic_macros.tex}
-\title{Significant Error:\\Citations to Research With Publicized Statistical Errors}
+\title{Significant Error:\\Citations After Statistical Criticism and Replication}
 \author{Ken Cor \and Gaurav Sood}
 \date{October 2026}
-\hypersetup{pdfauthor={Ken Cor and Gaurav Sood},pdftitle={Significant Error: Citations to Research With Publicized Statistical Errors}}
+\hypersetup{pdfauthor={Ken Cor and Gaurav Sood},pdftitle={Significant Error: Citations After Statistical Criticism and Replication}}
 \widowpenalty=10000
 \clubpenalty=10000
 \begin{document}
 \maketitle
 \begin{abstract}
-\noindent Publicizing a statistical error could sharply reduce reliance on affected papers or prompt researchers to qualify their citations. We examine both responses after a 2011 critique of a common mistake in neuroscience: inferring that two effects differ because one is statistically significant and the other is not. Papers flagged for the mistake continued to receive citations well beyond a handful of highly cited cases. Their median annual citations rose from \MedianFlaggedBefore{} in 2010 to \MedianFlaggedMin--\MedianFlaggedMax{} during 2012--2015; comparison papers rose from \MedianComparisonBefore{} to \MedianComparisonMin--\MedianComparisonMax. In a separate sample of citations to flagged papers, \Nonack{} of \Rated{} valid completed ratings recorded no acknowledgment of concerns. These findings document widespread continued use with little recorded qualification. Comparisons with unflagged papers leave the size of any citation penalty uncertain; continued citation does not establish that publicity had no effect. We extend the comparison to audits of \LalPapers{} political-science papers and \LazicPapers{} animal studies. In the animal-study audit, mean annual citations changed little in both groups, with no clear additional decline among papers flagged for pseudoreplication. The additional audits broaden the evidence of continued use while leaving the size of any publicity effect uncertain.
+\noindent Papers can remain widely cited even when adverse assessments reduce their citation growth. We examine three methodological audits and a psychology replication project. In the neuroscience audit, flagged papers' median annual citations rose from \MedianFlaggedBefore{} before the critique to \MedianFlaggedMin--\MedianFlaggedMax{} afterward. A separate citation-context sample recorded no acknowledgment of concerns in \Nonack{} of \Rated{} valid completed ratings. The psychology project permits a comparison of \RppFailed{} papers with unsuccessful replications and \RppSuccessful{} with successful replications. Following its 2015 announcement, unsuccessful replications had a \RppReduction\% smaller post/pre citation ratio (95\% CI \mbox{[\RppLower, \RppUpper]\%}), standardizing journal composition. Across four studies, inverse-variance weighting gives a relative citation-growth contrast of \AssessmentWeakPercent\% [\AssessmentWeakLower, \AssessmentWeakUpper]\%; an alternative instrumental-variable diagnostic gives \AssessmentSensitivePercent\% [\AssessmentSensitiveLower, \AssessmentSensitiveUpper]\%. These estimates summarize the included studies and compare adverse with comparison assessments; they do not identify a universal response to errors or isolate the effect of first disclosure. The evidence supports continued citation alongside a modest relative citation penalty, whose magnitude depends on the assessment definition and comparison.
 \end{abstract}
 \vspace{1em}
 \noindent\small We thank Danielle Portnoy and Xiaoran Huang for research assistance, and Andrew Gelman, Kabir Khanna, and Daniel Stone for comments. Replication materials: \url{https://github.com/recite/sig_fault}.\normalsize
 
 \newpage
 \section{Introduction}
-Publicizing a statistical error gives researchers a reason to reconsider their reliance on affected findings. A substantial response could take two forms: fewer citations to papers containing the error, or more citations that acknowledge the problem. We examine both after a prominent methodological critique in neuroscience.
+Publicizing a statistical error gives researchers a reason to reconsider their reliance on affected findings. A substantial response could take two forms: fewer citations to papers containing the error, or more citations that acknowledge the problem. We examine both after a prominent methodological critique in neuroscience, then compare citation changes following two further methodological audits and a psychology replication project.
 
 The mistake is to treat a statistically significant effect in one group and a nonsignificant effect in another as evidence that the groups differ. That conclusion requires a test of the difference itself. Significance in one group can reflect greater precision rather than a larger effect \citep{gelman2006}. The missing test leaves the claimed contrast unsupported by that argument; it does not establish that every conclusion in the paper is false.
 
 \citet{nieuwenhuis2011} identified \Classified{} papers in which a comparison of effects was relevant and classified \ClassifiedFlagged{} as making the mistake. They supplied us with the paper-level classifications. Researchers who understand the critique can recognize the mistake in an original paper and reconsider its use. The critique therefore need not name each affected paper to influence citations.
 
 The affected papers remained widely cited, and recorded qualifications were rare. Median as well as mean citations increased after the critique; \IncreasedFlagged{} of \Flagged{} flagged papers received more citations per year in 2012--2015 than in 2010. Almost all valid completed ratings in our citation-context sample recorded no concern. The comparison with unflagged papers is less conclusive about how much publicity changed citation growth. We distinguish that causal question from the observed persistence of largely unqualified citation.
+
+The expanded analysis asks whether papers receiving adverse assessments experience slower citation growth than comparison papers assessed by the same projects. An unsuccessful replication does not establish a statistical error, and an unflagged paper may itself benefit from favorable publicity. We preserve those distinctions while combining the studies' relative-growth contrasts. The pooled estimate describes these assembled studies, rather than a representative sample of scientific criticism.
 
 \section{Data and comparison}
 The source review covers behavioral, systems, and cognitive neuroscience papers published in 2009--2010 in \textit{Nature}, \textit{Science}, \textit{Nature Neuroscience}, \textit{Neuron}, and sampled issues of the \textit{Journal of Neuroscience}. The classification concerns the particular statistical inference reviewed, not the validity of every result in a paper.
@@ -64,7 +67,7 @@ Continued citation extends beyond a few prominent papers. Flagged papers' median
 \label{fig:paths}
 \end{figure}
 
-The main regression estimates a \ProportionalReduction\% smaller post/pre citation ratio for flagged papers (95\% interval [\ProportionalLower, \ProportionalUpper]\%). Thus, widespread continued citation coexists with considerable uncertainty about a relative citation penalty. The medians establish that continued use was typical, while the regression addresses how growth compares with other papers. Neither an observed increase nor an imprecise comparison establishes that publicity had no effect.
+The main regression estimates a \ProportionalReduction\% smaller post/pre citation ratio for flagged papers (95\% interval [\ProportionalLower, \ProportionalUpper]\%). Thus, widespread continued citation coexists with considerable uncertainty about a relative citation penalty. The medians establish that continued citation was typical, while the regression addresses how growth compares with other papers. Neither an observed increase nor an imprecise comparison establishes that publicity had no effect.
 
 Allowing citation trajectories to differ by journal and publication cohort produces estimates from \AdjustedPercentMin\% to \AdjustedPercentMax\%. Absolute citation gains instead favor flagged papers by \MainEstimate{} citations per paper per year (95\% interval \MainInterval): flagged papers started from a higher citation level, so absolute and proportional changes answer different questions. The appendix reports the full comparisons, later response windows, and bounds on the magnitude of a relative decline.
 
@@ -106,10 +109,34 @@ Mean annual citations changed from \LazicFlaggedBefore{} to \LazicFlaggedAfter{}
 \section{Individually publicized errors}
 The Institute for Replication extension currently supports matched comparisons for only \IfrCases{} affected papers. This is a pilot, too small and selected to establish how citations generally respond to publicized errors. The source inventory is much larger, but most records still lack a verified consequential error, an established first-disclosure date, sufficient citation history, or complete controls. Appendix~\ref{app:i4r} retains the case comparisons and synthetic-control checks.
 
-\section{Discussion}
-The affected papers continued to circulate after their statistical mistake was publicized. This pattern appears in median as well as mean citations and is accompanied by very little recorded qualification in the context sample. The evidence is inconsistent with wholesale abandonment of these papers. It is less informative about how many citations publicity prevented.
+\section{Psychology replications and subsequent citations}
+The Reproducibility Project: Psychology completed 100 replications of studies published in three psychology journals in 2008 \citep{osc2015}. They concern \RppPapers{} distinct original papers: the source judgments classify \RppFailed{} as unsuccessful and \RppSuccessful{} as successful replications. Both repeated-paper pairs have unsuccessful judgments. We verify every original identity against publisher records, preserving the source judgments and documented bibliographic corrections. OpenAlex supplies complete citation histories for all originals through 2025.
 
-Citation growth already differed before the critique. Among papers published in 2009, flagged papers' increase from 2009 to 2010 exceeded that of comparison papers by \PretrendEstimate{} citations (95\% interval \PretrendInterval). That short publication-year baseline cannot establish the later counterfactual trajectory. Awareness is also unobserved, and some later citations may concern findings unaffected by the mistake. These limits leave room for a citation penalty even as the affected papers remain widely used.
+The project announced its findings in August 2015. We compare mean annual citations during 2012--2014 with 2016--2018, excluding the announcement year. Earlier individual reports mean that this contrast concerns additional project publicity. Within each journal, we calculate the ratio of unsuccessful papers' post/pre mean citations to successful papers' ratio, then average the log ratios using the full cohort's journal shares. The bootstrap resamples original papers within journal and replication group. Appendix~\ref{app:rpp} documents the panel, timing evidence and external comparisons.
+
+Unsuccessful replications had a \RppReduction\% smaller post/pre citation ratio (95\% CI \mbox{[\RppLower, \RppUpper]\%}). Their observed mean annual citations changed from \RppFailedMeanBefore{} to \RppFailedMeanAfter{} and their median from \RppFailedMedianBefore{} to \RppFailedMedianAfter{}. For successful replications, the corresponding means were \RppSuccessfulMeanBefore{} and \RppSuccessfulMeanAfter{}, and the medians \RppSuccessfulMedianBefore{} and \RppSuccessfulMedianAfter{}. Thus, papers with unsuccessful replications continued to receive substantial citation, but their growth lagged behind the successful group. The journal-standardized absolute contrast is \RppLevel{} annual citations per paper (95\% interval [\RppLevelLower, \RppLevelUpper]). The within-project comparison combines any penalty for an unsuccessful replication with any publicity benefit for a successful one.
+
+\section{Citation changes across four studies}
+We combine one log relative-growth contrast from each methodological audit with the psychology replication contrast, weighting by inverse estimated sampling variance. The main specification uses the instrument-strength diagnostic in the political-science audit. Its four components contain \AssessmentPapers{} contributing original papers. The estimated weighted contrast is \AssessmentWeakPercent\% (95\% interval [\AssessmentWeakLower, \AssessmentWeakUpper]\%). Substituting the alternative IV diagnostic gives \AssessmentSensitivePercent\% [\AssessmentSensitiveLower, \AssessmentSensitiveUpper]\% (Table~\ref{tab:assessment}). Both estimates indicate slower relative citation growth after adverse assessments; the second permits little or no average difference.
+
+\begin{table}[htbp]
+\centering
+\caption{Relative citation growth after adverse assessments}
+\label{tab:assessment}
+\small
+\input{../tabs/assessment_summary.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+Entries are percentage contrasts with 95\% intervals. The three-audit column includes neuroscience, instrumental variables and animal studies; the four-study columns add psychology replications. Main estimates use inverse sampling-variance weights and normal intervals. Random-effects estimates use REML and modified Knapp--Hartung intervals. The two rows substitute overlapping IV definitions and are not independent evidence.
+\end{minipage}
+\end{table}
+
+The synthesis estimates a weighted average for these studies, not an effect common to every error or replication failure. Psychology contributes \RppMetaWeight\% of the main precision weight. It uses three-year averages around the announcement; the other components compare the calendar years immediately before and after their selected publicity years. Appendix~\ref{app:synthesis} reports component weights, a matching one-year psychology window, citation-source substitutions and leave-one-study-out checks. The wider random-effects intervals make explicit how little four studies establish about effects across scientific settings.
+
+\section{Discussion}
+The affected papers continued to circulate after their statistical mistake was publicized. This pattern appears in median as well as mean citations and is accompanied by very little recorded qualification in the context sample. The evidence is inconsistent with wholesale abandonment of these papers. The larger set of citation comparisons nevertheless suggests a modest relative penalty after adverse assessments. Continued citation and a penalty can coexist: an affected paper may receive many citations while receiving fewer than it otherwise would have.
+
+Citation growth already differed before the critique. Among papers published in 2009, flagged papers' increase from 2009 to 2010 exceeded that of comparison papers by \PretrendEstimate{} citations (95\% interval \PretrendInterval). That short publication-year baseline cannot establish the later counterfactual trajectory. Awareness is also unobserved, and some later citations may concern findings unaffected by the mistake. These limits leave room for a citation penalty even as the affected papers remain widely cited.
 
 The practical question is how methodological criticism reaches the point of use. Readers can recognize an error from the original analysis, but doing so requires connecting a general warning to a particular paper. Our results document continued citation with little recorded acknowledgment; they do not identify which step in that process accounts for it.
 
@@ -211,7 +238,7 @@ For the \NwValidationPapers{} paired papers checked against OpenCitations, that 
 A separate OpenCitations comparison covers all \NwOcPapers{} historical papers. Its estimated relative-growth contrast is \NwOcPercent\%, compared with \NwOcWosPercent\% in the historical exports. OpenCitations records more citations in both periods, leaving this aggregate comparison almost unchanged. The outcome counts dated citing works across document types; \NwOcUndated{} undated relationships remain unassigned. A paired, paper-level bootstrap gives a source-induced change in the estimated growth ratio of \NwOcDifference\% (95\% interval [\NwOcDifferenceLower, \NwOcDifferenceUpper]\%). These intervals condition on the observed cohort and database records. Similar aggregate estimates do not verify individual links or establish either source as ground truth.
 
 
-For comparison across audits, the repository also reports the contrast between the calendar year before and the calendar year after the warning year, excluding the warning year itself. This uses 2010 and 2012 for neuroscience and 2023 and 2025 for the IV audit. The neuroscience papers published in 2010 have a partial publication-year baseline, so a separate 2009-publication cohort has a complete baseline year. The synthesis below uses these common windows; alternative IV diagnostics are not counted as independent replications.
+For comparison across audits, the repository also reports the contrast between the calendar year before and the calendar year after the selected publicity year, excluding that year itself. This uses 2010 and 2012 for neuroscience and 2023 and 2025 for the IV audit. The neuroscience papers published in 2010 have a partial publication-year baseline, so a separate 2009-publication cohort has a complete baseline year. The synthesis below uses these common windows; alternative IV diagnostics are not counted as independent replications.
 
 \section{Pseudoreplication audit: construction and sensitivity}\label{app:lazic}
 The source sampled eligible English-language prenatal-exposure experiments in multiparous mammals from 500 PubMed search results. Our population is the \LazicPapers{} deposited assessments, not animal research generally. Exact PMID matching identifies all \LazicPapers{} papers; \LazicDoiPapers{} also have a DOI. We retain the \LazicNoDoiPapers{} papers without DOI and query their citations by PMID. The first preprint appeared on September 2, 2017, and the identified dataset was released on September 6. The repository documents the release dates and source provenance.
@@ -229,26 +256,59 @@ The main absolute contrast is the difference in equal-paper mean changes, with a
 \label{fig:lazic}
 \end{figure}
 
-\section{Citation changes across three statistical-error audits}\label{app:synthesis}
-We combine one proportional contrast from each of the three audits: Nieuwenhuis, Lal, and Lazic. We weight each log relative-growth contrast by the inverse of its estimated variance: $w_j=s_j^{-2}/\sum_k s_k^{-2}$ and $\bar\beta=\sum_j w_j\widehat\beta_j$. The reported quantity is $100(e^{\bar\beta}-1)$. It summarizes the included audit effects with greater weight on more precise estimates. We use 2010 versus 2012 for Nieuwenhuis, 2023 versus 2025 for Lal, and 2016 versus 2018 for Lazic. The last contrast is the year after first public release but the year of journal publication; the repository also uses the main Lazic follow-up in 2019. Earlier circulation of the Lal critique means that its formal publication is not a first-disclosure date.
+\section{Psychology replication analysis: construction and checks}\label{app:rpp}
+The original source contains 100 completed study records from \RppPapers{} papers. We retain all completed records, including one without a reported replication $p$ value, and use the source's replication judgment. Two original papers each have two completed replication records; both judgments for each paper are unsuccessful. Three sourced identity decisions correct a title typo, malformed punctuation, and a journal/page locator that belonged to another paper. Original source files and the identity-decision ledger remain available in the repository.
+
+The citation panel deduplicates citing works within original papers and checks the original work's presence in each citing record's reference list. The primary outcome includes OpenAlex articles and reviews; all document types are a sensitivity. Conflicting DOI records retain an explicit resolution ledger. Incomplete histories remain missing; zeros require completed collection. Project logs preserve earlier report candidates, but filenames and upload dates alone do not establish historical public access to their contents.
+
+For journal $j$, let $\overline C_{gjt}$ denote mean annual citations in replication group $g$ and period $t$. The proportional contrast is
+\[
+ \widehat\beta_{\mathrm{RPP}}=\sum_j q_j\left[
+ \log\frac{\overline C_{\mathrm{unsuccessful},j,\mathrm{post}}}{\overline C_{\mathrm{unsuccessful},j,\mathrm{pre}}}
+ -\log\frac{\overline C_{\mathrm{successful},j,\mathrm{post}}}{\overline C_{\mathrm{successful},j,\mathrm{pre}}}\right],
+\]
+where $q_j$ is the journal's share of the original-paper cohort. The journal shares remain fixed in 9,999 bootstrap resamples within journal and replication group. We report a percentile interval for this study and use the standard deviation of the log-scale bootstrap draws in the meta-analysis. We do not infer that standard error from the asymmetric percentage interval. All draws are defined. The absolute-change comparison uses journal-specific differences in mean changes and Welch--Satterthwaite inference.
+
+External comparisons use original research papers from the same journals and 2008 print-publication year. They exclude known replication-assessed originals, nonresearch items and currently retracted papers. Matching uses only 2010--2014 citations. Three-nearest-neighbor matches use standardized log counts; synthetic controls fit standardized raw counts with nonnegative weights summing to one. The synthetic-control predictions use the same raw-count outcome. Reused donors retain their original article identities. Nearest-neighbor intervals cluster by original article and matched set; synthetic comparisons report point estimates and pre-period fit.
 
 \begin{table}[htbp]
 \centering
-\caption{Precision-weighted synthesis across the assembled audits}
-\label{tab:meta}
+\caption{Psychology papers compared with external controls}
 \small
-\input{../tabs/lazic_meta_summary.tex}
+\input{../tabs/rpp_summary.tex}
 \par\smallskip
 \begin{minipage}{\linewidth}\footnotesize
-Entries are percentage relative-growth contrasts with 95\% intervals. Each row uses one IV diagnostic; overlapping definitions are alternatives, not independent audits. Inverse-variance weights and normal intervals condition on the included audits and estimated component variances. The I4R pilot is excluded from pooling.
+Contrasts compare changes in mean annual citations from 2012--2014 to 2016--2018. Nearest-neighbor intervals are conditional on selected matches. Synthetic-control estimates have no reported confidence intervals. These are checks on each replication group; they do not supply additional independent studies to the synthesis.
 \end{minipage}
 \end{table}
 
-The precision-weighted estimates are \LazicMetaWeakPercent\% under the instrument-strength screen and \LazicMetaSensitivePercent\% under inferential sensitivity. The intervals in Table~\ref{tab:meta} quantify the remaining uncertainty about magnitude. The source comparisons and alternative follow-up year give similar estimates. A causal interpretation requires that flagged and comparison papers would otherwise have followed comparable proportional citation trajectories within each audit.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../data/cohorts/rpp/pipeline/citation_paths.pdf}
+\caption{Mean annual citations to the \RppPapers{} psychology originals, standardized to their journal composition. Groups follow the source's successful and unsuccessful replication judgments. The vertical line marks the 2015 project announcement; earlier individual reports may already have been public. These are descriptive paths, including covered zero-citation years. The main comparison uses 2012--2014 and 2016--2018.}
+\label{fig:rpp}
+\end{figure}
 
-The main fixed-effect synthesis has standard error $1/\sqrt{\sum_j s_j^{-2}}$ and uses normal critical values. It estimates a precision-weighted mean for the included audits without requiring identical effects. The repository reports the audit weights, leave-one-audit-out estimates, equal-audit weighting, and a random-effects sensitivity. The latter estimates between-audit variance by restricted maximum likelihood and uses modified Knapp--Hartung intervals with two degrees of freedom; its standard-error adjustment cannot shrink uncertainty below the unadjusted value. Three audits provide little information about the distribution of effects across critiques. No DOI-bearing Lazic paper overlaps the other original/control papers; one included Lazic paper lacks a DOI.
+\clearpage
+\section{Synthesis across methodological audits and replication evidence}\label{app:synthesis}
+We weight study log relative-growth contrasts by inverse estimated sampling variance: $w_j=s_j^{-2}/\sum_k s_k^{-2}$ and $\bar\beta=\sum_j w_j\widehat\beta_j$. The reported quantity is $100(e^{\bar\beta}-1)$, with standard error $1/\sqrt{\sum_j s_j^{-2}}$ on the log scale. Normal intervals condition on the included studies and estimated component variances. They do not require identical study effects, but cross-study independence is assumed. Precision weights, timing and the expansion to replication evidence are retrospective choices made after examining individual results.
 
-The I4R pilot contains only \IfrCases{} selected disclosures and is excluded from every pooled estimate. Its case histories, matched comparisons and synthetic-control checks remain separate. Expansion focuses on complete methodological audits and replication projects with identified original papers and both adverse and favorable assessments.
+\begin{table}[htbp]
+\centering
+\caption{Components of the main four-study synthesis}
+\small
+\input{../tabs/assessment_components.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+The IV component uses effective $F<10$. Counts describe papers contributing to each proportional estimate; all-zero papers omitted by the animal-study Poisson fit remain in its descriptive analysis. Component intervals use their study-specific procedures; the psychology interval is bootstrap percentile. Weights use log-scale sampling variances, not interval widths. External replication controls do not enter the pool.
+\end{minipage}
+\end{table}
+
+The windows are 2010 versus 2012 for neuroscience, 2023 versus 2025 for instrumental variables, 2016 versus 2018 for animal studies, and 2012--2014 versus 2016--2018 for psychology. These are post/pre ratios, not annualized growth rates. For animal studies, 2018 follows the first public release but coincides with journal publication. Earlier circulation likewise precedes formal IV publication and some individual psychology reports precede the project announcement.
+
+The repository additionally uses 2014 versus 2016 for psychology, substitutes the paired OpenAlex neuroscience estimate, and omits each study in turn. Alternative diagnostics and databases replace a component; they never increase the number of independent studies. The three-audit estimates remain separately reported in Table~\ref{tab:assessment}. Random-effects sensitivity uses REML and modified Knapp--Hartung intervals with three degrees of freedom; its adjustment cannot shrink uncertainty below the unadjusted value. It concerns a modeled mean across study effects, not a prediction for an unobserved critique.
+
+No known original DOI overlaps the four study cohorts. One included animal-study paper lacks a DOI; its journal and publication year place it outside the psychology cohort. Distinct originals may still share citing papers or correlated field shocks. The I4R pilot contains only \IfrCases{} selected disclosures and remains excluded from pooling. Other source inventories do not enter until their identities, assessment definitions, disclosure timing and citation comparisons have been established.
 
 \section{Matched cases with individually publicized errors}\label{app:i4r}
 The I4R registry separates catalog listings, article-specific assessments and verified error disclosures. Unavailable reports and unnamed reviewer teams remain unresolved records; overview summaries alone do not establish material errors. Verified cases link the original article to the error, affected claim, source passage, replies and earliest substantiated public disclosure. Material corrections can strengthen or weaken a finding; these are not necessarily refuted papers. A later I4R listing does not reset the disclosure clock. The repository's \href{https://github.com/recite/sig_fault/blob/main/data/i4r/assessments.csv}{claim assessments} and \href{https://github.com/recite/sig_fault/blob/main/data/i4r/events.csv}{disclosure ledger} provide the case-level evidence.
