@@ -37,6 +37,8 @@ The causal interpretation requires comparable proportional citation paths withou
 
 The [manuscript appendix](ms/main.pdf) reports journal and publication-cohort adjustments, alternative diagnostics, earlier trends, longer windows, whole-paper bootstraps and influential-paper checks. All analyses are retrospective. In the interaction audit, omitting one highly cited comparison paper changes the proportional estimate from -16.9% to 1.6%; medians and means also move differently. Pooling does not remove that sensitivity or establish the counterfactual.
 
+A [synthetic difference-in-differences comparison for the pseudoreplication audit](data/lazic/sdid/README.md) estimates **-0.89 citations per paper per year** (95% interval [-2.01, 0.22]), close to ordinary DiD's -0.78 on the same papers and years. Flagged papers received 2.89 citations annually, compared with 3.79 predicted by the adjusted synthetic trajectory. The comparison uses older papers with three complete pre-disclosure years. Donor weights remain broadly spread, but synthetic weighting does not improve prediction of the held-out pre-disclosure year. Whole-article bootstrap draws refit both paper and time weights; all weights, sample decisions, draws and source receipts are saved. This additive check is not another independent study in the synthesis.
+
 ## Comparative estimates and their uncertainty
 
 Across four methodological audits and 367 contributing papers, inverse-variance weighting gives a relative citation-growth contrast of **-12.9%** (95% interval [-24.3, 0.2]%). The alternative instrumental-variable diagnostic gives -4.5% [-17.0, 9.9]%. These are summaries of the selected comparisons; interpreting them as effects of publicity requires the counterfactual assumptions above.
@@ -61,7 +63,7 @@ make check
 
 `make restore` installs the packages pinned in `renv.lock`. `make check` reads the archived inputs, regenerates results, figures, tables, this README, and the PDF, and runs linting and tests. After dependency installation, reproducing the estimates requires no network access. Acquisition scripts are separate from analysis and preserve source URLs, retrieval dates, hashes and stage receipts where available.
 
-For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make journal-cohort`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
+For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make journal-cohort`, `make lazic-sdid`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
 
 ## Source inventories and additional cases
 

@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "study": "lazic_sdid",
+  "stage": "02_estimate",
+  "started_at": "2026-10-07T20:23:59.829101+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-sdid/scripts/lazic_sdid/02_estimate.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "24f59899b46af1f6d7901fb52a504c7c2ee56181",
+  "inputs": [
+    {
+      "path": "data/lazic/sdid/panel.csv",
+      "sha256": "ec675ee9adc841c2e0d871d0b1fb47d38fae232f4b12894257c93ba627626c31",
+      "bytes": 129508,
+      "rows": 1408
+    },
+    {
+      "path": "data/lazic/sdid/dispositions.csv",
+      "sha256": "d47f1c74de064c2a4dbdb0676032602c179836be83b89f61c2d34e8bc07e1e37",
+      "bytes": 391255,
+      "rows": 800
+    },
+    {
+      "path": "data/lazic/sdid/specifications.csv",
+      "sha256": "3e7462d046d27c22598a5836b6587e47e667207c4a987b95ff88f665610164f5",
+      "bytes": 248,
+      "rows": 4
+    },
+    {
+      "path": "data/lazic/sdid/preparation_status.json",
+      "sha256": "093d2d215ba1ce526ceb008f89d955daa0c6a47ffd6d7a66aa8c1edb9b23f503",
+      "bytes": 91
+    },
+    {
+      "path": "renv.lock",
+      "sha256": "a20d28ff7e0fbaddd63b744355339cc6aa5188cd0b45fcbaaca46dce57308973",
+      "bytes": 166139
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/lazic/sdid/estimates.csv",
+      "sha256": "9f82409d28a059526ef5c77b05e281215977543daaa902f71bcd7a980276e6ef",
+      "bytes": 1560,
+      "rows": 4
+    },
+    {
+      "path": "data/lazic/sdid/placebos.csv",
+      "sha256": "11d4b24ede84d9de43f51d7ebfddd5f943871e0572964e295423ad5b5f6176d9",
+      "bytes": 508,
+      "rows": 4
+    },
+    {
+      "path": "data/lazic/sdid/paths.csv",
+      "sha256": "27ead967eea4e39bbf1007b7a292302fc37425d9a05143b45489368b2648f6b8",
+      "bytes": 2521,
+      "rows": 24
+    },
+    {
+      "path": "data/lazic/sdid/paper_weights.csv",
+      "sha256": "b52415d5c79ce9316e86bafb5584a922b31a365f083fa1535763d2bd26db3302",
+      "bytes": 23297,
+      "rows": 240
+    },
+    {
+      "path": "data/lazic/sdid/time_weights.csv",
+      "sha256": "90bcaa0108ee5a13a46e0feef956073b2fb03d94b4639871099f1100035b5334",
+      "bytes": 1003,
+      "rows": 24
+    },
+    {
+      "path": "data/lazic/sdid/balance.csv",
+      "sha256": "e9a1bb11e93244cb2bc09d43a96adecd6850792eba98acbfe8ea803acb27968a",
+      "bytes": 1734,
+      "rows": 22
+    },
+    {
+      "path": "data/lazic/sdid/bootstrap.csv",
+      "sha256": "6b90fdc9a142cfbc95988aaa66dd236616b2490b6d08761e0d1dffb7f3e066cf",
+      "bytes": 318684,
+      "rows": 7996
+    },
+    {
+      "path": "data/lazic/sdid/bootstrap_indices.csv",
+      "sha256": "8c824d209e599341125fd57c15e33d5a1a61b4003a1439706e62145117416836",
+      "bytes": 1518634,
+      "rows": 7996
+    },
+    {
+      "path": "data/lazic/sdid/models.rds",
+      "sha256": "0f1b03950dbd1add47368d88b880ef5d37865ad471b4abdd2ca3dfc429ae018e",
+      "bytes": 141167
+    },
+    {
+      "path": "data/lazic/sdid/R-session.txt",
+      "sha256": "94d3a6b2a016787ce7dfb8469c569fc04da3173ed82c36eb16fd1238da9f537b",
+      "bytes": 605
+    },
+    {
+      "path": "data/lazic/sdid/estimation_status.json",
+      "sha256": "3319e69f489d3fabdb649df1e20ed8f5b3ebb815c0eb0e2411b66055dc8ed596",
+      "bytes": 202
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/lazic_sdid/02_estimate.py",
+      "sha256": "6c49f6dff354ae89560f8f370b7e1179de015f49a380bc4a0d6eb333bb84bd66",
+      "bytes": 1447
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "R/synthetic_did.R",
+      "sha256": "6a922a6728af4a99c246461ac19f1350946ad2b9659929d68b49240afc583e26",
+      "bytes": 4428
+    },
+    {
+      "path": "scripts/lazic_sdid/estimate.R",
+      "sha256": "4fcabbc67bbf722b1560b927c3899f8618d9d9bcf19b380514d5ed0cd7dad1fb",
+      "bytes": 4514
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/lazic/sdid/receipts/01_prepare.json",
+      "sha256": "a00fd431f503bafc0f7830a833d7a344f418bebdd5ff737ffc1a5afa9e6dd467",
+      "bytes": 3123
+    }
+  ],
+  "checks": [
+    {
+      "name": "all_specifications",
+      "passed": true,
+      "detail": {
+        "models": 4,
+        "bootstrap_draws": 7996,
+        "max_identity_error": 2.8866e-15,
+        "bootstrap_rejected": 0,
+        "package_version": "0.0.9",
+        "package_commit": "70c1ce3eac58e28c30b67435ca377bb48baa9b8a"
+      }
+    },
+    {
+      "name": "bootstrap_complete",
+      "passed": true,
+      "detail": {
+        "models": 4,
+        "bootstrap_draws": 7996,
+        "max_identity_error": 2.8866e-15,
+        "bootstrap_rejected": 0,
+        "package_version": "0.0.9",
+        "package_commit": "70c1ce3eac58e28c30b67435ca377bb48baa9b8a"
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "models": 4,
+    "bootstrap_draws": 7996,
+    "max_identity_error": 2.8866e-15,
+    "bootstrap_rejected": 0,
+    "package_version": "0.0.9",
+    "package_commit": "70c1ce3eac58e28c30b67435ca377bb48baa9b8a"
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T20:24:51.005106+00:00"
+}

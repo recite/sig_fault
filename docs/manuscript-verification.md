@@ -8,9 +8,9 @@ with article effects and separate annual paths for those groups. The original
 Figure 1 is unchanged. Numbered stages in `scripts/nieuwenhuis_design/` generate
 source comparisons, sample support, balance, weights, estimates and exhibits.
 
-- The R suite passes 408 expectations, with no failures, warnings or skips.
+- The R suite passes 420 expectations, with no failures, warnings or skips.
   Repository Python formatting and lint checks and R linting pass.
-- The two bibliography tests and metadata validation of all 14 cited entries pass.
+- The two bibliography tests and metadata validation of all 15 cited entries pass.
 - Explicit dummy-variable regressions and independently assembled clustered
   covariance matrices reproduce eight core model coefficients and standard errors
   within 1e-7. The permanent tests include these comparisons.
@@ -26,7 +26,13 @@ source comparisons, sample support, balance, weights, estimates and exhibits.
   These stages read public archived inputs and require no citation acquisition.
 - The earlier independent paired-count calculation reproduces all four original
   meta-analysis standard errors. Those pooled estimates remain unchanged.
-- The manuscript compiles to 25 pages. Rendered pages were checked for legibility,
+- The synthetic DiD extension uses public frozen Lazic inputs. Its four models
+  independently reproduce from article-level matrices; all 7,996 recorded bootstrap
+  estimates reproduce their standard errors, and sampled draws refit exactly from
+  saved indices. The official package bootstrap agrees at identical seeds.
+  Planted treatment shifts verify that held-out flagged outcomes cannot alter weights.
+  Dependency versions, every sample decision, weights and resamples have receipts.
+- The manuscript compiles to 27 pages. Rendered pages were checked for legibility,
   clipping, tables and figures. There are no unresolved citations/references or
   overfull content. The existing microtype footnote-patch warning remains.
 

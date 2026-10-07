@@ -13,6 +13,7 @@
 \input{../tabs/design_diagnostics_macros.tex}
 \input{../tabs/lal_macros.tex}
 \input{../tabs/lazic_macros.tex}
+\input{../tabs/lazic_sdid_macros.tex}
 \input{../tabs/methodological_macros.tex}
 \input{../tabs/hmx_macros.tex}
 \input{../tabs/nieuwenhuis_macros.tex}
@@ -309,6 +310,33 @@ OpenCitations supplies \LazicLinks{} relationships. Citing records sharing a DOI
 One flagged paper received a public methodological criticism on May 17, 2013, with a response disputing the criticism. We exclude it from the first-known-publicity comparison and retain all \LazicClassified{} classified papers in a sensitivity. This eligibility change preceded estimation. Earlier errata for other papers include name and affiliation corrections; two notices remain incompletely reviewed. Excluding all papers with linked prior errata is an additional sensitivity, not a claim that every notice concerned the statistical problem.
 
 The main absolute contrast is the difference in equal-paper mean changes, with a Welch interval. Article/year fixed-effects Poisson estimation gives a proportional contrast of \LazicPercent\% (95\% interval \mbox{[\LazicLower, \LazicUpper]\%}). The \LazicZeroPapers{} papers with zero citations in both selected years drop from that fit but remain in the absolute contrast and descriptive summaries. The full-cohort and prior-erratum exclusions, a 2019--2021 post-period average, and a fixed cohort published by 2013 yield similarly inconclusive comparisons. Split-unit designs are more common among flagged papers; standardizing within those design strata gives a difference of \LazicStratified{} citations (bootstrap interval [\LazicStratifiedLower, \LazicStratifiedUpper]). The older cohort also had differing mean citation gains before publicity, weakening a causal interpretation. Full estimates and whole-paper bootstrap intervals are generated in the repository.
+
+
+\subsection{Synthetic difference-in-differences}
+Synthetic difference-in-differences gives a similar additive estimate to ordinary difference-in-differences on the same papers and years (Table~\ref{tab:lazic-sdid}). The synthetic estimate is \LazicSdidEstimate{} citations per paper per year (95\% interval [\LazicSdidLower, \LazicSdidUpper]), compared with \LazicSdidDid{} under ordinary DiD. Flagged papers averaged \LazicSdidObserved{} citations annually in 2018--2020; the level-adjusted synthetic comparison predicts \LazicSdidCounterfactual{}. These estimates concern the older papers with sufficient baseline histories, not the full audit population.
+
+We use the estimator of \citet{arkhangelsky2021}, with nonnegative comparison-paper and baseline-year weights, article and time intercepts, and the authors' default regularization. The main comparison includes originals published by 2013, uses 2014--2016 as the baseline, and omits the 2017 disclosure year. Every flagged paper and follow-up year receives equal target weight. The interval uses 1,999 whole-article bootstrap draws, refitting both sets of weights while retaining the original regularization parameters. It allows serial dependence within articles and assumes independence across articles, conditional on this publicity event. A causal interpretation requires the adjusted synthetic trajectory to represent citation changes absent the disclosure.
+
+The synthetic comparison uses the donors broadly: its effective donor count is \LazicSdidDonors{} of \LazicSdidControls{}, with a largest weight of \LazicSdidMaxWeight\%. Prediction before disclosure is less reassuring. A fresh fit trained on 2014--2015 predicts the flagged papers' 2016 citations with a gap of \mbox{\LazicSdidPlacebo}, compared with \mbox{\LazicSdidPlaceboDid} under ordinary DiD. Comparison papers' 2016 counts enter the time weights, but flagged papers' 2016 counts and all later counts do not enter weight fitting. Synthetic weighting therefore does not improve this particular prediction check. An older cohort supplies a fourth baseline year; that year receives zero weight in the baseline adjustment, though it still enters donor fitting. The repository reports every donor and time weight, publication-cohort and study-design balance, sample disposition, and bootstrap draw. None of these alternative estimates enters the synthesis as an independent audit.
+
+\begin{table}[htbp]
+\centering
+\caption{Citation changes after the pseudoreplication audit: synthetic and ordinary DiD}
+\label{tab:lazic-sdid}
+\scriptsize
+\input{../tabs/lazic_sdid.tex}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+Differences in annual citations per original paper, using distinct OpenCitations works of all types. Main baseline: 2014--2016; follow-up: 2018--2020. The older sample includes papers published by 2012; its four-year baseline starts in 2013. The shorter follow-up ends in 2019. Synthetic intervals use the article bootstrap; ordinary intervals use Welch uncertainty on article changes. The already documented 2013 warning is excluded throughout.
+\end{minipage}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../figs/lazic_sdid.pdf}
+\caption{Mean annual citations to flagged papers and their synthetic comparison in the pseudoreplication audit. The comparison is shifted by the estimated weighted pre-period level difference. The disclosure year, 2017, is omitted. The difference between the mean post-period paths equals the synthetic DiD estimate; fitted pre-period proximity does not establish the absent-disclosure trajectory.}
+\label{fig:lazic-sdid}
+\end{figure}
 
 \begin{figure}[htbp]
 \centering

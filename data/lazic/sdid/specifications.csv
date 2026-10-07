@@ -1,0 +1,5 @@
+specification,cutoff,pre_start,pre_end,post_start,post_end,n_flagged,n_comparison
+main,2013,2014,2016,2018,2020,50,26
+older_longer,2012,2013,2016,2018,2020,30,14
+older_same,2012,2014,2016,2018,2020,30,14
+shorter_post,2013,2014,2016,2018,2019,50,26

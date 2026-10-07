@@ -37,6 +37,8 @@ The causal interpretation requires comparable proportional citation paths withou
 
 The [manuscript appendix](ms/main.pdf) reports journal and publication-cohort adjustments, alternative diagnostics, earlier trends, longer windows, whole-paper bootstraps and influential-paper checks. All analyses are retrospective. In the interaction audit, omitting one highly cited comparison paper changes the proportional estimate from {{HmxPercent}}% to {{HmxLooMax}}%; medians and means also move differently. Pooling does not remove that sensitivity or establish the counterfactual.
 
+A [synthetic difference-in-differences comparison for the pseudoreplication audit](data/lazic/sdid/README.md) estimates **{{LazicSdidEstimate}} citations per paper per year** (95% interval [{{LazicSdidLower}}, {{LazicSdidUpper}}]), close to ordinary DiD's {{LazicSdidDid}} on the same papers and years. Flagged papers received {{LazicSdidObserved}} citations annually, compared with {{LazicSdidCounterfactual}} predicted by the adjusted synthetic trajectory. The comparison uses older papers with three complete pre-disclosure years. Donor weights remain broadly spread, but synthetic weighting does not improve prediction of the held-out pre-disclosure year. Whole-article bootstrap draws refit both paper and time weights; all weights, sample decisions, draws and source receipts are saved. This additive check is not another independent study in the synthesis.
+
 ## Comparative estimates and their uncertainty
 
 Across four methodological audits and {{AuditPapers}} contributing papers, inverse-variance weighting gives a relative citation-growth contrast of **{{AuditWeakPercent}}%** (95% interval [{{AuditWeakLower}}, {{AuditWeakUpper}}]%). The alternative instrumental-variable diagnostic gives {{AuditSensitivePercent}}% [{{AuditSensitiveLower}}, {{AuditSensitiveUpper}}]%. These are summaries of the selected comparisons; interpreting them as effects of publicity requires the counterfactual assumptions above.
@@ -61,7 +63,7 @@ make check
 
 `make restore` installs the packages pinned in `renv.lock`. `make check` reads the archived inputs, regenerates results, figures, tables, this README, and the PDF, and runs linting and tests. After dependency installation, reproducing the estimates requires no network access. Acquisition scripts are separate from analysis and preserve source URLs, retrieval dates, hashes and stage receipts where available.
 
-For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make journal-cohort`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
+For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make journal-cohort`, `make lazic-sdid`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
 
 ## Source inventories and additional cases
 

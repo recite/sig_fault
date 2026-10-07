@@ -1,0 +1,13 @@
+{
+  "LazicSdidEstimate": "-0.89",
+  "LazicSdidLower": "-2.01",
+  "LazicSdidUpper": "0.22",
+  "LazicSdidDid": "-0.78",
+  "LazicSdidPlacebo": "-0.36",
+  "LazicSdidPlaceboDid": "-0.20",
+  "LazicSdidObserved": "2.89",
+  "LazicSdidCounterfactual": "3.79",
+  "LazicSdidControls": "26",
+  "LazicSdidDonors": "25.86",
+  "LazicSdidMaxWeight": "4.42"
+}

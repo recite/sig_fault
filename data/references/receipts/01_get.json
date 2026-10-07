@@ -2,20 +2,19 @@
   "schema_version": 1,
   "study": "references",
   "stage": "01_get",
-  "started_at": "2026-10-07T06:32:58.304373+00:00",
+  "started_at": "2026-10-07T20:13:35.280284+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-research/scripts/references/01_get.py",
-    "--offline"
+    "/private/tmp/sig-fault-sdid/scripts/references/01_get.py"
   ],
   "python": "3.14.7",
-  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
+  "git_commit": "24f59899b46af1f6d7901fb52a504c7c2ee56181",
   "inputs": [
     {
       "path": "data/references/registry.csv",
-      "sha256": "4e82f11e9825d624e6aed35754f49b749e616426957f40435a436f7f727ad358",
-      "bytes": 498,
-      "rows": 14
+      "sha256": "b476d3d12870909bfb4fdd0e26db1bd6c8758556ada8db8cba03ad730c826a6d",
+      "bytes": 536,
+      "rows": 15
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/9b5297ab7aca7bda2d07eb0c2fe25268b478e8ceb24b6ee913a298ce7c5dc561.json",
@@ -38,16 +37,6 @@
       "bytes": 213
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json",
-      "sha256": "57e30a8b84370dd46b140586c4a8650a1fe218e64e3ee68e045aa337711aad49",
-      "bytes": 5931
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json.source.json",
-      "sha256": "29f33578657633b14286b5a88da2e03c53c0ff4bd1125fcbe222df65841b5145",
-      "bytes": 219
-    },
-    {
       "path": "private-data/cohorts/references/pipeline/crossref/f1d587bb95adc3c7b6fedd37104d05cb773256995ecab0a959edeb57e58168a3.json",
       "sha256": "c9a0ab5043a92d108ea5f1ad2281285da2d3463cd483f1fa4ce45593f16db713",
       "bytes": 10689
@@ -56,6 +45,16 @@
       "path": "private-data/cohorts/references/pipeline/crossref/f1d587bb95adc3c7b6fedd37104d05cb773256995ecab0a959edeb57e58168a3.json.source.json",
       "sha256": "75ba85c0c51ddf24a3190a2bf312f25674c374f8ee3e5b83d999b2a42e396e9d",
       "bytes": 217
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json",
+      "sha256": "57e30a8b84370dd46b140586c4a8650a1fe218e64e3ee68e045aa337711aad49",
+      "bytes": 5931
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json.source.json",
+      "sha256": "29f33578657633b14286b5a88da2e03c53c0ff4bd1125fcbe222df65841b5145",
+      "bytes": 219
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json",
@@ -68,14 +67,14 @@
       "bytes": 217
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/45cb93d2e4d7f6aa776cb66900e401f38ef943f3bf88c0651c5072894887d2af.json",
-      "sha256": "ae6dce9d1ff9396292cf45685361a88b49c6d5b3f9063044318051008972e031",
-      "bytes": 12649
+      "path": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json",
+      "sha256": "e16d907187661555fce1aa1521615ee5de72affc88790d637d525757e0d38414",
+      "bytes": 8013
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/45cb93d2e4d7f6aa776cb66900e401f38ef943f3bf88c0651c5072894887d2af.json.source.json",
-      "sha256": "fef9379a60481332a4be46b1e2cbd3565af878861b271f4d8689cb36068da732",
-      "bytes": 227
+      "path": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json.source.json",
+      "sha256": "d82eff3a1c7dddf01406343d1a142357116f7a6bd5da630e56a2ed20c0204451",
+      "bytes": 221
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/5056c19eca74d31cdb29ed95eebfed68e6724556874234fcbe8c859d7e6a8329.json",
@@ -88,34 +87,14 @@
       "bytes": 218
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json",
-      "sha256": "e16d907187661555fce1aa1521615ee5de72affc88790d637d525757e0d38414",
-      "bytes": 8013
+      "path": "private-data/cohorts/references/pipeline/crossref/45cb93d2e4d7f6aa776cb66900e401f38ef943f3bf88c0651c5072894887d2af.json",
+      "sha256": "ae6dce9d1ff9396292cf45685361a88b49c6d5b3f9063044318051008972e031",
+      "bytes": 12649
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json.source.json",
-      "sha256": "d82eff3a1c7dddf01406343d1a142357116f7a6bd5da630e56a2ed20c0204451",
-      "bytes": 221
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json",
-      "sha256": "ace991b2f41c95f142146044268bbfa6685f9a7c9afa9a94e1cc29d918894d9b",
-      "bytes": 5808
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json.source.json",
-      "sha256": "162fd9d6a4f031509c44ae679e5fd05fb4ed8ef750bcb51da7d16f93ed008860",
-      "bytes": 220
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json",
-      "sha256": "6a4819e69b7b291f61dd1d1cd3c552e1a9825afdc02e7d45655c9b89b5601458",
-      "bytes": 38492
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json.source.json",
-      "sha256": "2771fb1eb514b21bc85932acf49194a19fcf37c8551ec82a39edfb7c66608659",
-      "bytes": 218
+      "path": "private-data/cohorts/references/pipeline/crossref/45cb93d2e4d7f6aa776cb66900e401f38ef943f3bf88c0651c5072894887d2af.json.source.json",
+      "sha256": "fef9379a60481332a4be46b1e2cbd3565af878861b271f4d8689cb36068da732",
+      "bytes": 227
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/179b875288cd43d6f7ef76cc91ae20100a766c19f72fd91e117fef0bf40f03b8.json",
@@ -128,6 +107,16 @@
       "bytes": 223
     },
     {
+      "path": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json",
+      "sha256": "ace991b2f41c95f142146044268bbfa6685f9a7c9afa9a94e1cc29d918894d9b",
+      "bytes": 5808
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json.source.json",
+      "sha256": "162fd9d6a4f031509c44ae679e5fd05fb4ed8ef750bcb51da7d16f93ed008860",
+      "bytes": 220
+    },
+    {
       "path": "private-data/cohorts/references/pipeline/crossref/e8f08f41325928ae31b295eff5145f6384fa9a5b060541a3d493acd7473548c1.json",
       "sha256": "6748d1884159ece01946fb99e6f24adf8361b8e1c29c4fd02a51697a444481b5",
       "bytes": 24288
@@ -136,6 +125,26 @@
       "path": "private-data/cohorts/references/pipeline/crossref/e8f08f41325928ae31b295eff5145f6384fa9a5b060541a3d493acd7473548c1.json.source.json",
       "sha256": "f17276d0c20ad41d2449383fbdb653f3e268f9dc953f8555ca262fd8bca87ad8",
       "bytes": 225
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json",
+      "sha256": "6a4819e69b7b291f61dd1d1cd3c552e1a9825afdc02e7d45655c9b89b5601458",
+      "bytes": 38492
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json.source.json",
+      "sha256": "2771fb1eb514b21bc85932acf49194a19fcf37c8551ec82a39edfb7c66608659",
+      "bytes": 218
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json",
+      "sha256": "cc094ffa77fa96d4982a70abd5c8358206cda39fc2b8be09c8ddc2f6cd24231c",
+      "bytes": 5574
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json.source.json",
+      "sha256": "317b2c54d3ac6232f561f781c86d6cd77ab986196e381871173351755664b837",
+      "bytes": 221
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/5bf97754df71aa35fbb7a4392c5ee372f76409d7964fb376ff95836de9c8e616.json",
@@ -148,21 +157,21 @@
       "bytes": 224
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json",
-      "sha256": "cc094ffa77fa96d4982a70abd5c8358206cda39fc2b8be09c8ddc2f6cd24231c",
-      "bytes": 5574
+      "path": "private-data/cohorts/references/pipeline/crossref/42aca4a42bf96f1671c4c783ef496083e76ca2c273d03e59cf234c587027682c.json",
+      "sha256": "c8c18a6087b23830d9f8748a66fa05488c2089462fbe95f5b1c62c0143a8d352",
+      "bytes": 12362
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json.source.json",
-      "sha256": "317b2c54d3ac6232f561f781c86d6cd77ab986196e381871173351755664b837",
-      "bytes": 221
+      "path": "private-data/cohorts/references/pipeline/crossref/42aca4a42bf96f1671c4c783ef496083e76ca2c273d03e59cf234c587027682c.json.source.json",
+      "sha256": "b175d6edc863b7d82f62d52b8e1943fe9431b638497995c22e82e10e71b86a33",
+      "bytes": 219
     }
   ],
   "outputs": [
     {
       "path": "data/references/crossref.json",
-      "sha256": "b63527eb30fa0d6b02c44851f0c6ec2009e2aa9ee40e3ba7f060f2c096998c02",
-      "bytes": 240435
+      "sha256": "3be7158eb87535f6b01181b9868628a2b6a17f4dbd191c4be5b1a4be8a3b9e7e",
+      "bytes": 257707
     }
   ],
   "code": [
@@ -187,22 +196,22 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/f9dc5e300544fbb5c56053436dd2204db30a85628566b08bee313a2576f2d558.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
       "detail": "private-data/cohorts/references/pipeline/crossref/9b5297ab7aca7bda2d07eb0c2fe25268b478e8ceb24b6ee913a298ce7c5dc561.json"
     },
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/f1d587bb95adc3c7b6fedd37104d05cb773256995ecab0a959edeb57e58168a3.json"
+      "detail": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json"
     },
     {
       "name": "cached_source_integrity",
       "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json"
+      "detail": "private-data/cohorts/references/pipeline/crossref/f9dc5e300544fbb5c56053436dd2204db30a85628566b08bee313a2576f2d558.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/references/pipeline/crossref/f1d587bb95adc3c7b6fedd37104d05cb773256995ecab0a959edeb57e58168a3.json"
     },
     {
       "name": "doi_identity",
@@ -217,17 +226,12 @@
     {
       "name": "doi_identity",
       "passed": true,
-      "detail": "santos2006"
+      "detail": "lal2024"
     },
     {
       "name": "doi_identity",
       "passed": true,
-      "detail": "lal2024"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json"
+      "detail": "santos2006"
     },
     {
       "name": "cached_source_integrity",
@@ -242,6 +246,11 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
+      "detail": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
       "detail": "private-data/cohorts/references/pipeline/crossref/5056c19eca74d31cdb29ed95eebfed68e6724556874234fcbe8c859d7e6a8329.json"
     },
     {
@@ -252,7 +261,7 @@
     {
       "name": "doi_identity",
       "passed": true,
-      "detail": "lazic2018"
+      "detail": "osc2015"
     },
     {
       "name": "doi_identity",
@@ -262,17 +271,7 @@
     {
       "name": "doi_identity",
       "passed": true,
-      "detail": "osc2015"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json"
-    },
-    {
-      "name": "cached_source_integrity",
-      "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json"
+      "detail": "lazic2018"
     },
     {
       "name": "cached_source_integrity",
@@ -282,17 +281,17 @@
     {
       "name": "cached_source_integrity",
       "passed": true,
+      "detail": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
       "detail": "private-data/cohorts/references/pipeline/crossref/e8f08f41325928ae31b295eff5145f6384fa9a5b060541a3d493acd7473548c1.json"
     },
     {
-      "name": "doi_identity",
+      "name": "cached_source_integrity",
       "passed": true,
-      "detail": "serragarcia2021"
-    },
-    {
-      "name": "doi_identity",
-      "passed": true,
-      "detail": "woo2024"
+      "detail": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json"
     },
     {
       "name": "doi_identity",
@@ -302,7 +301,22 @@
     {
       "name": "doi_identity",
       "passed": true,
+      "detail": "serragarcia2021"
+    },
+    {
+      "name": "doi_identity",
+      "passed": true,
       "detail": "bordignon2020"
+    },
+    {
+      "name": "doi_identity",
+      "passed": true,
+      "detail": "woo2024"
+    },
+    {
+      "name": "cached_source_integrity",
+      "passed": true,
+      "detail": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json"
     },
     {
       "name": "cached_source_integrity",
@@ -310,9 +324,9 @@
       "detail": "private-data/cohorts/references/pipeline/crossref/5bf97754df71aa35fbb7a4392c5ee372f76409d7964fb376ff95836de9c8e616.json"
     },
     {
-      "name": "cached_source_integrity",
+      "name": "doi_identity",
       "passed": true,
-      "detail": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json"
+      "detail": "clark2023"
     },
     {
       "name": "doi_identity",
@@ -322,7 +336,7 @@
     {
       "name": "doi_identity",
       "passed": true,
-      "detail": "clark2023"
+      "detail": "arkhangelsky2021"
     }
   ],
   "sources": [
@@ -343,20 +357,20 @@
       "bytes": 5532
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1162/rest.88.4.641",
-      "retrieved_at": "2026-10-07T06:29:26.037813+00:00",
-      "sha256": "57e30a8b84370dd46b140586c4a8650a1fe218e64e3ee68e045aa337711aad49",
-      "bytes": 5931
-    },
-    {
       "path": "private-data/cohorts/references/pipeline/crossref/f1d587bb95adc3c7b6fedd37104d05cb773256995ecab0a959edeb57e58168a3.json",
       "cache_hit": true,
       "url": "https://api.crossref.org/works/10.1017/pan.2024.2",
       "retrieved_at": "2026-10-07T06:29:26.044727+00:00",
       "sha256": "c9a0ab5043a92d108ea5f1ad2281285da2d3463cd483f1fa4ce45593f16db713",
       "bytes": 10689
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/b78db31a30acbfdd03b432d830624a1832068b1adf2cc2ead8b5e8803cf2438e.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1162/rest.88.4.641",
+      "retrieved_at": "2026-10-07T06:29:26.037813+00:00",
+      "sha256": "57e30a8b84370dd46b140586c4a8650a1fe218e64e3ee68e045aa337711aad49",
+      "bytes": 5931
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/522af37437095ee19848b7527b8a9d058f546e30f6525350b42887e2d86bc221.json",
@@ -367,12 +381,12 @@
       "bytes": 8908
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/45cb93d2e4d7f6aa776cb66900e401f38ef943f3bf88c0651c5072894887d2af.json",
+      "path": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1371/journal.pbio.2005282",
-      "retrieved_at": "2026-10-07T06:29:24.103450+00:00",
-      "sha256": "ae6dce9d1ff9396292cf45685361a88b49c6d5b3f9063044318051008972e031",
-      "bytes": 12649
+      "url": "https://api.crossref.org/works/10.1126/science.aac4716",
+      "retrieved_at": "2026-10-07T06:29:24.056622+00:00",
+      "sha256": "e16d907187661555fce1aa1521615ee5de72affc88790d637d525757e0d38414",
+      "bytes": 8013
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/5056c19eca74d31cdb29ed95eebfed68e6724556874234fcbe8c859d7e6a8329.json",
@@ -383,28 +397,12 @@
       "bytes": 26396
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/8d3c68c822be5c41c362f7b3012d78b52ad0958e264eb024d7b88bbfbafd3940.json",
+      "path": "private-data/cohorts/references/pipeline/crossref/45cb93d2e4d7f6aa776cb66900e401f38ef943f3bf88c0651c5072894887d2af.json",
       "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1126/science.aac4716",
-      "retrieved_at": "2026-10-07T06:29:24.056622+00:00",
-      "sha256": "e16d907187661555fce1aa1521615ee5de72affc88790d637d525757e0d38414",
-      "bytes": 8013
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1126/sciadv.abd1705",
-      "retrieved_at": "2026-10-07T06:29:24.942739+00:00",
-      "sha256": "ace991b2f41c95f142146044268bbfa6685f9a7c9afa9a94e1cc29d918894d9b",
-      "bytes": 5808
-    },
-    {
-      "path": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1162/qss_a_00303",
-      "retrieved_at": "2026-10-07T06:29:24.677998+00:00",
-      "sha256": "6a4819e69b7b291f61dd1d1cd3c552e1a9825afdc02e7d45655c9b89b5601458",
-      "bytes": 38492
+      "url": "https://api.crossref.org/works/10.1371/journal.pbio.2005282",
+      "retrieved_at": "2026-10-07T06:29:24.103450+00:00",
+      "sha256": "ae6dce9d1ff9396292cf45685361a88b49c6d5b3f9063044318051008972e031",
+      "bytes": 12649
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/179b875288cd43d6f7ef76cc91ae20100a766c19f72fd91e117fef0bf40f03b8.json",
@@ -415,12 +413,36 @@
       "bytes": 8069
     },
     {
+      "path": "private-data/cohorts/references/pipeline/crossref/6101e3a859ed2f62d5187f820447c1829a50a6e464c6cdafc5e76da4d8cb8d56.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1126/sciadv.abd1705",
+      "retrieved_at": "2026-10-07T06:29:24.942739+00:00",
+      "sha256": "ace991b2f41c95f142146044268bbfa6685f9a7c9afa9a94e1cc29d918894d9b",
+      "bytes": 5808
+    },
+    {
       "path": "private-data/cohorts/references/pipeline/crossref/e8f08f41325928ae31b295eff5145f6384fa9a5b060541a3d493acd7473548c1.json",
       "cache_hit": true,
       "url": "https://api.crossref.org/works/10.1007/s11192-020-03536-z",
       "retrieved_at": "2026-10-07T06:29:24.823285+00:00",
       "sha256": "6748d1884159ece01946fb99e6f24adf8361b8e1c29c4fd02a51697a444481b5",
       "bytes": 24288
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/d1f3edb8b891af9f9bce391de935e52de59b8ee32aadbf73b690fdb717c2ade9.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1162/qss_a_00303",
+      "retrieved_at": "2026-10-07T06:29:24.677998+00:00",
+      "sha256": "6a4819e69b7b291f61dd1d1cd3c552e1a9825afdc02e7d45655c9b89b5601458",
+      "bytes": 38492
+    },
+    {
+      "path": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json",
+      "cache_hit": true,
+      "url": "https://api.crossref.org/works/10.1073/pnas.2304862120",
+      "retrieved_at": "2026-10-07T06:29:25.359125+00:00",
+      "sha256": "cc094ffa77fa96d4982a70abd5c8358206cda39fc2b8be09c8ddc2f6cd24231c",
+      "bytes": 5574
     },
     {
       "path": "private-data/cohorts/references/pipeline/crossref/5bf97754df71aa35fbb7a4392c5ee372f76409d7964fb376ff95836de9c8e616.json",
@@ -431,18 +453,18 @@
       "bytes": 10432
     },
     {
-      "path": "private-data/cohorts/references/pipeline/crossref/d49de7f5eacc85f59ba76c164b0435345b6c4cb0276572adecadb29bb0acdeb0.json",
-      "cache_hit": true,
-      "url": "https://api.crossref.org/works/10.1073/pnas.2304862120",
-      "retrieved_at": "2026-10-07T06:29:25.359125+00:00",
-      "sha256": "cc094ffa77fa96d4982a70abd5c8358206cda39fc2b8be09c8ddc2f6cd24231c",
-      "bytes": 5574
+      "path": "private-data/cohorts/references/pipeline/crossref/42aca4a42bf96f1671c4c783ef496083e76ca2c273d03e59cf234c587027682c.json",
+      "cache_hit": false,
+      "url": "https://api.crossref.org/works/10.1257/aer.20190159",
+      "retrieved_at": "2026-10-07T20:13:35.611914+00:00",
+      "sha256": "c8c18a6087b23830d9f8748a66fa05488c2089462fbe95f5b1c62c0143a8d352",
+      "bytes": 12362
     }
   ],
   "metrics": {
-    "references": 14
+    "references": 15
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T06:32:58.384864+00:00"
+  "finished_at": "2026-10-07T20:13:35.621422+00:00"
 }

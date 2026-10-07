@@ -104,6 +104,7 @@ readme_macros <- c(
   jsonlite::read_json("tabs/i4r_aggregate_macros.json"),
   jsonlite::read_json("tabs/lal_macros.json"),
   jsonlite::read_json("tabs/lazic_macros.json"),
+  jsonlite::read_json("tabs/lazic_sdid_macros.json"),
   jsonlite::read_json("tabs/nieuwenhuis_source_macros.json"),
   jsonlite::read_json("tabs/methodological_macros.json"),
   jsonlite::read_json("tabs/hmx_macros.json")

@@ -1517,6 +1517,12 @@
       "Maintainer": "Wolfgang Viechtbauer <wvb@metafor-project.org>",
       "Repository": "CRAN"
     },
+    "mvtnorm": {
+      "Package": "mvtnorm",
+      "Version": "1.4-2",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
     "nlme": {
       "Package": "nlme",
       "Version": "3.1-169",
@@ -2415,6 +2421,17 @@
       "Author": "Kirill Müller [aut] (ORCID: <https://orcid.org/0000-0002-1416-3412>), Lorenz Walthert [cre, aut], Indrajeet Patil [aut] (ORCID: <https://orcid.org/0000-0003-1995-6531>)",
       "Maintainer": "Lorenz Walthert <lorenz.walthert@icloud.com>",
       "Repository": "CRAN"
+    },
+    "synthdid": {
+      "Package": "synthdid",
+      "Version": "0.0.9",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "synth-inference",
+      "RemoteRepo": "synthdid",
+      "RemoteRef": "70c1ce3eac58e28c30b67435ca377bb48baa9b8a",
+      "RemoteSha": "70c1ce3eac58e28c30b67435ca377bb48baa9b8a"
     },
     "testthat": {
       "Package": "testthat",

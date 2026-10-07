@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "nieuwenhuis_design",
   "stage": "01_estimate",
-  "started_at": "2026-10-07T07:55:00.445887+00:00",
+  "started_at": "2026-10-07T20:22:22.401760+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-histories/scripts/nieuwenhuis_design/01_estimate.py"
+    "/private/tmp/sig-fault-sdid/scripts/nieuwenhuis_design/01_estimate.py"
   ],
   "python": "3.14.7",
-  "git_commit": "dbe8b1153bbc03c9a4f9c433297ebbd18befe841",
+  "git_commit": "24f59899b46af1f6d7901fb52a504c7c2ee56181",
   "inputs": [
     {
       "path": "data/nieuwenhuis/paired_panel.csv",
@@ -23,8 +23,8 @@
     },
     {
       "path": "renv.lock",
-      "sha256": "88cfc81e990816e9b466244b82e9541a0a6f04a940a876477d3dda98e53f895a",
-      "bytes": 165630
+      "sha256": "a20d28ff7e0fbaddd63b744355339cc6aa5188cd0b45fcbaaca46dce57308973",
+      "bytes": 166139
     }
   ],
   "outputs": [
@@ -85,8 +85,8 @@
     },
     {
       "path": "figs/journal_cohort_paths.pdf",
-      "sha256": "c4f04a0559a4eb8eba0a1e6fb7ba101476352b1b74e22d5bf6d75068bff6ea0c",
-      "bytes": 12711
+      "sha256": "28ca2b6391bc9932646bdef1dc13758b0808a445b2d1aa3a0ce0817d23f4bfad",
+      "bytes": 12712
     }
   ],
   "code": [
@@ -199,5 +199,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T07:55:14.943470+00:00"
+  "finished_at": "2026-10-07T20:22:24.054837+00:00"
 }

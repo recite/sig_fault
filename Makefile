@@ -12,7 +12,7 @@ figures: analysis
 	$(RSCRIPT) scripts/figures.R
 
 tables: analysis i4r-aggregate lazic-analysis nieuwenhuis synthesis
-	$(MAKE) journal-cohort
+	$(MAKE) journal-cohort lazic-sdid
 	$(RSCRIPT) scripts/tables.R
 
 manuscript: references
@@ -25,9 +25,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references scripts/nieuwenhuis_design tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
-	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references scripts/nieuwenhuis_design tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
-	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references scripts/nieuwenhuis_design tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references scripts/nieuwenhuis_design scripts/lazic_sdid tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references scripts/nieuwenhuis_design scripts/lazic_sdid tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references scripts/nieuwenhuis_design scripts/lazic_sdid tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
 	python3 -m black --check scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m isort --check-only --profile black scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m flake8 --max-line-length=88 scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
@@ -264,3 +264,9 @@ references-fetch:
 journal-cohort:
 	RSCRIPT='$(RSCRIPT)' python3 -m scripts.nieuwenhuis_design.01_estimate
 	RSCRIPT='$(RSCRIPT)' python3 -m scripts.nieuwenhuis_design.02_diagnostics
+
+.PHONY: lazic-sdid
+lazic-sdid:
+	python3 -m scripts.lazic_sdid.01_prepare
+	RSCRIPT='$(RSCRIPT)' python3 -m scripts.lazic_sdid.02_estimate
+	RSCRIPT='$(RSCRIPT)' python3 -m scripts.lazic_sdid.03_report

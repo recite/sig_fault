@@ -1,0 +1,8 @@
+{
+  "models": 4,
+  "bootstrap_draws": 7996,
+  "max_identity_error": 2.8866e-15,
+  "bootstrap_rejected": 0,
+  "package_version": "0.0.9",
+  "package_commit": "70c1ce3eac58e28c30b67435ca377bb48baa9b8a"
+}

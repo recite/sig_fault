@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "study": "lazic_sdid",
+  "stage": "03_report",
+  "started_at": "2026-10-07T20:26:36.530377+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-sdid/scripts/lazic_sdid/03_report.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "24f59899b46af1f6d7901fb52a504c7c2ee56181",
+  "inputs": [
+    {
+      "path": "data/lazic/sdid/estimates.csv",
+      "sha256": "9f82409d28a059526ef5c77b05e281215977543daaa902f71bcd7a980276e6ef",
+      "bytes": 1560,
+      "rows": 4
+    },
+    {
+      "path": "data/lazic/sdid/placebos.csv",
+      "sha256": "11d4b24ede84d9de43f51d7ebfddd5f943871e0572964e295423ad5b5f6176d9",
+      "bytes": 508,
+      "rows": 4
+    },
+    {
+      "path": "data/lazic/sdid/paths.csv",
+      "sha256": "27ead967eea4e39bbf1007b7a292302fc37425d9a05143b45489368b2648f6b8",
+      "bytes": 2521,
+      "rows": 24
+    },
+    {
+      "path": "data/lazic/sdid/paper_weights.csv",
+      "sha256": "b52415d5c79ce9316e86bafb5584a922b31a365f083fa1535763d2bd26db3302",
+      "bytes": 23297,
+      "rows": 240
+    },
+    {
+      "path": "data/lazic/sdid/time_weights.csv",
+      "sha256": "90bcaa0108ee5a13a46e0feef956073b2fb03d94b4639871099f1100035b5334",
+      "bytes": 1003,
+      "rows": 24
+    },
+    {
+      "path": "data/lazic/sdid/balance.csv",
+      "sha256": "e9a1bb11e93244cb2bc09d43a96adecd6850792eba98acbfe8ea803acb27968a",
+      "bytes": 1734,
+      "rows": 22
+    },
+    {
+      "path": "data/lazic/sdid/bootstrap.csv",
+      "sha256": "6b90fdc9a142cfbc95988aaa66dd236616b2490b6d08761e0d1dffb7f3e066cf",
+      "bytes": 318684,
+      "rows": 7996
+    },
+    {
+      "path": "data/lazic/sdid/bootstrap_indices.csv",
+      "sha256": "8c824d209e599341125fd57c15e33d5a1a61b4003a1439706e62145117416836",
+      "bytes": 1518634,
+      "rows": 7996
+    },
+    {
+      "path": "data/lazic/sdid/models.rds",
+      "sha256": "0f1b03950dbd1add47368d88b880ef5d37865ad471b4abdd2ca3dfc429ae018e",
+      "bytes": 141167
+    },
+    {
+      "path": "data/lazic/sdid/R-session.txt",
+      "sha256": "94d3a6b2a016787ce7dfb8469c569fc04da3173ed82c36eb16fd1238da9f537b",
+      "bytes": 605
+    },
+    {
+      "path": "data/lazic/sdid/estimation_status.json",
+      "sha256": "3319e69f489d3fabdb649df1e20ed8f5b3ebb815c0eb0e2411b66055dc8ed596",
+      "bytes": 202
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/lazic/sdid/README.md",
+      "sha256": "e9ecb4ab76526764217b0243bc6ef61d46748181a1c604ae7e10afec64d8500b",
+      "bytes": 2925
+    },
+    {
+      "path": "tabs/lazic_sdid.tex",
+      "sha256": "25e2bcb830aa1622a2c00fddd9ab9ba346ecbfd9134cf3b57db8c93991a72533",
+      "bytes": 448
+    },
+    {
+      "path": "tabs/lazic_sdid_macros.tex",
+      "sha256": "cf21a0b5cf237811a1f6ab31a23193963efec0aac2942ab6b185769efbfaa0d3",
+      "bytes": 417
+    },
+    {
+      "path": "tabs/lazic_sdid_macros.json",
+      "sha256": "f6e53b8c14e4f6edd83933d524a5089d125b72f0f2c2a3238cf1f28d186ad127",
+      "bytes": 343
+    },
+    {
+      "path": "figs/lazic_sdid.pdf",
+      "sha256": "89f72bd746659df30ddd3e7d68fc894e8411d5bdc0be94454ea96efe9c2fd291",
+      "bytes": 5454
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/lazic_sdid/03_report.py",
+      "sha256": "b2c460099e049770d7ac1bab916581a1f9096df3e58cf5d40885c84294fc9d51",
+      "bytes": 1551
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "scripts/lazic_sdid/report.R",
+      "sha256": "2a0f669751ed2bba73a196c957eb611b73b3e297ba7a6450b2e87096877f2d06",
+      "bytes": 6078
+    }
+  ],
+  "parents": [
+    {
+      "path": "data/lazic/sdid/receipts/02_estimate.json",
+      "sha256": "c353c4e697d77b5f778c3a84e4b40a849dff30dbb2db73325e568f853d5abb96",
+      "bytes": 5264
+    }
+  ],
+  "checks": [
+    {
+      "name": "generated_estimate",
+      "passed": true,
+      "detail": {
+        "model": "-0.894768643697688",
+        "displayed": "-0.89"
+      }
+    },
+    {
+      "name": "generated_lower",
+      "passed": true,
+      "detail": {
+        "model": "-2.0108050781123",
+        "displayed": "-2.01"
+      }
+    },
+    {
+      "name": "generated_upper",
+      "passed": true,
+      "detail": {
+        "model": "0.22126779071692",
+        "displayed": "0.22"
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {},
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T20:26:36.675023+00:00"
+}

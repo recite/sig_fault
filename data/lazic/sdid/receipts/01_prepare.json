@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "study": "lazic_sdid",
+  "stage": "01_prepare",
+  "started_at": "2026-10-07T20:23:59.748672+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-sdid/scripts/lazic_sdid/01_prepare.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "24f59899b46af1f6d7901fb52a504c7c2ee56181",
+  "inputs": [
+    {
+      "path": "data/lazic/articles.csv",
+      "sha256": "88f47a34e77da77e692c443074f95ae4e6e6ef0cd700558c37bd19afe43383b8",
+      "bytes": 92206,
+      "rows": 200
+    },
+    {
+      "path": "data/lazic/opencitations/panel.csv",
+      "sha256": "d3da1b6da218c37f4deb4322aaf86fd9adbf40d2ddfcbccf198687e0b7578c62",
+      "bytes": 120904,
+      "rows": 2552
+    },
+    {
+      "path": "data/lazic/prior_warnings.csv",
+      "sha256": "918d16bfb1404ae958d6fbfa9f459145289a57b8ce47ecc3b3af9cb2bc54e4d9",
+      "bytes": 380,
+      "rows": 1
+    },
+    {
+      "path": "docs/lazic/synthetic-did-design.md",
+      "sha256": "ffe9b7a76c1e8f1889583b97acf6b331bacc8100dc9e34d45fe4bd5aa65997f9",
+      "bytes": 6511
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/lazic/sdid/panel.csv",
+      "sha256": "ec675ee9adc841c2e0d871d0b1fb47d38fae232f4b12894257c93ba627626c31",
+      "bytes": 129508,
+      "rows": 1408
+    },
+    {
+      "path": "data/lazic/sdid/dispositions.csv",
+      "sha256": "d47f1c74de064c2a4dbdb0676032602c179836be83b89f61c2d34e8bc07e1e37",
+      "bytes": 391255,
+      "rows": 800
+    },
+    {
+      "path": "data/lazic/sdid/specifications.csv",
+      "sha256": "3e7462d046d27c22598a5836b6587e47e667207c4a987b95ff88f665610164f5",
+      "bytes": 248,
+      "rows": 4
+    },
+    {
+      "path": "data/lazic/sdid/preparation_status.json",
+      "sha256": "093d2d215ba1ce526ceb008f89d955daa0c6a47ffd6d7a66aa8c1edb9b23f503",
+      "bytes": 91
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/lazic_sdid/01_prepare.py",
+      "sha256": "a726d5fc7ab20fb574c1b50a9521901d6d769cfb589e6b413ff25dd2628cd2c9",
+      "bytes": 4045
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "main_population",
+      "passed": true,
+      "detail": {
+        "0": 26,
+        "1": 50
+      }
+    },
+    {
+      "name": "older_longer_population",
+      "passed": true,
+      "detail": {
+        "0": 14,
+        "1": 30
+      }
+    },
+    {
+      "name": "older_same_population",
+      "passed": true,
+      "detail": {
+        "0": 14,
+        "1": 30
+      }
+    },
+    {
+      "name": "shorter_post_population",
+      "passed": true,
+      "detail": {
+        "0": 26,
+        "1": 50
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "specifications": 4,
+    "panel_rows": 1408,
+    "dispositions": 800,
+    "complete": true
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T20:23:59.779232+00:00"
+}
