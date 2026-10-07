@@ -7,6 +7,8 @@ The roster retains 157 classified papers; 157 identities are resolved. Complete 
 The historical cohort has complete paired histories.
 These counts measure download progress, not OpenAlex's coverage of the literature. An uncollected history says nothing about how many citations the database contains for that paper.
 
+[OpenAlex citation paths through 2025](long-citation-paths.md) extend Figure 1 using the same 153 papers and counting rules.
+
 ## Same-paper annual counts
 
 Web of Science retains the historical counting rules. OpenAlex's primary count includes articles and reviews; its broader count also includes preprints, book chapters and proceedings articles. The historical exports lack the document-type detail needed to make these restrictions identical.

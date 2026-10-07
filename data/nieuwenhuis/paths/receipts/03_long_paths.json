@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "study": "nieuwenhuis_paths",
+  "stage": "03_long_paths",
+  "started_at": "2026-10-07T22:26:48.808389+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-openalex-2025/scripts/nieuwenhuis_design/03_long_paths.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "99c2ba040a6c11911cce18b41028820e0e8c9422",
+  "inputs": [
+    {
+      "path": "data/nieuwenhuis/identities.csv",
+      "sha256": "c90a020b1afd2f1c4e5eb9e59b3f5bd0afa2014c41374cdffd351e36c279c23c",
+      "bytes": 98802,
+      "rows": 157
+    },
+    {
+      "path": "data/nieuwenhuis/coverage.csv",
+      "sha256": "aca8428f810df584687c87c2385312306fc9f7d308ce3c028a0ac3d1c53e0614",
+      "bytes": 8730,
+      "rows": 157
+    },
+    {
+      "path": "data/nieuwenhuis/citation_edges.csv",
+      "sha256": "b03630d248022f30ba1f6260544adf8d9187e2f7ecb6355d104051dce067d45f",
+      "bytes": 19637074,
+      "rows": 55114
+    },
+    {
+      "path": "data/nieuwenhuis/duplicate_resolutions.csv",
+      "sha256": "1ac96bc8d81c9b88a73e50e3c1d272ba66e42feef65014669244065e7c571cf4",
+      "bytes": 4911,
+      "rows": 6
+    },
+    {
+      "path": "data/nieuwenhuis/paired_panel.csv",
+      "sha256": "673db64a5cd8ecbf07edfbddab277657330e0a5b3d97d4c30d1d7dea268d6755",
+      "bytes": 59170,
+      "rows": 1071
+    },
+    {
+      "path": "renv.lock",
+      "sha256": "a20d28ff7e0fbaddd63b744355339cc6aa5188cd0b45fcbaaca46dce57308973",
+      "bytes": 166139
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/nieuwenhuis/paths/panel.csv",
+      "sha256": "e4f21dd42bf87ee3d476367da882e03197e6015e612e8dbb4f7878103765f6e3",
+      "bytes": 41139,
+      "rows": 2601
+    },
+    {
+      "path": "data/nieuwenhuis/paths/annual_summary.csv",
+      "sha256": "37cc44bf721c9a4eb3fab478ff3b1a8193ac0bc90ae90a493c1003acb272e7d6",
+      "bytes": 1269,
+      "rows": 34
+    },
+    {
+      "path": "figs/citation_paths_openalex.pdf",
+      "sha256": "df64d8e2e0c7ecfba785aa9d0f65424a5a0b27c50d2993403ed0147fa063b6c0",
+      "bytes": 26251
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/nieuwenhuis_design/03_long_paths.py",
+      "sha256": "62e954428c021e25d614f5fce12a02a00ef0a17b8163d2f72abbdfcca8b73f13",
+      "bytes": 4541
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "scripts/nieuwenhuis.py",
+      "sha256": "94383af60f55d542fc6d732bac00ad77190c2443cb1cd3ad8d95b8f94e48c272",
+      "bytes": 38935
+    },
+    {
+      "path": "scripts/nieuwenhuis_design/long_paths.R",
+      "sha256": "2c5d1610fee3f2893baebdf92c8501491552d7dab0cad32721712db0947292ca",
+      "bytes": 2331
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "full_original_cohort",
+      "passed": true,
+      "detail": 153
+    },
+    {
+      "name": "complete_downloads",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "frozen_cutoff",
+      "passed": true,
+      "detail": "2025-12-31"
+    },
+    {
+      "name": "historical_overlap_exact",
+      "passed": true,
+      "detail": {
+        "article_years": 1071,
+        "years": "2009-2015"
+      }
+    },
+    {
+      "name": "fixed_denominators",
+      "passed": true,
+      "detail": {
+        "flagged": 76,
+        "comparison": 77
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "papers": 153,
+    "start_year": 2009,
+    "end_year": 2025,
+    "article_years": 2601,
+    "citations": 40282,
+    "citation_types": [
+      "article",
+      "review"
+    ],
+    "cutoff": "2025-12-31"
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T22:26:49.842931+00:00"
+}

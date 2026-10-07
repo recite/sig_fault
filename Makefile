@@ -8,7 +8,7 @@ restore:
 analysis:
 	$(RSCRIPT) scripts/run_all.R
 
-figures: analysis
+figures: analysis nieuwenhuis-paths
 	$(RSCRIPT) scripts/figures.R
 
 tables: analysis i4r-aggregate lazic-analysis nieuwenhuis synthesis
@@ -270,3 +270,7 @@ lazic-sdid:
 	python3 -m scripts.lazic_sdid.01_prepare
 	RSCRIPT='$(RSCRIPT)' python3 -m scripts.lazic_sdid.02_estimate
 	RSCRIPT='$(RSCRIPT)' python3 -m scripts.lazic_sdid.03_report
+
+.PHONY: nieuwenhuis-paths
+nieuwenhuis-paths:
+	RSCRIPT='$(RSCRIPT)' python3 -m scripts.nieuwenhuis_design.03_long_paths

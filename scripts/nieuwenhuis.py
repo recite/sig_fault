@@ -780,6 +780,9 @@ def report():
         "the literature. An uncollected history says nothing about how many "
         "citations the database contains for that paper.",
         "",
+        "[OpenAlex citation paths through 2025](long-citation-paths.md) extend "
+        "Figure 1 using the same 153 papers and counting rules.",
+        "",
         "## Same-paper annual counts",
         "",
         "Web of Science retains the historical counting rules. OpenAlex's primary "
