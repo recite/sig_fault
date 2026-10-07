@@ -10,5 +10,5 @@
   "raw_fe_identity_error": 2.2204e-16,
   "currently_retracted_targets": 0,
   "classified_as_statistical_error": false,
-  "broader_synthesis": "data/meta/assessment_synthesis.csv"
+  "included_in_methodological_synthesis": false
 }

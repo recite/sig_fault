@@ -1,0 +1,7 @@
+{
+  "references": 14,
+  "cited_keys": 14,
+  "validated": true,
+  "year_rule": "Print year when supplied; otherwise publication year",
+  "semantic_review": "docs/literature-and-target.md"
+}

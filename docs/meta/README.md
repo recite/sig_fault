@@ -1,6 +1,6 @@
 # Precision-weighted synthesis across three audits
 
-The [four-study synthesis](assessments.md) adds psychology replication evidence and retains these three-audit estimates as a separately reported comparison.
+The [four-audit synthesis](assessments.md) adds the interaction-model audit and retains these three-audit estimates as a separately reported comparison.
 
 The synthesis combines the Nieuwenhuis, Lal and Lazic contrasts on the log relative-growth scale, weighting each by the inverse of its estimated sampling variance. The I4R pilot is excluded from pooling; its three matched cases remain available as [standalone comparisons](../i4r/aggregate-results.md).
 

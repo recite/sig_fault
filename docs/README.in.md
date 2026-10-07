@@ -1,35 +1,43 @@
-# Significant Error: Citations After Statistical Criticism and Replication
+# Methodological Criticism and Continued Citation
 
 Ken Cor and Gaurav Sood
 
 [Read the paper](ms/main.pdf) · [Analysis results](tabs/results.json) · [Data and measurement](docs/data.md)
 
+Finding an error can improve later research only if researchers learn about it and reconsider their use of the affected work. We study what happens to citations after methodological audits identify problems in published research. The question is whether publicizing those problems changes subsequent citation, and whether citing papers acknowledge the concerns.
+
 ## What we learn
 
-**Adverse assessments are followed by modestly slower relative citation growth, while affected papers remain widely cited.** Across four methodological audits and a psychology replication project, the precision-weighted estimate is **{{AssessmentWeakPercent}}%** (95% interval [{{AssessmentWeakLower}}, {{AssessmentWeakUpper}}]%). Substituting the alternative instrumental-variable diagnostic gives {{AssessmentSensitivePercent}}% [{{AssessmentSensitiveLower}}, {{AssessmentSensitiveUpper}}]%. This summarizes the included studies; it is not an average effect across all scientific errors. The [five-study synthesis](docs/meta/assessments.md) shows the component weights, narrower three-audit result, and timing, citation-source and random-effects checks.
+**The affected papers remained widely cited. The comparative estimates allow a citation penalty, whose size depends on the diagnostic and comparison.** In the neuroscience audit, flagged papers' median annual citations rose from {{MedianFlaggedBefore}} in 2010 to {{MedianFlaggedMin}}–{{MedianFlaggedMax}} during 2012–2015. A separate sample of citing passages recorded no acknowledgment of concerns in **{{Nonack}} of {{Rated}} valid completed ratings**.
 
-The new [psychology replication analysis](data/cohorts/rpp/pipeline/README.md) covers **{{RppPapers}} original papers**: {{RppFailed}} with unsuccessful and {{RppSuccessful}} with successful replication judgments. Following the project's 2015 announcement, the unsuccessful group had a **{{RppReduction}}% smaller post/pre citation ratio** (95% interval [{{RppLower}}, {{RppUpper}}]%), standardizing journal composition. Their mean annual citations changed from {{RppFailedMeanBefore}} to {{RppFailedMeanAfter}}; the successful group's changed from {{RppSuccessfulMeanBefore}} to {{RppSuccessfulMeanAfter}}. An unsuccessful replication is not classified as a statistical error. This comparison includes both possible penalties for unsuccessful replications and benefits from successful ones.
+Across four methodological audits and **{{AuditPapers}} contributing papers**, the main precision-weighted contrast is **{{AuditWeakPercent}}%** (95% interval [{{AuditWeakLower}}, {{AuditWeakUpper}}]%). Substituting the alternative instrumental-variable diagnostic gives {{AuditSensitivePercent}}% [{{AuditSensitiveLower}}, {{AuditSensitiveUpper}}]%. These percentages compare flagged and comparison papers' post/pre citation ratios. They summarize this collection of audits, not an average effect across all scientific errors.
 
-The neuroscience evidence also shows why continued citation and a citation penalty can coexist. Flagged papers' median annual citations rose from {{MedianFlaggedBefore}} in 2010 to {{MedianFlaggedMin}}–{{MedianFlaggedMax}} during 2012–2015, even though their proportional growth lagged behind comparison papers. In a separate citation-context sample, **{{Nonack}} of {{Rated}} valid completed ratings recorded no acknowledgment of concerns**. These codes concern citations to the neuroscience papers, not the other cohorts.
+Continued citation and a penalty can coexist: a criticized paper may receive many citations while receiving fewer than it otherwise would have. Citations also need not endorse the disputed inference; a later paper may use an unaffected result, a method, or background information. The context sample measures recorded acknowledgment after the neuroscience critique, not authors' awareness or the change in acknowledgment from before publication.
 
-The 2011 critique explained the mistake of treating a significant result and a nonsignificant result as evidence that two effects differ. Its authors supplied the paper-level classifications. Researchers could recognize the mistake in an original paper after reading the critique. [Replacing the original citation exports with OpenAlex](docs/nieuwenhuis/README.md) produces a similar growth estimate on the same papers: {{NwOaWosPercent}}% using Web of Science and {{NwOaPercent}}% using OpenAlex. This checks source sensitivity; neither database is assumed to be a complete citation census.
+## Data and research design
 
-## What has been collected and analyzed
+The paper examines four audits with recoverable original papers, methodological assessments, and publicity dates:
 
-The [interaction-model audit](data/cohorts/hmx/pipeline/README.md) adds 22 assessed papers. Its mean citation-growth contrast is {{HmxPercent}}% [{{HmxLower}}, {{HmxUpper}}]%, but it changes to {{HmxLooMax}}% when one highly cited comparison paper is omitted. Flagged-paper medians rise while comparison-paper medians fall. This audit does not show a clear publication-related break; its formal publication also followed earlier circulation. The pooled version excludes a paper already in the IV audit.
+| Audit | Assessment and comparison | Years used in synthesis |
+| --- | --- | --- |
+| [Neuroscience](docs/data.md) | Invalid comparisons of significant and nonsignificant effects; {{Flagged}} flagged and {{Comparison}} comparison papers | 2010 and 2012, around the 2011 critique |
+| [Animal experiments](docs/lazic/README.md) | Pseudoreplication; {{LazicFlagged}} flagged and {{LazicComparison}} comparison papers after excluding unclear assessments and an earlier-warning paper | 2016 and 2018, around the 2017 public release |
+| [Instrumental variables](docs/lal/README.md) | Weak-instrument screening or sensitivity of inference in {{LalPapers}} assessed political-science papers | 2023 and 2025, around formal publication in 2024 |
+| [Interaction models](data/cohorts/hmx/pipeline/README.md) | Severe extrapolation; {{HmxFlaggedPapers}} flagged and {{HmxComparisonPapers}} comparison papers | 2017 and 2019, around online publication in 2018 |
 
-The five-study synthesis uses {{AssessmentPapers}} contributing original papers in its main specification. The [animal-study audit](docs/lazic/README.md) preserves all 200 source assessments, including unclear cases excluded from its contrast. The [study inventory](data/cohorts/README.md) and [larger FORRT/statcheck inventories](docs/inventories.md) preserve additional sources; collecting an inventory does not mean its citation effect has been estimated. [Expansion status](docs/meta/expansion-status.md) distinguishes completed analyses from remaining identity, timing and citation work.
+The assessments range from identifiable errors in reasoning to diagnostic concerns about an estimate. A flagged diagnostic need not establish that a substantive conclusion is false. An unflagged paper may have other problems. Failed-replication citation research is a separate project and is excluded from this paper and its four-audit synthesis.
 
-The I4R extension has only **{{IfrCases}} selected matched cases** and remains outside the meta-analysis. Its [case comparisons](docs/i4r/aggregate-results.md) and [synthetic-control checks](docs/i4r/synthetic-results.md) remain available.
+We count distinct citing documents per original paper and year. Zero counts require a completed citation history; missing histories remain missing. Poisson models with article and calendar-year fixed effects compare proportional citation changes, with uncertainty clustered by article. The synthesis combines one log relative-growth estimate per audit using inverse estimated sampling variances. Papers with no citations in either selected year remain in descriptive summaries but do not identify the Poisson coefficient. The interaction component excludes an original already included in the instrumental-variable audit.
 
-## Research design
+The causal interpretation requires comparable proportional citation paths without the publicity episode. The audits were not randomized, and earlier growth sometimes differs. The instrumental-variable and interaction critiques circulated before formal publication, so their comparisons concern additional publicity. The longer neuroscience follow-up covers 2012–2015, and the animal-study follow-up also examines 2019 and later years. Those comparisons are reported alongside the adjacent-year synthesis.
 
-- **Neuroscience papers and timing:** {{Flagged}} flagged and {{Comparison}} comparison papers, with 2010 as the baseline and 2012–2015 as the post period. The critique appeared in August 2011; that transition year is excluded from the main model. Citation-free years within covered histories remain zero.
-- **Comparison:** proportional citation changes, estimated by Poisson pseudo-maximum likelihood with article and calendar-year fixed effects and article-clustered uncertainty. The percentage compares the groups’ post/pre citation ratios, not the number of additional citations gained.
-- **Citation context:** the historical post-publicity sample contains {{Rated}} valid completed ratings, {{CodingFalse}} false links, {{Unavailable}} unavailable article, and {{Uncoded}} uncoded record. It measures recorded qualifications after publicity, not their change from before publicity or the authors’ awareness.
-- **Interpretation:** a causal reading requires comparable citation trajectories without the critique. Different earlier growth, unobserved awareness, and citations to unaffected findings limit that interpretation.
+The [manuscript appendix](ms/main.pdf) reports journal and publication-cohort adjustments, alternative diagnostics, earlier trends, longer windows, whole-paper bootstraps and influential-paper checks. All analyses are retrospective. In the interaction audit, omitting one highly cited comparison paper changes the proportional estimate from {{HmxPercent}}% to {{HmxLooMax}}%; medians and means also move differently. Pooling does not remove that sensitivity or establish the counterfactual.
 
-The appendix reports journal-by-year and publication-cohort-by-year effects, absolute-change models, later windows, restricted samples, data-inclusion checks, and whole-paper bootstrap uncertainty. All analyses are retrospective. The manuscript reports citation levels alongside relative-growth comparisons and preserves the difference between statistical errors, adverse diagnostics and unsuccessful replications.
+## Citation-source validation
+
+[Reconstructing the neuroscience histories with OpenAlex](docs/nieuwenhuis/README.md) gives a similar estimate on the same original papers and years: {{NwOaWosPercent}}% using historical Web of Science exports and {{NwOaPercent}}% using OpenAlex articles and reviews. The paired source-induced change in the estimated growth ratio is {{NwOaDifference}}% (95% interval [{{NwOaDifferenceLower}}, {{NwOaDifferenceUpper}}]%). This is a measurement comparison; neither database is assumed to contain a complete census of citations.
+
+[Link and date diagnostics](docs/nieuwenhuis/diagnostics.md) distinguish coverage from dating differences. A [third-source link check](docs/nieuwenhuis/validation.md) and [full-cohort OpenCitations comparison](docs/nieuwenhuis/opencitations.md) provide further checks. Agreement in aggregate estimates does not establish that every recorded citation is correct.
 
 ## Reproduce
 
@@ -41,36 +49,31 @@ python3 -m pip install -r requirements-i4r.txt
 make check
 ```
 
-`make restore` installs the packages pinned in `renv.lock`. `make check` reads the original local data, regenerates results, figures, tables, this README, and the PDF, and runs linting and tests. After dependency installation, the analysis requires no network access. No Docker is needed.
+`make restore` installs the packages pinned in `renv.lock`. `make check` reads the archived inputs, regenerates results, figures, tables, this README, and the PDF, and runs linting and tests. After dependency installation, reproducing the estimates requires no network access. Acquisition scripts are separate from analysis and preserve source URLs, retrieval dates, hashes and stage receipts where available.
 
-For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make synthesis`, `make lint`, or `make test`. Edit the README’s prose in `docs/README.in.md`; numerical values come from the analysis. Edit the paper in `ms/main.tex`.
+For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
 
-## Files
+## Source inventories and additional cases
 
-The [I4R extension](docs/i4r/README.md) builds a sourced registry of significant errors and their earliest public disclosures, followed by separate control matching and citation-effect analysis. It inventories both full discovered catalogs, keeps unresolved assessments visible, and reports a separately matched [secondary analysis of annual citation totals](docs/i4r/aggregate-results.md). The primary analysis of deduplicated article/review links remains pending. See the [coverage report](docs/i4r/coverage.md) and [evidence catalog](docs/i4r/catalog.html).
+The [study inventory](data/cohorts/README.md) and [larger FORRT/statcheck inventories](docs/inventories.md) preserve additional sources. A collected inventory is not an estimated citation effect. [Expansion status](docs/meta/expansion-status.md) distinguishes completed comparisons from work still requiring verified identities, assessments, dates or citation histories.
 
-The [extension pilot](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding are still in progress; it does not yet provide estimates of continued reliance.
+The Institute for Replication extension has **{{IfrCases}} selected matched cases** and remains outside the synthesis. Its [source registry](docs/i4r/README.md), [case comparisons](docs/i4r/aggregate-results.md), [synthetic-control checks](docs/i4r/synthetic-results.md), and [standalone proportional checks](docs/i4r/proportional.md) are retained. The [coverage report](docs/i4r/coverage.md) and [evidence catalog](docs/i4r/catalog.html) distinguish discovered reports from verified consequential errors and supported citation comparisons. This small pilot appears only in the manuscript appendix.
 
-The [Lal et al. extension](docs/lal/README.md) follows all 67 political-science papers examined in an audit of instrumental-variable methods. Papers flagged for statistical problems continued to receive citations after the audit appeared. The comparisons leave uncertain how much, if at all, the audit reduced citation growth: the main estimates are imprecise and change substantially when measured from an earlier year. The critique also circulated before its formal publication in 2024, so that publication does not mark researchers’ first opportunity to learn about the problems. The [multi-audit strategy](docs/multiple-audits.md) sets out how to extend these comparisons across critiques.
-
-The [Nieuwenhuis source comparison](docs/nieuwenhuis/README.md) now compares all 153 historical analysis papers using the same years in Web of Science and OpenAlex. The main relative-growth estimate changes little: {{NwOaPercent}}% with OpenAlex articles/reviews, compared with {{NwOaWosPercent}}% in the historical exports. The paired source-induced change in the estimated growth ratio is {{NwOaDifference}}% (95% interval [{{NwOaDifferenceLower}}, {{NwOaDifferenceUpper}}]%). This measures how the estimate changes with the recorded citation source; it does not establish which database is correct. The [link and date diagnostics](docs/nieuwenhuis/diagnostics.md) distinguish coverage from dating differences. A [third-source link check](docs/nieuwenhuis/validation.md) and [full-cohort OpenCitations comparison](docs/nieuwenhuis/opencitations.md) supply additional measurement checks.
-
-`make synthesis` rebuilds the completed synthesis, its components, and the manuscript tables. Alternative diagnostic definitions from the same audit are dependent comparisons. The [two-audit reference synthesis](docs/meta/two-audit.md) combines the Nieuwenhuis and Lal contrasts and shows how the result changes with the IV diagnostic. It summarizes these cases, with differences in timing, citation measurement, and error definitions still present; it is not a general causal effect of publicizing errors. The [three-audit synthesis](docs/meta/README.md) adds the animal-study audit. The [five-study synthesis](docs/meta/assessments.md) also includes psychology replication and interaction-audit contrasts, with its own [estimand and status](data/meta/assessment_status.json).
-
-The I4R [standalone proportional checks](docs/i4r/proportional.md) retain case-specific evidence without adding the small pilot to the meta-analysis.
+The [citation-context extension](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding remain in progress; it does not yet estimate continued reliance on those findings.
 
 | Path | Contents |
 | --- | --- |
 | `data/01_nieuwenhuis/` | Original citation workbooks and supplied classifications |
 | `data/02_are_nw_citations_approving/` | Original citation-context coding |
-| `R/` | Import, validation, construction, and estimation functions |
-| `scripts/` | Analysis and exhibit generation |
-| `data/derived/` | Rebuilt article-year panel, citation records, and diagnostics; ignored by Git |
-| `tabs/` | Generated estimates, machine-readable results, tables, and manuscript macros |
+| `data/cohorts/` | Study-specific source inventories, assessments and acquisition records |
+| `data/meta/` | Synthesis components, estimates and verification records |
+| `R/` | Import, validation, construction and estimation functions |
+| `scripts/` | Acquisition, analysis and exhibit generation |
+| `tabs/` | Generated estimates, tables and manuscript macros |
 | `figs/` | Generated publication figures |
-| `ms/` | LaTeX source, bibliography, and compiled paper |
-| `tests/testthat/` | Data integrity and statistical checks |
+| `ms/` | LaTeX source, bibliography and compiled paper |
+| `tests/` | Data integrity, pipeline and statistical checks |
 
-[Measurement details](docs/data.md) explain coverage, duplicate records, questionable links, coding, and uncertainty. [The analysis guide](docs/analysis.md) maps research claims to computations and checks. The original source files remain intact; redistribution of the supplied classification was authorized by its provider.
+[Measurement details](docs/data.md) explain coverage, duplicate records, questionable links, coding, and uncertainty. [The analysis guide](docs/analysis.md) maps research claims to computations and checks. Original source files remain intact; redistribution of the supplied neuroscience classification was authorized by its provider.
 
-Please use [CITATION.cff](CITATION.cff) to cite the research note. The source critique is Nieuwenhuis, Forstmann, and Wagenmakers (2011), [“Erroneous analyses of interactions in neuroscience: a problem of significance”](https://doi.org/10.1038/nn.2886).
+Please use [CITATION.cff](CITATION.cff) to cite this paper. The source neuroscience critique is Nieuwenhuis, Forstmann, and Wagenmakers (2011), [“Erroneous analyses of interactions in neuroscience: a problem of significance”](https://doi.org/10.1038/nn.2886).

@@ -186,3 +186,5 @@ for (diagnostic in c("weak", "sensitive")) {
   macros[paste0(prefix, "OlderBaseline")] <- sprintf("%.1f", older$percent)
 }
 writeLines(paste0("\\newcommand{\\", names(macros), "}{", macros, "}"), "tabs/lal_macros.tex")
+
+jsonlite::write_json(as.list(macros), "tabs/lal_macros.json", pretty = TRUE, auto_unbox = TRUE)

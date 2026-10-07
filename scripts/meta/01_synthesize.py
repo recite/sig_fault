@@ -1,4 +1,4 @@
-"""Reproduce the broader synthesis from frozen public data and record its inputs."""
+"""Synthesize methodological audits independently of replication outcomes."""
 
 import json
 import os
@@ -12,69 +12,52 @@ def main():
     with Run(
         "meta", "01_synthesize", __file__, True, data_dir=ROOT / "data/meta"
     ) as run:
-        inputs = [
+        for name in [
             "docs/meta/assessment-design.md",
-            "docs/meta/assessments.in.md",
             "data/meta/lazic_components.csv",
             "data/meta/lazic_component_identities.csv",
             "data/meta/audit_contrasts.csv",
-            "data/lazic/estimates.csv",
             "data/nieuwenhuis/source_models.csv",
-            "data/nieuwenhuis/status.json",
-            "data/cohorts/rpp/pipeline/panel.csv",
-            "data/cohorts/rpp/pipeline/identities.csv",
-            "data/cohorts/rpp/pipeline/estimates.csv",
-            "data/cohorts/rpp/pipeline/external_estimates.csv",
+            "data/lazic/estimates.csv",
             "data/cohorts/hmx/pipeline/panel.csv",
+            "data/cohorts/hmx/assessments.csv",
             "data/cohorts/hmx/pipeline/paper_assessments.csv",
-            "data/cohorts/hmx/pipeline/estimates.csv",
             "renv.lock",
-        ]
-        for path in inputs:
-            run.input(ROOT / path)
-        for path in [
-            "scripts/meta/synthesize.R",
+        ]:
+            run.input(ROOT / name)
+        for name in [
+            "scripts/meta/methodological.R",
             "R/meta.R",
-            "R/rpp.R",
-            "R/hmx.R",
             "R/analysis.R",
+            "R/hmx.R",
         ]:
-            run.record["code"].append(fingerprint(ROOT / path))
-        command = shlex.split(os.environ.get("META_RSCRIPT", "Rscript")) + [
-            "scripts/meta/synthesize.R"
+            run.record["code"].append(fingerprint(ROOT / name))
+        command = shlex.split(os.environ.get("META_RSCRIPT", "Rscript --vanilla")) + [
+            "scripts/meta/methodological.R"
         ]
-        run.record["estimation_command"] = command
         subprocess.run(command, cwd=ROOT, check=True)
-        status = json.loads((run.data / "assessment_status.json").read_text())
         for name in [
-            "five_distinct_studies",
-            "hmx_reproduced",
-            "no_known_original_overlap",
-            "rpp_reproduced",
+            "components",
+            "synthesis",
+            "sensitivity",
+            "leave_one_out",
+            "identities",
         ]:
-            run.check(name, status[name], status[name])
+            run.output(run.data / f"methodological_{name}.csv")
+        run.output(run.data / "methodological_status.json")
         for name in [
-            "assessment_components.csv",
-            "assessment_synthesis.csv",
-            "assessment_sensitivity.csv",
-            "assessment_leave_one_out.csv",
-            "assessment_identities.csv",
-            "rpp_timing.csv",
-            "assessment_status.json",
-            "assessment_session.txt",
-        ]:
-            run.output(run.data / name)
-        for path in [
-            "tabs/assessment_macros.tex",
-            "tabs/assessment_macros.json",
-            "tabs/assessment_summary.tex",
-            "tabs/assessment_components.tex",
-            "tabs/rpp_summary.tex",
+            "tabs/methodological_macros.tex",
+            "tabs/methodological_macros.json",
+            "tabs/methodological_components.tex",
             "docs/meta/assessments.md",
         ]:
-            run.output(ROOT / path)
+            run.output(ROOT / name)
+        status = json.loads((run.data / "methodological_status.json").read_text())
+        run.check("four_audits", len(status["studies"]) == 4, status["studies"])
+        run.check(
+            "no_replication_cohort", status["replication_cohorts_excluded"], status
+        )
         run.record["metrics"] = status
-        print(json.dumps(status))
 
 
 if __name__ == "__main__":

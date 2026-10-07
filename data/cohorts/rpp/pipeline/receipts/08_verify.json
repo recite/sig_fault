@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "rpp",
   "stage": "08_verify",
-  "started_at": "2026-10-07T05:58:49.667537+00:00",
+  "started_at": "2026-10-07T06:50:45.690828+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/rpp/08_verify.py"
   ],
   "python": "3.14.7",
-  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
+  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
   "inputs": [
     {
       "path": "data/cohorts/rpp/pipeline/paper_periods.csv",
@@ -72,7 +72,7 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/citation_paths.pdf",
-      "sha256": "904d39ae6e223c77ed580322b7082d55a1cd3f90b5831f15c5cdfb4d5f5d506f",
+      "sha256": "4af7669095f330a51de5e4aa9e303c3198c7ef3d9579759957b463afaa6fd16f",
       "bytes": 6860
     },
     {
@@ -87,13 +87,13 @@
     },
     {
       "path": "data/cohorts/rpp/pipeline/analysis_checks.json",
-      "sha256": "5c2d2ccde5c10f4c61e348d09ddf3b893cbe243aae18d3fd565533eaab15e62b",
-      "bytes": 351
+      "sha256": "27f965e9c341844b7c511bb453de7539c89fba50ab750ad988baa3d95faa9c01",
+      "bytes": 339
     },
     {
       "path": "data/cohorts/rpp/pipeline/README.md",
-      "sha256": "e35e0889853b904194e66986001b6c51d5b2fcb167053e0446abbf83aa8d7630",
-      "bytes": 4047
+      "sha256": "e6f49849aea4ed4fd4c5efe7893aec145a4a9a02230dc9220f8174039e4b962d",
+      "bytes": 4040
     }
   ],
   "outputs": [],
@@ -117,8 +117,8 @@
   "parents": [
     {
       "path": "data/cohorts/rpp/pipeline/receipts/07_analyze.json",
-      "sha256": "a8ac406f56beaa8b11a8e8c6ac90de2cd1da1a889c3f6dad4a8a187b1cf630a9",
-      "bytes": 7657
+      "sha256": "a12e42a47d4572625c5d2b7d7221e15ba4bc2221dd7812d0d9b738c36428e6a8",
+      "bytes": 7633
     }
   ],
   "checks": [
@@ -134,5 +134,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T05:58:50.325487+00:00"
+  "finished_at": "2026-10-07T06:50:47.088582+00:00"
 }

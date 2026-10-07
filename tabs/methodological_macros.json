@@ -1,0 +1,19 @@
+{
+  "AuditHmxOriginals": "22",
+  "AuditHmxInteractions": "46",
+  "AuditHmxOtherConcerns": "6",
+  "AuditPapers": "367",
+  "AuditHmxJournalPapers": "19",
+  "AuditWeakPercent": "-12.9",
+  "AuditReWeakPercent": "-12.9",
+  "AuditWeakLower": "-24.3",
+  "AuditReWeakLower": "-30.7",
+  "AuditWeakUpper": "0.2",
+  "AuditReWeakUpper": "9.4",
+  "AuditSensitivePercent": "-4.5",
+  "AuditReSensitivePercent": "-4.5",
+  "AuditSensitiveLower": "-17.0",
+  "AuditReSensitiveLower": "-28.4",
+  "AuditSensitiveUpper": "9.9",
+  "AuditReSensitiveUpper": "27.5"
+}

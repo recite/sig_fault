@@ -1,84 +1,37 @@
-# Citation changes after adverse scientific assessments
+# Synthesis of methodological audits
 
-This extension combines the psychology replication study with four
-methodological audits, including the interaction-model audit. The individual results have already been seen;
-this is a retrospective synthesis, not a preregistered test.
+The manuscript combines four methodological audits: Nieuwenhuis, Lal, Lazic,
+and Hainmueller–Mummolo–Xu. Psychology replication outcomes are a separate question
+and do not enter this synthesis. This is a retrospective collection and analysis;
+the source assessments and component estimates were inspected before synthesis.
 
-## Estimand
+The estimand is the inverse-variance mean of four study-specific log contrasts
+between flagged and comparison papers' proportional citation growth. Each contrast
+uses the calendar year before and after the selected publicity year, excluding
+the event year. The windows are 2010/2012, 2023/2025, 2016/2018, and 2017/2019,
+respectively. Formal journal publication is additional publicity for critiques
+that circulated earlier. We do not claim these dates always identify the first
+public disclosure or first time a reader could recognize a problem.
 
-For each study, compare the post/pre citation ratio of papers receiving an adverse
-assessment with the corresponding ratio of comparison papers. Pool the log ratios
-using inverse estimated sampling variances and report `100 * (exp(beta) - 1)`.
-The target is the precision-weighted mean contrast in the included studies over
-their stated follow-up windows. It is not the average effect across all scientific
-papers, all errors, or all possible audits.
+Use weak-instrument screening as the primary Lal diagnostic; substitute inferential
+sensitivity in a separate estimate. Never count overlapping definitions as
+independent audits. Exclude Vernby (2013) from the interaction-audit component
+because it is already in Lal. Within each chosen window, all-zero papers remain
+in source and descriptive records but do not identify the PPML contrast.
 
-The broader question is whether adverse assessments are followed by lower relative
-citation growth. The methodological audits and the psychology replication
-project remain separately identified: an unsuccessful replication is not evidence
-of a particular statistical error. The within-project replication contrast also
-includes any citation benefit from a successful replication. It cannot isolate
-that benefit from the penalty for an unsuccessful replication.
+The main inverse-variance interval uses a normal reference distribution. A REML
+random-effects sensitivity uses modified Knapp–Hartung uncertainty. With only four
+selected audits, neither is a population estimate across all methodological
+errors. Retain leave-one-audit-out results and substitute OpenAlex for the
+historical neuroscience source on identical papers and years. Prior three-audit
+estimates remain a component comparison; I4R's selected small pilot is excluded.
 
-A causal reading requires comparable untreated proportional citation trajectories
-within each study. Same-audit comparison papers can themselves respond to the
-announcement. Formal publication or a project announcement can amplify earlier
-reports, so these estimates need not measure first disclosure. Public availability
-does not establish that each citing author read the assessment.
+Components use article-clustered uncertainty. Within-audit citation levels,
+medians, pre-trends, influential originals, comparison definitions and
+measurement differences remain relevant; pooling cannot establish parallel
+counterfactual trends or remove shared-topic dependence.
 
-## Component selection and timing
-
-Use one contrast per independent study in each synthesis:
-
-- Nieuwenhuis: the historical 153-paper cohort, Web of Science, 2010 versus 2012.
-- Lal: effective F below 10, OpenAlex articles/reviews, 2023 versus 2025. Substitute
-  inferential sensitivity in a separate analysis; never count both as studies.
-- Lazic: the classified cohort after the earlier-publicity exclusion, OpenCitations,
-  2016 versus 2018. The existing 2019 follow-up remains a sensitivity.
-- Psychology replication project: 98 original papers, OpenAlex articles/reviews,
-  2012–2014 versus 2016–2018, fixed journal composition and the source's replication
-  judgments. Use the journal-standardized log growth ratio and its stratified
-  article-bootstrap standard error.
-
-- Hainmueller–Mummolo–Xu: severe-extrapolation labels, 2017 versus 2019, OpenAlex
-  articles/reviews. Exclude Vernby (2013), already in the Lal cohort; retain all
-  other assessed papers in descriptions and omit all-zero histories from PPML.
-  Use the article-clustered log-ratio standard error, as in the other audits.
-  Its design was fixed before citation acquisition; integration is retrospective.
-
-The RPP multi-year window is its existing primary specification. Also compute its
-2014-versus-2016 contrast before pooling as a timing sensitivity, using identical
-journal weights and bootstrap rules. The other four studies retain their common
-one-year-before/one-year-after windows. No citation contrast is selected by its
-sign or significance.
-
-Keep the three-audit synthesis as a distinct stratum. The five-study synthesis is
-a broader summary, not an update that changes the replication result into an error
-classification. Omitting HMX in the leave-one-study-out analysis preserves the
-previous four-study summary. The three selected I4R cases remain outside all pooled estimates.
-Do not append inventories lacking an analyzed comparison or a usable follow-up
-period. Track their present status separately from completed analyses.
-
-## Inference and validation
-
-Use the existing `R/meta.R` inverse-variance estimator. Report study weights,
-leave-one-study-out results, and REML with modified Knapp–Hartung intervals as
-sensitivity analyses. The main normal interval conditions on included studies and
-estimated component variances. The random-effects interval concerns its modeled
-mean, not the outcome of an unobserved future audit.
-
-Check original-paper DOI overlap before assuming study independence. Replication
-external donors do not enter the within-project component or the meta-analysis.
-Distinct original papers can still share citing documents and field shocks;
-article-level resampling does not measure all such dependence.
-
-Recompute the RPP contrast and bootstrap from the public annual panel, compare it
-with the published study estimates, and fail on disagreement. Retain the original
-neuroscience source as primary. Substitute its complete paired OpenAlex estimate
-in a separate synthesis, never as an additional study. These substitutions assess
-source sensitivity, not bias against a verified citation census.
-
-Generate manuscript numbers, tables and README summaries from the exported
-components. Record all input and code hashes in a synthesis receipt. The ordinary
-paper build must run from public frozen data without a key or private API cache;
-acquisition and full source-receipt validation remain separate reproducible steps.
+`scripts/meta/01_synthesize.py` reads the public components, reconstructs the
+nonoverlapping interaction estimate, verifies DOI overlap, and records hashes
+of source files, code and outputs. `methodological.R` generates all manuscript
+values and the four-audit table. No replication citation data are inputs.

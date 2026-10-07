@@ -1,0 +1,20 @@
+{
+  "LalVerifiedDesigns": "10",
+  "LalPapers": "67",
+  "LalARCount": "3",
+  "LalWeakBroad": "39.3",
+  "LalWeakBefore": "7.0",
+  "LalWeakAfter": "7.2",
+  "LalWeakMedianBefore": "7.0",
+  "LalWeakMedianAfter": "7.5",
+  "LalWeakChange": "-14.5",
+  "LalWeakAlternate": "-0.4",
+  "LalWeakOlderBaseline": "-11.5",
+  "LalSensitiveBefore": "7.1",
+  "LalSensitiveAfter": "10.3",
+  "LalSensitiveMedianBefore": "5.0",
+  "LalSensitiveMedianAfter": "5.0",
+  "LalSensitiveChange": "23.9",
+  "LalSensitiveAlternate": "-17.0",
+  "LalSensitiveOlderBaseline": "15.7"
+}

@@ -1,0 +1,7 @@
+{
+  "studies": ["Nieuwenhuis", "Lal", "Lazic", "HMX"],
+  "papers": 367,
+  "no_known_doi_overlap": true,
+  "replication_cohorts_excluded": true,
+  "estimand": "Inverse-variance mean of study-specific flagged-versus-comparison log citation growth contrasts"
+}

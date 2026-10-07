@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "hmx",
   "stage": "05_analyze",
-  "started_at": "2026-10-07T06:08:29.973092+00:00",
+  "started_at": "2026-10-07T06:49:50.936385+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/hmx/05_analyze.py"
   ],
   "python": "3.14.7",
-  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
+  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
   "inputs": [
     {
       "path": "data/cohorts/hmx/pipeline/design.md",
@@ -229,5 +229,5 @@
     "R/hmx.R",
     "/private/tmp/sig-fault-research/data/cohorts/hmx/pipeline"
   ],
-  "finished_at": "2026-10-07T06:10:43.735306+00:00"
+  "finished_at": "2026-10-07T06:51:42.680345+00:00"
 }

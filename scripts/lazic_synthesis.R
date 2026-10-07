@@ -146,7 +146,7 @@ writeLines(macros, "tabs/lazic_meta_macros.tex")
 lines <- c(
   "# Precision-weighted synthesis across three audits", "",
   paste(
-    "The [four-study synthesis](assessments.md) adds psychology replication evidence",
+    "The [four-audit synthesis](assessments.md) adds the interaction-model audit",
     "and retains these three-audit estimates as a separately reported comparison."
   ), "",
   paste(

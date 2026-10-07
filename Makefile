@@ -14,7 +14,7 @@ figures: analysis
 tables: analysis i4r-aggregate lazic-analysis nieuwenhuis synthesis
 	$(RSCRIPT) scripts/tables.R
 
-manuscript:
+manuscript: references
 	cd ms && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 
 paper: figures tables synthesis
@@ -24,9 +24,9 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta tests/test_research_pipeline.py tests/test_panel_pipeline.py
-	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta tests/test_research_pipeline.py tests/test_panel_pipeline.py
-	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
 	python3 -m black --check scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m isort --check-only --profile black scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m flake8 --max-line-length=88 scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
@@ -248,3 +248,11 @@ panel-sources:
 
 panel-test:
 	python3 -m unittest discover -s tests -p 'test_panel_pipeline.py'
+
+.PHONY: references references-fetch
+references:
+	python3 -m scripts.references.02_validate
+	python3 -m unittest discover -s tests -p "test_references.py"
+
+references-fetch:
+	python3 -m scripts.references.01_get

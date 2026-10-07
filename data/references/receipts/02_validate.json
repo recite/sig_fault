@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "study": "references",
+  "stage": "02_validate",
+  "started_at": "2026-10-07T06:59:15.538854+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-research/scripts/references/02_validate.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
+  "inputs": [
+    {
+      "path": "ms/references.bib",
+      "sha256": "5bae3c65daab8617850557a7dfcb5be9b549f76eca0c941cfdfe7d1ea507b79a",
+      "bytes": 4825
+    },
+    {
+      "path": "data/references/crossref.json",
+      "sha256": "b63527eb30fa0d6b02c44851f0c6ec2009e2aa9ee40e3ba7f060f2c096998c02",
+      "bytes": 240435
+    },
+    {
+      "path": "ms/main.tex",
+      "sha256": "8a35af314bf3d1be7aaf516bd5d457cef4df208890aa49a2f078ee940c5754b1",
+      "bytes": 58365
+    },
+    {
+      "path": "requirements-i4r.txt",
+      "sha256": "01a209ff4e3f69b077bcea5bdffc21bca44dfc338c7c786b9f0b8c10d1392725",
+      "bytes": 138
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/references/validation.csv",
+      "sha256": "7d6e66de2b86657fbd781394b5a729004c35d9dcb6a4f77be22620cd54a47cbe",
+      "bytes": 1129,
+      "rows": 14
+    },
+    {
+      "path": "data/references/status.json",
+      "sha256": "2f925a050786e3d7d01d778bf128fc79a6ed9b5cf8292e40d6ccb3314a15d8b4",
+      "bytes": 189
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/references/02_validate.py",
+      "sha256": "a5506a2fe1a1893bdafdb7277605898e083c4ff2062e828631bf0aa11bc18fa2",
+      "bytes": 3943
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "all_citations_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_unused_references",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_metadata_present",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "distinct_nonempty_dois",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "publisher_metadata_agrees",
+      "passed": true,
+      "detail": {}
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "references": 14,
+    "cited_keys": 14,
+    "validated": true,
+    "year_rule": "Print year when supplied; otherwise publication year",
+    "semantic_review": "docs/literature-and-target.md"
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T06:59:15.642340+00:00"
+}

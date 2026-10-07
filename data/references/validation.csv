@@ -1,0 +1,15 @@
+key,source_doi,doi,title,journal,year,volume,number,pages,authors_in_order
+gelman2006,10.1198/000313006X152649,True,True,True,True,True,True,True,True
+nieuwenhuis2011,10.1038/nn.2886,True,True,True,True,True,True,True,True
+santos2006,10.1162/rest.88.4.641,True,True,True,True,True,True,True,True
+lal2024,10.1017/pan.2024.2,True,True,True,True,True,True,True,True
+lazic2018,10.1371/journal.pbio.2005282,True,True,True,True,True,True,True,True
+osc2015,10.1126/science.aac4716,True,True,True,True,True,True,True,True
+hainmueller2019,10.1017/pan.2018.46,True,True,True,True,True,True,True,True
+hsiao2021,10.1162/qss\_a\_00155,True,True,True,True,True,True,True,True
+woo2024,10.1162/qss\_a\_00303,True,True,True,True,True,True,True,True
+bordignon2020,10.1007/s11192-020-03536-z,True,True,True,True,True,True,True,True
+serragarcia2021,10.1126/sciadv.abd1705,True,True,True,True,True,True,True,True
+schafmeister2021,10.1177/09567976211005767,True,True,True,True,True,True,True,True
+vonhippel2022,10.1177/17456916211072525,True,True,True,True,True,True,True,True
+clark2023,10.1073/pnas.2304862120,True,True,True,True,True,True,True,True

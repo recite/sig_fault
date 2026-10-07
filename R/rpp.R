@@ -254,7 +254,7 @@ rpp_main <- function(path) {
       coverage$paper_id %in% identities$paper_id
     ] == "True", na.rm = TRUE),
     classified_as_statistical_error = FALSE,
-    broader_synthesis = "data/meta/assessment_synthesis.csv"
+    included_in_methodological_synthesis = FALSE
   ), file.path(path, "analysis_checks.json"), pretty = TRUE, auto_unbox = TRUE)
 }
 

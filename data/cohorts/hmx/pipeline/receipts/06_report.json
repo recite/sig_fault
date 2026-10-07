@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "hmx",
   "stage": "06_report",
-  "started_at": "2026-10-07T06:12:21.588275+00:00",
+  "started_at": "2026-10-07T06:51:42.839180+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/hmx/06_report.py"
   ],
   "python": "3.14.7",
-  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
+  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
   "inputs": [
     {
       "path": "data/cohorts/hmx/pipeline/specifications.csv",
@@ -117,7 +117,7 @@
   "parents": [
     {
       "path": "data/cohorts/hmx/pipeline/receipts/05_analyze.json",
-      "sha256": "5bed1c52f723b612c30f6a82845d59d56745ce481d0b0259b14afd58568d9a1b",
+      "sha256": "508a211c81cc8bf1b7f392d6f87016253811ed4d412952de1699e2d7cacb9ada",
       "bytes": 6578
     }
   ],
@@ -139,5 +139,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T06:12:21.646805+00:00"
+  "finished_at": "2026-10-07T06:51:42.889547+00:00"
 }

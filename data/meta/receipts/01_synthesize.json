@@ -2,23 +2,18 @@
   "schema_version": 1,
   "study": "meta",
   "stage": "01_synthesize",
-  "started_at": "2026-10-07T06:10:46.074410+00:00",
+  "started_at": "2026-10-07T06:59:12.433331+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "/private/tmp/sig-fault-research/scripts/meta/01_synthesize.py"
   ],
   "python": "3.14.7",
-  "git_commit": "05db5e4777650dad8016381715b17425b7527bb3",
+  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
   "inputs": [
     {
       "path": "docs/meta/assessment-design.md",
-      "sha256": "69afdf9d99c002165d69ed6efd053b3dcf9a065e6b39ce3548a2449f61376f4e",
-      "bytes": 5053
-    },
-    {
-      "path": "docs/meta/assessments.in.md",
-      "sha256": "5de1f110abfce8b074966007c553a5625c88963fbc763ad68ecf05aede41c0f2",
-      "bytes": 5117
+      "sha256": "80bbf68eff036f3df9e348a68b3ccabf30c88a19cd15a1f5fd7c1d39c5c6059e",
+      "bytes": 2373
     },
     {
       "path": "data/meta/lazic_components.csv",
@@ -39,45 +34,16 @@
       "rows": 6
     },
     {
-      "path": "data/lazic/estimates.csv",
-      "sha256": "763ef5c755f1f36ecf3684db32d7fa9548de4089eb666955094edc3498a7f93f",
-      "bytes": 1838,
-      "rows": 7
-    },
-    {
       "path": "data/nieuwenhuis/source_models.csv",
       "sha256": "54834df0945639e778fb059618af54aa74a260033d0996f26cf14cafcb846bee",
       "bytes": 4871,
       "rows": 12
     },
     {
-      "path": "data/nieuwenhuis/status.json",
-      "sha256": "85c41418b10a023808e3f696a7322353e634faaaf092429f21276d1b9f067b2b",
-      "bytes": 281
-    },
-    {
-      "path": "data/cohorts/rpp/pipeline/panel.csv",
-      "sha256": "1934395a23f9487d93aefb4356732a5f2c4f647070180261a39cca43129334e0",
-      "bytes": 583577,
-      "rows": 8496
-    },
-    {
-      "path": "data/cohorts/rpp/pipeline/identities.csv",
-      "sha256": "e8fdc351024fb20fb799437179f704744374131259c216f671680fb7677ab8f3",
-      "bytes": 25447,
-      "rows": 98
-    },
-    {
-      "path": "data/cohorts/rpp/pipeline/estimates.csv",
-      "sha256": "e0f2693b16445460f0418240d1b844a8fba7745d4674b502a0fbc73c7c5bb43e",
-      "bytes": 1072,
-      "rows": 4
-    },
-    {
-      "path": "data/cohorts/rpp/pipeline/external_estimates.csv",
-      "sha256": "8f767679ab739c4f08ea50dbdbb9b7aad2c2fb8e7674a5e1fcdf3e84c353fe72",
-      "bytes": 357,
-      "rows": 4
+      "path": "data/lazic/estimates.csv",
+      "sha256": "763ef5c755f1f36ecf3684db32d7fa9548de4089eb666955094edc3498a7f93f",
+      "bytes": 1838,
+      "rows": 7
     },
     {
       "path": "data/cohorts/hmx/pipeline/panel.csv",
@@ -86,16 +52,16 @@
       "rows": 440
     },
     {
+      "path": "data/cohorts/hmx/assessments.csv",
+      "sha256": "d521818642bee8ddebd8cdcb326c814629a6c35e5a1f67f7346bedb693b9c60e",
+      "bytes": 15012,
+      "rows": 138
+    },
+    {
       "path": "data/cohorts/hmx/pipeline/paper_assessments.csv",
       "sha256": "6fc2437d82bc0b699c2c61c44b359bf630108e7c9d8f2383ddfc39ad8e031484",
       "bytes": 1781,
       "rows": 22
-    },
-    {
-      "path": "data/cohorts/hmx/pipeline/estimates.csv",
-      "sha256": "1852cac2f973e4921fd10eb8042b031bd2d31caff37226bbbfb8ff4f5798dd41",
-      "bytes": 3155,
-      "rows": 9
     },
     {
       "path": "renv.lock",
@@ -105,87 +71,66 @@
   ],
   "outputs": [
     {
-      "path": "data/meta/assessment_components.csv",
-      "sha256": "4a86c5abc03c06a761c4decf4b16809d1904dab54fb3abfbe72eabfe51dd0d9e",
-      "bytes": 4606,
-      "rows": 40
+      "path": "data/meta/methodological_components.csv",
+      "sha256": "fa4fdd9dce95a544d9fd2fd782a54e56b7ea63e0f18f547f6580a2bc3395da57",
+      "bytes": 1665,
+      "rows": 16
     },
     {
-      "path": "data/meta/assessment_synthesis.csv",
-      "sha256": "a048a3d25a610d23219b3f5888ccecd2d9a6027ead37e7bc446d26f0318dfb77",
-      "bytes": 1873,
-      "rows": 8
+      "path": "data/meta/methodological_synthesis.csv",
+      "sha256": "eecf5084e112914d7f8c8ff655d37594cb73a0e1c7931c71c889e95d0b775cf9",
+      "bytes": 948,
+      "rows": 4
     },
     {
-      "path": "data/meta/assessment_sensitivity.csv",
-      "sha256": "f7bbb2183e2711f0754678fbbd53d208a5afe845b5299601e59595bb14955e86",
-      "bytes": 1927,
-      "rows": 8
+      "path": "data/meta/methodological_sensitivity.csv",
+      "sha256": "c20af3369864809d5809330232cd21250b474ea0dea4dc10cb85f5b55e8280e9",
+      "bytes": 968,
+      "rows": 4
     },
     {
-      "path": "data/meta/assessment_leave_one_out.csv",
-      "sha256": "e16379846907e461258b4ee7b8601fa5c4d0bb7b9057a51aadd3780890394d78",
-      "bytes": 9001,
-      "rows": 40
+      "path": "data/meta/methodological_leave_one_out.csv",
+      "sha256": "1e74b664a8838916bb3b2f964de12135fbfc80f3ab381e6e2cce94c3a9947eb3",
+      "bytes": 3470,
+      "rows": 16
     },
     {
-      "path": "data/meta/assessment_identities.csv",
-      "sha256": "972bed8988326d53c128b0c8f81615379e1942d6151415f5c2342db50ec22ab8",
-      "bytes": 23527,
-      "rows": 474
+      "path": "data/meta/methodological_identities.csv",
+      "sha256": "bf4fd817b62eaca4225f86962266e6c4e07be18331999fab99b4e865de7209b7",
+      "bytes": 18955,
+      "rows": 376
     },
     {
-      "path": "data/meta/rpp_timing.csv",
-      "sha256": "e68bf5c9d90aadc91f76aa3b0655ecba75b7e37dee0d28c7af9873337895d047",
-      "bytes": 319,
-      "rows": 2
+      "path": "data/meta/methodological_status.json",
+      "sha256": "5ca01f2b60637c51203b84e7cd2293dfd5b8bfc8fe13b349bb584e22b3a59657",
+      "bytes": 258
     },
     {
-      "path": "data/meta/assessment_status.json",
-      "sha256": "ae443b7d5ac71675471e9e53b32bd1d18655a1c5d5231bd90c078f9e21da91af",
-      "bytes": 879
+      "path": "tabs/methodological_macros.tex",
+      "sha256": "27df0a38f40bc9b28ab5573b5fd44fafad38d2532daa4dcc320943788e7658a5",
+      "bytes": 658
     },
     {
-      "path": "data/meta/assessment_session.txt",
-      "sha256": "037da064235c1c1e81780a8f994783cc4e7591f4aa8571feaa5f9a34600b8353",
-      "bytes": 1064
+      "path": "tabs/methodological_macros.json",
+      "sha256": "47df08c824a631a88a634867bb9e5b36abfc72858204d4329e02698aac3b7931",
+      "bytes": 542
     },
     {
-      "path": "tabs/assessment_macros.tex",
-      "sha256": "04877672bfa3eb26e995bd59d28d50cf1986d92667534e2b1a9b14edbb65ea9a",
-      "bytes": 1247
-    },
-    {
-      "path": "tabs/assessment_macros.json",
-      "sha256": "3a0faec9eb6dee95c7c1cf38cdbf6affb94954f27c6c4b631ff6ba4d1d11ec2e",
-      "bytes": 1026
-    },
-    {
-      "path": "tabs/assessment_summary.tex",
-      "sha256": "18cc1f6065db7410cd8641976e467887aeda84b3949ff5d44d3f093c8d255564",
-      "bytes": 316
-    },
-    {
-      "path": "tabs/assessment_components.tex",
-      "sha256": "91e777da68447dfa507b16d1e68ee6d104ba1b0e141ff5c5734ddbcedaa0f6f9",
-      "bytes": 441
-    },
-    {
-      "path": "tabs/rpp_summary.tex",
-      "sha256": "4e1970dc042961e46340abffeaff703272ca9972fc1583d6faa03e2cb46fa78e",
-      "bytes": 335
+      "path": "tabs/methodological_components.tex",
+      "sha256": "39a93df8c24afd4fc42429ea7ee66942eede041b4a04710fdcd6b6bebedc9838",
+      "bytes": 435
     },
     {
       "path": "docs/meta/assessments.md",
-      "sha256": "977cb700271f2abbd5039b89d4eb0fd26095fb897dbc6b42cc379add92ab9100",
-      "bytes": 6011
+      "sha256": "5c358eb528fd3413ab9749b113ed0014ee88ab2a6d2e8706761601ab1fee1743",
+      "bytes": 1420
     }
   ],
   "code": [
     {
       "path": "scripts/meta/01_synthesize.py",
-      "sha256": "91c81c1be3641df31b3ae2c74c3490382be5a20757676d80d7e8cf09cc18ab04",
-      "bytes": 2795
+      "sha256": "ab08c8080ce3eb1f04302d3debe68012285f7563320d9a88bbcb1285c06d8b15",
+      "bytes": 2161
     },
     {
       "path": "scripts/research_pipeline.py",
@@ -198,9 +143,9 @@
       "bytes": 39474
     },
     {
-      "path": "scripts/meta/synthesize.R",
-      "sha256": "291b89dc907f08bfe6cc9eacccacb5c736d1e74ca7c65a10c342599401b45c4c",
-      "bytes": 11516
+      "path": "scripts/meta/methodological.R",
+      "sha256": "cc040c832b34e130f117695f96b56f6621f8ea530bdab888ae01a3698b70c05a",
+      "bytes": 7700
     },
     {
       "path": "R/meta.R",
@@ -208,73 +153,59 @@
       "bytes": 1536
     },
     {
-      "path": "R/rpp.R",
-      "sha256": "74abbb6efba2d116b7189e1b150e1475df3c6bc582137df2613398c272ab1b64",
-      "bytes": 11920
+      "path": "R/analysis.R",
+      "sha256": "ffc5837cc9043acd498e12c48e7d8a71acc6a60674fcc6e0494ad0afba9ce833",
+      "bytes": 5200
     },
     {
       "path": "R/hmx.R",
       "sha256": "759ebdd2eaffa64e5a41a0516bd51c5f5f9608c1f3300e6905f5ed4483023798",
       "bytes": 6558
-    },
-    {
-      "path": "R/analysis.R",
-      "sha256": "ffc5837cc9043acd498e12c48e7d8a71acc6a60674fcc6e0494ad0afba9ce833",
-      "bytes": 5200
     }
   ],
   "parents": [],
   "checks": [
     {
-      "name": "five_distinct_studies",
+      "name": "four_audits",
       "passed": true,
-      "detail": true
+      "detail": [
+        "Nieuwenhuis",
+        "Lal",
+        "Lazic",
+        "HMX"
+      ]
     },
     {
-      "name": "hmx_reproduced",
+      "name": "no_replication_cohort",
       "passed": true,
-      "detail": true
-    },
-    {
-      "name": "no_known_original_overlap",
-      "passed": true,
-      "detail": true
-    },
-    {
-      "name": "rpp_reproduced",
-      "passed": true,
-      "detail": true
+      "detail": {
+        "studies": [
+          "Nieuwenhuis",
+          "Lal",
+          "Lazic",
+          "HMX"
+        ],
+        "papers": 367,
+        "no_known_doi_overlap": true,
+        "replication_cohorts_excluded": true,
+        "estimand": "Inverse-variance mean of study-specific flagged-versus-comparison log citation growth contrasts"
+      }
     }
   ],
   "sources": [],
   "metrics": {
-    "estimand": "Precision-weighted mean study-specific log adverse-versus-comparison post/pre citation ratios",
-    "population": "Included assessed papers in five assembled studies, not all scientific papers or errors",
     "studies": [
       "Nieuwenhuis",
       "Lal",
       "Lazic",
-      "RPP",
       "HMX"
     ],
-    "five_distinct_studies": true,
-    "no_known_original_overlap": true,
-    "unidentified_doi_note": "One Lazic paper lacks DOI: 2012 Folia morphologica, outside RPP 2008 three-journal roster",
-    "hmx_reproduced": true,
-    "hmx_overlap_excluded": "Vernby (2013), also in Lal",
-    "rpp_reproduced": true,
-    "rpp_role": "Replication judgment; not a statistical-error classification",
-    "primary_contributing_papers": 465,
-    "acquisition_cache_required": false,
-    "excluded": "I4R selected three-case pilot; inventories without completed citation comparisons",
-    "design": "docs/meta/assessment-design.md"
+    "papers": 367,
+    "no_known_doi_overlap": true,
+    "replication_cohorts_excluded": true,
+    "estimand": "Inverse-variance mean of study-specific flagged-versus-comparison log citation growth contrasts"
   },
   "unresolved": [],
   "status": "complete",
-  "estimation_command": [
-    "Rscript",
-    "--vanilla",
-    "scripts/meta/synthesize.R"
-  ],
-  "finished_at": "2026-10-07T06:10:49.385581+00:00"
+  "finished_at": "2026-10-07T06:59:14.969664+00:00"
 }
