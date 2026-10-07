@@ -39,6 +39,7 @@ def main():
         for name in [
             "scripts/nieuwenhuis.py",
             "scripts/nieuwenhuis_design/long_paths.R",
+            "R/reporting.R",
         ]:
             run.record["code"].append(fingerprint(ROOT / name))
         paired = inputs["paired_panel"]
@@ -121,7 +122,13 @@ def main():
         subprocess.run(
             command + ["scripts/nieuwenhuis_design/long_paths.R"], cwd=ROOT, check=True
         )
-        run.output(ROOT / "figs/citation_paths_openalex.pdf")
+        for name in [
+            "figs/citation_paths_openalex.pdf",
+            "figs/citation_paths_openalex_body.pdf",
+            "tabs/nieuwenhuis_paths_macros.tex",
+            "tabs/nieuwenhuis_paths_macros.json",
+        ]:
+            run.output(ROOT / name)
         run.record["metrics"] = dict(
             papers=len(ids),
             start_year=2009,

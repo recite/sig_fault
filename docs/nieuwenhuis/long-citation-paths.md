@@ -2,7 +2,7 @@
 
 [Open the figure](../../figs/citation_paths_openalex.pdf).
 
-This extends Figure 1's descriptive comparison to 2025 using OpenAlex. It follows the same 153 papers in every year: 76 flagged and 77 comparison papers. Each panel shows unadjusted annual citations per original paper, summarized by the median or mean. The vertical line marks publication of the critique in August 2011. These are citation paths, not estimates of the critique's effect.
+This is the manuscript's main Figure 1: the descriptive comparison through 2025 using OpenAlex. The historical Web of Science figure appears in the appendix as a citation-source robustness check. It follows the same 153 papers in every year: 76 flagged and 77 comparison papers. Each panel shows unadjusted annual citations per original paper, summarized by the median or mean. The vertical line marks publication of the critique in August 2011. These are citation paths, not estimates of the critique's effect.
 
 The original papers appeared in 2009–2010. The first years therefore include partial publication years and zeros before a paper appeared. Downloads include citing publications through December 31, 2025; 2026 is excluded because it is incomplete. Completed API downloads do not establish complete database coverage, and indexing and publication-date errors remain possible.
 
@@ -15,6 +15,6 @@ make nieuwenhuis-paths
 ```
 
 - `scripts/nieuwenhuis_design/03_long_paths.py` prepares and validates counts, calls the plot script, and records the run.
-- `scripts/nieuwenhuis_design/long_paths.R` renders the figure.
+- `scripts/nieuwenhuis_design/long_paths.R` renders the standalone figure and the manuscript version, and generates the inline manuscript and README values.
 - [Article-year panel](../../data/nieuwenhuis/paths/panel.csv) and [annual summaries](../../data/nieuwenhuis/paths/annual_summary.csv) contain the plotted data.
 - [Run receipt](../../data/nieuwenhuis/paths/receipts/03_long_paths.json) records input, code, and output hashes, coverage checks, fixed group sizes, and exact agreement with the existing panel.

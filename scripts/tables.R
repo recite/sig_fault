@@ -131,7 +131,8 @@ stopifnot(all(grepl("^[A-Za-z]+$", names(macros))), !anyDuplicated(names(macros)
 writeLines(paste0("\\newcommand{\\", names(macros), "}{", macros, "}"), "tabs/macros.tex")
 readme <- paste(readLines("docs/README.in.md"), collapse = "\n")
 readme_macros <- c(
-  macros, jsonlite::read_json("tabs/journal_cohort_macros.json"),
+  macros, jsonlite::read_json("tabs/nieuwenhuis_paths_macros.json"),
+  jsonlite::read_json("tabs/journal_cohort_macros.json"),
   jsonlite::read_json("tabs/design_diagnostics_macros.json"),
   jsonlite::read_json("tabs/i4r_aggregate_macros.json"),
   jsonlite::read_json("tabs/lal_macros.json"),

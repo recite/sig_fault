@@ -11,7 +11,7 @@ analysis:
 figures: analysis nieuwenhuis-paths
 	$(RSCRIPT) scripts/figures.R
 
-tables: analysis i4r-aggregate lazic-analysis nieuwenhuis synthesis
+tables: analysis i4r-aggregate lazic-analysis nieuwenhuis synthesis nieuwenhuis-paths
 	$(MAKE) journal-cohort lazic-sdid
 	$(RSCRIPT) scripts/tables.R
 

@@ -43,3 +43,28 @@ p <- ggplot(plot_data, aes(year, value, color = group, linetype = group)) +
     plot.margin = margin(10, 16, 10, 10)
   )
 ggsave("figs/citation_paths_openalex.pdf", p, width = 8.5, height = 4.8, device = cairo_pdf)
+
+body <- p + labs(title = NULL, subtitle = NULL, caption = NULL)
+ggsave("figs/citation_paths_openalex_body.pdf", body,
+  width = 6.5, height = 3.1, device = cairo_pdf
+)
+source("R/reporting.R")
+value <- function(flag, year, statistic) {
+  annual[annual$flag == flag & annual$year == year, statistic]
+}
+post <- annual[annual$flag == 1 & annual$year %in% 2012:2015, ]
+macros <- list(
+  NwPathsMedianBefore = format_number(value(1, 2010, "median")),
+  NwPathsMedianMin = format_number(min(post$median), 0L),
+  NwPathsMedianMax = format_number(max(post$median), 0L),
+  NwPathsLastYear = as.character(max(annual$year)),
+  NwPathsMedianLast = format_number(value(1, max(annual$year), "median"), 0L),
+  NwPathsComparisonMedianLast = format_number(value(0, max(annual$year), "median"), 0L),
+  NwPathsMeanLast = format_number(value(1, max(annual$year), "mean")),
+  NwPathsComparisonMeanLast = format_number(value(0, max(annual$year), "mean"))
+)
+writeLines(
+  paste0("\\newcommand{\\", names(macros), "}{", macros, "}"),
+  "tabs/nieuwenhuis_paths_macros.tex"
+)
+jsonlite::write_json(macros, "tabs/nieuwenhuis_paths_macros.json", pretty = TRUE, auto_unbox = TRUE)

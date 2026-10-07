@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "nieuwenhuis_paths",
   "stage": "03_long_paths",
-  "started_at": "2026-10-07T22:26:48.808389+00:00",
+  "started_at": "2026-10-07T22:30:46.878414+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-openalex-2025/scripts/nieuwenhuis_design/03_long_paths.py"
+    "/private/tmp/sig-fault-main-figure/scripts/nieuwenhuis_design/03_long_paths.py"
   ],
   "python": "3.14.7",
-  "git_commit": "99c2ba040a6c11911cce18b41028820e0e8c9422",
+  "git_commit": "fb7a636ed84bd45b64c315caa3397dbcc4256267",
   "inputs": [
     {
       "path": "data/nieuwenhuis/identities.csv",
@@ -61,15 +61,30 @@
     },
     {
       "path": "figs/citation_paths_openalex.pdf",
-      "sha256": "df64d8e2e0c7ecfba785aa9d0f65424a5a0b27c50d2993403ed0147fa063b6c0",
+      "sha256": "ac6eeeccef9e0178dc271c5dc163d98c1322a57d2d3051fc34d63ddc1c36076d",
       "bytes": 26251
+    },
+    {
+      "path": "figs/citation_paths_openalex_body.pdf",
+      "sha256": "91546bbfc12a2a473f6eb8819004be0aa033975460280a802878f4b4fc044599",
+      "bytes": 18962
+    },
+    {
+      "path": "tabs/nieuwenhuis_paths_macros.tex",
+      "sha256": "571d3bbff16a70e93b6a91167d956f8f440914fc2ae92026dafafdd4b2fefa14",
+      "bytes": 306
+    },
+    {
+      "path": "tabs/nieuwenhuis_paths_macros.json",
+      "sha256": "c43b801833d4fb5a89229e6259980d4e60dcaba560aea79bc08fbe7a45de17f5",
+      "bytes": 253
     }
   ],
   "code": [
     {
       "path": "scripts/nieuwenhuis_design/03_long_paths.py",
-      "sha256": "62e954428c021e25d614f5fce12a02a00ef0a17b8163d2f72abbdfcca8b73f13",
-      "bytes": 4541
+      "sha256": "ee764bc123f382232786293638fed12c74fb509a2d82afaebee72d2d42e73682",
+      "bytes": 4777
     },
     {
       "path": "scripts/research_pipeline.py",
@@ -88,8 +103,13 @@
     },
     {
       "path": "scripts/nieuwenhuis_design/long_paths.R",
-      "sha256": "2c5d1610fee3f2893baebdf92c8501491552d7dab0cad32721712db0947292ca",
-      "bytes": 2331
+      "sha256": "21b5342bb18dad71706570d4c48bab887b89f9c5516b98ab9bcdaf5237f7f3ad",
+      "bytes": 3482
+    },
+    {
+      "path": "R/reporting.R",
+      "sha256": "b5633e792f36109bdb68547257ac53e9e6d4a3e432dd9fc707d8fe556b1a29af",
+      "bytes": 325
     }
   ],
   "parents": [],
@@ -141,5 +161,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T22:26:49.842931+00:00"
+  "finished_at": "2026-10-07T22:30:47.934712+00:00"
 }
