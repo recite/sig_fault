@@ -25,6 +25,33 @@ for (horizon in c("first_followup_year", "primary")) {
 }
 write.csv(do.call(rbind, components), "data/meta/lazic_components.csv", row.names = FALSE)
 write.csv(do.call(rbind, results), "data/meta/lazic_synthesis.csv", row.names = FALSE)
+
+bridge_status <- jsonlite::read_json("data/nieuwenhuis/status.json")
+stopifnot(
+  isTRUE(bridge_status$full_bridge_available),
+  bridge_status$complete_paired_papers == bridge_status$historical_papers
+)
+source_models <- read.csv("data/nieuwenhuis/source_models.csv", stringsAsFactors = FALSE)
+source_variations <- list()
+for (x in components) {
+  for (citation_source in c("openalex", "openalex_broad")) {
+    fit <- source_models[
+      source_models$cohort == "Historical cohort" &
+        source_models$source == citation_source & source_models$post_window == "2012",
+    ]
+    stopifnot(nrow(fit) == 1L, fit$paired_papers == bridge_status$historical_papers)
+    selected <- x[c("audit", "estimate", "se", "df")]
+    nw_row <- selected$audit == "Nieuwenhuis"
+    selected[nw_row, c("estimate", "se", "df")] <- fit[c("estimate", "se", "df")]
+    source_variations[[length(source_variations) + 1L]] <- cbind(
+      lal_diagnostic = x$lal_diagnostic[1], lazic_horizon = x$lazic_horizon[1],
+      nieuwenhuis_source = citation_source, equal_audit_synthesis(selected)
+    )
+  }
+}
+source_variations <- do.call(rbind, source_variations)
+write.csv(source_variations, "data/meta/openalex_synthesis.csv", row.names = FALSE)
+
 jsonlite::write_json(list(
   status = "three_audit_descriptive_synthesis",
   estimand = paste(
@@ -36,13 +63,13 @@ jsonlite::write_json(list(
   component_estimates = "data/meta/lazic_components.csv",
   i4r_sensitivity = "data/meta/lazic_with_i4r.csv",
   openalex_source_comparison = "data/nieuwenhuis/status.json",
+  openalex_synthesis = "data/meta/openalex_synthesis.csv",
   primary_lazic_contrast = "2016 to 2019, first-known-publicity cohort",
   harmonized_lazic_contrast = "2016 to 2018; journal publication occurred in 2018",
   weights = "One third per audit on the log ratio-of-ratios scale",
   population = "The three assembled audits, not a random sample of publicized errors",
   limitations = c(
     "Different error definitions, databases and document types remain.",
-    "The complete Nieuwenhuis OpenAlex comparison remains pending.",
     "Nieuwenhuis papers published in 2010 have partial publication-year baselines.",
     "Public availability is not verified reader exposure.",
     "Only three audits; intervals omit across-audit generalization uncertainty.",
@@ -153,6 +180,30 @@ lines <- c(lines, "", paste(
   "retain additional IV definitions and neuroscience source/cohort sensitivities;",
   "the [I4R extension without Lazic](secondary.md) is also available. These are",
   "alternative summaries of overlapping evidence, not additional independent studies."
+))
+lines <- c(
+  lines, "", "## Replacing the neuroscience citation source", "", paste(
+    "The following comparisons replace the historical neuroscience counts with",
+    "OpenAlex on the same papers and years. Each still contains three audits;",
+    "different databases do not create independent studies. The main synthesis",
+    "retains the historical source. These are source sensitivities, not estimates",
+    "of database bias relative to a known truth."
+  ), "", "| IV definition | Lazic follow-up | OpenAlex types | Three audits, % [95% interval] |",
+  "| --- | ---: | --- | ---: |"
+)
+for (i in seq_len(nrow(source_variations))) {
+  x <- source_variations[i, ]
+  lines <- c(lines, sprintf(
+    "| %s | %s | %s | %.1f [%.1f, %.1f] |", x$lal_diagnostic,
+    if (x$lazic_horizon == "primary") "2019" else "2018",
+    if (x$nieuwenhuis_source == "openalex") "Articles/reviews" else "Broader types",
+    x$percent, x$lower, x$upper
+  ))
+}
+lines <- c(lines, "", paste(
+  "See the [paired citation-source comparison](../nieuwenhuis/README.md),",
+  "[source-specific model estimates](../../data/nieuwenhuis/source_models.csv), and",
+  "[synthesis data](../../data/meta/openalex_synthesis.csv)."
 ))
 lines <- gsub("] (", "](", lines, fixed = TRUE)
 writeLines(lines, "docs/meta/README.md")

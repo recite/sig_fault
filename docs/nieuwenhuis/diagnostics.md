@@ -1,25 +1,40 @@
 # Why the citation counts differ
 
-The paired comparison covers 10 original papers. The decomposition holds those identities fixed and exactly reconstructs OpenAlex article/review counts minus the historical Web of Science counts for every included paper-year. It does not estimate the publicity effect.
+The paired comparison covers 153 original papers. The decomposition holds those identities fixed and exactly reconstructs OpenAlex article/review counts minus the historical Web of Science counts for every included paper-year. It does not estimate the publicity effect.
 
 ## Annual count decomposition
 
 Entries are total citing relationships across the paired papers, not per-paper means. Positive entries raise OpenAlex relative to Web of Science.
 
+Comparison papers
+
+| Component | 2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Web of Science counts | 87 | 501 | 1104 | 1250 | 1315 | 1297 | 1268 |
+| OpenAlex article/review counts | 168 | 697 | 1278 | 1362 | 1437 | 1417 | 1406 |
+| Difference (OpenAlex minus WoS) | 81 | 196 | 174 | 112 | 122 | 120 | 138 |
+| Shared-link publication years | 56 | 109 | 100 | 19 | 28 | -37 | -133 |
+| Shared-link type exclusions | -7 | -15 | -38 | -31 | -74 | -31 | -37 |
+| Shared-link predating exclusions | -5 | -4 | 0 | 0 | 0 | 0 | 0 |
+| OpenAlex-only DOI | 47 | 126 | 172 | 170 | 205 | 205 | 352 |
+| Web of Science-only DOI | -1 | -11 | -17 | -19 | -24 | -21 | -40 |
+| OpenAlex without DOI | 0 | 29 | 37 | 56 | 59 | 57 | 46 |
+| Web of Science without DOI | -9 | -38 | -80 | -83 | -72 | -53 | -50 |
+
 Flagged papers
 
 | Component | 2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Web of Science counts | 11 | 81 | 179 | 192 | 239 | 227 | 234 |
-| OpenAlex article/review counts | 19 | 102 | 200 | 200 | 253 | 231 | 244 |
-| Difference (OpenAlex minus WoS) | 8 | 21 | 21 | 8 | 14 | 4 | 10 |
-| Shared-link publication years | 6 | 15 | 12 | 10 | 4 | -8 | -20 |
-| Shared-link type exclusions | -1 | -1 | -4 | -12 | -6 | -12 | -18 |
-| Shared-link predating exclusions | 0 | -1 | 0 | 0 | 0 | 0 | 0 |
-| OpenAlex-only DOI | 3 | 11 | 17 | 20 | 20 | 26 | 52 |
-| Web of Science-only DOI | 0 | -2 | -1 | -2 | -1 | -1 | -1 |
-| OpenAlex without DOI | 0 | 4 | 4 | 4 | 7 | 3 | 4 |
-| Web of Science without DOI | 0 | -5 | -7 | -12 | -10 | -4 | -7 |
+| Web of Science counts | 113 | 717 | 1390 | 1536 | 1717 | 1706 | 1536 |
+| OpenAlex article/review counts | 198 | 952 | 1582 | 1575 | 1879 | 1752 | 1639 |
+| Difference (OpenAlex minus WoS) | 85 | 235 | 192 | 39 | 162 | 46 | 103 |
+| Shared-link publication years | 60 | 133 | 136 | -27 | 51 | -37 | -134 |
+| Shared-link type exclusions | -2 | -21 | -55 | -66 | -62 | -74 | -46 |
+| Shared-link predating exclusions | -7 | -7 | 0 | 0 | 0 | 0 | 0 |
+| OpenAlex-only DOI | 46 | 158 | 171 | 220 | 229 | 211 | 325 |
+| Web of Science-only DOI | -7 | -20 | -35 | -43 | -39 | -37 | -39 |
+| OpenAlex without DOI | 1 | 40 | 39 | 46 | 56 | 47 | 40 |
+| Web of Science without DOI | -6 | -48 | -64 | -91 | -73 | -64 | -43 |
 
 
 Shared-link dating moves an eligible citation between years while keeping the citing DOI fixed. A shared link excluded by OpenAlex's article/review rule is assigned to type exclusions at its historical year; a remaining shared link dated before the original is assigned to predating exclusions. Only shared links eligible for the primary OpenAlex count enter the dating component. This ordering prevents double counting but is one accounting convention.
@@ -28,13 +43,14 @@ DOI-only terms are unmatched identifiers, not verified missing or erroneous refe
 
 ## Publisher-date check
 
-Among 219 shared links with different years, OpenAlex assigns 218 an earlier year. Publisher-deposited Crossref metadata supplies a separate check of online and print dates.
+Among 3223 shared links with different years, OpenAlex assigns 3219 an earlier year. Publisher-deposited Crossref metadata supplies a separate check of online and print dates.
 
 | Date evidence | Citation relationships |
 | --- | ---: |
-| Both dates available but do not explain the difference | 11 |
-| Online or print date is missing | 111 |
-| OpenAlex matches online year; WoS matches print year | 97 |
+| Both dates available but do not explain the difference | 18 |
+| Online or print date is missing | 168 |
+| Publisher metadata unavailable | 2886 |
+| OpenAlex matches online year; WoS matches print year | 151 |
 
 Date agreement supports a dating-convention explanation for those specific records. It does not prove that every date is correct, establish when authors became aware of the critique, or determine which date best measures that response. Records counted here are original–citing DOI relationships; the same citing paper may link to more than one original.
 
@@ -53,4 +69,4 @@ The decomposition reconciles documented DOI transcription errors. Both original 
 | translation | 1 |
 | unresolved | 6 |
 
-After verified identifier corrections, matched-DOI relationships number 1130. The [original exact-DOI crosswalk](../../data/nieuwenhuis/doi_overlap.csv) retains the source identifiers for comparison.
+After verified identifier corrections, matched-DOI relationships number 14744. The [original exact-DOI crosswalk](../../data/nieuwenhuis/doi_overlap.csv) retains the source identifiers for comparison.

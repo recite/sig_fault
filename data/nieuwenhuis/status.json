@@ -1,13 +1,13 @@
 {
   "historical_papers": 153,
-  "complete_paired_papers": 10,
-  "complete_flagged": 10,
-  "complete_comparison": 0,
-  "full_bridge_available": false,
+  "complete_paired_papers": 153,
+  "complete_flagged": 76,
+  "complete_comparison": 77,
+  "full_bridge_available": true,
   "doi_links": {
-    "both": 1128,
-    "openalex_only": 294,
-    "wos_only": 10
+    "openalex_only": 4721,
+    "both": 14742,
+    "wos_only": 355
   },
-  "shared_doi_year_disagreements": 219
+  "shared_doi_year_disagreements": 3223
 }

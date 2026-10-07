@@ -115,7 +115,8 @@ dir.create("docs/meta", recursive = TRUE, showWarnings = FALSE)
 report <- c(
   "# Provisional synthesis across two methodological audits", "",
   "The completed neuroscience and IV cohorts permit a common-window summary, while",
-  "the full OpenAlex neuroscience comparison and primary I4R article/review panels remain pending.",
+  "the primary I4R article/review panels remain incomplete. The current three-audit",
+  "summary also reports substitution of OpenAlex neuroscience counts on the same papers.",
   "Every row below includes one estimate from each audit, with equal audit weights.",
   "Alternative IV diagnostics are separate analyses of the same evidence.", "",
   paste0(

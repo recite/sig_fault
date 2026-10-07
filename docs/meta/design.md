@@ -119,7 +119,9 @@ of multiple rows with the same audit identity.
 
 The two-audit OpenCitations sensitivity substitutes its neuroscience estimate for
 the historical estimate on identical papers and years. It does not add an
-independent audit or harmonize document types with Lal. The complete paired
-OpenAlex comparison remains pending. Source contrasts measure how recorded counts
+independent audit or harmonize document types with Lal. The OpenAlex sensitivity likewise substitutes its source-specific neuroscience
+contrast into the three-audit synthesis, keeping the audit identities, weights,
+and time windows fixed. Articles/reviews and the broader document-type definition
+are reported separately. Source contrasts measure how recorded counts
 and estimates change when switching databases; neither index is assumed to be
 truth, so a discrepancy alone is not an estimate of database bias.

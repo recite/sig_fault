@@ -515,7 +515,47 @@ def eligible_edges(edges, types):
     ]
 
 
-def duplicate_checks(edges):
+def resolve_duplicate_edges(edges, reviews):
+    """Apply source-verified canonical work choices without altering raw edges."""
+    pilot.unique(reviews, ["paper_id", "doi"])
+    groups = collections.defaultdict(list)
+    for row in edges:
+        groups[row["paper_id"], row["doi"]].append(row)
+    choices = {}
+    for review in reviews:
+        key = review["paper_id"], review["doi"]
+        rows = groups.get(key, [])
+        observed = {r["citing_work_id"] for r in rows}
+        if len(rows) < 2 or observed != set(review["work_ids"].split(";")):
+            raise ValueError("Duplicate review no longer matches retrieved records")
+        chosen = review["canonical_work_id"]
+        if chosen not in observed:
+            raise ValueError("Canonical work is absent from retrieved records")
+        canonical = next(r for r in rows if r["citing_work_id"] == chosen)
+        if (
+            canonical["reference_verified"] != "yes"
+            or canonical["publication_date"] != review["publication_date"]
+            or canonical["type"] != review["type"]
+        ):
+            raise ValueError("Canonical record differs from verified duplicate review")
+        choices[key] = chosen
+    return [
+        (
+            row
+            | {
+                "duplicate_of": (
+                    "" if row["citing_work_id"] == choices[key] else choices[key]
+                )
+            }
+            if (key := (row["paper_id"], row["doi"])) in choices
+            else row.copy()
+        )
+        for row in edges
+    ]
+
+
+def duplicate_checks(edges, reviews=()):
+    reviewed = {(r["paper_id"], r["doi"]) for r in reviews}
     groups = collections.defaultdict(list)
     for row in edges:
         if row["doi"]:
@@ -542,7 +582,9 @@ def duplicate_checks(edges):
                 years=";".join(sorted({r["publication_year"] for r in rows})),
                 types=";".join(sorted({r["type"] for r in rows})),
                 bridge_review_required=(
-                    "yes" if affected and len(signatures) > 1 else "no"
+                    "yes"
+                    if affected and len(signatures) > 1 and (pid, doi) not in reviewed
+                    else "no"
                 ),
             )
         )
@@ -561,8 +603,9 @@ def compare():
         for r in read("coverage.csv")
         if history_complete(r, identities.get(r["paper_id"], {}))
     }
-    edges = read("citation_edges.csv")
-    checks = duplicate_checks(edges)
+    reviews = read("duplicate_resolutions.csv")
+    edges = resolve_duplicate_edges(read("citation_edges.csv"), reviews)
+    checks = duplicate_checks(edges, reviews)
     pilot.write_csv(
         DATA / "duplicate_checks.csv",
         checks,
@@ -764,6 +807,32 @@ def report():
         "sources. Missing histories are not zero. These are descriptive counts "
         "for the available paired sample, not an estimate of publicity's effect.",
     ]
+    models = read("source_models.csv")
+    if models:
+        lines += [
+            "",
+            "## Source-specific growth estimates",
+            "",
+            "Each model uses article and year fixed effects, with article-clustered "
+            "uncertainty. The table uses the historical cohort, a 2010 baseline and "
+            "2012–2015 post period. These intervals concern each source's growth "
+            "contrast; the paired intervals below concern the change from "
+            "switching sources.",
+            "",
+            "| Source | Relative growth difference, % | 95% interval |",
+            "| --- | ---: | ---: |",
+        ]
+        for row in models:
+            if (
+                row["cohort"] != "Historical cohort"
+                or row["post_window"] != "2012-2015"
+            ):
+                continue
+            lines.append(
+                f"| {names[row['source']]} | {float(row['percent']):.1f} | "
+                f"[{float(row['percent_lower']):.1f}, "
+                f"{float(row['percent_upper']):.1f}] |"
+            )
     contrasts = read("source_contrasts.csv")
     lines += [
         "",
@@ -859,8 +928,10 @@ def report():
         "The first two commands run offline from frozen public inputs. The fetch "
         "target resumes publisher identity checks and incoming OpenAlex citations, "
         "retaining completed pilot histories and respecting the shared rate-limit "
-        "checkpoint. Set OPENALEX_API_KEY in the environment for authenticated "
-        "requests. No key is stored in the data.",
+        "checkpoint. Authenticated requests use OPENALEX_API_KEY, or the key in "
+        "`$XDG_CONFIG_HOME/openalex/api_key` (default `~/.config/openalex/api_key`). "
+        "The environment takes precedence. Credentials are sent in headers and "
+        "are not stored in the data or manifests.",
         "",
         "See [design](design.md), [construction and dictionary](data.md), "
         "[source-discrepancy diagnostics](diagnostics.md), "

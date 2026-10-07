@@ -14,7 +14,7 @@ For each database, show annual means and medians for 2009–2015, the 2010 basel
 
 OpenAlex's primary count includes articles and reviews, matching the Lal extension. Historical exports lack a document-type field beyond Web of Science's broad publication type, so their original counts cannot be described as identically type-restricted. Report that asymmetry and preserve a broader OpenAlex sensitivity. DOI overlap and year disagreement among shared citation links separate some sources of discrepancy; non-DOI links remain unresolved rather than automatically false. Manual review can establish particular false or missing links, but absence from one database alone cannot.
 
-Source differences in the growth contrast must be estimated on the same complete-paper sample. The completed mixed-source cohorts can support a provisional descriptive synthesis while that source comparison is pending. When both groups are available, bootstrap paired paper histories within flag groups to estimate uncertainty in the difference between database contrasts. Do not subtract independent standard errors for paired measurements. Existing ten-paper pilot histories include flagged papers only and cannot identify a flagged-versus-comparison effect.
+Source differences in the growth contrast must be estimated on the same complete-paper sample. The completed mixed-source cohorts support a descriptive synthesis; source substitution must additionally pass the full paired-cohort gate. Bootstrap paired paper histories within flag groups to estimate uncertainty in the difference between database contrasts. Do not subtract independent standard errors for paired measurements. At protocol construction, the ten-paper pilot included flagged papers only and could not identify a flagged-versus-comparison effect. The completed collection now covers the entire historical cohort.
 
 The implemented paired comparison uses 9,999 resamples, with seed 20261006 and percentile 95% intervals. Each draw samples original papers with replacement separately within flag groups and retains all source counts for each selected paper. Fewer than two paired papers in either group withholds intervals. A zero group-period total makes the proportional contrast undefined; the number of undefined draws is recorded, and any such draw withholds the proportional interval rather than conditioning it on successful draws. The absolute contrast remains defined at zero counts. Intervals are conditional on the available paired cohort and fixed database records; they do not quantify uncertainty from missing histories, citation-link errors or the choice of database.
 
@@ -44,3 +44,21 @@ measured using OpenCitations. This is a retrospective source sensitivity. It kee
 the same original papers, audit weights, IV alternatives and article-clustered
 component inference; it substitutes the source rather than adding another audit.
 The main historical synthesis and the separate OpenAlex acquisition remain intact.
+
+## Duplicate-record adjudication
+
+Full collection identified same-DOI records with conflicting dates. The
+[resolution ledger](../../data/nieuwenhuis/duplicate_resolutions.csv) records
+OpenAlex's DOI-resolved work ID, the exact retrieved candidate IDs, and hashes
+of the OpenAlex and Crossref identity evidence. Retain that canonical OpenAlex
+record once per target. This does not replace its year with Crossref's year or
+establish its first-publication date; the preprint case includes different
+version titles and dates under one DOI. Raw edges remain unchanged. The build
+rejects a stale resolution if the candidate IDs, canonical date, type, or verified
+reference no longer match, and unresolved relevant conflicts still block a paper.
+
+The source-specific Poisson fits must reproduce the group growth-ratio identity.
+The synthesis requires complete coverage of the historical cohort and verifies
+the paired sample size on every substituted model; an estimable partial sample
+is not enough. OpenAlex replaces the neuroscience component rather than adding
+another independent audit.

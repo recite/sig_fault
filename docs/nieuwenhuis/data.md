@@ -123,3 +123,9 @@ It does not add a third independent audit.
 Independent reconstruction reproduced all list/count matches, source hashes,
 annual means and medians, point estimates and paired bootstrap intervals. The
 main source-difference estimates and intervals agree to numerical precision.
+
+The [duplicate-resolution ledger](../../data/nieuwenhuis/duplicate_resolutions.csv)
+selects source-verified canonical OpenAlex records for the adjudicated conflicts.
+Effective duplicate flags are applied consistently to annual counts and link
+diagnostics; raw edge flags and raw API responses remain preserved. Dates remain
+those of the selected OpenAlex record, including version-date differences.

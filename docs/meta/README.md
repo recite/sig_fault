@@ -16,3 +16,20 @@ Neither three-audit definition establishes a common citation penalty. The interv
 No known Lazic DOI overlaps the existing original/control DOI inventory; one included Lazic paper has no DOI. See the [component ledger](../../data/meta/lazic_components.csv), [identity ledger](../../data/meta/lazic_component_identities.csv), and [cohort results](../lazic/results.md). Run `make synthesis` to reproduce.
 
 See [methods and sample definitions](design.md) and [current status](../../data/meta/status.json). The [two-audit comparisons](two-audit.md) retain additional IV definitions and neuroscience source/cohort sensitivities; the [I4R extension without Lazic](secondary.md) is also available. These are alternative summaries of overlapping evidence, not additional independent studies.
+
+## Replacing the neuroscience citation source
+
+The following comparisons replace the historical neuroscience counts with OpenAlex on the same papers and years. Each still contains three audits; different databases do not create independent studies. The main synthesis retains the historical source. These are source sensitivities, not estimates of database bias relative to a known truth.
+
+| IV definition | Lazic follow-up | OpenAlex types | Three audits, % [95% interval] |
+| --- | ---: | --- | ---: |
+| Effective F below 10 | 2018 | Articles/reviews | -12.4 [-24.7, 1.8] |
+| Effective F below 10 | 2018 | Broader types | -12.0 [-24.3, 2.3] |
+| Inferential sensitivity | 2018 | Articles/reviews | -0.9 [-14.7, 15.2] |
+| Inferential sensitivity | 2018 | Broader types | -0.5 [-14.4, 15.7] |
+| Effective F below 10 | 2019 | Articles/reviews | -11.3 [-23.4, 2.8] |
+| Effective F below 10 | 2019 | Broader types | -10.9 [-23.1, 3.3] |
+| Inferential sensitivity | 2019 | Articles/reviews | 0.4 [-13.3, 16.3] |
+| Inferential sensitivity | 2019 | Broader types | 0.8 [-12.9, 16.8] |
+
+See the [paired citation-source comparison](../nieuwenhuis/README.md), [source-specific model estimates](../../data/nieuwenhuis/source_models.csv), and [synthesis data](../../data/meta/openalex_synthesis.csv).

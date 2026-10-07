@@ -193,6 +193,52 @@ class BridgeTests(unittest.TestCase):
         types = nw.duplicate_checks([edge, edge | dict(type="editorial")])
         self.assertEqual(types[0]["bridge_review_required"], "yes")
 
+    def test_canonical_duplicate_resolution_moves_one_count_without_changing_raw(self):
+        base = dict(
+            paper_id="nw_1",
+            doi="10.1/citing",
+            publication_year="2010",
+            publication_date="2010-02-01",
+            type="article",
+            before_original_date="no",
+            reference_verified="yes",
+            target_work_id="W0",
+        )
+        edges = [
+            base | dict(citing_work_id="W1", duplicate_of=""),
+            base
+            | dict(
+                citing_work_id="W2",
+                duplicate_of="W1",
+                publication_date="2011-02-01",
+                publication_year="2011",
+            ),
+        ]
+        review = dict(
+            paper_id="nw_1",
+            doi="10.1/citing",
+            work_ids="W1;W2",
+            canonical_work_id="W2",
+            publication_date="2011-02-01",
+            type="article",
+        )
+        actual = nw.resolve_duplicate_edges(edges, [review])
+        selected = nw.eligible_edges(actual, {"article", "review"})
+        self.assertEqual([r["publication_year"] for r in selected], ["2011"])
+        self.assertEqual(edges[0]["duplicate_of"], "")
+        self.assertEqual(
+            nw.duplicate_checks(actual, [review])[0]["bridge_review_required"], "no"
+        )
+        for invalid in [
+            review | dict(canonical_work_id="W3"),
+            review | dict(work_ids="W1;W2;W3"),
+            review | dict(publication_date="2012-01-01"),
+        ]:
+            with self.assertRaises(ValueError):
+                nw.resolve_duplicate_edges(edges, [invalid])
+        with self.assertRaises(ValueError):
+            nw.resolve_duplicate_edges(edges, [review, review])
+
     def test_type_and_invalid_link_exclusions(self):
         edge = dict(
             reference_verified="yes",

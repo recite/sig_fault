@@ -89,7 +89,7 @@ def fetch(url, path, json_response=True):
         if host == "api.osf.io":
             token = os.environ.get("OSF_TOKEN") or os.environ.get("OSF_API_TOKEN")
         elif host == "api.openalex.org":
-            token = os.environ.get("OPENALEX_API_KEY")
+            token = pilot.openalex_api_key()
         scope = "authenticated" if token else "anonymous"
         blocked = CACHE / (host + "_" + scope + "_retry_after.json")
         if blocked.exists() and time.time() < json.loads(blocked.read_text())["until"]:

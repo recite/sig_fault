@@ -180,7 +180,9 @@ def build():
         panel,
         links,
         pilot.read_csv(pilot.ROOT / "data/derived/raw.csv"),
-        nw.read("citation_edges.csv"),
+        nw.resolve_duplicate_edges(
+            nw.read("citation_edges.csv"), nw.read("duplicate_resolutions.csv")
+        ),
     )
     fields = ["paper_id", "year", "flag", "wos", "openalex", "difference"] + COMPONENTS
     pilot.write_csv(nw.DATA / "count_decomposition.csv", rows, fields)

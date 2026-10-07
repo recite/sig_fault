@@ -1,15 +1,33 @@
 """Behavioral tests for citation sampling and measurement safeguards."""
 
 import importlib.util
+import os
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 SPEC = importlib.util.spec_from_file_location(
     "pilot", Path(__file__).resolve().parents[1] / "scripts/pilot.py"
 )
 pilot = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(pilot)
+
+
+class CredentialTests(unittest.TestCase):
+    def test_private_config_and_environment_precedence(self):
+        with tempfile.TemporaryDirectory() as folder, patch.dict(
+            os.environ, {"XDG_CONFIG_HOME": folder, "OPENALEX_API_KEY": ""}
+        ):
+            self.assertIsNone(pilot.openalex_api_key())
+            path = Path(folder) / "openalex" / "api_key"
+            path.parent.mkdir()
+            path.write_text("test-file-credential\n")
+            self.assertEqual(pilot.openalex_api_key(), "test-file-credential")
+            with patch.dict(os.environ, {"OPENALEX_API_KEY": "test-env-credential"}):
+                self.assertEqual(pilot.openalex_api_key(), "test-env-credential")
+            path.write_text("\n")
+            self.assertIsNone(pilot.openalex_api_key())
 
 
 def edge(index, paper="p", date="2015-01-01"):
@@ -101,7 +119,11 @@ class PilotTests(unittest.TestCase):
             )
 
     def test_doi_in_reference_list_does_not_verify_article_identity(self):
-        payload = b'<article><front><article-meta><article-id pub-id-type="doi">10.1/a</article-id></article-meta></front><body><p>Text</p></body><back><ref>10.1/b</ref></back></article>'
+        payload = (
+            b'<article><front><article-meta><article-id pub-id-type="doi">'
+            b"10.1/a</article-id></article-meta></front><body><p>Text</p>"
+            b"</body><back><ref>10.1/b</ref></back></article>"
+        )
         pilot.verify_xml_doi(payload, "10.1/a")
         with self.assertRaises(ValueError):
             pilot.verify_xml_doi(payload, "10.1/b")
@@ -180,7 +202,13 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(len(pilot.draw_sample([a, b], self.registry, self.audits)), 1)
 
     def test_context_extraction_keeps_multiple_mentions_and_exact_dois(self):
-        payload = b'<article><front/><body><p id="p1">Uses <xref rid="r1 r2">1,2</xref>.</p><p id="p2">Qualifies <xref rid="r1">1</xref>.</p></body><back><ref id="r1"><pub-id pub-id-type="doi">10.1/a</pub-id></ref><ref id="r2"><pub-id pub-id-type="doi">10.1/ab</pub-id></ref></back></article>'
+        payload = (
+            b'<article><front/><body><p id="p1">Uses <xref rid="r1 r2">'
+            b'1,2</xref>.</p><p id="p2">Qualifies <xref rid="r1">1</xref>'
+            b'.</p></body><back><ref id="r1"><pub-id pub-id-type="doi">'
+            b'10.1/a</pub-id></ref><ref id="r2"><pub-id pub-id-type="doi">'
+            b"10.1/ab</pub-id></ref></back></article>"
+        )
         refs, passages = pilot.citation_passages(payload, "10.1/a")
         self.assertEqual(refs, ["r1"])
         self.assertEqual([p["paragraph_id"] for p in passages], ["p1", "p2"])

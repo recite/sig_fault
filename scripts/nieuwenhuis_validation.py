@@ -247,9 +247,9 @@ def report(checked, coverage):
         "",
         "The frame consists of DOI-bearing relationships dated 2009–2015 in "
         "at least one of the two original sources, after documented DOI "
-        "transcription repairs. This is the same selected, flagged-only "
-        "paired sample used in the source comparison; it cannot estimate "
-        "coverage for comparison papers or the full cohort.",
+        "transcription repairs. It uses the available paired-paper sample "
+        "from the source comparison; the coverage counts below distinguish "
+        "complete third-source acquisition from an absent citation link.",
         "Headline fractions include only targets with complete OpenCitations "
         "retrieval. The table also identifies any links whose target's "
         "third-source retrieval is incomplete.",
@@ -285,7 +285,7 @@ def report(checked, coverage):
         "in this index is not thereby false. These records do not replace "
         "either database's annual citation counts.",
         "",
-        f"The responses for these paired pilot papers include {undated} undated "
+        f"The responses for these paired papers include {undated} undated "
         "relationships across all years. They remain in the link data with "
         "empty dates. Every accepted response matches the separate count "
         "endpoint, has unique citation identifiers, and identifies the "

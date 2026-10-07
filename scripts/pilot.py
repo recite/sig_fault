@@ -110,6 +110,18 @@ def unique(rows, fields):
         raise ValueError(f"Duplicate key: {fields}")
 
 
+def openalex_api_key():
+    """Load credentials from the environment or the user's private config."""
+    key = os.environ.get("OPENALEX_API_KEY", "").strip()
+    if key:
+        return key
+    config = Path(os.environ.get("XDG_CONFIG_HOME") or Path.home() / ".config")
+    path = config / "openalex" / "api_key"
+    if not path.is_file():
+        return None
+    return path.read_text().strip() or None
+
+
 def request(url, path, json_response=True):
     """Cache successful responses; never print or persist authentication tokens."""
     path = Path(path)
@@ -117,7 +129,7 @@ def request(url, path, json_response=True):
         payload = path.read_bytes()
         return json.loads(payload) if json_response else payload
     headers = {"User-Agent": "sig-fault-citation-pilot/1.0"}
-    key = os.environ.get("OPENALEX_API_KEY")
+    key = openalex_api_key()
     if key and urllib.parse.urlparse(url).hostname == "api.openalex.org":
         headers["Authorization"] = f"Bearer {key}"
     for attempt in range(4):
@@ -208,9 +220,9 @@ def normalize_edges(paper, target, works):
                 "reference_verified": "yes",
                 "oa_urls": json.dumps(oa_urls(work)),
                 "pmcid": work_pmcid(work),
-                "before_original_date": "yes"
-                if date < paper["publication_date"]
-                else "no",
+                "before_original_date": (
+                    "yes" if date < paper["publication_date"] else "no"
+                ),
                 "duplicate_of": duplicate,
                 "eligible_type": "yes" if work["type"] in ALLOWED_TYPES else "no",
             }
@@ -240,7 +252,10 @@ def fetch():
             pages += 1
             url = api_url(
                 "works",
-                filter=f"cites:{target['id'].split('/')[-1]},to_publication_date:{CUTOFF}",
+                filter=(
+                    f"cites:{target['id'].split('/')[-1]},"
+                    f"to_publication_date:{CUTOFF}"
+                ),
                 per_page=100,
                 cursor=cursor,
                 select=fields,
@@ -369,7 +384,8 @@ def sample():
             )
     write_frozen_csv(DATA / "coding_template.csv", templates, RATING_FIELDS)
     print(
-        f"Frozen sample: {len(rows)} pairs; blank independent-reader forms: {len(templates)}"
+        f"Frozen sample: {len(rows)} pairs; "
+        f"blank independent-reader forms: {len(templates)}"
     )
 
 
@@ -456,16 +472,19 @@ def contexts():
             payload = (ROOT / record["local_path"]).read_bytes()
             refs, passages = citation_passages(payload, papers[row["paper_id"]]["doi"])
             path = directory / (row["pair_id"] + ".txt")
-            heading = "Automatically located citation passages. Read the full paper for qualifications.\n\n"
+            heading = (
+                "Automatically located citation passages. "
+                "Read the full paper for qualifications.\n\n"
+            )
             path.write_text(
                 heading + "\n\n".join(p["text"] for p in passages), encoding="utf-8"
             )
             result.update(
-                status="passages_located"
-                if passages
-                else "reference_only"
-                if refs
-                else "doi_reference_not_located",
+                status=(
+                    "passages_located"
+                    if passages
+                    else "reference_only" if refs else "doi_reference_not_located"
+                ),
                 passages=len(passages),
                 local_path=str(path.relative_to(ROOT)),
             )
@@ -476,7 +495,8 @@ def contexts():
         ["pair_id", "status", "passages", "local_path"],
     )
     print(
-        f"Located passages for {sum(r['status'] == 'passages_located' for r in index)} pairs; no outcome codes assigned"
+        f"Located passages for {sum(r['status'] == 'passages_located' for r in index)} "
+        "pairs; no outcome codes assigned"
     )
 
 
@@ -559,7 +579,7 @@ def retrieve_one(row):
                 attempts.append(f"{url}: {type(error).__name__}")
     urls = json.loads(row["oa_urls"])
     for url in urls:
-        # Download advertised PDF endpoints; landing pages remain in the reviewer packet.
+        # Download PDF endpoints; retain landing pages in the reviewer packet.
         if not re.search(r"(\.pdf(?:[?#]|$)|/pdf(?:[/?#]|$))", url, re.I):
             continue
         path = CACHE / "fulltext" / (sha256(url.encode()) + ".pdf")
@@ -689,7 +709,8 @@ def validate_ratings(rows, sample_ids):
                 for f in ("valid_link", "fulltext_read", "claim_identified")
             ):
                 raise ValueError(
-                    "A reliance judgment requires verified link, full text, and identified claim"
+                    "A reliance judgment requires verified link, full text, "
+                    "and identified claim"
                 )
             if not row["evidence_locator"] or not row["evidence_excerpt"]:
                 raise ValueError("A reliance judgment requires passage evidence")
@@ -752,7 +773,7 @@ def validate():
 
 
 def agreement(ratings):
-    """Describe initial paired judgments without interpreting missingness as disagreement."""
+    """Describe paired judgments without treating missingness as disagreement."""
     by_pair = {}
     for row in ratings:
         by_pair.setdefault(row["pair_id"], []).append(row)
@@ -770,9 +791,11 @@ def agreement(ratings):
         out[field] = {
             "paired_completed": len(pairs),
             "confusion": cells,
-            "exact_agreement": sum(a[field] == b[field] for a, b in pairs) / len(pairs)
-            if pairs
-            else None,
+            "exact_agreement": (
+                sum(a[field] == b[field] for a, b in pairs) / len(pairs)
+                if pairs
+                else None
+            ),
         }
         binary_pairs = [
             (a[field], b[field])
@@ -864,7 +887,9 @@ def report():
                         "canonical_date": canonical["publication_date"],
                         "duplicate_work_id": row["citing_work_id"],
                         "duplicate_date": row["publication_date"],
-                        "decision": "count_once_same_period_version_date_review_pending",
+                        "decision": (
+                            "count_once_same_period_version_date_review_pending"
+                        ),
                     }
                 )
     write_csv(
@@ -889,18 +914,24 @@ def report():
         f"{summary['post_pairs']} post-warning. Independent claim verification and "
         "citation coding are pending; there is no estimate of continued reliance.",
         "",
-        f"Automated retrieval obtained files for {acquired}/{len(rows)} relationships "
+        f"Automated retrieval obtained files for {acquired}/{len(rows)} "
+        "relationships "
         f"({acquired / len(rows):.1%}). Of these, {counts['retrieved_xml']} have "
         "an XML article body and a matching article DOI; "
-        f"{counts['downloaded_pdf_unchecked']} are PDFs awaiting identity and readability "
+        f"{counts['downloaded_pdf_unchecked']} are PDFs awaiting identity "
+        "and readability "
         "checks. File acquisition is an upper bound on verified readable coverage. "
         + (
             "The 80% availability criterion is not met by the present retrieval."
             if acquired < 0.8 * len(rows)
-            else "The 80% availability criterion still requires manual readability checks."
+            else (
+                "The 80% availability criterion still requires "
+                "manual readability checks."
+            )
         ),
         "",
-        "| Audit | Period | Sampled | DOI-checked XML | Unchecked PDF | Not retrieved |",
+        "| Audit | Period | Sampled | DOI-checked XML | "
+        "Unchecked PDF | Not retrieved |",
         "| --- | --- | ---: | ---: | ---: | ---: |",
     ]
     for row in availability:
@@ -922,20 +953,23 @@ def report():
     chunks = [
         "<!doctype html><html lang='en'><meta charset='utf-8'>",
         "<title>Citation-reliance pilot: reader packet</title>",
-        "<style>body{font:17px/1.5 system-ui;max-width:1000px;margin:40px auto;padding:20px}"
+        "<style>body{font:17px/1.5 system-ui;max-width:1000px;"
+        "margin:40px auto;padding:20px}"
         "article{border-top:1px solid #ccc;padding:20px 0}a{color:#174b87}"
         "code{font-size:14px}h1,h2{line-height:1.2}</style>",
         "<h1>Citation-reliance pilot</h1><p>Independent coding is pending. "
         "Downloaded files are not evidence of reliance. Read all relevant passages, "
         "including qualifications elsewhere in each paper.</p>",
         "<p>Record judgments in a copy of <code>data/pilot/coding_template.csv</code>. "
-        "See <a href='codebook.md'>the coding protocol</a>. Full texts are cached locally; "
+        "See <a href='codebook.md'>the coding protocol</a>. "
+        "Full texts are cached locally; "
         "they are not redistributed with this packet.</p>",
     ]
     claims = {r["paper_id"]: r for r in read_csv(DATA / "claims.csv")}
     for pid, claim in claims.items():
         chunks.append(
-            f"<article id='{html.escape(pid)}'><h2>Claim record: {html.escape(pid)}</h2>"
+            f"<article id='{html.escape(pid)}'>"
+            f"<h2>Claim record: {html.escape(pid)}</h2>"
         )
         for field in (
             "claim_paraphrase",
@@ -945,7 +979,8 @@ def report():
             "verification_status",
         ):
             chunks.append(
-                f"<p><strong>{html.escape(field.replace('_', ' '))}:</strong> {html.escape(claim[field])}</p>"
+                f"<p><strong>{html.escape(field.replace('_', ' '))}:</strong> "
+                f"{html.escape(claim[field])}</p>"
             )
         chunks.append("</article>")
     for row in rows:
@@ -973,12 +1008,15 @@ def report():
             )
         if record.get("local_path"):
             chunks.append(
-                f"<a href='../../{html.escape(record['local_path'], quote=True)}'>Local full text</a>"
+                f"<a href='../../{html.escape(record['local_path'], quote=True)}'>"
+                "Local full text</a>"
             )
         context = context_index.get(row["pair_id"], {})
         if context.get("local_path"):
             chunks.append(
-                f" &nbsp; <a href='../../{html.escape(context['local_path'], quote=True)}'>Located citation passages</a>"
+                " &nbsp; <a "
+                f"href='../../{html.escape(context['local_path'], quote=True)}'>"
+                "Located citation passages</a>"
             )
         chunks.append("</article>")
     chunks.append("</html>")

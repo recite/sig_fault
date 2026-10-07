@@ -1,9 +1,9 @@
 {
-  "paired_papers": 10,
+  "paired_papers": 153,
   "reconciled_doi_links": {
-    "both": 1130,
-    "openalex_only": 292,
-    "wos_only": 8
+    "openalex_only": 4719,
+    "both": 14744,
+    "wos_only": 353
   },
   "link_reviews": {
     "doi_transcription_error": 2,
@@ -11,11 +11,12 @@
     "unresolved": 6,
     "translation": 1
   },
-  "shared_year_disagreements": 219,
-  "openalex_earlier": 218,
+  "shared_year_disagreements": 3223,
+  "openalex_earlier": 3219,
   "date_explanations": {
-    "openalex_online_wos_print": 97,
-    "incomplete_dates": 111,
-    "dates_disagree": 11
+    "metadata_unavailable": 2886,
+    "openalex_online_wos_print": 151,
+    "incomplete_dates": 168,
+    "dates_disagree": 18
   }
 }
