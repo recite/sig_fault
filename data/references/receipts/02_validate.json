@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "references",
   "stage": "02_validate",
-  "started_at": "2026-10-07T20:27:59.942124+00:00",
+  "started_at": "2026-10-07T20:55:32.714077+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-sdid/scripts/references/02_validate.py"
+    "/private/tmp/sig-fault-appendix-numbering/scripts/references/02_validate.py"
   ],
   "python": "3.14.7",
-  "git_commit": "24f59899b46af1f6d7901fb52a504c7c2ee56181",
+  "git_commit": "2a4cdaf64efe7733ac456be50803e7586f4b3bc6",
   "inputs": [
     {
       "path": "ms/references.bib",
@@ -22,8 +22,8 @@
     },
     {
       "path": "ms/main.tex",
-      "sha256": "83362965684e8c7f2d6625a310e4c8df1ab084e3f9130490f839336f73c6da28",
-      "bytes": 70106
+      "sha256": "aacfa7dfd6965c225348b045b12b1dc15095398aa0063f7b30e4bb2e02219113",
+      "bytes": 70403
     },
     {
       "path": "requirements-i4r.txt",
@@ -99,5 +99,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T20:27:59.983714+00:00"
+  "finished_at": "2026-10-07T20:55:32.756199+00:00"
 }
