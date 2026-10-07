@@ -1,0 +1,9 @@
+{
+  "log_contrast": -0.13819153763558845,
+  "se": 0.07172537828516583,
+  "percent": -12.906814046014967,
+  "lower": -24.32865991559338,
+  "upper": 0.23904732167524945,
+  "source": "Independent paired-count sandwich calculation",
+  "interpretation": "Sampling/model uncertainty conditional on comparison assumptions; not a bound on confounding"
+}

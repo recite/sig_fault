@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "study": "meta",
+  "stage": "02_precision",
+  "started_at": "2026-10-07T07:22:29.569117+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-precision/scripts/meta/02_precision.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "a02f76f03b83d7a2c5601e9a1e365fb5bca86854",
+  "inputs": [
+    {
+      "path": "data/derived/panel.csv",
+      "sha256": "5994e7939a33838c5874bbecd10089653f4fd8707fc32b6e3f7558bbaea8f31b",
+      "bytes": 45579,
+      "rows": 1071
+    },
+    {
+      "path": "data/lal/panel.csv",
+      "sha256": "4f30b9779b3f50ddcb2f721b1d7ee832dc5ddb6ab45a3a360e7f65c95a459f98",
+      "bytes": 109746,
+      "rows": 629
+    },
+    {
+      "path": "data/lazic/paper_changes.csv",
+      "sha256": "1c00c60d67428f260511cc39aa2875e77743dd90a50848fc35e92d16c9eed409",
+      "bytes": 38056,
+      "rows": 826
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/paper_assessments.csv",
+      "sha256": "6fc2437d82bc0b699c2c61c44b359bf630108e7c9d8f2383ddfc39ad8e031484",
+      "bytes": 1781,
+      "rows": 22
+    },
+    {
+      "path": "data/cohorts/hmx/pipeline/panel.csv",
+      "sha256": "396c085d12f7c835d97983342f3744f04eda40d8f00044dcb837d6138b0f617b",
+      "bytes": 17272,
+      "rows": 440
+    },
+    {
+      "path": "data/meta/methodological_components.csv",
+      "sha256": "fa4fdd9dce95a544d9fd2fd782a54e56b7ea63e0f18f547f6580a2bc3395da57",
+      "bytes": 1665,
+      "rows": 16
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/meta/precision_components.csv",
+      "sha256": "7923e9d25fd224ea42d3a031562d1500c63c01aa1fe418be27926a1e3d2650dc",
+      "bytes": 726,
+      "rows": 4
+    },
+    {
+      "path": "data/meta/precision_article_influence.csv",
+      "sha256": "48960e7a28d1dcdf473f9b8d03695f76be1be7ce6488a2c89700100097cb56ff",
+      "bytes": 26015,
+      "rows": 367
+    },
+    {
+      "path": "data/meta/precision_status.json",
+      "sha256": "eadc2083a1b6175562ceb9301d0cbb676f1d8bccdc90b876627d0359597a11c7",
+      "bytes": 346
+    },
+    {
+      "path": "docs/meta/precision.md",
+      "sha256": "d7165f8e7cc67ef3a14355e4dfa9e4c22ae0d61c69d683a0f51a72f05c141516",
+      "bytes": 1718
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/meta/02_precision.py",
+      "sha256": "53ecddea2c3f0e11c318459148f066b79b0087f195530a3dcb42b7517c23595e",
+      "bytes": 9957
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "coefficient_reproduced",
+      "passed": true,
+      "detail": "Nieuwenhuis"
+    },
+    {
+      "name": "clustered_se_reproduced",
+      "passed": true,
+      "detail": "Nieuwenhuis"
+    },
+    {
+      "name": "coefficient_reproduced",
+      "passed": true,
+      "detail": "Lal"
+    },
+    {
+      "name": "clustered_se_reproduced",
+      "passed": true,
+      "detail": "Lal"
+    },
+    {
+      "name": "coefficient_reproduced",
+      "passed": true,
+      "detail": "Lazic"
+    },
+    {
+      "name": "clustered_se_reproduced",
+      "passed": true,
+      "detail": "Lazic"
+    },
+    {
+      "name": "coefficient_reproduced",
+      "passed": true,
+      "detail": "HMX"
+    },
+    {
+      "name": "clustered_se_reproduced",
+      "passed": true,
+      "detail": "HMX"
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "log_contrast": -0.13819153763558845,
+    "se": 0.07172537828516583,
+    "percent": -12.906814046014967,
+    "lower": -24.32865991559338,
+    "upper": 0.23904732167524945,
+    "source": "Independent paired-count sandwich calculation",
+    "interpretation": "Sampling/model uncertainty conditional on comparison assumptions; not a bound on confounding"
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T07:22:29.638881+00:00"
+}

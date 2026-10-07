@@ -22,3 +22,20 @@ The source identities and empirical assumptions remain those stated in the
 manuscript. Bibliographic agreement and reproducible code do not establish
 parallel counterfactual citation trends. Funding, competing interests and author
 contributions remain for the authors to supply before journal submission.
+
+## Precision and interpretation review
+
+Reconstructed the four two-period coefficients and clustered standard errors
+from article-level pre/post citation totals, independently of the fitted models.
+All coefficients and standard errors agree within 1e-7. The new numbered
+precision stage records group sizes, variance contributions, input hashes,
+checks and outputs. Five tests cover scaling and comparison invariance, all-zero
+pairs, invalid counts and incomplete or duplicated histories. All passed, along
+with repository linting and the two bibliography tests. The 14-entry bibliography
+validation passed again. The revised 21-page PDF compiled and every rendered
+page was inspected; no unresolved references or overfull content remain.
+
+The abstract and README now distinguish observed continued citation from the
+uncertain causal interpretation of the comparative estimates. Numerical estimates
+are unchanged. The precision calculation verifies the reported model-based
+uncertainty; it does not validate the comparison assumptions.

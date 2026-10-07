@@ -2,13 +2,13 @@
   "schema_version": 1,
   "study": "references",
   "stage": "02_validate",
-  "started_at": "2026-10-07T06:59:15.538854+00:00",
+  "started_at": "2026-10-07T07:23:41.667976+00:00",
   "command": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
-    "/private/tmp/sig-fault-research/scripts/references/02_validate.py"
+    "/private/tmp/sig-fault-precision/scripts/references/02_validate.py"
   ],
   "python": "3.14.7",
-  "git_commit": "9ae1644fd7acd4bf1be14784877d434fa30177b3",
+  "git_commit": "a02f76f03b83d7a2c5601e9a1e365fb5bca86854",
   "inputs": [
     {
       "path": "ms/references.bib",
@@ -22,8 +22,8 @@
     },
     {
       "path": "ms/main.tex",
-      "sha256": "8a35af314bf3d1be7aaf516bd5d457cef4df208890aa49a2f078ee940c5754b1",
-      "bytes": 58365
+      "sha256": "68c00c920f780da8556a88af76b8b602858a27ed35550f94a907a44a2ffa1123",
+      "bytes": 59033
     },
     {
       "path": "requirements-i4r.txt",
@@ -99,5 +99,5 @@
   },
   "unresolved": [],
   "status": "complete",
-  "finished_at": "2026-10-07T06:59:15.642340+00:00"
+  "finished_at": "2026-10-07T07:23:41.770994+00:00"
 }

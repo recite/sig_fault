@@ -24,15 +24,16 @@ format:
 	$(RSCRIPT) -e 'for (p in c("R", "scripts", "tests")) styler::style_dir(p)'
 
 lint:
-	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
-	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
-	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m black --check scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m isort --check-only --profile black scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
+	python3 -m flake8 --max-line-length=88 scripts/research_pipeline.py scripts/citation_history.py scripts/hmx scripts/panel scripts/rpp scripts/meta scripts/references tests/test_precision.py tests/test_references.py tests/test_research_pipeline.py tests/test_panel_pipeline.py
 	python3 -m black --check scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m isort --check-only --profile black scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	python3 -m flake8 --max-line-length=88 scripts/pilot.py tests/test_pilot.py scripts/i4r_*.py tests/test_i4r*.py scripts/nieuwenhuis*.py tests/test_nieuwenhuis*.py scripts/audit_inventories.py tests/test_audit_inventories.py scripts/inventory_events.py tests/test_inventory_events.py scripts/external_registry.py tests/test_external_registry.py scripts/lazic*.py tests/test_lazic*.py
 	$(RSCRIPT) -e 'l <- unlist(lapply(c("R", "scripts", "tests"), lintr::lint_dir), recursive = FALSE); print(l); quit(status = as.integer(length(l) > 0))'
 
 test: analysis
+	python3 -m unittest discover -s tests -p 'test_precision.py'
 	python3 -m unittest discover -s tests -p 'test_research_pipeline.py'
 	$(MAKE) lal
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
@@ -180,9 +181,10 @@ lazic-analysis: lazic
 	$(RSCRIPT) scripts/lazic_analysis.R
 	python3 scripts/lazic_report.py
 
-synthesis: lazic-analysis synthesis-components hmx
+synthesis: analysis lazic-analysis synthesis-components hmx
 	$(RSCRIPT) scripts/lazic_synthesis.R
 	META_RSCRIPT='$(RSCRIPT)' python3 -m scripts.meta.01_synthesize
+	python3 -m scripts.meta.02_precision
 
 .PHONY: cohorts cohorts-import cohorts-fetch
 cohorts:

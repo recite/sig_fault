@@ -8,9 +8,9 @@ Finding an error can improve later research only if researchers learn about it a
 
 ## What we learn
 
-**The affected papers remained widely cited. The comparative estimates allow a citation penalty, whose size depends on the diagnostic and comparison.** In the neuroscience audit, flagged papers' median annual citations rose from 5 in 2010 to 13–17 during 2012–2015. A separate sample of citing passages recorded no acknowledgment of concerns in **94 of 95 valid completed ratings**.
+**The affected papers continued to attract citations. The current comparisons do not establish how much publicizing the problems changed those citations.** In the neuroscience audit, flagged papers' median annual citations rose from 5 in 2010 to 13–17 during 2012–2015. A separate sample of citing passages recorded no acknowledgment of concerns in **94 of 95 valid completed ratings**.
 
-Across four methodological audits and **367 contributing papers**, the main precision-weighted contrast is **-12.9%** (95% interval [-24.3, 0.2]%). Substituting the alternative instrumental-variable diagnostic gives -4.5% [-17.0, 9.9]%. These percentages compare flagged and comparison papers' post/pre citation ratios. They summarize this collection of audits, not an average effect across all scientific errors.
+The difficulty is concrete: citation growth sometimes differed before publication, two critiques circulated earlier, and some comparisons depend heavily on individual papers. A before/after comparison with other audited papers is informative only to the extent that those papers show what would have happened without the publicity. The checks below support some parts of that comparison and call others into question.
 
 Continued citation and a penalty can coexist: a criticized paper may receive many citations while receiving fewer than it otherwise would have. Citations also need not endorse the disputed inference; a later paper may use an unaffected result, a method, or background information. The context sample measures recorded acknowledgment after the neuroscience critique, not authors' awareness or the change in acknowledgment from before publication.
 
@@ -32,6 +32,12 @@ We count distinct citing documents per original paper and year. Zero counts requ
 The causal interpretation requires comparable proportional citation paths without the publicity episode. The audits were not randomized, and earlier growth sometimes differs. The instrumental-variable and interaction critiques circulated before formal publication, so their comparisons concern additional publicity. The longer neuroscience follow-up covers 2012–2015, and the animal-study follow-up also examines 2019 and later years. Those comparisons are reported alongside the adjacent-year synthesis.
 
 The [manuscript appendix](ms/main.pdf) reports journal and publication-cohort adjustments, alternative diagnostics, earlier trends, longer windows, whole-paper bootstraps and influential-paper checks. All analyses are retrospective. In the interaction audit, omitting one highly cited comparison paper changes the proportional estimate from -16.9% to 1.6%; medians and means also move differently. Pooling does not remove that sensitivity or establish the counterfactual.
+
+## Comparative estimates and their uncertainty
+
+Across four methodological audits and 367 contributing papers, inverse-variance weighting gives a relative citation-growth contrast of **-12.9%** (95% interval [-24.3, 0.2]%). The alternative instrumental-variable diagnostic gives -4.5% [-17.0, 9.9]%. These are summaries of the selected comparisons; interpreting them as effects of publicity requires the counterfactual assumptions above.
+
+The total paper count conceals small groups and uneven information. Citation changes vary substantially across articles, and a few papers account for much of the estimated variance in some audits. Each component uses just one baseline year and one follow-up year. The [precision decomposition](docs/meta/precision.md) reconstructs the standard errors directly from citation counts and shows each audit's group sizes, weight, and concentration of variance. The pooled interval uses a normal critical value, without an added random-effects variance. It describes uncertainty under the model and comparison assumptions; it does not account for bias from different underlying trends or earlier disclosure.
 
 ## Citation-source validation
 
