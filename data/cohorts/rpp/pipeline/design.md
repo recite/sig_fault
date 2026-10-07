@@ -34,7 +34,7 @@ the citing author accepted or qualified the original finding.
 The within-project primary estimate compares each paper's mean annual post-minus-
 pre change between unsuccessful and successful papers within journal, then averages
 the three journal contrasts using fixed shares of the 98-paper cohort (28/98,
-31/98, 39/98). Papers receive equal weight within journal and replication group.
+30/98, 40/98). Papers receive equal weight within journal and replication group.
 Report raw group means, medians and annual paths alongside standardized paths.
 Use a Welch–Satterthwaite interval for the weighted difference. Report article/year
 and journal×year fixed-effects specifications with article-clustered inference as
@@ -97,3 +97,9 @@ JEPLMC 15/13, JPSP 8/23, PS 16/23). Changed the primary contrast from the raw
 pooled difference to fixed-share journal standardization and changed bootstrap
 strata accordingly. The raw contrast remains descriptive. Clarified that excluding
 future-assessed external donors is an eligibility choice, not historical exposure.
+
+2026-10-07, before citation acquisition: source review found Row.82 has a
+JPSP locator belonging to another article. Its OSF project and publisher identify
+The Face of Success in Psychological Science. The sourced identity ledger corrects
+the locator, changing journal counts to JEPLMC 28, JPSP 30, PS 40; the rule still
+uses verified journal shares.

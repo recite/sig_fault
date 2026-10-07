@@ -1,0 +1,66 @@
+[
+  {
+    "paper_id": "Row.65",
+    "replace": {
+      "Study.Title.O": {
+        "from": "Not so innocent: Does seeing one's own capacity for wrongdoing predict forgiveness?",
+        "to": "Not so innocent: Does seeing one's own capability for wrongdoing predict forgiveness?"
+      }
+    },
+    "evidence_urls": [
+      "https://doi.org/10.1037/0022-3514.94.3.495"
+    ],
+    "evidence_files": [],
+    "reason": "The source says capacity where the publisher title says capability; journal, volume, issue and pages agree.",
+    "reviewed_by": "Codex source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "paper_id": "Row.82",
+    "replace": {
+      "Journal.O": {
+        "from": "JPSP",
+        "to": "PS"
+      },
+      "Volume.O": {
+        "from": "95",
+        "to": "19"
+      },
+      "Issue.O": {
+        "from": "5",
+        "to": "2"
+      },
+      "Pages.O": {
+        "from": "1019-28",
+        "to": "109-111"
+      }
+    },
+    "evidence_urls": [
+      "https://api.osf.io/v2/nodes/r5gpv/",
+      "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02054.x"
+    ],
+    "evidence_files": [
+      "private-data/cohorts/rpp/pipeline/probe/r5gpv.json",
+      "private-data/cohorts/rpp/pipeline/probe/r5gpv_files.json"
+    ],
+    "reason": "The source's JPSP 95(5):1019-28 locator belongs to a different Rule article. The original OSF project names PS and describes CEO faces/profits; its replication-report filename confirms Face of Success. Correct the locator to the title's publisher record, preserving source values.",
+    "reviewed_by": "Codex source review",
+    "reviewed_on": "2026-10-07"
+  },
+  {
+    "paper_id": "Row.145",
+    "replace": {
+      "Study.Title.O": {
+        "from": "ñIn_Group Loveî and ñOut_Group Hateî as Motives for Individual Participation in Intergroup Conflict: A New Game Paradigm",
+        "to": "“In-Group Love” and “Out-Group Hate” as Motives for Individual Participation in Intergroup Conflict: A New Game Paradigm"
+      }
+    },
+    "evidence_urls": [
+      "https://doi.org/10.1111/j.1467-9280.2008.02100.x"
+    ],
+    "evidence_files": [],
+    "reason": "Repair visibly corrupted quotation marks and underscore hyphens solely for identity matching; the locator agrees with the publisher.",
+    "reviewed_by": "Codex source review",
+    "reviewed_on": "2026-10-07"
+  }
+]
