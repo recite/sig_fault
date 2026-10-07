@@ -32,16 +32,23 @@ the citing author accepted or qualified the original finding.
 ## Comparisons and estimation
 
 The within-project primary estimate compares each paper's mean annual post-minus-
-pre change between unsuccessful and successful papers, giving each paper equal
-weight. Report group means, medians and annual paths, a Welch interval, and the
-equivalent article/year fixed-effects specification with article-clustered
-inference. Report the proportional ratio of group post/pre growth and an article-
-level, group-stratified percentile bootstrap (9,999 draws, seed 20261007).
+pre change between unsuccessful and successful papers within journal, then averages
+the three journal contrasts using fixed shares of the 98-paper cohort (28/98,
+31/98, 39/98). Papers receive equal weight within journal and replication group.
+Report raw group means, medians and annual paths alongside standardized paths.
+Use a Welch–Satterthwaite interval for the weighted difference. Report article/year
+and journal×year fixed-effects specifications with article-clustered inference as
+sensitivities. For proportional growth, average the three journal-specific log
+post/pre growth ratios using the same fixed weights and transform with exp(beta)-1.
+Use a journal-by-replication-group stratified article bootstrap (9,999 draws, seed
+20261007); report any undefined ratio draws and do not silently discard them.
 
 A separate external comparison uses original research articles from the same
 journal and 2008 print-publication cohort. Exclude all RPP papers, corrections,
 retractions and known replication-assessed originals from the other cohort
-inventories. Record exclusions individually. Rank candidate controls using only
+inventories. This deliberately excludes known assessed papers even if their
+assessment came after our follow-up; it is a fixed conservative donor rule, not
+a claim that later assessments contaminated earlier citations. Record exclusions individually. Rank candidate controls using only
 2010–2014 annual log(1 + citations) trajectories, within journal, with deterministic
 DOI tie-breaking; select three per target with replacement. Use the same controls
 for all follow-up periods. Retain the full eligible donor pool for a nonnegative,
@@ -84,4 +91,9 @@ from a desired final sample size.
 
 ## Deviations
 
-None at initial writing. Record subsequent changes with their evidence and timing.
+2026-10-07, before citation acquisition: independent design review identified
+different journal composition by replication outcome (successful/unsuccessful:
+JEPLMC 15/13, JPSP 8/23, PS 16/23). Changed the primary contrast from the raw
+pooled difference to fixed-share journal standardization and changed bootstrap
+strata accordingly. The raw contrast remains descriptive. Clarified that excluding
+future-assessed external donors is an eligibility choice, not historical exposure.
