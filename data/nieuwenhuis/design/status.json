@@ -1,0 +1,12 @@
+{
+  "strata": 10,
+  "supported": true,
+  "papers": 153,
+  "specifications": 18,
+  "annual_estimates": 20,
+  "sources": ["wos", "openalex"],
+  "identical_source_population": true,
+  "estimand": "Common within-journal/publication-year proportional or additive contrast",
+  "inference": "Article-clustered; nonnested FE adjustment; t(G-1)",
+  "original_synthesis_unchanged": true
+}

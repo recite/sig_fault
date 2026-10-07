@@ -1,0 +1,55 @@
+"stratum","journal","cohort","flagged","comparison","supported"
+"Journal of Neuroscience / 2009 / human / between","Journal of Neuroscience",2009,0,6,FALSE
+"Journal of Neuroscience / 2009 / human / within","Journal of Neuroscience",2009,6,3,TRUE
+"Journal of Neuroscience / 2009 / mouse / between","Journal of Neuroscience",2009,4,3,TRUE
+"Journal of Neuroscience / 2009 / other / within","Journal of Neuroscience",2009,1,0,FALSE
+"Journal of Neuroscience / 2009 / primate / between","Journal of Neuroscience",2009,1,1,TRUE
+"Journal of Neuroscience / 2009 / primate / within","Journal of Neuroscience",2009,2,1,TRUE
+"Journal of Neuroscience / 2009 / rat / between","Journal of Neuroscience",2009,6,6,TRUE
+"Journal of Neuroscience / 2010 / human / between","Journal of Neuroscience",2010,1,0,FALSE
+"Journal of Neuroscience / 2010 / human / within","Journal of Neuroscience",2010,2,11,TRUE
+"Journal of Neuroscience / 2010 / mouse / between","Journal of Neuroscience",2010,5,1,TRUE
+"Journal of Neuroscience / 2010 / primate / within","Journal of Neuroscience",2010,0,1,FALSE
+"Journal of Neuroscience / 2010 / rat / between","Journal of Neuroscience",2010,1,2,TRUE
+"Journal of Neuroscience / 2010 / rat / within","Journal of Neuroscience",2010,1,0,FALSE
+"Nature / 2009 / human / between","Nature",2009,1,0,FALSE
+"Nature / 2009 / human / within","Nature",2009,0,1,FALSE
+"Nature / 2009 / mouse / between","Nature",2009,3,1,TRUE
+"Nature / 2010 / human / between","Nature",2010,0,1,FALSE
+"Nature / 2010 / mouse / between","Nature",2010,1,0,FALSE
+"Nature / 2010 / other / between","Nature",2010,1,0,FALSE
+"Nature / 2010 / rat / between","Nature",2010,1,0,FALSE
+"Nature Neuroscience / 2009 / human / between","Nature Neuroscience",2009,0,6,FALSE
+"Nature Neuroscience / 2009 / human / within","Nature Neuroscience",2009,3,1,TRUE
+"Nature Neuroscience / 2009 / mouse / between","Nature Neuroscience",2009,1,2,TRUE
+"Nature Neuroscience / 2009 / mouse / within","Nature Neuroscience",2009,1,0,FALSE
+"Nature Neuroscience / 2009 / other / between","Nature Neuroscience",2009,0,1,FALSE
+"Nature Neuroscience / 2009 / other / within","Nature Neuroscience",2009,1,0,FALSE
+"Nature Neuroscience / 2009 / primate / within","Nature Neuroscience",2009,0,1,FALSE
+"Nature Neuroscience / 2009 / rat / between","Nature Neuroscience",2009,1,0,FALSE
+"Nature Neuroscience / 2009 / unknown / between","Nature Neuroscience",2009,0,1,FALSE
+"Nature Neuroscience / 2010 / human / between","Nature Neuroscience",2010,0,2,FALSE
+"Nature Neuroscience / 2010 / mouse / between","Nature Neuroscience",2010,3,0,FALSE
+"Nature Neuroscience / 2010 / other / between","Nature Neuroscience",2010,1,0,FALSE
+"Nature Neuroscience / 2010 / other / within","Nature Neuroscience",2010,1,0,FALSE
+"Nature Neuroscience / 2010 / rat / between","Nature Neuroscience",2010,2,2,TRUE
+"Nature Neuroscience / 2010 / rat / within","Nature Neuroscience",2010,0,1,FALSE
+"Neuron / 2009 / human / between","Neuron",2009,0,3,FALSE
+"Neuron / 2009 / human / within","Neuron",2009,3,2,TRUE
+"Neuron / 2009 / primate / within","Neuron",2009,1,1,TRUE
+"Neuron / 2009 / rat / between","Neuron",2009,1,1,TRUE
+"Neuron / 2010 / human / between","Neuron",2010,0,2,FALSE
+"Neuron / 2010 / mouse / between","Neuron",2010,6,0,FALSE
+"Neuron / 2010 / mouse / within","Neuron",2010,2,0,FALSE
+"Neuron / 2010 / primate / between","Neuron",2010,0,1,FALSE
+"Neuron / 2010 / rat / within","Neuron",2010,2,3,TRUE
+"Science / 2009 / human / between","Science",2009,1,1,TRUE
+"Science / 2009 / human / within","Science",2009,1,3,TRUE
+"Science / 2009 / mouse / between","Science",2009,1,0,FALSE
+"Science / 2009 / primate / between","Science",2009,0,1,FALSE
+"Science / 2009 / primate / within","Science",2009,1,0,FALSE
+"Science / 2009 / rat / between","Science",2009,4,1,TRUE
+"Science / 2010 / human / between","Science",2010,0,2,FALSE
+"Science / 2010 / human / within","Science",2010,1,0,FALSE
+"Science / 2010 / other / within","Science",2010,1,0,FALSE
+"Science / 2010 / rat / between","Science",2010,0,1,FALSE

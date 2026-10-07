@@ -1,41 +1,45 @@
-# Verification of the focused manuscript
+# Manuscript and analysis verification
 
-The manuscript uses four methodological audits and excludes replication outcomes.
-The working journal target is Quantitative Science Studies.
+The manuscript studies four methodological audits. Failed-replication citation
+research is separate. The working journal target is Quantitative Science Studies.
 
-- Rebuilt the underlying analyses, figures, tables, source comparisons and manuscript.
-- Local formatting and lint checks passed; the R suite passed 359 expectations,
-  with additional cohort checks and all Python suites passing.
-- All 14 cited BibTeX entries passed DOI-specific metadata checks for ordered
-  authors, title, journal, year, volume, issue, pagination and identifier.
-- Independently recomputed all four synthesis specifications from component
-  estimates and sampling variances using Python.
-- An isolated checkout containing only public input/code files reproduced
-  all 12 synthesis and bibliography validation artifacts byte for byte.
-  It had no private-data directory.
-- Compiled the final 21-page PDF, rendered and inspected every page. No unresolved
-  citations/references or overfull content remain. The unchanged microtype
-  footnote-patch warning does not affect these checks.
-- Verified the transitive methodology, bibliography, HMX and RPP receipt chains.
+The neuroscience design compares papers within journal and publication year,
+with article effects and separate annual paths for those groups. The original
+Figure 1 is unchanged. Numbered stages in `scripts/nieuwenhuis_design/` generate
+source comparisons, sample support, balance, weights, estimates and exhibits.
 
-The source identities and empirical assumptions remain those stated in the
-manuscript. Bibliographic agreement and reproducible code do not establish
-parallel counterfactual citation trends. Funding, competing interests and author
-contributions remain for the authors to supply before journal submission.
+- The R suite passes 408 expectations, with no failures, warnings or skips.
+  Repository Python formatting and lint checks and R linting pass.
+- The two bibliography tests and metadata validation of all 14 cited entries pass.
+- Explicit dummy-variable regressions and independently assembled clustered
+  covariance matrices reproduce eight core model coefficients and standard errors
+  within 1e-7. The permanent tests include these comparisons.
+- Independent article-change calculations reproduce all ten equal-flagged-paper
+  estimates and HC3 standard errors and all ten linear fixed-effects estimates.
+- Planted heterogeneous effects verify that the equal-flagged and fixed-effects
+  weights can produce different, correctly labeled estimates.
+- Original classification labels, missing species information, supported and
+  excluded papers, balance, estimation weights, leverage and variance contributions
+  are preserved in public analytical outputs. The finer comparisons repeat the
+  original adjustment on the same retained papers before adding study-type controls.
+- The transitive numbered-stage receipts verify input, code and output hashes.
+  These stages read public archived inputs and require no citation acquisition.
+- The earlier independent paired-count calculation reproduces all four original
+  meta-analysis standard errors. Those pooled estimates remain unchanged.
+- The manuscript compiles to 25 pages. Rendered pages were checked for legibility,
+  clipping, tables and figures. There are no unresolved citations/references or
+  overfull content. The existing microtype footnote-patch warning remains.
 
-## Precision and interpretation review
+Balance is not a randomization test. The design requires comparable absent-critique
+citation changes within its comparison groups, on the stated scale. The main
+journal/year target and the restricted study-type targets are distinct. HC3
+intervals for the equal-flagged contrast are conditional approximations; small
+cells do not permit separate fully nonparametric within-arm variance estimates.
+Poisson information shares describe objective curvature, not robust variance or
+an exact average of heterogeneous percentage effects.
 
-Reconstructed the four two-period coefficients and clustered standard errors
-from article-level pre/post citation totals, independently of the fitted models.
-All coefficients and standard errors agree within 1e-7. The new numbered
-precision stage records group sizes, variance contributions, input hashes,
-checks and outputs. Five tests cover scaling and comparison invariance, all-zero
-pairs, invalid counts and incomplete or duplicated histories. All passed, along
-with repository linting and the two bibliography tests. The 14-entry bibliography
-validation passed again. The revised 21-page PDF compiled and every rendered
-page was inspected; no unresolved references or overfull content remain.
-
-The abstract and README now distinguish observed continued citation from the
-uncertain causal interpretation of the comparative estimates. Numerical estimates
-are unchanged. The precision calculation verifies the reported model-based
-uncertainty; it does not validate the comparison assumptions.
+The complete earlier replication checks include the source reconstruction,
+figures, tables, meta-analysis and archived citation-source comparisons. An isolated
+public-input checkout reproduced the synthesis and bibliography artifacts. Funding,
+competing interests and author contributions remain for the authors to supply
+before journal submission.

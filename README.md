@@ -8,9 +8,9 @@ Finding an error can improve later research only if researchers learn about it a
 
 ## What we learn
 
-**The affected papers continued to attract citations. The current comparisons do not establish how much publicizing the problems changed those citations.** In the neuroscience audit, flagged papers' median annual citations rose from 5 in 2010 to 13–17 during 2012–2015. A separate sample of citing passages recorded no acknowledgment of concerns in **94 of 95 valid completed ratings**.
+**Flagged neuroscience papers continued to attract citations, including the typical paper. Comparing papers published in the same journal and year suggests somewhat slower proportional growth after the critique.** In the neuroscience audit, flagged papers' median annual citations rose from 5 in 2010 to 13–17 during 2012–2015. A separate sample of citing passages recorded no acknowledgment of concerns in **94 of 95 valid completed ratings**.
 
-The difficulty is concrete: citation growth sometimes differed before publication, two critiques circulated earlier, and some comparisons depend heavily on individual papers. A before/after comparison with other audited papers is informative only to the extent that those papers show what would have happened without the publicity. The checks below support some parts of that comparison and call others into question.
+The neuroscience design compares flagged and unflagged papers within **the same journal and publication year**, with article fixed effects and a separate annual citation path for each journal/year group. All 153 originals have comparison support. The estimate is **-8.5%** (95% interval [-24.7, 11.2]%) in historical Web of Science counts and **-7.3%** [-22.6, 10.9]% using OpenAlex for the same papers and years. The design accounts for stable article differences and different citation paths across journals and publication cohorts. Its causal interpretation requires comparable absent-critique growth within those groups.
 
 Continued citation and a penalty can coexist: a criticized paper may receive many citations while receiving fewer than it otherwise would have. Citations also need not endorse the disputed inference; a later paper may use an unaffected result, a method, or background information. The context sample measures recorded acknowledgment after the neuroscience critique, not authors' awareness or the change in acknowledgment from before publication.
 
@@ -29,6 +29,10 @@ The assessments range from identifiable errors in reasoning to diagnostic concer
 
 We count distinct citing documents per original paper and year. Zero counts require a completed citation history; missing histories remain missing. Poisson models with article and calendar-year fixed effects compare proportional citation changes, with uncertainty clustered by article. The synthesis combines one log relative-growth estimate per audit using inverse estimated sampling variances. Papers with no citations in either selected year remain in descriptive summaries but do not identify the Poisson coefficient. The interaction component excludes an original already included in the instrumental-variable audit.
 
+The [journal/year analysis](data/nieuwenhuis/design/README.md) formalizes the neuroscience comparison shown in Figure 1. It preserves the raw figure and adds [standardized mean and median trajectories](figs/journal_cohort_paths.pdf), using the same journal/publication-year composition for both groups. It also reports a restriction to 2009 originals, whose baseline covers a full year after publication, additive citation changes, and both citation sources. The remaining audits and the pooled summary retain their original specifications.
+
+The [balance and weighting checks](data/nieuwenhuis/design/diagnostics.md) compare the original study characteristics and pre-critique citations. Journal/year standardization leaves a human-study imbalance. Comparing studies of the same species and within/between-subject design retains 49 flagged and 46 comparison papers; the historical-data proportional estimate is -7.2%. A same-sample comparison separates the additional adjustment from sample selection. The repository also reports an additive estimate giving every flagged paper equal weight: 0.6 citations per year [-3.8, 5.0]. Fixed-effects, equal-article and Poisson information weights are documented separately.
+
 The causal interpretation requires comparable proportional citation paths without the publicity episode. The audits were not randomized, and earlier growth sometimes differs. The instrumental-variable and interaction critiques circulated before formal publication, so their comparisons concern additional publicity. The longer neuroscience follow-up covers 2012–2015, and the animal-study follow-up also examines 2019 and later years. Those comparisons are reported alongside the adjacent-year synthesis.
 
 The [manuscript appendix](ms/main.pdf) reports journal and publication-cohort adjustments, alternative diagnostics, earlier trends, longer windows, whole-paper bootstraps and influential-paper checks. All analyses are retrospective. In the interaction audit, omitting one highly cited comparison paper changes the proportional estimate from -16.9% to 1.6%; medians and means also move differently. Pooling does not remove that sensitivity or establish the counterfactual.
@@ -41,7 +45,7 @@ The total paper count conceals small groups and uneven information. Citation cha
 
 ## Citation-source validation
 
-[Reconstructing the neuroscience histories with OpenAlex](docs/nieuwenhuis/README.md) gives a similar estimate on the same original papers and years: -11.5% using historical Web of Science exports and -10.9% using OpenAlex articles and reviews. The paired source-induced change in the estimated growth ratio is 0.8% (95% interval [-8.9, 12.4]%). This is a measurement comparison; neither database is assumed to contain a complete census of citations.
+[Reconstructing the neuroscience histories with OpenAlex](docs/nieuwenhuis/README.md) also reproduces the original article-and-year comparison on the same papers and years: -11.5% using historical Web of Science exports and -10.9% using OpenAlex articles and reviews. The paired source-induced change in the estimated growth ratio is 0.8% (95% interval [-8.9, 12.4]%). This is a measurement comparison; neither database is assumed to contain a complete census of citations.
 
 [Link and date diagnostics](docs/nieuwenhuis/diagnostics.md) distinguish coverage from dating differences. A [third-source link check](docs/nieuwenhuis/validation.md) and [full-cohort OpenCitations comparison](docs/nieuwenhuis/opencitations.md) provide further checks. Agreement in aggregate estimates does not establish that every recorded citation is correct.
 
@@ -57,7 +61,7 @@ make check
 
 `make restore` installs the packages pinned in `renv.lock`. `make check` reads the archived inputs, regenerates results, figures, tables, this README, and the PDF, and runs linting and tests. After dependency installation, reproducing the estimates requires no network access. Acquisition scripts are separate from analysis and preserve source URLs, retrieval dates, hashes and stage receipts where available.
 
-For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
+For individual steps, use `make analysis`, `make figures`, `make tables`, `make manuscript`, `make nieuwenhuis`, `make journal-cohort`, `make synthesis`, `make lint`, or `make test`. Edit README prose in `docs/README.in.md`; numerical values are inserted from generated results. Edit the paper in `ms/main.tex`.
 
 ## Source inventories and additional cases
 

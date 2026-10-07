@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "study": "nieuwenhuis_design",
+  "stage": "01_estimate",
+  "started_at": "2026-10-07T07:55:00.445887+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/private/tmp/sig-fault-histories/scripts/nieuwenhuis_design/01_estimate.py"
+  ],
+  "python": "3.14.7",
+  "git_commit": "dbe8b1153bbc03c9a4f9c433297ebbd18befe841",
+  "inputs": [
+    {
+      "path": "data/nieuwenhuis/paired_panel.csv",
+      "sha256": "673db64a5cd8ecbf07edfbddab277657330e0a5b3d97d4c30d1d7dea268d6755",
+      "bytes": 59170,
+      "rows": 1071
+    },
+    {
+      "path": "docs/nieuwenhuis/journal-cohort-design.md",
+      "sha256": "7bf10a5c45b9a8d3f6fa47cb806df5fed887bbff2210d480106c22a45571a14d",
+      "bytes": 4074
+    },
+    {
+      "path": "renv.lock",
+      "sha256": "88cfc81e990816e9b466244b82e9541a0a6f04a940a876477d3dda98e53f895a",
+      "bytes": 165630
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/nieuwenhuis/design/support.csv",
+      "sha256": "b90ad2499acc84d69eab27ea87f74bdf6109a8d7cf50975fca3fd81f8b3996cd",
+      "bytes": 584,
+      "rows": 10
+    },
+    {
+      "path": "data/nieuwenhuis/design/weights.csv",
+      "sha256": "9563855ad31b2321327ea619c4a03474780898240f68cee005b1564b4898cab3",
+      "bytes": 10380,
+      "rows": 153
+    },
+    {
+      "path": "data/nieuwenhuis/design/estimates.csv",
+      "sha256": "f94dc7aa4ced91041f4f1724f00ae38456479c8e15d8aeea8b13aab1e681bfa5",
+      "bytes": 3714,
+      "rows": 18
+    },
+    {
+      "path": "data/nieuwenhuis/design/annual_estimates.csv",
+      "sha256": "f67245407b0391626dd5f7da238f2e0968bdd84d7607a72b2380f9abfbb41a1d",
+      "bytes": 4119,
+      "rows": 20
+    },
+    {
+      "path": "data/nieuwenhuis/design/annual_paths.csv",
+      "sha256": "0429c5ff8efa89093598443f7cbaefee0848f4b238b24a033440de4fde5bd9ab",
+      "bytes": 1216,
+      "rows": 28
+    },
+    {
+      "path": "data/nieuwenhuis/design/status.json",
+      "sha256": "39ef4cf66ec8288408cfacdd55e6521cc2eee2351ec7d8b7a47da0fe7831f67e",
+      "bytes": 379
+    },
+    {
+      "path": "data/nieuwenhuis/design/README.md",
+      "sha256": "75610d539da766c0a254e74e19c3ef69dff4987ad563c7608ba3e2febe387d57",
+      "bytes": 3647
+    },
+    {
+      "path": "tabs/journal_cohort_estimates.tex",
+      "sha256": "e24c10c7c2dc0a775314319c65cf2efe0c37d78e52012aec8971b8db7310e58b",
+      "bytes": 591
+    },
+    {
+      "path": "tabs/journal_cohort_macros.json",
+      "sha256": "d1039672265d6ae290859ebc5b3433e62b0f71a37635d3414d47d0a951f405d4",
+      "bytes": 325
+    },
+    {
+      "path": "tabs/journal_cohort_macros.tex",
+      "sha256": "968d9ed385a86d659242f907bb66bf7550b7fa01072027c2aa565435abcee1ba",
+      "bytes": 406
+    },
+    {
+      "path": "figs/journal_cohort_paths.pdf",
+      "sha256": "c4f04a0559a4eb8eba0a1e6fb7ba101476352b1b74e22d5bf6d75068bff6ea0c",
+      "bytes": 12711
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/nieuwenhuis_design/01_estimate.py",
+      "sha256": "7257309592c59c493bcfb3e87bdb202a7c950e1506b3d5ff05e7a38562321ceb",
+      "bytes": 1921
+    },
+    {
+      "path": "scripts/research_pipeline.py",
+      "sha256": "b91e4089057adfd94fb7f62eeae0af4ff26aedac35e3e728b98a79abb6d6da32",
+      "bytes": 6981
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "2da7b874fd8490f06d0dd701987705eab7fe72ac27540f2ac12913a6c7c0260b",
+      "bytes": 39474
+    },
+    {
+      "path": "R/journal_cohort.R",
+      "sha256": "e31b0e3ffeb7733721f27c347f0c038b83dffd55cab6fb3bfba0c058d6800d0e",
+      "bytes": 4469
+    },
+    {
+      "path": "scripts/nieuwenhuis_design/estimate.R",
+      "sha256": "4e3ba51b95b140fcabfa83d8014351b105476fa9e3c35c733ed84d4a695aa457",
+      "bytes": 8317
+    }
+  ],
+  "parents": [],
+  "checks": [
+    {
+      "name": "all_groups_supported",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "original_population_retained",
+      "passed": true,
+      "detail": {
+        "strata": 10,
+        "supported": true,
+        "papers": 153,
+        "specifications": 18,
+        "annual_estimates": 20,
+        "sources": [
+          "wos",
+          "openalex"
+        ],
+        "identical_source_population": true,
+        "estimand": "Common within-journal/publication-year proportional or additive contrast",
+        "inference": "Article-clustered; nonnested FE adjustment; t(G-1)",
+        "original_synthesis_unchanged": true
+      }
+    },
+    {
+      "name": "all_planned_models",
+      "passed": true,
+      "detail": {
+        "strata": 10,
+        "supported": true,
+        "papers": 153,
+        "specifications": 18,
+        "annual_estimates": 20,
+        "sources": [
+          "wos",
+          "openalex"
+        ],
+        "identical_source_population": true,
+        "estimand": "Common within-journal/publication-year proportional or additive contrast",
+        "inference": "Article-clustered; nonnested FE adjustment; t(G-1)",
+        "original_synthesis_unchanged": true
+      }
+    },
+    {
+      "name": "all_annual_models",
+      "passed": true,
+      "detail": {
+        "strata": 10,
+        "supported": true,
+        "papers": 153,
+        "specifications": 18,
+        "annual_estimates": 20,
+        "sources": [
+          "wos",
+          "openalex"
+        ],
+        "identical_source_population": true,
+        "estimand": "Common within-journal/publication-year proportional or additive contrast",
+        "inference": "Article-clustered; nonnested FE adjustment; t(G-1)",
+        "original_synthesis_unchanged": true
+      }
+    }
+  ],
+  "sources": [],
+  "metrics": {
+    "strata": 10,
+    "supported": true,
+    "papers": 153,
+    "specifications": 18,
+    "annual_estimates": 20,
+    "sources": [
+      "wos",
+      "openalex"
+    ],
+    "identical_source_population": true,
+    "estimand": "Common within-journal/publication-year proportional or additive contrast",
+    "inference": "Article-clustered; nonnested FE adjustment; t(G-1)",
+    "original_synthesis_unchanged": true
+  },
+  "unresolved": [],
+  "status": "complete",
+  "finished_at": "2026-10-07T07:55:14.943470+00:00"
+}

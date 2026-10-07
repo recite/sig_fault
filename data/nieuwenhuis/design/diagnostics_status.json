@@ -1,0 +1,13 @@
+{
+  "full_papers": 153,
+  "matched_flagged": 68,
+  "matched_comparison": 52,
+  "matched_cells": 20,
+  "balance_rows": 144,
+  "species_flagged": 49,
+  "species_comparison": 46,
+  "models": 20,
+  "equal_flagged_estimates": 10,
+  "unknown_subject_ids": 32,
+  "interpretation": "Conditional parallel-trends design; balance does not imply random assignment"
+}
