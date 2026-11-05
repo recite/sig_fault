@@ -1,3 +1,9 @@
+# Study moved
+
+The Institute for Replication study has moved to [recite/i4r_response](https://github.com/recite/i4r_response). It examines responses to specific assessed claims and is separate from this paper. Frozen registry snapshots remain here for known-assessment exclusions and historical reproducibility; new I4R work belongs in the separate repository.
+
+The guide below records the historical pipeline; its active build and acquisition commands are maintained in the new repository.
+
 # Does publicizing a significant error change citations?
 
 This extension builds an article-level record of consequential errors documented in the Institute for Replication (I4R) collection. The question is how citations change **after the error becomes public**, relative to comparable articles without a public assessment in the observation window.

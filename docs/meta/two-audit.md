@@ -1,8 +1,7 @@
 # Citation changes across two methodological audits
 
-The completed neuroscience and IV cohorts permit a common-window summary, while
-the primary I4R article/review panels remain incomplete. The current three-audit
-summary also reports substitution of OpenAlex neuroscience counts on the same papers.
+The completed neuroscience and IV cohorts permit a common-window summary.
+This analysis also substitutes OpenAlex neuroscience counts on the same papers.
 Every row below includes one estimate from each audit, with inverse-variance weights.
 Alternative IV diagnostics are separate analyses of the same evidence.
 
@@ -21,7 +20,8 @@ The combined estimate changes with the IV diagnostic. It is not evidence for
 a uniform citation response, nor an estimate of the effect of the typical scientific error.
 The AR-only rows are exploratory: their IV component has only three flagged papers.
 
-The small I4R pilot is excluded from pooling and remains a standalone case analysis.
+The I4R assessment-response study is maintained separately in
+[recite/i4r_response](https://github.com/recite/i4r_response).
 
 A [source sensitivity](../../data/meta/opencitations_synthesis.csv) replaces the
 neuroscience component with OpenCitations on the same papers and years. It does

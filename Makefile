@@ -1,6 +1,6 @@
 RSCRIPT ?= Rscript
 
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test i4r i4r-sources i4r-test i4r-aggregate nieuwenhuis nieuwenhuis-fetch nieuwenhuis-test synthesis
+.PHONY: restore analysis figures tables manuscript paper format lint test check clean pilot pilot-fetch pilot-fulltext pilot-test lal lal-fetch lal-test nieuwenhuis nieuwenhuis-fetch nieuwenhuis-test synthesis
 
 restore:
 	$(RSCRIPT) --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
@@ -11,7 +11,7 @@ analysis:
 figures: analysis nieuwenhuis-paths
 	$(RSCRIPT) scripts/figures.R
 
-tables: analysis i4r-aggregate lazic-analysis nieuwenhuis synthesis nieuwenhuis-paths
+tables: analysis lazic-analysis nieuwenhuis synthesis nieuwenhuis-paths
 	$(MAKE) journal-cohort lazic-sdid
 	$(RSCRIPT) scripts/tables.R
 
@@ -40,7 +40,6 @@ test: analysis
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
 	$(MAKE) pilot-test
 	python3 -m unittest discover -s tests -p 'test_lal.py'
-	$(MAKE) i4r-test
 	$(MAKE) nieuwenhuis-test
 
 lal:
@@ -80,32 +79,6 @@ check: paper lint test inventories-test external-test lazic-test cohorts panel-t
 clean:
 	cd ms && latexmk -C main.tex
 
-i4r:
-	python3 scripts/i4r_registry.py build
-	python3 scripts/i4r_registry.py validate
-	$(MAKE) inventories
-	python3 scripts/i4r_match.py
-	$(RSCRIPT) scripts/i4r_analysis.R
-	python3 scripts/i4r_report.py
-
-i4r-sources:
-	python3 scripts/i4r_sources.py fetch
-	python3 scripts/i4r_sources.py expand
-	python3 scripts/i4r_sources.py inventory
-	python3 scripts/i4r_sources.py documents
-	python3 scripts/i4r_sources.py archives --max-archive-mb 3000
-	python3 scripts/i4r_sources.py manifest
-
-i4r-test: i4r
-	$(MAKE) i4r-aggregate
-	python3 -m unittest discover -s tests -p 'test_i4r*.py'
-	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "i4r", stop_on_failure = TRUE)'
-
-i4r-aggregate: i4r
-	python3 scripts/i4r_aggregate.py validate
-	python3 scripts/i4r_match.py --citation-file data/i4r/aggregate/citations.csv --output-dir data/i4r/aggregate
-	$(RSCRIPT) scripts/i4r_analysis.R data/i4r/aggregate docs/i4r/aggregate-results.md
-
 nieuwenhuis: analysis
 	python3 scripts/nieuwenhuis.py compare
 	python3 scripts/nieuwenhuis_diagnostics.py build
@@ -129,13 +102,8 @@ nieuwenhuis-test: nieuwenhuis
 	python3 -m unittest discover -s tests -p 'test_nieuwenhuis*.py'
 	$(RSCRIPT) -e 'testthat::test_dir("tests/testthat", filter = "nieuwenhuis", stop_on_failure = TRUE)'
 
-synthesis-components: analysis lal nieuwenhuis i4r-aggregate i4r-synthetic
+synthesis-components: analysis lal nieuwenhuis
 	$(RSCRIPT) scripts/synthesis.R
-	$(RSCRIPT) scripts/synthesis_secondary.R
-
-.PHONY: i4r-synthetic
-i4r-synthetic: i4r-aggregate
-	OPENBLAS_NUM_THREADS=1 python3 scripts/i4r_synthetic.py
 
 .PHONY: inventories inventories-test
 inventories:

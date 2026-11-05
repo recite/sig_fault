@@ -21,8 +21,6 @@
 \input{../tabs/nieuwenhuis_source_macros.tex}
 \input{../tabs/nieuwenhuis_validation_macros.tex}
 \input{../tabs/nieuwenhuis_opencitations_macros.tex}
-\input{../tabs/i4r_aggregate_macros.tex}
-\input{../tabs/i4r_synthetic_macros.tex}
 \title{Methodological Criticism and Continued Citation}
 \author{Ken Cor \and Gaurav Sood}
 \date{October 2026}
@@ -382,53 +380,6 @@ Vernby (2013) appears in both the interaction and instrumental-variable audits. 
 
 The alternative instrumental-variable diagnostic replaces the instrument-strength component with the inferential-sensitivity component, including its restricted comparison population. It does not add an independent study. Citation-source substitutions and leave-one-audit-out estimates similarly change a comparison rather than increase the amount of independent evidence. The random-effects sensitivity uses restricted maximum likelihood and modified Knapp--Hartung intervals with three degrees of freedom. Its adjustment cannot shrink uncertainty below the unadjusted value. It estimates a modeled mean across audit effects; it is not a prediction for an unobserved critique. The result is \AuditReWeakPercent\% (95\% interval [\AuditReWeakLower, \AuditReWeakUpper]\%).
 
-The Institute for Replication pilot contains only \IfrCases{} selected disclosures and remains excluded from pooling. Other source inventories do not enter until their identities, assessment definitions, publicity timing and citation comparisons have been established. Failed-replication citation analyses concern a different assessment and are not components of this synthesis.
-
-\section{Matched cases with individually publicized errors}\label{app:i4r}
-This exploratory extension supports matched comparisons for \IfrCases{} affected papers and is not part of the four-audit synthesis. The I4R registry separates catalog listings, article-specific assessments and verified error disclosures. Unavailable reports and unnamed reviewer teams remain unresolved records; overview summaries alone do not establish material errors. Verified cases link the original article to the error, affected claim, source passage, replies and earliest substantiated public disclosure. Material corrections can strengthen or weaken a finding; these are not necessarily refuted papers. A later I4R listing does not reset the disclosure clock. The repository's \href{https://github.com/recite/sig_fault/blob/main/data/i4r/assessments.csv}{claim assessments} and \href{https://github.com/recite/sig_fault/blob/main/data/i4r/events.csv}{disclosure ledger} provide the case-level evidence.
-
-The secondary analysis uses cached OpenAlex work records with verified identities, source hashes, retrieval dates and supported annual coverage. Missing histories remain missing. Controls exclude known assessed papers, retracted papers and verified nonresearch items. Matching waits for a complete eligible journal pool and uses up to three controls, selected by pre-disclosure citation levels, growth and text distance with fixed calipers. The matching rules and measurement choice were recorded before these contrasts were estimated; this remains a retrospective analysis. Post-disclosure outcomes do not enter matching.
-
-\begin{table}[htbp]
-\centering
-\caption{Citation changes after individually publicized errors}
-\label{tab:i4r}
-\small
-\input{../tabs/i4r_aggregate_cases.tex}
-\par\smallskip
-\begin{minipage}{\linewidth}\footnotesize
-Annual citing works of all document types. The years column gives the calendar year before and after first documented disclosure; the disclosure year is excluded. Controls are equally weighted within each matched set. The final column subtracts the control change from the affected paper's change. These are individual observed contrasts, not independently identified causal effects.
-\end{minipage}
-\end{table}
-
-Mean citations rose from \IfrMeanBefore{} to \IfrMeanAfter{} among affected papers and from \IfrControlMeanBefore{} to \IfrControlMeanAfter{} among controls. The equal-paper average difference in changes is \IfrChange{} citations (exploratory 95\% interval [\IfrLower, \IfrUpper]). First differences with matched-set effects reproduce this average. The covariance clusters by original article and disclosure event, retaining original identities when controls recur; the critical value uses the smaller cluster count minus one as degrees of freedom. Inference conditions on selected matches and is fragile with only \IfrCases{} disclosures.
-
-The preceding year shows a matched growth difference of +\IfrPreChange{} citations, despite matching on pre-period outcomes. Figure~\ref{fig:i4r} shows the differing trajectories. Leaving out the inventor-clusters case changes the average post-disclosure contrast to \IfrOmitInventors{}. The repository reports all leave-one-disclosure-out contrasts, alternative baselines and longer horizons on common cohorts. These diagnostics prevent treating the positive average across these cases as evidence that publicity increases citations. They also show why continued citation alone cannot measure the citations that publicity prevented.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../figs/i4r_aggregate_paths.pdf}
-\caption{Citation paths for the supported I4R cases. Solid lines show each affected paper; dashed lines show its equally weighted matched controls. Counts include citing works of all types. Year zero marks the calendar year of first documented public disclosure, not its exact date. All panels use the same scale. These descriptive counts have no sampling intervals and do not measure endorsement of the erroneous claim.}
-\label{fig:i4r}
-\end{figure}
-
-
-\clearpage
-\subsection{Synthetic-control sensitivity}
-We also fit nonnegative donor weights summing to one to match each affected paper's pre-disclosure citation path. Donors retain the journal, publication-age, identity and exposure restrictions, but the citation caliper and text ranking are removed. We require at least three full pre-years, first withholding the last year to check prediction and then refitting on all pre-years. This supports \ScCases{} cases; inventor clusters has only two full pre-years. A fixed small ridge penalty resolves the many possible donor combinations. All choices are retrospective.
-
-\begin{table}[htbp]
-\centering
-\caption{Synthetic-control fit and prediction checks}
-\label{tab:synthetic}
-\scriptsize
-\input{../tabs/i4r_synthetic.tex}
-\par\smallskip
-\begin{minipage}{\linewidth}\footnotesize
-Annual all-type citations. Pre-fit RMSE describes the final fit using all pre-years; the held-out prediction uses only earlier years. Post is the calendar year after disclosure. The gap is actual minus synthetic citations. No sampling or randomization interval is implied. Full donor weights, paths and sensitivity estimates are in the repository.
-\end{minipage}
-\end{table}
-
-The synthetic comparisons are mixed and do not resolve the counterfactual problem. Parental leave is close to its synthetic comparison and electrification is below it. The held-out pre-year predictions exceed actual citations in both cases. Close in-sample fit therefore does not establish a reliable untreated trajectory, and these gaps are not pooled into a causal estimate.
+Other source inventories do not enter until their identities, assessment definitions, publicity timing and citation comparisons have been established. Failed-replication citation analyses concern a different assessment and are not components of this synthesis.
 
 \end{document}

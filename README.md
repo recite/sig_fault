@@ -69,7 +69,7 @@ For individual steps, use `make analysis`, `make figures`, `make tables`, `make 
 
 The [study inventory](data/cohorts/README.md) and [larger FORRT/statcheck inventories](docs/inventories.md) preserve additional sources. A collected inventory is not an estimated citation effect. [Expansion status](docs/meta/expansion-status.md) distinguishes completed comparisons from work still requiring verified identities, assessments, dates or citation histories.
 
-The Institute for Replication extension has **3 selected matched cases** and remains outside the synthesis. Its [source registry](docs/i4r/README.md), [case comparisons](docs/i4r/aggregate-results.md), [synthetic-control checks](docs/i4r/synthetic-results.md), and [standalone proportional checks](docs/i4r/proportional.md) are retained. The [coverage report](docs/i4r/coverage.md) and [evidence catalog](docs/i4r/catalog.html) distinguish discovered reports from verified consequential errors and supported citation comparisons. This small pilot appears only in the manuscript appendix.
+The Institute for Replication study has moved to [recite/i4r_response](https://github.com/recite/i4r_response). It examines responses to specific assessed claims and is separate from this paper. Frozen registry snapshots remain here for known-assessment exclusions and historical reproducibility; new I4R work belongs in the separate repository.
 
 The [citation-context extension](docs/pilot/README.md) follows specific challenged findings into later research. It contains a reproducible article and citation sample, source checks, and independent-reader materials. Claim verification and citation coding remain in progress; it does not yet estimate continued reliance on those findings.
 
